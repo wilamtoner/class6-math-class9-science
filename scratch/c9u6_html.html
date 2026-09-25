@@ -1,0 +1,803 @@
+<!-- ================= CLASS 9 UNIT 6 CONTAINER ================= -->
+<div id="c9-view-6" class="hidden flex-1 min-w-0 flex flex-col">
+  <!-- Unit Header Banner -->
+  <div class="border-b border-slate-100 pb-5 mb-6 flex flex-wrap items-center justify-between gap-4">
+    <div>
+      <div class="flex items-center gap-2 mb-1">
+        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
+          कक्षा ९ विज्ञान तथा प्रविधि | एकाइ ६
+        </span>
+        <span class="text-xs text-slate-400">•</span>
+        <span class="text-xs text-slate-500 font-medium">पाठ्यपुस्तक पृष्ठ ८०–९६</span>
+      </div>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+        एकाइ ६: प्रकृति र वातावरण (Nature and Environment)
+      </h2>
+      <p class="text-xs md:text-sm text-slate-500 mt-1">
+        पारिस्थिक पद्धति (Ecosystem), खाद्य शृङ्खला तथा खाद्य जाल (Food Chain & Web), १०% ऊर्जा पिरामिड, र जैविक अन्तरक्रियाहरू (Biotic Interactions)
+      </p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="inline-flex items-center px-3 py-1 rounded-xl text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+        ✓ आधिकारिक सम्पूर्ण अभ्यास, १६ स्तरीकृत प्रश्न तथा ३-मोड भर्चुअल ल्याब समावेश
+      </span>
+    </div>
+  </div>
+
+  <!-- 4-Tab Navigation Bar -->
+  <div class="flex border-b border-slate-200 gap-2 mb-6 overflow-x-auto pb-1 text-sm font-bold">
+    <button onclick="setTabC9U6('concepts')" id="c9u6-tab-concepts" class="px-5 py-2.5 rounded-xl bg-emerald-600 text-white shadow-sm font-bold transition whitespace-nowrap cursor-pointer">
+      १. सैद्धान्तिक अवधारणा तथा ३-मोड भर्चुअल ल्याब
+    </button>
+    <button onclick="setTabC9U6('exercises')" id="c9u6-tab-exercises" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+      २. सम्पूर्ण अभ्यास समाधान (पृष्ठ ९४–९६)
+    </button>
+    <button onclick="setTabC9U6('tiers')" id="c9u6-tab-tiers" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+      ३. तीन तहका नमुना प्रश्नहरू (१६ प्रश्न)
+    </button>
+    <button onclick="setTabC9U6('quiz')" id="c9u6-tab-quiz" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+      ४. स्वमूल्याङ्कन क्विज (१० प्रश्न)
+    </button>
+  </div>
+
+  <!-- ================= TAB 1: CONCEPTS & VIRTUAL LIFE SCIENCE LAB ================= -->
+  <div id="c9u6-view-concepts" class="space-y-6">
+    <!-- Lab Mode Switcher -->
+    <div class="bg-slate-900 p-2 rounded-3xl border border-slate-800 shadow-xl flex flex-wrap gap-2">
+      <button onclick="setLabModeC9U6('ecosystem')" id="c9u6-btn-mode-ecosystem" class="flex-1 py-3 px-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-black text-xs md:text-sm shadow-md transition cursor-pointer">
+        🏞️ मोड १: पारिस्थिक पद्धति अन्वेषक (Ecosystem Simulator)
+      </button>
+      <button onclick="setLabModeC9U6('energy_web')" id="c9u6-btn-mode-energy_web" class="flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white font-bold text-xs md:text-sm transition cursor-pointer">
+        ⚡ मोड २: खाद्यजाल र १०% ऊर्जा प्रवाह (Food Web & Energy Flow)
+      </button>
+      <button onclick="setLabModeC9U6('interactions')" id="c9u6-btn-mode-interactions" class="flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white font-bold text-xs md:text-sm transition cursor-pointer">
+        🤝 मोड ३: जैविक अन्तरक्रिया प्रयोगशाला (Biotic Interactions)
+      </button>
+    </div>
+
+    <!-- ----------------- MODE 1: ECOSYSTEM SIMULATOR ----------------- -->
+    <div id="c9u6-lab-mode-ecosystem" class="bg-slate-900 border border-slate-800 rounded-3xl p-5 md:p-6 text-white space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-mono text-emerald-400 tracking-wider">ECOSYSTEM BIOLOGY LAB • TERRESTRIAL & AQUATIC</span>
+          <h3 class="text-lg md:text-xl font-black text-white">पारिस्थिक पद्धति संरचना तथा अवयव अन्वेषक</h3>
+        </div>
+        <!-- Submode Switcher -->
+        <div class="flex items-center gap-2 bg-slate-950 p-1.5 rounded-2xl border border-slate-800">
+          <button onclick="selectEcosystemTypeC9U6('grassland')" id="c9u6-esub-grassland" class="px-3.5 py-1.5 rounded-xl bg-emerald-600/30 border border-emerald-500 text-emerald-300 font-bold transition text-xs cursor-pointer">
+            🌾 चउरको इकोसिस्टम (Grassland)
+          </button>
+          <button onclick="selectEcosystemTypeC9U6('pond')" id="c9u6-esub-pond" class="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+            🌊 पोखरीको इकोसिस्टम (Pond)
+          </button>
+        </div>
+      </div>
+
+      <!-- Grassland Organisms Selector -->
+      <div id="c9u6-org-btns-grassland" class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+        <button onclick="selectOrganismC9U6('grass')" id="c9u6-obtn-grass" class="p-3 rounded-2xl border bg-emerald-600/30 border-emerald-500 text-emerald-300 text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">हरियो घाँस / दुबो</strong>
+          <span class="text-[10px] text-slate-400">उत्पादक (T1 - Producers)</span>
+        </button>
+        <button onclick="selectOrganismC9U6('grasshopper')" id="c9u6-obtn-grasshopper" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">फट्याङ्ग्रा (Grasshopper)</strong>
+          <span class="text-[10px] text-slate-400">प्राथमिक उपभोक्ता (T2)</span>
+        </button>
+        <button onclick="selectOrganismC9U6('frog')" id="c9u6-obtn-frog" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">भ्यागुता (Frog)</strong>
+          <span class="text-[10px] text-slate-400">द्वितीयक उपभोक्ता (T3)</span>
+        </button>
+        <button onclick="selectOrganismC9U6('snake')" id="c9u6-obtn-snake" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">सर्प (Snake)</strong>
+          <span class="text-[10px] text-slate-400">तृतीयक उपभोक्ता (T4)</span>
+        </button>
+        <button onclick="selectOrganismC9U6('eagle')" id="c9u6-obtn-eagle" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">चिल / बाज (Hawk)</strong>
+          <span class="text-[10px] text-slate-400">सर्वोच्च उपभोक्ता (Apex)</span>
+        </button>
+      </div>
+
+      <!-- Pond Organisms Selector -->
+      <div id="c9u6-org-btns-pond" class="hidden grid grid-cols-2 sm:grid-cols-5 gap-2">
+        <button onclick="selectOrganismC9U6('phytoplankton')" id="c9u6-obtn-phytoplankton" class="p-3 rounded-2xl border bg-emerald-600/30 border-emerald-500 text-emerald-300 text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">फाइटोप्ल्याङ्कटन (लेउ)</strong>
+          <span class="text-[10px] text-slate-400">उत्पादक (T1 - Algae)</span>
+        </button>
+        <button onclick="selectOrganismC9U6('zooplankton')" id="c9u6-obtn-zooplankton" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">जुप्ल्याङ्कटन / लार्भा</strong>
+          <span class="text-[10px] text-slate-400">प्राथमिक उपभोक्ता (T2)</span>
+        </button>
+        <button onclick="selectOrganismC9U6('small_fish')" id="c9u6-obtn-small_fish" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">साना माछा (Small Fish)</strong>
+          <span class="text-[10px] text-slate-400">द्वितीयक उपभोक्ता (T3)</span>
+        </button>
+        <button onclick="selectOrganismC9U6('big_fish')" id="c9u6-obtn-big_fish" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">ठूला माछा (Large Fish)</strong>
+          <span class="text-[10px] text-slate-400">तृतीयक उपभोक्ता (T4)</span>
+        </button>
+        <button onclick="selectOrganismC9U6('heron')" id="c9u6-obtn-heron" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">बकुल्ला / हाँस (Heron)</strong>
+          <span class="text-[10px] text-slate-400">सर्वोच्च जल-उपभोक्ता</span>
+        </button>
+      </div>
+
+      <!-- Main Display Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <!-- Live SVG Ecosystem Canvas -->
+        <div class="lg:col-span-7 bg-slate-950/80 border border-slate-800 rounded-3xl p-4 flex flex-col items-center justify-center min-h-[260px] shadow-inner relative overflow-hidden select-none">
+          <div class="absolute top-3 left-4 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span id="c9u6-eco-view-label" class="text-[11px] font-mono text-slate-400 font-bold">GRASSLAND ECOSYSTEM SIMULATION</span>
+          </div>
+          <div id="c9u6-ecosystem-svg-wrap" class="w-full flex items-center justify-center pt-4">
+            <!-- Dynamic SVG inserted by JS renderEcosystemSVGC9U6() -->
+          </div>
+        </div>
+
+        <!-- Diagnostic Information Panel -->
+        <div class="lg:col-span-5 bg-slate-800/90 border border-slate-700 rounded-3xl p-5 flex flex-col justify-between space-y-4">
+          <div class="border-b border-slate-700 pb-3 flex items-center justify-between">
+            <div>
+              <span id="c9u6-eco-trophic" class="text-xs text-emerald-400 font-mono tracking-wider font-bold">TROPHIC LEVEL: T1</span>
+              <h4 id="c9u6-eco-name" class="text-lg font-black text-white">हरियो घाँस (Producers)</h4>
+            </div>
+            <span id="c9u6-eco-diet" class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30">
+              स्वपोषी (Autotroph)
+            </span>
+          </div>
+
+          <div class="space-y-2.5 text-xs text-slate-300">
+            <div>
+              <strong class="text-amber-400 block mb-0.5">⚡ ऊर्जा प्राप्ति तथा स्थानान्तरण:</strong>
+              <p id="c9u6-eco-energy" class="text-slate-300 leading-relaxed"></p>
+            </div>
+            <div>
+              <strong class="text-sky-400 block mb-0.5">🌿 पारिस्थिक भूमिका (Ecological Niche):</strong>
+              <p id="c9u6-eco-role" class="text-slate-300 leading-relaxed"></p>
+            </div>
+            <div>
+              <strong class="text-emerald-400 block mb-0.5">💡 सन्तुलनमा योगदान:</strong>
+              <p id="c9u6-eco-desc" class="text-slate-300 leading-relaxed"></p>
+            </div>
+          </div>
+
+          <div class="p-3 rounded-2xl bg-slate-900/80 border border-slate-700/80 text-xs text-slate-300 space-y-1">
+            <strong class="text-amber-300 block font-bold">🔬 विच्छेदकको अन्तरसम्बन्ध:</strong>
+            <p class="leading-relaxed text-slate-300">
+              यो जीव मरेपछि माटोका ब्याक्टेरिया र च्याउले यसको शरीर कुहाएर खनिज तत्वहरू पुनः उत्पादकलाई उपलब्ध गराउँछन्।
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------- MODE 2: FOOD WEB & ENERGY FLOW ----------------- -->
+    <div id="c9u6-lab-mode-energy_web" class="hidden bg-slate-900 border border-slate-800 rounded-3xl p-5 md:p-6 text-white space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-mono text-emerald-400 tracking-wider">TROPHIC DYNAMICS & THERMODYNAMICS</span>
+          <h3 class="text-lg md:text-xl font-black text-white">खाद्यजाल तथा १०% ऊर्जा पिरामिड सिमुलेटर</h3>
+        </div>
+        <!-- Submode Switcher -->
+        <div class="flex items-center gap-2 bg-slate-950 p-1.5 rounded-2xl border border-slate-800">
+          <button onclick="setEnergySubModeC9U6('pyramid')" id="c9u6-wsub-pyramid" class="px-3.5 py-1.5 rounded-xl bg-emerald-600/30 border border-emerald-500 text-emerald-300 font-bold transition text-xs cursor-pointer">
+            📐 १०% ऊर्जा पिरामिड (Energy Pyramid)
+          </button>
+          <button onclick="setEnergySubModeC9U6('cascade')" id="c9u6-wsub-cascade" class="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+            ⚠️ खाद्यजाल असन्तुलन (Trophic Cascade)
+          </button>
+        </div>
+      </div>
+
+      <!-- Panel A: 10% Energy Pyramid -->
+      <div id="c9u6-energy-panel-pyramid" class="space-y-5">
+        <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-950/70 p-3.5 rounded-2xl border border-slate-800 text-xs">
+          <div class="flex items-center gap-2">
+            <span class="text-slate-400 font-bold">सौर्य ऊर्जा इनपुट (Solar Radiation):</span>
+            <button onclick="setSolarInputC9U6(100000)" class="px-3 py-1.5 rounded-xl bg-amber-500/20 text-amber-300 border border-amber-500/40 font-mono font-bold cursor-pointer">१००,००० J</button>
+            <button onclick="setSolarInputC9U6(50000)" class="px-3 py-1.5 rounded-xl bg-slate-800 text-slate-300 border border-slate-700 font-mono cursor-pointer">५०,००० J</button>
+            <button onclick="setSolarInputC9U6(10000)" class="px-3 py-1.5 rounded-xl bg-slate-800 text-slate-300 border border-slate-700 font-mono cursor-pointer">१०,००० J</button>
+          </div>
+          <span id="c9u6-pyramid-summary-badge" class="px-3 py-1.5 rounded-xl bg-emerald-500/20 text-emerald-300 font-mono font-black border border-emerald-500/30">
+            उत्पादक (१%) ➔ प्रत्येक तहमा १०% मात्र सर्दछ
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          <!-- Stacked Stepped Pyramid SVG Canvas -->
+          <div class="lg:col-span-7 bg-slate-950/80 border border-slate-800 rounded-3xl p-4 flex flex-col items-center justify-center min-h-[280px] shadow-inner select-none">
+            <div id="c9u6-pyramid-svg-wrap" class="w-full flex items-center justify-center">
+              <!-- Dynamic Energy Pyramid SVG inserted by JS renderPyramidSVGC9U6() -->
+            </div>
+          </div>
+
+          <!-- Energy Analysis Table & Explanation -->
+          <div class="lg:col-span-5 bg-slate-800/90 border border-slate-700 rounded-3xl p-5 flex flex-col justify-between space-y-4">
+            <div class="border-b border-slate-700 pb-2">
+              <span class="text-xs text-amber-400 font-mono">LINDEMAN’S 10% ENERGY LAW</span>
+              <h4 class="text-lg font-black text-white">लिन्डम्यानको १०% ऊर्जा स्थानान्तरण</h4>
+            </div>
+
+            <div class="space-y-2 text-xs">
+              <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-between">
+                <span class="text-amber-300 font-bold">सूर्यको कुल विकिरण:</span>
+                <span id="c9u6-en-sun" class="font-mono text-white font-bold">१००,००० J</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-between">
+                <span class="text-emerald-400 font-bold">उत्पादक (घाँस - १%):</span>
+                <span id="c9u6-en-t1" class="font-mono text-emerald-300 font-bold">१,००० J</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-between">
+                <span class="text-sky-400 font-bold">प्राथमिक उपभोक्ता (१०%):</span>
+                <span id="c9u6-en-t2" class="font-mono text-sky-300 font-bold">१०० J</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-between">
+                <span class="text-purple-400 font-bold">द्वितीयक उपभोक्ता (१०%):</span>
+                <span id="c9u6-en-t3" class="font-mono text-purple-300 font-bold">१० J</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-between">
+                <span class="text-rose-400 font-bold">सर्वोच्च उपभोक्ता (१०%):</span>
+                <span id="c9u6-en-t4" class="font-mono text-rose-300 font-bold">१ J</span>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-2xl bg-amber-950/40 border border-amber-800/60 text-xs text-amber-200 space-y-1">
+              <strong class="text-amber-300 block font-bold">💡 किन ४-५ तहभन्दा लामो शृङ्खला हुँदैन ?</strong>
+              <p class="leading-relaxed">
+                प्रत्येक तहमा ९०% ऊर्जा जैविक श्वासप्रश्वास र तापका रूपमा खेर जाने हुनाले ५ औँ तहभन्दा माथि जीवन धान्न आवश्यक न्यूनतम ऊर्जा नै बाँकी रहँदैन।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel B: Trophic Cascade Simulator -->
+      <div id="c9u6-energy-panel-cascade" class="hidden space-y-5">
+        <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-950/70 p-3.5 rounded-2xl border border-slate-800 text-xs">
+          <span class="text-slate-400 font-bold">पारिस्थितिक असन्तुलन परिदृश्य छनोट गर्नुहोस्:</span>
+          <div class="flex flex-wrap gap-2">
+            <button onclick="triggerCascadeEventC9U6('rats_killed')" id="c9u6-cbtn-rats" class="px-3 py-1.5 rounded-xl bg-rose-600/30 border border-rose-500 text-rose-300 font-bold transition text-xs cursor-pointer">
+              🐭 किसानले मुसा मारेको अवस्था
+            </button>
+            <button onclick="triggerCascadeEventC9U6('frogs_extinct')" id="c9u6-cbtn-frogs" class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+              🐸 भ्यागुता लोप भएको अवस्था
+            </button>
+            <button onclick="triggerCascadeEventC9U6('locust_swarm')" id="c9u6-cbtn-locust" class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+              🦗 किरा/सलह अत्यधिक वृद्धि
+            </button>
+            <button onclick="triggerCascadeEventC9U6('normal')" id="c9u6-cbtn-normal" class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+              🔄 प्राकृतिक सन्तुलन
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          <!-- Food Web Cascade Canvas -->
+          <div class="lg:col-span-7 bg-slate-950/80 border border-slate-800 rounded-3xl p-4 flex flex-col items-center justify-center min-h-[280px] shadow-inner select-none">
+            <div id="c9u6-cascade-svg-wrap" class="w-full flex items-center justify-center">
+              <!-- Dynamic Cascade Food Web SVG inserted by JS renderCascadeSVGC9U6() -->
+            </div>
+          </div>
+
+          <!-- Diagnostic Warning & Scientific Explanation -->
+          <div class="lg:col-span-5 bg-slate-800/90 border border-slate-700 rounded-3xl p-5 flex flex-col justify-between space-y-4">
+            <div class="border-b border-slate-700 pb-2">
+              <span id="c9u6-cascade-badge" class="px-2.5 py-1 rounded-full text-xs font-bold bg-rose-500/20 text-rose-300 border border-rose-500/40">
+                चेतावनी: खाद्यजाल सन्तुलन भङ्ग!
+              </span>
+              <h4 id="c9u6-cascade-title" class="text-base md:text-lg font-black text-white mt-2">किसान र मुसाको पारिस्थिक असर</h4>
+            </div>
+
+            <p id="c9u6-cascade-desc" class="text-xs text-slate-200 leading-relaxed"></p>
+
+            <div class="p-3 rounded-2xl bg-slate-900 border border-slate-700 text-xs text-slate-300 space-y-1">
+              <strong class="text-emerald-400 block font-bold">🌿 दिगो पारिस्थितिक पाठ:</strong>
+              <p id="c9u6-cascade-lesson" class="leading-relaxed text-slate-300">
+                कुनै पनि जीवलाई शत्रु ठानेर सखाप पार्दा सम्पूर्ण खाद्यजाल भत्किन्छ र त्यसको प्रतिकूल असर प्रत्यक्ष बाली उत्पादन र मानव जीवनमै पर्छ।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------- MODE 3: BIOTIC INTERACTIONS EXPLORER ----------------- -->
+    <div id="c9u6-lab-mode-interactions" class="hidden bg-slate-900 border border-slate-800 rounded-3xl p-5 md:p-6 text-white space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-mono text-emerald-400 tracking-wider">SYMBIOSIS & ECOLOGICAL RELATIONSHIPS</span>
+          <h3 class="text-lg md:text-xl font-black text-white">जैविक अन्तरक्रिया प्रयोगशाला (५ प्रमुख सम्बन्धहरू)</h3>
+        </div>
+      </div>
+
+      <!-- 5 Interaction Buttons -->
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+        <button onclick="selectInteractionC9U6('mutualism')" id="c9u6-ibtn-mutualism" class="p-3 rounded-2xl border bg-emerald-600/30 border-emerald-500 text-emerald-300 text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">पारस्परिकता (+, +)</strong>
+          <span class="text-[10px] text-slate-400">Mutualism (लाइकेन, मौरी)</span>
+        </button>
+        <button onclick="selectInteractionC9U6('commensalism')" id="c9u6-ibtn-commensalism" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">सहभोजिता (+, ०)</strong>
+          <span class="text-[10px] text-slate-400">Commensalism (सुनाखरी)</span>
+        </button>
+        <button onclick="selectInteractionC9U6('parasitism')" id="c9u6-ibtn-parasitism" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">परजीविता (+, -)</strong>
+          <span class="text-[10px] text-slate-400">Parasitism (जुका, आकाशबेली)</span>
+        </button>
+        <button onclick="selectInteractionC9U6('predation')" id="c9u6-ibtn-predation" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">सिकारिता (+, -)</strong>
+          <span class="text-[10px] text-slate-400">Predation (बाघ र हरिण)</span>
+        </button>
+        <button onclick="selectInteractionC9U6('competition')" id="c9u6-ibtn-competition" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">प्रतिस्पर्धा (-, -)</strong>
+          <span class="text-[10px] text-slate-400">Competition (घाम/आहारा)</span>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <!-- Interactive Relationship Canvas -->
+        <div class="lg:col-span-6 bg-slate-950/80 border border-slate-800 rounded-3xl p-4 flex flex-col items-center justify-center min-h-[260px] shadow-inner select-none">
+          <div id="c9u6-interaction-svg-wrap" class="w-full flex items-center justify-center">
+            <!-- Dynamic Interaction SVG inserted by JS renderInteractionSVGC9U6() -->
+          </div>
+        </div>
+
+        <!-- Relationship Details Panel -->
+        <div class="lg:col-span-6 bg-slate-800/90 border border-slate-700 rounded-3xl p-5 flex flex-col justify-between space-y-4">
+          <div class="border-b border-slate-700 pb-3 flex items-center justify-between">
+            <div>
+              <span id="c9u6-i-engname" class="text-xs text-emerald-400 font-mono tracking-wider font-bold">MUTUALISM (+, +)</span>
+              <h4 id="c9u6-i-nepname" class="text-lg font-black text-white">पारस्परिकता (आपसी सहजीविता)</h4>
+            </div>
+            <span id="c9u6-i-symbol" class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30">
+              दुवै लाभान्वित (+, +)
+            </span>
+          </div>
+
+          <div class="space-y-2.5 text-xs text-slate-300">
+            <div>
+              <strong class="text-amber-400 block mb-0.5">📍 सम्बन्धको वैज्ञानिक स्वरूप:</strong>
+              <p id="c9u6-i-desc" class="text-slate-300 leading-relaxed"></p>
+            </div>
+            <div>
+              <strong class="text-sky-400 block mb-0.5">🌿 प्रख्यात प्राकृतिक उदाहरण:</strong>
+              <p id="c9u6-i-example" class="text-slate-300 leading-relaxed"></p>
+            </div>
+            <div>
+              <strong class="text-emerald-400 block mb-0.5">⚡ पारिस्थितिक महत्त्व:</strong>
+              <p id="c9u6-i-significance" class="text-slate-300 leading-relaxed"></p>
+            </div>
+          </div>
+
+          <div class="p-3 rounded-2xl bg-slate-900 border border-slate-700 text-xs text-slate-300 space-y-1">
+            <strong class="text-amber-300 block font-bold">💡 परीक्षा दृष्टिकोण:</strong>
+            <p id="c9u6-i-tip" class="leading-relaxed text-slate-300"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TAB 2: EXERCISES ================= -->
+  <div id="c9u6-view-exercises" class="hidden space-y-6">
+    <div class="flex items-center justify-between border-b border-slate-200 pb-3 flex-wrap gap-2">
+      <div>
+        <h3 class="text-lg font-black text-slate-900">पाठ्यपुस्तक सम्पूर्ण अभ्यास समाधान</h3>
+        <p class="text-xs text-slate-500">पारिस्थिक पद्धति, खाद्य सम्बन्ध र जैविक अन्तरक्रियाका सम्पूर्ण आधिकारिक प्रश्नोत्तरहरू</p>
+      </div>
+      <!-- Filter Pills -->
+      <div class="flex flex-wrap gap-1.5">
+        <button onclick="filterC9U6Exercises('all')" id="c9u6-exbtn-all" class="px-3 py-1.5 rounded-xl text-xs font-black transition bg-emerald-600 text-white shadow-sm cursor-pointer whitespace-nowrap">सबै प्रश्नहरू</button>
+        <button onclick="filterC9U6Exercises('mcq')" id="c9u6-exbtn-mcq" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">MCQs (१)</button>
+        <button onclick="filterC9U6Exercises('reason')" id="c9u6-exbtn-reason" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">कारण दिनुहोस् (२)</button>
+        <button onclick="filterC9U6Exercises('diff')" id="c9u6-exbtn-diff" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">फरक लेख्नुहोस् (३)</button>
+        <button onclick="filterC9U6Exercises('qa')" id="c9u6-exbtn-qa" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">विस्तृत प्रश्नोत्तर (४)</button>
+        <button onclick="filterC9U6Exercises('project')" id="c9u6-exbtn-project" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">परियोजना कार्य (५)</button>
+      </div>
+    </div>
+
+    <!-- Exercise Cards Container -->
+    <div id="c9u6-exercise-cards" class="space-y-4">
+      <!-- Card 1: MCQs -->
+      <div class="c9u6-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-cat="mcq">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">अभ्यास १ • बहुवैकल्पिक प्रश्नहरू (MCQs)</span>
+          <span class="text-xs text-slate-400">पृष्ठ ९४</span>
+        </div>
+        <h4 class="text-base font-black text-slate-900">१. तलका प्रश्नको सही विकल्पमा ठीक चिह्न (✓) लगाउनुहोस्:</h4>
+        <div class="space-y-2 text-xs md:text-sm text-slate-700">
+          <p><strong>(क) दिइएका मध्ये कुन जीव विच्छेदक (Decomposer) हो ?</strong> ➔ <span class="text-emerald-700 font-bold">(इ) च्याउ (Mushroom / Fungi)</span></p>
+          <p><strong>(ख) सजीवहरूमा पोषण उपलब्ध हुने प्रक्रियामा उत्पादक र उपभोक्ताबीच आहारका रूपमा के बन्दछ ?</strong> ➔ <span class="text-emerald-700 font-bold">(आ) खाद्य शृङ्खला (Food Chain)</span></p>
+          <p><strong>(ग) रुखका बोक्रामा लाइकेन्समा रहेको सम्बन्ध कुन प्रकारको अन्तरक्रिया हो ?</strong> ➔ <span class="text-emerald-700 font-bold">(अ) Mutualism (पारस्परिकता / सहजीविता)</span></p>
+          <p><strong>(घ) जैविक अन्तरसम्बन्धमा आश्रित जीवले आश्रय दिने जीवको शरीरबाट खाना सोसेर लिन्छ। यस किसिमको अन्तरसम्बन्धमा के हुन्छ ?</strong> ➔ <span class="text-emerald-700 font-bold">(अ) एउटा मात्र जीव लाभान्वित हुन्छ (Parasitism)</span></p>
+          <p><strong>(ङ) प्राथमिक पोषण तह (First Trophic Level - T1) कुन हो ?</strong> ➔ <span class="text-emerald-700 font-bold">(अ) हरिया बोटबिरुवाहरू (Producers)</span></p>
+        </div>
+      </div>
+
+      <!-- Card 2: Reasons -->
+      <div class="c9u6-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-cat="reason">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-sky-100 text-sky-800">अभ्यास २ • वैज्ञानिक कारण दिनुहोस् (Give Reasons)</span>
+          <span class="text-xs text-slate-400">पृष्ठ ९४</span>
+        </div>
+        <h4 class="text-base font-black text-slate-900">२. वैज्ञानिक कारण दिनुहोस्:</h4>
+        <div class="space-y-2.5 text-xs md:text-sm text-slate-700">
+          <div>
+            <strong class="text-slate-900 block">(क) पारिस्थिक पद्धतिमा विच्छेदक मात्र नहुने हो भने यो पद्धति खल्बलिन्छ, किन ?</strong>
+            <p class="text-slate-600 mt-0.5">विच्छेदकले मृत शरीर सडाएर खनिज तत्व पुनः माटोमा नफर्काउने हो भने पृथ्वीभरि फोहोर थुप्रिन्छ र माटोमा पोषक तत्व अभाव भई नयाँ बिरुवाले खाना बनाउन नसक्दा सम्पूर्ण खाद्यशृङ्खला नै रोकिन्छ।</p>
+          </div>
+          <div>
+            <strong class="text-slate-900 block">(ख) चउरको इकोसिस्टममा किरा फट्याङ्ग्राको संख्या अत्यधिक बढ्दा इकोसिस्टम असन्तुलित हुन्छ, किन ?</strong>
+            <p class="text-slate-600 mt-0.5">अत्यधिक फट्याङ्ग्राहरूले चउरको सम्पूर्ण घाँस खाएर सखाप बनाउँछन्, जसले गर्दा भू-क्षय निम्तिन्छ र पछि आहारा नपाई फट्याङ्ग्रा तथा तिनमा आश्रित भ्यागुता, चरा सबै भोकभोकै मर्दछन्।</p>
+          </div>
+          <div>
+            <strong class="text-slate-900 block">(ग) खाद्यशृङ्खलामा उपभोक्ताको संख्याभन्दा उत्पादकको संख्या बढी हुन्छ, किन ?</strong>
+            <p class="text-slate-600 mt-0.5">१०% ऊर्जा नियमअनुसार माथिल्लो तहमा जाँदा ९०% ऊर्जा खेर जान्छ। माथिल्लो तहका सम्पूर्ण उपभोक्तालाई आवश्यक ऊर्जा पुर्‍याउन तल्लो आधार तहमा उत्पादकको संख्या र बायोमास अत्यधिक बढी हुनुपर्दछ।</p>
+          </div>
+          <div>
+            <strong class="text-slate-900 block">(घ) पारस्परिकता (Mutualism) मा दुवै सजीवहरू लाभान्वित हुन्छन्, किन ?</strong>
+            <p class="text-slate-600 mt-0.5">यसमा सँगै बस्ने दुई फरक प्रजातिले एकअर्काको बाँच्ने आवश्यकता (उदा. लेउले खाना दिने, ढुसीले पानी र सुरक्षा दिने) परिपूर्ति गरिदिने हुँदा दुवैलाई फाइदा पुग्छ।</p>
+          </div>
+          <div>
+            <strong class="text-slate-900 block">(ङ) पारिस्थिक पद्धति सन्तुलित भएको ठाउँमा वातावरण स्वस्थकर हुन्छ, किन ?</strong>
+            <p class="text-slate-600 mt-0.5">सन्तुलित इकोसिस्टममा प्रकाश संश्लेषणबाट अक्सिजन-कार्बनडाइअक्साइड सन्तुलन, विच्छेदकबाट फोहोर व्यवस्थापन, र जलचक्र नियमित रहने हुनाले वातावरण स्वच्छ र स्वस्थकर रहन्छ।</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Differences -->
+      <div class="c9u6-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-cat="diff">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">अभ्यास ३ • फरक लेख्नुहोस् (६ वटा तुलनात्मक तालिकाहरू)</span>
+          <span class="text-xs text-slate-400">पृष्ठ ९५</span>
+        </div>
+        <h4 class="text-base font-black text-slate-900">३. फरक लेख्नुहोस्:</h4>
+        <div class="space-y-3 text-xs md:text-sm text-slate-700">
+          <div>
+            <strong class="text-purple-900 block font-bold mb-1">(क) उत्पादक र विच्छेदक:</strong>
+            <p class="text-slate-600">उत्पादकले सूर्यको प्रकाशमा प्रकाश संश्लेषण गरी अजैविक तत्वबाट नयाँ खाना बनाउँछ (हरिया बिरुवा)। विच्छेदकले मृत शरीरलाई सडाएर जटिल जैविक पदार्थलाई सरल खनिज तत्वमा बदल्छ (ब्याक्टेरिया, च्याउ)।</p>
+          </div>
+          <div>
+            <strong class="text-purple-900 block font-bold mb-1">(ख) चउरको इकोसिस्टम र पोखरीको इकोसिस्टम:</strong>
+            <p class="text-slate-600">चउर जमिनमा हुने स्थलीय इकोसिस्टम हो जहाँ मुख्य उत्पादक घाँस र उपभोक्ता फट्याङ्ग्रा, सर्प, चिल हुन्छन्। पोखरी पानीमा हुने जलीय इकोसिस्टम हो जहाँ उत्पादक फाइटोप्ल्याङ्कटन र उपभोक्ता जुप्ल्याङ्कटन, माछा, बकुल्ला हुन्छन्।</p>
+          </div>
+          <div>
+            <strong class="text-purple-900 block font-bold mb-1">(ग) खाद्य शृङ्खला र खाद्य जाल:</strong>
+            <p class="text-slate-600">खाद्य शृङ्खला उत्पादकबाट उपभोक्तासम्म खाना सर्ने एकल रेखीय बाटो हो। खाद्य जाल धेरै खाद्य शृङ्खलाहरू आपसमा जोडिएर बनेको बहु-विकल्पीय जटिल सञ्जाल हो।</p>
+          </div>
+          <div>
+            <strong class="text-purple-900 block font-bold mb-1">(घ) जैविक अवयव र अजैविक अवयव:</strong>
+            <p class="text-slate-600">जैविक अवयव पारिस्थिक पद्धतिमा रहेका सम्पूर्ण सजीव अङ्गहरू (उत्पादक, उपभोक्ता, विच्छेदक) हुन्। अजैविक अवयव सम्पूर्ण निर्जीव भौतिक तत्वहरू (हावा, पानी, माटो, घाम, तापक्रम) हुन्।</p>
+          </div>
+          <div>
+            <strong class="text-purple-900 block font-bold mb-1">(ङ) पारस्परिकता र सहभोजिता:</strong>
+            <p class="text-slate-600">पारस्परिकतामा दुवै जीवहरू लाभान्वित हुन्छन् (+, +) जस्तै लाइकेन। सहभोजितामा एउटालाई फाइदा हुन्छ तर अर्कोलाई न फाइदा न हानि हुन्छ (+, ०) जस्तै रुखमा सुनाखरी।</p>
+          </div>
+          <div>
+            <strong class="text-purple-900 block font-bold mb-1">(च) परजीविता र पारस्परिकता:</strong>
+            <p class="text-slate-600">परजीवितामा परजीवी लाभान्वित र पोषकलाई हानि हुन्छ (+, -) जस्तै जुका। पारस्परिकतामा दुवै जीव लाभान्वित हुन्छन् (+, +) जस्तै फूल र मौरी।</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Structured QA Part 1 -->
+      <div class="c9u6-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-cat="qa">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-indigo-100 text-indigo-800">अभ्यास ४ • विस्तृत प्रश्नोत्तर (क देखि ङ)</span>
+          <span class="text-xs text-slate-400">पृष्ठ ९५</span>
+        </div>
+        <h4 class="text-base font-black text-slate-900">४. विस्तृत प्रश्नोत्तर:</h4>
+        <div class="space-y-3 text-xs md:text-sm text-slate-700">
+          <div>
+            <strong class="text-slate-900 block">(क) पारिस्थिक पद्धतिमा हुने अजैविक तत्त्वहरूको सूची बनाई छोटकरीमा वर्णन गर्नुहोस्:</strong>
+            <p class="text-slate-600">१. सौर्य प्रकाश (ऊर्जाको स्रोत, प्रकाश संश्लेषण), २. पानी (शरीरको मुख्य घटक, खनिज परिवहन), ३. हावा (O2 श्वसनका लागि, CO2 खाना बनाउन), ४. माटो (बासस्थान र खनिज लवण), ५. तापक्रम (इन्जाइम प्रतिक्रिया र भौगोलिक वितरण)।</p>
+          </div>
+          <div>
+            <strong class="text-slate-900 block">(ख) पारिस्थिक पद्धतिमा विच्छेदकले खेल्ने भूमिका:</strong>
+            <p class="text-slate-600">मृत अवशेष र जैविक फोहोरलाई सडाएर वातावरण सफा राख्ने, र ती अवशेषबाट नाइट्रोजन, फस्फोरसजस्ता खनिज तत्व पुनः माटो र वातावरणमा फर्काएर पोषण चक्र नियमित चलाउने।</p>
+          </div>
+          <div>
+            <strong class="text-slate-900 block">(ग) चउरको इकोसिस्टमको खाद्य शृङ्खला:</strong>
+            <p class="text-slate-600">घाँस (उत्पादक) ➔ फट्याङ्ग्रा (प्राथमिक) ➔ भ्यागुता (द्वितीयक) ➔ सर्प (तृतीयक) ➔ चिल (सर्वोच्च)। मरेपछि सबैलाई ब्याक्टेरिया र ढुसीले विच्छेदन गर्छन्।</p>
+          </div>
+          <div>
+            <strong class="text-slate-900 block">(घ) पोखरीमा भ्यागुता अत्यधिक बढ्दाको असर:</strong>
+            <p class="text-slate-600">भ्यागुताले किरा-फट्याङ्ग्रा अत्यधिक खाएर सखाप बनाउँछन्, किरा नहुँदा लेउ अत्यधिक बढेर घाम र अक्सिजन छेकिएर पानी दुर्गन्धित हुन्छ (Eutrophication), र अन्ततः भ्यागुता पनि भोकभोकै मर्दछन्।</p>
+          </div>
+          <div>
+            <strong class="text-slate-900 block">(ङ) किसानले सबै मुसा मार्दा धान उत्पादन किन घट्यो ?</strong>
+            <p class="text-slate-600">मुसाले धानका साथै धानबाली नष्ट गर्ने विभिन्न हानिकारक किरा, फट्याङ्ग्रा र लार्भालाई पनि खान्थ्यो। मुसा मारिएपछि बाली खाने किराहरूको संख्या अनियन्त्रित रूपमा बढेर धानबाली सखाप पारेकाले उत्पादन घट्यो।</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Structured QA Part 2 & Diagram Analysis -->
+      <div class="c9u6-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-cat="qa">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-rose-100 text-rose-800">अभ्यास ४ (च देखि ञ) • अन्तरक्रिया तथा चित्र विश्लेषण</span>
+          <span class="text-xs text-slate-400">पृष्ठ ९५–९६</span>
+        </div>
+        <h4 class="text-base font-black text-slate-900">विस्तृत प्रश्नोत्तर तथा चित्र विश्लेषण:</h4>
+        <div class="space-y-3 text-xs md:text-sm text-slate-700">
+          <div>
+            <strong class="text-slate-900 block">(च) पोखरीको खाद्य शृङ्खला:</strong>
+            <p class="text-slate-600">फाइटोप्ल्याङ्कटन (लेउ) ➔ जुप्ल्याङ्कटन (सूक्ष्म जलचर) ➔ साना माछा ➔ ठूला माछा ➔ बकुल्ला।</p>
+          </div>
+          <div>
+            <strong class="text-slate-900 block">(झ) अन्तरक्रियाका ५ व्यावहारिक उदाहरणहरूको पहिचान:</strong>
+            <p class="text-slate-600">
+              १. मौरीले फूलको रस खानु ➔ <strong>Mutualism (+, +)</strong><br/>
+              २. माकुराले रुखमा जालो बनाउनु ➔ <strong>Commensalism (+, ०)</strong><br/>
+              ३. गौँथलीले घरमा गुँड बनाउनु ➔ <strong>Commensalism (+, ०)</strong><br/>
+              ४. उडुस, उपियाँ, लामखुट्टे ➔ <strong>बाह्य परजीविता (Ectoparasitism - `+, -`)</strong><br/>
+              ५. टेपवर्म, जुका आदि ➔ <strong>आन्तरिक परजीविता (Endoparasitism - `+, -`)</strong>
+            </p>
+          </div>
+          <div>
+            <strong class="text-slate-900 block">(ञ) पृष्ठ ९६ को चित्र विश्लेषण (इकोसिस्टम अध्ययन):</strong>
+            <p class="text-slate-600">
+              - <strong>उत्पादक:</strong> हरियो घाँस, वनस्पति र लेउ; <strong>उपभोक्ता:</strong> फट्याङ्ग्रा, भ्यागुता, सर्प, चिल, माछा।<br/>
+              - <strong>खाना बनाउने विधि:</strong> सूर्यको प्रकाशमा क्लोरोफिल, CO2 र पानी प्रयोग गरी प्रकाश संश्लेषणद्वारा।<br/>
+              - <strong>उत्पादक बढी हुनुको कारण:</strong> प्रत्येक तहमा ९०% ऊर्जा खेर जाने हुनाले माथिल्ला सबै उपभोक्ताको ऊर्जा आवश्यकता धान्न उत्पादक सबैभन्दा बढी हुनु अनिवार्य हुन्छ।
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6: Projects -->
+      <div class="c9u6-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-cat="project">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-100 text-amber-800">पाठ्यपुस्तक परियोजना कार्यहरू (Project Works)</span>
+          <span class="text-xs text-slate-400">पृष्ठ ९६</span>
+        </div>
+        <h4 class="text-base font-black text-slate-900">परियोजना कार्य १ र २ को प्रयोगात्मक प्रतिवेदन:</h4>
+        <div class="space-y-3 text-xs md:text-sm text-slate-700">
+          <div>
+            <strong class="text-amber-900 block font-bold">१. पोखरी तथा चउरको इकोसिस्टमको तुलनात्मक मोडेल चार्ट:</strong>
+            <p class="text-slate-600">चार्टपेपरको बायाँ भागमा पोखरी (फाइटोप्ल्याङ्कटन ➔ जुप्ल्याङ्कटन ➔ साना माछा ➔ ठूला माछा ➔ बकुल्ला) र दायाँ भागमा चउर (घाँस ➔ फट्याङ्ग्रा ➔ भ्यागुता ➔ सर्प ➔ चिल) का रंगीन चित्र र अजैविक अवयवहरू प्रस्तुत गरियो।</p>
+          </div>
+          <div>
+            <strong class="text-amber-900 block font-bold">२. वरपरका ५ जैविक अन्तरक्रियाहरूको स्थलगत सर्वेक्षण:</strong>
+            <p class="text-slate-600">तोरीबारीमा मौरी (Mutualism), आँपमा सुनाखरी (Commensalism), गाईमा किर्ना (Parasitism), बिरालोले मुसा समात्नु (Predation), र एउटै गमलामा बढी बिरुवा हुँदा घाम र मलको संघर्ष (Competition) को तालिका र प्रतिवेदन तयार गरियो।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TAB 3: TIERS ================= -->
+  <div id="c9u6-view-tiers" class="hidden space-y-6">
+    <div class="flex items-center justify-between border-b border-slate-200 pb-3 flex-wrap gap-2">
+      <div>
+        <h3 class="text-lg font-black text-slate-900">तीन तहका स्तरीकृत नमुना प्रश्नोत्तरहरू</h3>
+        <p class="text-xs text-slate-500">ज्ञानात्मक (K), बोधात्मक (U) र उच्च दक्षता तथा प्रयोगात्मक (HA) का १६ स्तरीकृत प्रश्नहरू</p>
+      </div>
+      <!-- Filter Pills -->
+      <div class="flex items-center gap-1.5">
+        <button onclick="filterC9U6Tiers('all')" id="c9u6-tierbtn-all" class="px-3 py-1.5 rounded-xl text-xs font-black transition bg-emerald-600 text-white shadow-sm cursor-pointer whitespace-nowrap">सबै तहहरू (१६)</button>
+        <button onclick="filterC9U6Tiers('k')" id="c9u6-tierbtn-k" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">ज्ञानात्मक (K - ५)</button>
+        <button onclick="filterC9U6Tiers('u')" id="c9u6-tierbtn-u" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">बोधात्मक (U - ६)</button>
+        <button onclick="filterC9U6Tiers('ha')" id="c9u6-tierbtn-ha" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">उच्च दक्षता (HA - ५)</button>
+      </div>
+    </div>
+
+    <!-- Tier Cards Grid -->
+    <div id="c9u6-tier-cards" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- K1 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="k">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800">K-1 • ज्ञानात्मक</span>
+          <span class="text-xs text-slate-400">१ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">पारिस्थिक पद्धति (Ecosystem) भनेको के हो ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          कुनै निश्चित भूगोलका जैविक अवयवहरू (सजीव प्राणी) र अजैविक अवयवहरू (निर्जीव भौतिक वातावरण) बीच हुने अन्तरक्रिया तथा ऊर्जा र पोषक तत्वको चक्रीय प्रवाहबाट सञ्चालित गतिशील प्रणालीलाई <strong>पारिस्थिक पद्धति (Ecosystem)</strong> भनिन्छ।
+        </p>
+      </div>
+
+      <!-- K2 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="k">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800">K-2 • ज्ञानात्मक</span>
+          <span class="text-xs text-slate-400">१ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">लिन्डम्यानको १०% ऊर्जा स्थानान्तरण नियमको कथन लेख्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          खाद्य शृङ्खलामा एउटा पोषण तहबाट अर्को माथिल्लो पोषण तहमा खाना सर्दा अघिल्लो तहको कुल सञ्चित ऊर्जाको <strong>केवल १० प्रतिशत ऊर्जा मात्र</strong> माथिल्लो तहमा सञ्चित हुन्छ र बाँकी ९० प्रतिशत ऊर्जा उपापचय तथा तापका रूपमा खेर जान्छ।
+        </p>
+      </div>
+
+      <!-- K3 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="k">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800">K-3 • ज्ञानात्मक</span>
+          <span class="text-xs text-slate-400">१ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">पारस्परिकता (Mutualism) भनेको के हो ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          दुई फरक प्रजातिका सजीवहरू सँगै मिलेर बस्दा दुवै जीवहरू प्रत्यक्ष रूपमा लाभान्वित हुने सकारात्मक जैविक अन्तरक्रियालाई <strong>पारस्परिकता (Mutualism)</strong> भनिन्छ। उदाहरण: लेउ र ढुसी मिलेर बनेको लाइकेन।
+        </p>
+      </div>
+
+      <!-- K4 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="k">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800">K-4 • ज्ञानात्मक</span>
+          <span class="text-xs text-slate-400">१ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">पोषण तह (Trophic level) भनेको के हो र पहिलो पोषण तह कुन हो ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          खाद्य शृङ्खलामा जीवहरूले आहारा र ऊर्जा प्राप्त गर्ने निश्चित स्थान वा चरणलाई <strong>पोषण तह</strong> भनिन्छ। पहिलो पोषण तह (T1) <strong>हरिया बोटबिरुवाहरू (उत्पादक)</strong> हुन्।
+        </p>
+      </div>
+
+      <!-- K5 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="k">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800">K-5 • ज्ञानात्मक</span>
+          <span class="text-xs text-slate-400">१ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">परजीवितामा परजीवी र पोषकबीच कस्तो सम्बन्ध हुन्छ ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          परजीवी (Parasite) ले पोषक (Host) को शरीरबाट पोषण र आश्रय खोसी प्रत्यक्ष फाइदा (+ve) लिन्छ भने पोषक जीव कमजोर, रोगी र पीडित भई हानि (-ve) व्यहोर्दछ।
+        </p>
+      </div>
+
+      <!-- U1 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="u">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">U-1 • बोधात्मक</span>
+          <span class="text-xs text-slate-400">२ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">खाद्य शृङ्खला र खाद्य जालबीच २ ओटा कार्यगत भिन्नता लेख्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          १. खाद्य शृङ्खला उत्पादकबाट उपभोक्तासम्म खाना सर्ने एकल रेखीय क्रम हो, जबकि खाद्य जाल धेरै शृङ्खलाहरू जोडिएको जटिल सञ्जाल हो।<br/>
+          २. खाद्य शृङ्खलामा एउटा जीव हराउँदा शृङ्खला टुट्छ, तर खाद्य जालमा वैकल्पिक आहाराका प्रशस्त विकल्प हुने हुनाले इकोसिस्टम स्थिर रहन्छ।
+        </p>
+      </div>
+
+      <!-- U2 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="u">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">U-2 • बोधात्मक</span>
+          <span class="text-xs text-slate-400">२ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">ऊर्जाको पिरामिड (Pyramid of Energy) सधैँ ठाडो किन हुन्छ ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          तल्लो तह (उत्पादक) बाट माथिल्लो तह (उपभोक्ता) मा जाँदा प्रत्येक तहमा ९०% ऊर्जा श्वासप्रश्वास र तापका रूपमा खेर जान्छ। माथिल्लो तहमा ऊर्जा सधैँ घट्दै मात्र जाने भएकाले ऊर्जाको पिरामिड प्रकृतिका सबै इकोसिस्टममा सदैव ठाडो (Always Upright) हुन्छ।
+        </p>
+      </div>
+
+      <!-- U3 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="u">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">U-3 • बोधात्मक</span>
+          <span class="text-xs text-slate-400">२ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">सहभोजिता (Commensalism) र पारस्परिकता (Mutualism) बीच तुलना गर्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          सहभोजितामा एउटा जीव मात्र लाभान्वित हुन्छ र अर्कोलाई कुनै असर पर्दैन (+, ०) जस्तै रुखमा उम्रने सुनाखरी। तर पारस्परिकतामा दुवै जीवहरूलाई अनिवार्य र प्रत्यक्ष फाइदा हुन्छ (+, +) जस्तै फूल र मौरी।
+        </p>
+      </div>
+
+      <!-- U4 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="u">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">U-4 • बोधात्मक</span>
+          <span class="text-xs text-slate-400">२ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">खेतको इकोसिस्टममा किसानले सबै मुसा मार्दा धान उत्पादन किन घट्यो ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          मुसाले धानका साथै धानबाली नष्ट गर्ने हानिकारक किरा, फट्याङ्ग्रा र लार्भालाई पनि खाएर नियन्त्रण गर्थ्यो। सबै मुसा मारिएपछि बाली खाने किराहरूको संख्या अनियन्त्रित बढेर धानको बोट र बाला सखाप पारेकाले धान उत्पादन घट्यो।
+        </p>
+      </div>
+
+      <!-- U5 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="u">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">U-5 • बोधात्मक</span>
+          <span class="text-xs text-slate-400">२ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">पोखरीको इकोसिस्टममा विच्छेदक (Decomposers) नहुने हो भने के हुन्छ ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          मृत जलचर र लेउ कुहिन नपाई वर्षौंसम्म थुप्रिएर पोखरी फोहोरको डङ्गुर बन्नेछ। साथै ती मृत अवशेषमा बाँधिएका नाइट्रोजन, फस्फोरस खनिज पानीमा पुनः चक्रण हुन नसकी लेउले नयाँ खाना बनाउन पाउँदैन र सम्पूर्ण जलीय जीवन समाप्त हुन्छ।
+        </p>
+      </div>
+
+      <!-- U6 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="u">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">U-6 • बोधात्मक</span>
+          <span class="text-xs text-slate-400">२ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">सिकारी जीव (Predator) ले पारिस्थिक सन्तुलन कायम राख्न कसरी मद्दत गर्छ ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          सिकारी जीवले शाकाहारी जीवहरूको संख्यालाई अनियन्त्रित बढ्न दिँदैन। यदि सिकारी नहुने हो भने शाकाहारी बढेर घाँस र वनस्पति सखाप भई भोकमरी र भू-क्षय निम्तिन्छ। अतः सिकारीले सिकारको संख्या सीमाभित्र राखी सन्तुलन मिलाउँछ।
+        </p>
+      </div>
+
+      <!-- HA1 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="ha">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">HA-1 • उच्च दक्षता</span>
+          <span class="text-xs text-slate-400">४ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">१०,००० जुल सौर्य ऊर्जाबाट सुरु भएको खाद्य शृङ्खलामा पोषण तहअनुसार ऊर्जाको क्षयीकरण विश्लेषण गर्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          सूर्यको १०,००० J बाट उत्पादक (घाँस) ले १% सोसी १०० J बनाउँछ। लिन्डम्यानको १०% नियमअनुसार प्राथमिक उपभोक्ता (फट्याङ्ग्रा) मा १० J, द्वितीयक (भ्यागुता) मा १ J, र तृतीयक (सर्प) मा ०.१ J मात्र पुग्छ। प्रत्येक तहमा ९०% ऊर्जा खेर जाने हुनाले खाद्य शृङ्खला ४-५ तहभन्दा लामो हुन सक्दैन।
+        </p>
+      </div>
+
+      <!-- HA2 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="ha">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">HA-2 • उच्च दक्षता</span>
+          <span class="text-xs text-slate-400">४ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">पोखरीमा कीटनाशक विषादी (DDT) मिसिँदा बायोम्याग्निफिकेसनले सर्वोच्च उपभोक्तामा पार्ने संकट विश्लेषण गर्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          गैर-विघटनशील DDT पानीबाट फाइटोप्ल्याङ्कटन (०.०४ ppm) ➔ जुप्ल्याङ्कटन (०.२ ppm) ➔ साना माछा (२ ppm) ➔ ठूला माछा (२० ppm) ➔ माछा खाने बकुल्ला/चिल (२५ ppm) मा सञ्चित हुन्छ। उच्च विषादीले चराको अण्डाको बोक्रा पातलो भई ओथारो बस्दा फुट्ने र प्रजाति नै लोप हुने संकट निम्तिन्छ।
+        </p>
+      </div>
+
+      <!-- HA3 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="ha">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">HA-3 • उच्च दक्षता</span>
+          <span class="text-xs text-slate-400">४ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">जंगलबाट बाघ लोप हुँदा त्यसले वनस्पति र जलस्रोतसम्म पार्ने ट्रॉफिक क्यास्केड (Trophic Cascade) विश्लेषण गर्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          बाघ नहुँदा हरिण अनियन्त्रित बढेर जंगलका कलिला रूख र बुट्यान सखाप पार्छन्। वनस्पति नष्ट हुँदा वर्षाले माटो बगाएर खोलामा हिलो थुप्रिन्छ (Siltation), घाम छेकिएर जलीय लेउ र माछा मर्छन्। यसरी सर्वोच्च सिकारीको संरक्षणले सम्पूर्ण जल, जमिन र जंगलको रक्षा गर्दछ।
+        </p>
+      </div>
+
+      <!-- HA4 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="ha">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">HA-4 • उच्च दक्षता</span>
+          <span class="text-xs text-slate-400">४ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">लाइकेन र राइजोबियमको पारस्परिकताले माटो निर्माण र नाइट्रोजन चक्रमा पुर्‍याउने योगदान प्रस्ट पार्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          नाङ्गो चट्टानमा उम्रने लाइकेनको ढुसीले जैविक अम्ल निकाली चट्टान क्षयीकरण गरी पहिलो पटक मलिलो माटो बनाउँछ। कोसेबालीको जरामा रहने राइजोबियम ब्याक्टेरियाले हावाको निष्क्रिय नाइट्रोजनलाई घुलित नाइट्रेटमा जैविक स्थिरीकरण गरी बिरुवालाई प्रोटिन निर्माणमा सक्षम बनाउँछ।
+        </p>
+      </div>
+
+      <!-- HA5 -->
+      <div class="c9u6-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="ha">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">HA-5 • उच्च दक्षता</span>
+          <span class="text-xs text-slate-400">४ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">मिचाहा प्रजाति (जस्तै जलकुम्भी वा वनमारा) ले स्थानीय इकोसिस्टम विस्थापन गर्ने कार्यविधि र रोकथामका उपाय प्रस्तुत गर्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          प्राकृतिक सिकारी नभएकाले जलकुम्भीले पोखरीको सतह बाक्लो ढाकी घाम र अक्सिजन छेकेर सबै जलचर मार्दछ (Eutrophication)। वनमाराले रैथाने घाँसलाई प्रकाश लुट्छ। रोकथामका लागि फूल फुल्नुअगावै उखेलेर कम्पोस्ट मल बनाउने, पात खाने खपटे किराबाट जैविक नियन्त्रण गर्ने र रैथाने बिरुवा रोप्नुपर्छ।
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TAB 4: QUIZ ================= -->
+  <div id="c9u6-view-quiz" class="hidden space-y-6">
+    <div class="flex items-center justify-between border-b border-slate-200 pb-3 flex-wrap gap-2">
+      <div>
+        <h3 class="text-lg font-black text-slate-900">स्वमूल्याङ्कन अनलाइन क्विज (Self-Assessment Quiz)</h3>
+        <p class="text-xs text-slate-500">पारिस्थिक पद्धति, खाद्य सम्बन्ध र जैविक अन्तरक्रिया सम्बन्धी १० वस्तुगत प्रश्नहरू</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-xs font-bold px-3 py-1.5 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200">
+          प्राप्ताङ्क: <strong id="c9u6-quiz-score-badge" class="text-emerald-900 text-sm">० / १०</strong>
+        </span>
+        <button onclick="resetC9U6Quiz()" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 transition cursor-pointer">
+          पुनः सुरु गर्नुहोस् (Reset)
+        </button>
+      </div>
+    </div>
+
+    <!-- Quiz Questions Container -->
+    <div id="c9u6-quiz-container" class="space-y-4">
+      <!-- Rendered dynamically by JS renderC9U6Quiz() -->
+    </div>
+  </div>
+</div>
