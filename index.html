@@ -875,7 +875,7 @@ main {
 <body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col">
 
   <!-- Header -->
-  <header class="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 text-white shadow-lg sticky top-0 z-50">
+  <header id="main-header" class="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 text-white shadow-lg sticky top-0 z-50" style="transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);">
     <div class="max-w-7xl mx-auto px-4 py-3.5 flex flex-wrap items-center justify-between gap-4">
       <div class="flex flex-wrap items-center gap-3">
         <!-- Hamburger: mobile only -->
@@ -41477,6 +41477,38 @@ if (document.readyState === 'loading') {
     /* Expose for inline use */
     window.toggleMobileSidebar = toggleMobileSidebar;
     window.closeMobileSidebar = closeMobileSidebar;
+
+    /* === HIDE HEADER ON SCROLL DOWN, SHOW ON SCROLL UP === */
+    (function() {
+      var header = document.getElementById('main-header');
+      if (!header) return;
+      var lastY = 0;
+      var ticking = false;
+      var hidden = false;
+      var threshold = 60; // px scrolled before hiding
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          requestAnimationFrame(function() {
+            var y = window.scrollY;
+            if (y < threshold) {
+              // Near top — always show
+              if (hidden) { header.style.transform = 'translateY(0)'; hidden = false; }
+            } else if (y > lastY + 8 && !hidden) {
+              // Scrolling down — hide
+              header.style.transform = 'translateY(-110%)';
+              hidden = true;
+            } else if (y < lastY - 4 && hidden) {
+              // Scrolling up — show
+              header.style.transform = 'translateY(0)';
+              hidden = false;
+            }
+            lastY = y;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
   </script>
 
 </body>
