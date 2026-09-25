@@ -21093,7 +21093,7 @@ eq 6$</div>
     </div>
 
     <!-- Card 3: Metric Prefixes & Scientific Notation -->
-    <div class="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-3xl p-6 shadow-sm space-y-3">
+    <div class="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-3xl p-5 md:p-6 shadow-sm space-y-3">
       <div class="flex items-center justify-between border-b border-amber-200/60 pb-3">
         <h3 class="font-black text-amber-900 text-base md:text-lg flex items-center gap-2">
           <span>📐 ३. वैज्ञानिक सङ्केतन र मेट्रिक उपसर्ग</span>
@@ -21103,18 +21103,62 @@ eq 6$</div>
       <p class="text-xs md:text-sm text-slate-700 leading-relaxed">
         अत्यन्त ठूला वा सूक्ष्म सङ्ख्याहरूलाई छोटकरी र मानक रूपमा लेख्न <strong>वैज्ञानिक सङ्केतन</strong> प्रयोग गरिन्छ।
       </p>
-      <div class="bg-white/90 p-3 rounded-2xl border border-amber-100 text-xs space-y-1.5">
-        <div class="flex justify-between items-center text-slate-800 font-bold border-b border-slate-100 pb-1">
-          <span>मानक ढाँचा:</span>
-          <span class="text-amber-700 font-mono text-sm">M × 10<sup>n</sup> (जहाँ १ ≤ M &lt; १०)</span>
+
+      <!-- Standard Format & Shift Rules -->
+      <div class="bg-white/95 p-3 rounded-2xl border border-amber-100 text-xs space-y-2">
+        <div class="flex flex-wrap justify-between items-center text-slate-800 font-bold border-b border-slate-100 pb-1.5 gap-1">
+          <span class="text-slate-600">मानक ढाँचा:</span>
+          <span class="text-amber-800 font-mono font-black text-sm bg-amber-100/70 px-2 py-0.5 rounded-md">M × 10<sup>n</sup></span>
         </div>
-        <div class="grid grid-cols-2 gap-1.5 text-[11px] text-slate-600 pt-1">
-          <div>• बायाँ सार्दा: घाताङ्क धनात्मक (+n)</div>
-          <div>• दायाँ सार्दा: घाताङ्क ऋणात्मक (-n)</div>
-          <div>• Giga (G) = 10<sup>9</sup> (१ अर्ब)</div>
-          <div>• Mega (M) = 10<sup>6</sup> (१० लाख)</div>
-          <div>• Micro (µ) = 10<sup>-6</sup> (दश लाखौं)</div>
-          <div>• Nano (n) = 10<sup>-9</sup> (अर्बौं भाग)</div>
+        <div class="text-[11px] text-slate-600">
+          जहाँ <span class="font-semibold text-slate-800">१ ≤ M &lt; १०</span> (आधार अङ्क) र <span class="font-semibold text-slate-800">n</span> पूर्ण सङ्ख्या हो।
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
+          <div class="flex items-center gap-1.5 bg-amber-50/70 px-2.5 py-1.5 rounded-lg border border-amber-200/50 text-[11px]">
+            <span class="text-emerald-700 font-bold">👈 बायाँ सार्दा:</span>
+            <span class="text-slate-700">घाताङ्क <strong>धनात्मक (+n)</strong></span>
+          </div>
+          <div class="flex items-center gap-1.5 bg-orange-50/70 px-2.5 py-1.5 rounded-lg border border-orange-200/50 text-[11px]">
+            <span class="text-blue-700 font-bold">👉 दायाँ सार्दा:</span>
+            <span class="text-slate-700">घाताङ्क <strong>ऋणात्मक (-n)</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metric Prefixes Mini-Cards -->
+      <div class="space-y-1.5">
+        <div class="text-[11px] font-bold text-amber-950 flex items-center justify-between">
+          <span>प्रमुख मेट्रिक उपसर्गहरू (Metric Prefixes):</span>
+        </div>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <div class="bg-white/95 p-2.5 rounded-xl border border-amber-100 shadow-xs flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-slate-800">Giga (गिगा)</span>
+              <span class="font-mono font-black text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded text-[11px]">G = 10<sup>9</sup></span>
+            </div>
+            <span class="text-[10px] text-slate-500 mt-1">१ अर्ब गुणा (१०⁹)</span>
+          </div>
+          <div class="bg-white/95 p-2.5 rounded-xl border border-amber-100 shadow-xs flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-slate-800">Mega (मेगा)</span>
+              <span class="font-mono font-black text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded text-[11px]">M = 10<sup>6</sup></span>
+            </div>
+            <span class="text-[10px] text-slate-500 mt-1">१० लाख गुणा (१०⁶)</span>
+          </div>
+          <div class="bg-white/95 p-2.5 rounded-xl border border-amber-100 shadow-xs flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-slate-800">Micro (माइक्रो)</span>
+              <span class="font-mono font-black text-blue-700 bg-blue-50 px-1.5 py-0.5 rounded text-[11px]">µ = 10<sup>-6</sup></span>
+            </div>
+            <span class="text-[10px] text-slate-500 mt-1">दश लाखौं भाग (१०⁻⁶)</span>
+          </div>
+          <div class="bg-white/95 p-2.5 rounded-xl border border-amber-100 shadow-xs flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-slate-800">Nano (नानो)</span>
+              <span class="font-mono font-black text-blue-700 bg-blue-50 px-1.5 py-0.5 rounded text-[11px]">n = 10<sup>-9</sup></span>
+            </div>
+            <span class="text-[10px] text-slate-500 mt-1">१ अर्बौं भाग (१०⁻⁹)</span>
+          </div>
         </div>
       </div>
     </div>
