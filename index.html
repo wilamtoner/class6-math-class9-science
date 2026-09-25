@@ -21098,7 +21098,7 @@ eq 6$</div>
         <h3 class="font-black text-amber-900 text-base md:text-lg flex items-center gap-2">
           <span>📐 ३. वैज्ञानिक सङ्केतन र मेट्रिक उपसर्ग</span>
         </h3>
-        <span class="text-xs bg-amber-600 text-white font-bold px-2.5 py-1 rounded-full">M × 10ⁿ</span>
+        <span class="text-xs bg-amber-600 text-white font-bold px-2.5 py-1 rounded-full">M × 10<sup>n</sup></span>
       </div>
       <p class="text-xs md:text-sm text-slate-700 leading-relaxed">
         अत्यन्त ठूला वा सूक्ष्म सङ्ख्याहरूलाई छोटकरी र मानक रूपमा लेख्न <strong>वैज्ञानिक सङ्केतन</strong> प्रयोग गरिन्छ।
@@ -21106,15 +21106,15 @@ eq 6$</div>
       <div class="bg-white/90 p-3 rounded-2xl border border-amber-100 text-xs space-y-1.5">
         <div class="flex justify-between items-center text-slate-800 font-bold border-b border-slate-100 pb-1">
           <span>मानक ढाँचा:</span>
-          <span class="text-amber-700 font-mono text-sm">M × 10ⁿ (जहाँ १ ≤ M &lt; १०)</span>
+          <span class="text-amber-700 font-mono text-sm">M × 10<sup>n</sup> (जहाँ १ ≤ M &lt; १०)</span>
         </div>
         <div class="grid grid-cols-2 gap-1.5 text-[11px] text-slate-600 pt-1">
-          <div>• बायाँ सार्दा: घाताङ्क धनात्मक ($+n$)</div>
-          <div>• दायाँ सार्दा: घाताङ्क ऋणात्मक ($-n$)</div>
-          <div>• Giga ($\text{G}$) $= 10^9$ (१ अर्ब)</div>
-          <div>• Mega ($\text{M}$) $= 10^6$ (१० लाख)</div>
-          <div>• Micro ($\mu$) $= 10^{-6}$ (दश लाखौं)</div>
-          <div>• Nano ($\text{n}$) $= 10^{-9}$ (अर्बौं भाग)</div>
+          <div>• बायाँ सार्दा: घाताङ्क धनात्मक (+n)</div>
+          <div>• दायाँ सार्दा: घाताङ्क ऋणात्मक (-n)</div>
+          <div>• Giga (G) = 10<sup>9</sup> (१ अर्ब)</div>
+          <div>• Mega (M) = 10<sup>6</sup> (१० लाख)</div>
+          <div>• Micro (µ) = 10<sup>-6</sup> (दश लाखौं)</div>
+          <div>• Nano (n) = 10<sup>-9</sup> (अर्बौं भाग)</div>
         </div>
       </div>
     </div>
@@ -21196,7 +21196,7 @@ eq 6$</div>
                 <button onclick="setC9U1Preset('1230000')" class="px-2.5 py-1.5 rounded-lg text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-200 font-mono">1230000</button>
                 <button onclick="setC9U1Preset('0.00042')" class="px-2.5 py-1.5 rounded-lg text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-200 font-mono">0.00042</button>
                 <button onclick="setC9U1Preset('0.00000001')" class="px-2.5 py-1.5 rounded-lg text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-200 font-mono">0.00000001</button>
-                <button onclick="setC9U1Preset('300000000')" class="px-2.5 py-1.5 rounded-lg text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-200 font-mono">प्रकाशको गति (3×10⁸)</button>
+                <button onclick="setC9U1Preset('300000000')" class="px-2.5 py-1.5 rounded-lg text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-200 font-mono">प्रकाशको गति (3×10<sup>8</sup>)</button>
                 <button onclick="setC9U1Preset('0.000024')" class="px-2.5 py-1.5 rounded-lg text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-200 font-mono">0.000024 (MCQ घ)</button>
               </div>
             </div>
@@ -21212,12 +21212,12 @@ eq 6$</div>
             </div>
 
             <div class="text-center py-4 bg-slate-950/70 rounded-2xl border border-slate-800">
-              <div class="text-xs text-slate-400 mb-1">M × 10ⁿ रूप:</div>
+              <div class="text-xs text-slate-400 mb-1">M × 10<sup>n</sup> रूप:</div>
               <div id="c9u1-res-notation" class="text-2xl md:text-3xl font-black text-cyan-300 font-mono tracking-wide">
-                १.२३ × १०⁶
+                १.२३ × १०<sup>६</sup>
               </div>
               <div id="c9u1-res-eng" class="text-xs text-slate-400 mt-2 font-mono">
-                1.23 × 10^6
+                1.23 × 10<sup>6</sup>
               </div>
             </div>
 
@@ -28084,20 +28084,21 @@ eq 6$</div>
            .replace(/\\quad/g, " &nbsp; ")
            .replace(/\\circ/g, "°")
            .replace(/\\%/g, "%")
+           .replace(/\\mu/g, "µ")
            .replace(/\\text\{([^{}]+)\}/g, '<span style="font-style:normal;">$1</span>')
-           .replace(/\^([0-9a-zA-Z]+)/g, "<sup>$1</sup>")
            .replace(/\^\{([^{}]+)\}/g, "<sup>$1</sup>")
-           .replace(/_([0-9a-zA-Z]+)/g, "<sub>$1</sub>")
+           .replace(/\^([0-9a-zA-Z+-]+)/g, "<sup>$1</sup>")
            .replace(/_\{([^{}]+)\}/g, "<sub>$1</sub>")
+           .replace(/_([0-9a-zA-Z+-]+)/g, "<sub>$1</sub>")
            .replace(/\\sqrt\{([^{}]+)\}/g, "√($1)");
       return s;
     }
 
     function renderOfflineMath(container) {
       const root = container || document.body;
-      if (!root) return;
-
-      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+      if (!root || !document.createTreeWalker) return;
+      const showText = (typeof NodeFilter !== 'undefined' && NodeFilter.SHOW_TEXT) ? NodeFilter.SHOW_TEXT : 4;
+      const walker = document.createTreeWalker(root, showText, null, false);
       const nodes = [];
       let n;
       while ((n = walker.nextNode())) {
@@ -28141,13 +28142,29 @@ eq 6$</div>
 
     // Typeset active view lazily on demand
     let mjLoaded = false;
-    function typesetCurrentActive() {
-      const activeEl = document.querySelector('[id^="chapter-view-"]:not(.hidden), [id^="c9-unit-"]:not(.hidden)') || document.getElementById('view-concepts') || document.getElementById('chapter-view-1');
+    function typesetElement(el) {
+      if (!el) return;
       if (window.MathJax && window.MathJax.Hub) {
-        if (activeEl) window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub, activeEl]);
+        window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub, el]);
       } else if (window.renderOfflineMath) {
-        if (activeEl) window.renderOfflineMath(activeEl);
+        window.renderOfflineMath(el);
       }
+    }
+    window.typesetElement = typesetElement;
+
+    function typesetCurrentActive() {
+      let activeEl = null;
+      const grade9Container = document.getElementById('grade9-container');
+      if (grade9Container && !grade9Container.classList.contains('hidden')) {
+        activeEl = document.querySelector('[id^="c9-view-"]:not(.hidden)');
+      }
+      if (!activeEl) {
+        activeEl = document.querySelector('[id^="chapter-view-"]:not(.hidden)') || 
+                   document.querySelector('[id^="c9-view-"]:not(.hidden)') || 
+                   document.getElementById('view-concepts') || 
+                   document.getElementById('chapter-view-1');
+      }
+      typesetElement(activeEl);
     }
 
     if (window.MathJax && window.MathJax.Hub) {
@@ -28161,7 +28178,7 @@ eq 6$</div>
         console.log('[Offline Math] Activating pure-CSS LaTeX offline math renderer for active view...');
         typesetCurrentActive();
       }
-    }, 1500);
+    }, 1200);
 
     window.typesetCurrentActive = typesetCurrentActive;
     window.renderOfflineMath = renderOfflineMath;
@@ -35134,11 +35151,22 @@ function switchGrade9Unit(unitNum) {
     }
   }
 
-  const url = new URL(window.location);
-  url.searchParams.set('grade', '9');
-  url.searchParams.set('unit', unitNum);
-  url.searchParams.delete('ch');
-  try { window.history.replaceState({}, '', url); } catch(e) {}
+  try {
+    if (window.location && window.location.href) {
+      const url = new URL(window.location.href);
+      url.searchParams.set('grade', '9');
+      url.searchParams.set('unit', unitNum);
+      url.searchParams.delete('ch');
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState({}, '', url);
+      }
+    }
+  } catch(e) {}
+
+  const activeUnitEl = document.getElementById('c9-view-' + unitNum);
+  if (activeUnitEl && typeof typesetElement === 'function') {
+    typesetElement(activeUnitEl);
+  }
 }
 
 // ================= CLASS 9 UNIT 1: SCIENTIFIC STUDY SCRIPT =================
@@ -35164,6 +35192,12 @@ function setTabC9U1(tab) {
       }
     }
   });
+
+  const activeTabEl = document.getElementById(`c9u1-view-${tab}`);
+  if (activeTabEl && typeof typesetElement === 'function') {
+    typesetElement(activeTabEl);
+  }
+
   if (tab === 'quiz') {
     renderC9U1Quiz();
   }
@@ -35236,8 +35270,8 @@ function calculateScientificNotation() {
   const resShift = document.getElementById('c9u1-res-shift');
   const resSig = document.getElementById('c9u1-res-sig');
 
-  if (resNotation) resNotation.textContent = `${nepM} × १०^${nepSign}${nepN}`;
-  if (resEng) resEng.textContent = `${mStr} × 10^(${signSymbol}${Math.abs(n)})`;
+  if (resNotation) resNotation.innerHTML = `${nepM} × १०<sup class="text-xl md:text-2xl text-cyan-200">${nepSign}${nepN}</sup>`;
+  if (resEng) resEng.innerHTML = `${mStr} × 10<sup class="text-xs text-slate-300">${signSymbol}${Math.abs(n)}</sup>`;
   if (resM) resM.textContent = `${mStr} (${nepM})`;
   if (resN) resN.textContent = (n >= 0 ? `+${n}` : `${n}`) + ` (${toNepaliNumC9(n)})`;
 
@@ -35563,6 +35597,10 @@ function renderC9U1Quiz() {
   if (scoreBadge) {
     scoreBadge.textContent = `${toNepaliNumC9(score)} / १०`;
   }
+
+  if (typeof typesetElement === 'function') {
+    typesetElement(container);
+  }
 }
 
 function checkC9U1Quiz(qIdx, optIdx) {
@@ -35611,6 +35649,11 @@ function setTabC9U2(tab) {
       }
     }
   });
+
+  const activeTabEl = document.getElementById(`c9u2-view-${tab}`);
+  if (activeTabEl && typeof typesetElement === 'function') {
+    typesetElement(activeTabEl);
+  }
 
   if (tab === 'quiz') {
     renderC9U2Quiz();
@@ -36645,6 +36688,10 @@ function renderC9U2Quiz() {
   }).join('');
 
   updateC9U2QuizScore();
+
+  if (typeof typesetElement === 'function') {
+    typesetElement(container);
+  }
 }
 
 function selectC9U2QuizOption(qIdx, optIdx) {
@@ -36712,6 +36759,11 @@ function setTabC9U3(tab) {
       }
     }
   });
+
+  const activeTabEl = document.getElementById(`c9u3-view-${tab}`);
+  if (activeTabEl && typeof typesetElement === 'function') {
+    typesetElement(activeTabEl);
+  }
 
   if (tab === 'quiz') {
     renderC9U3Quiz();
@@ -37402,6 +37454,10 @@ function renderC9U3Quiz() {
   }).join('');
 
   updateC9U3QuizScore();
+
+  if (typeof typesetElement === 'function') {
+    typesetElement(container);
+  }
 }
 
 function selectC9U3QuizOption(qIdx, optIdx) {
@@ -37539,6 +37595,11 @@ function setTabC9U4(tab) {
       }
     }
   });
+
+  const activeTabEl = document.getElementById(`c9u4-view-${tab}`);
+  if (activeTabEl && typeof typesetElement === 'function') {
+    typesetElement(activeTabEl);
+  }
 
   if (tab === 'quiz') {
     renderC9U4Quiz();
@@ -38857,6 +38918,10 @@ function renderC9U4Quiz() {
   }).join('');
 
   updateC9U4QuizScore();
+
+  if (typeof typesetElement === 'function') {
+    typesetElement(container);
+  }
 }
 
 function selectC9U4QuizOption(qIdx, optIdx) {
@@ -38898,11 +38963,13 @@ function initC9U4() {
   renderC9U4Quiz();
 }
 
-// Ensure startup trigger
+// Ensure startup trigger if active
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initC9U4);
-} else {
-  initC9U4();
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof currentGrade !== 'undefined' && currentGrade === 9 && typeof activeUnit9 !== 'undefined' && activeUnit9 === 4) {
+      initC9U4();
+    }
+  });
 }
 
   
@@ -39030,6 +39097,11 @@ function setTabC9U5(tab) {
       }
     }
   });
+
+  const activeTabEl = document.getElementById(`c9u5-view-${tab}`);
+  if (activeTabEl && typeof typesetElement === 'function') {
+    typesetElement(activeTabEl);
+  }
 
   if (tab === 'concepts') {
     renderCurrentC9U5Lab();
@@ -40717,6 +40789,10 @@ function renderC9U5Quiz() {
   if (scoreBadge) {
     scoreBadge.textContent = `${toNepaliNumC9U5(score)} / १०`;
   }
+
+  if (typeof typesetElement === 'function') {
+    typesetElement(container);
+  }
 }
 
 function selectC9U5QuizOption(qIdx, optIdx) {
@@ -40751,13 +40827,13 @@ function initC9U5() {
 
 
 
-// Ensure startup trigger
+// Ensure startup trigger if active
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
-    if (typeof initC9U5 === 'function') initC9U5();
+    if (typeof currentGrade !== 'undefined' && currentGrade === 9 && typeof activeUnit9 !== 'undefined' && activeUnit9 === 5 && typeof initC9U5 === 'function') {
+      initC9U5();
+    }
   });
-} else {
-  if (typeof initC9U5 === 'function') initC9U5();
 }
 
 

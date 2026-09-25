@@ -104,6 +104,7 @@ const server = http.createServer((req, res) => {
         return serveFile(path.join(PUBLIC_DIR, 'index.html'), 'index.html', req, res);
       }
       res.statusCode = 404;
+      res.setHeader('Content-Type', 'text/plain; charset=utf-8');
       res.end('Not Found');
       return;
     }
@@ -169,7 +170,11 @@ function serveFile(filePath, relPath, req, res, stats) {
   rawStream.pipe(res);
 }
 
-server.listen(PORT, '0.0.0.0', () => {
-  console.log(`[🚀 Server Ready] Blazing-fast server running at http://localhost:${PORT}`);
-  console.log(`[⚡ Features] Brotli + Gzip compression, ETag 304, immutable asset caching active`);
-});
+if (require.main === module) {
+  server.listen(PORT, '0.0.0.0', () => {
+    console.log(`[🚀 Server Ready] Blazing-fast server running at http://localhost:${PORT}`);
+    console.log(`[⚡ Features] Brotli + Gzip compression, ETag 304, immutable asset caching active`);
+  });
+}
+
+module.exports = server;
