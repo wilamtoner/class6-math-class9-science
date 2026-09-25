@@ -787,6 +787,89 @@ main {
 .bg-gradient-to-r.from-teal-50.to-emerald-50 { background-image: linear-gradient(to right, #f0fdfa, #ecfdf5) !important; }
 .bg-gradient-to-r.from-teal-50.via-cyan-50.to-blue-50 { background-image: linear-gradient(to right, #f0fdfa, #ecfeff, #eff6ff) !important; }
 .bg-gradient-to-r.from-violet-50.via-purple-50.to-fuchsia-50 { background-image: linear-gradient(to right, #f5f3ff, #faf5ff, #fdf4ff) !important; }
+
+/* === MOBILE WEBAPP ENHANCEMENTS === */
+.mobile-menu-btn { display: none !important; }
+@media (max-width: 767px) {
+  .mobile-menu-btn { display: flex !important; }
+  .mobile-sidebar-drawer {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100dvh !important;
+    width: 85vw !important;
+    max-width: 360px !important;
+    border-radius: 0 1.5rem 1.5rem 0 !important;
+    z-index: 60 !important;
+    transform: translateX(-110%) !important;
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s !important;
+    overflow-y: auto !important;
+    padding-top: env(safe-area-inset-top, 1rem) !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+  }
+  .mobile-sidebar-drawer.drawer-open {
+    transform: translateX(0) !important;
+    box-shadow: 0 0 80px rgba(0,0,0,0.35) !important;
+  }
+  .main-content-area {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+}
+.drawer-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15,23,42,0.55);
+  z-index: 55;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  cursor: pointer;
+}
+.drawer-overlay.active { display: block; }
+.bottom-nav-bar { display: none; }
+@media (max-width: 767px) {
+  .bottom-nav-bar {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(58px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid #e2e8f0;
+    box-shadow: 0 -4px 24px rgba(0,0,0,0.09);
+    z-index: 45;
+  }
+  .bottom-nav-bar .bnav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    flex: 1;
+    padding: 6px 2px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #64748b;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.15s, transform 0.1s;
+    -webkit-tap-highlight-color: transparent;
+    font-family: inherit;
+    border-top: 2px solid transparent;
+  }
+  .bottom-nav-bar .bnav-btn .bnav-icon { font-size: 20px; line-height: 1; }
+  .bottom-nav-bar .bnav-btn.bnav-active { color: #2563eb; border-top-color: #2563eb; }
+  .bottom-nav-bar .bnav-btn:active { transform: scale(0.88); }
+}
+/* === END MOBILE WEBAPP ENHANCEMENTS === */
 </style>
 </head>
 <body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col">
@@ -794,7 +877,11 @@ main {
   <!-- Header -->
   <header class="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 text-white shadow-lg sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-3.5 flex flex-wrap items-center justify-between gap-4">
-      <div class="flex flex-wrap items-center gap-4">
+      <div class="flex flex-wrap items-center gap-3">
+        <!-- Hamburger: mobile only -->
+        <button onclick="toggleMobileSidebar()" class="mobile-menu-btn items-center justify-center w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 transition-all cursor-pointer shrink-0" title="अध्यायहरू हेर्नुहोस्" aria-label="Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
         <div class="flex items-center space-x-3">
           <div id="portal-grade-badge" class="w-11 h-11 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center font-black text-2xl shadow-inner border border-white/30">६</div>
           <div>
@@ -841,11 +928,14 @@ main {
     </div>
   </header>
 
+  <!-- Mobile Drawer Overlay -->
+  <div id="drawer-overlay" class="drawer-overlay" onclick="toggleMobileSidebar(false)"></div>
+
   <!-- Main Container -->
-  <div class="max-w-7xl mx-auto px-4 py-6 flex-1 flex flex-col md:flex-row gap-6 w-full">
+  <div class="max-w-7xl mx-auto px-4 py-6 flex-1 flex flex-col md:flex-row gap-6 w-full main-content-area">
     
     <!-- Sidebar: Chapter Selector -->
-    <aside class="w-full md:w-80 bg-white border border-slate-200 rounded-3xl p-5 shadow-sm h-fit md:sticky md:top-24 md:self-start">
+    <aside id="main-sidebar" class="mobile-sidebar-drawer w-full md:w-80 bg-white border border-slate-200 rounded-3xl p-5 shadow-sm h-fit md:sticky md:top-24 md:self-start">
       <div class="mb-3 flex items-center justify-between">
         <h2 id="sidebar-list-heading" class="text-xs font-bold text-slate-500 uppercase tracking-wider">पाठ सूची (गणित)</h2>
         <span id="sidebar-count-badge" class="text-xs bg-blue-100 text-blue-800 font-black px-2.5 py-0.5 rounded-full">२० पाठहरू</span>
@@ -41312,6 +41402,81 @@ if (document.readyState === 'loading') {
     window.clearPreetiInputs = clearPreetiInputs;
     window.copyPreetiText = copyPreetiText;
     window.changeGlobalFont = changeGlobalFont;
+  </script>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="bottom-nav-bar" id="bottom-nav-bar">
+    <button class="bnav-btn bnav-active" id="bnav-chapters" onclick="toggleMobileSidebar(true)" aria-label="अध्यायहरू">
+      <span class="bnav-icon">📚</span>
+      <span>अध्यायहरू</span>
+    </button>
+    <button class="bnav-btn" id="bnav-grade6" onclick="selectGrade(6);closeMobileSidebar()" aria-label="कक्षा ६">
+      <span class="bnav-icon">📐</span>
+      <span>कक्षा ६</span>
+    </button>
+    <button class="bnav-btn" id="bnav-grade9" onclick="selectGrade(9);closeMobileSidebar()" aria-label="कक्षा ९">
+      <span class="bnav-icon">🔬</span>
+      <span>कक्षा ९</span>
+    </button>
+    <button class="bnav-btn" id="bnav-search" onclick="document.getElementById('search-input')&&(toggleMobileSidebar(true),setTimeout(()=>document.getElementById('search-input').focus(),350))" aria-label="खोज्नुहोस्">
+      <span class="bnav-icon">🔍</span>
+      <span>खोज्नुहोस्</span>
+    </button>
+    <button class="bnav-btn" id="bnav-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="माथि">
+      <span class="bnav-icon">⬆️</span>
+      <span>माथि</span>
+    </button>
+  </nav>
+
+  <script>
+    /* === MOBILE DRAWER LOGIC === */
+    function toggleMobileSidebar(forceOpen) {
+      var sidebar = document.getElementById('main-sidebar');
+      var overlay = document.getElementById('drawer-overlay');
+      if (!sidebar || !overlay) return;
+      var isOpen = sidebar.classList.contains('drawer-open');
+      if (forceOpen === true || (!isOpen && forceOpen !== false)) {
+        sidebar.classList.add('drawer-open');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      } else {
+        sidebar.classList.remove('drawer-open');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+    function closeMobileSidebar() { toggleMobileSidebar(false); }
+
+    /* Close drawer when a chapter is selected on mobile */
+    (function patchSwitchChapter() {
+      var orig = window.switchChapter;
+      if (typeof orig === 'function') {
+        window.switchChapter = function(n) {
+          orig(n);
+          if (window.innerWidth < 768) closeMobileSidebar();
+        };
+      }
+    })();
+
+    /* Update bottom nav active state based on current grade */
+    (function patchSelectGrade() {
+      var orig = window.selectGrade;
+      if (typeof orig === 'function') {
+        window.selectGrade = function(g) {
+          orig(g);
+          var g6 = document.getElementById('bnav-grade6');
+          var g9 = document.getElementById('bnav-grade9');
+          if (g6 && g9) {
+            g6.classList.toggle('bnav-active', g === 6);
+            g9.classList.toggle('bnav-active', g === 9);
+          }
+        };
+      }
+    })();
+
+    /* Expose for inline use */
+    window.toggleMobileSidebar = toggleMobileSidebar;
+    window.closeMobileSidebar = closeMobileSidebar;
   </script>
 
 </body>
