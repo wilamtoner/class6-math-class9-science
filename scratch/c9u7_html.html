@@ -1,0 +1,470 @@
+<!-- CLASS 9 SCIENCE: UNIT 7 - FORCE AND MOTION (बल र चाल) -->
+<div id="c9-view-7" class="hidden flex-1 min-w-0 flex flex-col">
+  <!-- Unit Header Banner -->
+  <div class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-3xl p-6 md:p-8 text-white shadow-xl mb-6 relative overflow-hidden">
+    <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
+    <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30">
+            कक्षा ९ • विज्ञान तथा प्रविधि
+          </span>
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+            एकाइ ७ • भौतिक विज्ञान (Physics)
+          </span>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-black text-white tracking-tight">
+          एकाइ ७: बल र चाल (Force and Motion)
+        </h2>
+        <p class="text-sm md:text-base text-blue-200 mt-1 max-w-2xl">
+          सिधा रेखीय चालका समीकरणहरू ($v = u+at, s = ut+\frac{1}{2}at^2, v^2 = u^2+2as$), चाल-ग्राफ विश्लेषक, न्युटनका नियमहरू, इनर्सिया, संवेग र इलास्टिसिटीको बृहत् डिजिटल प्रयोगशाला
+        </p>
+      </div>
+
+      <div class="flex flex-wrap md:flex-col gap-2 shrink-0">
+        <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700 text-xs font-medium text-slate-300 flex items-center gap-1.5">
+          🚀 गति समीकरण सिमुलेटर
+        </span>
+        <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700 text-xs font-medium text-slate-300 flex items-center gap-1.5">
+          📈 चाल-ग्राफ स्टुडियो (खरायो-कछुवा)
+        </span>
+        <span class="px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700 text-xs font-medium text-slate-300 flex items-center gap-1.5">
+          ⚖️ न्युटनका नियम र इनर्सिया
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 Primary Navigation Tabs -->
+  <div class="flex border-b border-slate-200 overflow-x-auto gap-2 mb-6 select-none no-scrollbar">
+    <button onclick="setTabC9U7('concepts')" id="c9u7-tab-concepts" class="px-5 py-2.5 rounded-xl bg-blue-600 text-white shadow-sm font-bold transition whitespace-nowrap cursor-pointer">
+      🔬 ३-मोड भौतिक प्रयोगशाला (Virtual Physics Lab)
+    </button>
+    <button onclick="setTabC9U7('exercises')" id="c9u7-tab-exercises" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+      📖 सम्पूर्ण अभ्यास तथा गणितीय समस्या (CDC Solutions)
+    </button>
+    <button onclick="setTabC9U7('tiers')" id="c9u7-tab-tiers" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+      🎯 १६ स्तरीकृत प्रश्नोत्तर (Model Q&As)
+    </button>
+    <button onclick="setTabC9U7('quiz')" id="c9u7-tab-quiz" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+      📝 स्वमूल्याङ्कन क्विज (Interactive Quiz)
+    </button>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAB 1: CONCEPTS & 3-MODE INTERACTIVE PHYSICS LAB                          -->
+  <!-- ========================================================================= -->
+  <div id="c9u7-view-concepts" class="space-y-6">
+    <!-- Lab Mode Selector -->
+    <div class="flex flex-wrap gap-2 p-1.5 bg-slate-900 border border-slate-800 rounded-3xl">
+      <button onclick="setLabModeC9U7('kinematics')" id="c9u7-btn-mode-kinematics" class="flex-1 py-3 px-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-black text-xs md:text-sm shadow-md transition cursor-pointer">
+        १. गति समीकरण प्रयोगशाला (Kinematics Simulator)
+      </button>
+      <button onclick="setLabModeC9U7('graphs')" id="c9u7-btn-mode-graphs" class="flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white font-bold text-xs md:text-sm transition cursor-pointer">
+        २. चाल-ग्राफ स्टुडियो (Motion Graphs & Race)
+      </button>
+      <button onclick="setLabModeC9U7('newton_laws')" id="c9u7-btn-mode-newton_laws" class="flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white font-bold text-xs md:text-sm transition cursor-pointer">
+        ३. न्युटनका नियम र इनर्सिया (Newton's Laws Sandbox)
+      </button>
+    </div>
+
+    <!-- ----------------- MODE 1: KINEMATICS & EQUATIONS OF MOTION ----------------- -->
+    <div id="c9u7-lab-mode-kinematics" class="bg-slate-900 border border-slate-800 rounded-3xl p-5 md:p-6 text-white space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-mono text-blue-400 tracking-wider">EQUATIONS OF LINEAR MOTION SIMULATOR</span>
+          <h3 class="text-lg md:text-xl font-black text-white">चालका समीकरणहरूको प्रत्यक्ष गणना तथा परीक्षण</h3>
+        </div>
+        <!-- Preset Problems Buttons -->
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs text-slate-400 self-center hidden sm:inline">पाठ्यपुस्तकका हिसाबहरू:</span>
+          <button onclick="applyKinematicsPresetC9U7('airplane')" class="px-3 py-1.5 rounded-xl bg-blue-600/30 border border-blue-500 text-blue-300 font-bold transition text-xs hover:bg-blue-600 hover:text-white cursor-pointer">
+            ✈️ हवाईजहाज (६७५ m)
+          </button>
+          <button onclick="applyKinematicsPresetC9U7('bridge')" class="px-3 py-1.5 rounded-xl bg-indigo-600/30 border border-indigo-500 text-indigo-300 font-bold transition text-xs hover:bg-indigo-600 hover:text-white cursor-pointer">
+            🌉 पुलबाट ढुङ्गा (१९.६ m)
+          </button>
+          <button onclick="applyKinematicsPresetC9U7('car_brake')" class="px-3 py-1.5 rounded-xl bg-rose-600/30 border border-rose-500 text-rose-300 font-bold transition text-xs hover:bg-rose-600 hover:text-white cursor-pointer">
+            🚗 कार ब्रेक (-३.७५ m/s²)
+          </button>
+        </div>
+      </div>
+
+      <!-- Controls & Live Track -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <!-- Sliders Column -->
+        <div class="lg:col-span-4 bg-slate-950/80 border border-slate-800 rounded-3xl p-5 space-y-5">
+          <h4 class="text-xs font-mono text-slate-400 font-bold uppercase tracking-wider">चालका चर राशिहरू (Input Variables)</h4>
+
+          <!-- Initial Velocity u -->
+          <div class="space-y-1.5">
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-slate-300 font-medium">सुरुको गति (Initial Velocity - $u$):</span>
+              <span id="c9u7-val-u" class="font-mono text-blue-400 font-bold text-sm">0 m/s</span>
+            </div>
+            <input type="range" id="c9u7-slider-u" min="0" max="40" value="0" step="1" oninput="updateKinematicsSimC9U7()" class="w-full accent-blue-500 cursor-pointer">
+            <div class="flex justify-between text-[10px] text-slate-500 font-mono">
+              <span>0 m/s (स्थिर)</span>
+              <span>20 m/s</span>
+              <span>40 m/s</span>
+            </div>
+          </div>
+
+          <!-- Acceleration a -->
+          <div class="space-y-1.5">
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-slate-300 font-medium">प्रवेग / मन्दता (Acceleration - $a$):</span>
+              <span id="c9u7-val-a" class="font-mono text-emerald-400 font-bold text-sm">+1.5 m/s²</span>
+            </div>
+            <input type="range" id="c9u7-slider-a" min="-5" max="5" value="1.5" step="0.5" oninput="updateKinematicsSimC9U7()" class="w-full accent-emerald-500 cursor-pointer">
+            <div class="flex justify-between text-[10px] text-slate-500 font-mono">
+              <span>-5 m/s² (मन्दता)</span>
+              <span>0 (समान)</span>
+              <span>+5 m/s²</span>
+            </div>
+          </div>
+
+          <!-- Time t -->
+          <div class="space-y-1.5">
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-slate-300 font-medium">लागेको समय (Time - $t$):</span>
+              <span id="c9u7-val-t" class="font-mono text-amber-400 font-bold text-sm">30 s</span>
+            </div>
+            <input type="range" id="c9u7-slider-t" min="0" max="30" value="30" step="1" oninput="updateKinematicsSimC9U7()" class="w-full accent-amber-500 cursor-pointer">
+            <div class="flex justify-between text-[10px] text-slate-500 font-mono">
+              <span>0 s</span>
+              <span>15 s</span>
+              <span>30 s</span>
+            </div>
+          </div>
+
+          <!-- Run Animation Controls -->
+          <div class="pt-2 flex gap-2">
+            <button onclick="playKinematicsAnimationC9U7()" id="c9u7-btn-anim-play" class="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs transition cursor-pointer flex items-center justify-center gap-1.5">
+              <span>▶ सिमुलेशन चलाउनुहोस्</span>
+            </button>
+            <button onclick="resetKinematicsSimC9U7()" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs transition cursor-pointer">
+              ↺ रिसेट
+            </button>
+          </div>
+        </div>
+
+        <!-- Live Calculation & Visual Gauge Column -->
+        <div class="lg:col-span-8 space-y-4">
+          <!-- 4 Equation Live Cards -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="p-3.5 bg-slate-950/80 border border-slate-800 rounded-2xl">
+              <span class="text-[11px] font-mono text-slate-400 block">$v = u + at$</span>
+              <div class="text-lg md:text-xl font-mono font-black text-blue-400 mt-1" id="c9u7-calc-v">45.0 m/s</div>
+              <span class="text-[10px] text-slate-500 block">अन्तिम गति (Final Velocity)</span>
+            </div>
+            <div class="p-3.5 bg-slate-950/80 border border-slate-800 rounded-2xl">
+              <span class="text-[11px] font-mono text-slate-400 block">$s = ut + \frac{1}{2}at^2$</span>
+              <div class="text-lg md:text-xl font-mono font-black text-emerald-400 mt-1" id="c9u7-calc-s">675.0 m</div>
+              <span class="text-[10px] text-slate-500 block">स्थानान्तरण (Displacement)</span>
+            </div>
+            <div class="p-3.5 bg-slate-950/80 border border-slate-800 rounded-2xl">
+              <span class="text-[11px] font-mono text-slate-400 block">$v^2 = u^2 + 2as$</span>
+              <div class="text-lg md:text-xl font-mono font-black text-indigo-400 mt-1" id="c9u7-calc-v2">2025 m²/s²</div>
+              <span class="text-[10px] text-slate-500 block">वेगको वर्ग (Velocity Squared)</span>
+            </div>
+            <div class="p-3.5 bg-slate-950/80 border border-slate-800 rounded-2xl">
+              <span class="text-[11px] font-mono text-slate-400 block">$v_{av} = \frac{u+v}{2}$</span>
+              <div class="text-lg md:text-xl font-mono font-black text-amber-400 mt-1" id="c9u7-calc-vav">22.5 m/s</div>
+              <span class="text-[10px] text-slate-500 block">औसत गति (Average Velocity)</span>
+            </div>
+          </div>
+
+          <!-- Animated Track SVG View -->
+          <div class="bg-slate-950/90 border border-slate-800 rounded-3xl p-4 flex flex-col justify-between min-h-[220px]">
+            <div class="flex items-center justify-between border-b border-slate-800/80 pb-2 mb-2">
+              <span class="text-xs font-mono text-slate-400 font-bold">INTERACTIVE RUNWAY TRACK & MOTION PROGRESSION</span>
+              <span id="c9u7-track-status" class="text-xs font-mono text-emerald-400 font-bold">STATUS: READY</span>
+            </div>
+
+            <!-- Dynamic Track SVG Canvas -->
+            <div id="c9u7-track-svg-wrap" class="w-full flex items-center justify-center py-2">
+              <!-- Rendered dynamically by JS renderTrackSVGC9U7() -->
+            </div>
+
+            <!-- Detailed Explanation Formula Box -->
+            <div class="p-3 rounded-2xl bg-blue-950/40 border border-blue-900/50 text-xs text-blue-200 mt-2 flex flex-col sm:flex-row items-center justify-between gap-2">
+              <div>
+                <strong>📐 चरणबद्ध हिसाब:</strong>
+                <span id="c9u7-step-solution" class="font-mono text-slate-300 ml-1">
+                  s = (0 × 30) + 0.5 × 1.5 × (30)² = 675 m
+                </span>
+              </div>
+              <span class="text-[11px] px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 font-mono">
+                SI Units: m, s, m/s, m/s²
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------- MODE 2: MOTION GRAPHS STUDIO & HARE-TORTOISE ----------------- -->
+    <div id="c9u7-lab-mode-graphs" class="hidden bg-slate-900 border border-slate-800 rounded-3xl p-5 md:p-6 text-white space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-mono text-indigo-400 tracking-wider">MOTION GRAPHS & SLOPE ANALYZER</span>
+          <h3 class="text-lg md:text-xl font-black text-white">स्थानान्तरण तथा गति-समय ग्राफ स्टुडियो</h3>
+        </div>
+        <!-- Graph Switcher Buttons -->
+        <div class="flex flex-wrap gap-2">
+          <button onclick="setGraphTypeC9U7('st_graph')" id="c9u7-gbtn-st" class="px-3.5 py-1.5 rounded-xl bg-blue-600/30 border border-blue-500 text-blue-300 font-bold transition text-xs cursor-pointer">
+            स्थानान्तरण-समय (s-t)
+          </button>
+          <button onclick="setGraphTypeC9U7('vt_graph')" id="c9u7-gbtn-vt" class="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+            गति-समय (v-t)
+          </button>
+          <button onclick="setGraphTypeC9U7('hare_tortoise')" id="c9u7-gbtn-race" class="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+            🐢 खरायो र कछुवा दौड (कथा ग्राफ)
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <!-- SVG Graph Canvas -->
+        <div class="lg:col-span-7 bg-slate-950/80 border border-slate-800 rounded-3xl p-4 flex flex-col justify-between shadow-inner select-none">
+          <div class="flex justify-between items-center border-b border-slate-800/80 pb-2 mb-2">
+            <span id="c9u7-graph-title-badge" class="text-xs font-mono text-indigo-300 font-bold">
+              DISPLACEMENT-TIME GRAPH (स्थानान्तरण-समय)
+            </span>
+            <div id="c9u7-race-controls" class="hidden flex gap-2">
+              <button onclick="runHareTortoiseRaceC9U7()" id="c9u7-btn-race-run" class="px-3 py-1 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-xl shadow transition cursor-pointer">
+                ▶ दौड सुरु गर्नुहोस्
+              </button>
+              <button onclick="resetHareTortoiseRaceC9U7()" class="px-2.5 py-1 bg-slate-800 text-slate-300 font-bold text-xs rounded-xl hover:bg-slate-700 transition cursor-pointer">
+                ↺ रिसेट
+              </button>
+            </div>
+          </div>
+
+          <div id="c9u7-motion-graph-svg-wrap" class="w-full flex items-center justify-center min-h-[300px]">
+            <!-- Dynamic SVG inserted by JS renderMotionGraphSVGC9U7() -->
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between text-[11px] text-slate-400 pt-2 border-t border-slate-800/80">
+            <span>💡 कुनै पनि खण्ड (OA, AB, BC, CD) क्लिक गरी झुकाव र क्षेत्रफल विश्लेषण गर्नुहोस्।</span>
+            <span class="font-mono text-indigo-400">Slope = m/s or m/s²</span>
+          </div>
+        </div>
+
+        <!-- Graph Analysis & Meaning Panel -->
+        <div class="lg:col-span-5 bg-slate-800/90 border border-slate-700 rounded-3xl p-5 flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center justify-between border-b border-slate-700 pb-3 mb-3">
+              <div>
+                <span id="c9u7-sec-badge" class="text-xs text-emerald-400 font-mono font-bold tracking-wider">SECTION: ALL / COMPLETE</span>
+                <h4 id="c9u7-sec-title" class="text-base md:text-lg font-black text-white">खण्डगत वैज्ञानिक विश्लेषण</h4>
+              </div>
+              <span id="c9u7-sec-nature" class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30">
+                समान गति
+              </span>
+            </div>
+
+            <div class="space-y-3 text-xs text-slate-300">
+              <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-700/60 space-y-1">
+                <strong class="text-amber-400 block">📐 झुकाव (Slope = $\frac{\Delta Y}{\Delta X}$):</strong>
+                <p id="c9u7-sec-slope" class="text-slate-200 font-mono text-sm">Slope = 2.0 m/s (समान गति)</p>
+                <span id="c9u7-sec-slope-desc" class="text-[11px] text-slate-400 block">झुकावले गतिको मान २ मिटर प्रति सेकेन्ड दिन्छ।</span>
+              </div>
+
+              <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-700/60 space-y-1">
+                <strong class="text-cyan-400 block">📊 रेखा मुनिको क्षेत्रफल (Area under curve):</strong>
+                <p id="c9u7-sec-area" class="text-slate-200 font-mono text-sm">Area = 80 m (स्थानान्तरण)</p>
+                <span id="c9u7-sec-area-desc" class="text-[11px] text-slate-400 block">v-t ग्राफ मुनिको क्षेत्रफलले उक्त अवधिमा पार गरेको स्थानान्तरण जनाउँछ।</span>
+              </div>
+
+              <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-700/60 space-y-1">
+                <strong class="text-indigo-400 block">📖 भौतिक अर्थ र निष्कर्ष (Physical Meaning):</strong>
+                <p id="c9u7-sec-summary" class="text-slate-300 leading-relaxed">
+                  समय बित्दै जाँदा स्थानान्तरण समान दरले बढिरहेको छ, जसले गर्दा वस्तुमा प्रवेग शून्य भई समान गति कायम छ।
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section selector pills -->
+          <div class="pt-2 border-t border-slate-700">
+            <span class="text-[10px] text-slate-400 block mb-1.5 font-bold uppercase">विश्लेषण गर्न खण्ड छान्नुहोस्:</span>
+            <div id="c9u7-sec-pills" class="flex flex-wrap gap-1.5">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------- MODE 3: NEWTON'S LAWS & INERTIA SANDBOX ----------------- -->
+    <div id="c9u7-lab-mode-newton_laws" class="hidden bg-slate-900 border border-slate-800 rounded-3xl p-5 md:p-6 text-white space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-mono text-purple-400 tracking-wider">NEWTON'S LAWS & INERTIA SANDBOX</span>
+          <h3 class="text-lg md:text-xl font-black text-white">न्युटनका चालसम्बन्धी नियमहरू र इनर्सिया प्रयोगशाला</h3>
+        </div>
+        <!-- Law switcher buttons -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <button onclick="setNewtonLawC9U7(1)" id="c9u7-nbtn-1" class="px-3.5 py-1.5 rounded-xl bg-purple-600/30 border border-purple-500 text-purple-300 font-bold transition text-xs cursor-pointer">
+            पहिलो नियम (Inertia)
+          </button>
+          <button onclick="setNewtonLawC9U7(2)" id="c9u7-nbtn-2" class="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+            दोस्रो नियम ($F=ma$)
+          </button>
+          <button onclick="setNewtonLawC9U7(3)" id="c9u7-nbtn-3" class="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+            तेस्रो नियम (Action-Reaction)
+          </button>
+          <button onclick="setNewtonLawC9U7(4)" id="c9u7-nbtn-4" class="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+            इलास्टिसिटी (Elastic Limit)
+          </button>
+        </div>
+      </div>
+
+      <!-- Interactive Law Demo Container -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <!-- Visual Demo Canvas -->
+        <div class="lg:col-span-7 bg-slate-950/80 border border-slate-800 rounded-3xl p-5 flex flex-col justify-between shadow-inner min-h-[320px]">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+            <span id="c9u7-newton-canvas-title" class="text-xs font-mono text-purple-300 font-bold uppercase">
+              NEWTON'S FIRST LAW: INERTIA OF REST (सिक्का र गिलास प्रयोग)
+            </span>
+            <span id="c9u7-newton-status-badge" class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-purple-500/20 text-purple-300 border border-purple-500/30">
+              स्थिर इनर्सिया
+            </span>
+          </div>
+
+          <!-- Dynamic SVG Demo inserted by JS renderNewtonDemoSVGC9U7() -->
+          <div id="c9u7-newton-svg-wrap" class="w-full flex items-center justify-center py-4">
+            <!-- Dynamic SVG inserted here -->
+          </div>
+
+          <!-- Interactive Action Buttons -->
+          <div id="c9u7-newton-controls" class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-slate-800">
+            <!-- Rendered dynamically depending on law -->
+          </div>
+        </div>
+
+        <!-- Law Theory and Explanation Panel -->
+        <div class="lg:col-span-5 bg-slate-800/90 border border-slate-700 rounded-3xl p-5 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="border-b border-slate-700 pb-3">
+              <span id="c9u7-law-engtitle" class="text-xs text-purple-400 font-mono tracking-wider font-bold">LAW OF INERTIA (FIRST LAW)</span>
+              <h4 id="c9u7-law-neptitle" class="text-lg font-black text-white">चालसम्बन्धी न्युटनको पहिलो नियम</h4>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-slate-900/70 border border-slate-700/70 text-xs text-slate-300 space-y-2">
+              <strong class="text-amber-400 block font-bold text-xs">📜 नियमको आधिकारिक भनाइ:</strong>
+              <p id="c9u7-law-statement" class="text-slate-200 leading-relaxed italic">
+                "कुनै वस्तुमाथि बाह्य असन्तुलित बलले असर नगरेसम्म, स्थिर अवस्थामा रहेको वस्तु स्थिर अवस्थामै रहन्छ र चाल अवस्थामा रहेको वस्तु सिधा रेखामा समान गतिले निरन्तर चलिरहन्छ।"
+              </p>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-slate-900/70 border border-slate-700/70 text-xs text-slate-300 space-y-1.5">
+              <strong class="text-emerald-400 block font-bold text-xs">💡 वैज्ञानिक व्याख्या तथा निष्कर्ष:</strong>
+              <p id="c9u7-law-explanation" class="text-slate-300 leading-relaxed">
+                कार्डबोर्डलाई तीव्र बलले हुत्याउँदा कार्डबोर्ड तुरुन्तै चालमा आउँछ तर सिक्का स्थिर इनर्सियाका कारण स्थिर रहन खोज्दा गुरुत्व बलले गिलासमा खस्छ।
+              </p>
+            </div>
+          </div>
+
+          <div class="p-3 rounded-2xl bg-purple-950/40 border border-purple-900/50 text-xs text-purple-200 flex items-center justify-between">
+            <span id="c9u7-law-formula" class="font-mono font-bold">$F_{net} = 0 \implies v = \text{const}$</span>
+            <span class="text-[11px] text-purple-300">दैनिक जीवनमा उपयोगी</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAB 2: EXERCISES & NUMERICAL PROBLEMS (CDC Solutions)                     -->
+  <!-- ========================================================================= -->
+  <div id="c9u7-view-exercises" class="hidden space-y-6">
+    <!-- Exercise Filter Buttons -->
+    <div class="flex border-b border-slate-200 overflow-x-auto gap-2 pb-2 no-scrollbar">
+      <button onclick="filterC9U7Exercises('all')" id="c9u7-efilter-all" class="px-4 py-2 rounded-xl text-xs font-bold transition bg-blue-600 text-white cursor-pointer whitespace-nowrap">
+        सबै अभ्यास (All)
+      </button>
+      <button onclick="filterC9U7Exercises('mcq')" id="c9u7-efilter-mcq" class="px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">
+        १. बहुवैकल्पिक (MCQs)
+      </button>
+      <button onclick="filterC9U7Exercises('diff')" id="c9u7-efilter-diff" class="px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">
+        २. फरक लेख्नुहोस् (३)
+      </button>
+      <button onclick="filterC9U7Exercises('reason')" id="c9u7-efilter-reason" class="px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">
+        ३. कारण दिनुहोस् (६)
+      </button>
+      <button onclick="filterC9U7Exercises('structured')" id="c9u7-efilter-structured" class="px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">
+        ४. विस्तृत प्रश्नोत्तर (१४)
+      </button>
+      <button onclick="filterC9U7Exercises('numerical')" id="c9u7-efilter-numerical" class="px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">
+        ५. गणितीय समस्या (५)
+      </button>
+      <button onclick="filterC9U7Exercises('project')" id="c9u7-efilter-project" class="px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">
+        ६. परियोजना कार्य (२)
+      </button>
+    </div>
+
+    <!-- Container for Exercise Cards (rendered dynamically or static) -->
+    <div id="c9u7-exercises-container" class="space-y-4">
+      <!-- Exercise Cards will be rendered dynamically by JS renderC9U7Exercises() -->
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAB 3: 16 TIERED MODEL QUESTIONS (K5, U6, HA5)                            -->
+  <!-- ========================================================================= -->
+  <div id="c9u7-view-tiers" class="hidden space-y-6">
+    <!-- Tier Selector Buttons -->
+    <div class="flex border-b border-slate-200 overflow-x-auto gap-2 pb-2 no-scrollbar">
+      <button onclick="filterC9U7Tiers('all')" id="c9u7-tfilter-all" class="px-4 py-2 rounded-xl text-xs font-bold transition bg-blue-600 text-white cursor-pointer whitespace-nowrap">
+        सबै १६ प्रश्नोत्तरहरू
+      </button>
+      <button onclick="filterC9U7Tiers('knowledge')" id="c9u7-tfilter-knowledge" class="px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">
+        ज्ञानात्मक तह (Knowledge - ५)
+      </button>
+      <button onclick="filterC9U7Tiers('understanding')" id="c9u7-tfilter-understanding" class="px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">
+        बोधात्मक तह (Understanding - ६)
+      </button>
+      <button onclick="filterC9U7Tiers('higher_ability')" id="c9u7-tfilter-higher_ability" class="px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">
+        उच्च दक्षता तथा प्रयोगात्मक (Higher Ability - ५)
+      </button>
+    </div>
+
+    <!-- Container for Tier Cards -->
+    <div id="c9u7-tiers-container" class="space-y-4">
+      <!-- Tier cards rendered dynamically by JS renderC9U7Tiers() -->
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAB 4: INTERACTIVE SELF-ASSESSMENT QUIZ (10 Questions)                   -->
+  <!-- ========================================================================= -->
+  <div id="c9u7-view-quiz" class="hidden space-y-6">
+    <!-- Quiz Header with Score Badge -->
+    <div class="bg-gradient-to-r from-blue-900 to-indigo-900 border border-blue-800 rounded-3xl p-5 md:p-6 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-lg">
+      <div>
+        <span class="text-xs font-mono text-blue-300 font-bold tracking-wider">UNIT 7 SELF-ASSESSMENT QUIZ</span>
+        <h3 class="text-lg md:text-xl font-black text-white">बल र चाल वस्तुगत स्वमूल्याङ्कन परीक्षा</h3>
+        <p class="text-xs text-blue-200 mt-0.5">प्रत्येक प्रश्नको सही उत्तर छानेर आफ्नो ज्ञान जाँच्नुहोस्।</p>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div class="text-right">
+          <span class="text-[11px] text-blue-300 block">कुल प्राप्ताङ्क</span>
+          <span id="c9u7-quiz-score-badge" class="text-2xl font-black font-mono text-emerald-400">० / १०</span>
+        </div>
+        <button onclick="resetC9U7Quiz()" class="px-4 py-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl text-xs font-bold text-white transition cursor-pointer">
+          ↺ पुनः सुरु
+        </button>
+      </div>
+    </div>
+
+    <!-- Quiz Questions Container -->
+    <div id="c9u7-quiz-container" class="space-y-4">
+      <!-- Rendered dynamically by JS renderC9U7Quiz() -->
+    </div>
+  </div>
+</div>

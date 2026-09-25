@@ -1,0 +1,1166 @@
+=== Page 97 (PDF 101) ===
+lj1fg tyf k|ljlwM sIff ( 97
+an / rfn   
+(Force and Motion)
+&
+af6'nLsf] a; ofqf
+;+Fu}sf] lrqdf b]vfOPsf] af6f] x'Fb} 
+af6'nL :yfg A df a; r9]/ :yfg 
+B df k'lug\ . pgn] a; r9]sf] :yfg 
+A df s]xL ;do a; l:y/ cj:yfd} 
+lyof] . a; rfnsn] OlGhg -engine_ 
+:6f6{ u/]kl5 OlGhgn] nufPsf] ann] 
+ubf{ a; la:tf/} u'8\g ;'? u¥of] . s]xL 
+;dokl5 a; hf]8n] x'OFlsof] . af6fdf 
+a; sxLF la:tf/} u'8\g] / sxLF hf]8n] 
+x'OFlsg] eO/x]sf] lyof] . 7fpF 7fpFdf 
+a;df a|]s nufpFbf pgsf] z/L/ 
+cufl8 lt/ x'lQg] uYof]{ .
+af6fdf a; ljleGg lbzflt/ u'8\g] uYof]{ . af6'nLn] 3'DtLx¿df rfnsn] :6]l/ª x\ljn -
+steering 
+wheel) 3'dfP/ a;sf] lbzf kl/jt{g u/]sf] cjnf]sg ul//x]sL lyOg\ . s] tkfOFnfO{ hfgsf/L 
+5 t, a;sf] :6]l/ª x\ljn lau|bf s] x'G5 < 
+af6'nLn] a; u'8\b} ubf{ af6f] 5]psf af6f] b'/L n]v]sf :tDex¿ x]b}{ 
+;docg';f/ kf/ u/]sf] b'/L klg l6Kb} uOg\ .
+;do -minutes df_ 10 25 30 40 50 ….
+kf/ u/]sf] b'/L -km df_ 5 10 a; /f]lsPsf] 15 20 …..
+af6'nLn] l;wf af6fdf a; Psgf;n] u'l8/x]sf] cj:yfdf rfnssf] 
+cufl8 /x]sf] l:k8f]ld6/ -speedometer_ df 50 km/h k|bz{g ePsf] 
+b]lvg\ . pgn] a]nf a]nfdf o:t} gfk x]/]/ a; ;dfg cj:yfn] u'l8/x]df 
+l;wf af6fsf] cufl8sf] b'/L kf/ ug{ nfUg] ;dosf] lx;fa ub}{ uOg\ . 
+af6'nLn] cfk\mgf] uGtJodf k'u]kl5 rfns;F+u ;f]w]/ a;n] ofqfel/ 
+kf/ u/]sf] b'/L 74 km /x]sf] kQf nufOg\ . pSt kf/ u/]sf] b'/L / b'/L 
+kf/ ug{ nfu]sf] ;dosf cfwf/df cf};t j]u kQf nufOg\ . pgn] 3/ 
+k'u]kl5 OG6/g]6sf] k|of]u u/L u'un d]k vf]hL u/]/ cfk"mn] to u/]sf] 
+lrq 7.1 =b'O{ :yfg A / B hf]8\g] af6fsf] u'un gS;f
+lrq 7.2 =3'DtLdf a; 
+lrq 7.3= a; rfnssf] 
+cufl8 ePsf] l:k8f]ld6/
+
+=== Page 98 (PDF 102) ===
+98                   lj1fg tyf k|ljlwM sIff (
+ofqfdf :yfg A af6 :yfg B df k'Ubf 25.5 km blIf0f k"j{ :yfgfGt/0f -displacement_ ePsf] 
+kQf nufOg\ .
+k|Zg -s_  OG6/g]6sf]
+ k|of]u u/L lrq 7.1 df b]vfOPsf] gS;f s;/L x]g{ ;lsG5 < sIffdf 
+5nkmn ug'{xf];\ .
+k|Zg -v_  pknAw k|ljlwsf] k|of
+]u u/L tkfO{F klg lrq 7.1 df b]vfOP h:t} s'g} b'O{ :yfglarsf] 
+;fnfvfnf b'/L / Ps :yfgaf6 csf]{df k'Ubf x'g] :yfgfGt/0f kQf nufpg'xf];\ .
+a]u / ult (Speed and velocity)
+lj|mofsnfk 7.1
+lrq 7.4 n] af6'nLsf] ofqfsf j|mddf af6fdf a; ljleGg lbzflt/ df]l8Psf] b]vfp“5 . 
+tkfO{“n] klg ljBfnosf] rp/df 50 m nfdf] lkmtf (measuring tape_ jf 8f]/Lsf] ;xfotfn] 
+o:t} lsl;dsf] 6«ofs lgwf{/0f ug'{xf];\ . Pp6f :6k jfrsf] k|of]u u/L s'g} ;fyLnfO{ 
+af6fdf sxL“ lx“8\b} / sxL“ la:tf/} bu'b}{ Ps 5]paf6 csf]{ 5]pdf k'Ug nfu]sf] ;do lx;fa  
+ug'{xf];\ . af6fsf] ljleGg v08df ;fyLsf] rfn s'g s'g lbzflt/ lyof] < :yfgfGt/0f, 
+cf};t j]u tyf s'g} lglZrt v08df cf};t ult lx;fa ug'{xf];\ .
+ cf};t j]u (Vav)=   kf/ u/]sf] b'/L (d)  
+=
+  ... m/s
+   
+ nfu]sf] ;do (t)
+ j:t'n] lglZrt lbzflt/ k|lt ;]s]G8df kf/ u/]sf] cf};t b'/L,
+ 
+cf};t ult (AV) =
+  lglZrt lbzfdf kf/ u/]sf] b'/L (s)
+   
+ pSt b'/L kf/ ug{ nfu]sf] ;do (t)  
+= m/s … lbzf
+lrq 7.4 a;n] kf/ u/]sf] b''/L / o;sf] :yfgfGt/0f
+lrq 7.4 df a;n] :yfg A af6 :yfg F ;Dd kf/ u/]sf] hDdf b'/L ABCDEF ld6/ x'G5 / 
+:yfgfGt/0f AF ld6/ pQ/ k"j{ x'G5 . s'g} rfn cj:yfdf /x]sf j:t'n] kf/ u/]sf] hDdf nDafO 
+b'/L -distance_ xf] . b'/LnfO{ s'g} lglZrt lbzf pNn]v gu/L dfgn] dfq JoSt ul/g] ePsfn] of] 
+Ps :s]n/ kl/df0f xf] . k|f/lDes :yfgaf6 lglZrt lbzfdf uP/ clGtd :yfgdf k'Ubf j:t'n] 
+kf/ u/]sf] ;a}eGbf 5f]6f] b'/L :yfgfGt/0f 
+-
+displacement_ xf] . jf:tjdf of] b'O{ laGb'larsf] 
+l;wf /]vLo b'/L xf] . :yfgfGt/0fnfO{ JoSt ubf{ 
+dfg;F+u} lbzf klg pNn]v ul/g] ePsfn] of] Ps 
+e]S6/ kl/df0f xf] . 
+b'/L 
+ABCDEF nfO{ pSt b'/L kf/ ug{ nfu]sf] 
+;don] efu ubf{ a]usf] dfg k|fKt x'G5 . 
+a;n] af6fsf ljleGg v08x¿df s'g} lglZrt 
+lbzflt/ kf/ u/]sf] b'/LnfO{ pSt b'/L kf/ ug{ 
+=== Page 99 (PDF 103) ===
+lj1fg tyf k|ljlwM sIff ( 99
+nfu]sf] ;don] efu ubf{ ;f] v08df a;sf] ult cfpF5 . lrq 7.4 sf] :yfg B df a; k|lt;s]G8 
+10 ld6/ b'/L kf/ ub}{ k"j{lt/ uO/x]sf] lyof] . :yfg C df a;sf] ult kl/jt{g eP/ k|lt ;]s]G8 
+20 ld6/ blIf0f k"j{ lbzflt/ ePsf] 5 . af6fsf] DF v08df a;sf] ult 15 ld6/ pQ/k"j{ /x]sf] 
+5 . t;y{ j:t'n] k|lt PsfO ;dodf kf/ ug]{ b'/L pSt j:t'sf] j]u -speed_ xf] / j:t'n] lglZrt 
+lbzflt/ k|lt PsfO ;dodf kf/ u/]sf] b'/L pSt j:t'sf] ult -velocity_ xf] . olb s'g} lglZrt 
+lbzflt/ u'l8/x]sf] j:t' slxn] l56f] / slxn] l9nf] u/L u'8\b} 5 eg] To:tf] rfn c;dfg rfn 
+x'G5 . c;dfg ultn] lglZrt lbzfdf u'l8/x]sf] j:t'n] nIodf k'Ubf To;n] kf/ u/]sf] hDdf 
+b'/LnfO{ pSt b'/L kf/ ug{ nfu]sf] ;don] efu ubf{ k|fKt x'g] ult Tof] j:t'sf] cf};t ult x'G5 . 
+j]unfO{ :s]n/ kl/df0f / ultnfO{ e]S6/ kl/df0f x'g\ . ultsf] dfgdf kl/jt{g geP/ s]jn 
+lbzf kl/jt{g x'Fbf ult 
+kl/jt{g x'G5 t/ j]u l:y/ 
+/xG5 . lrq 
+7.5  df b]vfOP 
+h:t} ;Gbe{ laGb' -reference 
+point_ sf cfwf/df s'g} 
+Ps lbzfdf uO/x]sf] 
+j:t'n] l7s ljk/Lt lbzfdf 
+hfFbf ult wgfTdsaf6 
+C0ffTds x'G5 . j:t'sf] j]u  
+;w}F wgfTds x'G5 . 
+k|j]u -
+Acceleration_
+lj|mofsnfk 7.2
+ p2]Zo M j:t'df x'g] ult kl/jt{gsf] cjnf]sg ug'{
+ cfjZos ;fdu|L M Pp6f ;dtn ;tx ePsf] sl/a 3 m nfdf] sf7sf] kmn]s, s]xL  
+ lstfax¿, u'Rrf jf ;fgf] es'G8f], :6k jfr, rs jf k]lG;n
+ljlw M 
+ 1. sf7sf kmn]snfO{ lstfax¿sf] cf8 nufO{ /fVg'xf];\ . 
+ 2. kmn]ssf] dflyNnf] 5]paf6 u'Rrf jf es'G8f] u'8fpg'xf];\ . 
+ 3. es'G8f] ul8/xFbf Ps hgfn] :6k jfrsf] ;xfotfn] k|To]s 1 ;]s]G8sf] hgfp ug'{xf];\  
+  / csf]{ ;fyLn] kmn]sdf u'8\b} u/]sf] j:t' k'u]sf] :yfgdf lrx\g nufpg'xf];\ . 
+ 4. u'Rrf jf es'G8f]sf] rfn cjnf]sg ug'{xf];\ .
+5nkmn / lgisif{ M u'Rrf jf es'G8f]sf] ult s:tf] /x\of], 5nkmn ug'{xf];\ .
+lrq 7.5  ;Gbe{ laGb'cg';f/ wgfTds ult / C0ffTds ult
+=== Page 100 (PDF 104) ===
+100                   lj1fg tyf k|ljlwM sIff (
+rfn cj:yfdf /x]sf j:t'x¿df ;dfg ult gx'g ;S5 . 
+u'l8/x]sf a;sf] ult sxLF a9\b} a9\b} hfg] / sxLF 36\b} 
+36\b} hfg] x'G5 . Psgf;sf] le/fnf] ;txdf k[YjLsf] u'?Tj 
+ann] u'8\b} u/]sf] j:t'df k|lt;]s]G8 ult a9\b} hfG5 . k|lt 
+PsfO ;dodf x'g] ult kl/jt{gnfO{ k|j]u elgG5 . o;sf] 
+SI PsfO m/s2 xf] . 
+ k|j]u (a) =
+ clGtd ult (v) – ;'?sf] ult (u) 
+    ;do (t)  
+k[YjLsf] u'?Tjansf] sf/0f :jtGq ¿kdf vl;/x]sf] j:t'df 
+pTkGg x'g] k|j]u u'?Tj k|j]u xf] . o;nfO{ 
+'g' n] ;ª\s]t 
+ul/G5 . k[YjLsf] ;txdf o;sf] cf};t dfg 9.8 m/s2 x'G5 . 
+u'8\b} u/]sf] a;df lj:tf/} a|]s nufpFbf o;sf] ult 36\b} 
+u/]sf] cg'ej ug{ ;lsG5 . s'g} rfn cj:yfdf /x]sf] j:t'sf] 
+k|ltPsfO ;dodf ult 36\g] b/nfO{ ultx|f; -
+retardation_ 
+elgG5 . o;nfO{ C0ffTds k|j]u klg elgG5 . 
+5nkmnsf] k|Zg
+lrq 
+7.6 df :jtGq v;fOsf] cjnf]sgaf6 k|fKt x'g] tYofª\s lbOPsf] 5 . pSt tYofª\snfO{ 
+cfwf/ dfgL tn ul/Psf lx;faaf6 s] lgisif{ lgsfNg ;lsG5 < 
+cf};t ult (vav) = 
+       lglZrt lbzfdf kf/ u/]sf] b'/L (s) 
+       pSt b'/L kf/ ug{ nfu]sf] ;do (t)
+     =  44.1
+           3
+     = 14.7m/s k[YjLsf] s]Gb|lt/
+cf};t ult (vav) = 
+     ;'?sf] ult -u_ ± clGtd ult -v_ 
+                           (2)
+    =
+  (0+29.4)
+             2
+   = 14.7 m/s k[YjLsf] s]Gb|lt/
+:jtGq ¿kn] vl;/x]sf] j:t'sf] rfnsf] lbzf lglZrt eP tfklg k|lt;]s]G8 kf/ ug]{ b'/L km/s km/s 
+x'G5 . To;}n] of] c;dfg ult xf] . t/ :jtGq v;fOsf] cj:yfdf j:t'sf] k|j]u eg] k|lt;]s]G8 ;dfg  
+x'G5 . j:t' ;dfg k|j]un] l;wf /]vfdf v:bf jf u'8\bf j:t'sf] k|f/lDes ult / clGtd ultsf] 
+dWosn] pSt j:t'sf] cf};t ult lbG5 . t;y{ l;wf /]vLo rfndf ;dfg k|j]un] ePsf] j:t'sf 
+nflu
+cf};t ult 
+(Vav) = ;'?sf] ult -u_ ± clGtd ult -v_ 
+    2 
+lrq 7.6 =:jtGq ¿kn] vl;/x]sf] j:t'sf] 
+3s ;Ddsf] rfn 
+
+=== Page 101 (PDF 105) ===
+lj1fg tyf k|ljlwM sIff ( 101
+l;wf /]vLo rfnsf ;dLs/0fx¿ -Equations of linear motion_
+l;wf /]vLo rfnsf ;dLs/0fdf j:t'sf] ;'?sf] ultnfO{ u, clGtd ultnfO{ V kf/ u/]sf] b'/LnfO{ 
+s pTkGg x'g] k|j]unfO{ a, j:t' rfn cj:yfdf /xFbfsf] ;donfO{ t n] hgfOG5 . 
+1.  l;wf /]vLo rfnsf nflu ;'?sf ] ult -u_, clGtd ult -v_, k|j]u -a_ / ;do -t_ ;DaGwL  
+ ;dLs
+/0f
+ dfgf}F, s'g} l;wf /]
+vLo rfndf /x]sf] j:t'sf] ;'?sf] ult - u_ Psgf;n] kl/jt{g x'Fb}  
+ s
+]xL ;do -t_ kl5 clGtd ult -v_ df kl/0ft eof] .
+ k|j
+]usf] kl/efiffcg';f/, k|j]u =
+ clGtd ult – ;'?sf] ult 
+  
+    ;do
+    
+ 
+a =
+   v-u 
+  
+    t
+  
+   at = v - u
+  
+   v = u+at ………………….. (i)
+ pbfx/0f 7.1
+lqe'jg cGt/f{li6«o ljdfg:ynaf6 p8\g] j|mddf l:y/ cj:yfaf6 wfjgdfu{df pQ/ lbzflt/ 
+u'8]sf] xjfO{hxfh 40 s kl5 p8\of] . xjfO{hxfh u'8\bfsf] ;dfg k|j]u 0.75 m/s2 lyof] . pSt 
+xjfO{hxfh l7s hldgaf6 p8\g' k"j{sf] ult lx;fa ug'{xf];\ M
+ pbfx
+/0fdf xjfO{hxfhsf nflu lbOPsf] ljj/0f cg';f/, 
+ xjfO{hxfhsf
+] ;'?sf] ult -u_ = 0  (lsgsL l:y/ cj:yfaf6 
+ u'8
+]sf]_
+ Psgf;n
+] ult kl/jt{g ePsf] ;do (t) = 40 s
+ xjfO{hxfhsf] k|j]u (a) = 0.75 m/s2
+ clGtd ult -v_ = ?
+ rfnsf] ;dLs/0f k|of]u ubf{,
+ v = u + at 
+ v = 0 + 0.75 × 40 
+ v = 30 m/s pQ/ lbzftk{m
+ xjfO{hxfh l7s hldgaf6 p8\g' k"j{ 30 m/s pQ/  sf] ultn] u'l8/x]sf] lyof] .
+lrq 7.7 
+
+=== Page 102 (PDF 106) ===
+102                   lj1fg tyf k|ljlwM sIff (
+2.  l;wf /]vLo rfnsf nflu ;'?sf] ult - u_, clGtd ult - v_, k|j]u - a_ / :yfgfGt/0f - s_  
+ ;DaGwL ;dLs/0f
+dfgf}F, s'g} l;wf 
+/]vLo rfndf /x]sf] j:t' Ps :yfgaf6 csf]{ :yfgdf :yfgfGt/0f - s_  
+eof] . :yfgfGt/0f x'Fbf ;'?sf] ult -u_ Psgf;n] kl/jt{g x'Fb} s]xL ;do -t_ kl5 lglZrt 
+clGtd ult -v_ k|fKt u¥of] .
+ ;dfg ¿kn] ult kl/jt{g eO/x]sf] cj:yfdf
+ :yfgfGt/0f = cf};t ult × ;do
+3.  l;wf /]vLo rfnsf nflu ;'?sf ] ult -u_, ;do -t_, k|j]u -a_ / :yfgfGt/0f -s_ ;DaGwL  
+ ;dLs
+/0f
+dfgf}F, s'g} l;wf /]vLo rfndf /x]sf] j:t' ;dfg k|j]u - a_ n] Ps :yfgaf6 csf]{ :yfgdf 
+:yfgfGt/0f -s_ eof] . k|j]u pTkGg x'Fbfsf] ;do - t_ df pSt j:tsf] ;'?sf] ult - u_ 
+kl/jt{g eO{ clGtd ult -v_ aGof] .
+;dLs/0f (ii) cg';f/,
+(iv)
+;dLs/0f (i) cg';f/ t sf] dfg ;dLs/0f 
+(ii) df k|lt:yfkg ubf{ .
+;dLs/0f (i) af6 v sf] dfg /fVbf .
+=== Page 103 (PDF 107) ===
+lj1fg tyf k|ljlwM sIff ( 103
+pbfx/0f 7.2
+k"j{ klZrd /fhdfu{sf] l;wf v08df Pp6f l:y/ cj:yfaf6 rNg ;'? u/]sf] df]6/;fOsn 0.5 m/s2 
+sf] ;dfg k|j]un] 400 m k"j{lt/ u'l8;s]kl5 rfnsn] a|]ssf] k|of]u u/] . pSt df]6/;fOsnsf] ult 
+4 s ;Dd Psgf;n] 36\b} 6 m/s2 sf] ultx|f; pTkGg eof] . ;'?sf] :yfgaf6 ePsf] df]6/;fOsnsf] 
+:yfgfGt/0f lx;fa ug'{xf];\ M
+pbfx/0fdf df]6/;fOsnsf nflu lbOPsf] ljj/0fcg';f/,
+klxnf] v08sf nflu bf];|f] v08sf nflu
+;'?sf] ult -u_ = 0  
+k|j]u -a_ = 0.5 m/s2  
+:yfgfGt/0f -s_ = 400 m k"j{ 
+clGtd ult -v_ = ?
+rfnsf] ;dLs/0f k|of]u ubf{,
+v2 = u2 + 2as 
+v2 = 0 + 2 × 0.5 × 400 
+v2=400 
+∴ v=20 m/s k\"j{ lbzftk{m
+;'?sf] ult -u_ = klxnf] v08sf] clGtd ult = 20 m/s k"j{
+;do -t_ = 4 s  
+k|j]u -a_ = - 6 m/s2  
+:yfgfGt/0f -s_ = ?
+rfnsf] ;dLs/0f k|of]u ubf{,
+s = ut + 1at2
+             2 
+s= 20 × 4 –1 × 6 × 42
+                              2 
+s= 80-48 
+∴ s= 32 m k\"j{ lbzftk{m
+;'?sf] :yfgaf6 ePsf] df]6/;fOsnsf] :yfgfGt/0f = klxnf] v08sf] :yfgfGt/0f + bf];|f] 
+v08sf] :yfgfGt/0f
+ = 400 + 32 = 432 m k\"j{ 
+;Lwf /]vLo rfnsf nflu
+v = u + at  — (i)
+v =  
+  x
+ t — (ii)
+v2 = u2 + 2as — (iii)
+s = ut +         at2 — (iv)
+s'g} j:t' :jtGq ¿kdf k[YjLdf vl;/x]sf] 
+cj:yfdf xfjfsf] cj/f]w guGo dfGbf a = g / 
+s = h x'G5 .
+u + v 
+2
+1
+2
+=== Page 104 (PDF 108) ===
+104                   lj1fg tyf k|ljlwM sIff (
+l;wf /]vLo rfnsf u|fkm (Graph of linear motion)
+:yfgfGt/0f ;do u|fkm -displacement- time graph_
+;'/hn] cfk\mgf] ljBfnodf cfof]hgf ul/Psf] bf}8 k|ltof]lutfdf bf}8sf] 6«ofsdf /f]xgnfO{ 
+ljgoeGbf s]xL cufl8 b]v] . Ps}l5g kl5  ljgon] /f]xgnfO{ kl5 kf/] . tn lrq 7.8 / 7.9 df 
+b'j} hgf Psgf;n] cfcfk\mgf] ultn] bu'bf{sf] ;donfO{ x- cIf -x-axis_ / :yfgfGt/0fnfO{ y- cIf 
+-y-axis_ df /fv]/ lvlrPsf] u|fkm lbOPsf] 5 .  
+lrq 7.8 bf}8sf] 6«ofsdf ljBfyL{ bu'b}{ lrq 7.9 bf}8sf] :yfgfGt/0f ;do u|fkm
+k|Zgx¿
+1. dflysf] :yfgfGt /0f ;do u|fkmdf b]vfOPsf] s'g /]vfn] /f]xgsf] rfn / s'g /]vfn] ljgosf]  
+ rfn hgfpF5 <  
+2. ;'?df /f]xg ljgoeGbf slt b'/Ln] cufl8 /x]sf lyP <
+3. bf}8sf j|mddf slt ;s]G8kl5 ljgon] /f]xgnfO{ lht]5g\ <
+4, /]vf AB / CD dWo] s'g /]vfsf] e'sfj -le/fnf]kgf_ a9L 5 < /]vfx¿sf] e'msfj /  
+ ;DalGwt JolStsf] ultlar s:tf] ;DaGw x'G5 xf]nf <
+u|fkm k|of
+]u u/]/ j:t'sf] rfnaf/] j0f{g ug{ ;lsG5 . s'g} j:t'sf] :yfgfGt/0f / ;DalGwt 
+:yfgfGt/0fsf nflu nfu]sf] ;dolarsf] ;DaGw b]vfpg] u|fkmnfO{ :yfgfGt/0f ;do u|fkm  
+(s - t) elgG5 . :yfgfGt/0f ;do u|fkmdf ;donfO{ x - cIfdf / ;DalGwt :yfgfGt/0fnfO{ y - 
+cIfdf k|:t't ul/G5 . pSt u|fkmdf /]vfsf] e'msfjn] rfn cj:yfdf /x]sf] j:t'sf] ult hgfpF5 . 
+b'O{cf]6f :yfgfGt/0f ;do /]vfx¿sf] e'msfjsf] t'ngf u/]/ l56f] jf l9nf] u'l8/x]sf] j:t' yfxf 
+kfpg ;lsG5 . t'ngfTds ¿kdf e'msfj a9L ePdf j:t'sf] ult klg a9L x'G5 / e'msfj sd 
+x'Fbf ult klg sd x'G5 . b'O{ /]vfx¿ sfl6Psf] :yfgdf j:t'sf] kf/ u/]sf] b'/L a/fa/ x'G5 .
+=== Page 105 (PDF 109) ===
+lj1fg tyf k|ljlwM sIff ( 105
+lj|mofsnfk  7.3
+p2]Zo M j:t'df x'g] ult kl/jt{gsf] cjnf]sg ug'{
+cfjZos ;fdu|L M Pp6f ;dtn ;tx ePsf] sl/a 3 m nfdf] sf7sf] kmn]s, s]xL lstfax¿, 
+u'Rrf jf ;fgf] es'G8f], :6k jfr, rs jf k]lG;n, ?n/ jf 6]k
+ljlw M 
+1. lj|mofsnfk 7.2 nfO{ bf]xf]¥ofpg'xf];\ .
+2. u'Rrf jf es'G8f]n] k|To]s ;]s]G8df kf/ u/]sf] :yfgfGt/0f gfkL tnsf] tflnsfdf eg'{xf];\ .  
+;do klxnf] ;]s]G8 bf];|f] ;]s]G8 t];|f] ;]s]G8 rf}yf] ;]s]G8
+:yfgfGt/0f ============== ============== ============== ==============
+ult ============== ============== ============== ==============
+3. k|To]s ;]s]G8df u'Rrf jf es'G8f]sf] ult lx;fa ug'{xf];\ .
+4. pSt tYofª\snfO{ lrq 7.10 df b]vfOP e}m u|fkmdf k|:t't  
+ ug'{xf];\ . 
+5. u|fkmdf lvlrPsf] /]vfsf] em'sfj lgDgfg';f/ lx;fa ug'{xf];\ M
+ e'msfj =  r9fj   =   :yfgdf cfPsf] cGt/ (∆s)  
+   lj:tf/    ;dodf cfPsf] cGt/ (∆t)    = …
+ h:t} M lrqdf b]vfOPsf] /]vfsf] nflu
+ e'msfj =  8 m/s =  4m/s   
+   2s
+5nkmn / lgisif{ M s-t u|fkm /]vfsf] e'msfjn] j:t'sf] ult b]vfpF5 . 
+pbfx/0f 7.3
+tnsf] u|fkmdf Pp6f df]6/;fOsnsf] rfnnfO{ tLgcf]6f v08df b]vfOPsf] 5 . pSt v08df 
+df]6/;fOsnsf] cf};t ult / ultsf] cj:yf klg n]Vg'xf];\ M
+u|fkmcg';f/, AB v08df 
+cf};t ult -VAB_  Ö :yfgfGt/0f ;do /]vfsf] e'msfj 
+    Ö laGb' G (10, 200) / laGb' E (30, 600) larsf] e'msfj
+lrq 7.10 ;dfg ultn] u'l8/x]sf] 
+j:t'sf] lj:yfkg ;do u|fkm 
+
+=== Page 106 (PDF 110) ===
+106                   lj1fg tyf k|ljlwM sIff (
+Ö ∆s 
+Ö
+ s2 – s1 
+Ö
+ 600 – 200 
+Ö
+ 400 
+ ∆t t2 – t1            30 – 10  20
+ VAB= 20 m/s 
+df]6/;fOsn cufl8 a9\b} hfFbf 
+;do;Fu} kf/ u/]sf] b'/L klg Psgf;n] 
+a9]sf] 5 . df]6/;fOsn ;dfg 
+ultn] -l;wf /]vfdf_ u'l8/x]sf] 5 .
+BC v08df cf};t ult Ö 0 m/s , 
+df]6/;fOsn l:y/ cj:yfdf /x]sf] 5 . 
+CD v08df cf};t ult -VCD_ Ö :yfgfGt/0f ;do /]vfsf] e'msfj 
+    
+ Ö laGb' H (80,600) / laGb' J (120,200) larsf] e'msfj
+    
+ Ö ∆s 
+Ö
+  s2 – s1 
+Ö
+ 200 – 600 
+Ö
+ – 400 
+  
+       ∆t       t2 – t1          120 – 80          40
+  
+       VCD  = –10 m/s 
+hxfF C0ffTds lrx\gn] df]6/;fOsnsf] rfn ljk/Lt lbzfdf 5 cyf{t\ kms]{/ ;'?sf] :yfglt/ 
+cfO/x]sf] eGg] hgfpF5 . df]6/;fOsn k5fl8 kmls{b}F ubf{ a9]sf] ;do;Fu} Psgf;n] b'/L kf/ ub{} 
+kms]{sf] 5 . o; v08df klg df]6/;fOsn ;dfg ultn] u'l8/x]sf] 5 . 
+lj|mofsnfk  
+7.4
+lbOPsf] u|fkmn] Pp6f l;wf af6fdf Psgf;n] lx“l8/x]sf] dflg;nfO{ Pp6f s's'/n] nv]6\g vf]Hbf 
+10s ;dofjlwdf dflg;sf] rfnnfO{ b]vfOPsf] 5 . pSt dflg;sf] rfn j0f{g ug'{xf];\ . ;fyLx¿ 
+;d"xdf ldnL pSt rfn k|bz{g ug'{xf];\ . 
+lrq g= 7.11
+lrq g= 7.12
+=== Page 107 (PDF 111) ===
+lj1fg tyf k|ljlwM sIff ( 107
+v08 AE v08 EH v08 HI
+:yfgfGt/0f ;do /]vfsf] e'msfj 
+h'g;'s} b'O{ laGb'lar ;dfg
+:yfgfGt/0f ;do /]vfsf] s'g} b'O{ 
+laGb'df e'msfj km/s km/s
+=================
+x- cIf;Fu ;dfgfGt/ :yfgfGt/0f ;do /]vfn] ;do a9\bf klg j:t'sf] b'/L ga9]sf] cyf{t\ j:t' 
+l:y/ cj:yfdf /x]sf] hgfpF5 . e'msfj;lxtsf] l;wf :yfgfGt/0f ;do /]vfn] rfn cj:yfdf 
+/x]sf] j:t' ;dfg ultn] uO/x]sf] hgfpF5 . olb :yfgfGt/0f ;do u|fkmdf jj|m /]vf ePdf rfn 
+cj:yfdf /x]sf] j:t'sf] ult c;dfg x'G5 .
+ult – ;do u|fkm 
+(velocity- time graph)
+lj|mofsnfk  7.5
+tn tflnsfdf lbOPsf tYofª\ssf cfwf/df ;donfO{ x-cIfdf / ;DalGwt ultnfO{ y-cIfdf  
+/fvL 5'6\6f5'6\6} u|fkm lvRg'xf];\ .
+l;wf /]vfdf u'l8/x]sf df]6/;fOsnsf 
+nflu
+tflnsf
+;do (s) 0 1 2 3 4 5
+ult (m/s) 5 5 5 5 5 5
+lglZrt prfOaf6 :jtGq ¿kdf vl;/x]sf 
+j:t'sf] nflu
+tflnsf
+;do (s) 0 1 2 3 4 5
+ult (m/s) 0 9.8 19.6 29.4 39.2 49
+p8\g ;'? u/]sf xjfO{hxfhsf nflu
+tflnsf
+;do (s) 0 1 2 3 4 5
+ult (m/s) 0 2 6 12 20 30
+lrq g= 7.13
+=== Page 108 (PDF 112) ===
+108                   lj1fg tyf k|ljlwM sIff (
+ca tkfOFn] lvRg' ePsf] ult ;do u|fkmsf] cWoog u/L ljZn]if0f ug'{xf];\ .
+u|fkm ult ;do /]vf 
+cfsf/
+ult ;do /]vf 
+e'msfj
+ljZn]if0f
+klxnf] ================== ================== j:t'sf] ult -;dfg÷Psgf;n] kl/jt{g, ========_=
+bf];|f]  ================= ====================== ult ;do /]vfsf s'g} b'O{ laGb'larsf] e'msfj 
+-;dfg÷c;dfg_ ========
+e'msfj / k|j]usf] ;DaGw =======
+t];|f] ============ ==================== Psgf;n] ult kl/jt{g x'Fbf / c;dfg ¿kn] 
+ult kl/jt{g x'Fbf e'msfjdf b]lvPsf] cGt/ 
+==========
+s'g} j:t'sf] ult / ;DalGwt ;dolarsf] ;DaGw b]vfpg] u|fkmnfO{ ult – ;do (v - t) u|fkm 
+elgG5 . o:tf] u|fkmsf] cjnf]sgaf6 j:t' l:y/ /x]sf], ;dfg ultdf cufl8 a9]sf], /f]lsg 
+vf]h]sf] h:tf hfgsf/Lx¿ yfxf kfpg ;lsG5 . ult ;do u|fkmdf ;donfO{ 
+x- cIfdf / 
+ultnfO{ y- cIfdf k|:t't ul/G5 . ult ;do /]vfsf] e'msfjn] rfn cj:yfdf /x]sf] j:t'sf] 
+k|j]u hgfpF5 . b'O{cf]6f ult ;do /]vfx¿sf] e'msfjsf] t'ngf u/]/ ult kl/jt{gsf] b/df /x]sf] 
+leGgtfaf/] hfgsf/L kfpg ;lsG5 . 
+x- cIf;Fu ;dfgfGt/ ult ;do /]vfn] ;do a9\bf klg j:t'sf] ult kl/jt{g gePsf] cyf{t\ 
+j:t' ;dfg ultn] ljgf k|j]u uO/x]sf] hgfpF5 . e'msfj;lxtsf] l;wf ult–;do /]vfn] rfn 
+cj:yfdf /x]sf] j:t' ;dfg k|j]un] uO/x]sf] hgfpF5 . olb :yfgfGt/0f ;do u|fkmdf jj|m /]vf 
+ePdf rfn cj:yfdf /x]sf] j:t'sf] ult c;dfg x'G5 .
+lrq 7.14
+ult v (m/s)
+;do t (s) 
+;dfg ult ;do t (s) 
+:jtGq ¿kn] vl;/x]sf] j:t'
+;do t (s) 
+c;dfg ult
+=== Page 109 (PDF 113) ===
+lj1fg tyf k|ljlwM sIff ( 109
+lj|mofsnfk  7.6
+lbOPsf] ult ;do u|fkmsf] 
+cWoog u/L tnsf] tflnsf k"/f 
+ug'{xf];\ . 
+;dfg k|j]u ePsf v08x¿dWo] 
+s'g v08df j:t'sf] ult tLj| 
+¿kn] kl/jt{g ePsf] 5 <
+;dfg ultsf] v08 ;dfg k|j]usf] v08 c;dfg k|j]usf] v08 ultx|f;sf] v08
+BC / …… …….  / …… ……. / …… ……. / ……
+AB / GH v08x¿ dWo] GH v08df ult ;do /]vfsf] e'msfj AB v08df eGbf a9L 5 .  
+To;}n] pSt j:t'sf] ult GH v08df tLj| ¿kn] kl/jt{g ePsf] yfxf kfpg ;lsG5 . 
+Ogl;{of -Inertia_
+tn lbOPsf 36gfx¿df ;DalGwt tYo / sf/0f kQf nufpg 5nkmn ug'{xf];\ .
+1. lkª v]Ng]  j|mddf o;nfO{ dRrfpg / dRrfP/ 5f]8]sf] lkª l:y/ cj:yfdf cfpg s]xL ;do  
+ nfU5
+ . 
+2. l:jr cg ug]{ ljlQs} ljB't \ kª\vf hf]8n] 3'Db}g / 3'ld/x]sf] kª\vfsf] l:jr ckm ug]{  
+ lalQs} /f]lsFb}g .
+ha s'g} j:t'df nfUg
+] anx¿ ;Gt'lnt x'G5g\, ToxfF j:t'sf] cj:yf -ult jf lbzf_ df s'g} 
+kl/jt{g x'Fb}g . j:t'sf] cj:yf kl/jt{g x'g jf j:t' ;g{ pSt j:t'df c;Gt'lnt anx¿ nfUg' 
+kb{5 . j:t'n] c;Gt'lnt ansf] k|of]uaf6 o;sf] cj:yfdf ug{ vf]lhg] kl/jt{gsf] cj/f]w u5{ . 
+c;Gt'lnt ansf] dfqf lgs} sd ePdf Ps} l5gdf l:y/ cj:yfdf ePsf] j:t'nfO{ rfndf 
+/ rfndf ePsf] j:t'nfO{ l:y/ cj:yfdf Nofpg ;lsFb}g . l:y/ cj:yfdf /x]sf] j:t' l:y/ 
+cj:yfd} /xg vf]H5 / rfn cj:yfdf /x]sf] j:t' ;dfg ultn] pxL lbzfdf rfndf /xg vf]H5 . 
+s'g} klg j:t'n] o;sf] cj:yfdf ug{ vf]lhg] kl/jt{gsf] cj/f]w u/L oyfl:yltdf /lx/xg vf]Hg] 
+u'0fnfO{ Ogl;{of elgG5 . 
+lrq 7.15 
+;do t (s)
+ult v (m/s)
+=== Page 110 (PDF 114) ===
+110                   lj1fg tyf k|ljlwM sIff (
+ lj|mofsnfk  7.7
+ Pp6f 6]a'ndf /flvPsf pl;g]sf] / gpl;g]sf] cG8fnfO{ 6]a'naf6 3'dfpg'xf];\ .  3'ld/x]sf]  
+ cG8fnfO{ cf}“nfn] 5f]P/ /f]Sg'xf];\ . /f]lsgf;fy cf}“nf x6fpg'xf];\ . ca s] x'G5 x]g'{xf];\ .  
+ cjnf]sg u/L k|fKt glthfnfO{ tnsf] tflnsfsf cfwf
+/df k'li6 ug'{xf];\ .
+cjnf]sg glthf JofVof
+================= ================== ============
+lk08 / Ogl;{oflarsf] ;DaGw -Relation between mass and inertia_
+lj|mofsnfk  7.8
+p2]Zo M j:t'df lk08 / Ogl;{oflarsf] ;DaGw k|bz{g ug'{
+cfjZos ;fdu|L M p:t} b'O{cf]6f af]tn, 8f]/L, kfgL, 
+ljlw M 
+1. Pp6f af]tndf kfgL eg'{xf];\ / csf]{nfO{ vfnL /fVg'xf];\ . 
+2. b'j}nfO{ ;dfg nDafO ePsf] 8f]/Ln] cufl8 k5fl8 rNg ;Sg] u/L s'g} cf8df  
+ e'mG8\ofpg'xf];\ .  
+3. ca e'mG8\ofOPsf af]tnx¿nfO{ a/fa/ b'/L;Dd lj:yflkt u/L ;Fu} 5f]8\g'xf];\ /   
+ ltgLx¿sf] rfnsf] cjnf]sg ug'{xf];\ . 
+5nkmn / lgisif{ M s'g af]tn klxn] l:y/ cj:yfdf cfpF5 < lsg xf]nf, 5nkmn ug'{xf];\ .
+cjnf]sg glthf JofVof
+sd lk08 ePsfnfO{ /f]lsg nfu]sf] ;do Ö ===
+a9L lk08 ePsfnfO{ /f]lsg nfu]sf] ;do Ö ====
+=== eGbf ==== klxn] 
+/f]lsG5 .
+sd lk08 ePsf] tyf a9L lk08 ePsf] b'j} j:t' oyfl:yltdf /xg vf]H5g\ . t;y{ ;a} j:t'df 
+Ogl;{of x'G5 . j:t'df x'g] Ogl;{of o;sf] lk08df lge{/ x'G5 . j:t'sf] lk08 a9\bf Ogl;{of klg 
+a9\5 / lk08 36\bf Ogl;{of klg 36\5 .
+=== Page 111 (PDF 115) ===
+lj1fg tyf k|ljlwM sIff ( 111
+Ogl;{ofsf lsl;d -Types of inertia_
+!=  l:y/ Ogl;{of
+ -Inertia of rest_
+lj|mofsnfk  7.8
+p2]Zo M j:t'df x'g] l:y/ Ogl;{ofsf] k|bz{g ug'{
+cfjZos ;fdu|L M l;Ssf, sfFrsf] lunf;, sf8{
+ljlw  
+1. lrqdf h:t} lunf;sf] dfly sf8{ / To;sf] dfly l;Ssf 
+/fVg'xf];\ . 
+2. sf8{nfO{ PSsfl; tfGg'xf];\ / s] x'G5, cjnf]sg ug'{xf];\ .
+5nkmn / lgisif{ M l:y/ cj:yfdf /x]sf] l;SsfnfO{ PSsfl; rfndf Nofpg vf]Hbf o;n] 
+To;sf] cj/f]w u5{ . sf8{ PSsfl; rfndf cfPsf] x'gfn] l;Ssf rNg gkfpFb} of] l;Ssfaf6 
+6f9f hfG5 . h;n] ubf{ l;Ssf lunf;df v:5 . 
+s'g} l:y
+/ cj:yfdf /x]sf] j:t'sf] l:y/ cj:yfd} /lx/xg vf]Hg] u'0f l:y/ Ogl;{of xf] . l:y/ 
+Ogl;{ofsf yk pbfx/0f tn k|:t't ul/Psf] 5 M
+i. k|of]udf /x]sf] sfk]{6nfO{ e'mG8\ofP/ lxsf{pFbf o;df ePsf] w'nf] em5{ .
+ii. ?vdf cfFk kmn]sf] cj:yfdf o;sf] xfFuf xNnfpFbf cfFk v:5g\ .
+iii. Sof/ d v]Nbf uf]6Lx¿sf] rfªdf l:6fOs/n] hf]8n] lxsf{Pdf s]jn lkFwsf] uf]6L lg:sG5 /  
+ afFsL rfFª g9nLsg a:5 .
+iv.  a; PSsfl; rfndf cfpFbf To;leq /x]sf ofq'x¿sf] z/L/sf] dflyNnf] efu l:y/  
+ cj:yfd} /
+xg vf]H5 t/ a;sf] ;Dks{df /x]sf] z/L/sf] tNnf] efu eg] a;;Fu}  
+ rfndf cfpF5 . h;n] ubf{ ofq'x¿ k5fl8lt/ x'lQG5g\ M
+lj|mofsnfk 
+ 7.9
+sIffdf 5nkmnsf] lgisif{af6 dfly lbOPsf pbfx/0fx¿df pTkGg x'g] Ogl;{ofnfO{ tnsf] 
+tflnsfcg';f/ JofVof ug'{xf];\ .
+pbfx/0f rfndf cfpg] efu jf 
+j:t'
+l:y/ cj:yfdf /xg  
+vf]Hg] efu jf j:t'
+l:y/ Ogl;{ofsf] 
+JofVof
+============= =================== ====================== ==========================
+lrq 7.16
+=== Page 112 (PDF 116) ===
+112                   lj1fg tyf k|ljlwM sIff (
+@=  rfn Ogl;{of -Inertia of motion_
+u'8\b} u/]sf] ;fOsndf 7f]lsFbf 9'ª\ufn] ;fOsnsf] ultnfO{ /f]S5 / ;fOsn l:y/ cj:yfdf 
+cfpg vf]H5 . ;fOsn rfnssf] z/L/ eg] klxn]s} ultn] cufl8 uO/xg vf]H5 . h;n] 
+ubf{ rfns cufl8lt/ x'lQG5 / e'FOdf k5fl/G5 . rfn cj:yfdf /x]sf] j:t'sf] ;dfg 
+ultn] pxL lbzfdf rfn cj:yfd} /lx/xg vf]Hg] u'0f rfn Ogl;{of xf] . rfn Ogl;{ofsf 
+yk pbfx/0f tn k|:t't ul/Psf] 5 M
+i. rfnsn] u'l8 /x]sf] ;fOsnsf] k]8ndf an gnufpFbf klg s]xL ;do;Dd u'l8/xG5 .
+i. u'l8/x]sf ;jf/L ;fwgx¿ h:t} a;df PSsfl; a|]s nufpFbf o;df ePsf ofq'x¿sf]  
+ z
+/L/ cufl8lt/ x'lQG5 . 
+iii. 8«fOe/n]  3'DtLx¿df a; PSsfl; df]8\bf ofq'x¿sf] z/L/ a; df]8]sf] ljk/Lt lbzflt/  
+ 9lNsG5
+ .
+iv. u'8\b} u/]sf] a;af6 embf{ ofq' e'OFdf k5fl/g] ;Defjgf x'G5 .
+v. nª\u hDksf v]nf8Ln] nfdf] 5nfª nufpg s]xL b'/L bu'g]{ u5{g\ .
+lj|mofsnfk 
+ 7.10
+sIffdf 5nkmnsf] lgisif{af6 dfly lbOPsf pbfx/0fx¿df pTkGg x'g] Ogl;{ofnfO{ tnsf] 
+tflnsfcg';f/ JofVof ug'{xf];\ . 
+pbfx/0f l:y/ cj:yfdf  
+cfpg] efu jf j:t'
+rfn  cj:yfd} /xg  
+vf]Hg] efu jf j:t'
+rfn  Ogl;{ofsf] 
+JofVof
+================== ================== ====================== ============================
+rfn;DaGwL Go'6gsf lgodx¿ -Newton's laws of motion_
+;/ cfOHofs Go'6g -Sir Issac Newton_ Ps ef}ltszf:qL / ul0ft1 lyP . pgn] ;g\ 1687 df 
+j:t'sf] rfn;DaGwL tLgcf]6f lgod k|ltkfbg u/]sf lyP . Go'6gsf] rfn;DaGwL klxnf] lgodn] 
+ansf] kl/efiff lbG5 . bf];|f] lgodn] k|of]udf ePsf] an / j:t'sf] lk08;Fu k|j]usf] ;DaGwsf] 
+j0f{g ub{5 . o;sf] k|of]uaf6 ansf] dfkg ug{ ;lsG5 . Go'6gsf] t];|f] lgodn] ansf] u'0f 
+atfpF5 . 
+=== Page 113 (PDF 117) ===
+lj1fg tyf k|ljlwM sIff ( 113
+Go'6gsf] rfn;DaGwL klxnf] lgod -Newton's first law of motion_
+lj|mofsnfk  7.11
+5nkmnaf6 tnsf pbfx/0fx¿ h:t} b}lgs lj|mofsnfkx¿df j:t'sf] cj:yf kl/jt{g ug{ afx\o 
+kl/0ffTds ansf] cfjZostf pNn]v ug'{xf];\ .
+klxnf] v08 -l:y/af6 rfn_ bf];|f] v08 -lbzf kl/jt{g_ t];|f] v08 -rfnaf6 l:y/_
+!= d}bfgdf v]nf8Ln] k'm6an kf; ub{} v]Nbf 
+klxnf] v]nf8Lsf] uf]8fn] k|xf/ 
+ubf{ nfUg] kl/0ffTds ann] pSt 
+ansf] lbzfdf k'm6an u'8\5 .
+klxnf] v]nf8Ln] nufPsf] 
+ansf] lbzfdf k'm6an l;wf 
+u'8]/ hfG5 . csf]{ v]nf8Ln] 
+nufPsf] kl/0ffTds ann] 
+o;sf] lbzf kl/jt{g x'G5 . 
+olb k'm6an / hldglar 
+3if{0f an pTkGg gePdf 
+k'm6an lg/Gt/ u'8\Yof], h'g 
+c;Dej x'G5 . o;/L 3if{0f 
+tyf cGo v]nf8Ln] nufpg] 
+kl/0ffTds afx\o ann] 
+k'm6an l:y/ cj:yfdf 
+cfpF5 . 
+@= afª\uf]l6ª\uf] af6fdf a; u'8fpFbf
+OlGhgn] nufpg] kl/0ffTds 
+ansf] c;/
+:6]l/ª x\jLn -
+steering wheel_ 
+n] nufpg] kl/0ffTds ansf] 
+c;/
+a|]s tyf hldgl;tsf] 
+3if{0fn] nfUg] kl/0ffTds 
+ansf] c;/
+===================== ================================ =================================
+Go'6gn] rfn;DaGwL lgodx¿ k|ltkfbg ug{'k"j{ j}1flgs Uoflnlnof] UoflnnL -
+Galileo Galilei_ 
+n] rfn;DaGwL Jojl:yt ¿kn] cWoog u/L Ogl;{ofsf] lgod lbO;s]sf lyP . Go'6gn] 
+klg Ogl;{ofnfO{ kl/eflift ub}{ rfn;DaGwL klxnf] lgod k|ltkfbg u/]sf lyP . Go'6gsf]  
+rfn;DaGwL klxnf] lgodcg';f/ …s'g} c;Gt'lnt ansf] k|of]u gx'Gh]n;Dd l:y/ cj:yfdf /x]sf] 
+j:t' l:y/ cj:yfd} /xG5 / rfn cj:yfdf ePsf] j:t' ;dfg ultn] pxL lbzfdf rln/xG5 . 
+o; lgodcg';f/ olb kl/0ffTds an -
+resultant force_ z"Go ePdf j:t' oyfl:yltdf /xG5 . 
+l:y/ cj:yfaf6 rfndf Nofpg / ;dfg ultn] u'l8/x]sf] j:t'nfO{ l:y/ cj:yfdf Nofpg 
+c;Gt'lnt an nfUg'k5{ . t;y{ an eg]sf] j:t'sf] cj:yf kl/jt{g ug]{ sf/0f tŒj xf] . Go'6gsf] 
+klxnf] lgodn] c;Gt'lnt an gnfu'Gh]n l:y/ cj:yfdf /x]sf] j:t' l:y/ cj:yfd} /xg vf]Hg] 
+/ rfn cj:yfdf /x]sf] j:t' rfn cj:yfd} /xg vf]Hg] u'0faf/] pNn]v ug]{ ePsfn] o;nfO{ 
+Ogl;{ofsf] lgod -
+law of inertia_ klg elgG5 . 
+=== Page 114 (PDF 118) ===
+114                   lj1fg tyf k|ljlwM sIff (
+rfn;DaGwL Go'6gsf] bf];|f] lgod (Newton's second law of motion)
+5nkmnsf] k|Zg M ;fOsnnfO{ l:y/ cj:yfaf6 rnfP/ ult kl/jt{g ub}{ rfF8f]rfF8f] u'8fpg'kg]{ 
+cj:yfdf PSn} rfns / rfnssf] k5fl8 csf]{ JolSt a:bf k|j]udf s:tf] leGgtf cfpF5 < 
+;Dd k/]sf] Psgf;sf] af6f]df klxnf] k6s ;fOsnsf] k]8ndf sd an nufP/ u'8fpFbf / bf];|f] 
+k6s k]8ndf a9L an nufP/ u'8fpFbf pTkGg x'g] k|j]udf s] leGgtf x'G5 <
+lrq 7.17 ;fOsn rfns dfq x'“bfsf] 
+k|j]u
+lrq 7.18 ;fOsn rfns;“u} 
+k5fl8 csf]{ JolSt af]Sbfsf] k|j]u
+rfnsn] nufpg] an l:y/ 
+ePdf, lk08 a9\bf k|j]u 
+36\5 . olb lk08 l:y/ 
+ePsf] cj:yfdf ;fOsn 
+rfnsn] an a9fpg ;s]df 
+k|j]u klg a9\5 . 
+dflysf] k|Zgdf ;f]lwP h:t} b}lgs hLjgdf nfu' x'g] yk pbfx/0fx¿af/] 5nkmn ug'{xf];\ .
+j:t'sf] lk08df x'g] kl/jt{gn] ubf{  
+k|j]udf klg kl/jt{g x'g]
+j:t'df nufOPsf] ansf] 36a9n] k|j]u klg 
+36a9 x'g]
+xfdLn] af]s]sf] ef/L la;fP/ l/Q} lxF8\bf rfF8f] 
+rfF8f] lxF8\g ;lsG5 . 
+psfnfdf u'8\b} u/]sf] 6«ssf] nf]8 36fpFbf ult 
+kl/jt{g rfF8f] rfF8f] x'G5 .
+;fdfg nf]8 u/]sf] 7]nfuf8fnfO{ u'8fpgeGbf 
+vfnL 7]nfuf8fnfO{ u'8fpg ;lhnf] x'G5 .
+df+zk]zLaf6 an a9L nufpFbf Ps} l5gdf 
+tLj| ultn] bu'g{ ;lsG5 .
+;jf/L ;fwgx¿df PS;n/]6/af6 OlGhgn] 
+nufpg] an a9fpFbf k|j]u pTkGg x'G5 / 
+hf]8n] a|]s lyRbf tLj|  ultx|f; x'G5 .
+v]n d}bfgdf annfO{ rfF8f] u'8fpg a9L an 
+k|of]u ug'{k5{ .
+dflysf pbfx/0fx¿df j:t'sf] lk08df x'g] kl/jt{g tyf pSt j:t'df nufOPsf] andf x'g] 
+kl/jt{gn] j:t'sf] k|j]udf kg]{ c;/ b]vfOPsf] 5 . an / lk08;Fu k|j]usf] ;DaGw cWoog ug{ 
+tnsf] lj|mofsnfk u/f}F .  
+lj|mofsnfk  
+7.12
+p2]Zo M Go'6gsf] rfn;DaGwL bf];|f] lgod k|bz{g ug'{
+cfjZos ;fdu|L M 8foglds 6«nL jf v]nf}gf uf8L, SNofDk;lxtsf] 
+Ps rSs] l3gL{, wfuf], tf}n em'G8\ofpg] c+s'z, 
+50 g sf 10 cf]6f 
+lk08x¿ -slotted masses_, 38L
+ lrq 7.19 
+
+=== Page 115 (PDF 119) ===
+lj1fg tyf k|ljlwM sIff ( 115
+ljlw M 
+1. lrqdf b]vfP em} pks/0fx¿nfO{ hf]8\g'xf];\ . 
+2. l3gL{af6 Ps ld6/ k/ 6]a'ndf lrx\g nufpg'xf];\ . 
+3. c+s'zdf 50 g lk08 /fvL 6«nLnfO{ 6]a'nsf] lrx\g dfly  
+ /fVg'xf];\ . 
+4. 6«nLnfO{ u'8\g lbO{ 6]a'nsf] csf]{ 5]p;Dd k'Ug nfUg] ;do gfKg'xf];\ / tnsf] tflnsfdf  
+ eg'{xf];\ . 
+5. c+s'zdf csf]{ 50 g lk08 yKg'xf];\ / :6]k 4 bf]xf]¥ofpg'xf];\ .
+6. j|mdzM c+s'zdf lk08x¿ yKb} :6]k 5 bf]xf]¥ofpg'xf];\ . 
+6«nLnfO{ tfGg] an jf c+s'zdf /flvPsf] 
+lk08sf] tf}n -W/N)
+:yfgfGt/0f 
+-
+s/m_
+;do -t/s_ k|j]u - a = 2s/t2_
+========= 1 ======= =============
+========= 1 ======= =============
+tYofª\s ljZn]if0f / glthf M 6«nLdf nufOPsf] an / k|j]usf] ;DaGwaf/] 5nkmn 
+ug'{xf];\ .
+tYofª\s ljZn]if0f / glthf M 6«nLdf /flvPsf] lk08 / k|j]usf] ;DaGwaf/] 5nkmn ug'{xf];\ .
+5nkmn / lgisif{ M 6«nLsf] lk08 l:y/ /fvL tfGg] an kl/jt{g ubf{ 6«nLsf] k|j]u a9\b} uof] . 
+To;}u/L tfGg] an l:y/ /fvL 6«nLdf lk08 yKb} hfFbf k|j]u 36\b} uof] . 
+Go'6gsf] rfn;DaGwL bf];|f] lgodcg';f/ …ansf] k|of]uaf6 s'g} j:t'df pTkGg x'g] k|j]u To;df 
+nfu]sf] an;Fu ;dfg'kflts / To;sf] lk08;Fu Jo'Tj|mdfg'kflts x'G5 .Ú 
+cyf{t\, s'g} j:t'df nfu]sf] kl/0ffTds an a9fpFbf To;df pTkGg x'g] k|j]u klg a9\5 .
+k|j]u 
+(a)∞F………………….( i)   -lk08 l:y/ x'Fbf_
+j:t'df nfu
+]sf] kl/0ffTds an l:y/ ePsf] cj:yfdf o;sf] lk08 a9\b} hfFbf k|j]u 36\5 / lk08 
+36\bf k|j]u a9\5 .
+k|j]u 
+(a) ∞  1/m………………..(ii)   -an l:y/ x'Fbf_
+dflysf ;dLs/0f -i_ / -ii_ nfO{ ;+of]hg ubf{, 
+ a ∞  F/ m    F ∞ ma
+s'g} ;DaGwnfO{ ;dLs/0fsf ¿k lbgsf nflu To;df Ps cr/ /flz k|lji6 ug'{k5{ .
+F = k ma……………..(iii)   oxfF k|of]u ePsf] k cr/ /flz xf] .
+=== Page 116 (PDF 120) ===
+116                   lj1fg tyf k|ljlwM sIff (
+1 N ansf] kl/efiffcg';f/, s'g} 1 kg lk08 ePsf] j:t'df 1 m/s2 sf] k|j]u pTkGg u/fpg k|of]u 
+x'g] annfO{ 1 N elgG5 . ansf] dfg 1 N x'Fbf ;dLs/0f (iii) df k sf] dfg klg 1 x'G5 . 
+∴ F = ma 
+pbfx/0f 7.5
+Pp6f 1500 kg lk08 ePsf] sf/ pQ/ lbzfdf 36 km/h sf] ultn] u'l8/x]sf] lyof] . rfnsn] 
+o;sf] PS;n/]6/ lyRbf 4 s kl5 ;dfg k|j]un]  64 m k/ k'Uof] . pSt sf/df nfu]sf] kl/0ffTds 
+an lx;fa ug'{xf];\ . sf/df pTkGg k|j]usf] lbzf pNn]v ug'{xf];\ .
+oxfF,
+ sf
+/sf] lk08 (m) = 1500 kg
+ sf/sf] ;'?sf] ult (u) =  36 km/h =  36 ×1000m = 10 m/s 
+        60 × 60s
+ sf/sf] :yfgfGt/0f (s) = 64 m
+ :yfgfGt/0fsf nflu nfu]sf] ;do (t) = 4 s
+ l;wf /]vLo rfnsf] ;dLs/0f k|of]u ubf{,
+ s = ut + 1 at2  
+       2
+ cyjf, 64 = 10 × 4 + 1 × a × 42 
+  
+                            2 
+ cyjf, 64 – 40 = 1 × a × 16                      2 
+  cyjf,  8a = 24  
+  ∴ a = 3 m/s2 
+ Go'6gsf] rfn;DaGwL bf];|f] lgod k|of]u ubf{, sf/df nfu]sf] kl/0ffTds an 
+ F = m a 
+ F =1500 × 3 = 4500 N 
+ t;y{ sf/df 4 s ;dfg k|j]u pTkGg x'Fbf nfu]sf] kl/0ffTds an 4500 N /x]5 . sf/df  
+ pTkGg k|j]usf] lbzf an nfu]sf] lbzftk{m x'G5 . 
+lrq 7.20 
+
+=== Page 117 (PDF 121) ===
+lj1fg tyf k|ljlwM sIff ( 117
+rfn;DaGwL Go'6gsf] t];|f] lgod (Newton's third law of motion)
+k|Zg M s] lxF8\bf xfd|f] k}tnfn] hldgdf tnlt/ gbafO{sg cufl8 a9\g ;S5f}F < Ps k6s sf]l;; 
+u/L x]g'{xf];\ . 
+lj|mofsnfk  7.13
+b'O{cf]6f Psgf;sf l:k|ª t/fh'x¿ lng'xf];\ . tn lrqdf b]vfOP h:t} l:k|ª\ t/fh' B sf] Pp6f 
+5]pnfO{ c8\ofP/ /fVg'xf];\ / csf]{ 5]psf] c+s'z]df l:k|ª t/fh' A sf] c+s'z] /fVg'xf];\ . l:k|ª 
+t/fh' A sf] csf]{ 5]paf6 lj:tf/} an nufP/ aflx/lt/ tfGg'xf];\ . l:k|ª t/fh' A / l:k|ª t/fh' 
+B n] b]vfpg] ansf] dfg / lbzf cjnf]sg ug'{xf];\ .
+lrqdf cjnf]sg glthf
+lrq 7.21 Pp6 l:k|ª t/fh'n] csf]{nfO{ tfg]sf
+l:k|ª t/fh' A n] l:k|ª t/fh' B 
+df nufPsf] an Ö 
+l:k|ª t/fh' B n] l:k|ª t/fh' A 
+df nufPsf] an Ö
+lrq 7.23 lrq 7.24
+lrq 7.22  b'O{cf]6f anx¿ Pscfk;df  
+7f]lsbf Pp6fn] csf]{df nufpg] an
+A B
+B n] A nfO{ 
+nufPsf] an
+A n] B nfO{ nufPsf] anlj|mof / k|ltlj|mof b'j} slxNo} klg Pp6} 
+j:t'df nfUb}gg\ . Go'6gsf] rfn;DaGwL 
+lgodcg';f/ s'g} j:t' 
+A n] j:t' B df 
+an nufof] eg] j:t' B n] klg j:t' A 
+df plQg} dfqfdf ljk/Lt lbzfdf an 
+nufpF5 . 
+lj|mof / k|ltlj|mofdf a/fa/ kl/df0f / ljk/Lt lbzf eP tf klg Psn] csf{nfO{ /2 ub}{g . ha 
+b'O{ a/fa/ / ljk/Lt an Pp6} j:t'df nfUb5g\ ta dfq kl/0ffTds an -
+resultant force_ z"Go 
+x'G5 . lj|mof / k|ltlj|mof b'O{ km/s j:t' nfUg] ub{5g\ . To;}n] lj|mof / k|ltlj|mofdf Psn] csf{nfO{ 
+/2 ug]{ x'Fb}g . 
+=== Page 118 (PDF 122) ===
+118                   lj1fg tyf k|ljlwM sIff (
+lj|mofsnfk 7.14
+s'g} Ps j:t'n] bf];|f] j:t'df an nufp“bf bf];|f] j:t'n] klg klxnf] j:t'df ;f]xL dfg a/fa/ t/ 
+l7s ljk/Lt lbzdf an nufp“5 .  o;/L b'O{ j:t'x¿df nfUg] hf]8L anx¿dWo] Pp6fnfO{ lj|mof 
+-
+action_ / csf]{nfO{ k|ltlj|mof -reaction_ elgG5 . Go'6gsf] rfn ;DaGwL t];|f] lgodcg';f/ ‘s'g} 
+klg lj|mofsf nflu a/fa/ / ljk/Lt k|ltlj|mof x'G5 .’ 
+xfd|f] jl/kl/ cjnf]sg ug{ ;lsg] j:t'nfO{ rfndf Nofpg ul/g] lj|mofsnfkdf lj|mof / k|ltlj|mof 
+5'6\ofpg'xf];\ . h:t} M
+pbfx/0f lrqdf lj|mof k|ltlj|mof
+8'ª\uf 
+lvofpFbf
+8'ª\uf rfnsn] 
+ug]{ lj|mof axfgfn] 
+an nufP/ kfgLnfO{ 
+k5fl8 ws]Ng] 
+8'ª\uf rfnsn] nufPsf] 
+an af/a/sf] an kfgLn] 
+nufpF5 / 8'ª\uf cufl8 
+ws]lnG5 .
+kfgLdf kf}8L 
+v]Nbf
+kf}8L v]Ng]n] 
+ug]{ lj|mof– xftn] 
+an nufP/ kfgLnfO{  
+k5fl8 ws]Ng] . 
+kf}8L v]Ng]n] nufPsf] 
+an a/fa/sf] an kfgLn] 
+xftdf nufpF5 / z/L/ 
+cufl8 x'lQG5 .
+annfO{ 
+e'FOdf pkmfbf{
+========================== =======================
+/s]6 k|R5]k0f 
+ubf{
+========================== =======================
+r/f p8\bf ========================== =======================
+uf]nL xfGbf ========================== =======================
+
+=== Page 119 (PDF 123) ===
+lj1fg tyf k|ljlwM sIff ( 119
+lj|mofsnfk  7.15
+p2]Zo M Go'6gsf] t];|f] lgod k|bz{g ug{' 
+cfjZos ;fdu|L M a]n'g, :6«, wfuf], ;]nf]6]k, s}FrL
+ljlw 
+1.  a]n'gsf] ;txdf :6«sf] 6'j|mf 6]kn] 6fF:g'xf];\ /  
+ :6«df wfuf] l5/fpg'xf];\ .  
+2.  lrqdf b]vfP h:t} u/L wfuf]sf b'O{cf]6} 5]pnfO{ s'g} cf8df afFWg'xf];\ . 
+3. a]n'gdf xfjf eg'{xf];\ / o;sf] d'v xftn] RofKg'xf];\ . 
+5.  a]n'gsf] d'v PSsfl; 5f]8\g'xf];\ / a]n'gsf] rfn cjnf]sg ug'{xf];\ . 
+5nkmn / lgisif{ M Go'6gsf] rfn;DaGwL t];|f] lgodsf cfwf/df a]n'gsf] rfnsf] j0f{g ug'{xf];\ .
+Onfl:6l;6L / Knfl:6l;6L
+tkfOFn]
+ Onfl:6s zAb k9\bf o;;Fu ;DaGwLt s'g s'g j:t' ;lDemg' x'G5 < To:t}, Knfl:6s 
+eGgfn] s'g s'g j:t' ;Demg' x'G5, ;"rL agfpg'xf];\ . 
+lj|mofsnfk  7.16
+an nufp“bf ug'{kg]{ lj|mof lrqdf
+ansf] c;/
+cfsf/÷;fOhdf 
+kl/jt{g
+an x6fp“bf k'gM d"n 
+cj:yfdf cfpg] ÷gcfpg]
+d]6\g] /a/sf b'O{ 5]paf6 
+RofKg], tGsfpg], aª\Uofpg], 
+a6fg]{
+/a/ a]G8 tGsfpg] =============== ============== cfpg]
+xftsf cf}Fnfn] 6'y k]:6 
+lgrf]{g]
+================= cfsf/ kl/jt{g =============
+Knfl:6ssf] 6'j|mfnfO{ b'O{  
+5]paf6 tGsfpg]
+================= ===================== ========================
+lrq 7.25 a]n'gsf] /s]6
+
+=== Page 120 (PDF 124) ===
+120                   lj1fg tyf k|ljlwM sIff (
+s'g} lglZrt ;Ldf;Dd l8kmd{D8 j:t' 
+-deformed body _ af6 l8kmld{ª an x6fpFbf 
+pSt j:t' cfˆgf] d"n l:yltdf lkmtf{ cfpF5 . 
+s'g} l8kmd{D8 j:t'af6 l8kmld{ª annfO{ x6fpFbf 
+cfk\mgf] d"n cj:yf k|fKt ug]{ u'0f Onfl:6l;6L 
+xf] . tkfO{Fn] of] kf7sf] ;'?df tof/ kf/]sf] ;"rL 
+Onfl:6l;6Lsf] kl/efiff;Fu d]n vfP gvfPsf]  
+hfFr ug'{xf];\ .  
+agfj6sf cfwf/df j:t'x¿df km/s km/s 
+Onfl:6l;6L x'G5 . Onfl:6l;6L a9L x'g] j:t'sf] 
+cfsf/ / ;fOh kl/jt{g ug{ ufx|f] x'G5 . 
+l:6nsf] Onfl:6l;6L Psbd} a9L x'g] ePsfn] 
+o;sf] k|of]u alnof] 3/, k'n, cflb lgdf{0fsf 
+xfjf e/]sf] a]n'gnfO{ b'O{ 
+xftsf] lardf /fvL lyRg]
+================= ==================== =========================
+7f8f] kf/L /flvPsf] 
+l:6n l:k|ªnfO{ lj:tf/} 
+lyRg]÷tfGg]
+===================
+/a/ AofG8nfO{ lj:tf/} tfGbf o;sf] nDafO a9\5 . o;df nufOPsf] afx\o an x6fpFbf of] cfˆgf] 
+d"n nDafOdf lkmtf{ cfpFb5 . To:t} Pp6f /a/sf] an jf el/Psf] a]n'g lyRbf cfsf/ kl/jt{g 
+x'G5 / afXo an x6fpFbf k'gM cfk\mgf] jf:tljs cfsf/ k|fKt ub{5 . 
+s'g} j:t'df ljleGg lbzfaf6 an nufpFbf ;du|df Psn ansf ¿kdf kl/0ffTds an -
+resultant 
+force_ sf] c;/ b]lvG5 . j:t'sf] agfj6, nufOPsf anx¿sf] kl/df0f tyf lbzfcg';f/ 
+kl/0ffTds ann] j:t'sf] cfsf/ / ;fOh kl/jt{g ug{ ;S5 . kl/0ffTds an h;n] j:t'sf] 
+cfsf/ / ;fOhdf kl/jt{g NofpF5 To;nfO{ l8kmld{ª an -deforming force_ elgG5 . 
+k|Zg M s] l:6n l:k|ªnfO{ hlt ;Sbf] tGsfP kl5 k'gM d"n l:yltdf lkmtf{ cfp“5 xf]nf <
+lrq 7.26 Ps vDafdf cl8P/ 
+/8x¿n] yfldPsf] s0ff{nL k'n 
+d'5]sf] df6f]
+nflu ul/G5 . j:t'df lglZrt kl/df0feGbf al9sf] l8kmld{ª\ 
+an nufPdf pSt j:t' :yfoL ¿kdf l8kmd{ x'G5 . o;/L 
+ansf] k|of]un] j:t'sf] cfsf/ / ;fOhdf :yfoL ?kn] kl/
+jt{g cfpg] u'0fnfO{ Knfl:6l;6L elgG5 . Knfl:6l;6Ln] ubf{  
+d'5]sf] df6f]nfO{ ;lhn} cfsf/ lbP/ OF6f agfpg ;lsG5 . 
+:yfoL ¿kn] l8kmd{D8 j:t'df lg/Gt/ an a9fpFbf r'Fl8g] jf 
+efFlrg] x'G5 . 
+=== Page 121 (PDF 125) ===
+lj1fg tyf k|ljlwM sIff ( 121
+5nkmn ug'{xf];\ M
+1= s] an nufpFbf tlGsPsf] b]lvg] j:t'x¿ dfq Onfl:6s x'g\ <
+2= Onfl:6s j:t'sf u'0fsf cfwf/df /a/ / l:6ndWo] s'g a9L Onfl:6s x'G5 <
+kl/of]hgf sfo{ 
+-s_ cfk
+\mgf] jl/kl/ pknAw ;fdu|Lx¿sf] k|of]u u/L a]n'gaf6 rNg] v]nf}gf sf/ lgdf{0f ug'{xf];\ .  
+ pSt sf/
+df km/s km/s Onfl:6l;6L ePsf a]n'g / ljleGg tf}nx¿sf] k|of]uaf6 Go'6gsf]  
+ rfn;DaGwL bf];|f] lgod k|bz{g ug'{xf];\ .
+-v_ :yfgLo ¿kdf pknAw ;fdu|Lx¿ / 
+/a/ a]G8sf] Onfl:6l;6Lsf] k|of]u u/L Pp6f v]nf}gf   
+ x
+]lnsf]K6/ lgdf{0f ug'{xf];\ . 
+k|ltlaDag
+1= :yfgfGt/0f ;do u|fkm / ult ;do u|fkmsf] t'ngfTds cWoog 
+u|fkm e'msfjsf] 
+dfg
+x-cIf ;“u 
+;dfgfGt/
+u|fkmdf b]vfOP 
+e}“m dflylt/ 
+uPsf] l;wf  
+/]vf 
+u|fkmdf b]vfOP 
+e}“m e'msfj 
+tnlt/ uPsf] 
+l;wf /]vf 
+jj|m /]vf
+:yfgfGt/ 0f 
+;do /]vf
+ult e'msfj z"Go, 
+j:t' l:y/ 
+cj:yfdf
+Psgf;sf] 
+e'msfj, ;dfg 
+ultn] cufl8 
+Psgf;sf] 
+e'msfj, ;dfg 
+ultn] k5fl8
+s'g} b'O{ 
+laGb'df  
+e'msfj 
+km/s km/s, 
+c;dfg ult
+ult ;do 
+/]vf
+k|j]u e'msfj z"Go, 
+;dfg ult
+Psgf;sf] 
+e'msfj, ;dfg 
+k|j]u
+Psgf;sf] 
+e'msfj, ;dfg 
+ultx|f;
+s'g} b'O{ 
+laGb'df  
+e'msfj 
+km/s km/s, 
+c;dfg k|j]u
+=== Page 122 (PDF 126) ===
+122                   lj1fg tyf k|ljlwM sIff (
+2= l;wf /]vLo rfn;DaGwL ul0ftLo ;d:of ;dfwfgsf nflu pko'St ;dLs/0fsf] 5gf]6
+yfxf x'g'kg]{ r/ /flzx¿ t];f]{ rfnsf nflu ;dLs/0f 7f8f] rfnsf nflu ;dLs/0f
+;'?sf] ult -u_, clGtd ult 
+-v_, k|j]u -a_ / ;do -t_ dWo] 
+s'g} tLgcf]6f 
+v = u + at v = u + gt 
+;'?sf] ult -u_, clGtd ult 
+-v_, k|j]u -a_ / :yfgfGt/0f -s_ 
+dWo] s'g} tLgcf]6f
+v2 = u2+ 2as v2 = u2 + 2gh 
+;'?sf] ult -u_, k|j]u -a_ / 
+;do -t_ / :yfgfGt/0f -s_ dWo] 
+s'g} tLgcf]6f
+s = ut + 1 at2
+ 
+                      2 h = ut + 1 gt2  
+             2
+3= rfn;DaGwL Go'6gsf lgodx¿ 
+klxnf] lgod bf];|f] lgod t];|f] lgod
+s'g} c;Gt'lnt ansf] k|of]u gx'Gh]n 
+;Dd l:y/ cj:yfdf /x]sf] j:t' l:y/ 
+cj:yf d} /xG5 / rfn cj:yfdf 
+ePsf] j:t' ;dfg ultn] pxL lbzfdf 
+rfn cj:yfd} /lx/xG5 .
+ansf] k|of]uaf6 s'g} j:t'df 
+pTkGg x'g] k|j]u To;df nfu]sf] 
+an;Fu ;dfg'kflts / To;sf] 
+lk08;Fu Jo'Tj|mdfg'kflts x'G5 .
+s'g} klg lj|mofsf 
+nflu a/fa/ / 
+ljk/Lt k|ltlj|mof 
+x'G5 .
+4= Onfl:6l;6L / Knfl:6l;6L
+u'0f l8kmld{ª an x6fp“bf cfsf/df x'g] 
+kl/jt{gsf] lsl;d l/:6f]l/ª an
+Onfl:6l;6L klxn] s} cfsf/df cfpg] c:yfoL ljsl;t x'g]
+Knfl:6l;6L kl/jlt{t cfsf/ oyfjt\ /xg] :yfoL ljsl;t gx'g]
+cEof;
+!= ;xL pQ/ 5fGg'xf];\ M
+ -s_  ult ;do /]vfsf] e'msfjn] s]sf] dfg lbG5 <
+  -c_ 
+j]u 
+  -cf_ ult           
+  -O_ 
+k|j]u 
+  -O{_ 
+:yfgfGt/0f
+=== Page 123 (PDF 127) ===
+lj1fg tyf k|ljlwM sIff ( 123
+ -v_ lbOPsf ] ult ;do u|fkm;F+u ;DalGwt :yfgfGt/0f ;do u|fkm s'g xf] <
+ -c_ -cf_ -O_ -O{_
+ -u_ u'8
+\b} u/]sf] a;af6 cf]n{g' hf]lvdk"0f{ x'G5 . o; egfOnfO{ s'g cfwf/df k'li6 ug{  
+  ;lsG5 
+<
+  -c_ 
+l:y/ Ogl;{of 
+  -cf_ rfn Ogl;{of
+  -O_ rfn;DaGwL bf];|f] lgod 
+ -O{_ rfn;DaGwL t];|f] lgod
+ -3_  lj|mof / k|ltlj|mofsf ;Gbe{df s'g egfO ;xL x'G5 <
+  -c_ 
+Psn] csf]{nfO{ /2 ug{ ;S5g\ . -cf_ b'j} Pp6} j:t'df nfU5g\ .
+  -O_ 
+a/fa/ t/ pxL lbzfdf nfU5g\ . -O{_ b'O{ km/s km/s j:t'df nfU5g\ .
+ -ª_  Onfl:6l;6Lsf] k|of]u s'g xf] <
+  -c_ 
+df6f]nfO{ cfsf/ lbP/ udnfdf ¿kfGt/0f ug'{
+  -cf_ kmnfdnfO{ lk6]/ kftf agfpg'
+  -O_ 
+ldr]sf] lk7f]nfO{ /f]6Lsf] cfsf/ lbg'
+  -O{_ Aof8\ldG6gsf] ¥ofs]6n] ss xfGg' 
+ -r_  ;8sdf ;dfg ultn] u'l8
+/x]sf dfnafxs 6«s / sf/df ;dfg an nufpg ;Sg]  
+  a|
+]ssf] k|of]u u/L /f]lsPdf tnsf dWo] s'g egfO ;xL x'G5 <
+  -c_ 
+6«sn] kf/ ug]{ b'/L sf/n] kf/ ug]{ b'/LeGbf sd x'G5 .
+  -cf_ 
+sf/n] kf/ ug]{ b'/L 6«sn] kf/ ug]{ b'/LeGbf sd x'G5 .
+  -O_ 
+6«sn] kf/ ug]{ b'/L sf/n] kf/ ug]{ b'/L ;dfg x'G5 .
+  -O{_ 
+6«sn] kf/ ug]{ b'/L sf/n] kf/ ug]{ b'/L ;+u ;DaGwLt x'Fb}g .
+@= km
+/s n]Vg'xf];\ M
+ -s_ :yfgfGt/0f ;do u|fkm / ult ;do u|fkm
+ -v_ l:y/ Ogl;{of / rfn Ogl;{of
+ -u_ Onfl:6l;6L / Knfl:6l;6L
+t
+V
+=== Page 124 (PDF 128) ===
+124                   lj1fg tyf k|ljlwM sIff (
+#= sf/0f n]Vg'xf];\ M
+ -s_ ;dfg ultn] u'l8
+/x]sf df]6/;fOsn, sf/, 6«s, a;, 6«]g cflbnfO{ l:y/ cj:yfdf  
+  Nofpg 
+km/s km/s ;do nfU5 .
+ -v_  ?v xNnfpFbf kft tyf kmn v:5g\ .
+ -u_  a; ofqfsf j|mddf ofq'n] cfk
+\mgf] l;6;F+u} e'FOdf /fv]sf] emf]nf a; rn]sf] s]xL ;do  
+  kl5 
+cufl8sf] l;6glhs k'u]sf] e]6] .
+ -3_  aGb'saf6 uf]nL 5f]8\bf o;nfO{ bl/nf] cf8 lbg'k5{ .
+ -ª_  b'O{cf]6f ;dfg cfsf
+/ ePsf /a/sf annfO{ ;F+u} e'O{Fdf v;fNbf Pp6f a9L plk|mPsf]  
+  kfOof
+] .
+ -r_ /a/ a]G8nfO{ lglZrt ;LdfeGbf a9L tGsfpg' x'Fb}g .
+$= tnsf k|Zgsf] pQ/ n]Vg'xf];\ M
+ -s_ cf};t ult / k|j]usf] kl/efiff n]Vg'xf];\ .
+ -v_ l;wf /]vLo rfnsf lgDglnlvt ;dLs/0fx¿ k|dfl0ft ug'{xf];\ .
+  -c_ v = u + at
+  -cf_ v2 = u2 + 2as
+  O_ s = ut + 1 at2
+ 
+  
+               2
+ -u_ l;wf /] vLo rfndf ;dfg ultn] u'l8/x]sf] j:t'sf] rfn b]vfpg Ps Pscf]6f  
+  :yfgfGt
+/0f ;do u|fkm / ult ;do u|fkm lrq sf]g'{xf];\ .
+ -3_ lbOPsf
+] tYofª\ssf cfwf/df :yfgfGt/0f ;do u|fkm lvRg'xf];\ . pSt u|fkmdf  
+  :yfgfGt
+/0f ;do /]vfsf] e'msfj cWoog u/L rfnsf] k|s[lt pNn]v ug'{xf];\ .  
+  e'msfjsf 
+cfwf/df rfndf /x]sf] j:t'sf] klxnf] 4 s sf] cf};t ult lx;fa ug'{xf];\ .
+;do -s_ 0 2 4 6 8 10 12 14
+:yfgfGt/0f -m_ 0 4 8 8 12 8 4 0
+=== Page 125 (PDF 129) ===
+lj1fg tyf k|ljlwM sIff ( 125
+-ª_  ;+Fu}sf] :yfgfGt/0f 
+;do u|fkmdf v
+/fof] 
+/ s5'jfsf] bf}8af/] 
+syfdf v/fof] / 
+s5'jfsf] rfnnfO{ 
+Ps l;wf /]vLo 
+rfnsf ¿kdf k|bz{g 
+ul/Psf] 5 . pSt 
+u|fkmsf] cjnf]sg 
+u/L bf}8sf] ;'?cftb]
+lv clGtd;Dd v/fof] / s5'jfsf] bf}8 lj|mof ;dfj]z u/L syf n]Vg'xf];\ . 
+ -r_  Ogl;{of eg]sf
+] s] xf] < l:y/ Ogl;{of / rfn Ogl;{ofsf b'O{ b'O{cf]6f pbfx/0f n]Vg'xf];\ .
+ -5_  lk08 / Ogl;{oflarsf] ;DaGw n]Vg'xf];\ .
+ -h_  rfn;DaGwL Go'6gsf] klxnf] lgod n]Vg'xf];\ .
+ -em_  kl
+/0ffTds ann] j:t'sf] cj:yf abN5 egL b]vfpg b'O{cf]6f pbfx/0f n]Vg'xf];\ .
+ -`_  tLj| 
+ult / Go'6gsf] rfn;DaGwL klxnf] lgodsf cfwf/df  kxf8sf 3'DtLx¿df x'g  
+  ;Sg
+] a; b'3{6gfaf/] JofVof ug'{xf];\ .
+ -6_ rfn;DaGwL Go'6gsf] bf];|f] lgod n]vL F = ma  k|dfl0ft ug'{xf];\ .
+ -7_ rfn;DaGwL Go'6gsf] t];|f] lgod n]Vg'xf];\ .
+ -8_ b}lgs hLjgdf Go'6gsf rfn;DaGwL tLgcf]6} lgoddf cfwfl
+/t lj|mofsnfksf b'O{  
+  b'O{cf
+]6f pbfx/0fx¿ n]Vg'xf];\ .
+ -9_  Go'6gsf rfn;DaGwL klxnf], bf
+];|f] / t];|f] lgodsf s'g} b'O{ b'O{cf]6f pkof]u  
+  vf
+]hL u/L ltgsf] JofVof ug'{xf];\ .
+lj|mofsnfk pkof]u x'g] rfn;DaGwL 
+Go'6gsf] lgod
+JofVof
+===================== ==================== ========================
+:yfgfGt/0f s(m)
+;do t(s)
+=== Page 126 (PDF 130) ===
+126                   lj1fg tyf k|ljlwM sIff (
+ -0f_ tn lrqdf b]vfOPsf lj|mofsnfkdf lj|mof / k|ltlj|mof 5'6\ofpg'xf];\ .
+ -t_  pbfx/0f;lxt Onfl:6l;6L / Knfl:6l;6L kl/eflift ug'{xf];\ .
+ul0ftLo ;d:ofx¿
+-s_ l:y
+/ cj:yfaf6 wfjg dfu{df blIf0f lbzftk{m u'8\g ;'? u/]sf] xjfO{hxfhdf 1.5 m/s2 
+sf] ;dfg k|j]u pTkGg eof] / 30 s kl5 hldgaf6 p8\of] . xjfO{hxfh wfjgdfu{df u'8\
+bf ;'?sf] :yfgaf6 clGtd :yfg ;Ddsf] :yfgfGt/0f / l7s hldgaf6 p8\g' k"j{sf] ult 
+lx;fa ug'{xf];\ .  
+  (675 m blIf0f, 45 m/s blIf0f_  
+-v_ /f]xgn]
+ Pp6f k'nsf] dflyaf6 gbLsf] kfgLdf 9'ª\uf v;fn] / ;'/hn] tn glbsf] 5]pdf a;L 
+:6kjfrsf] ;xfotfn] 9'ª\ufnfO{ kfgLsf] ;tx;Dd cfOk'Ug nfu]sf] ;do 2 s kQf nufP . 
+9'ª\ufsf] v;fOdf k|j]unfO{ 9.8 m/s2 dfgL kfgLsf] ;txaf6 k'nsf] prfO lx;fa ug'{xf];\ .  
+  (19.6 m) 
+-u_ ;'/hsf] lk08 50 kg / pgn] r9]sf] ;fOsnsf] lk08 12 kg /x]sf] 5 . pgn] cf]/fnf] af6f]
+df ;fOsn u'8fpFbf 2 m/s2 sf] k|j]u pTkGg eof] . pSt cj:yfdf ;fOsndf nfu]sf] 
+kl/0ffTds an lx;fa ug'{xf];\ .  (124N)
+-3_ Pp6f 1500 kg lk08 ePsf] sf/ 72 km/h sf] ultn] u'l8/x]sf] lyof] . rfnsn] a|]ssf] k|of]
+u ubf{ 50 m  b'/L kf/ u/]kl5 To;sf] ult 10 km/h eof] . pSt cjlwdf sf/df nfu]sf] 
+kl/0ffTds an lx;fa ug'{xf];\ . 
+ (5850 N )
+-ª_  ;Fu}sf] lrqdf Pp6f a;sf] rfnnfO{ ult ;do u|fkmdf b]vfOPsf] 5 . u|fkmsf] cWoog u/L 
+tnsf k|Zgx¿sf] pQ/ n]Vg'xf];\ . 
+ -c_  ;dfg ult, ;dfg k|j]u, c;dfg  
+  k|j
+]u / ultx|f;sf v08x¿ 5'6\6ofP/  
+  n
+]Vg'xf];\ .
+ -cf_  ;dfg k|j]u ePsf v08x¿dWo] s'g  
+  v08df 
+j:t'sf] ult tLj| ¿kn]  
+  kl
+/jt{g ePsf] /x]5 <
+ -O_   C / D sf] lardf a;sf] k|j]usf] dfg  
+  slt 5 <
+ -O{_  a;n] C af6 D df k'Ubf x'g] :yfgfGt/0f lx;fa ug'{xf];\ .       -70 m k"j{ tk{m_
+;do (s)
+:yfgfGt/0f (m)
