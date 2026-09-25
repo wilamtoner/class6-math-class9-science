@@ -1,0 +1,1515 @@
+      <!-- ================= CHAPTER 15: समतलीय आकृति ================= -->
+      <div id="chapter-view-15" class="hidden space-y-6">
+
+        <!-- Chapter Header Banner -->
+        <div class="p-6 md:p-8 rounded-3xl bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 border border-blue-200/80 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <div class="flex items-center gap-2 text-xs font-bold text-blue-700 mb-1">एकाइ ५: ज्यामिति (Unit 5: Geometry — दोस्रो पाठ)</div>
+            <h2 class="text-2xl md:text-3xl font-black text-slate-900">पाठ १५: समतलीय आकृति (Plane Figures)</h2>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="text-xs bg-slate-100 text-slate-700 font-semibold px-3 py-1 rounded-xl border border-slate-200">पाठ्यपुस्तक पृष्ठ १८६–१९८</span>
+            <span class="text-xs bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-xl border border-blue-200">अभ्यास १५.१, १५.२, मिश्रित अभ्यास र परियोजना</span>
+          </div>
+        </div>
+
+        <!-- Chapter 15 Navigation Tabs -->
+        <div class="flex border-b border-slate-200 gap-2 mb-6 overflow-x-auto pb-1 text-sm font-bold">
+          <button id="ch15-tab-concepts" onclick="setTabCh15('concepts')" class="px-5 py-2.5 rounded-xl bg-blue-600 text-white shadow-sm font-bold transition whitespace-nowrap cursor-pointer">
+            १. अवधारणा र ज्यामितीय ल्याब
+          </button>
+          <button id="ch15-tab-exercises" onclick="setTabCh15('exercises')" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+            २. सम्पूर्ण अभ्यास समाधान (१५.१, १५.२ र मिश्रित)
+          </button>
+          <button id="ch15-tab-tiers" onclick="setTabCh15('tiers')" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+            ३. तीन तहका नमुना प्रश्नहरू (१६ प्रश्न)
+          </button>
+          <button id="ch15-tab-quiz" onclick="setTabCh15('quiz')" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+            ४. आत्म-मूल्याङ्कन क्विज
+          </button>
+        </div>
+
+        <!-- ================= CH15 TAB 1: CONCEPTS & LAB ================= -->
+        <div id="ch15-view-concepts" class="space-y-6">
+
+          <!-- Core Concepts Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Card 1: Triangle Classification by Sides -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-sm">१</span>
+                <h3 class="font-bold text-slate-800 text-base">त्रिभुज: भुजाका आधारमा</h3>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                भुजाको लम्बाइ तुलना गरेर त्रिभुजलाई तीन प्रकारमा बाँडिन्छ:
+              </p>
+              <div class="p-3 bg-blue-50 border border-blue-200 rounded-xl space-y-1.5 text-xs">
+                <div>• <strong>समबाहु (Equilateral):</strong> ३ वटै भुजा बराबर ($a=b=c$); प्रत्येक कोण $60^\circ$ ।</div>
+                <div>• <strong>समद्विबाहु (Isosceles):</strong> कुनै २ भुजा बराबर; आधारकोणहरू पनि बराबर ।</div>
+                <div>• <strong>विषमबाहु (Scalene):</strong> ३ वटै भुजा फरक-फरक नापका भएका ।</div>
+              </div>
+            </div>
+
+            <!-- Card 2: Triangle Classification by Angles -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm">२</span>
+                <h3 class="font-bold text-slate-800 text-base">त्रिभुज: कोणका आधारमा</h3>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                कोणको परिमाण अनुसार त्रिभुजका तीन प्रकार हुन्छन्:
+              </p>
+              <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl space-y-1.5 text-xs">
+                <div>• <strong>न्यूनकोणी (Acute):</strong> तीनवटै कोणहरू $90^\circ$ भन्दा साना ।</div>
+                <div>• <strong>समकोणी (Right):</strong> एउटा कोण ठ्याक्कै $90^\circ$ भएको (कर्ण सबैभन्दा लामो) ।</div>
+                <div>• <strong>अधिककोणी (Obtuse):</strong> एउटा कोण $90^\circ$ भन्दा ठूलो ($>90^\circ$) भएको ।</div>
+              </div>
+            </div>
+
+            <!-- Card 3: Triangle Angle Theorems -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-sm">३</span>
+                <h3 class="font-bold text-slate-800 text-base">त्रिभुजका आधारभूत साध्यहरू</h3>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                कोण तथा भुजासम्बन्धी सार्वभौम गणितीय नियमहरू:
+              </p>
+              <div class="p-3 bg-amber-50 border border-amber-200 rounded-xl space-y-1.5 text-xs">
+                <div>• <strong>भित्री कोण योग:</strong> $\angle A + \angle B + \angle C = 180^\circ$ (२ समकोण) ।</div>
+                <div>• <strong>बाहिरी कोण साध्य:</strong> बाहिरी कोण = अनासन्न २ भित्री कोणको योग ।</div>
+                <div>• <strong>भुजा असमानता:</strong> कुनै २ भुजाको योग तेस्रोभन्दा ठूलो ($a+b > c$) ।</div>
+              </div>
+            </div>
+
+            <!-- Card 4: Quadrilaterals -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-sm">४</span>
+                <h3 class="font-bold text-slate-800 text-base">चतुर्भुज र प्रकारहरू</h3>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                चार सीधा रेखाखण्डले घेरिएको बन्द समतलीय आकृति:
+              </p>
+              <div class="p-3 bg-purple-50 border border-purple-200 rounded-xl space-y-1.5 text-xs">
+                <div>• <strong>४ कोणको योग:</strong> $\sum \angle_\square = 360^\circ$ (४ समकोण) ।</div>
+                <div>• <strong>आयत व वर्ग:</strong> प्रत्येक कोण $90^\circ$; विकर्णहरू बराबर ।</div>
+                <div>• <strong>समानान्तर व समबाहु:</strong> सम्मुख भुजा समानान्तर; सम्मुख कोण बराबर ।</div>
+                <div>• <strong>समलम्ब (Trapezium):</strong> १ जोडा सम्मुख भुजा मात्र समानान्तर ।</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Comprehensive Comparison Tables -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Table 1: Triangle Master Guide -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                  त्रिभुज वर्गीकरण तथा विशेषता तालिका
+                </h4>
+                <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 font-semibold">६ प्रकारहरू</span>
+              </div>
+              <div class="overflow-x-auto">
+                <table class="w-full text-xs text-left border-collapse">
+                  <thead>
+                    <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+                      <th class="p-2.5 font-bold">वर्गीकरण</th>
+                      <th class="p-2.5 font-bold">प्रकार</th>
+                      <th class="p-2.5 font-bold">भुजाको गुण</th>
+                      <th class="p-2.5 font-bold">कोणको विशेषता</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-150">
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-2.5 font-semibold text-blue-700 rowspan-3" rowspan="3">भुजाको आधारमा</td>
+                      <td class="p-2.5 font-bold">समबाहु (Equilateral)</td>
+                      <td class="p-2.5">तीनै भुजा बराबर ($a=b=c$)</td>
+                      <td class="p-2.5">तीनै कोण बराबर ($60^\circ$)</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-2.5 font-bold">समद्विबाहु (Isosceles)</td>
+                      <td class="p-2.5">कुनै दुई भुजा बराबर</td>
+                      <td class="p-2.5">आधारकोणहरू बराबर</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-2.5 font-bold">विषमबाहु (Scalene)</td>
+                      <td class="p-2.5">तीनै भुजा फरक-फरक</td>
+                      <td class="p-2.5">तीनै कोण फरक-फरक</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 bg-emerald-50/40">
+                      <td class="p-2.5 font-semibold text-emerald-700 rowspan-3" rowspan="3">कोणको आधारमा</td>
+                      <td class="p-2.5 font-bold">न्यूनकोणी (Acute)</td>
+                      <td class="p-2.5">कुनै पनि लम्बाइ हुनसक्ने</td>
+                      <td class="p-2.5">तीनै कोण $90^\circ$ भन्दा साना</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 bg-emerald-50/40">
+                      <td class="p-2.5 font-bold">समकोणी (Right)</td>
+                      <td class="p-2.5">$h^2 = p^2 + b^2$</td>
+                      <td class="p-2.5">१ कोण ठ्याक्कै $90^\circ$</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 bg-emerald-50/40">
+                      <td class="p-2.5 font-bold">अधिककोणी (Obtuse)</td>
+                      <td class="p-2.5">अधिककोण सामुन्ने लामो भुजा</td>
+                      <td class="p-2.5">१ कोण $90^\circ$ भन्दा ठूलो</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Table 2: Quadrilateral Master Guide -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+                  चतुर्भुज वर्गीकरण तथा विशेषता तालिका
+                </h4>
+                <span class="text-xs px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-800 font-semibold">५ मुख्य प्रकार</span>
+              </div>
+              <div class="overflow-x-auto">
+                <table class="w-full text-xs text-left border-collapse">
+                  <thead>
+                    <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+                      <th class="p-2.5 font-bold">चतुर्भुज</th>
+                      <th class="p-2.5 font-bold">भुजाहरू</th>
+                      <th class="p-2.5 font-bold">कोणहरू</th>
+                      <th class="p-2.5 font-bold">विकर्णहरू (Diagonals)</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-150">
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-2.5 font-bold text-indigo-700">आयत (Rectangle)</td>
+                      <td class="p-2.5">सम्मुख भुजा बराबर र समानान्तर</td>
+                      <td class="p-2.5">चारै कोण $90^\circ$</td>
+                      <td class="p-2.5">बराबर लम्बाइ, समद्विभाजित हुने</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-2.5 font-bold text-emerald-700">वर्ग (Square)</td>
+                      <td class="p-2.5">चारै भुजा बराबर र समानान्तर</td>
+                      <td class="p-2.5">चारै कोण $90^\circ$</td>
+                      <td class="p-2.5">बराबर र परस्पर $90^\circ$ मा काटिने</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-2.5 font-bold text-blue-700">समानान्तर चतुर्भुज</td>
+                      <td class="p-2.5">दुई जोडा सम्मुख भुजा समानान्तर</td>
+                      <td class="p-2.5">सम्मुख कोण बराबर; आसन्नको योग $180^\circ$</td>
+                      <td class="p-2.5">परस्पर समद्विभाजित हुने</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-2.5 font-bold text-amber-700">समबाहु चतुर्भुज (Rhombus)</td>
+                      <td class="p-2.5">चारै भुजा बराबर र सम्मुख समानान्तर</td>
+                      <td class="p-2.5">सम्मुख कोण बराबर</td>
+                      <td class="p-2.5">परस्पर $90^\circ$ मा समद्विभाजित हुने</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-2.5 font-bold text-rose-700">समलम्ब चतुर्भुज (Trapezium)</td>
+                      <td class="p-2.5">१ जोडा सम्मुख भुजा मात्र समानान्तर</td>
+                      <td class="p-2.5">समानान्तर भुजाका क्रमागत भित्री योग $180^\circ$</td>
+                      <td class="p-2.5">कुनै विशेष नियम नभएको</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= INTERACTIVE GEOMETRY LABS ================= -->
+          <div class="p-6 bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-3xl shadow-xl space-y-6">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-indigo-800/60 pb-4">
+              <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-bold border border-blue-400/30 mb-2">
+                  <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                  प्रयोगात्मक तथा अनुसन्धानात्मक प्रयोगशाला
+                </div>
+                <h3 class="text-xl md:text-2xl font-black text-white">पाठ १५ ज्यामितीय ल्याब: गतिशील त्रिभुज र चतुर्भुज अन्वेषक</h3>
+              </div>
+              <!-- Lab Mode Switcher -->
+              <div class="flex items-center gap-2 bg-slate-800/80 p-1.5 rounded-2xl border border-indigo-700/50">
+                <button id="btn-lab-triangle" onclick="switchCh15Lab('triangle')" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold bg-blue-600 text-white shadow-sm transition cursor-pointer">
+                  त्रिभुज प्रयोगशाला
+                </button>
+                <button id="btn-lab-quad" onclick="switchCh15Lab('quad')" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold text-slate-300 hover:text-white hover:bg-slate-700 transition cursor-pointer">
+                  चतुर्भुज प्रयोगशाला
+                </button>
+              </div>
+            </div>
+
+            <!-- LAB 1: DYNAMIC TRIANGLE EXPLORER -->
+            <div id="ch15-sublab-triangle" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Visual Canvas / SVG Area -->
+              <div class="lg:col-span-7 bg-slate-950/70 p-4 rounded-2xl border border-indigo-900/60 flex flex-col items-center">
+                <div class="w-full flex justify-between items-center text-xs text-slate-400 mb-2">
+                  <span>शीर्षबिन्दु A लाई ड्र्याग गर्नुहोस् वा स्लाइडर चलाउनुहोस्</span>
+                  <span id="tri-type-badge" class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-bold">समद्विबाहु त्रिभुज</span>
+                </div>
+                
+                <div class="w-full max-w-[460px] aspect-[4/3] bg-slate-900 rounded-xl relative overflow-hidden border border-slate-800 flex items-center justify-center">
+                  <svg id="svg-triangle-lab" viewBox="0 0 400 300" class="w-full h-full select-none cursor-crosshair">
+                    <!-- Grid background -->
+                    <defs>
+                      <pattern id="tri-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                      </pattern>
+                    </defs>
+                    <rect width="400" height="300" fill="url(#tri-grid)" />
+
+                    <!-- Triangle filled shape -->
+                    <polygon id="tri-polygon" points="200,60 80,240 320,240" fill="rgba(59, 130, 246, 0.22)" stroke="#38bdf8" stroke-width="3" stroke-linejoin="round" />
+
+                    <!-- Angle Arcs -->
+                    <path id="arc-A" fill="rgba(234, 179, 8, 0.25)" stroke="#eab308" stroke-width="1.5" />
+                    <path id="arc-B" fill="rgba(234, 179, 8, 0.25)" stroke="#eab308" stroke-width="1.5" />
+                    <path id="arc-C" fill="rgba(234, 179, 8, 0.25)" stroke="#eab308" stroke-width="1.5" />
+
+                    <!-- Side length labels -->
+                    <text id="label-side-c" x="130" y="140" fill="#93c5fd" font-size="12" font-weight="bold" text-anchor="middle">c</text>
+                    <text id="label-side-b" x="270" y="140" fill="#93c5fd" font-size="12" font-weight="bold" text-anchor="middle">b</text>
+                    <text id="label-side-a" x="200" y="260" fill="#93c5fd" font-size="12" font-weight="bold" text-anchor="middle">a</text>
+
+                    <!-- Vertices draggable/visual markers -->
+                    <circle id="node-A" cx="200" cy="60" r="9" fill="#f43f5e" stroke="#ffffff" stroke-width="2.5" class="cursor-pointer" />
+                    <circle id="node-B" cx="80" cy="240" r="7" fill="#3b82f6" stroke="#ffffff" stroke-width="2" />
+                    <circle id="node-C" cx="320" cy="240" r="7" fill="#3b82f6" stroke="#ffffff" stroke-width="2" />
+
+                    <!-- Vertex Text Labels -->
+                    <text id="text-A" x="200" y="45" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">A</text>
+                    <text id="text-B" x="65" y="250" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">B</text>
+                    <text id="text-C" x="335" y="250" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">C</text>
+                  </svg>
+                </div>
+
+                <!-- Angle Sum Proof Bar -->
+                <div class="w-full mt-3 p-3 bg-indigo-950/80 rounded-xl border border-indigo-700/50 flex items-center justify-between text-xs md:text-sm">
+                  <div class="flex items-center gap-1.5 font-bold">
+                    <span class="text-amber-400">∠A: <span id="val-ang-A">60°</span></span> +
+                    <span class="text-amber-400">∠B: <span id="val-ang-B">60°</span></span> +
+                    <span class="text-amber-400">∠C: <span id="val-ang-C">60°</span></span>
+                  </div>
+                  <div class="font-extrabold text-emerald-400 text-sm md:text-base">
+                    = <span id="val-ang-sum">180°</span> ✓
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controls & Live Real-time Diagnostics -->
+              <div class="lg:col-span-5 space-y-4">
+                <!-- Preset Buttons -->
+                <div class="p-4 bg-slate-950/70 rounded-2xl border border-indigo-900/60 space-y-2.5">
+                  <span class="text-xs font-bold text-slate-300 uppercase tracking-wider block">द्रुत नमुनाहरू (Quick Presets)</span>
+                  <div class="grid grid-cols-2 gap-2 text-xs">
+                    <button onclick="setTriPreset('equilateral')" class="p-2 rounded-xl bg-slate-800 hover:bg-blue-600 transition text-left font-semibold border border-slate-700">
+                      🔺 समबाहु (Equilateral)
+                    </button>
+                    <button onclick="setTriPreset('isosceles')" class="p-2 rounded-xl bg-slate-800 hover:bg-blue-600 transition text-left font-semibold border border-slate-700">
+                      🔺 समद्विबाहु (Isosceles)
+                    </button>
+                    <button onclick="setTriPreset('right')" class="p-2 rounded-xl bg-slate-800 hover:bg-blue-600 transition text-left font-semibold border border-slate-700">
+                      📐 समकोणी (Right-angled)
+                    </button>
+                    <button onclick="setTriPreset('obtuse')" class="p-2 rounded-xl bg-slate-800 hover:bg-blue-600 transition text-left font-semibold border border-slate-700">
+                      📐 अधिककोणी (Obtuse)
+                    </button>
+                    <button onclick="setTriPreset('acute_scalene')" class="col-span-2 p-2 rounded-xl bg-slate-800 hover:bg-blue-600 transition text-left font-semibold border border-slate-700">
+                      📐 विषमबाहु न्यूनकोणी (Scalene Acute)
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Sliders for Vertex A -->
+                <div class="p-4 bg-slate-950/70 rounded-2xl border border-indigo-900/60 space-y-3">
+                  <span class="text-xs font-bold text-slate-300 uppercase tracking-wider block">शीर्षबिन्दु A को स्थान नियन्त्रण</span>
+                  <div class="space-y-2 text-xs">
+                    <div class="flex justify-between">
+                      <label class="text-slate-400">तेर्सो स्थिति (Horizontal X):</label>
+                      <span id="slider-x-val" class="font-bold text-cyan-400">200 px</span>
+                    </div>
+                    <input id="slider-tri-x" type="range" min="60" max="340" value="200" oninput="onTriSliderChange()" class="w-full accent-blue-500 cursor-pointer" />
+
+                    <div class="flex justify-between pt-1">
+                      <label class="text-slate-400">ठाडो स्थिति (Vertical Y):</label>
+                      <span id="slider-y-val" class="font-bold text-cyan-400">60 px</span>
+                    </div>
+                    <input id="slider-tri-y" type="range" min="40" max="210" value="60" oninput="onTriSliderChange()" class="w-full accent-blue-500 cursor-pointer" />
+                  </div>
+                </div>
+
+                <!-- Live Properties Card -->
+                <div class="p-4 bg-indigo-950/60 rounded-2xl border border-indigo-800/60 space-y-2 text-xs">
+                  <span class="font-bold text-indigo-300 uppercase tracking-wider block">वास्तविक ज्यामितीय विश्लेषण</span>
+                  <div class="grid grid-cols-2 gap-2 text-slate-300">
+                    <div class="p-2 rounded-lg bg-slate-900/70">भुजा BC (a): <span id="stat-side-a" class="font-bold text-white">24.0 cm</span></div>
+                    <div class="p-2 rounded-lg bg-slate-900/70">भुजा AC (b): <span id="stat-side-b" class="font-bold text-white">21.6 cm</span></div>
+                    <div class="p-2 rounded-lg bg-slate-900/70">भुजा AB (c): <span id="stat-side-c" class="font-bold text-white">21.6 cm</span></div>
+                    <div class="p-2 rounded-lg bg-slate-900/70">वर्गीकरण १: <span id="stat-side-type" class="font-bold text-emerald-400">समद्विबाहु</span></div>
+                  </div>
+                  <div class="p-2 rounded-lg bg-slate-900/70 text-slate-300">
+                    कोणका आधारमा वर्गीकरण: <span id="stat-angle-type" class="font-bold text-amber-400">न्यूनकोणी त्रिभुज</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LAB 2: QUADRILATERAL EXPLORER -->
+            <div id="ch15-sublab-quad" class="hidden grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Visual Canvas / SVG Area -->
+              <div class="lg:col-span-7 bg-slate-950/70 p-4 rounded-2xl border border-indigo-900/60 flex flex-col items-center">
+                <div class="w-full flex justify-between items-center text-xs text-slate-400 mb-2">
+                  <span>चतुर्भुजका प्रकारहरू चयन गरी गुणहरू निरीक्षण गर्नुहोस्</span>
+                  <span id="quad-type-badge" class="px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 font-bold">आयत (Rectangle)</span>
+                </div>
+                
+                <div class="w-full max-w-[460px] aspect-[4/3] bg-slate-900 rounded-xl relative overflow-hidden border border-slate-800 flex items-center justify-center">
+                  <svg id="svg-quad-lab" viewBox="0 0 400 300" class="w-full h-full select-none">
+                    <rect width="400" height="300" fill="url(#tri-grid)" />
+
+                    <!-- Diagonal helper dashed lines -->
+                    <line id="quad-diag-1" x1="80" y1="80" x2="320" y2="220" stroke="rgba(255,255,255,0.2)" stroke-dasharray="4,4" stroke-width="1.5" />
+                    <line id="quad-diag-2" x1="320" y1="80" x2="80" y2="220" stroke="rgba(255,255,255,0.2)" stroke-dasharray="4,4" stroke-width="1.5" />
+
+                    <!-- Quadrilateral Polygon -->
+                    <polygon id="quad-polygon" points="80,80 320,80 320,220 80,220" fill="rgba(168, 85, 247, 0.22)" stroke="#c084fc" stroke-width="3" stroke-linejoin="round" />
+
+                    <!-- Right angle markers (optional) -->
+                    <path id="quad-sq-A" fill="none" stroke="#eab308" stroke-width="1.5" d="M 80 100 L 100 100 L 100 80" />
+                    <path id="quad-sq-B" fill="none" stroke="#eab308" stroke-width="1.5" d="M 300 80 L 300 100 L 320 100" />
+                    <path id="quad-sq-C" fill="none" stroke="#eab308" stroke-width="1.5" d="M 320 200 L 300 200 L 300 220" />
+                    <path id="quad-sq-D" fill="none" stroke="#eab308" stroke-width="1.5" d="M 100 220 L 100 200 L 80 200" />
+
+                    <!-- Vertices circles -->
+                    <circle id="qnode-A" cx="80" cy="80" r="6" fill="#f43f5e" stroke="#ffffff" stroke-width="2" />
+                    <circle id="qnode-B" cx="320" cy="80" r="6" fill="#3b82f6" stroke="#ffffff" stroke-width="2" />
+                    <circle id="qnode-C" cx="320" cy="220" r="6" fill="#3b82f6" stroke="#ffffff" stroke-width="2" />
+                    <circle id="qnode-D" cx="80" cy="220" r="6" fill="#3b82f6" stroke="#ffffff" stroke-width="2" />
+
+                    <!-- Vertex Labels -->
+                    <text id="qtext-A" x="65" y="75" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">A</text>
+                    <text id="qtext-B" x="335" y="75" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">B</text>
+                    <text id="qtext-C" x="335" y="240" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">C</text>
+                    <text id="qtext-D" x="65" y="240" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">D</text>
+
+                    <!-- Side length tags -->
+                    <text id="qlabel-AB" x="200" y="70" fill="#cbd5e1" font-size="11" font-weight="bold" text-anchor="middle">AB = 6 cm</text>
+                    <text id="qlabel-CD" x="200" y="240" fill="#cbd5e1" font-size="11" font-weight="bold" text-anchor="middle">CD = 6 cm</text>
+                    <text id="qlabel-AD" x="50" y="155" fill="#cbd5e1" font-size="11" font-weight="bold" text-anchor="middle">AD = 4 cm</text>
+                    <text id="qlabel-BC" x="350" y="155" fill="#cbd5e1" font-size="11" font-weight="bold" text-anchor="middle">BC = 4 cm</text>
+                  </svg>
+                </div>
+
+                <!-- Quad Angle Sum Proof Bar -->
+                <div class="w-full mt-3 p-3 bg-indigo-950/80 rounded-xl border border-indigo-700/50 flex items-center justify-between text-xs md:text-sm">
+                  <div class="flex items-center gap-1 font-bold">
+                    <span class="text-amber-400">∠A: <span id="qval-ang-A">90°</span></span> +
+                    <span class="text-amber-400">∠B: <span id="qval-ang-B">90°</span></span> +
+                    <span class="text-amber-400">∠C: <span id="qval-ang-C">90°</span></span> +
+                    <span class="text-amber-400">∠D: <span id="qval-ang-D">90°</span></span>
+                  </div>
+                  <div class="font-extrabold text-emerald-400 text-sm md:text-base">
+                    = <span id="qval-ang-sum">360°</span> ✓
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quad Switcher & Properties Checklist -->
+              <div class="lg:col-span-5 space-y-4">
+                <div class="p-4 bg-slate-950/70 rounded-2xl border border-indigo-900/60 space-y-2.5">
+                  <span class="text-xs font-bold text-slate-300 uppercase tracking-wider block">चतुर्भुज छनोट गर्नुहोस्</span>
+                  <div class="grid grid-cols-2 gap-2 text-xs">
+                    <button onclick="setQuadType('rectangle')" class="p-2.5 rounded-xl bg-slate-800 hover:bg-purple-600 transition text-left font-semibold border border-slate-700 text-white">
+                      ▭ आयत (Rectangle)
+                    </button>
+                    <button onclick="setQuadType('square')" class="p-2.5 rounded-xl bg-slate-800 hover:bg-purple-600 transition text-left font-semibold border border-slate-700 text-white">
+                      ⏹ वर्ग (Square)
+                    </button>
+                    <button onclick="setQuadType('parallelogram')" class="p-2.5 rounded-xl bg-slate-800 hover:bg-purple-600 transition text-left font-semibold border border-slate-700 text-white">
+                      ▰ समानान्तर चतुर्भुज
+                    </button>
+                    <button onclick="setQuadType('rhombus')" class="p-2.5 rounded-xl bg-slate-800 hover:bg-purple-600 transition text-left font-semibold border border-slate-700 text-white">
+                      ◇ समबाहु चतुर्भुज
+                    </button>
+                    <button onclick="setQuadType('trapezium')" class="col-span-2 p-2.5 rounded-xl bg-slate-800 hover:bg-purple-600 transition text-left font-semibold border border-slate-700 text-white">
+                      ⏢ समलम्ब चतुर्भुज (Trapezium)
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Quad Properties Checklist -->
+                <div class="p-4 bg-indigo-950/60 rounded-2xl border border-indigo-800/60 space-y-2.5 text-xs">
+                  <span id="quad-prop-title" class="font-bold text-indigo-300 uppercase tracking-wider block">आयतका प्रमाणित ज्यामितीय गुणहरू</span>
+                  <div id="quad-prop-list" class="space-y-1.5 text-slate-300">
+                    <div class="flex items-center gap-2 text-emerald-400">✓ सम्मुख भुजाहरू बराबर र समानान्तर ($AB = CD$, $AD = BC$)</div>
+                    <div class="flex items-center gap-2 text-emerald-400">✓ चारवटै कोणहरू $90^\circ$ (समकोण) छन्</div>
+                    <div class="flex items-center gap-2 text-emerald-400">✓ दुवै विकर्णहरू ($AC = BD$) लम्बाइमा बराबर छन्</div>
+                    <div class="flex items-center gap-2 text-emerald-400">✓ विकर्णहरू परस्पर समद्विभाजित हुन्छन्</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ================= CH15 TAB 2: EXERCISES SOLUTIONS ================= -->
+        <div id="ch15-view-exercises" class="hidden space-y-8">
+
+          <!-- Section Switcher / Anchor Pills -->
+          <div class="flex flex-wrap items-center gap-2 p-3 bg-slate-100/80 rounded-2xl border border-slate-200 text-xs font-bold">
+            <span class="text-slate-500 mr-1">अभ्यासहरू:</span>
+            <a href="#ch15-ex-15-1" class="px-3 py-1.5 rounded-xl bg-white hover:bg-blue-50 text-blue-700 border border-slate-200 transition shadow-2xs">अभ्यास १५.१ (त्रिभुज)</a>
+            <a href="#ch15-ex-15-2" class="px-3 py-1.5 rounded-xl bg-white hover:bg-purple-50 text-purple-700 border border-slate-200 transition shadow-2xs">अभ्यास १५.२ (चतुर्भुज)</a>
+            <a href="#ch15-ex-mixed" class="px-3 py-1.5 rounded-xl bg-white hover:bg-amber-50 text-amber-700 border border-slate-200 transition shadow-2xs">मिश्रित अभ्यास (१ र २)</a>
+            <a href="#ch15-ex-theorems" class="px-3 py-1.5 rounded-xl bg-white hover:bg-emerald-50 text-emerald-700 border border-slate-200 transition shadow-2xs">थप साध्य र कोण अभ्यास</a>
+          </div>
+
+          <!-- ================= SECTION: EXERCISE 15.1 ================= -->
+          <div id="ch15-ex-15-1" class="space-y-6">
+            <div class="flex items-center justify-between border-b-2 border-blue-500 pb-2">
+              <h3 class="text-lg md:text-xl font-black text-slate-900 flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-bold">१</span>
+                अभ्यास १५.१ (पाठ्यपुस्तक पृष्ठ १८९–१९१) — त्रिभुजको वर्गीकरण
+              </h3>
+              <span class="text-xs bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-xl">६ मुख्य प्रश्नहरू र परियोजना</span>
+            </div>
+
+            <!-- Q1: Fill in the Blanks -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base text-blue-700">
+                प्रश्न नं. १: तलका खाली ठाउँमा उपयुक्त शब्द भर्नुहोस् :
+              </h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <div>(क) समबाहु त्रिभुजमा सबै कोणहरू <span class="font-extrabold text-blue-600 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">बराबर ($60^\circ$)</span> हुन्छन् ।</div>
+                  <div class="text-[11px] text-slate-500">कारण: तीनवटै भुजा बराबर हुँदा तीनवटै कोणहरू समान ($180^\circ \div 3 = 60^\circ$) हुन्छन् ।</div>
+                </div>
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <div>(ख) सबै भुजाहरूको लम्बाइ फरक फरक भएको त्रिभुजलाई <span class="font-extrabold text-blue-600 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">विषमबाहु (Scalene)</span> त्रिभुज भनिन्छ ।</div>
+                  <div class="text-[11px] text-slate-500">परिभाषा: तिनै भुजा असमान ($a \ne b \ne c$) भएको त्रिभुज ।</div>
+                </div>
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <div>(ग) भुजाका आधारमा त्रिभुज <span class="font-extrabold text-blue-600 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">३ (तीन)</span> प्रकारका छन् ।</div>
+                  <div class="text-[11px] text-slate-500">प्रकारहरू: समबाहु, समद्विबाहु र विषमबाहु त्रिभुज ।</div>
+                </div>
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <div>(घ) त्रिभुजको कुनै एउटा कोणको नाप $90^\circ$ भन्दा बढी भएमा उक्त त्रिभुजलाई <span class="font-extrabold text-blue-600 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">अधिककोणी (Obtuse-angled)</span> त्रिभुज भनिन्छ ।</div>
+                  <div class="text-[11px] text-slate-500">परिभाषा: कुनै एउटा कोण $90^\circ$ भन्दा ठूलो भएको त्रिभुज ।</div>
+                </div>
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1 md:col-span-2">
+                  <div>(ङ) भुजाका आधारमा समबाहु त्रिभुज छ भने कोणका आधारमा सधैँ <span class="font-extrabold text-blue-600 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">न्यूनकोणी (Acute-angled)</span> त्रिभुज हुन्छ ।</div>
+                  <div class="text-[11px] text-slate-500">कारण: समबाहु त्रिभुजका प्रत्येक कोण $60^\circ$ हुन्छन् र ती तीनवटै $90^\circ$ भन्दा साना (न्यूनकोण) हुन् ।</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q2: Classification by Sides with SVG Diagrams -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base text-blue-700">
+                प्रश्न नं. २: तल दिइएका त्रिभुजहरूलाई भुजाहरूको नापका आधारमा वर्गीकरण गर्नुहोस् :
+              </h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- 2(a) -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (क): $\triangle ABC$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <polygon points="60,15 20,85 100,85" fill="rgba(59,130,246,0.1)" stroke="#2563eb" stroke-width="2" />
+                      <!-- Equal tick marks on AB and AC -->
+                      <line x1="36" y1="48" x2="44" y2="52" stroke="#ef4444" stroke-width="1.5" />
+                      <line x1="76" y1="52" x2="84" y2="48" stroke="#ef4444" stroke-width="1.5" />
+                      <text x="60" y="12" font-size="10" font-weight="bold" text-anchor="middle">A</text>
+                      <text x="12" y="90" font-size="10" font-weight="bold" text-anchor="middle">B</text>
+                      <text x="108" y="90" font-size="10" font-weight="bold" text-anchor="middle">C</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <div class="font-bold text-emerald-700">समद्विबाहु त्रिभुज</div>
+                    <div class="text-[11px] text-slate-500 mt-0.5">$AB = AC \ne BC$ (दुई भुजा बराबर)</div>
+                  </div>
+                </div>
+
+                <!-- 2(b) -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (ख): $\triangle PQR$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <polygon points="25,15 25,85 105,85" fill="rgba(244,63,94,0.1)" stroke="#e11d48" stroke-width="2" />
+                      <path d="M 25 73 L 37 73 L 37 85" fill="none" stroke="#e11d48" stroke-width="1" />
+                      <text x="25" y="12" font-size="10" font-weight="bold" text-anchor="middle">P</text>
+                      <text x="15" y="92" font-size="10" font-weight="bold" text-anchor="middle">Q</text>
+                      <text x="112" y="90" font-size="10" font-weight="bold" text-anchor="middle">R</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <div class="font-bold text-indigo-700">विषमबाहु त्रिभुज</div>
+                    <div class="text-[11px] text-slate-500 mt-0.5">$PQ \ne QR \ne PR$ (तीनै भुजा फरक)</div>
+                  </div>
+                </div>
+
+                <!-- 2(c) -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (ग): $\triangle RAT$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <polygon points="95,15 20,85 95,85" fill="rgba(16,185,129,0.1)" stroke="#059669" stroke-width="2" />
+                      <path d="M 83 85 L 83 73 L 95 73" fill="none" stroke="#059669" stroke-width="1" />
+                      <text x="95" y="12" font-size="10" font-weight="bold" text-anchor="middle">R</text>
+                      <text x="12" y="90" font-size="10" font-weight="bold" text-anchor="middle">A</text>
+                      <text x="104" y="90" font-size="10" font-weight="bold" text-anchor="middle">T</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <div class="font-bold text-indigo-700">विषमबाहु त्रिभुज</div>
+                    <div class="text-[11px] text-slate-500 mt-0.5">$RA \ne AT \ne RT$ (तीनै भुजा फरक)</div>
+                  </div>
+                </div>
+
+                <!-- 2(d) -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (घ): $\triangle LMN$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <polygon points="25,25 95,25 60,85" fill="rgba(245,158,11,0.1)" stroke="#d97706" stroke-width="2" />
+                      <!-- Equal tick marks on 3 sides -->
+                      <line x1="58" y1="22" x2="62" y2="28" stroke="#ef4444" stroke-width="1.5" />
+                      <line x1="40" y1="53" x2="45" y2="57" stroke="#ef4444" stroke-width="1.5" />
+                      <line x1="75" y1="57" x2="80" y2="53" stroke="#ef4444" stroke-width="1.5" />
+                      <text x="16" y="25" font-size="10" font-weight="bold" text-anchor="middle">L</text>
+                      <text x="104" y="25" font-size="10" font-weight="bold" text-anchor="middle">N</text>
+                      <text x="60" y="97" font-size="10" font-weight="bold" text-anchor="middle">M</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <div class="font-bold text-amber-700">समबाहु त्रिभुज</div>
+                    <div class="text-[11px] text-slate-500 mt-0.5">$LM = MN = NL$ (तीनै भुजा बराबर)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q3: Classification by Angles with SVG Diagrams -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base text-blue-700">
+                प्रश्न नं. ३: तल दिइएका त्रिभुजहरूलाई कोणहरूको नापका आधारमा वर्गीकरण गर्नुहोस् :
+              </h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- 3(a) -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (क): $\triangle ABC$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <polygon points="75,20 30,85 85,85" fill="rgba(59,130,246,0.1)" stroke="#2563eb" stroke-width="2" />
+                      <text x="75" y="14" font-size="10" font-weight="bold" text-anchor="middle">A</text>
+                      <text x="20" y="90" font-size="10" font-weight="bold" text-anchor="middle">B</text>
+                      <text x="95" y="90" font-size="10" font-weight="bold" text-anchor="middle">C</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <div class="font-bold text-blue-700">न्यूनकोणी त्रिभुज</div>
+                    <div class="text-[11px] text-slate-500 mt-0.5">तीनै कोणहरू $90^\circ$ भन्दा साना</div>
+                  </div>
+                </div>
+
+                <!-- 3(c) -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (ग): $\triangle PQR$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <polygon points="85,25 25,85 100,85" fill="rgba(16,185,129,0.1)" stroke="#059669" stroke-width="2" />
+                      <text x="85" y="18" font-size="10" font-weight="bold" text-anchor="middle">P</text>
+                      <text x="15" y="90" font-size="10" font-weight="bold" text-anchor="middle">Q</text>
+                      <text x="110" y="90" font-size="10" font-weight="bold" text-anchor="middle">R</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <div class="font-bold text-blue-700">न्यूनकोणी त्रिभुज</div>
+                    <div class="text-[11px] text-slate-500 mt-0.5">तीनै कोणहरू $90^\circ$ भन्दा साना</div>
+                  </div>
+                </div>
+
+                <!-- 3(d) -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (घ): $\triangle RST$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <polygon points="65,20 20,85 90,85" fill="rgba(245,158,11,0.1)" stroke="#d97706" stroke-width="2" />
+                      <text x="65" y="14" font-size="10" font-weight="bold" text-anchor="middle">R</text>
+                      <text x="12" y="90" font-size="10" font-weight="bold" text-anchor="middle">S</text>
+                      <text x="100" y="90" font-size="10" font-weight="bold" text-anchor="middle">T</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <div class="font-bold text-blue-700">न्यूनकोणी त्रिभुज</div>
+                    <div class="text-[11px] text-slate-500 mt-0.5">तीनै कोणहरू $90^\circ$ भन्दा साना</div>
+                  </div>
+                </div>
+
+                <!-- 3(f) -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (च): $\triangle IKJ$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <polygon points="30,25 35,85 105,85" fill="rgba(239,68,68,0.1)" stroke="#dc2626" stroke-width="2" />
+                      <!-- Angle arc at K indicating obtuse angle -->
+                      <path d="M 33 65 A 20 20 0 0 1 50 85" fill="none" stroke="#dc2626" stroke-width="1.5" />
+                      <text x="28" y="18" font-size="10" font-weight="bold" text-anchor="middle">I</text>
+                      <text x="35" y="98" font-size="10" font-weight="bold" text-anchor="middle">K</text>
+                      <text x="112" y="90" font-size="10" font-weight="bold" text-anchor="middle">J</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <div class="font-bold text-rose-700">अधिककोणी त्रिभुज</div>
+                    <div class="text-[11px] text-slate-500 mt-0.5">$\angle IKJ > 90^\circ$ (एउटा अधिककोण)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q4: Multi-Triangle Rectangle Observation -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base text-blue-700">
+                प्रश्न नं. ४: दिइएको चित्र अवलोकन गर्नुहोस् र दुई दुईओटा न्यूनकोणी, समकोणी र अधिककोणी त्रिभुजहरूको नाम लेख्नुहोस् :
+              </h4>
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                <!-- SVG Diagram of Rectangle with Intersecting Diagonals & AE -->
+                <div class="lg:col-span-5 flex flex-col items-center">
+                  <div class="w-full max-w-[320px] aspect-[4/3] bg-slate-50 rounded-xl border border-slate-200 p-2 flex items-center justify-center">
+                    <svg viewBox="0 0 280 200" class="w-full h-full">
+                      <!-- Rectangle ABCD -->
+                      <rect x="40" y="30" width="200" height="130" fill="none" stroke="#e11d48" stroke-width="2.5" />
+                      <!-- Diagonal AC -->
+                      <line x1="40" y1="30" x2="240" y2="160" stroke="#e11d48" stroke-width="2" />
+                      <!-- Diagonal BD -->
+                      <line x1="40" y1="160" x2="240" y2="30" stroke="#e11d48" stroke-width="2" />
+                      <!-- Line AE to point E on BC (bottom) -->
+                      <line x1="40" y1="30" x2="140" y2="160" stroke="#e11d48" stroke-width="2" />
+
+                      <!-- Vertices labels -->
+                      <text x="30" y="28" font-size="13" font-weight="bold">A</text>
+                      <text x="245" y="28" font-size="13" font-weight="bold">D</text>
+                      <text x="30" y="175" font-size="13" font-weight="bold">B</text>
+                      <text x="245" y="175" font-size="13" font-weight="bold">C</text>
+                      <text x="140" y="178" font-size="12" font-weight="bold" text-anchor="middle">E</text>
+
+                      <!-- Intersections F (AC & BD) and G (AE & BD) -->
+                      <text x="140" y="90" font-size="12" font-weight="bold" fill="#2563eb">F</text>
+                      <text x="110" y="115" font-size="12" font-weight="bold" fill="#2563eb">G</text>
+
+                      <!-- Dots at intersections -->
+                      <circle cx="140" cy="95" r="3.5" fill="#2563eb" />
+                      <circle cx="110" cy="104" r="3.5" fill="#2563eb" />
+                    </svg>
+                  </div>
+                  <span class="text-[11px] text-slate-500 mt-1">आयत $ABCD$ भित्र बनेका बहु-त्रिभुजहरू</span>
+                </div>
+
+                <!-- Structured Solutions Grid -->
+                <div class="lg:col-span-7 space-y-3 text-xs md:text-sm">
+                  <!-- Right-angled -->
+                  <div class="p-3 bg-blue-50 border border-blue-200 rounded-xl space-y-1">
+                    <div class="font-bold text-blue-900 flex items-center gap-1.5">
+                      <span class="w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px]">१</span>
+                      समकोणी त्रिभुजहरू (Right-angled Triangles):
+                    </div>
+                    <div class="text-slate-700 pl-6">
+                      • $\triangle ABC$ (किनकि आयतको कुना $\angle B = 90^\circ$ छ)<br>
+                      • $\triangle ADC$ (किनकि $\angle D = 90^\circ$ समकोण छ)<br>
+                      <span class="text-[11px] text-slate-500">*(थप समकोणी त्रिभुजहरू: $\triangle ABD, \triangle BCD, \triangle ABE$)*</span>
+                    </div>
+                  </div>
+
+                  <!-- Acute-angled -->
+                  <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl space-y-1">
+                    <div class="font-bold text-emerald-900 flex items-center gap-1.5">
+                      <span class="w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[10px]">२</span>
+                      न्यूनकोणी त्रिभुजहरू (Acute-angled Triangles):
+                    </div>
+                    <div class="text-slate-700 pl-6">
+                      • $\triangle AFD$ (विकर्णहरू काटिँदा माथि बनेको त्रिभुज, तीनै कोण $< 90^\circ$)<br>
+                      • $\triangle BFC$ (विकर्णहरू काटिँदा दायाँ बनेको त्रिभुज, तीनै कोण $< 90^\circ$)<br>
+                      <span class="text-[11px] text-slate-500">*(थप न्यूनकोणी त्रिभुज: $\triangle AFG$)*</span>
+                    </div>
+                  </div>
+
+                  <!-- Obtuse-angled -->
+                  <div class="p-3 bg-rose-50 border border-rose-200 rounded-xl space-y-1">
+                    <div class="font-bold text-rose-900 flex items-center gap-1.5">
+                      <span class="w-5 h-5 rounded-full bg-rose-600 text-white flex items-center justify-center text-[10px]">३</span>
+                      अधिककोणी त्रिभुजहरू (Obtuse-angled Triangles):
+                    </div>
+                    <div class="text-slate-700 pl-6">
+                      • $\triangle ABG$ (बिन्दु $G$ मा $\angle AGB > 90^\circ$ अधिककोण छ)<br>
+                      • $\triangle BGE$ (बिन्दु $G$ मा $\angle BGE > 90^\circ$ अधिककोण छ)<br>
+                      <span class="text-[11px] text-slate-500">*(थप अधिककोणी त्रिभुजहरू: $\triangle AFB, \triangle CFD$)*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q5 & Q6: Construction, Angle Measurement & Conclusions -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base text-blue-700">
+                प्रश्न नं. ५ र ६: तोकिएका कोण भएका त्रिभुज खिच्ने, नाप्ने र निष्कर्ष लेख्ने :
+              </h4>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                <!-- 5(a) -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                  <div class="font-bold text-slate-800 text-sm">
+                    (क) $\angle POQ = 120^\circ$ भएको $\triangle POQ$
+                  </div>
+                  <div class="p-2 bg-white rounded border border-slate-200 space-y-1 text-slate-600">
+                    <div>१. रुलरले आधार $OQ = 5\text{ cm}$ खिच्ने ।</div>
+                    <div>२. बिन्दु $O$ मा चाँद राखी $120^\circ$ कोण बनाउने र $OP = 4\text{ cm}$ तान्ने ।</div>
+                    <div>३. बिन्दु $P$ र $Q$ जोड्ने ।</div>
+                  </div>
+                  <div class="p-2 bg-amber-50 border border-amber-200 rounded text-amber-900">
+                    <strong>बाँकी कोणको नाप:</strong><br>
+                    $\angle OPQ \approx 35^\circ$, $\angle OQP \approx 25^\circ$<br>
+                    <strong>जाँच:</strong> $120^\circ + 35^\circ + 25^\circ = 180^\circ$ ✓<br>
+                    <strong>प्रकार:</strong> अधिककोणी त्रिभुज
+                  </div>
+                </div>
+
+                <!-- 5(b) -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                  <div class="font-bold text-slate-800 text-sm">
+                    (ख) $\angle XYZ = 60^\circ$ भएको $\triangle XYZ$
+                  </div>
+                  <div class="p-2 bg-white rounded border border-slate-200 space-y-1 text-slate-600">
+                    <div>१. आधार $YZ = 5\text{ cm}$ खिच्ने ।</div>
+                    <div>२. बिन्दु $Y$ मा चाँद राखी $60^\circ$ कोण बनाउने र $YX = 5\text{ cm}$ काट्ने ।</div>
+                    <div>३. बिन्दु $X$ र $Z$ जोड्ने ।</div>
+                  </div>
+                  <div class="p-2 bg-blue-50 border border-blue-200 rounded text-blue-900">
+                    <strong>बाँकी कोणको नाप:</strong><br>
+                    $\angle YXZ = 60^\circ$, $\angle YZX = 60^\circ$<br>
+                    <strong>जाँच:</strong> $60^\circ + 60^\circ + 60^\circ = 180^\circ$ ✓<br>
+                    <strong>प्रकार:</strong> समबाहु / न्यूनकोणी त्रिभुज
+                  </div>
+                </div>
+
+                <!-- 5(c) -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                  <div class="font-bold text-slate-800 text-sm">
+                    (ग) $\angle LNM = 90^\circ$ भएको $\triangle LNM$
+                  </div>
+                  <div class="p-2 bg-white rounded border border-slate-200 space-y-1 text-slate-600">
+                    <div>१. आधार $NM = 4\text{ cm}$ खिच्ने ।</div>
+                    <div>२. बिन्दु $N$ मा चाँद राखी ठीक $90^\circ$ लम्ब रेखा तानी $NL = 3\text{ cm}$ काट्ने ।</div>
+                    <div>३. बिन्दु $L$ र $M$ जोड्ने ($LM = 5\text{ cm}$) ।</div>
+                  </div>
+                  <div class="p-2 bg-emerald-50 border border-emerald-200 rounded text-emerald-900">
+                    <strong>बाँकी कोणको नाप:</strong><br>
+                    $\angle NLM \approx 53^\circ$, $\angle NML \approx 37^\circ$<br>
+                    <strong>जाँच:</strong> $90^\circ + 53^\circ + 37^\circ = 180^\circ$ ✓<br>
+                    <strong>प्रकार:</strong> समकोणी त्रिभुज
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 6 Summary Banner -->
+              <div class="p-3.5 bg-slate-100 rounded-xl border border-slate-300 text-xs text-slate-700 leading-relaxed">
+                <strong>प्रश्न ६ निष्कर्ष:</strong> त्रिभुजमा एउटा कोण अधिककोण ($>90^\circ$) भएमा त्रिभुज अधिककोणी हुन्छ; तीनवटै कोण न्यूनकोण भएमा न्यूनकोणी हुन्छ; र एउटा कोण $90^\circ$ भएमा समकोणी त्रिभुज हुन्छ । जुनसुकै प्रकारको त्रिभुजमा पनि <strong>भित्री कोणहरूको योग सधैँ $180^\circ$ हुन्छ</strong> ।
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= SECTION: EXERCISE 15.2 ================= -->
+          <div id="ch15-ex-15-2" class="space-y-6">
+            <div class="flex items-center justify-between border-b-2 border-purple-500 pb-2">
+              <h3 class="text-lg md:text-xl font-black text-slate-900 flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-purple-600 text-white flex items-center justify-center text-sm font-bold">२</span>
+                अभ्यास १५.२ (पाठ्यपुस्तक पृष्ठ १९६–१९७) — चतुर्भुजका प्रकार तथा वर्गीकरण
+              </h3>
+              <span class="text-xs bg-purple-100 text-purple-800 font-bold px-3 py-1 rounded-xl">ठीक/बेठिक, आकृति वर्गीकरण र परियोजना</span>
+            </div>
+
+            <!-- Q1: True / False -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base text-purple-700">
+                प्रश्न नं. १: तलका कथनहरू ठीक वा बेठिक के हुन्, छुट्याउनुहोस् :
+              </h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+                <!-- 1(a) -->
+                <div class="p-4 bg-emerald-50/50 border border-emerald-200 rounded-xl space-y-2">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-slate-800">(क) वर्गका सबै भुजाहरू बराबर हुन्छन् ।</span>
+                    <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-extrabold text-xs">ठीक (True)</span>
+                  </div>
+                  <p class="text-xs text-slate-600">
+                    <strong>कारण:</strong> वर्ग (Square) को परिभाषा अनुसार नै यसका चारवटै भुजाहरू लम्बाइमा समान हुन्छन् ($AB = BC = CD = DA$) ।
+                  </p>
+                </div>
+
+                <!-- 1(b) -->
+                <div class="p-4 bg-rose-50/50 border border-rose-200 rounded-xl space-y-2">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-slate-800">(ख) वर्ग र समबाहु चतुर्भुज भनेका एउटै हुन् ।</span>
+                    <span class="px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800 font-extrabold text-xs">बेठिक (False)</span>
+                  </div>
+                  <p class="text-xs text-slate-600">
+                    <strong>कारण:</strong> समबाहु चतुर्भुज (Rhombus) का चारै भुजा बराबर भए पनि त्यसका कोणहरू $90^\circ$ हुनैपर्छ भन्ने हुँदैन। तर वर्गमा चारै कोण अनिवार्य रूपमा $90^\circ$ हुनुपर्छ। त्यसैले प्रत्येक वर्ग समबाहु चतुर्भुज हो, तर प्रत्येक समबाहु चतुर्भुज वर्ग होइन।
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q2: Classification of 6 Quadrilaterals -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base text-purple-700">
+                प्रश्न नं. २: तलका चतुर्भुजहरूको भुजा तथा कोणहरू नापी वर्गीकरण गर्नुहोस् :
+              </h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- 2(a) Rhombus ABCD -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (क): चतुर्भुज $ABCD$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <polygon points="60,15 95,50 60,85 25,50" fill="rgba(59,130,246,0.1)" stroke="#0284c7" stroke-width="2" />
+                      <text x="60" y="11" font-size="10" font-weight="bold" text-anchor="middle">A</text>
+                      <text x="104" y="53" font-size="10" font-weight="bold" text-anchor="middle">D</text>
+                      <text x="60" y="96" font-size="10" font-weight="bold" text-anchor="middle">C</text>
+                      <text x="16" y="53" font-size="10" font-weight="bold" text-anchor="middle">B</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs space-y-0.5">
+                    <div class="font-extrabold text-blue-700">समबाहु चतुर्भुज (Rhombus)</div>
+                    <div class="text-[11px] text-slate-500">चारै भुजा बराबर ($AB=BC=CD=DA$); कोणहरू $90^\circ$ छैनन् ।</div>
+                  </div>
+                </div>
+
+                <!-- 2(b) Rectangle HFEG -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (ख): चतुर्भुज $HFEG$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <rect x="25" y="25" width="70" height="50" fill="rgba(16,185,129,0.1)" stroke="#059669" stroke-width="2" />
+                      <path d="M 25 35 L 35 35 L 35 25" fill="none" stroke="#059669" stroke-width="1" />
+                      <text x="18" y="25" font-size="10" font-weight="bold">H</text>
+                      <text x="100" y="25" font-size="10" font-weight="bold">F</text>
+                      <text x="100" y="80" font-size="10" font-weight="bold">E</text>
+                      <text x="18" y="80" font-size="10" font-weight="bold">G</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs space-y-0.5">
+                    <div class="font-extrabold text-emerald-700">आयत (Rectangle)</div>
+                    <div class="text-[11px] text-slate-500">सम्मुख भुजाहरू बराबर र चारै कोण $90^\circ$ ।</div>
+                  </div>
+                </div>
+
+                <!-- 2(c) Parallelogram KLMN -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (ग): चतुर्भुज $KLMN$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <polygon points="50,25 105,25 80,75 25,75" fill="rgba(245,158,11,0.1)" stroke="#d97706" stroke-width="2" />
+                      <text x="45" y="20" font-size="10" font-weight="bold">K</text>
+                      <text x="110" y="25" font-size="10" font-weight="bold">N</text>
+                      <text x="85" y="85" font-size="10" font-weight="bold">M</text>
+                      <text x="18" y="80" font-size="10" font-weight="bold">L</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs space-y-0.5">
+                    <div class="font-extrabold text-amber-700">समानान्तर चतुर्भुज</div>
+                    <div class="text-[11px] text-slate-500">सम्मुख भुजाहरू समानान्तर र बराबर; कोण $90^\circ$ छैनन् ।</div>
+                  </div>
+                </div>
+
+                <!-- 2(d) Trapezium CFED -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (घ): चतुर्भुज $CFED$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <polygon points="40,25 80,25 95,75 25,75" fill="rgba(168,85,247,0.1)" stroke="#9333ea" stroke-width="2" />
+                      <text x="35" y="20" font-size="10" font-weight="bold">C</text>
+                      <text x="85" y="20" font-size="10" font-weight="bold">F</text>
+                      <text x="100" y="80" font-size="10" font-weight="bold">E</text>
+                      <text x="18" y="80" font-size="10" font-weight="bold">D</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs space-y-0.5">
+                    <div class="font-extrabold text-purple-700">समलम्ब चतुर्भुज (Trapezium)</div>
+                    <div class="text-[11px] text-slate-500">केवल एक जोडा सम्मुख भुजा समानान्तर ($CF \parallel DE$) ।</div>
+                  </div>
+                </div>
+
+                <!-- 2(e) Vertical Rectangle HIRA -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (ङ): चतुर्भुज $HIRA$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <rect x="42" y="15" width="36" height="70" fill="rgba(6,182,212,0.1)" stroke="#0891b2" stroke-width="2" />
+                      <text x="32" y="20" font-size="10" font-weight="bold">H</text>
+                      <text x="85" y="20" font-size="10" font-weight="bold">I</text>
+                      <text x="85" y="90" font-size="10" font-weight="bold">R</text>
+                      <text x="32" y="90" font-size="10" font-weight="bold">A</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs space-y-0.5">
+                    <div class="font-extrabold text-cyan-700">आयत (ठाडो आयत / Rectangle)</div>
+                    <div class="text-[11px] text-slate-500">सम्मुख भुजा बराबर ($HI=AR, HA=IR$) र चारै कोण $90^\circ$ ।</div>
+                  </div>
+                </div>
+
+                <!-- 2(f) Square PQRS -->
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-2">
+                  <span class="text-xs font-bold text-slate-500">चित्र (च): चतुर्भुज $PQRS$</span>
+                  <div class="w-36 h-32 bg-white rounded-lg border border-slate-200 flex items-center justify-center p-2">
+                    <svg viewBox="0 0 120 100" class="w-full h-full">
+                      <rect x="35" y="20" width="50" height="50" fill="rgba(236,72,153,0.1)" stroke="#db2777" stroke-width="2" />
+                      <path d="M 35 30 L 45 30 L 45 20" fill="none" stroke="#db2777" stroke-width="1" />
+                      <text x="25" y="25" font-size="10" font-weight="bold">P</text>
+                      <text x="92" y="25" font-size="10" font-weight="bold">S</text>
+                      <text x="92" y="75" font-size="10" font-weight="bold">R</text>
+                      <text x="25" y="75" font-size="10" font-weight="bold">Q</text>
+                    </svg>
+                  </div>
+                  <div class="text-xs space-y-0.5">
+                    <div class="font-extrabold text-pink-700">वर्ग (Square)</div>
+                    <div class="text-[11px] text-slate-500">चारै भुजाहरू समान लम्बाइका र चारै कोणहरू $90^\circ$ ।</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Work -->
+            <div class="p-4 bg-indigo-50 border border-indigo-200 rounded-2xl space-y-2 text-xs md:text-sm">
+              <span class="font-bold text-indigo-900 flex items-center gap-2">
+                📌 परियोजना कार्य (पृष्ठ १९७) — दैनिक जीवनका चतुर्भुजहरू:
+              </span>
+              <div class="grid grid-cols-2 md:grid-cols-5 gap-2 text-xs">
+                <div class="p-2 bg-white rounded-xl border border-indigo-150"><strong>आयत:</strong> ढोका, किताब, ब्ल्याकबोनर्ड</div>
+                <div class="p-2 bg-white rounded-xl border border-indigo-150"><strong>वर्ग:</strong> भुइँको टायल, क्यारमबोर्ड, रुमाल</div>
+                <div class="p-2 bg-white rounded-xl border border-indigo-150"><strong>समानान्तर:</strong> झुकेको इरेजर, सिँढीको फ्रेम</div>
+                <div class="p-2 bg-white rounded-xl border border-indigo-150"><strong>समबाहु:</strong> काजु कतली, चङ्गाको ढाँचा</div>
+                <div class="p-2 bg-white rounded-xl border border-indigo-150"><strong>समलम्ब:</strong> सिँढीको छेउको भाग, बाल्टिन छेउ</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= SECTION: MIXED EXERCISE ================= -->
+          <div id="ch15-ex-mixed" class="space-y-6">
+            <div class="flex items-center justify-between border-b-2 border-amber-500 pb-2">
+              <h3 class="text-lg md:text-xl font-black text-slate-900 flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-amber-600 text-white flex items-center justify-center text-sm font-bold">३</span>
+                मिश्रित अभ्यास (पाठ्यपुस्तक पृष्ठ १९७–१९८)
+              </h3>
+              <span class="text-xs bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-xl">२ विस्तृत समस्याहरू</span>
+            </div>
+
+            <!-- Mixed Q1: Angela vs Angel -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base text-amber-700">
+                प्रश्न नं. १: एन्जिला र एन्जलको भनाइ विश्लेषण तथा चित्र पहिचान :
+              </h4>
+              <div class="p-4 bg-amber-50/60 border border-amber-200 rounded-xl space-y-2 text-xs md:text-sm">
+                <div>• <strong>एन्जिलाको भनाइ:</strong> <em>"चारओटै भुजा बराबर भएको चतुर्भुज आयत हो ।"</em></div>
+                <div>• <strong>एन्जलको भनाइ:</strong> <em>"सम्मुख भुजाहरू बराबर र चारओटै कोण $90^\circ$ भएको चतुर्भुज आयत हो ।"</em></div>
+              </div>
+
+              <!-- 4 Shapes displayed -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <div class="p-3 bg-blue-50 border-2 border-blue-500 rounded-xl flex flex-col items-center text-center space-y-1">
+                  <span class="text-xs font-extrabold text-blue-700">चित्र (क) — सही उत्तर</span>
+                  <div class="w-24 h-16 bg-white rounded border border-slate-200 flex items-center justify-center">
+                    <svg viewBox="0 0 80 50" class="w-full h-full">
+                      <rect x="10" y="10" width="60" height="30" fill="none" stroke="#2563eb" stroke-width="2" />
+                    </svg>
+                  </div>
+                  <span class="text-xs font-bold text-slate-800">आयत (Rectangle)</span>
+                </div>
+
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-1">
+                  <span class="text-xs font-bold text-slate-500">चित्र (ख)</span>
+                  <div class="w-24 h-16 bg-white rounded border border-slate-200 flex items-center justify-center">
+                    <svg viewBox="0 0 80 50" class="w-full h-full">
+                      <polygon points="40,10 15,42 65,42" fill="none" stroke="#64748b" stroke-width="2" />
+                    </svg>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-600">त्रिभुज (Triangle)</span>
+                </div>
+
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-1">
+                  <span class="text-xs font-bold text-slate-500">चित्र (ग)</span>
+                  <div class="w-24 h-16 bg-white rounded border border-slate-200 flex items-center justify-center">
+                    <svg viewBox="0 0 80 50" class="w-full h-full">
+                      <polygon points="25,10 70,10 55,42 10,42" fill="none" stroke="#64748b" stroke-width="2" />
+                    </svg>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-600">समानान्तर चतुर्भुज</span>
+                </div>
+
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center text-center space-y-1">
+                  <span class="text-xs font-bold text-slate-500">चित्र (घ)</span>
+                  <div class="w-24 h-16 bg-white rounded border border-slate-200 flex items-center justify-center">
+                    <svg viewBox="0 0 80 50" class="w-full h-full">
+                      <circle cx="40" cy="25" r="16" fill="none" stroke="#64748b" stroke-width="2" />
+                    </svg>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-600">वृत्त (Circle)</span>
+                </div>
+              </div>
+
+              <!-- Explanation -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 text-xs md:text-sm">
+                <div class="font-bold text-emerald-800">
+                  उत्तर: <span class="text-base text-blue-700">चित्र (क)</span> ले एन्जलको भनाइलाई समर्थन गर्दछ ।
+                </div>
+                <div class="text-slate-700 leading-relaxed">
+                  <strong>तार्किक कारण:</strong><br>
+                  १. एन्जलको परिभाषा गणितीय रूपमा पूर्णतः सत्य छ किनकि आयतमा सम्मुख भुजाहरू समान लम्बाइका हुन्छन् र प्रत्येक कोण समकोण ($90^\circ$) हुन्छ ।<br>
+                  २. एन्जिलाको भनाइ गलत छ किनभने चारै भुजा बराबर भएको चतुर्भुज समबाहु चतुर्भुज (Rhombus) वा वर्ग हुन्छ, सामान्य आयत होइन ।
+                </div>
+              </div>
+            </div>
+
+            <!-- Mixed Q2: Parallel Lines Cut by Parallel Transversals forming IJKL -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base text-amber-700">
+                प्रश्न नं. २: सँगैको चित्रको अध्ययन गरी दिइएका प्रश्नहरूको उत्तर दिनुहोस् :
+              </h4>
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                <!-- SVG of Transversals & Parallels -->
+                <div class="lg:col-span-5 flex flex-col items-center">
+                  <div class="w-full max-w-[320px] aspect-[4/3] bg-slate-50 rounded-xl border border-slate-200 p-2 flex items-center justify-center">
+                    <svg viewBox="0 0 300 220" class="w-full h-full">
+                      <!-- Horizontal Line AB -->
+                      <line x1="20" y1="70" x2="280" y2="70" stroke="#0284c7" stroke-width="2.5" />
+                      <!-- Arrowheads on AB -->
+                      <polygon points="20,70 30,66 30,74" fill="#0284c7" />
+                      <polygon points="280,70 270,66 270,74" fill="#0284c7" />
+                      <text x="12" y="74" font-size="12" font-weight="bold">A</text>
+                      <text x="286" y="74" font-size="12" font-weight="bold">B</text>
+
+                      <!-- Horizontal Line CD -->
+                      <line x1="20" y1="160" x2="280" y2="160" stroke="#0284c7" stroke-width="2.5" />
+                      <polygon points="20,160 30,156 30,164" fill="#0284c7" />
+                      <polygon points="280,160 270,156 270,164" fill="#0284c7" />
+                      <text x="12" y="164" font-size="12" font-weight="bold">C</text>
+                      <text x="286" y="164" font-size="12" font-weight="bold">D</text>
+
+                      <!-- Slanted Transversal EF -->
+                      <line x1="160" y1="30" x2="80" y2="200" stroke="#dc2626" stroke-width="2.5" />
+                      <polygon points="160,30 152,38 158,42" fill="#dc2626" />
+                      <polygon points="80,200 88,192 82,188" fill="#dc2626" />
+                      <text x="166" y="32" font-size="12" font-weight="bold">E</text>
+                      <text x="74" y="210" font-size="12" font-weight="bold">F</text>
+
+                      <!-- Slanted Transversal GH -->
+                      <line x1="240" y1="30" x2="160" y2="200" stroke="#dc2626" stroke-width="2.5" />
+                      <polygon points="240,30 232,38 238,42" fill="#dc2626" />
+                      <polygon points="160,200 168,192 162,188" fill="#dc2626" />
+                      <text x="246" y="32" font-size="12" font-weight="bold">G</text>
+                      <text x="154" y="210" font-size="12" font-weight="bold">H</text>
+
+                      <!-- Intersections I, J, L, K -->
+                      <circle cx="141" cy="70" r="4" fill="#1e293b" />
+                      <text x="135" y="60" font-size="13" font-weight="bold" fill="#047857">I</text>
+
+                      <circle cx="221" cy="70" r="4" fill="#1e293b" />
+                      <text x="215" y="60" font-size="13" font-weight="bold" fill="#047857">J</text>
+
+                      <circle cx="99" cy="160" r="4" fill="#1e293b" />
+                      <text x="88" y="176" font-size="13" font-weight="bold" fill="#047857">L</text>
+
+                      <circle cx="179" cy="160" r="4" fill="#1e293b" />
+                      <text x="175" y="176" font-size="13" font-weight="bold" fill="#047857">K</text>
+
+                      <!-- Highlighted Parallelogram IJKL interior -->
+                      <polygon points="141,70 221,70 179,160 99,160" fill="rgba(16,185,129,0.15)" stroke="#059669" stroke-width="1.5" stroke-dasharray="3,3" />
+                    </svg>
+                  </div>
+                  <span class="text-[11px] text-slate-500 mt-1">समानान्तर रेखाहरू र प्रतिच्छेदकहरू</span>
+                </div>
+
+                <!-- 6 Sub-questions answered -->
+                <div class="lg:col-span-7 space-y-2.5 text-xs md:text-sm">
+                  <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+                    <span class="font-bold text-slate-800">(क) चार जोडी प्रतिच्छेदित रेखाहरू:</span>
+                    <div class="text-slate-600 pl-4 mt-0.5">
+                      १. रेखा $AB$ र $EF$ (बिन्दु $I$ मा)<br>
+                      २. रेखा $AB$ र $GH$ (बिन्दु $J$ मा)<br>
+                      ३. रेखा $CD$ र $EF$ (बिन्दु $L$ मा)<br>
+                      ४. रेखा $CD$ र $GH$ (बिन्दु $K$ मा)
+                    </div>
+                  </div>
+
+                  <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+                    <span class="font-bold text-slate-800">(ख) दुई जोडी समानान्तर रेखाहरू:</span>
+                    <div class="text-slate-600 pl-4 mt-0.5">
+                      १. रेखा $AB$ र रेखा $CD$ ($AB \parallel CD$)<br>
+                      २. रेखा $EF$ र रेखा $GH$ ($EF \parallel GH$)
+                    </div>
+                  </div>
+
+                  <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+                    <span class="font-bold text-slate-800">(ग) $\angle LIJ, \angle IJK, \angle ILK$ र $\angle LKJ$ को नाप र सम्बन्ध:</span>
+                    <div class="text-slate-600 pl-4 mt-0.5">
+                      • $\angle LIJ + \angle ILK = 180^\circ$ (क्रमागत भित्री कोणहरू)<br>
+                      • सम्मुख कोणहरू बराबर: $\angle LIJ = \angle LKJ$ र $\angle IJK = \angle ILK$<br>
+                      • यदि $\angle LIJ \approx 65^\circ$ भए, $\angle ILK = 115^\circ$, $\angle LKJ = 65^\circ, \angle IJK = 115^\circ$ हुन्छ ।
+                    </div>
+                  </div>
+
+                  <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+                    <span class="font-bold text-slate-800">(घ) $IJKL$ कस्तो चतुर्भुज बन्यो ?</span>
+                    <div class="text-emerald-700 font-bold pl-4 mt-0.5">
+                      $\implies$ समानान्तर चतुर्भुज (Parallelogram) । (कारण: सम्मुख भुजाहरू $IJ \parallel LK$ र $IL \parallel JK$ आपसमा समानान्तर छन्) ।
+                    </div>
+                  </div>
+
+                  <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+                    <span class="font-bold text-slate-800">(ङ) यदि $\angle ILK$ र $\angle LKJ$ को मान $90^\circ$ भएमा यो कस्तो चतुर्भुज बन्छ ?</span>
+                    <div class="text-blue-700 font-bold pl-4 mt-0.5">
+                      $\implies$ आयत (Rectangle) बन्दछ । (कारण: कुनै समानान्तर चतुर्भुजको कोण $90^\circ$ भएमा त्यसका चारै कोण $90^\circ$ भई त्यो आयत बन्दछ) ।
+                    </div>
+                  </div>
+
+                  <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+                    <span class="font-bold text-slate-800">(च) चतुर्भुज $IJKL$ कुन अवस्थामा वर्ग बन्दछ होला ?</span>
+                    <div class="text-purple-700 font-bold pl-4 mt-0.5">
+                      $\implies$ यदि चारै कोण $90^\circ$ हुनुका साथै <strong>सबै भुजाहरूको लम्बाइ बराबर ($IJ = JK = KL = LI$)</strong> भएमा यो वर्ग बन्दछ ।
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= SECTION: THEOREMS & ANGLE PROBLEMS ================= -->
+          <div id="ch15-ex-theorems" class="space-y-6">
+            <div class="flex items-center justify-between border-b-2 border-emerald-500 pb-2">
+              <h3 class="text-lg md:text-xl font-black text-slate-900 flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-sm font-bold">४</span>
+                थप साध्य र कोणसम्बन्धी गणितीय समस्याहरू (Theorems & Numerical Problems)
+              </h3>
+              <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-xl">परीक्षा उपयोगी</span>
+            </div>
+
+            <!-- Grid of 4 Worked Out Problems -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- Theorem Prob 1 -->
+              <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3 text-xs md:text-sm">
+                <span class="font-bold text-blue-700 flex items-center gap-1.5">
+                  📐 समस्या १: त्रिभुजको अज्ञात कोण पत्ता लगाउने
+                </span>
+                <p class="text-slate-600">
+                  एउटा त्रिभुजका दुई कोणहरू $52^\circ$ र $68^\circ$ छन् भने तेस्रो कोण $x$ को मान कति हुन्छ ?
+                </p>
+                <div class="p-3 bg-blue-50 border border-blue-200 rounded-xl space-y-1 font-mono text-xs">
+                  <div>$52^\circ + 68^\circ + x = 180^\circ \quad (\because \sum \angle_\Delta = 180^\circ)$</div>
+                  <div>$120^\circ + x = 180^\circ$</div>
+                  <div>$x = 180^\circ - 120^\circ$</div>
+                  <div class="font-bold text-blue-700">$\implies x = 60^\circ$</div>
+                </div>
+                <div class="text-[11px] text-slate-500">तीनवटै कोण न्यूनकोण भएकोले यो न्यूनकोणी त्रिभुज हो ।</div>
+              </div>
+
+              <!-- Theorem Prob 2 -->
+              <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3 text-xs md:text-sm">
+                <span class="font-bold text-emerald-700 flex items-center gap-1.5">
+                  📐 समस्या २: बाहिरी कोण तथ्य (Exterior Angle)
+                </span>
+                <p class="text-slate-600">
+                  $\triangle ABC$ मा भुजा $BC$ लाई लम्ब्याउँदा बन्ने बाहिरी कोण $125^\circ$ छ । यदि एउटा अनासन्न भित्री कोण $55^\circ$ भए अर्को कोण पत्ता लगाउनुहोस् ।
+                </p>
+                <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl space-y-1 font-mono text-xs">
+                  <div>$\angle \text{भित्री}_1 + \angle \text{भित्री}_2 = \angle \text{बाहिरी}$</div>
+                  <div>$55^\circ + \angle A = 125^\circ$</div>
+                  <div>$\angle A = 125^\circ - 55^\circ$</div>
+                  <div class="font-bold text-emerald-700">$\implies \angle A = 70^\circ$</div>
+                </div>
+                <div class="text-[11px] text-slate-500">बाहिरी कोण सधैँ दुई अनासन्न भित्री कोणको योगसँग बराबर हुन्छ ।</div>
+              </div>
+
+              <!-- Theorem Prob 3 -->
+              <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3 text-xs md:text-sm">
+                <span class="font-bold text-purple-700 flex items-center gap-1.5">
+                  📐 समस्या ३: चतुर्भुजको चौथो कोण पत्ता लगाउने
+                </span>
+                <p class="text-slate-600">
+                  एउटा चतुर्भुजका तीन कोणहरू क्रमशः $80^\circ, 110^\circ$ र $75^\circ$ छन् भने चौथो कोण $y$ को मान निकाल्नुहोस् ।
+                </p>
+                <div class="p-3 bg-purple-50 border border-purple-200 rounded-xl space-y-1 font-mono text-xs">
+                  <div>$80^\circ + 110^\circ + 75^\circ + y = 360^\circ \quad (\because \sum \angle_\square = 360^\circ)$</div>
+                  <div>$265^\circ + y = 360^\circ$</div>
+                  <div>$y = 360^\circ - 265^\circ$</div>
+                  <div class="font-bold text-purple-700">$\implies y = 95^\circ$</div>
+                </div>
+                <div class="text-[11px] text-slate-500">चतुर्भुजका चारै भित्री कोणहरूको योगफल $360^\circ$ हुन्छ ।</div>
+              </div>
+
+              <!-- Theorem Prob 4 -->
+              <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3 text-xs md:text-sm">
+                <span class="font-bold text-amber-700 flex items-center gap-1.5">
+                  📐 समस्या ४: समद्विबाहु त्रिभुजको आधारकोण
+                </span>
+                <p class="text-slate-600">
+                  एउटा समद्विबाहु त्रिभुजको शीर्षकोण $44^\circ$ छ भने प्रत्येक आधारकोणको नाप कति हुन्छ ?
+                </p>
+                <div class="p-3 bg-amber-50 border border-amber-200 rounded-xl space-y-1 font-mono text-xs">
+                  <div>$x + x + 44^\circ = 180^\circ \quad (\text{आधारकोणहरू बराबर})$</div>
+                  <div>$2x = 180^\circ - 44^\circ = 136^\circ$</div>
+                  <div>$x = \frac{136^\circ}{2}$</div>
+                  <div class="font-bold text-amber-700">$\implies x = 68^\circ$</div>
+                </div>
+                <div class="text-[11px] text-slate-500">प्रत्येक आधारकोणको नाप $68^\circ$ हुन्छ ।</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ================= CH15 TAB 3: 3-TIER MODEL QUESTIONS ================= -->
+        <div id="ch15-view-tiers" class="hidden space-y-6">
+
+          <!-- Tier 1: Knowledge & Recall -->
+          <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center justify-between border-b border-blue-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-black text-sm">तह १</span>
+                <h3 class="text-base md:text-lg font-bold text-slate-900">ज्ञान तथा आधारभूत स्मरण (Knowledge & Recall — ५ प्रश्नहरू)</h3>
+              </div>
+              <span class="text-xs px-3 py-1 rounded-full bg-blue-50 text-blue-700 font-bold border border-blue-200">आधारभूत अवधारणा</span>
+            </div>
+
+            <div class="space-y-3 text-xs md:text-sm">
+              <!-- Q1.1 -->
+              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                <div class="font-bold text-slate-800">प्रश्न १.१: समबाहु त्रिभुजका सबै कोणहरूको नाप कति-कति डिग्री हुन्छ ?</div>
+                <div class="text-slate-600 pl-3">
+                  <strong>उत्तर:</strong> समबाहु त्रिभुजका तीनवटै भुजाहरू बराबर हुने हुनाले तीनवटै भित्री कोणहरू पनि बराबर हुन्छन् । त्यसैले प्रत्येक कोणको नाप <strong>$60^\circ$</strong> हुन्छ ($180^\circ \div 3 = 60^\circ$) ।
+                </div>
+              </div>
+
+              <!-- Q1.2 -->
+              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                <div class="font-bold text-slate-800">प्रश्न १.२: कुनै त्रिभुजमा एकभन्दा बढी समकोण वा अधिककोण हुन सक्छ ? कारण लेख्नुहोस् ।</div>
+                <div class="text-slate-600 pl-3">
+                  <strong>उत्तर:</strong> सक्दैन ।<br>
+                  <strong>कारण:</strong> दुईवटा समकोण ($90^\circ + 90^\circ = 180^\circ$) वा दुईवटा अधिककोण ($> 180^\circ$) को योग नै $180^\circ$ वा सोभन्दा बढी हुन जान्छ । त्रिभुजका तीनवटै कोणको योग सधैँ ठीक $180^\circ$ हुनुपर्ने भएकाले त्रिभुजमा एउटा मात्र समकोण वा एउटा मात्र अधिककोण सम्भव छ ।
+                </div>
+              </div>
+
+              <!-- Q1.3 -->
+              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                <div class="font-bold text-slate-800">प्रश्न १.३: वर्ग र आयतबीचको मुख्य समानता र मुख्य भिन्नता के हो ?</div>
+                <div class="text-slate-600 pl-3">
+                  <strong>समानता:</strong> दुवैका चारवटै कोणहरू $90^\circ$ (समकोण) हुन्छन् र दुवैका विकर्णहरू बराबर हुन्छन् ।<br>
+                  <strong>भिन्नता:</strong> आयतका केवल सम्मुख भुजाहरू मात्र बराबर हुन्छन्, तर वर्गका चारवटै भुजाहरू लम्बाइमा बराबर हुन्छन् ।
+                </div>
+              </div>
+
+              <!-- Q1.4 -->
+              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                <div class="font-bold text-slate-800">प्रश्न १.४: समलम्ब चतुर्भुज (Trapezium) भनेको कस्तो चतुर्भुज हो ?</div>
+                <div class="text-slate-600 pl-3">
+                  <strong>उत्तर:</strong> केवल एक जोडा सम्मुख भुजाहरू मात्र समानान्तर भएको चतुर्भुजलाई <strong>समलम्ब चतुर्भुज (Trapezium)</strong> भनिन्छ ।
+                </div>
+              </div>
+
+              <!-- Q1.5 -->
+              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                <div class="font-bold text-slate-800">प्रश्न १.५: चतुर्भुजका चारवटै भित्री कोणहरूको योगफल कति हुन्छ र किन ?</div>
+                <div class="text-slate-600 pl-3">
+                  <strong>उत्तर:</strong> चतुर्भुजका चारवटै भित्री कोणहरूको योगफल सधैँ <strong>$360^\circ$</strong> हुन्छ ।<br>
+                  <strong>कारण:</strong> कुनै पनि चतुर्भुजलाई एउटा विकर्णले दुईवटा त्रिभुजमा विभाजन गर्दछ । प्रत्येक त्रिभुजको कोण योग $180^\circ$ हुने भएकाले चतुर्भुजको कुल योग $180^\circ \times 2 = 360^\circ$ हुन्छ ।
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tier 2: Understanding & Application -->
+          <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center justify-between border-b border-emerald-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-black text-sm">तह २</span>
+                <h3 class="text-base md:text-lg font-bold text-slate-900">बोध तथा प्रयोग (Understanding & Application — ६ प्रश्नहरू)</h3>
+              </div>
+              <span class="text-xs px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 font-bold border border-emerald-200">समस्या समाधान</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+              <!-- Q2.1 -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                <div class="font-bold text-slate-800">प्रश्न २.१: त्रिभुजको तेस्रो कोण पत्ता लगाई वर्गीकरण</div>
+                <p class="text-slate-600">एउटा त्रिभुजका दुई कोणहरू $65^\circ$ र $45^\circ$ छन् भने तेस्रो कोण पत्ता लगाउनुहोस् र कोणका आधारमा त्रिभुजको नाम लेख्नुहोस् ।</p>
+                <div class="p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg space-y-0.5 font-mono text-xs">
+                  <div>तेस्रो कोण $= 180^\circ - (65^\circ + 45^\circ)$</div>
+                  <div>$= 180^\circ - 110^\circ = 70^\circ$</div>
+                  <div class="font-bold text-emerald-700">वर्गीकरण: न्यूनकोणी त्रिभुज (तीनै कोण $< 90^\circ$)</div>
+                </div>
+              </div>
+
+              <!-- Q2.2 -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                <div class="font-bold text-slate-800">प्रश्न २.२: समद्विबाहु त्रिभुजको आधारकोण</div>
+                <p class="text-slate-600">एउटा समद्विबाहु त्रिभुजको शीर्षकोण $56^\circ$ छ भने त्यसका समान आधारकोणहरूको नाप कति हुन्छ ?</p>
+                <div class="p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg space-y-0.5 font-mono text-xs">
+                  <div>मानौँ आधारकोण $= x$</div>
+                  <div>$2x + 56^\circ = 180^\circ \implies 2x = 124^\circ$</div>
+                  <div class="font-bold text-emerald-700">$x = 62^\circ$ (प्रत्येक आधारकोण $62^\circ$)</div>
+                </div>
+              </div>
+
+              <!-- Q2.3 -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                <div class="font-bold text-slate-800">प्रश्न २.३: समकोणी समद्विबाहु त्रिभुज</div>
+                <p class="text-slate-600">एउटा समकोणी समद्विबाहु त्रिभुजका दुई समान न्यूनकोणहरूको नाप कति-कति हुन्छ ?</p>
+                <div class="p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg space-y-0.5 font-mono text-xs">
+                  <div>समकोण $= 90^\circ$; बाँकी कोणहरूको योग $= 90^\circ$</div>
+                  <div>$x + x = 90^\circ \implies 2x = 90^\circ$</div>
+                  <div class="font-bold text-emerald-700">$\implies x = 45^\circ$ (प्रत्येक न्यूनकोण $45^\circ$)</div>
+                </div>
+              </div>
+
+              <!-- Q2.4 -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                <div class="font-bold text-slate-800">प्रश्न २.४: बाहिरी कोण साध्य प्रयोग</div>
+                <p class="text-slate-600">त्रिभुजको एउटा बाहिरी कोण $115^\circ$ र एउटा अनासन्न भित्री कोण $48^\circ$ छ भने अर्को भित्री कोण कति हुन्छ ?</p>
+                <div class="p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg space-y-0.5 font-mono text-xs">
+                  <div>$\angle \text{भित्री}_1 + 48^\circ = 115^\circ$</div>
+                  <div>$\angle \text{भित्री}_1 = 115^\circ - 48^\circ$</div>
+                  <div class="font-bold text-emerald-700">$\implies \angle \text{भित्री}_1 = 67^\circ$</div>
+                </div>
+              </div>
+
+              <!-- Q2.5 -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                <div class="font-bold text-slate-800">प्रश्न २.५: समानान्तर चतुर्भुजका कोणहरू</div>
+                <p class="text-slate-600">समानान्तर चतुर्भुज $PQRS$ मा कोण $\angle P = 75^\circ$ भए बाँकी तीन कोणहरू $\angle Q, \angle R, \angle S$ निकाल्नुहोस् ।</p>
+                <div class="p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg space-y-0.5 font-mono text-xs">
+                  <div>$\angle R = \angle P = 75^\circ$ (सम्मुख कोण)</div>
+                  <div>$\angle Q = 180^\circ - 75^\circ = 105^\circ$ (आसन्न कोण)</div>
+                  <div class="font-bold text-emerald-700">$\angle S = \angle Q = 105^\circ$ (सम्मुख कोण)</div>
+                </div>
+              </div>
+
+              <!-- Q2.6 -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                <div class="font-bold text-slate-800">प्रश्न २.६: चतुर्भुजको अज्ञात कोण</div>
+                <p class="text-slate-600">एउटा चतुर्भुजका तीन कोणहरू $60^\circ, 110^\circ$ र $85^\circ$ छन् भने चौथो कोणको मान कति हुन्छ ?</p>
+                <div class="p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg space-y-0.5 font-mono text-xs">
+                  <div>चौथो कोण $= 360^\circ - (60^\circ + 110^\circ + 85^\circ)$</div>
+                  <div>$= 360^\circ - 255^\circ$</div>
+                  <div class="font-bold text-emerald-700">$\implies 105^\circ$</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tier 3: Higher Ability & Problem Solving -->
+          <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center justify-between border-b border-purple-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-black text-sm">तह ३</span>
+                <h3 class="text-base md:text-lg font-bold text-slate-900">उच्च दक्षता तथा समस्या समाधान (Higher Ability — ५ प्रश्नहरू)</h3>
+              </div>
+              <span class="text-xs px-3 py-1 rounded-full bg-purple-50 text-purple-700 font-bold border border-purple-200">बीजीय र तार्किक</span>
+            </div>
+
+            <div class="space-y-4 text-xs md:text-sm">
+              <!-- Q3.1 -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                <div class="font-bold text-slate-800">प्रश्न ३.१: त्रिभुजका कोणहरूमा बीजीय समीकरण :</div>
+                <p class="text-slate-600">
+                  एउटा त्रिभुजका तीन कोणहरू $(2x + 10)^\circ, (3x - 5)^\circ$ र $(x + 25)^\circ$ छन् । (क) $x$ को मान निकाल्नुहोस् । (ख) तीनवटै कोणहरूको मान पत्ता लगाउनुहोस् । (ग) कोणका आधारमा त्रिभुजको प्रकार लेख्नुहोस् ।
+                </p>
+                <div class="p-3 bg-purple-50 border border-purple-200 rounded-xl space-y-1 font-mono text-xs">
+                  <div>(क) $(2x + 10) + (3x - 5) + (x + 25) = 180 \implies 6x + 30 = 180 \implies 6x = 150 \implies \mathbf{x = 25^\circ}$</div>
+                  <div>(ख) पहिलो कोण $= 2(25) + 10 = 60^\circ$; दोस्रो $= 3(25) - 5 = 70^\circ$; तेस्रो $= 25 + 25 = 50^\circ$</div>
+                  <div class="font-bold text-purple-800">(ग) तीनवटै कोणहरू $90^\circ$ भन्दा साना भएकाले यो <strong>न्यूनकोणी त्रिभुज (Acute-angled Triangle)</strong> हो ।</div>
+                </div>
+              </div>
+
+              <!-- Q3.2 -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                <div class="font-bold text-slate-800">प्रश्न ३.२: चतुर्भुजको कोण अनुपात विश्लेषण :</div>
+                <p class="text-slate-600">
+                  एउटा चतुर्भुजका चार कोणहरूको अनुपात $3 : 4 : 5 : 6$ छ । (क) चारवटै कोणहरूको नाप निकाल्नुहोस् । (ख) के यो चतुर्भुज समानान्तर चतुर्भुज हुन सक्छ ? कारण दिनुहोस् ।
+                </p>
+                <div class="p-3 bg-purple-50 border border-purple-200 rounded-xl space-y-1 font-mono text-xs">
+                  <div>(क) मानौँ कोणहरू $3k, 4k, 5k, 6k$ हुन् । योग $= 18k = 360^\circ \implies k = 20^\circ$</div>
+                  <div>कोणहरू: $3(20) = 60^\circ, 4(20) = 80^\circ, 5(20) = 100^\circ, 6(20) = 120^\circ$</div>
+                  <div class="font-bold text-purple-800">(ख) हुन सक्दैन किनभने समानान्तर चतुर्भुजका सम्मुख कोणहरू बराबर हुनुपर्छ, यहाँ कुनै पनि सम्मुख कोण बराबर छैनन् ($60^\circ \ne 100^\circ, 80^\circ \ne 120^\circ$) ।</div>
+                </div>
+              </div>
+
+              <!-- Q3.3 -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                <div class="font-bold text-slate-800">प्रश्न ३.३: रेखीय जोडा र बाहिरी कोणको मिश्रित समस्या :</div>
+                <p class="text-slate-600">
+                  $\triangle ABC$ मा $\angle A = 2x^\circ, \angle B = 3x^\circ$ र भुजा $BC$ लाई लम्ब्याउँदा बनेको बाहिरी कोण $\angle ACD = (4x + 20)^\circ$ छ भने $x$ को मान र $\triangle ABC$ का सबै भित्री कोणहरू पत्ता लगाउनुहोस् ।
+                </p>
+                <div class="p-3 bg-purple-50 border border-purple-200 rounded-xl space-y-1 font-mono text-xs">
+                  <div>बाहिरी कोण साध्य अनुसार: $\angle A + \angle B = \angle ACD$</div>
+                  <div>$2x + 3x = 4x + 20 \implies 5x = 4x + 20 \implies \mathbf{x = 20^\circ}$</div>
+                  <div>$\angle A = 2(20) = 40^\circ, \angle B = 3(20) = 60^\circ, \angle ACB = 180^\circ - (40^\circ + 60^\circ) = 80^\circ$</div>
+                  <div class="font-bold text-purple-800">भित्री कोणहरू: $40^\circ, 60^\circ, 80^\circ$ (न्यूनकोणी त्रिभुज) ।</div>
+                </div>
+              </div>
+
+              <!-- Q3.4 -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                <div class="font-bold text-slate-800">प्रश्न ३.४: समबाहु चतुर्भुजका विकर्ण र कोण सम्बन्ध :</div>
+                <p class="text-slate-600">
+                  एउटा समबाहु चतुर्भुज (Rhombus) $ABCD$ मा विकर्णहरू परस्पर बिन्दु $O$ मा काटिएका छन् । यदि $\angle OAB = 35^\circ$ भए $\angle ABO$ को मान पत्ता लगाउनुहोस् ।
+                </p>
+                <div class="p-3 bg-purple-50 border border-purple-200 rounded-xl space-y-1 font-mono text-xs">
+                  <div>समबाहु चतुर्भुजका विकर्णहरू परस्पर $90^\circ$ मा लम्ब हुन्छन्: $\angle AOB = 90^\circ$</div>
+                  <div>$\triangle AOB$ समकोण त्रिभुज हो: $\angle OAB + \angle ABO + \angle AOB = 180^\circ$</div>
+                  <div>$35^\circ + \angle ABO + 90^\circ = 180^\circ \implies \angle ABO = 180^\circ - 125^\circ = \mathbf{55^\circ}$</div>
+                  <div class="font-bold text-purple-800">$\implies \angle ABO = 55^\circ$ ।</div>
+                </div>
+              </div>
+
+              <!-- Q3.5 -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                <div class="font-bold text-slate-800">प्रश्न ३.५: चतुर्भुजका कोणहरूमा बीजीय समीकरण :</div>
+                <p class="text-slate-600">
+                  एउटा चतुर्भुजका चार कोणहरू क्रमशः $x^\circ, (2x - 10)^\circ, (3x + 20)^\circ$ र $(2x + 30)^\circ$ छन् । सबैभन्दा ठूलो र सबैभन्दा सानो कोणको नाप पत्ता लगाउनुहोस् ।
+                </p>
+                <div class="p-3 bg-purple-50 border border-purple-200 rounded-xl space-y-1 font-mono text-xs">
+                  <div>$x + (2x - 10) + (3x + 20) + (2x + 30) = 360^\circ \implies 8x + 40 = 360^\circ \implies 8x = 320 \implies \mathbf{x = 40^\circ}$</div>
+                  <div>कोणहरू: १) $40^\circ$, २) $2(40)-10 = 70^\circ$, ३) $3(40)+20 = 140^\circ$, ४) $2(40)+30 = 110^\circ$</div>
+                  <div class="font-bold text-purple-800">सबैभन्दा ठूलो कोण $= 140^\circ$, सबैभन्दा सानो कोण $= 40^\circ$ ।</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ================= CH15 TAB 4: SELF-ASSESSMENT QUIZ ================= -->
+        <div id="ch15-view-quiz" class="hidden space-y-6">
+
+          <!-- Quiz Header & Score Card -->
+          <div class="p-6 bg-gradient-to-r from-blue-900 to-indigo-900 text-white rounded-3xl shadow-lg flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 text-xs font-bold border border-blue-400/30 mb-2">
+                🎯 आत्म-मूल्याङ्कन परीक्षा
+              </div>
+              <h3 class="text-xl md:text-2xl font-black">पाठ १५: समतलीय आकृति बहुवैकल्पिक क्विज</h3>
+              <p class="text-xs text-blue-200 mt-1">१० वटा महत्त्वपूर्ण प्रश्नहरू हल गरी आफ्नो तयारी जाँच्नुहोस् ।</p>
+            </div>
+
+            <!-- Score Display -->
+            <div class="flex items-center gap-3 bg-slate-950/60 p-3 rounded-2xl border border-indigo-700/50">
+              <div class="text-right">
+                <div class="text-[11px] text-slate-300 font-bold uppercase">प्राप्ताङ्क (Score)</div>
+                <div class="text-2xl font-black text-cyan-400"><span id="ch15-quiz-score">0</span> / 10</div>
+              </div>
+              <button onclick="resetCh15Quiz()" class="px-3 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition cursor-pointer">
+                पुनः प्रयास
+              </button>
+            </div>
+          </div>
+
+          <!-- Quiz Questions Grid -->
+          <div id="ch15-quiz-container" class="space-y-4">
+            <!-- Questions will be dynamically rendered or static with instant JS validation -->
+          </div>
+
+        </div>
+      </div>
+      <!-- ================= END CHAPTER 15 ================= -->

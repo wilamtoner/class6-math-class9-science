@@ -1,0 +1,1114 @@
+<!-- ================= CHAPTER 19 VIEW CONTAINER ================= -->
+      <div id="chapter-view-19" class="flex-1 flex flex-col hidden">
+        <!-- Top Chapter Banner -->
+        <div class="border-b border-slate-100 pb-5 mb-6 flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <div class="flex items-center gap-2 text-xs font-bold text-blue-600 mb-1">
+              एकाइ ५: ज्यामिति (Unit 5: Geometry — छैटौँ तथा अन्तिम पाठ)
+            </div>
+            <h2 class="text-2xl md:text-3xl font-black text-slate-900">पाठ १९: सममिति र टेसेलेसन (Symmetry and Tessellation)</h2>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs bg-slate-100 text-slate-700 font-semibold px-3 py-1 rounded-xl border border-slate-200">पाठ्यपुस्तक पृष्ठ २१५–२२३</span>
+            <span class="text-xs bg-emerald-100 text-emerald-700 font-semibold px-3 py-1 rounded-xl border border-emerald-200">अभ्यास १९.१, १९.२ र एकाइ ५ मिश्रित अभ्यास</span>
+          </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="flex border-b border-slate-200 gap-2 mb-6 overflow-x-auto pb-1 text-sm font-bold">
+          <button onclick="setTabCh19('concepts')" id="ch19-tab-concepts" class="px-5 py-2.5 rounded-xl bg-blue-600 text-white shadow-sm font-bold transition whitespace-nowrap cursor-pointer">
+            १. अवधारणा र सममिति-टेसेलेसन ल्याब
+          </button>
+          <button onclick="setTabCh19('exercises')" id="ch19-tab-exercises" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+            २. सम्पूर्ण अभ्यास समाधान (१९.१, १९.२ र मिश्रित)
+          </button>
+          <button onclick="setTabCh19('tiers')" id="ch19-tab-tiers" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+            ३. तीन तहका नमुना प्रश्नहरू (१६ प्रश्न)
+          </button>
+          <button onclick="setTabCh19('quiz')" id="ch19-tab-quiz" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+            ४. स्वमूल्याङ्कन क्विज (१० प्रश्न)
+          </button>
+        </div>
+
+<!-- ================= CHAPTER 19: TAB 1 (CONCEPTS & INTERACTIVE LAB) ================= -->
+<div id="ch19-view-concepts" class="space-y-8">
+  <!-- Key Concept Cards Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Card 1: Symmetry Core -->
+    <div class="bg-gradient-to-br from-indigo-50 to-blue-50 border border-blue-100 rounded-2xl p-6 shadow-sm">
+      <div class="flex items-center gap-3 mb-3">
+        <span class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-black text-lg">१</span>
+        <div>
+          <h3 class="font-extrabold text-lg text-slate-900">सममिति र सममिति रेखा (Symmetry & Axis)</h3>
+          <span class="text-xs text-blue-700 font-semibold">ऐना प्रतिबिम्ब र पट्याउँदा दुरुस्त खप्टिने गुण</span>
+        </div>
+      </div>
+      <div class="text-sm text-slate-700 space-y-2 leading-relaxed">
+        <p>कुनै आकृतिलाई एउटा काल्पनिक सीधा रेखाबाट पट्याउँदा दुई भागहरू एकआपसमा ठ्याक्कै खप्टिन्छन् भने त्यसलाई <strong>सममिति (Symmetry)</strong> भनिन्छ।</p>
+        <ul class="list-disc list-inside space-y-1 text-xs md:text-sm text-slate-600 bg-white/70 p-3 rounded-xl border border-blue-100">
+          <li><strong>सममिति रेखा वा अक्ष (Axis of Symmetry):</strong> चित्रलाई दुई बराबर ऐना-प्रतिबिम्ब (Mirror-image) भागमा बाँड्ने काल्पनिक रेखा। यसलाई सामान्यतया डट-डट (--) रेखाले जनाइन्छ।</li>
+          <li><strong>ठाडो सममिति रेखा (Vertical):</strong> माथिदेखि तल जाने रेखा (जस्तै: अक्षर A, M, T, W, मुटु)।</li>
+          <li><strong>तेर्सो सममिति रेखा (Horizontal):</strong> दायाँदेखि बायाँ जाने रेखा (जस्तै: अक्षर B, C, D, E, K)।</li>
+          <li><strong>दुवै हुने (Both):</strong> ठाडो र तेर्सो दुवै सममिति रेखा हुने (जस्तै: अक्षर H, I, O, X)।</li>
+          <li><strong>नहुने (None):</strong> F, G, J, L, P, Q, R, S, Z आदि।</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Card 2: Tessellation Core -->
+    <div class="bg-gradient-to-br from-emerald-50 to-teal-50 border border-teal-100 rounded-2xl p-6 shadow-sm">
+      <div class="flex items-center gap-3 mb-3">
+        <span class="w-10 h-10 rounded-xl bg-teal-600 text-white flex items-center justify-center font-black text-lg">२</span>
+        <div>
+          <h3 class="font-extrabold text-lg text-slate-900">टेसेलेसन वा टायलिङ (Tessellation / Tiling)</h3>
+          <span class="text-xs text-teal-700 font-semibold">खाली ठाउँ नछाडी र नखप्टाई सतह ढाक्ने कला</span>
+        </div>
+      </div>
+      <div class="text-sm text-slate-700 space-y-2 leading-relaxed">
+        <p>ज्यामितीय आकृतिहरूलाई एकापसमा <strong>नखप्टाई (without overlapping)</strong> र कुनै <strong>खाली ठाउँ नछाडी (without gaps)</strong> समतल सतह पूर्ण रूपमा ढाक्ने ढाँचालाई <strong>टेसेलेसन (Tessellation)</strong> भनिन्छ।</p>
+        <div class="bg-white/80 p-3 rounded-xl border border-teal-100 text-xs md:text-sm text-slate-700 space-y-1.5">
+          <div class="font-bold text-teal-900 flex items-center gap-1.5">
+            <svg style="width: 18px; height: 18px; min-width: 18px; display: inline-block; vertical-align: middle;" class="text-teal-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            टेसेलेसनको सुनौलो गणितीय सर्त ($360^\circ$ नियम):
+          </div>
+          <p class="text-xs text-slate-600 pl-5">कुनै साझा शीर्षबिन्दुमा भेट हुने सबै बहुभुजका भित्री कोणहरूको जोड <strong>ठ्याक्कै $360^\circ$</strong> हुनुपर्छ।</p>
+          <div class="grid grid-cols-3 gap-2 mt-2 text-center text-[11px] font-bold">
+            <div class="bg-emerald-100 text-emerald-800 p-1.5 rounded-lg">समबाहु त्रिभुज<br><span class="font-normal">$6 \times 60^\circ = 360^\circ$ ✓</span></div>
+            <div class="bg-blue-100 text-blue-800 p-1.5 rounded-lg">वर्ग / आयत<br><span class="font-normal">$4 \times 90^\circ = 360^\circ$ ✓</span></div>
+            <div class="bg-purple-100 text-purple-800 p-1.5 rounded-lg">नियमित षट्कोण<br><span class="font-normal">$3 \times 120^\circ = 360^\circ$ ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master Symmetry Table & Important Misconception Alert -->
+  <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+      <div>
+        <h4 class="font-black text-slate-900 text-base md:text-lg flex items-center gap-2">
+          <span>📐 प्रमुख ज्यामितीय आकृतिहरूको सममिति रेखा तालिका</span>
+        </h4>
+        <p class="text-xs text-slate-500">कक्षा ६ को परीक्षामा बारम्बार सोधिने आकृतिहरू र तिनका अक्षहरू</p>
+      </div>
+      <span class="text-xs bg-amber-100 text-amber-900 font-bold px-3 py-1 rounded-xl">पाठ्यपुस्तक तालिका (पृष्ठ २१८)</span>
+    </div>
+
+    <div class="overflow-x-auto">
+      <table class="w-full text-left text-xs md:text-sm border-collapse">
+        <thead>
+          <tr class="bg-slate-50 text-slate-700 font-bold border-b border-slate-200">
+            <th class="p-3">आकृति</th>
+            <th class="p-3">सममिति रेखा सङ्ख्या</th>
+            <th class="p-3">अक्षहरूको प्रकृति तथा विवरण</th>
+            <th class="p-3">घूर्णन सममिति क्रम (Order)</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100 text-slate-600">
+          <tr class="hover:bg-blue-50/50">
+            <td class="p-3 font-bold text-slate-800">समबाहु त्रिभुज (Equilateral)</td>
+            <td class="p-3 font-extrabold text-blue-600 text-base">३</td>
+            <td class="p-3">प्रत्येक शीर्षबिन्दुबाट विपरीत भुजाको मध्यबिन्दु जोड्ने लम्बहरू</td>
+            <td class="p-3">३ ($120^\circ, 240^\circ, 360^\circ$)</td>
+          </tr>
+          <tr class="hover:bg-blue-50/50">
+            <td class="p-3 font-bold text-slate-800">समद्विबाहु त्रिभुज (Isosceles)</td>
+            <td class="p-3 font-extrabold text-blue-600 text-base">१</td>
+            <td class="p-3">बराबर भुजाहरूको शीर्षबिन्दुबाट आधारको मध्यबिन्दु जोड्ने रेखा</td>
+            <td class="p-3">१ ($360^\circ$ मा मात्र)</td>
+          </tr>
+          <tr class="hover:bg-blue-50/50">
+            <td class="p-3 font-bold text-slate-800">विषमबाहु त्रिभुज (Scalene)</td>
+            <td class="p-3 font-extrabold text-rose-500 text-base">०</td>
+            <td class="p-3">कुनै पनि भुजा बराबर नहुने हुँदा पट्याउँदा खप्टिँदैन</td>
+            <td class="p-3">१</td>
+          </tr>
+          <tr class="hover:bg-blue-50/50 bg-amber-50/30">
+            <td class="p-3 font-bold text-slate-800">वर्ग (Square)</td>
+            <td class="p-3 font-extrabold text-emerald-600 text-base">४</td>
+            <td class="p-3">२ वटा भुजाहरूका मध्यबिन्दु जोड्ने (ठाडो/तेर्सो) + २ वटा विकर्णहरू</td>
+            <td class="p-3">४ ($90^\circ, 180^\circ, 270^\circ, 360^\circ$)</td>
+          </tr>
+          <tr class="hover:bg-blue-50/50 bg-amber-50/30">
+            <td class="p-3 font-bold text-slate-800">आयत (Rectangle)</td>
+            <td class="p-3 font-extrabold text-purple-600 text-base">२</td>
+            <td class="p-3">विपरीत भुजाहरूका मध्यबिन्दु जोड्ने १ ठाडो र १ तेर्सो रेखा <em>(विकर्ण होइन!)</em></td>
+            <td class="p-3">२ ($180^\circ, 360^\circ$)</td>
+          </tr>
+          <tr class="hover:bg-blue-50/50">
+            <td class="p-3 font-bold text-slate-800">समचतुर्भुज (Rhombus)</td>
+            <td class="p-3 font-extrabold text-blue-600 text-base">२</td>
+            <td class="p-3">२ वटा विकर्णहरू (Diagonals)</td>
+            <td class="p-3">२ ($180^\circ, 360^\circ$)</td>
+          </tr>
+          <tr class="hover:bg-blue-50/50">
+            <td class="p-3 font-bold text-slate-800">नियमित षट्कोण (Regular Hexagon)</td>
+            <td class="p-3 font-extrabold text-indigo-600 text-base">६</td>
+            <td class="p-3">३ वटा विपरीत शीर्षबिन्दु जोड्ने + ३ वटा भुजाहरूका मध्यबिन्दु जोड्ने</td>
+            <td class="p-3">६ ($60^\circ, 120^\circ, \dots, 360^\circ$)</td>
+          </tr>
+          <tr class="hover:bg-blue-50/50">
+            <td class="p-3 font-bold text-slate-800">वृत्त (Circle)</td>
+            <td class="p-3 font-extrabold text-teal-600 text-base">अनन्त ($\infty$)</td>
+            <td class="p-3">केन्द्रबिन्दु भएर जाने जुनसुकै सीधा रेखा (प्रत्येक व्यास सममिति रेखा हो)</td>
+            <td class="p-3">अनन्त ($\infty$)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Alert Box: Rectangle Diagonals -->
+    <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl text-xs md:text-sm text-amber-950 flex items-start gap-3">
+      <div class="text-amber-500 font-bold text-lg leading-none mt-0.5">⚠️</div>
+      <div>
+        <strong class="font-bold">साझा गल्तीबाट बचौँ: आयतको विकर्ण (Diagonal) सममिति रेखा किन होइन?</strong>
+        <p class="mt-1 text-slate-700">धेरै विद्यार्थीहरू आयतमा ४ वटा सममिति रेखा हुन्छन् भन्ने भ्रममा पर्छन्। तर आयतलाई विकर्णबाट पट्याउँदा दुई भागहरू एक-अर्कामा ठ्याक्कै खप्टिँदैनन् (कुनाहरू बाहिर निस्कन्छन्)। विकर्णले क्षेत्रफल आधा बनाउँछ तर ऐना प्रतिबिम्ब दिँदैन। तसर्थ, आयतमा <strong>२ वटा मात्र</strong> सममिति रेखा हुन्छन्!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE LAB CONTAINER -->
+  <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl text-white space-y-6">
+    <!-- Lab Header & Mode Selector -->
+    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-5">
+      <div>
+        <div class="flex items-center gap-2 text-xs font-bold text-cyan-400 mb-1">
+          <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+          पाठ १९ अन्तरक्रियात्मक प्रयोगशाला (Interactive 2D Lab)
+        </div>
+        <h3 class="text-xl md:text-2xl font-black text-white">सममिति र टेसेलेसन सिमुलेटर (Symmetry & Tiling Studio)</h3>
+      </div>
+
+      <!-- Mode Selector Pills -->
+      <div class="flex items-center gap-2 bg-slate-800/80 p-1.5 rounded-2xl border border-slate-700">
+        <button onclick="switchCh19Lab('symmetry')" id="ch19-lab-btn-symmetry" class="px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition">
+          १. सममिति अन्वेषक
+        </button>
+        <button onclick="switchCh19Lab('tessellation')" id="ch19-lab-btn-tessellation" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-300 hover:text-white transition">
+          २. टेसेलेसन स्टुडियो
+        </button>
+        <button onclick="switchCh19Lab('mirror')" id="ch19-lab-btn-mirror" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-300 hover:text-white transition">
+          ३. ऐना प्रतिबिम्ब ग्रिड
+        </button>
+      </div>
+    </div>
+
+    <!-- ================= LAB MODE 1: SYMMETRY EXPLORER ================= -->
+    <div id="ch19-lab-mode-symmetry" class="space-y-6">
+      <!-- Shape Selector Controls -->
+      <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-800/60 p-3.5 rounded-2xl border border-slate-700">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs font-bold text-slate-400 mr-1">आकृति छान्नुहोस्:</span>
+          <button onclick="selectSymmetryShape('equilateral')" id="btn-sym-equilateral" class="sym-shape-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-blue-600 text-white">समबाहु त्रिभुज</button>
+          <button onclick="selectSymmetryShape('isosceles')" id="btn-sym-isosceles" class="sym-shape-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">समद्विबाहु त्रिभुज</button>
+          <button onclick="selectSymmetryShape('scalene')" id="btn-sym-scalene" class="sym-shape-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">विषमबाहु त्रिभुज</button>
+          <button onclick="selectSymmetryShape('square')" id="btn-sym-square" class="sym-shape-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">वर्ग</button>
+          <button onclick="selectSymmetryShape('rectangle')" id="btn-sym-rectangle" class="sym-shape-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">आयत</button>
+          <button onclick="selectSymmetryShape('rhombus')" id="btn-sym-rhombus" class="sym-shape-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">समचतुर्भुज</button>
+          <button onclick="selectSymmetryShape('hexagon')" id="btn-sym-hexagon" class="sym-shape-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">नियमित षट्कोण</button>
+          <button onclick="selectSymmetryShape('circle')" id="btn-sym-circle" class="sym-shape-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">वृत्त</button>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="toggleSymmetryLine('all')" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white transition flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+            अक्षहरू देखाउनुहोस् / लुकाउनुहोस्
+          </button>
+        </div>
+      </div>
+
+      <!-- Canvas and Info Split -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <!-- SVG Canvas -->
+        <div class="lg:col-span-7 flex justify-center items-center bg-slate-950 p-4 rounded-2xl border border-slate-800 relative">
+          <svg id="ch19-symmetry-svg" viewBox="0 0 400 340" class="w-full max-w-[420px] h-[320px]">
+            <rect x="0" y="0" width="400" height="340" fill="#090d16" rx="16" />
+            <!-- Grid lines background for context -->
+            <defs>
+              <pattern id="symGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="340" fill="url(#symGrid)" rx="16" />
+            
+            <!-- Shape and Symmetry Lines will be rendered via JS -->
+            <g id="sym-shape-container"></g>
+            <g id="sym-lines-container"></g>
+            <g id="sym-labels-container"></g>
+          </svg>
+
+          <!-- Floating Badges -->
+          <div class="absolute bottom-6 left-6 bg-slate-900/90 backdrop-blur px-3 py-1.5 rounded-xl border border-slate-700 text-[11px] text-cyan-300 font-semibold flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-rose-500"></span>
+            <span>रातो डट रेखा = सममिति अक्ष</span>
+          </div>
+        </div>
+
+        <!-- Info Card -->
+        <div class="lg:col-span-5 space-y-4">
+          <div id="sym-info-card" class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700 space-y-3">
+            <div class="flex items-center justify-between border-b border-slate-700 pb-2">
+              <h4 id="sym-info-title" class="font-bold text-base text-cyan-400">समबाहु त्रिभुज (Equilateral Triangle)</h4>
+              <span id="sym-info-badge" class="px-2.5 py-0.5 rounded-full text-xs font-black bg-blue-500/20 text-blue-300 border border-blue-500/30">३ वटा अक्ष</span>
+            </div>
+            <p id="sym-info-desc" class="text-xs text-slate-300 leading-relaxed">
+              यसका तीनवटै भुजाहरू बराबर हुन्छन्। प्रत्येक शीर्षबिन्दुबाट विपरीत भुजाको मध्यबिन्दुमा खिचेको रेखाले त्रिभुजलाई दुई समान भागमा विभाजन गर्छ।
+            </p>
+            <div id="sym-info-details" class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-xs space-y-1.5">
+              <div class="flex justify-between text-slate-400">
+                <span>ठाडो सममिति अक्ष:</span>
+                <span id="sym-val-vert" class="text-slate-200 font-bold">१ वटा</span>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>छड्के सममिति अक्ष:</span>
+                <span id="sym-val-diag" class="text-slate-200 font-bold">२ वटा</span>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>घूर्णन सममिति क्रम:</span>
+                <span id="sym-val-rot" class="text-cyan-300 font-bold">३ ($120^\circ$)</span>
+              </div>
+            </div>
+            <div id="sym-info-tip" class="text-[11px] text-amber-300 bg-amber-950/40 p-2.5 rounded-xl border border-amber-800/50 flex items-start gap-1.5">
+              <span>💡</span>
+              <span>नियमित बहुभुज (Regular Polygon) का जतिवटा भुजा हुन्छन्, त्यति नै वटा सममिति रेखा हुन्छन्!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= LAB MODE 2: TESSELLATION STUDIO ================= -->
+    <div id="ch19-lab-mode-tessellation" class="hidden space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-800/60 p-3.5 rounded-2xl border border-slate-700">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs font-bold text-slate-400 mr-1">टायलको स्वरूप छान्नुहोस्:</span>
+          <button onclick="selectTessShape('square')" id="btn-tess-square" class="tess-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-teal-600 text-white">वर्ग (Square Grid)</button>
+          <button onclick="selectTessShape('triangle')" id="btn-tess-triangle" class="tess-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">समबाहु त्रिभुज</button>
+          <button onclick="selectTessShape('hexagon')" id="btn-tess-hexagon" class="tess-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">नियमित षट्कोण (Honeycomb)</button>
+          <button onclick="selectTessShape('brick')" id="btn-tess-brick" class="tess-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">आयताकार इँटा (Brick Bond)</button>
+          <button onclick="selectTessShape('pentagon')" id="btn-tess-pentagon" class="tess-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-rose-950 text-rose-300 border border-rose-800 hover:bg-rose-900">पञ्चकोण (असम्भव परीक्षण)</button>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs text-slate-400">रङ शैली:</span>
+          <select id="ch19-tess-theme" onchange="renderTessellation()" class="bg-slate-900 text-xs text-slate-200 px-3 py-1.5 rounded-xl border border-slate-700 focus:outline-none focus:border-teal-500">
+            <option value="emerald">समुन्द्री हरियो (Emerald)</option>
+            <option value="cyber">साइबर निलो (Cyan-Blue)</option>
+            <option value="warm">सुनौलो अम्बर (Warm Gold)</option>
+            <option value="duo">द्विरङ्गी चेकरबोर्ड (High Contrast)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <!-- Tessellation Canvas -->
+        <div class="lg:col-span-7 flex justify-center items-center bg-slate-950 p-4 rounded-2xl border border-slate-800 relative overflow-hidden">
+          <svg id="ch19-tess-svg" viewBox="0 0 420 340" class="w-full max-w-[440px] h-[320px]">
+            <rect x="0" y="0" width="420" height="340" fill="#090d16" rx="16" />
+            <g id="tess-tiles-group"></g>
+            <g id="tess-overlay-group"></g>
+          </svg>
+        </div>
+
+        <!-- Tessellation Info & Proof Card -->
+        <div class="lg:col-span-5 space-y-4">
+          <div id="tess-info-card" class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700 space-y-3">
+            <div class="flex items-center justify-between border-b border-slate-700 pb-2">
+              <h4 id="tess-info-title" class="font-bold text-base text-teal-400">वर्गाकार टेसेलेसन (Square Tiling)</h4>
+              <span id="tess-status-badge" class="px-2.5 py-0.5 rounded-full text-xs font-black bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">सफल टेसेलेसन ✓</span>
+            </div>
+            <p id="tess-info-desc" class="text-xs text-slate-300 leading-relaxed">
+              वर्गका चारवटै कोणहरू $90^\circ$ हुन्छन्। एउटा साझा शीर्षबिन्दुमा ४ वटा वर्गहरू जोडिँदा कोणहरूको कुल योग ठ्याक्कै $360^\circ$ हुन्छ।
+            </p>
+            <div class="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 text-xs space-y-2">
+              <div class="flex justify-between items-center text-slate-400">
+                <span>भित्री कोण (Interior Angle):</span>
+                <span id="tess-angle-each" class="text-slate-100 font-bold">९०°</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-400">
+                <span>शीर्षबिन्दुमा भेटिने सङ्ख्या:</span>
+                <span id="tess-tile-count" class="text-teal-300 font-bold">४ वटा</span>
+              </div>
+              <div class="flex justify-between items-center border-t border-slate-800 pt-1.5 text-slate-300 font-semibold">
+                <span>कोणहरूको योगफल:</span>
+                <span id="tess-angle-sum" class="text-emerald-400 font-extrabold text-sm">४ × ९०° = ३६०°</span>
+              </div>
+            </div>
+            <div id="tess-reason-box" class="text-[11px] text-teal-200 bg-teal-950/40 p-2.5 rounded-xl border border-teal-800/50 leading-relaxed">
+              कुनै खाली ठाउँ नछाडी र नखप्टाई सम्पूर्ण समतल सतह पूर्ण रूपमा ढाकिएको छ।
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= LAB MODE 3: MIRROR REFLECTION GRID ================= -->
+    <div id="ch19-lab-mode-mirror" class="hidden space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-800/60 p-3.5 rounded-2xl border border-slate-700">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs font-bold text-slate-400 mr-1">नमुना ढाँचा (Presets):</span>
+          <button onclick="loadMirrorPreset('rocket')" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 hover:bg-slate-600 text-slate-200 transition">🚀 रकेट (Rocket)</button>
+          <button onclick="loadMirrorPreset('heart')" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 hover:bg-slate-600 text-slate-200 transition">❤️ मुटु (Heart)</button>
+          <button onclick="loadMirrorPreset('tree')" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 hover:bg-slate-600 text-slate-200 transition">🌲 रूख (Tree)</button>
+          <button onclick="loadMirrorPreset('arrow')" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 hover:bg-slate-600 text-slate-200 transition">➡️ तीर (Arrow)</button>
+          <button onclick="clearMirrorGrid()" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-rose-900/60 hover:bg-rose-800 text-rose-200 border border-rose-700 transition">खाली गर्नुहोस्</button>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="autoCompleteMirror()" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white transition flex items-center gap-1">
+            <span>✨ स्वतः प्रतिबिम्ब भर्नुहोस्</span>
+          </button>
+          <button onclick="checkMirrorSymmetry()" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white transition flex items-center gap-1">
+            <span>✓ सममिति परीक्षण</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <!-- Interactive Mirror Grid -->
+        <div class="lg:col-span-7 flex flex-col items-center justify-center bg-slate-950 p-4 rounded-2xl border border-slate-800 relative">
+          <div class="text-[11px] text-slate-400 mb-2 flex items-center gap-4">
+            <span class="text-blue-400 font-bold">बायाँ भाग (सुरुवाती चित्र)</span>
+            <span class="text-rose-400 font-bold">बिचको रातो रेखा (सममिति अक्ष)</span>
+            <span class="text-emerald-400 font-bold">दायाँ भाग (प्रतिबिम्ब भर्नुहोस्)</span>
+          </div>
+
+          <div id="ch19-mirror-grid" class="inline-grid gap-1 bg-slate-900 p-2.5 rounded-xl border border-slate-800 select-none">
+            <!-- 10x10 or 8x8 Grid dynamically generated via JS -->
+          </div>
+
+          <div id="mirror-feedback" class="mt-3 text-xs font-bold text-cyan-300 min-h-[20px] text-center">
+            दायाँतर्फका कोठाहरूमा क्लिक गरी ऐना प्रतिबिम्ब पूरा गर्नुहोस्!
+          </div>
+        </div>
+
+        <!-- Instructions Card -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700 space-y-3 text-xs leading-relaxed">
+            <h4 class="font-bold text-base text-cyan-400 flex items-center gap-2">
+              <span>🪞 ऐना प्रतिबिम्ब ग्रिड कसरी खेल्ने?</span>
+            </h4>
+            <p class="text-slate-300">
+              यो अभ्यास पाठ्यपुस्तकको <strong>अभ्यास १९.१ प्रश्न ३ (पृष्ठ २१७)</strong> सँग प्रत्यक्ष मेल खान्छ जहाँ डट रेखालाई अक्ष मानेर आकृति पूरा गर्नुपर्छ।
+            </p>
+            <ol class="list-decimal list-inside space-y-2 text-slate-400 bg-slate-900/60 p-3 rounded-xl border border-slate-800">
+              <li><strong class="text-slate-200">अक्षबाट दूरी गन्नुहोस्:</strong> बायाँतर्फको रङ भरिएको कोठा रातो रेखाबाट कति कोठा टाढा छ, दायाँतर्फ पनि ठ्याक्कै त्यति नै कोठा परको कोठामा क्लिक गर्नुहोस्।</li>
+              <li><strong class="text-slate-200">क्लिक गरी रङ भर्नुहोस्:</strong> दायाँ भागको जुनसुकै कोठामा क्लिक गर्दा रङ खुल्छ वा मेटिन्छ।</li>
+              <li><strong class="text-slate-200">सममिति परीक्षण:</strong> चित्र पूरा भएपछि <em>'सममिति परीक्षण'</em> बटन थिची आफ्नो उत्तर ठिक छ कि छैन जाँच्नुहोस्।</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ================= END TAB 1 ================= -->
+
+<!-- ================= CHAPTER 19: TAB 2 (EXERCISES & UNIT 5 REVIEW) ================= -->
+<div id="ch19-view-exercises" class="hidden space-y-8">
+  <!-- Sub-section Switcher -->
+  <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-100 p-2 rounded-2xl border border-slate-200">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="text-xs font-bold text-slate-500 ml-2">अभ्यास खण्ड छान्नुहोस्:</span>
+      <button onclick="filterCh19Exercises('all')" id="btn-sub-all" class="ch19-sub-btn px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-sm transition">
+        सबै देखाउनुहोस् (All)
+      </button>
+      <button onclick="filterCh19Exercises('ex19_1')" id="btn-sub-ex19_1" class="ch19-sub-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-slate-200 transition">
+        अभ्यास १९.१ (सममिति)
+      </button>
+      <button onclick="filterCh19Exercises('ex19_2')" id="btn-sub-ex19_2" class="ch19-sub-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-slate-200 transition">
+        अभ्यास १९.२ (टेसेलेसन)
+      </button>
+      <button onclick="filterCh19Exercises('unit5_mixed')" id="btn-sub-mixed" class="ch19-sub-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-slate-200 transition">
+        एकाइ ५ मिश्रित अभ्यास (१–१४)
+      </button>
+    </div>
+    <div class="text-xs text-slate-500 font-semibold mr-2">
+      पाठ्यपुस्तक पृष्ठ २१६–२२३
+    </div>
+  </div>
+
+  <!-- ================= SECTION 1: EXERCISE 19.1 ================= -->
+  <div id="sec-ch19-ex19_1" class="space-y-6">
+    <div class="border-b border-blue-200 pb-3 flex items-center justify-between">
+      <div>
+        <h3 class="text-xl font-black text-slate-900 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm">१९.१</span>
+          <span>अभ्यास १९.१ : सममितीय आकृति र सममिति रेखा (पृष्ठ २१६–२१८)</span>
+        </h3>
+        <p class="text-xs text-slate-500 mt-0.5">त्रिभुज, चतुर्भुज, सडक सङ्केतहरू र ऐना प्रतिबिम्ब अभ्यासहरू</p>
+      </div>
+      <span class="text-xs bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-xl">८ मुख्य प्रश्नहरू + परियोजना</span>
+    </div>
+
+    <!-- Q1: Triangles on Graph Paper -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-700 text-xs font-black">प्रश्न १</span>
+          <span>तलका त्रिभुजहरूलाई ग्राफ पेपरमा खिची सममिति रेखा खिच्नुहोस् :</span>
+        </h4>
+        <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg">पृष्ठ २१६</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+        <!-- Q1 (क) -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-2">
+          <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+            <span>(क) आधार ६ एकाइ र उचाइ ५ एकाइ भएको त्रिभुज</span>
+            <span class="text-[11px] bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">समद्विबाहु</span>
+          </div>
+          <p class="text-slate-600"><strong>विश्लेषण:</strong> आधारको बिच बिन्दु (३ एकाइ) बाट शीर्षबिन्दुसम्म ठाडो रेखा खिच्दा दुई समान समकोणी त्रिभुज बन्दछन्।</p>
+          <div class="bg-emerald-50 text-emerald-900 p-2.5 rounded-lg border border-emerald-200 font-medium">
+            <strong>उत्तर:</strong> सममिति रेखाको सङ्ख्या = <strong>१ वटा</strong> (शीर्षबिन्दुबाट आधारको मध्यबिन्दु जोड्ने ठाडो रेखा)।
+          </div>
+        </div>
+
+        <!-- Q1 (ख) -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-2">
+          <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+            <span>(ख) आधार ४ एकाइ र उचाइ ५ एकाइ भएको त्रिभुज</span>
+            <span class="text-[11px] bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">समद्विबाहु</span>
+          </div>
+          <p class="text-slate-600"><strong>विश्लेषण:</strong> आधारको बिच बिन्दु (२ एकाइ) बाट शीर्षबिन्दु जोड्ने लम्ब रेखाले चित्रलाई दुई दुरुस्त भागमा पट्याउँछ।</p>
+          <div class="bg-emerald-50 text-emerald-900 p-2.5 rounded-lg border border-emerald-200 font-medium">
+            <strong>उत्तर:</strong> सममिति रेखाको सङ्ख्या = <strong>१ वटा</strong> (ठाडो सममिति अक्ष)।
+          </div>
+        </div>
+
+        <!-- Q1 (ग) -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-2">
+          <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+            <span>(ग) समकोणी समद्विबाहु त्रिभुज (Right-Angled Isosceles)</span>
+            <span class="text-[11px] bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">$45^\circ-45^\circ-90^\circ$</span>
+          </div>
+          <p class="text-slate-600"><strong>विश्लेषण:</strong> $90^\circ$ को समकोणबाट कर्णको मध्यबिन्दु जोड्ने विकर्ण रेखा खिच्दा दुई समान समकोणी त्रिभुज खप्टिन्छन्।</p>
+          <div class="bg-emerald-50 text-emerald-900 p-2.5 rounded-lg border border-emerald-200 font-medium">
+            <strong>उत्तर:</strong> सममिति रेखाको सङ्ख्या = <strong>१ वटा</strong> (कर्णमा खिचिएको छड्के विकर्ण अक्ष)।
+          </div>
+        </div>
+
+        <!-- Q1 (घ) -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-2">
+          <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+            <span>(घ) तेर्सो तेर्सिएको समद्विबाहु त्रिभुज</span>
+            <span class="text-[11px] bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">तेर्सो अक्ष</span>
+          </div>
+          <p class="text-slate-600"><strong>विश्लेषण:</strong> बायाँ चुच्चो शीर्षबिन्दुबाट दायाँ ठाडो आधारको मध्यबिन्दु जोड्ने तेर्सो सीधा रेखाले दुवै भागलाई ठ्याक्कै खप्ट्याउँछ।</p>
+          <div class="bg-emerald-50 text-emerald-900 p-2.5 rounded-lg border border-emerald-200 font-medium">
+            <strong>उत्तर:</strong> सममिति रेखाको सङ्ख्या = <strong>१ वटा</strong> (तेर्सो सममिति रेखा - Horizontal Axis)।
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q2: Various Geometrical Shapes -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-700 text-xs font-black">प्रश्न २</span>
+          <span>तल दिइएका प्रत्येक चित्रहरूको सममिति रेखा (रेखाहरू) खिच्नुहोस् :</span>
+        </h4>
+        <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg">पृष्ठ २१७</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs md:text-sm">
+        <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+          <div class="font-bold text-slate-800 mb-1">(क) समद्विबाहु समलम्ब (Isosceles Trapezium)</div>
+          <p class="text-slate-600 text-xs mb-2">समानान्तर आधार भुजाहरूका मध्यबिन्दु जोड्ने ठाडो रेखा।</p>
+          <div class="text-blue-700 font-bold bg-blue-50 p-2 rounded-lg text-center">सममिति रेखा = १ वटा (ठाडो)</div>
+        </div>
+        <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+          <div class="font-bold text-slate-800 mb-1">(ख) दुवैतर्फ तीर (Double-Headed Arrow)</div>
+          <p class="text-slate-600 text-xs mb-2">१ वटा बीचबाट जाने तेर्सो रेखा र १ वटा बिचको ठाडो रेखा।</p>
+          <div class="text-blue-700 font-bold bg-blue-50 p-2 rounded-lg text-center">सममिति रेखा = २ वटा (ठाडो र तेर्सो)</div>
+        </div>
+        <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+          <div class="font-bold text-slate-800 mb-1">(ग) घर आकारको पञ्चभुज (Pentagon)</div>
+          <p class="text-slate-600 text-xs mb-2">माथिल्लो छानोको चुच्चोबाट तल्लो आधारको मध्यबिन्दु जोड्ने ठाडो रेखा।</p>
+          <div class="text-blue-700 font-bold bg-blue-50 p-2 rounded-lg text-center">सममिति रेखा = १ वटा (ठाडो)</div>
+        </div>
+        <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+          <div class="font-bold text-slate-800 mb-1">(घ) एकतर्फी तेर्सो तीर (Single Arrow)</div>
+          <p class="text-slate-600 text-xs mb-2">तीरको पुच्छरबाट चुच्चो भएर जाने तेर्सो सीधा रेखा।</p>
+          <div class="text-blue-700 font-bold bg-blue-50 p-2 rounded-lg text-center">सममिति रेखा = १ वटा (तेर्सो)</div>
+        </div>
+        <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+          <div class="font-bold text-slate-800 mb-1">(ङ) मुटु आकार (Heart Shape)</div>
+          <p class="text-slate-600 text-xs mb-2">माथिको खाडलबाट तल्लो चुच्चो जोड्ने सीधा ठाडो रेखा।</p>
+          <div class="text-blue-700 font-bold bg-blue-50 p-2 rounded-lg text-center">सममिति रेखा = १ वटा (ठाडो)</div>
+        </div>
+        <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+          <div class="font-bold text-slate-800 mb-1">(च) ढोका वा आर्च आकार (Arch)</div>
+          <p class="text-slate-600 text-xs mb-2">माथिल्लो वक्रको केन्द्रबाट तल्लो आधारको मध्यबिन्दु जोड्ने रेखा।</p>
+          <div class="text-blue-700 font-bold bg-blue-50 p-2 rounded-lg text-center">सममिति रेखा = १ वटा (ठाडो)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q3: Mirror Complete on Grid -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-700 text-xs font-black">प्रश्न ३</span>
+          <span>डट रेखालाई सममितिको अक्ष मानेर ऐना प्रतिबिम्ब चित्र पूरा गर्ने विधि :</span>
+        </h4>
+        <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg">पृष्ठ २१७</span>
+      </div>
+
+      <div class="p-4 bg-blue-50/70 border border-blue-100 rounded-xl text-xs md:text-sm text-slate-700 space-y-2">
+        <p><strong>चरणबद्ध समाधान विधि:</strong></p>
+        <ol class="list-decimal list-inside space-y-1.5 pl-2 text-slate-600">
+          <li>डट रेखा (Axis of symmetry) बाट बायाँपट्टिको प्रत्येक शीर्षबिन्दु कति एकाइ कोठा टाढा छ, गन्नुहोस्।</li>
+          <li>डट रेखाबाट दायाँतर्फ ठ्याक्कै त्यति नै एकाइ कोठा टाढा समरूपी प्रतिविम्बित बिन्दुहरू अङ्कन गर्नुहोस्।</li>
+          <li>ती बिन्दुहरूलाई सीधा रेखाले जोड्दा दुरुस्त सममितीय पूर्ण आकृति बन्दछ (जस्तै: बन्द षट्कोण, तारा, रूख, चङ्गा आदि)।</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q4: English Alphabet Table -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-700 text-xs font-black">प्रश्न ४</span>
+          <span>अङ्ग्रेजी क्यापिटल अक्षरहरूको रेखीय सममिति वर्गीकरण (Classification of A to Z) :</span>
+        </h4>
+        <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg">पृष्ठ २१७</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+        <div class="bg-blue-50 border border-blue-200 p-3 rounded-xl space-y-1">
+          <div class="font-black text-blue-900">१. ठाडो अक्ष मात्र (Vertical)</div>
+          <div class="text-blue-700 font-extrabold text-base tracking-wider">A, M, T, U, V, W, Y</div>
+          <p class="text-[11px] text-blue-600">कुल: ७ वटा अक्षरहरू</p>
+        </div>
+        <div class="bg-emerald-50 border border-emerald-200 p-3 rounded-xl space-y-1">
+          <div class="font-black text-emerald-900">२. तेर्सो अक्ष मात्र (Horizontal)</div>
+          <div class="text-emerald-700 font-extrabold text-base tracking-wider">B, C, D, E, K</div>
+          <p class="text-[11px] text-emerald-600">कुल: ५ वटा अक्षरहरू</p>
+        </div>
+        <div class="bg-purple-50 border border-purple-200 p-3 rounded-xl space-y-1">
+          <div class="font-black text-purple-900">३. ठाडो र तेर्सो दुवै (Both)</div>
+          <div class="text-purple-700 font-extrabold text-base tracking-wider">H, I, O, X</div>
+          <p class="text-[11px] text-purple-600">कुल: ४ वटा अक्षरहरू (२ वा सोभन्दा बढी)</p>
+        </div>
+        <div class="bg-rose-50 border border-rose-200 p-3 rounded-xl space-y-1">
+          <div class="font-black text-rose-900">४. सममिति नहुने (No Axis)</div>
+          <div class="text-rose-700 font-bold text-sm tracking-wide">F, G, J, L, N, P, Q, R, S, Z</div>
+          <p class="text-[11px] text-rose-600">कुल: १० वटा अक्षरहरू</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q7 & Q8: Road Signs & Hexagon Combo -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-700 text-xs font-black">प्रश्न ७ र ८</span>
+          <span>सडक सङ्केतहरू तथा संयुक्त संरचनाको सममिति पहिचान :</span>
+        </h4>
+        <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg">पृष्ठ २१८</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-2">
+          <div class="font-bold text-slate-800">प्रश्न ७: सडक सङ्केतहरू (Traffic Road Signs)</div>
+          <ul class="list-disc list-inside space-y-1 text-slate-600">
+            <li><strong>राउन्डअबाउट (Roundabout - तीनवटा घुम्ती तीर):</strong> घूर्णन सममिति छ ($120^\circ$) तर रेखीय सममिति <strong>छैन</strong> (पट्याउँदा तीरहरू विपरीत दिशातर्फ पर्छन्)।</li>
+            <li><strong>एकतर्फी सिधा जाने तीर (One-way straight):</strong> <strong>१ वटा ठाडो सममिति रेखा</strong> हुन्छ।</li>
+            <li><strong>नो पार्किङ (छड्के धर्का भएको वृत्त):</strong> छड्के धर्काको दिशा र त्यसको लम्ब रेखा गरी <strong>२ वटा सममिति रेखा</strong> हुन्छ।</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-2">
+          <div class="font-bold text-slate-800">प्रश्न ८: षट्कोण, आयत र त्रिभुज मिलेको संरचना</div>
+          <p class="text-slate-600 leading-relaxed">
+            चित्रमा माथि समषट्कोण, बिचमा आयताकार भाग र तल समद्विबाहु त्रिभुज जोडिएको छ।
+          </p>
+          <div class="bg-emerald-50 text-emerald-900 p-2.5 rounded-lg border border-emerald-200">
+            <strong>निष्कर्ष:</strong> यो सममितीय चित्र हो। यसको <strong>१ वटा ठाडो अक्ष (Vertical Axis of Symmetry)</strong> हुन्छ जसले माथिको षट्कोण, बिचको आयत र तल्लो त्रिभुज सबैलाई बराबर दुई भागमा बाँड्दछ।
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SECTION 2: EXERCISE 19.2 ================= -->
+  <div id="sec-ch19-ex19_2" class="space-y-6">
+    <div class="border-b border-teal-200 pb-3 flex items-center justify-between">
+      <div>
+        <h3 class="text-xl font-black text-slate-900 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-teal-600 text-white flex items-center justify-center text-sm">१९.२</span>
+          <span>अभ्यास १९.२ : टेसेलेसन वा टायलिङ (पृष्ठ २२०–२२१)</span>
+        </h3>
+        <p class="text-xs text-slate-500 mt-0.5">टायल गणना, ग्रिडमा टेसेलेसन निर्माण र कोणहरूको नियम</p>
+      </div>
+      <span class="text-xs bg-teal-100 text-teal-800 font-bold px-3 py-1 rounded-xl">३ मुख्य प्रश्नहरू + परियोजना</span>
+    </div>
+
+    <!-- Q1: Tile Counts -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded bg-teal-100 text-teal-700 text-xs font-black">प्रश्न १</span>
+          <span>तलका टेसेलेसन चित्रहरूमा कुन आकृति कतिओटा छन्, गणना गर्नुहोस् :</span>
+        </h4>
+        <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg">पृष्ठ २२०</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs md:text-sm">
+        <div class="bg-teal-50/50 p-4 rounded-xl border border-teal-100 space-y-2 text-center">
+          <span class="text-xs font-black text-teal-900 block">(क) वर्गाकार टेसेलेसन</span>
+          <div class="text-2xl font-black text-teal-600">३६ वटा</div>
+          <p class="text-slate-600 text-xs">$६ \times ६$ ग्रिडमा मिलेका साना वर्गहरू = ३६ वटा वर्ग।</p>
+        </div>
+
+        <div class="bg-teal-50/50 p-4 rounded-xl border border-teal-100 space-y-2 text-center">
+          <span class="text-xs font-black text-teal-900 block">(ख) आयताकार टेसेलेसन</span>
+          <div class="text-2xl font-black text-teal-600">२५ वटा</div>
+          <p class="text-slate-600 text-xs">इँटाको पर्खाल ढाँचामा जोडिएका आयतहरू = २५ वटा आयत।</p>
+        </div>
+
+        <div class="bg-teal-50/50 p-4 rounded-xl border border-teal-100 space-y-2 text-center">
+          <span class="text-xs font-black text-teal-900 block">(ग) समबाहु त्रिभुज</span>
+          <div class="text-2xl font-black text-teal-600">२४ वटा</div>
+          <p class="text-slate-600 text-xs">सुल्टो र उल्टो मिलेर बनेका समबाहु त्रिभुजहरू = २४ वटा।</p>
+        </div>
+
+        <div class="bg-teal-50/50 p-4 rounded-xl border border-teal-100 space-y-2 text-center">
+          <span class="text-xs font-black text-teal-900 block">(घ) नियमित षट्कोण</span>
+          <div class="text-2xl font-black text-teal-600">१२ वटा</div>
+          <p class="text-slate-600 text-xs">माहुरीको घार ढाँचाका नियमित षट्कोणहरू = १२ वटा।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q2 & Q3: Dot Grid Tiling -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded bg-teal-100 text-teal-700 text-xs font-black">प्रश्न २ र ३</span>
+          <span>थोप्ला भएको ग्रिडमा आयताकार र वर्गाकार टेसेलेसन निर्माण विधि :</span>
+        </h4>
+        <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg">पृष्ठ २२१</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-2">
+          <div class="font-bold text-slate-800">प्रश्न २: आयताकार टेसेलेसन (Rectangular Tiling)</div>
+          <p class="text-slate-600 leading-relaxed">
+            लम्बाइ ३ एकाइ र चौडाइ २ एकाइ भएका आयतहरूलाई ग्रिडमा लहरै मिलाएर इँटाको पर्खाल (Running bond) जस्तै गरी बिछ्याउँदा कुनै पनि खाली ठाउँ नछुट्ने गरी पूर्ण टेसेलेसन बन्दछ।
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-2">
+          <div class="font-bold text-slate-800">प्रश्न ३: वर्गाकार टेसेलेसनमा रङ भर्ने (Chequered Square Tiling)</div>
+          <p class="text-slate-600 leading-relaxed">
+            २×२ एकाइका वर्गहरू बनाएर चेस बोर्डजस्तै गरी एउटामा गाढा र अर्कोमा फिक्का रङ पालैपालो भर्दा अत्यन्त आकर्षक द्विरङ्गी टेसेलेसन तयार हुन्छ।
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SECTION 3: UNIT 5 MIXED REVIEW ================= -->
+  <div id="sec-ch19-unit5_mixed" class="space-y-6">
+    <div class="border-b border-indigo-200 pb-3 flex items-center justify-between">
+      <div>
+        <h3 class="text-xl font-black text-slate-900 flex items-center gap-2">
+          <span class="px-2.5 py-1 rounded-lg bg-indigo-600 text-white flex items-center justify-center text-xs font-bold whitespace-nowrap">एकाइ ५</span>
+          <span>एकाइ ५: ज्यामिति मिश्रित अभ्यास (Mixed Review - पृष्ठ २२२–२२३)</span>
+        </h3>
+        <p class="text-xs text-slate-500 mt-0.5">रेखा, कोण, त्रिभुज, चतुर्भुज, वृत्त, ठोस वस्तुहरू, यूलर सूत्र, निर्देशाङ्क र सममितिको पूर्ण समीक्षा</p>
+      </div>
+      <span class="text-xs bg-indigo-100 text-indigo-800 font-bold px-3 py-1 rounded-xl">१४ वटा बृहत् प्रश्नहरू</span>
+    </div>
+
+    <!-- Review Grid Q1 to Q14 -->
+    <div class="space-y-4">
+      <!-- Q1, Q2, Q3: Circle & Angles -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base text-indigo-900">
+          प्रश्न १, २ र ३: लम्ब, समानान्तर र कोण नाप्ने (पृष्ठ २२२)
+        </h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs md:text-sm text-slate-700">
+          <div class="bg-indigo-50/50 p-3 rounded-xl border border-indigo-100">
+            <strong>प्रश्न १ (लम्ब र समानान्तर रेखा):</strong><br>
+            चित्रमा आयताकार आकृतिमा विपरीत भुजाहरू $AB \parallel CD$ र $AD \parallel BC$ समानान्तर छन् भने संलग्न भुजाहरू $AB \perp BC$ लम्ब हुन्छन्।
+          </div>
+          <div class="bg-indigo-50/50 p-3 rounded-xl border border-indigo-100">
+            <strong>प्रश्न २ (चाँदले कोण नाप्ने):</strong><br>
+            चाँदको केन्द्रलाई शीर्षबिन्दुमा राखी आधार रेखासँग मिलाउँदा कोणहरू नापिन्छन् (जस्तै: न्यूनकोण $45^\circ$, अधिककोण $120^\circ$, समकोण $90^\circ$)।
+          </div>
+          <div class="bg-indigo-50/50 p-3 rounded-xl border border-indigo-100">
+            <strong>प्रश्न ३ (त्रिभुजको वर्गीकरण):</strong><br>
+            भुजाका आधारमा: समबाहु, समद्विबाहु, विषमबाहु।<br>कोणका आधारमा: न्यूनकोणी, समकोणी, अधिककोणी।
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4, Q5, Q6: Geometric Constructions -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base text-indigo-900">
+          प्रश्न ४, ५, ६ र ७: रेखा र कोणको रचना तथा लम्बार्धक (पृष्ठ २२२)
+        </h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm text-slate-700">
+          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 space-y-1">
+            <strong>प्रश्न ४: $AB = 5\text{ cm}$ को लम्बार्धक र $C$ जोड्ने:</strong>
+            <p class="text-xs text-slate-600">कम्पासले $AB$ को आधाभन्दा बढी चाप लिएर दुवैतर्फ काटेर लम्बार्धक खिचिन्छ। मध्यबिन्दुबाट $4\text{ cm}$ माथि $C$ चिन्ह लगाई $AC$ र $BC$ जोड्दा $\triangle ABC$ एउटा <strong>समद्विबाहु त्रिभुज</strong> बन्दछ ($AC = BC \approx 4.7\text{ cm}$)।</p>
+          </div>
+          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 space-y-1">
+            <strong>प्रश्न ५: $AB = 6\text{ cm}$, $\angle A = 90^\circ, \angle B = 30^\circ$:</strong>
+            <p class="text-xs text-slate-600">बिन्दु $A$ मा समकोण र $B$ मा $30^\circ$ कोण बनाउने रेखाहरू जहाँ काटिन्छन्, त्यो बिन्दु $C$ हुन्छ। $\triangle ABC$ समकोणी त्रिभुज बन्छ जहाँ $\angle C = 180^\circ - (90^\circ + 30^\circ) = 60^\circ$ हुन्छ।</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q11: Euler's Formula in Tank -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+          <h4 class="font-bold text-slate-900 text-sm md:text-base text-indigo-900">
+            प्रश्न ११: षड्मुखाकार पानीको ट्याङ्की र यूलरको सूत्र (Euler's Formula)
+          </h4>
+          <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2.5 py-0.5 rounded">ठोस वस्तु समीक्षा</span>
+        </div>
+        <div class="bg-indigo-50/60 p-4 rounded-xl border border-indigo-100 text-xs md:text-sm text-slate-700 space-y-2">
+          <p><strong>प्रश्न:</strong> एउटा षड्मुखाकार (Cuboid) पानीको ट्याङ्कीमा सतह $F = 6$ र किनारा $E = 12$ छन् भने कुना (शीर्षबिन्दु) $V$ कति हुन्छन्? यूलरको सूत्र प्रयोग गरी पत्ता लगाउनुहोस्।</p>
+          <div class="bg-white p-3 rounded-lg border border-indigo-200 space-y-1 font-mono text-xs">
+            <div>यूलरको सूत्र: \(V - E + F = 2\)</div>
+            <div>मान राख्दा: \(V - 12 + 6 = 2 \implies V - 6 = 2 \implies V = 2 + 6 = 8\)</div>
+          </div>
+          <div class="text-emerald-800 font-bold">
+            निष्कर्ष: ट्याङ्कीको कुना (शीर्षबिन्दुहरू) को सङ्ख्या \(V = 8\) हुन्छ।
+          </div>
+        </div>
+      </div>
+
+      <!-- Q12 & Q13: Coordinate & 2D Shapes -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+          <h4 class="font-bold text-slate-900 text-sm md:text-base text-indigo-900">
+            प्रश्न १२ र १३: समतलीय आकृति vs ठोस वस्तु तथा लेखाचित्रमा आयत (पृष्ठ २२३)
+          </h4>
+          <span class="text-xs bg-purple-100 text-purple-800 font-bold px-2.5 py-0.5 rounded">निर्देशाङ्क ज्यामिति</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 space-y-1.5">
+            <strong>प्रश्न १२: समतलीय आकृति र ठोस वस्तु बीचको भिन्नता:</strong>
+            <ul class="list-disc list-inside space-y-1 text-slate-600 text-xs">
+              <li><strong>समतलीय आकृति (2D):</strong> लम्बाइ र चौडाइ गरी २ वटा मात्र आयाम हुन्छन्, आयतन हुँदैन (जस्तै: आयत, वर्ग, वृत्त)।</li>
+              <li><strong>ठोस वस्तु (3D):</strong> लम्बाइ, चौडाइ र उचाइ गरी ३ वटा आयाम हुन्छन्, आयतन हुन्छ (जस्तै: घन, षड्मुखा, सोली)।</li>
+            </ul>
+          </div>
+
+          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 space-y-1.5">
+            <strong>प्रश्न १३: बिन्दुहरू $(0, 9), (5, 9), (0, -2), (5, -2)$ जोड्दा:</strong>
+            <p class="text-slate-600 text-xs">
+              लम्बाइ $L = 9 - (-2) = 11$ एकाइ र चौडाइ $B = 5 - 0 = 5$ एकाइ भएको <strong>आयत (Rectangle)</strong> बन्दछ।
+            </p>
+            <div class="bg-emerald-50 text-emerald-900 p-2 rounded-lg font-bold text-xs">
+              क्षेत्रफल \(A = L \times B = 11 \times 5 = 55\text{ sq. units}\)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q14: Geometry Rectangle Construction -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base text-indigo-900">
+          प्रश्न १४: आयत रचना र क्षेत्रफल गणना ($AB = 5\text{ cm}, BC = 7\text{ cm}$)
+        </h4>
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-xs md:text-sm text-slate-700 space-y-1.5">
+          <p><strong>रचना चरणहरू:</strong> $AB = 5\text{ cm}$ खिच्ने। $A$ र $B$ मा $90^\circ$ का लम्ब कोणहरू खिच्ने। दुवै लम्बमा $7\text{ cm}$ चाप काटेर $D$ र $C$ चिन्ह लगाई जोड्ने।</p>
+          <div class="bg-emerald-50 text-emerald-900 p-2.5 rounded-lg border border-emerald-200 font-bold">
+            प्राप्त आकृति: आयत $ABCD$ हो।<br>
+            क्षेत्रफल \(A = \text{लम्बाइ} \times \text{चौडाइ} = 7\text{ cm} \times 5\text{ cm} = 35\text{ cm}^2\)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ================= END TAB 2 ================= -->
+
+<!-- ================= CHAPTER 19: TAB 3 (TIERED MODEL QUESTIONS) ================= -->
+<div id="ch19-view-tiers" class="hidden space-y-8">
+  <div class="border-b border-slate-200 pb-4 flex flex-wrap items-center justify-between gap-3">
+    <div>
+      <h3 class="text-xl md:text-2xl font-black text-slate-900">पाठ १९: तीन तहका स्तरीकृत नमुना प्रश्नोत्तर (Tiered Model Q&A)</h3>
+      <p class="text-xs text-slate-500">CDC विशिष्टीकरण तालिका अनुसार ज्ञानात्मक, बोधात्मक र उच्च दक्षतायुक्त १६ प्रश्नहरू</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="text-xs bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-xl">५ ज्ञानात्मक</span>
+      <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-xl">६ बोधात्मक</span>
+      <span class="text-xs bg-purple-100 text-purple-800 font-bold px-3 py-1 rounded-xl">५ उच्च दक्षता</span>
+    </div>
+  </div>
+
+  <!-- TIER 1: KNOWLEDGE & RECALL (5 Questions) -->
+  <div class="space-y-4">
+    <div class="flex items-center gap-2 text-blue-700 font-black text-base border-b border-blue-200 pb-2">
+      <span class="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs">T1</span>
+      <h4>तह १: ज्ञानात्मक तथा आधारभूत प्रश्नहरू (Knowledge & Recall — ५ प्रश्न)</h4>
+    </div>
+
+    <!-- Q1 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १: सममिति रेखा वा सममितिको अक्ष (Line of Symmetry) भनेको के हो?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> कुनै आकृतिलाई दुई बराबर र दुरुस्त (mirror reflection) भागमा विभाजन गर्ने काल्पनिक सीधा रेखालाई <strong>सममिति रेखा वा सममितिको अक्ष (Line / Axis of Symmetry)</strong> भनिन्छ।
+      </p>
+    </div>
+
+    <!-- Q2 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न २: टेसेलेसन (Tessellation) भनेको के हो? दैनिक जीवनका दुई उदाहरण दिनुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono:">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> ज्यामितीय आकृतिहरूलाई नखप्टाई (without overlap) र खाली ठाउँ नछाडी (without gap) समतल सतह ढाक्ने ढाँचालाई <strong>टेसेलेसन वा टायलिङ</strong> भनिन्छ।<br>
+        <strong>उदाहरण:</strong> १. कोठाको भुइँमा बिछ्याइएका टायलहरू, २. मौरीको घारको महका कोठाहरू (षट्कोणीय जाली)।
+      </p>
+    </div>
+
+    <!-- Q3 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ३: समबाहु, समद्विबाहु र विषमबाहु त्रिभुजमा क्रमशः कति-कतिवटा सममिति रेखा हुन्छन्?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong><br>
+        • समबाहु त्रिभुजमा: <strong>३ वटा</strong><br>
+        • समद्विबाहु त्रिभुजमा: <strong>१ वटा</strong><br>
+        • विषमबाहु त्रिभुजमा: <strong>० वटा (कुनै पनि हुँदैन)</strong>
+      </p>
+    </div>
+
+    <!-- Q4 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ४: अङ्ग्रेजी क्यापिटल अक्षरहरू H, O, र X मा कतिवटा सममिति रेखा हुन्छन्?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> अक्षर <strong>H, O, र X</strong> मा ठाडो र तेर्सो दुवै गरी <strong>२ वा सोभन्दा बढी</strong> सममिति रेखाहरू हुन्छन् (H मा २, X मा २ वा ४, र पूर्ण गोलाकार O मा अनन्त)।
+      </p>
+    </div>
+
+    <!-- Q5 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ५: वृत्त (Circle) मा कतिवटा सममिति रेखा हुन्छन् र किन?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> वृत्तमा <strong>अनन्त ($\infty$)</strong> सममिति रेखाहरू हुन्छन्, किनभने केन्द्रबिन्दु भएर जाने जुनसुकै सीधा रेखा (व्यास) ले वृत्तलाई दुई दुरुस्त अर्धवृत्तमा बाँड्दछ।
+      </p>
+    </div>
+  </div>
+
+  <!-- TIER 2: UNDERSTANDING & APPLICATION (6 Questions) -->
+  <div class="space-y-4">
+    <div class="flex items-center gap-2 text-emerald-700 font-black text-base border-b border-emerald-200 pb-2">
+      <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs">T2</span>
+      <h4>तह २: बोधात्मक तथा प्रयोग तहका प्रश्नहरू (Understanding & Application — ६ प्रश्न)</h4>
+    </div>
+
+    <!-- Q6 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ६: आयतमा किन २ वटा मात्र सममिति रेखा हुन्छन्, विकर्ण किन सममिति रेखा बन्दैन?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400 leading-relaxed">
+        <strong>उत्तर:</strong> आयतलाई विकर्णबाट पट्याउँदा दुई विपरीत कुनाहरू एक-अर्कामा ठ्याक्कै खप्टिँदैनन् (कुना बाहिर निस्कन्छ)। विकर्णले क्षेत्रफल आधा बनाए पनि ऐना प्रतिबिम्ब दिँदैन। त्यसैले आयतका विपरीत भुजाहरूका मध्यबिन्दु जोड्ने १ ठाडो र १ तेर्सो गरी <strong>२ वटा मात्र</strong> सममिति रेखा हुन्छन्।
+      </p>
+    </div>
+
+    <!-- Q7 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ७: नियमित षट्कोण (Regular Hexagon) का कतिवटा सममिति रेखा हुन्छन् र तिनीहरूको स्वरूप कस्तो हुन्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> नियमित षट्कोणमा कुल <strong>६ वटा</strong> सममिति रेखाहरू हुन्छन्:<br>
+        १. विपरीत शीर्षबिन्दुहरू जोड्ने ३ वटा विकर्ण रेखाहरू।<br>
+        २. विपरीत भुजाहरूका मध्यबिन्दु जोड्ने ३ वटा लम्ब रेखाहरू।
+      </p>
+    </div>
+
+    <!-- Q8 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ८: टेसेलेसन बन्नका लागि कुनै साझा शीर्षबिन्दुमा बन्ने कोणहरूको योग कति हुनुपर्छ? स्पष्ट पार्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> साझा शीर्षबिन्दुमा भेटिने बहुभुजका भित्री कोणहरूको योगफल <strong>ठ्याक्कै $360^\circ$</strong> हुनुपर्छ। यदि योगफल $360^\circ$ भन्दा कम भयो भने खाली ठाउँ रहन्छ र बढी भयो भने आकृतिहरू आपसमा खप्टिन्छन्।
+      </p>
+    </div>
+
+    <!-- Q9 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ९: समबाहु त्रिभुज र वर्गले नियमित टेसेलेसन कसरी बनाउँछन्? कोणको हिसाब गरी देखाउनुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400 space-y-1">
+        <p>• <strong>समबाहु त्रिभुज:</strong> प्रत्येक भित्री कोण $= 60^\circ$ हुन्छ। एउटा शीर्षबिन्दुमा ६ वटा त्रिभुज जोड्दा कुल कोण \(= 6 \times 60^\circ = 360^\circ\) पुग्छ।</p>
+        <p>• <strong>वर्ग:</strong> प्रत्येक भित्री कोण $= 90^\circ$ हुन्छ। एउटा शीर्षबिन्दुमा ४ वटा वर्ग जोड्दा कुल कोण \(= 4 \times 90^\circ = 360^\circ\) पुग्छ।</p>
+      </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १०: अङ्ग्रेजी शब्दहरू 'MOM' र 'WOW' लाई ऐनामा हेर्दा कस्तो देखिन्छ? कारण खुलाउनुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> 'MOM' र 'WOW' शब्दका सबै अक्षरहरू (M, O, W) मा ठाडो सममिति रेखा हुन्छ र शब्दको क्रम पनि उल्ट्याउँदा उस्तै रहन्छ। त्यसैले ऐनामा ठाडो रूपमा हेर्दा यी शब्दहरू <strong>हुबहु 'MOM' र 'WOW'</strong> नै देखिन्छन्।
+      </p>
+    </div>
+
+    <!-- Q11 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ११: साधारण समानान्तर चतुर्भुज (Parallelogram) मा रेखीय सममिति रेखा किन हुँदैन?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> समानान्तर चतुर्भुजका विपरीत कोणहरू बराबर भए तापनि यसलाई कुनै पनि ठाडो, तेर्सो वा विकर्ण रेखाबाट पट्याउँदा भुजाहरू ठ्याक्कै खप्टिँदैनन्। त्यसैले साधारण समानान्तर चतुर्भुजमा रेखीय सममिति अक्ष <strong>० वटा</strong> हुन्छ।
+      </p>
+    </div>
+  </div>
+
+  <!-- TIER 3: HIGHER ABILITY & PROBLEM SOLVING (5 Questions) -->
+  <div class="space-y-4">
+    <div class="flex items-center gap-2 text-purple-700 font-black text-base border-b border-purple-200 pb-2">
+      <span class="w-7 h-7 rounded-lg bg-purple-600 text-white flex items-center justify-center text-xs">T3</span>
+      <h4>तह ३: उच्च दक्षता तथा समस्या समाधान (Higher Ability — ५ प्रश्न)</h4>
+    </div>
+
+    <!-- Q12 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १२: नियमित पञ्चकोणले किन एक्लै टेसेलेसन बनाउन सक्दैन? गणितीय प्रमाण दिनुहोस्।</span>
+        <span class="text-[11px] bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-mono">४ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-purple-500 space-y-2">
+        <p><strong>चरणबद्ध गणितीय समाधान:</strong></p>
+        <p>१. नियमित पञ्चकोणको भित्री कोण सूत्र: \(\theta = \frac{(n-2) \times 180^\circ}{n}\)</p>
+        <p>२. पञ्चकोणका लागि \(n = 5\) राख्दा: \(\theta = \frac{(5-2) \times 180^\circ}{5} = \frac{3 \times 180^\circ}{5} = 108^\circ\)</p>
+        <p>३. साझा शीर्षबिन्दुमा भेटिने पञ्चकोणहरूको विश्लेषण:</p>
+        <ul class="list-disc list-inside pl-2 space-y-0.5 text-slate-600">
+          <li>३ वटा पञ्चकोण राख्दा: \(3 \times 108^\circ = 324^\circ\) (खाली ठाउँ रहन्छ)</li>
+          <li>४ वटा पञ्चकोण राख्दा: \(4 \times 108^\circ = 432^\circ\) (आपसमा खप्टिन्छ)</li>
+          <li>\(360^\circ\) लाई \(108^\circ\) ले भाग गर्दा: \(\frac{360^\circ}{108^\circ} = 3.33\) (पूर्ण सङ्ख्या आउँदैन)</li>
+        </ul>
+        <div class="bg-purple-50 text-purple-900 p-2.5 rounded-lg border border-purple-200 font-bold">
+          निष्कर्ष: शीर्षबिन्दुमा कोणहरूको योग ठ्याक्कै \(360^\circ\) बन्न नसक्ने भएकाले नियमित पञ्चकोणले एक्लै टेसेलेसन बनाउन सक्दैन।
+        </div>
+      </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १३: नियमित अष्टकोण (Regular Octagon) को भित्री कोण १३५° हुन्छ। के यसले एक्लै टेसेलेसन बनाउँछ?</span>
+        <span class="text-[11px] bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-mono">३ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-purple-500 space-y-1.5">
+        <p><strong>विश्लेषण:</strong></p>
+        <p>• २ वटा अष्टकोण जोड्दा: \(2 \times 135^\circ = 270^\circ < 360^\circ\)</p>
+        <p>• ३ वटा अष्टकोण जोड्दा: \(3 \times 135^\circ = 405^\circ > 360^\circ\)</p>
+        <p>• \(\frac{360^\circ}{135^\circ} = 2.67\) (पूर्ण सङ्ख्या आउँदैन)।</p>
+        <p class="font-bold text-rose-700">तसर्थ, नियमित अष्टकोणले एक्लै टेसेलेसन बनाउन सक्दैन।</p>
+      </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १४: अष्टकोण र वर्ग मिलेर कसरी भुइँमा टेसेलेसन बनाउँछन् (Semi-Regular Tessellation)?</span>
+        <span class="text-[11px] bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-mono">४ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-purple-500 space-y-1.5">
+        <p><strong>गणितीय संयोजन:</strong></p>
+        <p>प्रत्येक शीर्षबिन्दुमा <strong>२ वटा नियमित अष्टकोण</strong> र <strong>१ वटा वर्ग</strong> सँगै राखिन्छ:</p>
+        <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200 font-mono text-xs">
+          कुल कोण = (२ × १३५°) + (१ × ९०°) = २७०° + ९०° = ३६०° ✓
+        </div>
+        <p class="text-slate-600">कोणहरूको जोड ठ्याक्कै ३६०° पुग्ने भएकाले यी दुई आकृति मिलेर अत्यन्त आकर्षक अर्ध-नियमित (Semi-regular) टेसेलेसन बन्दछ।</p>
+      </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १५: संसारमा जम्मा कति प्रकारका नियमित बहुभुजले मात्र नियमित टेसेलेसन बनाउन सक्छन् र किन?</span>
+        <span class="text-[11px] bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-mono">३ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-purple-500 space-y-1.5">
+        <p><strong>उत्तर:</strong> संसारमा केवल <strong>३ प्रकारका</strong> नियमित बहुभुजहरूले मात्र नियमित टेसेलेसन बनाउन सक्छन्:</p>
+        <ol class="list-decimal list-inside pl-2 space-y-1 text-slate-600">
+          <li><strong>समबाहु त्रिभुज (३ भुजा):</strong> \(6 \times 60^\circ = 360^\circ\)</li>
+          <li><strong>वर्ग (४ भुजा):</strong> \(4 \times 90^\circ = 360^\circ\)</li>
+          <li><strong>नियमित षट्कोण (६ भुजा):</strong> \(3 \times 120^\circ = 360^\circ\)</li>
+        </ol>
+        <p class="text-slate-600 text-xs">अन्य कुनै पनि नियमित बहुभुजको भित्री कोणले ३६०° लाई निःशेष भाग गर्दैन।</p>
+      </div>
+    </div>
+
+    <!-- Q16 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १६: एउटा $n$-भुजा भएको नियमित बहुभुजका सममिति रेखा र घूर्णन क्रम बीचको सम्बन्ध के हुन्छ?</span>
+        <span class="text-[11px] bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-purple-500">
+        <strong>उत्तर:</strong> जुनसुकै $n$-भुजा भएको नियमित बहुभुजमा <strong>सममिति रेखाको सङ्ख्या भुजाहरूको सङ्ख्या बराबर अर्थात् $n$ वटा</strong> हुन्छ र यसको <strong>घूर्णन सममितिको क्रम (Order of Rotational Symmetry) पनि $n$</strong> नै हुन्छ। यसको न्यूनतम घूर्णन कोण \(\frac{360^\circ}{n}\) हुन्छ।
+      </p>
+    </div>
+  </div>
+</div>
+<!-- ================= END TAB 3 ================= -->
+
+<!-- ================= CHAPTER 19: TAB 4 (SELF-ASSESSMENT QUIZ) ================= -->
+<div id="ch19-view-quiz" class="hidden space-y-6">
+  <!-- Quiz Top Score Banner -->
+  <div class="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 rounded-3xl p-6 text-white shadow-xl flex flex-wrap items-center justify-between gap-4">
+    <div>
+      <div class="flex items-center gap-2 text-xs font-bold text-cyan-300 mb-1">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        अध्याय १९ स्वमूल्याङ्कन परीक्षा (Self-Assessment Quiz)
+      </div>
+      <h3 class="text-xl md:text-2xl font-black">सममिति र टेसेलेसन वस्तुगत बहुवैकल्पिक परीक्षा (१० प्रश्न)</h3>
+      <p class="text-xs text-blue-100 mt-1">प्रत्येक प्रश्नको सही उत्तर छानेर तुरुन्त पृष्ठपोषण र अङ्क प्राप्त गर्नुहोस्</p>
+    </div>
+
+    <div class="flex items-center gap-4 bg-white/10 backdrop-blur px-5 py-3 rounded-2xl border border-white/20">
+      <div class="text-right">
+        <span class="text-[11px] text-blue-200 block font-bold">तपाईंको प्राप्ताङ्क</span>
+        <span id="ch19-quiz-score" class="text-2xl md:text-3xl font-black text-cyan-300">० / १०</span>
+      </div>
+      <button onclick="resetCh19Quiz()" class="px-3.5 py-2 rounded-xl bg-white/20 hover:bg-white/30 text-xs font-bold transition flex items-center gap-1.5 border border-white/30 cursor-pointer">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+        पुनः सुरु गर्नुहोस्
+      </button>
+    </div>
+  </div>
+
+  <!-- Quiz Questions Container -->
+  <div id="ch19-quiz-container" class="space-y-4">
+    <!-- Rendered dynamically via ch19_script.js -->
+  </div>
+</div>
+<!-- ================= END TAB 4 ================= -->
+
+
+      </div>
+      <!-- ================= END CHAPTER 19 ================= -->

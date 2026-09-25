@@ -1,0 +1,373 @@
+
+        <!-- ================= CH16 TAB 2: EXERCISES SOLUTIONS ================= -->
+        <div id="ch16-view-exercises" class="hidden space-y-8">
+
+          <!-- Section Switcher / Anchor Pills -->
+          <div class="flex flex-wrap items-center gap-2 p-3 bg-slate-100/80 rounded-2xl border border-slate-200 text-xs font-bold">
+            <span class="text-slate-500 mr-1">अभ्यास खण्ड:</span>
+            <a href="#ch16-ex-16-1" class="px-3 py-1.5 rounded-xl bg-white hover:bg-blue-50 text-blue-700 border border-slate-200 transition shadow-2xs">अभ्यास १६.१ (प्रश्न १ देखि ८)</a>
+            <a href="#ch16-ex-proj" class="px-3 py-1.5 rounded-xl bg-white hover:bg-amber-50 text-amber-700 border border-slate-200 transition shadow-2xs">परियोजना कार्य (थालको केन्द्र र व्यास)</a>
+            <a href="#ch16-ex-applied" class="px-3 py-1.5 rounded-xl bg-white hover:bg-emerald-50 text-emerald-700 border border-slate-200 transition shadow-2xs">परिधि तथा पाङ्ग्रा सम्बन्धी समस्याहरू</a>
+          </div>
+
+          <!-- ================= SECTION: EXERCISE 16.1 ================= -->
+          <div id="ch16-ex-16-1" class="space-y-6">
+            <div class="flex items-center justify-between border-b-2 border-blue-500 pb-2">
+              <h3 class="text-lg md:text-xl font-black text-slate-900 flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-bold">१</span>
+                अभ्यास १६.१ (पाठ्यपुस्तक पृष्ठ २००) — वृत्तका अङ्गहरू र विशेषताहरू
+              </h3>
+              <span class="text-xs bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-xl">८ प्रश्नहरू र परियोजना</span>
+            </div>
+
+            <!-- Q1: True / False -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base text-blue-700">
+                प्रश्न नं. १: तल दिइएका वाक्यहरू साँचो वा झुटो के छन् छुट्याउनुहोस् :
+              </h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+                <!-- 1(a) -->
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-slate-800">(क) वृत्तको केन्द्रबिन्दु दुईओटा हुन्छन् ।</span>
+                    <span class="px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800 font-extrabold text-xs">झुटो (False)</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">कारण: कुनै पनि वृत्तमा ठ्याक्कै बीचमा एउटा मात्र निश्चित केन्द्रबिन्दु हुन्छ ।</div>
+                </div>
+
+                <!-- 1(b) -->
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-slate-800">(ख) वृत्तको व्यास केन्द्रबिन्दु भएर जान्छ ।</span>
+                    <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-extrabold text-xs">साँचो (True)</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">कारण: व्यास सधैँ केन्द्रबिन्दु भएर जाने सबैभन्दा लामो जीवा हो ।</div>
+                </div>
+
+                <!-- 1(c) -->
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-slate-800">(ग) वृत्तको परिधिका कुनै दुई बिन्दु जोड्ने रेखाखण्डलाई अर्धव्यास भनिन्छ ।</span>
+                    <span class="px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800 font-extrabold text-xs">झुटो (False)</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">कारण: परिधिका दुई बिन्दु जोड्ने रेखाखण्डलाई जीवा (Chord) भनिन्छ; अर्धव्यासले केन्द्र र परिधि जोड्छ ।</div>
+                </div>
+
+                <!-- 1(d) -->
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-slate-800">(घ) दुई अर्धव्यास बिचको भागलाई क्षेत्रक भनिन्छ ।</span>
+                    <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-extrabold text-xs">साँचो (True)</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">कारण: दुईवटा अर्धव्यासहरू र तिनीहरूबीचको चापले घेरिएको भाग क्षेत्रक (Sector) हो ।</div>
+                </div>
+
+                <!-- 1(e) -->
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-slate-800">(ङ) सबै जीवा व्यास होइनन् ।</span>
+                    <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-extrabold text-xs">साँचो (True)</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">कारण: केवल केन्द्रबिन्दु भएर जाने जीवा मात्र व्यास हुन्छ, केन्द्र बाहिरका अन्य जीवाहरू व्यास होइनन् ।</div>
+                </div>
+
+                <!-- 1(f) -->
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-slate-800">(च) वृत्तको व्यास एउटा मात्रै हुन्छ ।</span>
+                    <span class="px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800 font-extrabold text-xs">झुटो (False)</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">कारण: एउटा वृत्तमा केन्द्र भएर जाने अनगिन्ती (अपरिमित) व्यासहरू खिच्न सकिन्छ ।</div>
+                </div>
+
+                <!-- 1(g) -->
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1 md:col-span-2">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-slate-800">(छ) वृत्तको व्यास अर्धव्यासको दोब्बर हुन्छ ।</span>
+                    <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-extrabold text-xs">साँचो (True)</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">कारण: व्यास दुईवटा अर्धव्यास जोडिएर बन्छ ($d = r + r = 2r$) ।</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q2 to Q7 Definitions with SVG Figures Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <!-- Q2: Centre -->
+              <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-blue-700">प्रश्न २: केन्द्रबिन्दु (Centre)</span>
+                  </div>
+                  <div class="w-full h-32 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-center p-2 mb-2">
+                    <svg viewBox="0 0 100 100" class="w-28 h-28">
+                      <circle cx="50" cy="50" r="38" fill="none" stroke="#64748b" stroke-width="1.5" />
+                      <circle cx="50" cy="50" r="4" fill="#dc2626" />
+                      <text x="56" y="48" font-size="11" font-weight="bold" fill="#dc2626">O</text>
+                    </svg>
+                  </div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    <strong>परिभाषा:</strong> वृत्तको परिधिबाट सधैँ समान दूरीमा पर्ने वृत्तभित्रको स्थिर बिन्दुलाई केन्द्रबिन्दु भनिन्छ । चित्रमा बिन्दु $O$ केन्द्रबिन्दु हो ।
+                  </p>
+                </div>
+              </div>
+
+              <!-- Q3: Circumference -->
+              <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-purple-700">प्रश्न ३: परिधि (Circumference)</span>
+                  </div>
+                  <div class="w-full h-32 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-center p-2 mb-2">
+                    <svg viewBox="0 0 100 100" class="w-28 h-28">
+                      <circle cx="50" cy="50" r="38" fill="none" stroke="#9333ea" stroke-width="3" stroke-dasharray="3,2" />
+                      <circle cx="50" cy="50" r="2.5" fill="#64748b" />
+                      <text x="47" y="54" font-size="9" fill="#64748b">O</text>
+                      <text x="50" y="8" font-size="9" font-weight="bold" fill="#9333ea" text-anchor="middle">A</text>
+                      <text x="6" y="54" font-size="9" font-weight="bold" fill="#9333ea">B</text>
+                      <text x="92" y="54" font-size="9" font-weight="bold" fill="#9333ea">C</text>
+                    </svg>
+                  </div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    <strong>परिभाषा:</strong> वृत्तको वरिपरिको घेराको कुल लम्बाइलाई परिधि भनिन्छ । चित्रमा $\odot ABC$ ले परिधिलाई जनाउँछ । सूत्र: $C = 2\pi r$ ।
+                  </p>
+                </div>
+              </div>
+
+              <!-- Q4: Diameter vs Radius -->
+              <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-emerald-700">प्रश्न ४: व्यास र अर्धव्यास फरक</span>
+                  </div>
+                  <div class="w-full h-32 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-center p-2 mb-2">
+                    <svg viewBox="0 0 100 100" class="w-28 h-28">
+                      <circle cx="50" cy="50" r="38" fill="none" stroke="#64748b" stroke-width="1.5" />
+                      <!-- Diameter AB -->
+                      <line x1="12" y1="50" x2="88" y2="50" stroke="#f59e0b" stroke-width="2" />
+                      <!-- Radius OP -->
+                      <line x1="50" y1="50" x2="50" y2="12" stroke="#10b981" stroke-width="2.5" />
+                      <circle cx="50" cy="50" r="3" fill="#dc2626" />
+                      <text x="54" y="56" font-size="9">O</text>
+                      <text x="4" y="53" font-size="9" font-weight="bold" fill="#f59e0b">A</text>
+                      <text x="91" y="53" font-size="9" font-weight="bold" fill="#f59e0b">B</text>
+                      <text x="47" y="10" font-size="9" font-weight="bold" fill="#10b981">P</text>
+                    </svg>
+                  </div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    <strong>फरक:</strong> रेखाखण्ड $OP$ अर्धव्यास ($r$) हो भने रेखाखण्ड $AB$ व्यास ($d$) हो । व्यास केन्द्र भएर जान्छ र अर्धव्यासको दोब्बर ($d = 2r$) हुन्छ ।
+                  </p>
+                </div>
+              </div>
+
+              <!-- Q5: Sector -->
+              <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-rose-700">प्रश्न ५: क्षेत्रक (Sector)</span>
+                  </div>
+                  <div class="w-full h-32 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-center p-2 mb-2">
+                    <svg viewBox="0 0 100 100" class="w-28 h-28">
+                      <circle cx="50" cy="50" r="38" fill="none" stroke="#64748b" stroke-width="1.5" />
+                      <path d="M 50 50 L 88 50 A 38 38 0 0 0 76 23 Z" fill="rgba(244,63,94,0.25)" stroke="#f43f5e" stroke-width="1.5" />
+                      <circle cx="50" cy="50" r="3" fill="#dc2626" />
+                      <text x="42" y="54" font-size="9">O</text>
+                      <text x="91" y="53" font-size="9" font-weight="bold" fill="#f43f5e">A</text>
+                      <text x="78" y="19" font-size="9" font-weight="bold" fill="#f43f5e">B</text>
+                    </svg>
+                  </div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    <strong>परिभाषा:</strong> वृत्तका दुई अर्धव्यासहरू ($OA, OB$) र तीबीचको चाप ($AB$) ले घेरिएको क्षेत्रलाई क्षेत्रक भनिन्छ । (पिज्जाको एक टुक्रा जस्तो) ।
+                  </p>
+                </div>
+              </div>
+
+              <!-- Q6: Diameter vs Chord -->
+              <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-amber-700">प्रश्न ६: व्यास र जीवा फरक</span>
+                  </div>
+                  <div class="w-full h-32 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-center p-2 mb-2">
+                    <svg viewBox="0 0 100 100" class="w-28 h-28">
+                      <circle cx="50" cy="50" r="38" fill="none" stroke="#64748b" stroke-width="1.5" />
+                      <!-- Diameter AB through O -->
+                      <line x1="12" y1="50" x2="88" y2="50" stroke="#f59e0b" stroke-width="2" />
+                      <!-- Chord CD -->
+                      <line x1="20" y1="72" x2="80" y2="72" stroke="#ec4899" stroke-width="2" />
+                      <circle cx="50" cy="50" r="3" fill="#dc2626" />
+                      <text x="53" y="46" font-size="9">O</text>
+                      <text x="4" y="53" font-size="9" font-weight="bold" fill="#f59e0b">A</text>
+                      <text x="91" y="53" font-size="9" font-weight="bold" fill="#f59e0b">B</text>
+                      <text x="12" y="76" font-size="9" font-weight="bold" fill="#ec4899">C</text>
+                      <text x="83" y="76" font-size="9" font-weight="bold" fill="#ec4899">D</text>
+                    </svg>
+                  </div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    <strong>फरक:</strong> रेखाखण्ड $CD$ सामान्य जीवा हो, जबकि $AB$ केन्द्र भएर जाने जीवा (व्यास) हो । व्यास वृत्तको सबैभन्दा लामो जीवा हो ।
+                  </p>
+                </div>
+              </div>
+
+              <!-- Q7: Semicircles -->
+              <div class="p-4 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-teal-700">प्रश्न ७: अर्धवृत्त (Semi-circles)</span>
+                  </div>
+                  <div class="w-full h-32 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-center p-2 mb-2">
+                    <svg viewBox="0 0 100 100" class="w-28 h-28">
+                      <!-- Upper semicircle filled -->
+                      <path d="M 12 50 A 38 38 0 0 1 88 50 Z" fill="rgba(20,184,166,0.25)" stroke="#0d9488" stroke-width="1.5" />
+                      <!-- Lower semicircle -->
+                      <path d="M 12 50 A 38 38 0 0 0 88 50 Z" fill="none" stroke="#64748b" stroke-width="1.5" />
+                      <circle cx="50" cy="50" r="3" fill="#dc2626" />
+                      <text x="53" y="46" font-size="9">O</text>
+                      <text x="4" y="53" font-size="9" font-weight="bold">A</text>
+                      <text x="91" y="53" font-size="9" font-weight="bold">B</text>
+                    </svg>
+                  </div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    <strong>उत्तर:</strong> एउटा वृत्तमा ठीक <strong>२ वटा अर्धवृत्तहरू</strong> हुन्छन् । व्यासले वृत्तलाई दुई बराबर आधा भागमा विभाजन गर्दछ ।
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q8: Master Image Identification -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base text-blue-700">
+                प्रश्न नं. ८: दायाँको वृत्तका विभिन्न भागहरूको नाम लेख्नुहोस् :
+              </h4>
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                <!-- SVG Diagram from page 200 -->
+                <div class="lg:col-span-5 flex flex-col items-center">
+                  <div class="w-full max-w-[280px] aspect-square bg-slate-50 rounded-2xl border border-slate-200 p-3 flex items-center justify-center">
+                    <svg viewBox="0 0 200 200" class="w-full h-full">
+                      <!-- Circle perimeter -->
+                      <circle cx="100" cy="100" r="75" fill="none" stroke="#1e293b" stroke-width="2.5" />
+                      <!-- Center O -->
+                      <circle cx="100" cy="100" r="4" fill="#1e293b" />
+                      <text x="95" y="92" font-size="14" font-weight="bold">O</text>
+
+                      <!-- Diameter CD (horizontal) -->
+                      <line x1="25" y1="100" x2="175" y2="100" stroke="#1e293b" stroke-width="2.5" />
+                      <text x="10" y="105" font-size="14" font-weight="bold">C</text>
+                      <text x="180" y="105" font-size="14" font-weight="bold">D</text>
+
+                      <!-- Chord AB (below diameter) -->
+                      <line x1="42" y1="145" x2="158" y2="145" stroke="#1e293b" stroke-width="2.5" />
+                      <text x="26" y="152" font-size="14" font-weight="bold">A</text>
+                      <text x="165" y="152" font-size="14" font-weight="bold">B</text>
+
+                      <!-- Slanted Radius OE -->
+                      <line x1="100" y1="100" x2="52" y2="42" stroke="#1e293b" stroke-width="2.5" />
+                      <text x="44" y="34" font-size="14" font-weight="bold">E</text>
+                    </svg>
+                  </div>
+                  <span class="text-[11px] text-slate-500 mt-1">पाठ्यपुस्तक पृष्ठ २०० को प्रश्न नं. ८ को वृत्त</span>
+                </div>
+
+                <!-- Labels Table -->
+                <div class="lg:col-span-7 space-y-2 text-xs md:text-sm">
+                  <div class="p-3 bg-blue-50 border border-blue-200 rounded-xl space-y-1.5">
+                    <div class="font-bold text-blue-900">चित्रमा अङ्कित भागहरूको पूर्ण नामाकरण:</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700">
+                      <div>• <strong>बिन्दु $O$:</strong> वृत्तको केन्द्रबिन्दु (Centre)</div>
+                      <div>• <strong>रेखाखण्ड $CD$:</strong> वृत्तको व्यास (Diameter)</div>
+                      <div>• <strong>रेखाखण्ड $OE$:</strong> वृत्तको अर्धव्यास (Radius)</div>
+                      <div>• <strong>रेखाखण्ड $AB$:</strong> वृत्तको जीवा (Chord)</div>
+                      <div>• <strong>रेखाखण्ड $OC$ र $OD$:</strong> अन्य अर्धव्यासहरू</div>
+                      <div>• <strong>भाग $COE$:</strong> दुई अर्धव्यासबीचको क्षेत्रक (Sector)</div>
+                      <div>• <strong>चाप $AB$ वा $CE$:</strong> वृत्तको परिधिको भाग (Arc)</div>
+                      <div>• <strong>व्यास $CD$ ले छुट्ट्याएको आधा:</strong> अर्धवृत्त (Semi-circle)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= SECTION: PROJECT WORK ================= -->
+          <div id="ch16-ex-proj" class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center justify-between border-b-2 border-amber-500 pb-2">
+              <h3 class="text-base md:text-lg font-black text-slate-900 flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-amber-600 text-white flex items-center justify-center text-sm font-bold">२</span>
+                परियोजना कार्य (पाठ्यपुस्तक पृष्ठ २००) — थालको केन्द्रबिन्दु र व्यास पत्ता लगाउने विधि
+              </h3>
+              <span class="text-xs bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-xl">प्रयोगात्मक कार्य</span>
+            </div>
+
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+              <strong>समस्या:</strong> आफूले खाना खान प्रयोग गर्ने वृत्ताकार आधार भएको प्लेट वा थालको केन्द्रबिन्दु र व्यास कसरी पत्ता लगाउनुहुन्छ ?
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+              <div class="p-4 bg-amber-50/60 border border-amber-200 rounded-xl space-y-2">
+                <span class="font-bold text-amber-900 block text-sm">विधि १: कागजमा घेरा बनाई पट्याउने विधि (Paper Folding)</span>
+                <ol class="list-decimal pl-4 space-y-1 text-slate-700">
+                  <li>एउटा ठूलो कागजमा थाल राखी सिसाकलमले वरिपरि घेरा लगाउने र वृत्ताकार कागज काट्ने ।</li>
+                  <li>सो वृत्ताकार कागजलाई ठ्याक्कै बीचबाट आधा पारेर पट्याउने । बनेको रेखा पहिलो व्यास हुन्छ ।</li>
+                  <li>पुनः अर्को दिशाबाट पनि ठ्याक्कै आधा पारेर पट्याउने ।</li>
+                  <li>कागज खोल्दा दुई पट्याइका रेखाहरू जहाँ काटिन्छन्, त्यो प्रतिच्छेदन बिन्दु नै <strong>केन्द्रबिन्दु</strong> हो र पट्याइएको रेखाको लम्बाइ <strong>व्यास</strong> हो ।</li>
+                </ol>
+              </div>
+
+              <div class="p-4 bg-blue-50/60 border border-blue-200 rounded-xl space-y-2">
+                <span class="font-bold text-blue-900 block text-sm">विधि २: रुलर र अधिकतम लम्बाइ नाप्ने विधि</span>
+                <ol class="list-decimal pl-4 space-y-1 text-slate-700">
+                  <li>थालको किनाराको कुनै एक बिन्दुमा रुलरको ० (शून्य) राख्ने ।</li>
+                  <li>रुलरलाई विभिन्न दिशातर्फ घुमाउँदै विपरीत किनारसम्मको लम्बाइ नाप्ने ।</li>
+                  <li>जुन दिशामा रुलरले सबैभन्दा ठूलो (अधिकतम) लम्बाइ देखाउँछ, त्यो नै थालको <strong>व्यास (Diameter)</strong> हो ।</li>
+                  <li>सो अधिकतम लम्बाइको ठ्याक्कै आधा भाग ($r = \frac{d}{2}$) मा चिनो लगाउँदा थालको <strong>केन्द्रबिन्दु (Centre)</strong> फेला पर्छ ।</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= SECTION: APPLIED MATH & ROTATION ================= -->
+          <div id="ch16-ex-applied" class="space-y-6">
+            <div class="flex items-center justify-between border-b-2 border-emerald-500 pb-2">
+              <h3 class="text-base md:text-lg font-black text-slate-900 flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-sm font-bold">३</span>
+                परिधि, अर्धव्यास तथा पाङ्ग्रा सम्बन्धी गणितीय समस्याहरू (Applied Word Problems)
+              </h3>
+              <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-xl">परीक्षा उपयोगी</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+              <!-- Applied 1 -->
+              <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                <span class="font-bold text-blue-700 flex items-center gap-1.5">
+                  🚲 समस्या १: साइकलको पाङ्ग्राको परिधि र दूरी
+                </span>
+                <p class="text-slate-600">
+                  एउटा साइकलको पाङ्ग्राको अर्धव्यास $35\text{ cm}$ छ । उक्त पाङ्ग्रा १०० फन्को घुम्दा साइकलले जम्मा कति मिटर दूरी पार गर्ला ? ($\pi = \frac{22}{7}$)
+                </p>
+                <div class="p-3 bg-blue-50 border border-blue-200 rounded-xl space-y-1 font-mono text-xs">
+                  <div>१ फन्कोको दूरी $= C = 2\pi r = 2 \times \frac{22}{7} \times 35 = 220\text{ cm}$</div>
+                  <div>१०० फन्कोको दूरी $= 100 \times 220 = 22,000\text{ cm}$</div>
+                  <div>मिटरमा $= \frac{22,000}{100} = \mathbf{220\text{ m}}$</div>
+                </div>
+                <div class="text-[11px] text-slate-500">साइकलले जम्मा २२० मिटर दूरी पार गर्दछ ।</div>
+              </div>
+
+              <!-- Applied 2 -->
+              <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                <span class="font-bold text-emerald-700 flex items-center gap-1.5">
+                  🌳 समस्या २: वृत्ताकार चौरको अर्धव्यास र व्यास
+                </span>
+                <p class="text-slate-600">
+                  एउटा वृत्ताकार चौरको परिधि $132\text{ m}$ छ भने त्यसको अर्धव्यास र व्यास कति हुन्छ ?
+                </p>
+                <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl space-y-1 font-mono text-xs">
+                  <div>$C = 2\pi r \implies 132 = 2 \times \frac{22}{7} \times r$</div>
+                  <div>$132 = \frac{44}{7} \times r \implies r = \frac{132 \times 7}{44} = \mathbf{21\text{ m}}$</div>
+                  <div>व्यास $d = 2r = 2 \times 21 = \mathbf{42\text{ m}}$</div>
+                </div>
+                <div class="text-[11px] text-slate-500">अर्धव्यास २१ मिटर र व्यास ४२ मिटर हुन्छ ।</div>
+              </div>
+            </div>
+          </div>
+
+        </div>

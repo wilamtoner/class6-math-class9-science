@@ -1,0 +1,305 @@
+<!-- ================= TAB 2: COMPLETE EXERCISE SOLUTIONS ================= -->
+<div id="c9u1-view-exercises" class="hidden space-y-6">
+  <!-- Sub-section Filter Bar -->
+  <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200">
+    <div class="flex items-center gap-2">
+      <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">अभ्यास फिल्टर:</span>
+      <div class="flex flex-wrap gap-1.5">
+        <button onclick="filterC9U1Ex('all')" id="btn-c9u1-filter-all" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-xs cursor-pointer">
+          सबै समाधान
+        </button>
+        <button onclick="filterC9U1Ex('mcq')" id="btn-c9u1-filter-mcq" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          १. वस्तुगत प्रश्नहरू (MCQs)
+        </button>
+        <button onclick="filterC9U1Ex('theory')" id="btn-c9u1-filter-theory" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          २. सैद्धान्तिक तथा कारण (क देखि झ)
+        </button>
+        <button onclick="filterC9U1Ex('math')" id="btn-c9u1-filter-math" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          ३. वैज्ञानिक सङ्केतन (ञ)
+        </button>
+        <button onclick="filterC9U1Ex('activity')" id="btn-c9u1-filter-activity" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          ४. प्रयोगात्मक क्रियाकलाप (१.५ र १.६)
+        </button>
+      </div>
+    </div>
+    <span class="text-xs text-slate-500 font-bold">पाठ्यपुस्तक पृष्ठ १५–१६</span>
+  </div>
+
+  <!-- GROUP 1: MCQs -->
+  <div class="c9u1-ex-group" data-group="mcq">
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="border-b border-slate-100 pb-3 flex justify-between items-center">
+        <h4 class="font-black text-slate-900 text-base flex items-center gap-2">
+          <span>🎯 प्रश्न १: सही उत्तरमा चिह्न लगाउनुहोस् (MCQs)</span>
+        </h4>
+        <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2.5 py-1 rounded-full">वस्तुगत प्रश्न</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+        <!-- MCQ 1 -->
+        <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/60 space-y-2">
+          <div class="font-bold text-slate-800">(क) भेटेनरी पेसा विज्ञानको कुन शाखासँग सम्बन्धित छ ?</div>
+          <div class="text-xs text-slate-600 space-y-0.5">
+            <div>(अ) भौतिक विज्ञान &nbsp;&nbsp; <strong>(आ) जीव विज्ञान ✓</strong></div>
+            <div>(इ) रसायन विज्ञान &nbsp;&nbsp; (ई) भू विज्ञान</div>
+          </div>
+          <div class="p-2 bg-emerald-50 text-emerald-900 border border-emerald-200 rounded-lg text-xs font-medium">
+            <strong>उत्तर: (आ) जीव विज्ञान</strong> — पशु-पन्छीको स्वास्थ्य, रोग र शारीरिक अध्ययन जीव विज्ञानअन्तर्गत पर्छ।
+          </div>
+        </div>
+
+        <!-- MCQ 2 -->
+        <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/60 space-y-2">
+          <div class="font-bold text-slate-800">(ख) Johann Gregor Mendel कुन विज्ञानको क्षेत्रसँग सम्बन्धित छन् ?</div>
+          <div class="text-xs text-slate-600 space-y-0.5">
+            <div>(अ) भौतिक विज्ञान &nbsp;&nbsp; (आ) रसायन विज्ञान</div>
+            <div><strong>(इ) जीव विज्ञान ✓</strong> &nbsp;&nbsp; (ई) खगोल विज्ञान</div>
+          </div>
+          <div class="p-2 bg-emerald-50 text-emerald-900 border border-emerald-200 rounded-lg text-xs font-medium">
+            <strong>उत्तर: (इ) जीव विज्ञान</strong> — ग्रेगर मेन्डेलले केराउमा प्रयोग गरी वंशाणुशास्त्र (Genetics) को नियम प्रतिपादन गरेका थिए।
+          </div>
+        </div>
+
+        <!-- MCQ 3 -->
+        <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/60 space-y-2">
+          <div class="font-bold text-slate-800">(ग) स्केलको प्रयोग गरी नाप्दा लिइने न्यूनतम नाप कुन हो ?</div>
+          <div class="text-xs text-slate-600 space-y-0.5">
+            <div>(अ) सेन्टिमिटर &nbsp;&nbsp; <strong>(आ) मिलिमिटर ✓</strong></div>
+            <div>(इ) डेसिमिटर &nbsp;&nbsp; (ई) मिटर</div>
+          </div>
+          <div class="p-2 bg-emerald-50 text-emerald-900 border border-emerald-200 rounded-lg text-xs font-medium">
+            <strong>उत्तर: (आ) मिलिमिटर</strong> — स्केलको १ सानो खण्ड $= \frac{1}{10}\text{ cm} = 0.1\text{ cm} = 1\text{ mm}$ हुन्छ।
+          </div>
+        </div>
+
+        <!-- MCQ 4 -->
+        <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/60 space-y-2">
+          <div class="font-bold text-slate-800">(घ) 0.000024 अङ्कलाई वैज्ञानिक सङ्केतमा कसरी लेखिन्छ ?</div>
+          <div class="text-xs text-slate-600 space-y-0.5">
+            <div>(अ) $2 \times 10^{-5}$ &nbsp;&nbsp; (आ) $24 \times 10^{-5}$</div>
+            <div>(इ) $0.24 \times 10^{-6}$ &nbsp;&nbsp; <strong>(ई) $2.4 \times 10^{-5}$ ✓</strong></div>
+          </div>
+          <div class="p-2 bg-emerald-50 text-emerald-900 border border-emerald-200 rounded-lg text-xs font-medium">
+            <strong>उत्तर: (ई) $2.4 \times 10^{-5}$</strong> — दशमलव ५ स्थान दायाँ सर्दा पहिलो गैर-शून्य अङ्कपछि $2.4$ र घाताङ्क $-5$ हुन्छ।
+          </div>
+        </div>
+
+        <!-- MCQ 5 -->
+        <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/60 space-y-2 md:col-span-2">
+          <div class="font-bold text-slate-800">(ङ) Giga prefix को मान कति हुन्छ ?</div>
+          <div class="text-xs text-slate-600 space-y-0.5">
+            <div><strong>(अ) $10^9$ ✓</strong> &nbsp;&nbsp; (आ) $10^{10}$ &nbsp;&nbsp; (इ) $10^{11}$ &nbsp;&nbsp; (ई) $10^{12}$</div>
+          </div>
+          <div class="p-2 bg-emerald-50 text-emerald-900 border border-emerald-200 rounded-lg text-xs font-medium">
+            <strong>उत्तर: (अ) $10^9$</strong> — गिगा (Giga) मेट्रिक उपसर्गले १ अर्ब ($10^9$) मान जनाउँछ।
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GROUP 2: THEORETICAL & REASONING QUESTIONS (क देखि झ) -->
+  <div class="c9u1-ex-group space-y-4" data-group="theory">
+    <!-- Q2 (क) -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (क): वैज्ञानिक अध्ययन कसरी गरिन्छ, लेख्नुहोस् ।</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1">
+        <p><strong>उत्तर:</strong> वैज्ञानिक अध्ययन निम्न ५ व्यवस्थित चरणहरूबाट गरिन्छ:</p>
+        <ol class="list-decimal list-inside space-y-1 text-slate-600 pl-2">
+          <li><strong>अवलोकन र जिज्ञासा (Observation & Questioning):</strong> घटना नियाल्ने र खोजमूलक प्रश्न बनाउने।</li>
+          <li><strong>परिकल्पना निर्माण (Hypothesis):</strong> समस्याको परीक्षणयोग्य सम्भावित उत्तर अनुमान गर्ने।</li>
+          <li><strong>प्रयोग तथा तथ्याङ्क सङ्कलन (Experiment & Data):</strong> नियन्त्रित चरहरूका आधारमा प्रयोग गरी तथ्याङ्क लिने।</li>
+          <li><strong>तथ्याङ्क विश्लेषण र निष्कर्ष (Analysis & Conclusion):</strong> तथ्याङ्कको गणितीय/वैज्ञानिक विश्लेषण गरी निष्कर्ष निकाल्ने।</li>
+          <li><strong>परिकल्पना परीक्षण र प्रतिवेदन:</strong> निष्कर्ष मिले प्रतिवेदन तयार गर्ने; नमिले परिकल्पना परिमार्जन गरी पुनः परीक्षण गर्ने।</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q2 (ख) -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (ख): विज्ञानका क्षेत्रहरूको सूची बनाउनुहोस् ।</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1">
+        <p><strong>उत्तर:</strong> विज्ञानका मुख्य क्षेत्रहरू:</p>
+        <ul class="list-disc list-inside space-y-1 text-slate-600 pl-2">
+          <li><strong>जीव विज्ञान (Biology):</strong> प्राणीशास्त्र, वनस्पतिशास्त्र, सूक्ष्मजीव विज्ञान, वंशाणुशास्त्र।</li>
+          <li><strong>भौतिक विज्ञान (Physics):</strong> मेकानिक्स, अप्टिक्स, विद्युत् र चुम्बकत्व, आणविक भौतिकी।</li>
+          <li><strong>रसायन विज्ञान (Chemistry):</strong> अजैविक रसायन, जैविक रसायन, भौतिक रसायन।</li>
+          <li><strong>अन्तरविषयक क्षेत्रहरू:</strong> भू-विज्ञान (Geology), खगोल विज्ञान (Astronomy), वातावरण विज्ञान र कृषि विज्ञान।</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q2 (ग) -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (ग): विज्ञानका क्षेत्रहरूको अन्तरसम्बन्धलाई उदाहरणसहित व्याख्या गर्नुहोस् ।</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1.5 leading-relaxed">
+        <p><strong>उत्तर:</strong> विज्ञानका शाखाहरू एकापसमा अन्तरसम्बन्धित हुन्छन्। एउटाको सिद्धान्त अर्कोमा अपरिहार्य हुन्छ।</p>
+        <p><strong>प्रमुख उदाहरणहरू:</strong></p>
+        <p>१. <strong>बायोफिजिक्स (Biophysics):</strong> भौतिक विज्ञानको प्रकाशको अपवर्तन सिद्धान्त प्रयोग गरेर डा. सन्दुक रुइतले विकास गरेको इन्ट्राअकुलर लेन्स (IOL) ले आँखाको मोतीबिन्दुको सफल शल्यक्रिया सम्भव बनाएको छ। त्यस्तै एक्स-रे, सीटी स्क्यान र एमआरआई भौतिक विज्ञानकै देन हुन्।</p>
+        <p>२. <strong>बायोकेमेस्ट्री (Biochemistry):</strong> जीव शरीरमा हुने पाचन, श्वासप्रश्वास र प्रकाश संश्लेषण जस्ता प्रक्रियाहरू पूर्णतया रासायनिक प्रतिक्रियामा आधारित हुन्छन्।</p>
+        <p>३. <strong>कृषि विज्ञान:</strong> बाली (जीव विज्ञान), रासायनिक मल र विषादी (रसायन विज्ञान), र सिँचाइ पम्प तथा ट्र्याक्टर (भौतिक विज्ञान) मिलेर आधुनिक कृषि सम्भव भएको छ।</p>
+      </div>
+    </div>
+
+    <!-- Q2 (घ) -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (घ): वैज्ञानिक पद्धतिमा प्रयोगको कस्तो महत्त्व हुन्छ ? उदाहरणसहित व्याख्या गर्नुहोस् ।</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1.5 leading-relaxed">
+        <p><strong>उत्तर:</strong> वैज्ञानिक पद्धतिमा कुनै पनि परिकल्पनालाई प्रमाणित गर्न 'प्रयोग (Experiment)' नै मुख्य आधार हो। प्रयोगबिना विज्ञान केवल अनुमानमा सीमित रहन्छ।</p>
+        <p><strong>महत्त्व:</strong> १. प्रयोगले परिकल्पनाको सत्यता जाँच्न ठोस प्रमाण दिन्छ। २. चरहरू बीचको कारण र असर स्पष्ट पार्छ। ३. विश्वव्यापी रूपमा दोहोर्याउन सकिने सत्यता स्थापित गर्छ।</p>
+        <p><strong>उदाहरण:</strong> "तापक्रम बढ्दा वाष्पीकरण बढ्छ" भन्ने तथ्य जाँच्न तातो र चिसो पानीको वाष्पीकरण तुलना गरी प्रयोग गरिन्छ। त्यस्तै कोरोनाविरुद्धको खोप मुसा र मानिसमा गरिएको सफल प्रयोगात्मक परीक्षणपछि मात्र प्रयोगमा ल्याइएको थियो।</p>
+      </div>
+    </div>
+
+    <!-- Q2 (ङ) -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (ङ): विज्ञानको प्रयोगात्मक कार्य गर्दा अपनाउनुपर्ने सुरक्षाका उपायहरूको सूची बनाउनुहोस् ।</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1">
+        <p><strong>उत्तर:</strong> प्रयोगशालामा अपनाउनुपर्ने सुरक्षा उपायहरू:</p>
+        <ul class="list-disc list-inside space-y-1 text-slate-600 pl-2">
+          <li>व्यक्तिगत सुरक्षा सामग्री (ल्याब कोट, चस्मा, पन्जा र मास्क) अनिवार्य प्रयोग गर्ने।</li>
+          <li>शिक्षकको प्रत्यक्ष उपस्थिति र निर्देशनबिना कुनै रसायन वा उपकरण नचलाउने।</li>
+          <li>रसायन कहिल्यै नचाख्ने वा सिधै नसुँघ्ने (सुँघ्दा हातले हावा आफूतिर पंखाजस्तो हल्लाउने)।</li>
+          <li>प्रज्वलनशील पदार्थलाई खुला आगोबाट टाढा राख्ने र कपाल बाँध्ने।</li>
+          <li>प्राथमिक उपचार बाकस र अग्निनियन्त्रक यन्त्र तयारी अवस्थामा राख्ने।</li>
+          <li>प्रयोग सकिएपछि सामान सफा गर्ने, रासायनिक फोहोर तोकिएको ठाउँमा फाल्ने र साबुनपानीले हात धुने।</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q2 (च, छ, ज, झ) -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (च र छ): वैज्ञानिक सङ्केतनको परिभाषा र ध्यान दिनुपर्ने कुराहरू</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1.5 leading-relaxed">
+        <p><strong>परिभाषा:</strong> अत्यन्त ठूला वा सूक्ष्म सङ्ख्याहरूलाई १ देखि १० को बीचको अङ्क ($1 \le M < 10$) र १० को घाताङ्कको गुणनफलका रूपमा $M \times 10^n$ ढाँचामा लेख्ने विधिलाई <strong>वैज्ञानिक सङ्केतन</strong> भनिन्छ।</p>
+        <p><strong>ध्यान दिनुपर्ने कुराहरू:</strong></p>
+        <p>१. पहिलो गैर-शून्य अङ्कपछि मात्र दशमलव राख्ने। २. दशमलव बायाँ सार्दा १० को घाताङ्क धनात्मक ($+n$) हुन्छ। ३. दशमलव दायाँ सार्दा १० को घाताङ्क ऋणात्मक ($-n$) हुन्छ। ४. भौतिक परिमाण भए अन्त्यमा उपयुक्त एकाइ लेख्ने।</p>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (ज र झ): मेट्रिक उपसर्गको आवश्यकता र न्यूनतम नाप</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1.5 leading-relaxed">
+        <p><strong>मेट्रिक उपसर्ग:</strong> धेरै शून्यहरू राखेर लेख्दा पढ्न र हिसाब गर्न झन्झट हुने हुँदा परिमाणलाई मानक र संक्षिप्त बनाउन मेट्रिक उपसर्ग प्रयोग गरिन्छ (जस्तै: $10^3\text{ m} = 1\text{ km}$, $10^9\text{ Bytes} = 1\text{ GB}$, $10^{-3}\text{ m} = 1\text{ mm}$)।</p>
+        <p><strong>न्यूनतम नाप (Least Count):</strong> नाप्ने उपकरणले सही रूपमा नाप्न सक्ने सबैभन्दा सानो परिमाणलाई न्यूनतम नाप भनिन्छ। (जस्तै: स्केल $= 1\text{ mm}$, स्टपवाच $= 0.01\text{ s}$, स्क्रू गज $= 0.01\text{ mm}$)। न्यूनतम नाप जति सानो हुन्छ, नाप त्यति बढी यथार्थ हुन्छ।</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- GROUP 3: MATHEMATICAL SCIENTIFIC NOTATION (ञ) -->
+  <div class="c9u1-ex-group" data-group="math">
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="border-b border-slate-100 pb-3 flex justify-between items-center">
+        <h4 class="font-black text-slate-900 text-base flex items-center gap-2">
+          <span>🔢 प्रश्न २ (ञ): दिइएको सङ्ख्यालाई वैज्ञानिक सङ्केतनमा रूपान्तरण</span>
+        </h4>
+        <span class="text-xs bg-amber-100 text-amber-800 font-bold px-2.5 py-1 rounded-full">गणितीय समस्याहरू</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+        <!-- Part अ -->
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+          <div class="font-bold text-slate-800">(अ) $1230000$</div>
+          <p class="text-slate-600 text-xs">दशमलव अन्तिममा छ। यसलाई पहिलो अङ्क '१' पछि ल्याउन <strong>६ स्थान बायाँ</strong> सार्नुपर्छ:</p>
+          <div class="p-2.5 bg-blue-50 text-blue-900 border border-blue-200 rounded-lg font-mono font-bold text-center text-base">
+            $1.23 \times 10^6$
+          </div>
+        </div>
+
+        <!-- Part आ -->
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+          <div class="font-bold text-slate-800">(आ) $0.00042$</div>
+          <p class="text-slate-600 text-xs">दशमलवलाई पहिलो गैर-शून्य अङ्क '४' पछि ल्याउन <strong>४ स्थान दायाँ</strong> सार्नुपर्छ:</p>
+          <div class="p-2.5 bg-blue-50 text-blue-900 border border-blue-200 rounded-lg font-mono font-bold text-center text-base">
+            $4.2 \times 10^{-4}$
+          </div>
+        </div>
+
+        <!-- Part इ -->
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+          <div class="font-bold text-slate-800">(इ) $0.00000001$</div>
+          <p class="text-slate-600 text-xs">दशमलवलाई पहिलो गैर-शून्य अङ्क '१' पछि ल्याउन <strong>८ स्थान दायाँ</strong> सार्नुपर्छ:</p>
+          <div class="p-2.5 bg-blue-50 text-blue-900 border border-blue-200 rounded-lg font-mono font-bold text-center text-base">
+            $1.0 \times 10^{-8} \quad (\text{वा } 1 \times 10^{-8})$
+          </div>
+        </div>
+
+        <!-- Part ई -->
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+          <div class="font-bold text-slate-800">(ई) $300000000$</div>
+          <p class="text-slate-600 text-xs">दशमलवलाई पहिलो अङ्क '३' पछि ल्याउन <strong>८ स्थान बायाँ</strong> सार्नुपर्छ:</p>
+          <div class="p-2.5 bg-blue-50 text-blue-900 border border-blue-200 rounded-lg font-mono font-bold text-center text-base">
+            $3.0 \times 10^8 \quad (\text{वा } 3 \times 10^8)$
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GROUP 4: LAB ACTIVITIES (१.५ र १.६) -->
+  <div class="c9u1-ex-group" data-group="activity">
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="border-b border-slate-100 pb-3 flex justify-between items-center">
+        <h4 class="font-black text-slate-900 text-base flex items-center gap-2">
+          <span>🧪 पाठ्यपुस्तक क्रियाकलाप समाधान (Activities)</span>
+        </h4>
+        <span class="text-xs bg-purple-100 text-purple-800 font-bold px-2.5 py-1 rounded-full">पृष्ठ १४</span>
+      </div>
+
+      <!-- Activity 1.5 Table -->
+      <div class="space-y-2">
+        <div class="font-bold text-slate-800 text-sm">क्रियाकलाप १.५: उपकरणहरूको न्यूनतम नाप तालिका</div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs text-left border border-slate-200 rounded-xl overflow-hidden">
+            <thead class="bg-slate-100 font-bold text-slate-700">
+              <tr>
+                <th class="p-3">क्र.सं.</th>
+                <th class="p-3">उपकरणको नाम</th>
+                <th class="p-3">नाप सीमा</th>
+                <th class="p-3">न्यूनतम नाप (Least Count)</th>
+                <th class="p-3">व्याख्या</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              <tr>
+                <td class="p-3 font-bold">१</td>
+                <td class="p-3">माइक्रो-एमिटर ($\mu\text{A}$)</td>
+                <td class="p-3">$0 - 50\text{ }\mu\text{A}$</td>
+                <td class="p-3 font-bold text-blue-600">$1\text{ }\mu\text{A}$</td>
+                <td class="p-3 text-slate-600">$0$ देखि $10$ बीचमा १० साना खण्ड, अतः १ खण्ड $= 1\text{ }\mu\text{A}$</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold">२</td>
+                <td class="p-3">भोल्टमिटर (Voltmeter)</td>
+                <td class="p-3">$0 - 5\text{ V}$</td>
+                <td class="p-3 font-bold text-blue-600">$0.1\text{ V}$</td>
+                <td class="p-3 text-slate-600">$0$ देखि $1\text{ V}$ बीचमा १० साना खण्ड, अतः १ खण्ड $= 0.1\text{ V}$</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold">३</td>
+                <td class="p-3">मेजरिङ सिलिन्डर</td>
+                <td class="p-3">$0 - 50\text{ mL}$</td>
+                <td class="p-3 font-bold text-blue-600">$1\text{ mL}$</td>
+                <td class="p-3 text-slate-600">$0$ देखि $10\text{ mL}$ बीचमा १० साना खण्ड, अतः १ खण्ड $= 1\text{ mL}$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Activity 1.6 -->
+      <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs md:text-sm space-y-2">
+        <div class="font-bold text-slate-800">क्रियाकलाप १.६: २ मिटर माथिबाट ढुङ्गा खसाल्दा औसत समय</div>
+        <p class="text-slate-600">
+          ३ पटक परीक्षण गर्दा प्राप्त समय क्रमशः $0.62\text{ s}, 0.65\text{ s}, 0.63\text{ s}$ आएको अवस्थामा:
+        </p>
+        <div class="p-3 bg-white border border-slate-200 rounded-lg text-slate-800 font-mono text-center">
+          $$t_{\text{avg}} = \frac{0.62 + 0.65 + 0.63}{3} = \frac{1.90}{3} \approx \mathbf{0.63\text{ सेकेन्ड}}$$
+        </div>
+        <p class="text-[11px] text-slate-500">
+          <strong>निष्कर्ष:</strong> पटक-पटक नाप लिई औसत निकाल्दा मानिसको प्रतिक्रिया समय र आकस्मिक त्रुटि न्यूनीकरण भई वास्तविक नाप प्राप्त हुन्छ।
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

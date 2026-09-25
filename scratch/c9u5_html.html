@@ -1,0 +1,878 @@
+<!-- ================= CLASS 9 UNIT 5 CONTAINER ================= -->
+<div id="c9-view-5" class="hidden flex-1 min-w-0 flex flex-col">
+  <!-- Unit Header Banner -->
+  <div class="border-b border-slate-100 pb-5 mb-6 flex flex-wrap items-center justify-between gap-4">
+    <div>
+      <div class="flex items-center gap-2 mb-1">
+        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-purple-100 text-purple-800 border border-purple-200">
+          कक्षा ९ विज्ञान तथा प्रविधि | एकाइ ५
+        </span>
+        <span class="text-xs text-slate-400">•</span>
+        <span class="text-xs text-slate-500 font-medium">पाठ्यपुस्तक पृष्ठ ४९–७९</span>
+      </div>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+        एकाइ ५: शारीरिक संरचना र जीवन प्रक्रिया (Body Structure and Life Process)
+      </h2>
+      <p class="text-xs md:text-sm text-slate-500 mt-1">
+        तन्तु (Tissues), मानव स्नायु प्रणाली (Nervous System & Reflex Arc), ग्रन्थि तथा हर्मोन प्रणाली (Endocrine System & Hormones)
+      </p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="inline-flex items-center px-3 py-1 rounded-xl text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+        ✓ ३ वटै खण्डका सम्पूर्ण आधिकारिक अभ्यास तथा परियोजना कार्य समावेश
+      </span>
+    </div>
+  </div>
+
+  <!-- 4-Tab Navigation Bar -->
+  <div class="flex border-b border-slate-200 gap-2 mb-6 overflow-x-auto pb-1 text-sm font-bold">
+    <button onclick="setTabC9U5('concepts')" id="c9u5-tab-concepts" class="px-5 py-2.5 rounded-xl bg-purple-600 text-white shadow-sm font-bold transition whitespace-nowrap cursor-pointer">
+      १. सैद्धान्तिक अवधारणा तथा ३-मोड भर्चुअल ल्याब
+    </button>
+    <button onclick="setTabC9U5('exercises')" id="c9u5-tab-exercises" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+      २. सम्पूर्ण अभ्यास समाधान (तन्तु, स्नायु, हर्मोन)
+    </button>
+    <button onclick="setTabC9U5('tiers')" id="c9u5-tab-tiers" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+      ३. तीन तहका नमुना प्रश्नहरू (१६ प्रश्न)
+    </button>
+    <button onclick="setTabC9U5('quiz')" id="c9u5-tab-quiz" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+      ४. स्वमूल्याङ्कन क्विज (१० प्रश्न)
+    </button>
+  </div>
+
+  <!-- ================= TAB 1: CONCEPTS & VIRTUAL LIFE SCIENCE LAB ================= -->
+  <div id="c9u5-view-concepts" class="space-y-6">
+    <!-- Lab Mode Switcher -->
+    <div class="bg-slate-900 p-2 rounded-3xl border border-slate-800 shadow-xl flex flex-wrap gap-2">
+      <button onclick="setLabModeC9U5('tissues')" id="c9u5-btn-mode-tissues" class="flex-1 py-3 px-4 rounded-2xl bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-black text-xs md:text-sm shadow-md transition cursor-pointer">
+        🔬 मोड १: माइक्रोस्कोपिक तन्तु अन्वेषक (Tissues Explorer)
+      </button>
+      <button onclick="setLabModeC9U5('nervous')" id="c9u5-btn-mode-nervous" class="flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white font-bold text-xs md:text-sm transition cursor-pointer">
+        🧠 मोड २: मस्तिष्क र रिफ्लेक्स आर्क (Brain & Reflex Arc)
+      </button>
+      <button onclick="setLabModeC9U5('endocrine')" id="c9u5-btn-mode-endocrine" class="flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white font-bold text-xs md:text-sm transition cursor-pointer">
+        🩸 मोड ३: ग्रन्थि र रक्त ग्लुकोज सन्तुलन (Endocrine & Homeostasis)
+      </button>
+    </div>
+
+    <!-- ----------------- MODE 1: TISSUES EXPLORER ----------------- -->
+    <div id="c9u5-lab-mode-tissues" class="bg-slate-900 border border-slate-800 rounded-3xl p-5 md:p-6 text-white space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-mono text-purple-400 tracking-wider">HISTOLOGY LAB • VIRTUAL MICROSCOPE</span>
+          <h3 class="text-lg md:text-xl font-black text-white">सूक्ष्मदर्शी तन्तु अन्वेषक (Microscopic Tissue Explorer)</h3>
+        </div>
+        <!-- Submode Switcher -->
+        <div class="flex items-center gap-2 bg-slate-950 p-1.5 rounded-2xl border border-slate-800">
+          <button onclick="setTissueSubModeC9U5('plant')" id="c9u5-tsub-plant" class="px-3.5 py-1.5 rounded-xl bg-emerald-600/30 border border-emerald-500 text-emerald-300 font-bold transition text-xs cursor-pointer">
+            🌿 वनस्पति तन्तु (Plant)
+          </button>
+          <button onclick="setTissueSubModeC9U5('animal')" id="c9u5-tsub-animal" class="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+            🐾 जन्तु तन्तु (Animal)
+          </button>
+        </div>
+      </div>
+
+      <!-- Plant Tissue Selector Buttons -->
+      <div id="c9u5-tissue-btns-plant" class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+        <button onclick="selectTissueC9U5('xylem')" id="c9u5-tbtn-xylem" class="p-3 rounded-2xl border bg-purple-600/30 border-purple-500 text-purple-300 text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">जाइलम (Xylem)</strong>
+          <span class="text-[10px] text-slate-400">पानी/खनिज परिवहन</span>
+        </button>
+        <button onclick="selectTissueC9U5('phloem')" id="c9u5-tbtn-phloem" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">फ्लोएम (Phloem)</strong>
+          <span class="text-[10px] text-slate-400">घुलित खाना वितरण</span>
+        </button>
+        <button onclick="selectTissueC9U5('apical')" id="c9u5-tbtn-apical" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">एपिकल मेरिस्टम</strong>
+          <span class="text-[10px] text-slate-400">टुप्पोको कोष विभाजन</span>
+        </button>
+        <button onclick="selectTissueC9U5('sclerenchyma')" id="c9u5-tbtn-sclerenchyma" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">स्क्लेरेन्काइमा</strong>
+          <span class="text-[10px] text-slate-400">कडा मृत लिग्निन तन्तु</span>
+        </button>
+        <button onclick="selectTissueC9U5('collenchyma')" id="c9u5-tbtn-collenchyma" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">कोलेन्काइमा</strong>
+          <span class="text-[10px] text-slate-400">लचिलो पेक्टिन तन्तु</span>
+        </button>
+      </div>
+
+      <!-- Animal Tissue Selector Buttons -->
+      <div id="c9u5-tissue-btns-animal" class="hidden grid grid-cols-2 sm:grid-cols-5 gap-2">
+        <button onclick="selectTissueC9U5('neuron')" id="c9u5-tbtn-neuron" class="p-3 rounded-2xl border bg-purple-600/30 border-purple-500 text-purple-300 text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">न्युरोन (Neuron)</strong>
+          <span class="text-[10px] text-slate-400">स्नायु कोष र आवेग</span>
+        </button>
+        <button onclick="selectTissueC9U5('striated')" id="c9u5-tbtn-striated" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">कंकाल मांसपेशी</strong>
+          <span class="text-[10px] text-slate-400">ऐच्छिक रेखादार रेसा</span>
+        </button>
+        <button onclick="selectTissueC9U5('smooth')" id="c9u5-tbtn-smooth" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">चिल्लो मांसपेशी</strong>
+          <span class="text-[10px] text-slate-400">अनैच्छिक आन्द्रा भित्ता</span>
+        </button>
+        <button onclick="selectTissueC9U5('cardiac')" id="c9u5-tbtn-cardiac" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">कार्डियाक मांसपेशी</strong>
+          <span class="text-[10px] text-slate-400">मुटुको लयबद्ध भित्ता</span>
+        </button>
+        <button onclick="selectTissueC9U5('blood')" id="c9u5-tbtn-blood" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+          <strong class="block text-xs font-bold">रक्त तन्तु (Blood)</strong>
+          <span class="text-[10px] text-slate-400">RBC, WBC, प्लेटलेट्स</span>
+        </button>
+      </div>
+
+      <!-- Main Display Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <!-- Circular Microscope Viewport -->
+        <div class="lg:col-span-6 bg-slate-950/80 border border-slate-800 rounded-3xl p-4 flex flex-col items-center justify-center min-h-[260px] shadow-inner relative overflow-hidden">
+          <div class="absolute top-3 left-4 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="text-[11px] font-mono text-slate-400 font-bold">FIELD OF VIEW: 400X MAGNIFICATION</span>
+          </div>
+          <div id="c9u5-tissue-svg-wrap" class="w-full flex items-center justify-center pt-4">
+            <!-- Dynamic SVG inserted by JS renderTissueSVGC9U5() -->
+          </div>
+        </div>
+
+        <!-- Diagnostic Information Panel -->
+        <div class="lg:col-span-6 bg-slate-800/90 border border-slate-700 rounded-3xl p-5 flex flex-col justify-between space-y-4">
+          <div class="border-b border-slate-700 pb-3 flex items-center justify-between">
+            <div>
+              <span id="c9u5-t-engname" class="text-xs text-purple-400 font-mono tracking-wider font-bold">XYLEM TISSUE</span>
+              <h4 id="c9u5-t-nepname" class="text-lg font-black text-white">जाइलम जटिल स्थायी तन्तु</h4>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded-full bg-purple-500/20 text-purple-300 font-bold border border-purple-500/30">
+              भास्कुलर बन्डल
+            </span>
+          </div>
+
+          <div class="space-y-2.5 text-xs text-slate-300">
+            <div>
+              <strong class="text-amber-400 block mb-0.5">📍 शारीरिक अवस्थिति (Location):</strong>
+              <p id="c9u5-t-loc" class="text-slate-300 leading-relaxed"></p>
+            </div>
+            <div>
+              <strong class="text-sky-400 block mb-0.5">🔬 कोषीय संरचना (Cellular Structure):</strong>
+              <p id="c9u5-t-struct" class="text-slate-300 leading-relaxed"></p>
+            </div>
+            <div>
+              <strong class="text-emerald-400 block mb-0.5">⚡ मुख्य जैविक कार्य (Biological Function):</strong>
+              <p id="c9u5-t-func" class="text-slate-300 leading-relaxed"></p>
+            </div>
+          </div>
+
+          <div class="p-3 rounded-2xl bg-slate-900/80 border border-slate-700/80 text-xs text-slate-300 space-y-1">
+            <strong class="text-amber-300 block font-bold">💡 परीक्षा तथा क्लिनिकल दृष्टिकोण:</strong>
+            <p id="c9u5-t-clinical" class="leading-relaxed"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------- MODE 2: NERVOUS SYSTEM & REFLEX ARC ----------------- -->
+    <div id="c9u5-lab-mode-nervous" class="hidden bg-slate-900 border border-slate-800 rounded-3xl p-5 md:p-6 text-white space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-mono text-purple-400 tracking-wider">NEUROPHYSIOLOGY LAB • CNS & REFLEX</span>
+          <h3 class="text-lg md:text-xl font-black text-white">मानव मस्तिष्क तथा रिफ्लेक्स आर्क सिमुलेटर</h3>
+        </div>
+        <!-- Submode Switcher -->
+        <div class="flex items-center gap-2 bg-slate-950 p-1.5 rounded-2xl border border-slate-800">
+          <button onclick="setNervousSubModeC9U5('brain')" id="c9u5-nsub-brain" class="px-3.5 py-1.5 rounded-xl bg-purple-600/30 border border-purple-500 text-purple-300 font-bold transition text-xs cursor-pointer">
+            🧠 मस्तिष्क संरचना अन्वेषक
+          </button>
+          <button onclick="setNervousSubModeC9U5('reflex')" id="c9u5-nsub-reflex" class="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+            ⚡ अकाम्य क्रिया (Reflex Arc) सिमुलेटर
+          </button>
+        </div>
+      </div>
+
+      <!-- Panel A: Brain Anatomy Explorer -->
+      <div id="c9u5-nervous-panel-brain" class="space-y-5">
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+          <button onclick="selectBrainPartC9U5('cerebrum')" id="c9u5-bbtn-cerebrum" class="p-3 rounded-2xl border bg-purple-600/30 border-purple-500 text-purple-300 text-left transition cursor-pointer">
+            <strong class="block text-xs font-bold">सेरेब्रम (प्रमस्तिष्क)</strong>
+            <span class="text-[10px] text-slate-400">८०% ठुलो मस्तिष्क, चेतना</span>
+          </button>
+          <button onclick="selectBrainPartC9U5('cerebellum')" id="c9u5-bbtn-cerebellum" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+            <strong class="block text-xs font-bold">सेरेबेलम (अनुमस्तिष्क)</strong>
+            <span class="text-[10px] text-slate-400">शारीरिक सन्तुलन, समन्वय</span>
+          </button>
+          <button onclick="selectBrainPartC9U5('medulla')" id="c9u5-bbtn-medulla" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+            <strong class="block text-xs font-bold">मेडुला अब्लङ्गेटा</strong>
+            <span class="text-[10px] text-slate-400">मुटु, श्वासप्रश्वास, जीवन केन्द्र</span>
+          </button>
+          <button onclick="selectBrainPartC9U5('spinal_cord')" id="c9u5-bbtn-spinal_cord" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+            <strong class="block text-xs font-bold">सुषुम्ना (Spinal Cord)</strong>
+            <span class="text-[10px] text-slate-400">अकाम्य क्रिया केन्द्र, ३१ जोडी</span>
+          </button>
+          <button onclick="selectBrainPartC9U5('meninges')" id="c9u5-bbtn-meninges" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+            <strong class="block text-xs font-bold">मेनिन्जेज (Meninges)</strong>
+            <span class="text-[10px] text-slate-400">Dura, Arachnoid, Pia झिल्ली</span>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          <div class="lg:col-span-6 bg-slate-950/80 border border-slate-800 rounded-3xl p-4 flex flex-col items-center justify-center min-h-[260px] shadow-inner">
+            <div id="c9u5-brain-svg-wrap" class="w-full flex items-center justify-center">
+              <!-- Dynamic SVG inserted by JS renderBrainSVGC9U5() -->
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 bg-slate-800/90 border border-slate-700 rounded-3xl p-5 flex flex-col justify-between space-y-4">
+            <div class="border-b border-slate-700 pb-3">
+              <span id="c9u5-b-engname" class="text-xs text-purple-400 font-mono tracking-wider font-bold">CEREBRUM</span>
+              <h4 id="c9u5-b-nepname" class="text-lg font-black text-white">ठुलो मस्तिष्क (प्रमस्तिष्क)</h4>
+            </div>
+
+            <div class="space-y-2.5 text-xs text-slate-300">
+              <div>
+                <strong class="text-amber-400 block mb-0.5">📍 अवस्थिति र विशेषता:</strong>
+                <p id="c9u5-b-loc" class="text-slate-300 leading-relaxed"></p>
+              </div>
+              <div>
+                <strong class="text-emerald-400 block mb-0.5">⚡ मुख्य कार्यहरू (Physiological Functions):</strong>
+                <p id="c9u5-b-func" class="text-slate-300 leading-relaxed"></p>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-2xl bg-rose-950/40 border border-rose-800/60 text-xs text-rose-200 space-y-1">
+              <strong class="text-rose-300 block font-bold">⚠️ चोटपटक वा क्षति हुँदाको असर (Clinical Injury):</strong>
+              <p id="c9u5-b-injury" class="leading-relaxed"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel B: Reflex Arc Simulator -->
+      <div id="c9u5-nervous-panel-reflex" class="hidden space-y-5">
+        <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-950/70 p-3 rounded-2xl border border-slate-800 text-xs">
+          <div class="flex items-center gap-2">
+            <span id="c9u5-reflex-step-badge" class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 font-bold border border-amber-500/40 font-mono">
+              अवस्था: सामान्य विश्राम (Resting State)
+            </span>
+            <span id="c9u5-reflex-latency-badge" class="font-mono text-slate-400">
+              प्रतिक्रिया समय: ~२५ मिलिसेकेन्ड
+            </span>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="triggerReflexC9U5()" id="c9u5-btn-trigger-reflex" class="px-4 py-2 rounded-xl text-xs font-black bg-gradient-to-r from-rose-600 to-amber-600 hover:from-rose-500 hover:to-amber-500 text-white shadow-md transition flex items-center gap-1.5 cursor-pointer">
+              <span>🔥</span>
+              <span>तातो वस्तु छुनुहोस् (Trigger Stimulus)</span>
+            </button>
+            <button onclick="resetReflexC9U5()" class="px-3 py-2 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-300 transition cursor-pointer">
+              पुनः सुरु (Reset)
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Reflex SVG Canvas -->
+        <div class="bg-slate-950/90 border border-slate-800 rounded-3xl p-4 flex flex-col items-center justify-center min-h-[280px] shadow-inner relative overflow-hidden select-none">
+          <div id="c9u5-reflex-svg-wrap" class="w-full flex items-center justify-center">
+            <!-- Dynamic Reflex Arc SVG inserted by JS renderReflexSVGC9U5() -->
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-800/90 border border-slate-700 text-xs text-slate-300 space-y-2">
+          <strong class="text-amber-400 block font-bold text-sm">💡 रिफ्लेक्स आर्क (Reflex Arc) को ५-चरण कार्यविधि:</strong>
+          <p id="c9u5-reflex-desc" class="leading-relaxed text-slate-200">
+            १. तातो भाँडो छुँदा छालाका रिसेप्टरहरू उत्तेजित हुन्छन् ➔ २. सेन्सरी न्युरोनमार्फत आवेग सुषुम्नामा पुग्छ ➔ ३. सुषुम्नाको इन्टरन्युरोनले तत्काल निर्णय लिन्छ ➔ ४. मोटर न्युरोनमार्फत पाखुरामा आदेश जान्छ ➔ ५. बाइसेप्स मांसपेशी तीव्र गतिमा खुम्चिएर हात स्वतः पछि हट्छ।
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------- MODE 3: ENDOCRINE GLANDS & HOMEOSTASIS ----------------- -->
+    <div id="c9u5-lab-mode-endocrine" class="hidden bg-slate-900 border border-slate-800 rounded-3xl p-5 md:p-6 text-white space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-mono text-purple-400 tracking-wider">ENDOCRINOLOGY & HOMEOSTASIS LAB</span>
+          <h3 class="text-lg md:text-xl font-black text-white">अन्तःस्रावी ग्रन्थि तथा रक्त ग्लुकोज सन्तुलन सिमुलेटर</h3>
+        </div>
+        <!-- Submode Switcher -->
+        <div class="flex items-center gap-2 bg-slate-950 p-1.5 rounded-2xl border border-slate-800">
+          <button onclick="setEndoSubModeC9U5('glucose')" id="c9u5-esub-glucose" class="px-3.5 py-1.5 rounded-xl bg-purple-600/30 border border-purple-500 text-purple-300 font-bold transition text-xs cursor-pointer">
+            🩸 रक्त ग्लुकोज सन्तुलन (Homeostasis)
+          </button>
+          <button onclick="setEndoSubModeC9U5('glands')" id="c9u5-esub-glands" class="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+            🗺️ मानव ग्रन्थि नक्सा (Glands Map)
+          </button>
+          <button onclick="setEndoSubModeC9U5('auxin')" id="c9u5-esub-auxin" class="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white font-bold transition text-xs cursor-pointer">
+            🌱 वनस्पति अक्सिन अनुवर्तन
+          </button>
+        </div>
+      </div>
+
+      <!-- Panel 1: Blood Glucose Homeostasis Simulator -->
+      <div id="c9u5-endo-panel-glucose" class="space-y-5">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          <!-- Glucose Feedback Canvas & Gauge -->
+          <div class="lg:col-span-7 bg-slate-950/80 border border-slate-800 rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-inner">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+              <span class="text-xs font-mono text-emerald-400 font-bold">BLOOD GLUCOSE REGULATION (NEGATIVE FEEDBACK)</span>
+              <span id="c9u5-glucose-level-badge" class="text-sm font-mono font-black px-3 py-1 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                ९० mg/dL (सामान्य सन्तुलन)
+              </span>
+            </div>
+
+            <!-- Dynamic SVG Glucose Loop -->
+            <div id="c9u5-glucose-svg-wrap" class="w-full flex items-center justify-center min-h-[200px]">
+              <!-- Dynamic Homeostasis SVG inserted by JS renderGlucoseSVGC9U5() -->
+            </div>
+
+            <!-- Interactive Physiological Triggers -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-slate-800">
+              <button onclick="triggerGlucoseEventC9U5('meal')" class="p-2.5 rounded-xl text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 transition cursor-pointer flex flex-col items-center">
+                <span>🍞 खाना खानुहोस्</span>
+                <span class="text-[9px] font-normal">+ग्लुकोज वृद्धि</span>
+              </button>
+              <button onclick="triggerGlucoseEventC9U5('fast')" class="p-2.5 rounded-xl text-xs font-bold bg-sky-600 hover:bg-sky-500 text-white transition cursor-pointer flex flex-col items-center">
+                <span>🏃 उपवास/व्यायाम</span>
+                <span class="text-[9px] font-normal">-ग्लुकोज खपत</span>
+              </button>
+              <button onclick="triggerGlucoseEventC9U5('diabetic')" class="p-2.5 rounded-xl text-xs font-bold bg-rose-600 hover:bg-rose-500 text-white transition cursor-pointer flex flex-col items-center">
+                <span>⚠️ मधुमेह अवस्था</span>
+                <span class="text-[9px] font-normal">इन्सुलिन अभाव</span>
+              </button>
+              <button onclick="triggerGlucoseEventC9U5('reset')" class="p-2.5 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-300 transition cursor-pointer flex flex-col items-center">
+                <span>🔄 पुनः सन्तुलन</span>
+                <span class="text-[9px] font-normal">९० mg/dL</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Diagnostic Explanation & Hormonal Status -->
+          <div class="lg:col-span-5 bg-slate-800/90 border border-slate-700 rounded-3xl p-5 flex flex-col justify-between space-y-4">
+            <div class="border-b border-slate-700 pb-2">
+              <span class="text-xs text-amber-400 font-mono">PANCREATIC ENDOCRINE HOMEOSTASIS</span>
+              <h4 class="text-lg font-black text-white">प्यान्क्रियाजको हर्मोनल प्रतिक्रिया</h4>
+            </div>
+
+            <div class="space-y-3 text-xs">
+              <div class="p-3 rounded-2xl bg-slate-900 border border-slate-700/80 space-y-1">
+                <span class="text-emerald-400 font-bold flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span>
+                  <span>इन्सुलिन (Insulin - Beta Cells):</span>
+                </span>
+                <p id="c9u5-insulin-status" class="text-slate-300 leading-relaxed">
+                  रगतमा ग्लुकोज बढ्दा बिटा कोषहरूले इन्सुलिन निकाली ग्लुकोजलाई कलेजोमा ग्लाइकोजेन बनाउँछन्।
+                </p>
+              </div>
+
+              <div class="p-3 rounded-2xl bg-slate-900 border border-slate-700/80 space-y-1">
+                <span class="text-amber-400 font-bold flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span>
+                  <span>ग्लुकागन (Glucagon - Alpha Cells):</span>
+                </span>
+                <p id="c9u5-glucagon-status" class="text-slate-300 leading-relaxed">
+                  रगतमा ग्लुकोज घट्दा अल्फा कोषहरूले ग्लुकागन निकाली कलेजोको ग्लाइकोजेनलाई ग्लुकोजमा तोड्छन्।
+                </p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-slate-700 text-xs text-slate-300 space-y-1">
+              <strong class="text-sky-300 block font-bold" id="c9u5-glucose-diag-title">सन्तुलनको अवस्था:</strong>
+              <p id="c9u5-glucose-diag-desc" class="leading-relaxed">
+                सामान्य अवस्थामा रगतमा ग्लुकोजको मात्रा ८० देखि १२० mg/dL को बीचमा स्थिर रहन्छ।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: Endocrine Glands Map -->
+      <div id="c9u5-endo-panel-glands" class="hidden space-y-5">
+        <div class="grid grid-cols-2 sm:grid-cols-6 gap-2">
+          <button onclick="selectGlandC9U5('pituitary')" id="c9u5-gbtn-pituitary" class="p-3 rounded-2xl border bg-purple-600/30 border-purple-500 text-purple-300 text-left transition cursor-pointer">
+            <strong class="block text-xs font-bold">पिट्युटरी</strong>
+            <span class="text-[10px] text-slate-400">Master Gland (टाउको)</span>
+          </button>
+          <button onclick="selectGlandC9U5('thyroid')" id="c9u5-gbtn-thyroid" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+            <strong class="block text-xs font-bold">थाइरोइड</strong>
+            <span class="text-[10px] text-slate-400">थाइरोक्सिन (घाँटी)</span>
+          </button>
+          <button onclick="selectGlandC9U5('parathyroid')" id="c9u5-gbtn-parathyroid" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+            <strong class="block text-xs font-bold">प्याराथाइरोइड</strong>
+            <span class="text-[10px] text-slate-400">प्याराथर्मोन (क्याल्सियम)</span>
+          </button>
+          <button onclick="selectGlandC9U5('adrenal')" id="c9u5-gbtn-adrenal" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+            <strong class="block text-xs font-bold">एड्रिनल</strong>
+            <span class="text-[10px] text-slate-400">3F हर्मोन (मिर्गौलामाथि)</span>
+          </button>
+          <button onclick="selectGlandC9U5('pancreas')" id="c9u5-gbtn-pancreas" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+            <strong class="block text-xs font-bold">प्यान्क्रियाज</strong>
+            <span class="text-[10px] text-slate-400">मिश्रित (इन्सुलिन)</span>
+          </button>
+          <button onclick="selectGlandC9U5('gonads')" id="c9u5-gbtn-gonads" class="p-3 rounded-2xl border bg-slate-950 border-slate-800 text-slate-400 hover:text-white text-left transition cursor-pointer">
+            <strong class="block text-xs font-bold">गोनाड्स</strong>
+            <span class="text-[10px] text-slate-400">टेस्टिस र ओभरी</span>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          <div class="lg:col-span-5 bg-slate-950/80 border border-slate-800 rounded-3xl p-4 flex flex-col items-center justify-center min-h-[260px] shadow-inner">
+            <div id="c9u5-gland-svg-wrap" class="w-full flex items-center justify-center">
+              <!-- Dynamic Gland SVG inserted by JS renderGlandSVGC9U5() -->
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 bg-slate-800/90 border border-slate-700 rounded-3xl p-5 flex flex-col justify-between space-y-4">
+            <div class="border-b border-slate-700 pb-3">
+              <span id="c9u5-g-engname" class="text-xs text-purple-400 font-mono tracking-wider font-bold">PITUITARY GLAND</span>
+              <h4 id="c9u5-g-nepname" class="text-lg font-black text-white">पिट्युटरी ग्रन्थि (Master Gland)</h4>
+            </div>
+
+            <div class="space-y-2.5 text-xs text-slate-300">
+              <div>
+                <strong class="text-amber-400 block mb-0.5">📍 शारीरिक अवस्थिति:</strong>
+                <p id="c9u5-g-loc" class="text-slate-300 leading-relaxed"></p>
+              </div>
+              <div>
+                <strong class="text-sky-400 block mb-0.5">🧪 उत्पादित हर्मोनहरू:</strong>
+                <p id="c9u5-g-hormones" class="text-slate-300 leading-relaxed"></p>
+              </div>
+              <div>
+                <strong class="text-emerald-400 block mb-0.5">⚡ मुख्य जैविक कार्य:</strong>
+                <p id="c9u5-g-func" class="text-slate-300 leading-relaxed"></p>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-2xl bg-slate-900 border border-slate-700 text-xs text-slate-300 space-y-1">
+              <strong class="text-rose-300 block font-bold">⚠️ असन्तुलनबाट देखिने रोगहरू (Disorders):</strong>
+              <p id="c9u5-g-disorders" class="leading-relaxed"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 3: Plant Auxin Phototropism -->
+      <div id="c9u5-endo-panel-auxin" class="hidden space-y-5">
+        <div class="flex items-center justify-between bg-slate-950 p-2.5 rounded-2xl border border-slate-800">
+          <span class="text-xs text-slate-400 font-bold">प्रकाश स्रोतको दिशा छनोट गर्नुहोस्:</span>
+          <div class="flex items-center gap-2">
+            <button onclick="setAuxinLightC9U5('overhead')" id="c9u5-abtn-overhead" class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 font-bold transition text-xs cursor-pointer">
+              ☀️ माथिबाट सिधा
+            </button>
+            <button onclick="setAuxinLightC9U5('left')" id="c9u5-abtn-left" class="px-3 py-1.5 rounded-xl bg-amber-600/30 border border-amber-500 text-amber-300 font-bold transition text-xs cursor-pointer">
+              ☀️ बायाँ झ्यालबाट
+            </button>
+            <button onclick="setAuxinLightC9U5('right')" id="c9u5-abtn-right" class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 font-bold transition text-xs cursor-pointer">
+              ☀️ दायाँ झ्यालबाट
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-slate-950/80 border border-slate-800 rounded-3xl p-5 flex flex-col items-center justify-center min-h-[260px] shadow-inner select-none">
+          <div id="c9u5-auxin-svg-wrap" class="w-full flex items-center justify-center">
+            <!-- Dynamic Auxin SVG inserted by JS renderAuxinSVGC9U5() -->
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-800/90 border border-slate-700 text-xs text-slate-300 space-y-2">
+          <strong class="text-amber-400 block font-bold text-sm">💡 अक्सिन हर्मोन र प्रकाश अनुवर्तनको वैज्ञानिक रहस्य:</strong>
+          <p id="c9u5-auxin-desc" class="leading-relaxed text-slate-200">
+            अक्सिन हर्मोन प्रकाशबाट भागेर छायाँ परेको अँध्यारो भागमा बसाइँ सर्दछ। छायाँदार भागका कोषहरूमा अक्सिन बढी जम्मा भएर तीव्र लाम्चिँदा बिरुवाको डाँठ प्रकाशतर्फ बाङ्किन्छ।
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TAB 2: EXERCISES ================= -->
+  <div id="c9u5-view-exercises" class="hidden space-y-6">
+    <div class="flex items-center justify-between border-b border-slate-200 pb-3 flex-wrap gap-2">
+      <div>
+        <h3 class="text-lg font-black text-slate-900">पाठ्यपुस्तक सम्पूर्ण अभ्यास समाधान</h3>
+        <p class="text-xs text-slate-500">तन्तु, स्नायु प्रणाली, ग्रन्थि तथा हर्मोन खण्डका सम्पूर्ण आधिकारिक प्रश्नोत्तरहरू</p>
+      </div>
+      <!-- Filter Pills -->
+      <div class="flex flex-wrap gap-1.5">
+        <button onclick="filterC9U5Exercises('all')" id="c9u5-exbtn-all" class="px-3 py-1.5 rounded-xl text-xs font-black transition bg-purple-600 text-white shadow-sm cursor-pointer whitespace-nowrap">सबै प्रश्नहरू</button>
+        <button onclick="filterC9U5Exercises('tissues')" id="c9u5-exbtn-tissues" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">तन्तु खण्ड</button>
+        <button onclick="filterC9U5Exercises('nervous')" id="c9u5-exbtn-nervous" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">स्नायु प्रणाली</button>
+        <button onclick="filterC9U5Exercises('endocrine')" id="c9u5-exbtn-endocrine" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">ग्रन्थि र हर्मोन</button>
+        <button onclick="filterC9U5Exercises('mcq')" id="c9u5-exbtn-mcq" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">MCQs</button>
+        <button onclick="filterC9U5Exercises('reason')" id="c9u5-exbtn-reason" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">कारण दिनुहोस्</button>
+        <button onclick="filterC9U5Exercises('diff')" id="c9u5-exbtn-diff" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">फरक लेख्नुहोस्</button>
+        <button onclick="filterC9U5Exercises('qa')" id="c9u5-exbtn-qa" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">विस्तृत प्रश्नोत्तर</button>
+        <button onclick="filterC9U5Exercises('project')" id="c9u5-exbtn-project" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">परियोजना कार्य</button>
+      </div>
+    </div>
+
+    <!-- Exercise Cards Container -->
+    <div id="c9u5-exercise-cards" class="space-y-4">
+      <!-- Card 1: Tissues MCQs -->
+      <div class="c9u5-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-cat="tissues mcq">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">तन्तु • बहुवैकल्पिक प्रश्नहरू (MCQs)</span>
+          <span class="text-xs text-slate-400">पृष्ठ ६२</span>
+        </div>
+        <h4 class="text-base font-black text-slate-900">१. तलका प्रश्नको सही विकल्पमा ठीक चिह्न (✓) लगाउनुहोस्:</h4>
+        <div class="space-y-2 text-xs md:text-sm text-slate-700">
+          <p><strong>(क) कोषहरू विभाजन हुने क्षमता भएका तन्तुको प्रकार कुन हो ?</strong> ➔ <span class="text-emerald-700 font-bold">(ई) मेरिस्टमेटिक तन्तु (Meristematic tissue)</span></p>
+          <p><strong>(ख) मिर्गौला र र्‍याल ग्रन्थिका नलीहरूको भित्री सतहमा हुने तन्तु कुन हो ?</strong> ➔ <span class="text-emerald-700 font-bold">(इ) क्युबोइडल इपिथेलियम तन्तु</span></p>
+          <p><strong>(ग) मेरिस्टमेटिक तन्तु बिरुवाको कुन भागमा हुन्छ ?</strong> ➔ <span class="text-emerald-700 font-bold">(ई) बिरुवाका सबै वृद्धि हुने भागमा (जरा, काण्ड र हाँगाका टुप्पा तथा पार्श्व भाग)</span></p>
+          <p><strong>(घ) कार्डियाक मासल तन्तु कुन अङ्गमा पाइन्छ ?</strong> ➔ <span class="text-emerald-700 font-bold">(इ) मुटु (Heart)</span></p>
+          <p><strong>(ङ) बिरुवाले भास्कुलर तन्तु के कामका लागि प्रयोग गर्छ ?</strong> ➔ <span class="text-emerald-700 font-bold">(इ) पानी र खानाको सञ्चार (परिवहन) गर्न</span></p>
+        </div>
+      </div>
+
+      <!-- Card 2: Tissues Reasons -->
+      <div class="c9u5-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-cat="tissues reason">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-sky-100 text-sky-800">तन्तु • कारण दिनुहोस् (Give Reasons)</span>
+          <span class="text-xs text-slate-400">पृष्ठ ६२</span>
+        </div>
+        <h4 class="text-base font-black text-slate-900">२. वैज्ञानिक कारण दिनुहोस्:</h4>
+        <div class="space-y-2.5 text-xs md:text-sm text-slate-700">
+          <div>
+            <strong class="text-slate-900 block">(क) रगतलाई तरल संयोजी तन्तु भनिन्छ, किन ?</strong>
+            <p class="text-slate-600 mt-0.5">रगतको उत्पत्ति भ्रूणको मेसोडर्मबाट हुन्छ र यसमा तरल प्लाज्मा म्याट्रिक्सभित्र रक्तकोषहरू तैरिएका हुन्छन्। यसले शरीरका सम्पूर्ण अङ्गहरूलाई आपसमा जोड्ने, अक्सिजन र पोषक तत्व परिवहन गर्ने तथा आन्तरिक सञ्चार कायम राख्ने भएकाले यसलाई तरल संयोजी तन्तु भनिन्छ।</p>
+          </div>
+          <div>
+            <strong class="text-slate-900 block">(ख) बिरुवाको टुप्पो काट्दा उचाइ वृद्धि हुँदैन, किन ?</strong>
+            <p class="text-slate-600 mt-0.5">बिरुवाको टुप्पोमा लम्बाइ बढाउने शीर्षस्थ मेरिस्टमेटिक तन्तु (Apical Meristem) हुन्छ। टुप्पो काट्दा उक्त तन्तु नष्ट हुने भएकाले नयाँ कोष विभाजन हुन पाउँदैन र ठाडो उचाइ वृद्धि रोकिन्छ।</p>
+          </div>
+          <div>
+            <strong class="text-slate-900 block">(ग) लालुपातेको पात चुँड्दा सेतो चोप आउँछ, किन ?</strong>
+            <p class="text-slate-600 mt-0.5">लालुपातेमा विशेष स्राव तन्तु अन्तर्गत ल्याटिकिफेरस नलीहरू (Latex ducts) हुन्छन् जसमा दूधजस्तो सेतो चोप भण्डारण हुन्छ। पात चुँड्दा नलीहरू फुट्ने हुनाले आन्तरिक चापले गर्दा सेतो चोप बाहिर निस्कन्छ।</p>
+          </div>
+          <div>
+            <strong class="text-slate-900 block">(घ) जाइलम तन्तुलाई जटिल स्थायी तन्तु भनिन्छ, किन ?</strong>
+            <p class="text-slate-600 mt-0.5">जाइलमका कोषहरू परिपक्व भई विभाजन क्षमता गुमाइसकेका हुन्छन् र यो चार फरक प्रकारका कोषहरू (ट्र्याकिड्स, भेसल्स, जाइलम फाइबर र जाइलम प्यारेन्काइमा) मिलेर बनेको हुन्छ। यी सबै कोषहरूले मिलेर पानी र खनिज परिवहनको एउटै साझा कार्य गर्ने हुनाले जाइलमलाई जटिल स्थायी तन्तु भनिन्छ।</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Tissues Differences -->
+      <div class="c9u5-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-cat="tissues diff">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">तन्तु • फरक लेख्नुहोस् (Differences)</span>
+          <span class="text-xs text-slate-400">पृष्ठ ६२</span>
+        </div>
+        <h4 class="text-base font-black text-slate-900">३. फरक लेख्नुहोस्:</h4>
+        <div class="space-y-3 text-xs md:text-sm text-slate-700">
+          <div>
+            <strong class="text-purple-900 block font-bold mb-1">(क) मांसल तन्तु र संयोजी तन्तु:</strong>
+            <p class="text-slate-600">मांसल तन्तु लामा खुम्चने रेसाहरूले बनेको हुन्छ र शरीरको चाल तथा गति उत्पन्न गर्छ। संयोजी तन्तुमा कोषहरूभन्दा बढी बाहिरी म्याट्रिक्स हुन्छ र यसले अङ्गहरूलाई आपसमा जोड्ने र सहारा दिने कार्य गर्छ।</p>
+          </div>
+          <div>
+            <strong class="text-purple-900 block font-bold mb-1">(ख) जाइलम र फ्लोएम:</strong>
+            <p class="text-slate-600">जाइलमले जराबाट पातसम्म पानी र खनिज एकतर्फी (माथितर्फ) परिवहन गर्छ र यसका अधिकांश कोष मृत हुन्छन्। फ्लोएमले पातमा बनेको घुलित खाना सम्पूर्ण भागमा दुईतर्फी वितरण गर्छ र यसका अधिकांश कोष जीवित हुन्छन्।</p>
+          </div>
+          <div>
+            <strong class="text-purple-900 block font-bold mb-1">(ग) मेरिस्टमेटिक तन्तु र स्थायी तन्तु:</strong>
+            <p class="text-slate-600">मेरिस्टमेटिक तन्तुका कोषहरूमा निरन्तर तीव्र समसूत्री विभाजन हुने क्षमता हुन्छ। स्थायी तन्तुका कोषहरू परिपक्व भइसकेका हुन्छन् र यिनीहरूमा थप कोष विभाजन हुने क्षमता हुँदैन।</p>
+          </div>
+          <div>
+            <strong class="text-purple-900 block font-bold mb-1">(घ) स्क्लेरेन्काइमा र कोलेन्काइमा:</strong>
+            <p class="text-slate-600">स्क्लेरेन्काइमा कडा लिग्निन जम्मा भएर भित्ता बाक्लो बनेका मृत कोषहरू हुन् जसले कडापन दिन्छ। कोलेन्काइमा कुना-कुनामा पेक्टिन जम्मा भएका जीवित कोषहरू हुन् जसले बिरुवालाई लचिलोपन दिन्छ।</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Nervous System MCQs & Reasons -->
+      <div class="c9u5-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-cat="nervous mcq reason">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-indigo-100 text-indigo-800">स्नायु प्रणाली • MCQs तथा कारण दिनुहोस्</span>
+          <span class="text-xs text-slate-400">पृष्ठ ७०–७१</span>
+        </div>
+        <h4 class="text-base font-black text-slate-900">स्नायु प्रणाली अभ्यास समाधान:</h4>
+        <div class="space-y-2 text-xs md:text-sm text-slate-700 border-b border-slate-100 pb-2">
+          <p><strong>(क) मेनिन्जेजको बाहिरी तहबाट भित्री तहको सही क्रम:</strong> ➔ <span class="text-indigo-700 font-bold">(ई) डुराम्याटर, एराक्नोइडम्याटर र पायम्याटर</span></p>
+          <p><strong>(ख) स्नायु प्रणालीको कुन भाग खरानी रङको हुन्छ ?</strong> ➔ <span class="text-indigo-700 font-bold">(आ) साइटोन (Cyton)</span></p>
+          <p><strong>(ग) मस्तिष्कको कुन भागमा चोट लाग्दा मानिस कोमामा जान्छ ?</strong> ➔ <span class="text-indigo-700 font-bold">(इ) सेरेब्रम (Cerebrum)</span></p>
+          <p><strong>(घ) मस्तिष्कसम्म खबर लैजाने स्नायु कुन हो ?</strong> ➔ <span class="text-indigo-700 font-bold">(आ) सेन्सरी स्नायु (Sensory nerve)</span></p>
+          <p><strong>(ङ) अकाम्य क्रिया कुन भागले नियन्त्रण गर्छ ?</strong> ➔ <span class="text-indigo-700 font-bold">(ई) स्पाइनल कर्ड / सुषुम्ना (Spinal Cord)</span></p>
+        </div>
+        <div class="space-y-2 text-xs md:text-sm text-slate-700 pt-1">
+          <p><strong>कारण १: सेरेब्रममा चोट लाग्दा कोमा:</strong> सेरेब्रम चेतना, सोचाइ र ज्ञानेन्द्रिय संवेदनशीलताको केन्द्र भएकाले यसमा चोट लाग्दा चेतन केन्द्रहरू निष्क्रिय भई मानिस अचेतन (कोमा) मा पुग्छ।</p>
+          <p><strong>कारण २: तातो छुँदा हात हट्ने:</strong> छालाका रिसेप्टरबाट संवेग तुरुन्त सुषुम्नामा पुगी मोटर न्युरोनमार्फत मांसपेशी खुम्चिने अकाम्य क्रिया मस्तिष्कभन्दा अगाडि नै सम्पन्न हुन्छ।</p>
+          <p><strong>कारण ३: सेरेबेलममा चोट लाग्दा असन्तुलन:</strong> सेरेबेलम शारीरिक सन्तुलन र मांसपेशीको चाल मिलाउने केन्द्र भएकाले चोट लाग्दा सन्तुलन गुम्छ।</p>
+        </div>
+      </div>
+
+      <!-- Card 5: Glands & Hormones Full Solutions -->
+      <div class="c9u5-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-cat="endocrine mcq reason diff qa">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-rose-100 text-rose-800">ग्रन्थि तथा हर्मोन • सम्पूर्ण अभ्यास समाधान</span>
+          <span class="text-xs text-slate-400">पृष्ठ ७८–७९</span>
+        </div>
+        <h4 class="text-base font-black text-slate-900">ग्रन्थि तथा हर्मोन खण्ड:</h4>
+        <div class="space-y-2 text-xs md:text-sm text-slate-700 border-b border-slate-100 pb-2">
+          <p><strong>(क) रगतमा चिनी नियन्त्रण गर्ने हर्मोन:</strong> ➔ <span class="text-rose-700 font-bold">इन्सुलिन (Insulin)</span></p>
+          <p><strong>(ख) फल पकाउने हर्मोन:</strong> ➔ <span class="text-rose-700 font-bold">इथाइलिन (Ethylene)</span></p>
+          <p><strong>(ग) Apical dominance गराउने हर्मोन:</strong> ➔ <span class="text-rose-700 font-bold">अक्सिन (Auxin)</span></p>
+          <p><strong>(घ) मुख्य ग्रन्थि (Master Gland):</strong> ➔ <span class="text-rose-700 font-bold">पिट्युटरी ग्रन्थि (Pituitary Gland)</span></p>
+          <p><strong>(ङ) पुरुषत्व विकास हर्मोन:</strong> ➔ <span class="text-rose-700 font-bold">टेस्टोस्टेरोन (Testosterone)</span></p>
+        </div>
+        <div class="space-y-2 text-xs md:text-sm text-slate-700 pt-1">
+          <p><strong>प्यान्क्रियाज मिश्रित ग्रन्थि किन ?</strong> यसले नलीमार्फत पाचक इन्जाइम (Amylase, Trypsin) र नलीविना सीधै रगतमा हर्मोन (इन्सुलिन र ग्लुकागन) दुवै उत्पादन गर्दछ।</p>
+          <p><strong>पिट्युटरी मास्टर ग्रन्थि किन ?</strong> यसका ट्रपिक हर्मोनहरूले शरीरका अन्य अधिकांश अन्तःस्रावी ग्रन्थिहरूको स्राव र गतिविधिलाई नियन्त्रण र निर्देशन गर्दछ।</p>
+          <p><strong>टिटानी रोग:</strong> प्याराथाइरोइड ग्रन्थिबाट निस्कने प्याराथर्मोनको कमीले रगतमा क्याल्सियम घटी मांसपेशी बाउँडिने टिटानी रोग लाग्छ।</p>
+        </div>
+      </div>
+
+      <!-- Card 6: Project Works -->
+      <div class="c9u5-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-cat="project qa">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-100 text-amber-800">पाठ्यपुस्तक परियोजना कार्यहरू (Project Works)</span>
+          <span class="text-xs text-slate-400">पृष्ठ ६४, ७२, ७९</span>
+        </div>
+        <h4 class="text-base font-black text-slate-900">परियोजना कार्य १, २ र ३ को प्रयोगात्मक प्रतिवेदन:</h4>
+        <div class="space-y-3 text-xs md:text-sm text-slate-700">
+          <div>
+            <strong class="text-amber-900 block font-bold">१. प्याजको जराको टुप्पामा मेरिस्टमेटिक कोष विभाजन:</strong>
+            <p class="text-slate-600">सिसाको गिलासमा प्याजको जरा २-३ सेमी उमारेर टुप्पाको २ मिमी भाग एसिटोकार्मिन रङ्गमा स्लाइड बनाई कम्पाउन्ड माइक्रोस्कोपमा हेर्दा तीव्र समसूत्री विभाजनका चरणहरू (Metaphase, Anaphase आदि) स्पष्ट देखियो।</p>
+          </div>
+          <div>
+            <strong class="text-amber-900 block font-bold">२. मानव अन्तःस्रावी ग्रन्थिहरूको थ्रीडी चार्ट तथा मोडेल:</strong>
+            <p class="text-slate-600">पिट्युटरी, थाइरोइड, प्याराथाइरोइड, एड्रिनल, प्यान्क्रियाज र गोनाड्सको शारीरिक स्थान, हर्मोन र असन्तुलनबाट हुने रोगहरू (Dwarfism, Gigantism, Goiter, Tetany, Diabetes) को स्पष्ट मोडेल निर्माण गरियो।</p>
+          </div>
+          <div>
+            <strong class="text-amber-900 block font-bold">३. प्रकाश अनुवर्तन (Phototropism) र अक्सिन परीक्षण:</strong>
+            <p class="text-slate-600">एकातिर मात्र प्वाल भएको बाकसमा बिरुवा राख्दा अक्सिन हर्मोन छायाँ परेको भागमा सरेर कोषहरू लाम्चिएपछि डाँठ प्रकाशतर्फ बाङ्किएको प्रमाणित भयो।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TAB 3: TIERS ================= -->
+  <div id="c9u5-view-tiers" class="hidden space-y-6">
+    <div class="flex items-center justify-between border-b border-slate-200 pb-3 flex-wrap gap-2">
+      <div>
+        <h3 class="text-lg font-black text-slate-900">तीन तहका स्तरीकृत नमुना प्रश्नोत्तरहरू</h3>
+        <p class="text-xs text-slate-500">ज्ञानात्मक (K), बोधात्मक (U) र उच्च दक्षता तथा प्रयोगात्मक (HA) का १६ स्तरीकृत प्रश्नहरू</p>
+      </div>
+      <!-- Filter Pills -->
+      <div class="flex items-center gap-1.5">
+        <button onclick="filterC9U5Tiers('all')" id="c9u5-tierbtn-all" class="px-3 py-1.5 rounded-xl text-xs font-black transition bg-purple-600 text-white shadow-sm cursor-pointer whitespace-nowrap">सबै तहहरू (१६)</button>
+        <button onclick="filterC9U5Tiers('k')" id="c9u5-tierbtn-k" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">ज्ञानात्मक (K - ५)</button>
+        <button onclick="filterC9U5Tiers('u')" id="c9u5-tierbtn-u" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">बोधात्मक (U - ६)</button>
+        <button onclick="filterC9U5Tiers('ha')" id="c9u5-tierbtn-ha" class="px-3 py-1.5 rounded-xl text-xs font-bold transition bg-white text-slate-700 hover:bg-slate-200 cursor-pointer whitespace-nowrap">उच्च दक्षता (HA - ५)</button>
+      </div>
+    </div>
+
+    <!-- Tier Cards Grid -->
+    <div id="c9u5-tier-cards" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- K1 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="k">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800">K-1 • ज्ञानात्मक</span>
+          <span class="text-xs text-slate-400">१ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">तन्तु (Tissue) भनेको के हो ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          उत्पत्ति, आन्तरिक बनावट र साझा जैविक कार्य एउटै भएका कोषहरूको विशेष समूहलाई <strong>तन्तु (Tissue)</strong> भनिन्छ। यसले बहुकोषीय जीवहरूमा श्रम विभाजन कायम गर्दछ।
+        </p>
+      </div>
+
+      <!-- K2 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="k">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800">K-2 • ज्ञानात्मक</span>
+          <span class="text-xs text-slate-400">१ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">मेनिन्जेजका तीनवटा तहहरूको नाम लेख्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          बाहिरबाट भित्रको क्रममा: (१) डुराम्याटर (Duramater), (२) एराक्नोइडम्याटर (Arachnoidmater), र (३) पायम्याटर (Piamater)।
+        </p>
+      </div>
+
+      <!-- K3 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="k">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800">K-3 • ज्ञानात्मक</span>
+          <span class="text-xs text-slate-400">१ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">मास्टर ग्रन्थि कुन ग्रन्थिलाई भनिन्छ र यो कहाँ हुन्छ ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          मस्तिष्कको फेदमा रहेको <strong>पिट्युटरी ग्रन्थि (Pituitary Gland)</strong> लाई मास्टर ग्रन्थि भनिन्छ। यसले अन्य अधिकांश ग्रन्थिहरूलाई नियन्त्रण गर्दछ।
+        </p>
+      </div>
+
+      <!-- K4 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="k">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800">K-4 • ज्ञानात्मक</span>
+          <span class="text-xs text-slate-400">१ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">मानव रगतमा पाइने तीन रक्तकोषहरू कुन कुन हुन् ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          १. रातो रक्तकोष (RBC) - अक्सिजन परिवहन<br/>
+          २. सेतो रक्तकोष (WBC) - रोग प्रतिरोधात्मक क्षमता<br/>
+          ३. प्लेटलेट्स (Platelets) - रगत जमाउने कार्य
+        </p>
+      </div>
+
+      <!-- K5 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="k">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800">K-5 • ज्ञानात्मक</span>
+          <span class="text-xs text-slate-400">१ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">ग्यासको रूपमा पाइने एकमात्र वनस्पति हर्मोन कुन हो ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          ग्यासको रूपमा पाइने एकमात्र प्राकृतिक वनस्पति हर्मोन <strong>इथाइलिन (Ethylene)</strong> हो। यसले फल पकाउने र पात झार्ने कार्य गर्छ।
+        </p>
+      </div>
+
+      <!-- U1 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="u">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">U-1 • बोधात्मक</span>
+          <span class="text-xs text-slate-400">२ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">जाइलम र फ्लोएम बीच परिवहनका दुई भिन्नता लेख्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          १. जाइलमले पानी र खनिज परिवहन गर्छ भने फ्लोएमले पातमा बनेको घुलित खाद्य पदार्थ वितरण गर्छ।<br/>
+          २. जाइलममा प्रवाह केवल एकतर्फी (जराबाट माथितर्फ) हुन्छ भने फ्लोएममा दुईतर्फी/बहुदिशा हुन्छ।
+        </p>
+      </div>
+
+      <!-- U2 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="u">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">U-2 • बोधात्मक</span>
+          <span class="text-xs text-slate-400">२ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">तातो वस्तु छुँदा हात मस्तिष्कले थाहा पाउनुअगावै किन हट्छ ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          यो एक अकाम्य क्रिया हो। छालाका रिसेप्टरबाट संवेग सिधै सुषुम्नामा पुगी तुरुन्तै मोटर न्युरोनमार्फत मांसपेशी खुम्चिन्छ। मस्तिष्कको ढिलो विश्लेषण पर्खिँदा शरीर डढ्न सक्ने भएकाले आत्मसुरक्षाका लागि बिजुलीको गतिमा हात पछि हट्छ।
+        </p>
+      </div>
+
+      <!-- U3 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="u">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">U-3 • बोधात्मक</span>
+          <span class="text-xs text-slate-400">२ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">इन्सुलिन र ग्लुकागनलाई एन्टागोनिस्टिक हर्मोन किन भनिन्छ ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          इन्सुलिनले बढी ग्लुकोजलाई ग्लाइकोजेनमा बदलेर रगतको ग्लुकोज घटाउँछ। ग्लुकागनले ग्लाइकोजेनलाई ग्लुकोजमा तोडेर रगतको ग्लुकोज बढाउँछ। दुवैले एक अर्काको ठ्याक्कै विपरीत कार्य गरी ग्लुकोज सन्तुलन कायम गर्दछन्।
+        </p>
+      </div>
+
+      <!-- U4 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="u">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">U-4 • बोधात्मक</span>
+          <span class="text-xs text-slate-400">२ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">सेरेब्रम र सेरेबेलम बीचको कार्यगत भिन्नता प्रस्ट पार्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          सेरेब्रम चेतना, सोच्ने, सम्झने, बोल्ने र बौद्धिक निर्णयको केन्द्र हो। सेरेबेलम शरीरको शारीरिक सन्तुलन र ऐच्छिक मांसपेशीहरूको सन्तुलित चाल मिलाउने केन्द्र हो।
+        </p>
+      </div>
+
+      <!-- U5 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="u">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">U-5 • बोधात्मक</span>
+          <span class="text-xs text-slate-400">२ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">बिरुवाको टुप्पो काटेपछि त्यो किन झाडीदार हुन्छ ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          टुप्पोको एपिकल मेरिस्टमले अक्सिन निकाली पार्श्व मुकुल पलाउन रोक्ने Apical dominance गर्दछ। टुप्पो काट्दा अक्सिन हट्छ र साइटोकाइनिनको प्रभावले पार्श्व हाँगाबिँगा तीव्र पलाएर बिरुवा झाडीदार बन्दछ।
+        </p>
+      </div>
+
+      <!-- U6 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="u">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">U-6 • बोधात्मक</span>
+          <span class="text-xs text-slate-400">२ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">एड्रिनलिनलाई किन '3F' आपतकालीन हर्मोन भनिन्छ ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          डर, त्रास वा आपतकालमा यो हर्मोन अचानक निस्किएर मुटुको धड्कन बढाउँछ, मांसपेशीमा रगत पठाउँछ र शरीरलाई संकटबाट भाग्न (Flight), सामना गर्न (Fight), वा सचेत हुन (Fright) तयार गर्दछ।
+        </p>
+      </div>
+
+      <!-- HA1 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="ha">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">HA-1 • उच्च दक्षता</span>
+          <span class="text-xs text-slate-400">४ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">रक्त ग्लुकोज सन्तुलन (Homeostasis) र मधुमेहको क्लिनिकल विश्लेषण गर्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          खानापछि रगतमा ग्लुकोज बढ्दा बिटा कोषले इन्सुलिन निकाली कलेजोमा ग्लाइकोजेन बनाउँछ। उपवासमा अल्फा कोषले ग्लुकागन निकाली ग्लाइकोजेन टुक्र्याउँछ। इन्सुलिनको अभाव भएमा ग्लुकोज कोषमा छिर्न नसकी रगतमा अत्यधिक बढेर पिसाबबाट खेर जाने <strong>मधुमेह (Diabetes Mellitus)</strong> हुन्छ।
+        </p>
+      </div>
+
+      <!-- HA2 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="ha">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">HA-2 • उच्च दक्षता</span>
+          <span class="text-xs text-slate-400">४ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">मेडुलामा चोट लाग्दा तत्काल मृत्यु र सेरेब्रममा चोट लाग्दा कोमा किन ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          सेरेब्रम चेतना र सोचाइको केन्द्र भएकाले चोट लाग्दा चेतन मन निष्क्रिय भई कोमा हुन्छ तर मुटु र फोक्सो चलिरहन्छ। मेडुलामा मुटुको धड्कन र श्वासप्रश्वासका अनिवार्य जीवन-रक्षक केन्द्रहरू हुने भएकाले चोट लाग्दा क्षणभरमै मृत्यु हुन्छ।
+        </p>
+      </div>
+
+      <!-- HA3 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="ha">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">HA-3 • उच्च दक्षता</span>
+          <span class="text-xs text-slate-400">४ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">अग्ला रुखहरूमा १०० मिटर माथिसम्म पानी कसरी उक्लन्छ ?</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          यो डिक्सन र जोलीको ट्रान्सपिरेसन पुल तथा कोहेसन-टेन्सन सिद्धान्तबाट हुन्छ। पातबाट पानी बाफ बनेर उड्दा शक्तिशाली खिचाव (Suction pressure) उत्पन्न हुन्छ। पानीका अणुहरूबीचको हाइड्रोजन बन्ड (Cohesion) ले जाइलमभित्र अखण्ड जल-खम्बा बनाउँछ र पानी टुप्पासम्म उक्लन्छ।
+        </p>
+      </div>
+
+      <!-- HA4 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="ha">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">HA-4 • उच्च दक्षता</span>
+          <span class="text-xs text-slate-400">४ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">प्रकाश अनुवर्तनमा अक्सिन हर्मोनको भूमिका प्रस्ट पार्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          अक्सिन प्रकाश-विमुख प्रकृति (Light-avoiding) को हुन्छ र छायाँ परेको अँध्यारो भागमा बसाइँ सर्छ। छायाँदार भागका कोषहरूमा अक्सिन बढी भई कोषहरू छिटो लाम्चिन्छन्। एकापट्टिको भाग छिटो बढेपछि डाँठ स्वतः प्रकाशतर्फ बाङ्किन्छ।
+        </p>
+      </div>
+
+      <!-- HA5 -->
+      <div class="c9u5-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3" data-tier="ha">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">HA-5 • उच्च दक्षता</span>
+          <span class="text-xs text-slate-400">४ अङ्क</span>
+        </div>
+        <h4 class="text-sm md:text-base font-bold text-slate-900">पुड्कोपन (Dwarfism) र एक्रोमेगाली (Acromegaly) बीचको फरक विश्लेषण गर्नुहोस्।</h4>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+          पुड्कोपन बाल्यकालमा वृद्धि हर्मोनको कमीले हाडहरूको वृद्धि रोकिई उचाइ ३-४ फिट मात्र हुने अवस्था हो तर शारीरिक अनुपात मिलेको हुन्छ। एक्रोमेगाली वयस्कमा हर्मोन बढी भई उचाइ नबढे तापनि तल्लो च्यापु, नाक, हातखुट्टा भद्दा र बाक्ला हुने अवस्था हो।
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TAB 4: QUIZ ================= -->
+  <div id="c9u5-view-quiz" class="hidden space-y-6">
+    <div class="flex items-center justify-between border-b border-slate-200 pb-3 flex-wrap gap-2">
+      <div>
+        <h3 class="text-lg font-black text-slate-900">स्वमूल्याङ्कन अनलाइन क्विज (Self-Assessment Quiz)</h3>
+        <p class="text-xs text-slate-500">तन्तु, स्नायु प्रणाली र हर्मोन सम्बन्धी १० वस्तुगत प्रश्नहरू</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-xs font-bold px-3 py-1.5 rounded-xl bg-purple-50 text-purple-700 border border-purple-200">
+          प्राप्ताङ्क: <strong id="c9u5-quiz-score-badge" class="text-purple-900 text-sm">० / १०</strong>
+        </span>
+        <button onclick="resetC9U5Quiz()" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 transition cursor-pointer">
+          पुनः सुरु गर्नुहोस् (Reset)
+        </button>
+      </div>
+    </div>
+
+    <!-- Quiz Questions Container -->
+    <div id="c9u5-quiz-container" class="space-y-4">
+      <!-- Rendered dynamically by JS renderC9U5Quiz() -->
+    </div>
+  </div>
+</div>

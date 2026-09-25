@@ -1,0 +1,940 @@
+
+<!-- ================= CLASS 9 UNIT 1 CONTAINER ================= -->
+<div id="c9-view-1" class="flex-1 min-w-0 flex flex-col">
+  <!-- Unit Header Banner -->
+  <div class="border-b border-slate-100 pb-5 mb-6 flex flex-wrap items-center justify-between gap-4">
+    <div>
+      <div class="flex items-center gap-2 mb-1">
+        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-cyan-100 text-cyan-800 border border-cyan-200">
+          कक्षा ९ विज्ञान तथा प्रविधि | एकाइ १
+        </span>
+        <span class="text-xs text-slate-400">•</span>
+        <span class="text-xs text-slate-500 font-medium">पाठ्यपुस्तक पृष्ठ १–१६</span>
+      </div>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+        एकाइ १: वैज्ञानिक अध्ययन (Scientific Study)
+      </h2>
+      <p class="text-xs md:text-sm text-slate-500 mt-1">
+        वैज्ञानिक सिकाइका चरणहरू, विज्ञानका क्षेत्रहरू र अन्तरसम्बन्ध, मेट्रिक उपसर्ग, न्यूनतम नाप, वैज्ञानिक सङ्केतन र प्रयोगशाला सुरक्षा
+      </p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="inline-flex items-center px-3 py-1 rounded-xl text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+        ✓ सम्पूर्ण पाठ्यपुस्तक अभ्यास तथा क्रियाकलाप समावेश
+      </span>
+    </div>
+  </div>
+
+  <!-- 4-Tab Navigation Bar -->
+  <div class="flex border-b border-slate-200 gap-2 mb-6 overflow-x-auto pb-1 text-sm font-bold">
+    <button onclick="setTabC9U1('concepts')" id="c9u1-tab-concepts" class="px-5 py-2.5 rounded-xl bg-cyan-600 text-white shadow-sm font-bold transition whitespace-nowrap cursor-pointer">
+      १. सैद्धान्तिक अवधारणा तथा भर्चुअल विज्ञान ल्याब
+    </button>
+    <button onclick="setTabC9U1('exercises')" id="c9u1-tab-exercises" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+      २. सम्पूर्ण अभ्यास समाधान (१ देखि २ र क्रियाकलाप)
+    </button>
+    <button onclick="setTabC9U1('tiers')" id="c9u1-tab-tiers" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+      ३. तीन तहका नमुना प्रश्नहरू (१६ प्रश्न)
+    </button>
+    <button onclick="setTabC9U1('quiz')" id="c9u1-tab-quiz" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+      ४. स्वमूल्याङ्कन क्विज (१० प्रश्न)
+    </button>
+  </div>
+
+  <!-- Tab Contents -->
+  <!-- ================= TAB 1: CONCEPTS & VIRTUAL SCIENCE LAB ================= -->
+<div id="c9u1-view-concepts" class="space-y-8">
+  <!-- Key Theoretical Cards Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Card 1: Scientific Process & Steps -->
+    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-3xl p-6 shadow-sm space-y-3">
+      <div class="flex items-center justify-between border-b border-blue-200/60 pb-3">
+        <h3 class="font-black text-blue-900 text-base md:text-lg flex items-center gap-2">
+          <span>🔬 १. वैज्ञानिक अध्ययन र सिकाइका चरणहरू</span>
+        </h3>
+        <span class="text-xs bg-blue-600 text-white font-bold px-2.5 py-1 rounded-full">आधारभूत विधि</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-700 leading-relaxed">
+        प्रकृतिका घटनाहरूको अवलोकन गरी प्रमाणका आधारमा तथ्य पत्ता लगाउने व्यवस्थित विधिलाई <strong>वैज्ञानिक अध्ययन</strong> भनिन्छ।
+      </p>
+      <div class="bg-white/90 p-3.5 rounded-2xl border border-blue-100 text-xs space-y-2 font-medium text-slate-700">
+        <div class="font-bold text-blue-800 flex items-center gap-1.5">
+          <span>📋 वैज्ञानिक पद्धतिका ५ अनिवार्य चरणहरू:</span>
+        </div>
+        <ol class="list-decimal list-inside space-y-1 text-slate-600 pl-1">
+          <li><strong>अवलोकन र प्रश्न निर्माण:</strong> घटना नियाल्ने र खोजमूलक प्रश्न बनाउने।</li>
+          <li><strong>परिकल्पना निर्माण (Hypothesis):</strong> परीक्षणयोग्य वैज्ञानिक अनुमान।</li>
+          <li><strong>प्रयोग तथा तथ्याङ्क सङ्कलन:</strong> चरहरू नियन्त्रण गरी प्रयोग गर्ने।</li>
+          <li><strong>विश्लेषण र निष्कर्ष:</strong> तथ्याङ्कबाट सत्य पहिल्याउने।</li>
+          <li><strong>परीक्षण र प्रतिवेदन:</strong> निष्कर्ष मिले प्रतिवेदन लेख्ने, नमिले परिमार्जन गर्ने।</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Card 2: Science Fields & Interrelations -->
+    <div class="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 rounded-3xl p-6 shadow-sm space-y-3">
+      <div class="flex items-center justify-between border-b border-emerald-200/60 pb-3">
+        <h3 class="font-black text-emerald-900 text-base md:text-lg flex items-center gap-2">
+          <span>🌐 २. विज्ञानका क्षेत्र र अन्तरसम्बन्ध</span>
+        </h3>
+        <span class="text-xs bg-emerald-600 text-white font-bold px-2.5 py-1 rounded-full">अन्तरविषयक</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-700 leading-relaxed">
+        विज्ञानका शाखाहरू छुट्टाछुट्टै नभई एकापसमा अन्तरसम्बन्धित छन्। एउटाको सिद्धान्त अर्कोमा अपरिहार्य हुन्छ।
+      </p>
+      <div class="grid grid-cols-2 gap-2 text-xs">
+        <div class="bg-white/90 p-2.5 rounded-xl border border-emerald-100">
+          <div class="font-bold text-emerald-800">जीव विज्ञान (Biology)</div>
+          <p class="text-[11px] text-slate-600">सजीव, कोष र वंशाणु। <em>(मेन्डेल, डा. रुइत)</em></p>
+        </div>
+        <div class="bg-white/90 p-2.5 rounded-xl border border-emerald-100">
+          <div class="font-bold text-emerald-800">भौतिक विज्ञान (Physics)</div>
+          <p class="text-[11px] text-slate-600">पदार्थ, बल र ऊर्जा। <em>(न्युटन, हकिङ)</em></p>
+        </div>
+        <div class="bg-white/90 p-2.5 rounded-xl border border-emerald-100">
+          <div class="font-bold text-emerald-800">रसायन विज्ञान (Chemistry)</div>
+          <p class="text-[11px] text-slate-600">परमाणु र प्रतिक्रिया। <em>(डाल्टन, मेन्डेलिभ)</em></p>
+        </div>
+        <div class="bg-white/90 p-2.5 rounded-xl border border-emerald-100">
+          <div class="font-bold text-emerald-800">बायोफिजिक्स (Biophysics)</div>
+          <p class="text-[11px] text-slate-600">लेन्सबाट आँखाको उपचार (IOL), एक्स-रे, MRI।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Metric Prefixes & Scientific Notation -->
+    <div class="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-3xl p-6 shadow-sm space-y-3">
+      <div class="flex items-center justify-between border-b border-amber-200/60 pb-3">
+        <h3 class="font-black text-amber-900 text-base md:text-lg flex items-center gap-2">
+          <span>📐 ३. वैज्ञानिक सङ्केतन र मेट्रिक उपसर्ग</span>
+        </h3>
+        <span class="text-xs bg-amber-600 text-white font-bold px-2.5 py-1 rounded-full">M × 10ⁿ</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-700 leading-relaxed">
+        अत्यन्त ठूला वा सूक्ष्म सङ्ख्याहरूलाई छोटकरी र मानक रूपमा लेख्न <strong>वैज्ञानिक सङ्केतन</strong> प्रयोग गरिन्छ।
+      </p>
+      <div class="bg-white/90 p-3 rounded-2xl border border-amber-100 text-xs space-y-1.5">
+        <div class="flex justify-between items-center text-slate-800 font-bold border-b border-slate-100 pb-1">
+          <span>मानक ढाँचा:</span>
+          <span class="text-amber-700 font-mono text-sm">M × 10ⁿ (जहाँ १ ≤ M &lt; १०)</span>
+        </div>
+        <div class="grid grid-cols-2 gap-1.5 text-[11px] text-slate-600 pt-1">
+          <div>• बायाँ सार्दा: घाताङ्क धनात्मक ($+n$)</div>
+          <div>• दायाँ सार्दा: घाताङ्क ऋणात्मक ($-n$)</div>
+          <div>• Giga ($\text{G}$) $= 10^9$ (१ अर्ब)</div>
+          <div>• Mega ($\text{M}$) $= 10^6$ (१० लाख)</div>
+          <div>• Micro ($\mu$) $= 10^{-6}$ (दश लाखौं)</div>
+          <div>• Nano ($\text{n}$) $= 10^{-9}$ (अर्बौं भाग)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: Least Count, Precision & Lab Safety -->
+    <div class="bg-gradient-to-br from-purple-50 to-fuchsia-50 border border-purple-200 rounded-3xl p-6 shadow-sm space-y-3">
+      <div class="flex items-center justify-between border-b border-purple-200/60 pb-3">
+        <h3 class="font-black text-purple-900 text-base md:text-lg flex items-center gap-2">
+          <span>🛡️ ४. न्यूनतम नाप, यथार्थता र सुरक्षा</span>
+        </h3>
+        <span class="text-xs bg-purple-600 text-white font-bold px-2.5 py-1 rounded-full">सुरक्षा पहिलो</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-700 leading-relaxed">
+        यन्त्रले नाप्न सक्ने सबैभन्दा सानो परिमाणलाई <strong>न्यूनतम नाप (Least Count)</strong> भनिन्छ। न्यूनतम नाप जति सानो भयो, नाप त्यति बढी यथार्थ र सूक्ष्म हुन्छ।
+      </p>
+      <div class="bg-white/90 p-3 rounded-2xl border border-purple-100 text-xs space-y-1.5">
+        <div class="flex justify-between text-slate-700 font-medium">
+          <span>मिटर स्केल: <strong class="text-purple-800">०.१ cm (१ mm)</strong></span>
+          <span>स्टपवाच: <strong class="text-purple-800">०.०१ s</strong></span>
+        </div>
+        <div class="flex justify-between text-slate-700 font-medium border-b border-slate-100 pb-1">
+          <span>भर्नियर क्यालिपर: <strong class="text-purple-800">०.०१ cm</strong></span>
+          <span>स्क्रू गज: <strong class="text-purple-800">०.००१ cm</strong></span>
+        </div>
+        <div class="text-[11px] text-rose-700 font-bold pt-1">
+          ⚠️ प्रयोगशाला सुरक्षा: एप्रोन, पन्जा र चस्मा अनिवार्य; कुनै रसायन नचाख्ने; अग्निनियन्त्रक तयारी राख्ने।
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= VIRTUAL SCIENCE LAB (3 MODES) ================= -->
+  <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 md:p-8 text-white shadow-xl space-y-6">
+    <!-- Lab Header -->
+    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 text-xs font-bold border border-cyan-500/30 mb-2">
+          <span>🧪 भर्चुअल विज्ञान प्रयोगशाला (Virtual Science Lab)</span>
+        </div>
+        <h3 class="text-xl md:text-2xl font-black text-white">वैज्ञानिक अध्ययन तथा मापन ल्याब</h3>
+        <p class="text-xs md:text-sm text-slate-400">वैज्ञानिक सङ्केतन, न्यूनतम नाप र अनुसन्धान प्रक्रियाको प्रत्यक्ष इन्टरएक्टिभ अभ्यास</p>
+      </div>
+
+      <!-- Mode Switcher Buttons -->
+      <div class="flex flex-wrap gap-2 bg-slate-800/80 p-1.5 rounded-2xl border border-slate-700">
+        <button onclick="switchC9U1Lab('notation')" id="c9u1-lab-btn-notation" class="px-3.5 py-2 rounded-xl text-xs font-black transition bg-cyan-600 text-white shadow-sm cursor-pointer">
+          १. वैज्ञानिक अङ्कन स्टुडियो
+        </button>
+        <button onclick="switchC9U1Lab('leastcount')" id="c9u1-lab-btn-leastcount" class="px-3.5 py-2 rounded-xl text-xs font-bold transition text-slate-300 hover:text-white cursor-pointer">
+          २. न्यूनतम नाप (Least Count)
+        </button>
+        <button onclick="switchC9U1Lab('inquiry')" id="c9u1-lab-btn-inquiry" class="px-3.5 py-2 rounded-xl text-xs font-bold transition text-slate-300 hover:text-white cursor-pointer">
+          ३. वैज्ञानिक अनुसन्धान सिमुलेटर
+        </button>
+      </div>
+    </div>
+
+    <!-- LAB MODE 1: SCIENTIFIC NOTATION & EXPONENT STUDIO -->
+    <div id="c9u1-lab-mode-notation" class="space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Input & Controls -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700 space-y-4">
+            <h4 class="font-bold text-sm text-cyan-300 flex items-center gap-2">
+              <span>🔢 सङ्ख्या प्रविष्ट गर्नुहोस् वा नमुना छान्नुहोस्:</span>
+            </h4>
+            <div class="space-y-1.5">
+              <label class="text-xs text-slate-400">साधारण दशमलव वा पूर्णाङ्क:</label>
+              <div class="flex gap-2">
+                <input type="text" id="c9u1-num-input" value="1230000" oninput="calculateScientificNotation()" placeholder="जस्तै: 1230000 वा 0.000024" class="flex-1 px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white font-mono text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                <button onclick="calculateScientificNotation()" class="px-4 py-2.5 bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-bold rounded-xl transition cursor-pointer">रूपान्तरण</button>
+              </div>
+            </div>
+
+            <!-- Presets -->
+            <div class="space-y-2">
+              <span class="text-xs font-bold text-slate-400">पाठ्यपुस्तक तथा वैज्ञानिक नमुनाहरू:</span>
+              <div class="flex flex-wrap gap-2">
+                <button onclick="setC9U1Preset('1230000')" class="px-2.5 py-1.5 rounded-lg text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-200 font-mono">1230000</button>
+                <button onclick="setC9U1Preset('0.00042')" class="px-2.5 py-1.5 rounded-lg text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-200 font-mono">0.00042</button>
+                <button onclick="setC9U1Preset('0.00000001')" class="px-2.5 py-1.5 rounded-lg text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-200 font-mono">0.00000001</button>
+                <button onclick="setC9U1Preset('300000000')" class="px-2.5 py-1.5 rounded-lg text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-200 font-mono">प्रकाशको गति (3×10⁸)</button>
+                <button onclick="setC9U1Preset('0.000024')" class="px-2.5 py-1.5 rounded-lg text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-200 font-mono">0.000024 (MCQ घ)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Output Display & Step-by-Step Card -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="bg-gradient-to-br from-slate-800 to-slate-850 p-6 rounded-2xl border border-slate-700 space-y-4">
+            <div class="flex justify-between items-center border-b border-slate-700 pb-3">
+              <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">वैज्ञानिक सङ्केतन नतिजा (Result)</span>
+              <span id="c9u1-valid-badge" class="px-2.5 py-0.5 rounded-full text-xs font-black bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">मानक रूप ✓</span>
+            </div>
+
+            <div class="text-center py-4 bg-slate-950/70 rounded-2xl border border-slate-800">
+              <div class="text-xs text-slate-400 mb-1">M × 10ⁿ रूप:</div>
+              <div id="c9u1-res-notation" class="text-2xl md:text-3xl font-black text-cyan-300 font-mono tracking-wide">
+                १.२३ × १०⁶
+              </div>
+              <div id="c9u1-res-eng" class="text-xs text-slate-400 mt-2 font-mono">
+                1.23 × 10^6
+              </div>
+            </div>
+
+            <!-- Details Table -->
+            <div class="bg-slate-900/90 p-3.5 rounded-xl border border-slate-800 text-xs space-y-2">
+              <div class="flex justify-between text-slate-400">
+                <span>आधार अङ्क (Mantissa - M):</span>
+                <span id="c9u1-res-m" class="text-white font-bold font-mono">1.23</span>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>१० को घाताङ्क (Exponent - n):</span>
+                <span id="c9u1-res-n" class="text-amber-400 font-bold font-mono">+6</span>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>दशमलव सरेको दिशा र स्थान:</span>
+                <span id="c9u1-res-shift" class="text-slate-200 font-medium">बायाँतर्फ ६ स्थान</span>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>सार्थक अङ्क (Significant Figures):</span>
+                <span id="c9u1-res-sig" class="text-emerald-400 font-bold">३ वटा (1, 2, 3)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAB MODE 2: LEAST COUNT & INSTRUMENT PRECISION LAB -->
+    <div id="c9u1-lab-mode-leastcount" class="hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <!-- Instrument Selector -->
+        <div class="lg:col-span-4 space-y-3">
+          <div class="text-xs font-bold text-slate-400 mb-1">उपकरण छनौट गर्नुहोस्:</div>
+          <button onclick="selectC9U1Instrument('ruler')" id="btn-inst-ruler" class="w-full text-left p-3.5 rounded-2xl transition border border-cyan-500 bg-cyan-950/40 text-cyan-200 font-bold text-xs flex justify-between items-center cursor-pointer">
+            <div>
+              <div class="font-black text-sm">साधारण मिटर स्केल</div>
+              <div class="text-[11px] text-cyan-300 font-normal">न्यूनतम नाप: १ mm (०.१ cm)</div>
+            </div>
+            <span class="text-base">📏</span>
+          </button>
+
+          <button onclick="selectC9U1Instrument('stopwatch')" id="btn-inst-stopwatch" class="w-full text-left p-3.5 rounded-2xl transition border border-slate-700 bg-slate-800 text-slate-300 hover:text-white font-bold text-xs flex justify-between items-center cursor-pointer">
+            <div>
+              <div class="font-black text-sm">डिजिटल स्टपवाच</div>
+              <div class="text-[11px] text-slate-400 font-normal">न्यूनतम नाप: ०.०१ सेकेन्ड</div>
+            </div>
+            <span class="text-base">⏱️</span>
+          </button>
+
+          <button onclick="selectC9U1Instrument('ammeter')" id="btn-inst-ammeter" class="w-full text-left p-3.5 rounded-2xl transition border border-slate-700 bg-slate-800 text-slate-300 hover:text-white font-bold text-xs flex justify-between items-center cursor-pointer">
+            <div>
+              <div class="font-black text-sm">माइक्रो-एमिटर (μA)</div>
+              <div class="text-[11px] text-slate-400 font-normal">न्यूनतम नाप: १ μA (क्रियाकलाप १.५)</div>
+            </div>
+            <span class="text-base">⚡</span>
+          </button>
+
+          <button onclick="selectC9U1Instrument('cylinder')" id="btn-inst-cylinder" class="w-full text-left p-3.5 rounded-2xl transition border border-slate-700 bg-slate-800 text-slate-300 hover:text-white font-bold text-xs flex justify-between items-center cursor-pointer">
+            <div>
+              <div class="font-black text-sm">मेजरिङ सिलिन्डर (५० mL)</div>
+              <div class="text-[11px] text-slate-400 font-normal">न्यूनतम नाप: १ mL</div>
+            </div>
+            <span class="text-base">🧪</span>
+          </button>
+        </div>
+
+        <!-- Interactive SVG Visualizer & Analysis Card -->
+        <div class="lg:col-span-8 space-y-4">
+          <div class="bg-slate-950 p-5 rounded-3xl border border-slate-800 flex flex-col items-center justify-center min-h-[220px]">
+            <svg id="c9u1-inst-svg" viewBox="0 0 500 160" class="w-full max-w-[480px] h-[150px]">
+              <!-- Dynamically populated via JS -->
+            </svg>
+            <div id="c9u1-inst-reading-box" class="mt-2 text-center text-xs text-slate-300 font-medium">
+              हालको रिडिङ: <span id="c9u1-inst-reading" class="text-amber-400 font-mono font-bold text-sm">३.७ cm</span>
+            </div>
+          </div>
+
+          <!-- Description Card -->
+          <div id="c9u1-inst-info" class="bg-slate-800/90 p-4 rounded-2xl border border-slate-700 text-xs text-slate-300 space-y-1.5">
+            <div class="font-bold text-cyan-300 text-sm flex items-center justify-between">
+              <span id="c9u1-inst-title">साधारण मिटर स्केल (Meter Scale)</span>
+              <span id="c9u1-inst-badge" class="px-2 py-0.5 rounded-full text-[11px] bg-cyan-500/20 text-cyan-300">LC = 1 mm</span>
+            </div>
+            <p id="c9u1-inst-desc" class="text-slate-400 leading-relaxed">
+              १ सेन्टिमिटरलाई १० बराबर साना भागहरूमा बाँडिएको हुन्छ। १ सानो भाग = ०.१ cm = १ mm। १ mm भन्दा मसिनो नाप यसले सिधै लिन सक्दैन।
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAB MODE 3: SCIENTIFIC INQUIRY & HYPOTHESIS SIMULATOR -->
+    <div id="c9u1-lab-mode-inquiry" class="hidden space-y-6">
+      <div class="bg-slate-800/70 p-6 rounded-3xl border border-slate-700 space-y-5">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700 pb-3">
+          <div>
+            <h4 class="font-bold text-base text-cyan-300">अनुसन्धान नमुना: २ मिटर उचाइबाट गुच्चा खसाल्ने प्रयोग (क्रियाकलाप १.६)</h4>
+            <p class="text-xs text-slate-400">पटक-पटक नाप लिँदा आउने फरक र औसत समयको वैज्ञानिक महत्त्व</p>
+          </div>
+          <button onclick="runC9U1InquiryTrial()" class="px-4 py-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs rounded-xl shadow-md transition cursor-pointer flex items-center gap-1.5">
+            <span>▶️ ३ पटक प्रयोग गर्नुहोस्</span>
+          </button>
+        </div>
+
+        <!-- 3 Trials Progress Simulation -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+          <div class="bg-slate-900/90 p-4 rounded-2xl border border-slate-800 space-y-2">
+            <span class="text-xs text-slate-400 font-bold">पहिलो पटक (Trial 1)</span>
+            <div id="c9u1-trial-1" class="text-2xl font-black text-amber-400 font-mono">०.६४ s</div>
+            <div class="text-[11px] text-slate-500">प्रतिक्रिया समय सामान्य</div>
+          </div>
+          <div class="bg-slate-900/90 p-4 rounded-2xl border border-slate-800 space-y-2">
+            <span class="text-xs text-slate-400 font-bold">दोस्रो पटक (Trial 2)</span>
+            <div id="c9u1-trial-2" class="text-2xl font-black text-amber-400 font-mono">०.६७ s</div>
+            <div class="text-[11px] text-slate-500">थोरै ढिला थिचियो (+०.०३)</div>
+          </div>
+          <div class="bg-slate-900/90 p-4 rounded-2xl border border-slate-800 space-y-2">
+            <span class="text-xs text-slate-400 font-bold">तेस्रो पटक (Trial 3)</span>
+            <div id="c9u1-trial-3" class="text-2xl font-black text-amber-400 font-mono">०.६३ s</div>
+            <div class="text-[11px] text-slate-500">छिटो प्रतिक्रिया</div>
+          </div>
+        </div>
+
+        <!-- Calculated Average & Scientific Analysis -->
+        <div class="bg-gradient-to-r from-cyan-950/60 to-slate-900 p-4 rounded-2xl border border-cyan-800/50 flex flex-wrap items-center justify-between gap-4">
+          <div class="space-y-1">
+            <div class="text-xs text-cyan-300 font-bold">गणना गरिएको औसत समय (Average Time - t_avg):</div>
+            <div class="text-sm text-slate-200">
+              $$\text{औसत समय } (t_{\text{avg}}) = \frac{t_1 + t_2 + t_3}{3} = \frac{0.64 + 0.67 + 0.63}{3} = \mathbf{0.65\text{ सेकेन्ड}}$$
+            </div>
+          </div>
+          <div class="bg-emerald-500/20 text-emerald-300 text-xs px-3 py-2 rounded-xl border border-emerald-500/30 font-bold">
+            ✓ व्यक्तिगत त्रुटि न्यूनीकरण भयो (Error Minimized)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- ================= TAB 2: COMPLETE EXERCISE SOLUTIONS ================= -->
+<div id="c9u1-view-exercises" class="hidden space-y-6">
+  <!-- Sub-section Filter Bar -->
+  <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200">
+    <div class="flex items-center gap-2">
+      <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">अभ्यास फिल्टर:</span>
+      <div class="flex flex-wrap gap-1.5">
+        <button onclick="filterC9U1Ex('all')" id="btn-c9u1-filter-all" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-xs cursor-pointer">
+          सबै समाधान
+        </button>
+        <button onclick="filterC9U1Ex('mcq')" id="btn-c9u1-filter-mcq" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          १. वस्तुगत प्रश्नहरू (MCQs)
+        </button>
+        <button onclick="filterC9U1Ex('theory')" id="btn-c9u1-filter-theory" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          २. सैद्धान्तिक तथा कारण (क देखि झ)
+        </button>
+        <button onclick="filterC9U1Ex('math')" id="btn-c9u1-filter-math" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          ३. वैज्ञानिक सङ्केतन (ञ)
+        </button>
+        <button onclick="filterC9U1Ex('activity')" id="btn-c9u1-filter-activity" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          ४. प्रयोगात्मक क्रियाकलाप (१.५ र १.६)
+        </button>
+      </div>
+    </div>
+    <span class="text-xs text-slate-500 font-bold">पाठ्यपुस्तक पृष्ठ १५–१६</span>
+  </div>
+
+  <!-- GROUP 1: MCQs -->
+  <div class="c9u1-ex-group" data-group="mcq">
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="border-b border-slate-100 pb-3 flex justify-between items-center">
+        <h4 class="font-black text-slate-900 text-base flex items-center gap-2">
+          <span>🎯 प्रश्न १: सही उत्तरमा चिह्न लगाउनुहोस् (MCQs)</span>
+        </h4>
+        <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2.5 py-1 rounded-full">वस्तुगत प्रश्न</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+        <!-- MCQ 1 -->
+        <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/60 space-y-2">
+          <div class="font-bold text-slate-800">(क) भेटेनरी पेसा विज्ञानको कुन शाखासँग सम्बन्धित छ ?</div>
+          <div class="text-xs text-slate-600 space-y-0.5">
+            <div>(अ) भौतिक विज्ञान &nbsp;&nbsp; <strong>(आ) जीव विज्ञान ✓</strong></div>
+            <div>(इ) रसायन विज्ञान &nbsp;&nbsp; (ई) भू विज्ञान</div>
+          </div>
+          <div class="p-2 bg-emerald-50 text-emerald-900 border border-emerald-200 rounded-lg text-xs font-medium">
+            <strong>उत्तर: (आ) जीव विज्ञान</strong> — पशु-पन्छीको स्वास्थ्य, रोग र शारीरिक अध्ययन जीव विज्ञानअन्तर्गत पर्छ।
+          </div>
+        </div>
+
+        <!-- MCQ 2 -->
+        <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/60 space-y-2">
+          <div class="font-bold text-slate-800">(ख) Johann Gregor Mendel कुन विज्ञानको क्षेत्रसँग सम्बन्धित छन् ?</div>
+          <div class="text-xs text-slate-600 space-y-0.5">
+            <div>(अ) भौतिक विज्ञान &nbsp;&nbsp; (आ) रसायन विज्ञान</div>
+            <div><strong>(इ) जीव विज्ञान ✓</strong> &nbsp;&nbsp; (ई) खगोल विज्ञान</div>
+          </div>
+          <div class="p-2 bg-emerald-50 text-emerald-900 border border-emerald-200 rounded-lg text-xs font-medium">
+            <strong>उत्तर: (इ) जीव विज्ञान</strong> — ग्रेगर मेन्डेलले केराउमा प्रयोग गरी वंशाणुशास्त्र (Genetics) को नियम प्रतिपादन गरेका थिए।
+          </div>
+        </div>
+
+        <!-- MCQ 3 -->
+        <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/60 space-y-2">
+          <div class="font-bold text-slate-800">(ग) स्केलको प्रयोग गरी नाप्दा लिइने न्यूनतम नाप कुन हो ?</div>
+          <div class="text-xs text-slate-600 space-y-0.5">
+            <div>(अ) सेन्टिमिटर &nbsp;&nbsp; <strong>(आ) मिलिमिटर ✓</strong></div>
+            <div>(इ) डेसिमिटर &nbsp;&nbsp; (ई) मिटर</div>
+          </div>
+          <div class="p-2 bg-emerald-50 text-emerald-900 border border-emerald-200 rounded-lg text-xs font-medium">
+            <strong>उत्तर: (आ) मिलिमिटर</strong> — स्केलको १ सानो खण्ड $= \frac{1}{10}\text{ cm} = 0.1\text{ cm} = 1\text{ mm}$ हुन्छ।
+          </div>
+        </div>
+
+        <!-- MCQ 4 -->
+        <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/60 space-y-2">
+          <div class="font-bold text-slate-800">(घ) 0.000024 अङ्कलाई वैज्ञानिक सङ्केतमा कसरी लेखिन्छ ?</div>
+          <div class="text-xs text-slate-600 space-y-0.5">
+            <div>(अ) $2 \times 10^{-5}$ &nbsp;&nbsp; (आ) $24 \times 10^{-5}$</div>
+            <div>(इ) $0.24 \times 10^{-6}$ &nbsp;&nbsp; <strong>(ई) $2.4 \times 10^{-5}$ ✓</strong></div>
+          </div>
+          <div class="p-2 bg-emerald-50 text-emerald-900 border border-emerald-200 rounded-lg text-xs font-medium">
+            <strong>उत्तर: (ई) $2.4 \times 10^{-5}$</strong> — दशमलव ५ स्थान दायाँ सर्दा पहिलो गैर-शून्य अङ्कपछि $2.4$ र घाताङ्क $-5$ हुन्छ।
+          </div>
+        </div>
+
+        <!-- MCQ 5 -->
+        <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/60 space-y-2 md:col-span-2">
+          <div class="font-bold text-slate-800">(ङ) Giga prefix को मान कति हुन्छ ?</div>
+          <div class="text-xs text-slate-600 space-y-0.5">
+            <div><strong>(अ) $10^9$ ✓</strong> &nbsp;&nbsp; (आ) $10^{10}$ &nbsp;&nbsp; (इ) $10^{11}$ &nbsp;&nbsp; (ई) $10^{12}$</div>
+          </div>
+          <div class="p-2 bg-emerald-50 text-emerald-900 border border-emerald-200 rounded-lg text-xs font-medium">
+            <strong>उत्तर: (अ) $10^9$</strong> — गिगा (Giga) मेट्रिक उपसर्गले १ अर्ब ($10^9$) मान जनाउँछ।
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GROUP 2: THEORETICAL & REASONING QUESTIONS (क देखि झ) -->
+  <div class="c9u1-ex-group space-y-4" data-group="theory">
+    <!-- Q2 (क) -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (क): वैज्ञानिक अध्ययन कसरी गरिन्छ, लेख्नुहोस् ।</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1">
+        <p><strong>उत्तर:</strong> वैज्ञानिक अध्ययन निम्न ५ व्यवस्थित चरणहरूबाट गरिन्छ:</p>
+        <ol class="list-decimal list-inside space-y-1 text-slate-600 pl-2">
+          <li><strong>अवलोकन र जिज्ञासा (Observation & Questioning):</strong> घटना नियाल्ने र खोजमूलक प्रश्न बनाउने।</li>
+          <li><strong>परिकल्पना निर्माण (Hypothesis):</strong> समस्याको परीक्षणयोग्य सम्भावित उत्तर अनुमान गर्ने।</li>
+          <li><strong>प्रयोग तथा तथ्याङ्क सङ्कलन (Experiment & Data):</strong> नियन्त्रित चरहरूका आधारमा प्रयोग गरी तथ्याङ्क लिने।</li>
+          <li><strong>तथ्याङ्क विश्लेषण र निष्कर्ष (Analysis & Conclusion):</strong> तथ्याङ्कको गणितीय/वैज्ञानिक विश्लेषण गरी निष्कर्ष निकाल्ने।</li>
+          <li><strong>परिकल्पना परीक्षण र प्रतिवेदन:</strong> निष्कर्ष मिले प्रतिवेदन तयार गर्ने; नमिले परिकल्पना परिमार्जन गरी पुनः परीक्षण गर्ने।</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q2 (ख) -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (ख): विज्ञानका क्षेत्रहरूको सूची बनाउनुहोस् ।</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1">
+        <p><strong>उत्तर:</strong> विज्ञानका मुख्य क्षेत्रहरू:</p>
+        <ul class="list-disc list-inside space-y-1 text-slate-600 pl-2">
+          <li><strong>जीव विज्ञान (Biology):</strong> प्राणीशास्त्र, वनस्पतिशास्त्र, सूक्ष्मजीव विज्ञान, वंशाणुशास्त्र।</li>
+          <li><strong>भौतिक विज्ञान (Physics):</strong> मेकानिक्स, अप्टिक्स, विद्युत् र चुम्बकत्व, आणविक भौतिकी।</li>
+          <li><strong>रसायन विज्ञान (Chemistry):</strong> अजैविक रसायन, जैविक रसायन, भौतिक रसायन।</li>
+          <li><strong>अन्तरविषयक क्षेत्रहरू:</strong> भू-विज्ञान (Geology), खगोल विज्ञान (Astronomy), वातावरण विज्ञान र कृषि विज्ञान।</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q2 (ग) -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (ग): विज्ञानका क्षेत्रहरूको अन्तरसम्बन्धलाई उदाहरणसहित व्याख्या गर्नुहोस् ।</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1.5 leading-relaxed">
+        <p><strong>उत्तर:</strong> विज्ञानका शाखाहरू एकापसमा अन्तरसम्बन्धित हुन्छन्। एउटाको सिद्धान्त अर्कोमा अपरिहार्य हुन्छ।</p>
+        <p><strong>प्रमुख उदाहरणहरू:</strong></p>
+        <p>१. <strong>बायोफिजिक्स (Biophysics):</strong> भौतिक विज्ञानको प्रकाशको अपवर्तन सिद्धान्त प्रयोग गरेर डा. सन्दुक रुइतले विकास गरेको इन्ट्राअकुलर लेन्स (IOL) ले आँखाको मोतीबिन्दुको सफल शल्यक्रिया सम्भव बनाएको छ। त्यस्तै एक्स-रे, सीटी स्क्यान र एमआरआई भौतिक विज्ञानकै देन हुन्।</p>
+        <p>२. <strong>बायोकेमेस्ट्री (Biochemistry):</strong> जीव शरीरमा हुने पाचन, श्वासप्रश्वास र प्रकाश संश्लेषण जस्ता प्रक्रियाहरू पूर्णतया रासायनिक प्रतिक्रियामा आधारित हुन्छन्।</p>
+        <p>३. <strong>कृषि विज्ञान:</strong> बाली (जीव विज्ञान), रासायनिक मल र विषादी (रसायन विज्ञान), र सिँचाइ पम्प तथा ट्र्याक्टर (भौतिक विज्ञान) मिलेर आधुनिक कृषि सम्भव भएको छ।</p>
+      </div>
+    </div>
+
+    <!-- Q2 (घ) -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (घ): वैज्ञानिक पद्धतिमा प्रयोगको कस्तो महत्त्व हुन्छ ? उदाहरणसहित व्याख्या गर्नुहोस् ।</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1.5 leading-relaxed">
+        <p><strong>उत्तर:</strong> वैज्ञानिक पद्धतिमा कुनै पनि परिकल्पनालाई प्रमाणित गर्न 'प्रयोग (Experiment)' नै मुख्य आधार हो। प्रयोगबिना विज्ञान केवल अनुमानमा सीमित रहन्छ।</p>
+        <p><strong>महत्त्व:</strong> १. प्रयोगले परिकल्पनाको सत्यता जाँच्न ठोस प्रमाण दिन्छ। २. चरहरू बीचको कारण र असर स्पष्ट पार्छ। ३. विश्वव्यापी रूपमा दोहोर्याउन सकिने सत्यता स्थापित गर्छ।</p>
+        <p><strong>उदाहरण:</strong> "तापक्रम बढ्दा वाष्पीकरण बढ्छ" भन्ने तथ्य जाँच्न तातो र चिसो पानीको वाष्पीकरण तुलना गरी प्रयोग गरिन्छ। त्यस्तै कोरोनाविरुद्धको खोप मुसा र मानिसमा गरिएको सफल प्रयोगात्मक परीक्षणपछि मात्र प्रयोगमा ल्याइएको थियो।</p>
+      </div>
+    </div>
+
+    <!-- Q2 (ङ) -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (ङ): विज्ञानको प्रयोगात्मक कार्य गर्दा अपनाउनुपर्ने सुरक्षाका उपायहरूको सूची बनाउनुहोस् ।</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1">
+        <p><strong>उत्तर:</strong> प्रयोगशालामा अपनाउनुपर्ने सुरक्षा उपायहरू:</p>
+        <ul class="list-disc list-inside space-y-1 text-slate-600 pl-2">
+          <li>व्यक्तिगत सुरक्षा सामग्री (ल्याब कोट, चस्मा, पन्जा र मास्क) अनिवार्य प्रयोग गर्ने।</li>
+          <li>शिक्षकको प्रत्यक्ष उपस्थिति र निर्देशनबिना कुनै रसायन वा उपकरण नचलाउने।</li>
+          <li>रसायन कहिल्यै नचाख्ने वा सिधै नसुँघ्ने (सुँघ्दा हातले हावा आफूतिर पंखाजस्तो हल्लाउने)।</li>
+          <li>प्रज्वलनशील पदार्थलाई खुला आगोबाट टाढा राख्ने र कपाल बाँध्ने।</li>
+          <li>प्राथमिक उपचार बाकस र अग्निनियन्त्रक यन्त्र तयारी अवस्थामा राख्ने।</li>
+          <li>प्रयोग सकिएपछि सामान सफा गर्ने, रासायनिक फोहोर तोकिएको ठाउँमा फाल्ने र साबुनपानीले हात धुने।</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q2 (च, छ, ज, झ) -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (च र छ): वैज्ञानिक सङ्केतनको परिभाषा र ध्यान दिनुपर्ने कुराहरू</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1.5 leading-relaxed">
+        <p><strong>परिभाषा:</strong> अत्यन्त ठूला वा सूक्ष्म सङ्ख्याहरूलाई १ देखि १० को बीचको अङ्क ($1 \le M < 10$) र १० को घाताङ्कको गुणनफलका रूपमा $M \times 10^n$ ढाँचामा लेख्ने विधिलाई <strong>वैज्ञानिक सङ्केतन</strong> भनिन्छ।</p>
+        <p><strong>ध्यान दिनुपर्ने कुराहरू:</strong></p>
+        <p>१. पहिलो गैर-शून्य अङ्कपछि मात्र दशमलव राख्ने। २. दशमलव बायाँ सार्दा १० को घाताङ्क धनात्मक ($+n$) हुन्छ। ३. दशमलव दायाँ सार्दा १० को घाताङ्क ऋणात्मक ($-n$) हुन्छ। ४. भौतिक परिमाण भए अन्त्यमा उपयुक्त एकाइ लेख्ने।</p>
+      </div>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-900 text-sm">प्रश्न २ (ज र झ): मेट्रिक उपसर्गको आवश्यकता र न्यूनतम नाप</div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-blue-500 space-y-1.5 leading-relaxed">
+        <p><strong>मेट्रिक उपसर्ग:</strong> धेरै शून्यहरू राखेर लेख्दा पढ्न र हिसाब गर्न झन्झट हुने हुँदा परिमाणलाई मानक र संक्षिप्त बनाउन मेट्रिक उपसर्ग प्रयोग गरिन्छ (जस्तै: $10^3\text{ m} = 1\text{ km}$, $10^9\text{ Bytes} = 1\text{ GB}$, $10^{-3}\text{ m} = 1\text{ mm}$)।</p>
+        <p><strong>न्यूनतम नाप (Least Count):</strong> नाप्ने उपकरणले सही रूपमा नाप्न सक्ने सबैभन्दा सानो परिमाणलाई न्यूनतम नाप भनिन्छ। (जस्तै: स्केल $= 1\text{ mm}$, स्टपवाच $= 0.01\text{ s}$, स्क्रू गज $= 0.01\text{ mm}$)। न्यूनतम नाप जति सानो हुन्छ, नाप त्यति बढी यथार्थ हुन्छ।</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- GROUP 3: MATHEMATICAL SCIENTIFIC NOTATION (ञ) -->
+  <div class="c9u1-ex-group" data-group="math">
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="border-b border-slate-100 pb-3 flex justify-between items-center">
+        <h4 class="font-black text-slate-900 text-base flex items-center gap-2">
+          <span>🔢 प्रश्न २ (ञ): दिइएको सङ्ख्यालाई वैज्ञानिक सङ्केतनमा रूपान्तरण</span>
+        </h4>
+        <span class="text-xs bg-amber-100 text-amber-800 font-bold px-2.5 py-1 rounded-full">गणितीय समस्याहरू</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+        <!-- Part अ -->
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+          <div class="font-bold text-slate-800">(अ) $1230000$</div>
+          <p class="text-slate-600 text-xs">दशमलव अन्तिममा छ। यसलाई पहिलो अङ्क '१' पछि ल्याउन <strong>६ स्थान बायाँ</strong> सार्नुपर्छ:</p>
+          <div class="p-2.5 bg-blue-50 text-blue-900 border border-blue-200 rounded-lg font-mono font-bold text-center text-base">
+            $1.23 \times 10^6$
+          </div>
+        </div>
+
+        <!-- Part आ -->
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+          <div class="font-bold text-slate-800">(आ) $0.00042$</div>
+          <p class="text-slate-600 text-xs">दशमलवलाई पहिलो गैर-शून्य अङ्क '४' पछि ल्याउन <strong>४ स्थान दायाँ</strong> सार्नुपर्छ:</p>
+          <div class="p-2.5 bg-blue-50 text-blue-900 border border-blue-200 rounded-lg font-mono font-bold text-center text-base">
+            $4.2 \times 10^{-4}$
+          </div>
+        </div>
+
+        <!-- Part इ -->
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+          <div class="font-bold text-slate-800">(इ) $0.00000001$</div>
+          <p class="text-slate-600 text-xs">दशमलवलाई पहिलो गैर-शून्य अङ्क '१' पछि ल्याउन <strong>८ स्थान दायाँ</strong> सार्नुपर्छ:</p>
+          <div class="p-2.5 bg-blue-50 text-blue-900 border border-blue-200 rounded-lg font-mono font-bold text-center text-base">
+            $1.0 \times 10^{-8} \quad (\text{वा } 1 \times 10^{-8})$
+          </div>
+        </div>
+
+        <!-- Part ई -->
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+          <div class="font-bold text-slate-800">(ई) $300000000$</div>
+          <p class="text-slate-600 text-xs">दशमलवलाई पहिलो अङ्क '३' पछि ल्याउन <strong>८ स्थान बायाँ</strong> सार्नुपर्छ:</p>
+          <div class="p-2.5 bg-blue-50 text-blue-900 border border-blue-200 rounded-lg font-mono font-bold text-center text-base">
+            $3.0 \times 10^8 \quad (\text{वा } 3 \times 10^8)$
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GROUP 4: LAB ACTIVITIES (१.५ र १.६) -->
+  <div class="c9u1-ex-group" data-group="activity">
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="border-b border-slate-100 pb-3 flex justify-between items-center">
+        <h4 class="font-black text-slate-900 text-base flex items-center gap-2">
+          <span>🧪 पाठ्यपुस्तक क्रियाकलाप समाधान (Activities)</span>
+        </h4>
+        <span class="text-xs bg-purple-100 text-purple-800 font-bold px-2.5 py-1 rounded-full">पृष्ठ १४</span>
+      </div>
+
+      <!-- Activity 1.5 Table -->
+      <div class="space-y-2">
+        <div class="font-bold text-slate-800 text-sm">क्रियाकलाप १.५: उपकरणहरूको न्यूनतम नाप तालिका</div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs text-left border border-slate-200 rounded-xl overflow-hidden">
+            <thead class="bg-slate-100 font-bold text-slate-700">
+              <tr>
+                <th class="p-3">क्र.सं.</th>
+                <th class="p-3">उपकरणको नाम</th>
+                <th class="p-3">नाप सीमा</th>
+                <th class="p-3">न्यूनतम नाप (Least Count)</th>
+                <th class="p-3">व्याख्या</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              <tr>
+                <td class="p-3 font-bold">१</td>
+                <td class="p-3">माइक्रो-एमिटर ($\mu\text{A}$)</td>
+                <td class="p-3">$0 - 50\text{ }\mu\text{A}$</td>
+                <td class="p-3 font-bold text-blue-600">$1\text{ }\mu\text{A}$</td>
+                <td class="p-3 text-slate-600">$0$ देखि $10$ बीचमा १० साना खण्ड, अतः १ खण्ड $= 1\text{ }\mu\text{A}$</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold">२</td>
+                <td class="p-3">भोल्टमिटर (Voltmeter)</td>
+                <td class="p-3">$0 - 5\text{ V}$</td>
+                <td class="p-3 font-bold text-blue-600">$0.1\text{ V}$</td>
+                <td class="p-3 text-slate-600">$0$ देखि $1\text{ V}$ बीचमा १० साना खण्ड, अतः १ खण्ड $= 0.1\text{ V}$</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold">३</td>
+                <td class="p-3">मेजरिङ सिलिन्डर</td>
+                <td class="p-3">$0 - 50\text{ mL}$</td>
+                <td class="p-3 font-bold text-blue-600">$1\text{ mL}$</td>
+                <td class="p-3 text-slate-600">$0$ देखि $10\text{ mL}$ बीचमा १० साना खण्ड, अतः १ खण्ड $= 1\text{ mL}$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Activity 1.6 -->
+      <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs md:text-sm space-y-2">
+        <div class="font-bold text-slate-800">क्रियाकलाप १.६: २ मिटर माथिबाट ढुङ्गा खसाल्दा औसत समय</div>
+        <p class="text-slate-600">
+          ३ पटक परीक्षण गर्दा प्राप्त समय क्रमशः $0.62\text{ s}, 0.65\text{ s}, 0.63\text{ s}$ आएको अवस्थामा:
+        </p>
+        <div class="p-3 bg-white border border-slate-200 rounded-lg text-slate-800 font-mono text-center">
+          $$t_{\text{avg}} = \frac{0.62 + 0.65 + 0.63}{3} = \frac{1.90}{3} \approx \mathbf{0.63\text{ सेकेन्ड}}$$
+        </div>
+        <p class="text-[11px] text-slate-500">
+          <strong>निष्कर्ष:</strong> पटक-पटक नाप लिई औसत निकाल्दा मानिसको प्रतिक्रिया समय र आकस्मिक त्रुटि न्यूनीकरण भई वास्तविक नाप प्राप्त हुन्छ।
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- ================= TAB 3: TIERED MODEL QUESTIONS (16 QUESTIONS) ================= -->
+<div id="c9u1-view-tiers" class="hidden space-y-6">
+  <!-- Filter Controls -->
+  <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200">
+    <div class="flex items-center gap-2">
+      <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">तह अनुसार प्रश्नहरू:</span>
+      <div class="flex flex-wrap gap-1.5">
+        <button onclick="filterC9U1Tiers('all')" id="btn-c9u1-tier-all" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-xs cursor-pointer">
+          सबै १६ प्रश्नहरू
+        </button>
+        <button onclick="filterC9U1Tiers('k')" id="btn-c9u1-tier-k" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          ज्ञान तह (५ प्रश्न)
+        </button>
+        <button onclick="filterC9U1Tiers('u')" id="btn-c9u1-tier-u" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          बोध तह (६ प्रश्न)
+        </button>
+        <button onclick="filterC9U1Tiers('ha')" id="btn-c9u1-tier-ha" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          प्रयोग र उच्च दक्षता (५ प्रश्न)
+        </button>
+      </div>
+    </div>
+    <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2.5 py-1 rounded-full">CDC विशिष्टीकरण तालिका अनुसार</span>
+  </div>
+
+  <!-- TIER 1: KNOWLEDGE (ज्ञान - ५ प्रश्न) -->
+  <div class="c9u1-tier-section space-y-3" data-tier="k">
+    <div class="flex items-center gap-2 px-1">
+      <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+      <h4 class="font-black text-slate-800 text-sm md:text-base">तह १: ज्ञान तह (Knowledge Level - १ अङ्कका प्रश्नहरू)</h4>
+    </div>
+
+    <!-- Q1 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १: वैज्ञानिक अध्ययन भनेको के हो?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> प्रकृतिका विभिन्न घटना, वस्तु तथा तथ्यहरूको अवलोकन, परिकल्पना, प्रयोगात्मक परीक्षण र निष्कर्षका आधारमा ज्ञान हासिल गर्ने व्यवस्थित र तार्किक विधिलाई वैज्ञानिक अध्ययन भनिन्छ।
+      </p>
+    </div>
+
+    <!-- Q2 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न २: कुनै उपकरणको 'न्यूनतम नाप (Least Count)' भन्नाले के बुझिन्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> कुनै पनि नाप्ने उपकरणले सही रूपमा नाप्न सक्ने सबैभन्दा सानो परिमाणलाई त्यस उपकरणको न्यूनतम नाप भनिन्छ।
+      </p>
+    </div>
+
+    <!-- Q3 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ३: १ गिगामिटर (१ Gm) मा कति मिटर हुन्छ? घाताङ्कमा लेख्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400 font-mono">
+        <strong>उत्तर:</strong> $1\text{ Gm} = 10^9\text{ m}$ (अर्थात् १ अर्ब मिटर)।
+      </p>
+    </div>
+
+    <!-- Q4 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ४: प्रयोगशालामा प्रयोग गरिने दुईवटा व्यक्तिगत सुरक्षा सामग्री (PPE) को नाम लेख्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> १. सुरक्षात्मक चस्मा (Safety Goggles) र २. ल्याब कोट वा एप्रोन (Lab Coat/Apron)।
+      </p>
+    </div>
+
+    <!-- Q5 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ५: आधुनिक वंशाणुशास्त्रका पिता (Father of Modern Genetics) कसलाई मानिन्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> ग्रेगर जोन मेन्डेल (Gregor Johann Mendel) लाई।
+      </p>
+    </div>
+  </div>
+
+  <!-- TIER 2: UNDERSTANDING (बोध - ६ प्रश्न) -->
+  <div class="c9u1-tier-section space-y-3" data-tier="u">
+    <div class="flex items-center gap-2 px-1 pt-2">
+      <span class="w-3 h-3 rounded-full bg-emerald-600"></span>
+      <h4 class="font-black text-slate-800 text-sm md:text-base">तह २: बोध तह (Understanding Level - २ अङ्कका प्रश्नहरू)</h4>
+    </div>
+
+    <!-- Q6 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ६: वैज्ञानिक अध्ययनमा 'परिकल्पना (Hypothesis)' किन महत्वपूर्ण मानिन्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> परिकल्पनाले अनुसन्धानकर्तालाई निश्चित वैज्ञानिक दिशा प्रदान गर्छ। यसले समस्याको सम्भावित उत्तर अनुमान गर्न र सो उत्तर परीक्षण गर्न कुन चर परिचालन गर्ने तथा कस्तो प्रयोग गर्ने भन्ने योजना बनाउन मार्गदर्शन गर्दछ।
+      </p>
+    </div>
+
+    <!-- Q7 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ७: वैज्ञानिक पद्धतिमा प्रयोग गर्दा 'औसत नाप' लिनु किन आवश्यक हुन्छ? स्पष्ट पार्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> मानिसको प्रतिक्रिया समय (reaction time), उपकरणको सूक्ष्म असन्तुलन र वातावरणीय प्रभावले गर्दा एकै पटकको नापमा त्रुटि हुन सक्छ। प्रयोगलाई कम्तीमा ३ पटक दोहोर्याएर औसत निकाल्दा ती त्रुटिहरू न्यून भई नाप वास्तविक मानको नजिक पुग्छ।
+      </p>
+    </div>
+
+    <!-- Q8 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ८: जीव विज्ञान र भौतिक विज्ञानबीचको अन्तरसम्बन्धलाई एउटा उपयुक्त उदाहरणसहित प्रस्ट पार्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> भौतिक विज्ञानका नियम र यन्त्रहरू जीव विज्ञानमा जीवन प्रक्रिया बुझ्न र उपचार गर्न प्रयोग हुन्छन्। उदाहरणका लागि, प्रकाशको अपवर्तन सिद्धान्त प्रयोग गरी डा. सन्दुक रुइतले विकास गरेको इन्ट्राअकुलर लेन्स (IOL) मार्फत आँखाको मोतीबिन्दुको सफल उपचार सम्भव भएको छ।
+      </p>
+    </div>
+
+    <!-- Q9 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ९: शुद्धता (Accuracy) र सूक्ष्मता (Precision) बीचको भिन्नता उदाहरणसहित लेख्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400 space-y-1">
+        <p>• <strong>Accuracy (शुद्धता):</strong> नापिएको मान वास्तविक मान (True Value) सँग कति नजिक छ भन्ने अवस्था। (जस्तै: वास्तविक लम्बाइ ५.० cm भएकोमा ४.९९ cm आउनु)।</p>
+        <p>• <strong>Precision (सूक्ष्मता):</strong> बारम्बार नाप्दा नतिजाहरू आपसमा कति नजिक छन् भन्ने अवस्था। (जस्तै: तीन पटक नाप्दा ४.६१ cm, ४.६२ cm, ४.६१ cm आउनु)।</p>
+      </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १०: कुनै सङ्ख्यालाई वैज्ञानिक सङ्केतनमा लेख्दा आधार अङ्क M को मान किन १ देखि १० को बीचमा हुनुपर्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> वैज्ञानिक सङ्केतनलाई अन्तर्राष्ट्रिय रूपमा एकरूप र मानक बनाउन $1 \le M < 10$ निर्धारण गरिएको हो। यसो गर्दा दशमलव सधैं पहिलो गैर-शून्य अङ्कपछि मात्र पर्छ, जसले गर्दा सङ्ख्याको आकार १० को घाताङ्क हेरेर तुरुन्तै तुलना गर्न सकिन्छ।
+      </p>
+    </div>
+
+    <!-- Q11 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ११: रासायनिक प्रयोगशालामा काम गर्दा बोतलमा 'संक्षारक (Corrosive)' सङ्केत देख्दा के कस्ता सावधानी अपनाउनुपर्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> संक्षारक रसायन (कडा अम्ल वा क्षार) ले छाला र आँखालाई जलाउँछ। त्यसैले बाक्लो पन्जा र सुरक्षा चस्मा अनिवार्य लगाउने, अम्लमा सिधै पानी नहाली पानीमा विस्तारै अम्ल हाल्ने र छालामा परे तुरुन्तै धेरै सफा पानीले धुनुपर्छ।
+      </p>
+    </div>
+  </div>
+
+  <!-- TIER 3: APPLICATION & HIGHER ABILITY (प्रयोग र उच्च दक्षता - ५ प्रश्न) -->
+  <div class="c9u1-tier-section space-y-3" data-tier="ha">
+    <div class="flex items-center gap-2 px-1 pt-2">
+      <span class="w-3 h-3 rounded-full bg-purple-600"></span>
+      <h4 class="font-black text-slate-800 text-sm md:text-base">तह ३: प्रयोग तथा उच्च दक्षता (Application & Higher Ability - ३ देखि ४ अङ्क)</h4>
+    </div>
+
+    <!-- Q12 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १२: एउटा विद्यार्थीले तारको व्यास नाप्न स्केल प्रयोग गर्दा १.५ mm र अर्कोले स्क्रू गज प्रयोग गर्दा १.५४ mm प्राप्त गरे। कुन नाप बढी भरपर्दो हुन्छ र किन?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">३ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-purple-400 space-y-1">
+        <p><strong>उत्तर:</strong> स्क्रू गज (Micrometer) बाट लिइएको <strong>१.५४ mm</strong> नाप बढी भरपर्दो र यथार्थ हुन्छ।</p>
+        <p><strong>कारण:</strong> साधारण स्केलको न्यूनतम नाप १ mm मात्र हुन्छ, जसले मिलिमिटरपछिको सूक्ष्म मान नाप्न सक्दैन (विद्यार्थीले अनुमान मात्र गरेको हो)। तर स्क्रू गजको न्यूनतम नाप ०.०१ mm हुने भएकाले यसले मिलिमिटरको सयौं भागसम्मको नाप यथार्थताका साथ मापन गर्दछ।</p>
+      </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १३: पानी तताउँदा समय र तापक्रमको सम्बन्ध अध्ययन गर्न विद्यार्थीले प्रयोग गरे। यस प्रयोगमा स्वतन्त्र चर, निर्भर चर र नियन्त्रित चर पहिचान गर्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">३ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-purple-400 space-y-1">
+        <p>• <strong>स्वतन्त्र चर (Independent Variable):</strong> तताएको समय (Time) — किनभने यो समय प्रयोगकर्ताको नियन्त्रणमा निरन्तर बित्छ।</p>
+        <p>• <strong>निर्भर चर (Dependent Variable):</strong> पानीको तापक्रम (Temperature) — किनभने तापक्रम समय बित्दै जाँदा समयमा निर्भर भएर परिवर्तन हुन्छ।</p>
+        <p>• <strong>नियन्त्रित चर (Controlled Variable):</strong> पानीको आयतन, बर्नरको ज्वाला, र भाँडोको प्रकार — जसलाई प्रयोगभरि स्थिर राखिन्छ।</p>
+      </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १४: पृथ्वीको पिण्ड $5972000000000000000000000\text{ kg}$ र हाइड्रोजन परमाणुको पिण्ड $0.00000000000000000000000000167\text{ kg}$ छ। वैज्ञानिक सङ्केतनमा रूपान्तरण गरी तुलना गर्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">३ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-purple-400 space-y-1">
+        <p>• <strong>पृथ्वीको पिण्ड:</strong> २४ स्थान बायाँ सार्दा: $$M_E = 5.972 \times 10^{24}\text{ kg}$$</p>
+        <p>• <strong>हाइड्रोजन परमाणुको पिण्ड:</strong> २७ स्थान दायाँ सार्दा: $$m_H = 1.67 \times 10^{-27}\text{ kg}$$</p>
+        <p><strong>तुलना:</strong> वैज्ञानिक सङ्केतनले अति विशाल ($10^{24}$) र अति सूक्ष्म ($10^{-27}$) परिमाणहरूलाई सहजै एकै मानक ढाँचामा हेर्न र शून्य गन्नुपर्ने झन्झट हटाउन सक्षम बनाएको छ।</p>
+      </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १५: "यदि कुनै अनुसन्धानमा परिकल्पना गलत प्रमाणित भयो भने त्यो प्रयोग पूर्ण रूपमा असफल भएको मानिन्छ।" के तपाईं यस भनाइसँग सहमत हुनुहुन्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">३ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-purple-400 leading-relaxed">
+        <strong>उत्तर: म यस भनाइसँग सहमत छैन।</strong>  
+        विज्ञानमा परिकल्पना गलत प्रमाणित हुनु असफलता होइन; बरु त्यो सत्यको नजिक पुग्ने नयाँ सिकाइ हो। यसले अनुमान गरिएको बाटो सही थिएन भन्ने ठोस प्रमाण दिन्छ, जसले वैज्ञानिकहरूलाई प्रश्न र परिकल्पना परिमार्जन गर्न मद्दत गर्छ र अन्ततः वास्तविक नियम पत्ता लगाउन मार्गप्रशस्त गर्छ। एडिसनले बल्ब बनाउँदा हजारौं असफल प्रयासपछि मात्र सही फिलामेन्ट फेला पारेका थिए।
+      </p>
+    </div>
+
+    <!-- Q16 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १६: विज्ञान प्रयोगशालामा सुरक्षित काम गर्नका लागि विद्यार्थी आचारसंहिता (Code of Conduct) को ५ बुँदे कार्ययोजना तयार गर्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">४ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-purple-400 space-y-1">
+        <p>१. <strong>व्यक्तिगत पूर्वतयारी:</strong> प्रयोगशाला प्रवेश गर्दा अनिवार्य रूपमा एप्रोन, पन्जा र चस्मा लगाउने तथा कपाल बाँध्ने।</p>
+        <p>२. <strong>अनुमतिबिना प्रयोग निषेध:</strong> शिक्षकको प्रत्यक्ष निर्देशनबिना कुनै रसायन वा ग्यास नखोल्ने।</p>
+        <p>३. <strong>चेतावनी सङ्केतको पालना:</strong> खतराको चिन्ह (Hazard Symbol) हेरेर मात्र सावधानीपूर्वक चलाउने, कहिल्यै नचाख्ने।</p>
+        <p>४. <strong>आपत्कालीन सचेतना:</strong> रसायन पोखिएमा तुरुन्त शिक्षकलाई खबर गर्ने र प्राथमिक उपचारको स्थान थाहा पाउने।</p>
+        <p>५. <strong>सफा विसर्जन:</strong> फोहोर तोकिएको ठाउँमा फाल्ने, भाँडा सफा गर्ने र साबुनपानीले हात धोएर मात्र बाहिरिने।</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- ================= TAB 4: SELF-ASSESSMENT QUIZ ================= -->
+<div id="c9u1-view-quiz" class="hidden space-y-6">
+  <div class="bg-gradient-to-r from-blue-900 to-indigo-950 p-6 md:p-8 rounded-3xl text-white shadow-xl space-y-4">
+    <div class="flex flex-wrap items-center justify-between gap-4">
+      <div>
+        <span class="text-xs font-bold text-cyan-300 uppercase tracking-wider">एकाइ १: स्वमूल्याङ्कन परीक्षा</span>
+        <h3 class="text-xl md:text-2xl font-black">वैज्ञानिक अध्ययन बहुवैकल्पिक क्विज (१० प्रश्न)</h3>
+        <p class="text-xs md:text-sm text-slate-300">आफ्नो सिकाइ स्तर जाँच्न तलका प्रश्नहरूको सही विकल्प छान्नुहोस्।</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="bg-white/10 backdrop-blur-md px-4 py-2 rounded-2xl border border-white/20 text-center">
+          <div class="text-xs text-slate-300 font-bold">प्राप्ताङ्क (Score)</div>
+          <div id="c9u1-quiz-score-badge" class="text-xl font-black text-amber-300">० / १०</div>
+        </div>
+        <button onclick="resetC9U1Quiz()" class="px-4 py-2.5 rounded-xl bg-white/20 hover:bg-white/30 text-white text-xs font-bold transition cursor-pointer">
+          पुनः सुरु
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quiz Questions Container -->
+  <div id="c9u1-quiz-container" class="space-y-4">
+    <!-- Populated by JS -->
+  </div>
+</div>
+
+</div>

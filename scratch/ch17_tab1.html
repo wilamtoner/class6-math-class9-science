@@ -1,0 +1,476 @@
+<!-- ================= CH17 TAB 1: CONCEPTS & 3D SOLIDS LAB ================= -->
+        <div id="ch17-view-concepts" class="space-y-6">
+
+          <!-- Core Concepts Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Card 1: 2D vs 3D -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-sm">१</span>
+                <h3 class="font-bold text-slate-800 text-base">समतलीय (2D) र ठोस (3D)</h3>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                आयाम र स्थान ओगट्ने आधारमा भिन्नता:
+              </p>
+              <div class="p-3 bg-purple-50/60 rounded-xl border border-purple-200 text-xs space-y-1.5 text-purple-900">
+                <div>• <strong>समतलीय (2D):</strong> लम्बाइ र चौडाइ मात्र (क्षेत्रफल हुन्छ, स्थान ओगट्दैन) ।</div>
+                <div>• <strong>ठोस वस्तु (3D):</strong> लम्बाइ, चौडाइ र उचाइ/मोटाइ (स्थान वा आयतन ओगट्छ) ।</div>
+                <div class="text-[11px] text-purple-700 font-semibold mt-1">जस्तै: वर्ग $\rightarrow$ घन, आयत $\rightarrow$ षड्मुखा, वृत्त $\rightarrow$ गोला ।</div>
+              </div>
+            </div>
+
+            <!-- Card 2: Face, Edge, Vertex -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-sm">२</span>
+                <h3 class="font-bold text-slate-800 text-base">सतह, किनारा र कुना</h3>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                ठोस वस्तुका तीन मुख्य रैखिक तथा समतलीय अङ्गहरू:
+              </p>
+              <div class="p-3 bg-blue-50/60 rounded-xl border border-blue-200 text-xs space-y-1.5 text-blue-900">
+                <div>• <strong>सतह (Face - $F$):</strong> बाहिरको समतल बहुभुजाकार मोहडा ।</div>
+                <div>• <strong>किनारा (Edge - $E$):** दुई सतह भेट हुने सिधा रेखाखण्ड ।</div>
+                <div>• <strong>कुना (Vertex - $V$):** तीन वा बढी किनारा मिल्ने शीर्षबिन्दु ।</div>
+                <div class="text-[11px] text-blue-700 font-semibold mt-1">घन र षड्मुखामा: $F=6, E=12, V=8$ ।</div>
+              </div>
+            </div>
+
+            <!-- Card 3: Euler's Formula -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm">३</span>
+                <h3 class="font-bold text-slate-800 text-base">यूलरको सूत्र (Euler's Formula)</h3>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                समतल सतह भएका बहुफलक (Polyhedra) को शाश्वत सम्बन्ध:
+              </p>
+              <div class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-200 text-xs space-y-1.5 text-emerald-900">
+                <div class="text-center font-mono font-black text-sm text-emerald-700">$$V - E + F = 2$$</div>
+                <div class="text-center font-bold text-[11px] text-slate-600">वा $F + V = E + 2$ वा $F + V - E = 2$</div>
+                <div class="text-[11px] text-emerald-800 font-medium">कुनै दुई अङ्ग थाहा भए तेस्रो अङ्ग सहजै निकाल्न सकिन्छ ।</div>
+              </div>
+            </div>
+
+            <!-- Card 4: Curved Solids -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-sm">४</span>
+                <h3 class="font-bold text-slate-800 text-base">बेलना, सोली र गोला</h3>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                वक्र सतह (Curved surface) भएका ठोस वस्तुहरू:
+              </p>
+              <div class="p-3 bg-amber-50/60 rounded-xl border border-amber-200 text-xs space-y-1.5 text-amber-900">
+                <div>• <strong>बेलना:</strong> २ वृत्ताकार समतल आधार + १ वक्र सतह ($V=0$) ।</div>
+                <div>• <strong>सोली:</strong> १ वृत्ताकार आधार + १ वक्र सतह + १ कुना ($V=1$) ।</div>
+                <div>• <strong>गोला:</strong> १ पूर्ण वक्र सतह (समतल सतह र कुना शून्य) ।</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Comprehensive Comparison Table -->
+          <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center font-black text-xs">📊</span>
+                <h3 class="font-bold text-slate-900 text-base md:text-lg">मुख्य ठोस वस्तुहरूको अङ्ग तथा यूलर सूत्र तुलना तालिका</h3>
+              </div>
+              <span class="text-xs bg-indigo-50 text-indigo-700 font-semibold px-3 py-1 rounded-full border border-indigo-200">कक्षा ६ पाठ्यक्रम मानक</span>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs md:text-sm border-collapse">
+                <thead>
+                  <tr class="bg-slate-50 text-slate-700 border-b border-slate-200">
+                    <th class="p-3 font-bold">ठोस वस्तु (Solid)</th>
+                    <th class="p-3 font-bold">समतल सतह</th>
+                    <th class="p-3 font-bold">वक्र सतह</th>
+                    <th class="p-3 font-bold text-blue-700">कुल सतह ($F$)</th>
+                    <th class="p-3 font-bold text-purple-700">शीर्षबिन्दु ($V$)</th>
+                    <th class="p-3 font-bold text-amber-700">किनारा ($E$)</th>
+                    <th class="p-3 font-bold text-emerald-700">यूलर सूत्र ($F+V-E$)</th>
+                    <th class="p-3 font-bold">दैनिक जीवनका उदाहरण</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100 text-slate-600">
+                  <tr class="hover:bg-blue-50/40 transition">
+                    <td class="p-3 font-bold text-slate-900 flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span> घन (Cube)
+                    </td>
+                    <td class="p-3">६ (वर्ग)</td>
+                    <td class="p-3">०</td>
+                    <td class="p-3 font-bold text-blue-600">६</td>
+                    <td class="p-3 font-bold text-purple-600">८</td>
+                    <td class="p-3 font-bold text-amber-600">१२</td>
+                    <td class="p-3 font-black text-emerald-600">$6+8-12 = \mathbf{2}$ ✓</td>
+                    <td class="p-3 text-xs">लुडोको गोटी, रुबिक्स क्युब, चिनीको दाना</td>
+                  </tr>
+                  <tr class="hover:bg-indigo-50/40 transition">
+                    <td class="p-3 font-bold text-slate-900 flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span> षड्मुखा (Cuboid)
+                    </td>
+                    <td class="p-3">६ (आयत)</td>
+                    <td class="p-3">०</td>
+                    <td class="p-3 font-bold text-blue-600">६</td>
+                    <td class="p-3 font-bold text-purple-600">८</td>
+                    <td class="p-3 font-bold text-amber-600">१२</td>
+                    <td class="p-3 font-black text-emerald-600">$6+8-12 = \mathbf{2}$ ✓</td>
+                    <td class="p-3 text-xs">किताब, इँटा, चकको बट्टा, कोठा, दराज</td>
+                  </tr>
+                  <tr class="hover:bg-cyan-50/40 transition">
+                    <td class="p-3 font-bold text-slate-900 flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-cyan-500"></span> त्रिकोणात्मक प्रिज्मा
+                    </td>
+                    <td class="p-3">५ (२ त्रिभुज, ३ आयत)</td>
+                    <td class="p-3">०</td>
+                    <td class="p-3 font-bold text-blue-600">५</td>
+                    <td class="p-3 font-bold text-purple-600">६</td>
+                    <td class="p-3 font-bold text-amber-600">९</td>
+                    <td class="p-3 font-black text-emerald-600">$5+6-9 = \mathbf{2}$ ✓</td>
+                    <td class="p-3 text-xs">पाल (Camping tent), चकलेट बट्टा, काँचको प्रिज्म</td>
+                  </tr>
+                  <tr class="hover:bg-rose-50/40 transition">
+                    <td class="p-3 font-bold text-slate-900 flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span> वर्गाकार पिरामिड
+                    </td>
+                    <td class="p-3">५ (१ वर्ग, ४ त्रिभुज)</td>
+                    <td class="p-3">०</td>
+                    <td class="p-3 font-bold text-blue-600">५</td>
+                    <td class="p-3 font-bold text-purple-600">५</td>
+                    <td class="p-3 font-bold text-amber-600">८</td>
+                    <td class="p-3 font-black text-emerald-600">$5+5-8 = \mathbf{2}$ ✓</td>
+                    <td class="p-3 text-xs">इजिप्टको पिरामिड, मन्दिरको गजुर, पालुवा छाना</td>
+                  </tr>
+                  <tr class="hover:bg-emerald-50/40 transition">
+                    <td class="p-3 font-bold text-slate-900 flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> बेलना (Cylinder)
+                    </td>
+                    <td class="p-3">२ (वृत्त)</td>
+                    <td class="p-3">१</td>
+                    <td class="p-3 font-bold text-blue-600">३</td>
+                    <td class="p-3 font-bold text-purple-600">०</td>
+                    <td class="p-3 font-bold text-amber-600">२ (घुमाउरो)</td>
+                    <td class="p-3 text-xs text-slate-500">वक्र सतह (लागू नहुने)</td>
+                    <td class="p-3 text-xs">गिलास, ग्यास सिलिन्डर, पाइप, मुढो, ब्याट्री</td>
+                  </tr>
+                  <tr class="hover:bg-amber-50/40 transition">
+                    <td class="p-3 font-bold text-slate-900 flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> सोली (Cone)
+                    </td>
+                    <td class="p-3">१ (वृत्त)</td>
+                    <td class="p-3">१</td>
+                    <td class="p-3 font-bold text-blue-600">२</td>
+                    <td class="p-3 font-bold text-purple-600">१</td>
+                    <td class="p-3 font-bold text-amber-600">१ (घुमाउरो)</td>
+                    <td class="p-3 text-xs text-slate-500">वक्र सतह (लागू नहुने)</td>
+                    <td class="p-3 text-xs">आइसक्रिम कोन, जोकर टोपी, ट्राफिक कोन, सोली</td>
+                  </tr>
+                  <tr class="hover:bg-purple-50/40 transition">
+                    <td class="p-3 font-bold text-slate-900 flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span> गोला (Sphere)
+                    </td>
+                    <td class="p-3">०</td>
+                    <td class="p-3">१</td>
+                    <td class="p-3 font-bold text-blue-600">१</td>
+                    <td class="p-3 font-bold text-purple-600">०</td>
+                    <td class="p-3 font-bold text-amber-600">०</td>
+                    <td class="p-3 text-xs text-slate-500">वक्र सतह (लागू नहुने)</td>
+                    <td class="p-3 text-xs">फुटबल, गुच्चा, सुन्तला, भूगोलको ग्लोब, टेनिस बल</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- ================= INTERACTIVE 3D SOLIDS LAB ================= -->
+          <div id="ch17-interactive-lab-card" class="p-6 bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-3xl shadow-xl space-y-6" style="background: linear-gradient(135deg, #0f172a, #1e1b4b); color: #ffffff;">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-indigo-800/60 pb-4">
+              <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 text-xs font-bold border border-purple-400/30 mb-2">
+                  <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                  प्रयोगात्मक तथा अन्तरक्रियात्मक प्रयोगशाला
+                </div>
+                <h3 class="text-xl md:text-2xl font-black text-white">पाठ १७ ज्यामितीय ल्याब: ३D ठोस वस्तु तथा यूलर सूत्र अन्वेषक</h3>
+              </div>
+              <!-- Lab Mode Switcher -->
+              <div class="flex items-center gap-2 bg-slate-800/80 p-1.5 rounded-2xl border border-indigo-700/50">
+                <button id="btn-lab-poly" onclick="switchCh17Lab('poly')" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold bg-blue-600 text-white shadow-sm transition cursor-pointer">
+                  बहुफलक र यूलर सूत्र
+                </button>
+                <button id="btn-lab-curved" onclick="switchCh17Lab('curved')" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold text-slate-300 hover:text-white hover:bg-slate-700 transition cursor-pointer">
+                  वक्र ठोस (बेलना, सोली, गोला)
+                </button>
+                <button id="btn-lab-net" onclick="switchCh17Lab('net')" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold text-slate-300 hover:text-white hover:bg-slate-700 transition cursor-pointer">
+                  नेट (Net / जाली)
+                </button>
+              </div>
+            </div>
+
+            <!-- SUB-LAB 1: POLYHEDRA & EULER EXPLORER -->
+            <div id="ch17-sublab-poly" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Visual Canvas / 3D SVG Area -->
+              <div class="lg:col-span-7 bg-slate-950/70 p-4 rounded-2xl border border-indigo-900/60 flex flex-col items-center">
+                <div class="w-full flex justify-between items-center text-xs text-slate-400 mb-2">
+                  <span>आकृति छनोट गर्नुहोस् र अङ्गहरू हाइलाइट गर्नुहोस्</span>
+                  <span id="poly-part-badge" class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-bold">घन (Cube)</span>
+                </div>
+
+                <div class="w-full max-w-[460px] aspect-square bg-slate-900 rounded-xl relative overflow-hidden border border-slate-800 flex items-center justify-center p-2">
+                  <svg id="svg-poly-lab" viewBox="0 0 400 400" class="w-full h-full select-none">
+                    <!-- Grid background -->
+                    <defs>
+                      <pattern id="poly-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                      </pattern>
+                    </defs>
+                    <rect width="400" height="400" fill="url(#poly-grid)" />
+
+                    <!-- Dynamic Shapes Container -->
+                    <g id="poly-svg-shapes">
+                      <!-- Rendered dynamically via JS for Cube, Cuboid, Prism, Pyramid, Tetrahedron -->
+                    </g>
+                  </svg>
+                </div>
+
+                <!-- Live Mathematical Counter Bar -->
+                <div class="w-full mt-3 p-3 bg-indigo-950/80 rounded-xl border border-indigo-700/50 grid grid-cols-2 md:grid-cols-4 gap-2 text-center text-xs">
+                  <div class="p-2 bg-slate-900/80 rounded-lg">
+                    <span class="text-slate-400 block text-[10px]">सतह (Faces - $F$)</span>
+                    <span id="live-f-val" class="text-blue-400 font-extrabold text-sm">6</span>
+                  </div>
+                  <div class="p-2 bg-slate-900/80 rounded-lg">
+                    <span class="text-slate-400 block text-[10px]">शीर्षबिन्दु (Vertices - $V$)</span>
+                    <span id="live-v-val" class="text-purple-400 font-extrabold text-sm">8</span>
+                  </div>
+                  <div class="p-2 bg-slate-900/80 rounded-lg">
+                    <span class="text-slate-400 block text-[10px]">किनारा (Edges - $E$)</span>
+                    <span id="live-e-val" class="text-amber-400 font-extrabold text-sm">12</span>
+                  </div>
+                  <div class="p-2 bg-slate-900/80 rounded-lg">
+                    <span class="text-slate-400 block text-[10px]">यूलर जाँच ($F+V-E$)</span>
+                    <span id="live-euler-val" class="text-emerald-400 font-extrabold text-sm">2 ✓</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controls & Polyhedra Selector Panel -->
+              <div class="lg:col-span-5 space-y-4">
+                <!-- Shape Selection Buttons -->
+                <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700/60 space-y-3">
+                  <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider">ठोस आकृति छनोट गर्नुहोस्</h4>
+                  <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                    <button id="btn-shape-cube" onclick="setPolyShape('cube')" class="px-3 py-2 rounded-xl bg-blue-600 text-white font-bold text-xs shadow-sm transition cursor-pointer">
+                      घन (Cube)
+                    </button>
+                    <button id="btn-shape-cuboid" onclick="setPolyShape('cuboid')" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold text-xs transition cursor-pointer">
+                      षड्मुखा (Cuboid)
+                    </button>
+                    <button id="btn-shape-prism" onclick="setPolyShape('prism')" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold text-xs transition cursor-pointer">
+                      प्रिज्मा (Prism)
+                    </button>
+                    <button id="btn-shape-pyramid" onclick="setPolyShape('pyramid')" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold text-xs transition cursor-pointer">
+                      पिरामिड (Pyramid)
+                    </button>
+                    <button id="btn-shape-tetra" onclick="setPolyShape('tetra')" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold text-xs transition cursor-pointer">
+                      टेट्राहेड्रन
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Part Highlighter Modes -->
+                <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700/60 space-y-3">
+                  <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider">अङ्ग हाइलाइट गर्नुहोस्</h4>
+                  <div class="grid grid-cols-2 gap-2">
+                    <button id="btn-high-all" onclick="setPolyHighlight('all')" class="px-3 py-2 rounded-xl bg-indigo-600 text-white font-bold text-xs transition cursor-pointer">
+                      👁️ सबै अङ्गहरू
+                    </button>
+                    <button id="btn-high-faces" onclick="setPolyHighlight('faces')" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold text-xs transition cursor-pointer">
+                      🟦 सतहहरू ($F$)
+                    </button>
+                    <button id="btn-high-edges" onclick="setPolyHighlight('edges')" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold text-xs transition cursor-pointer">
+                      📏 किनाराहरू ($E$)
+                    </button>
+                    <button id="btn-high-vertices" onclick="setPolyHighlight('vertices')" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold text-xs transition cursor-pointer">
+                      🔴 कुनाहरू ($V$)
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Live Euler Equation Breakdown Card -->
+                <div class="p-4 bg-gradient-to-br from-indigo-950 to-slate-900 rounded-2xl border border-indigo-700/60 space-y-2 text-xs">
+                  <div class="flex items-center justify-between text-indigo-300 font-bold">
+                    <span>यूलर सूत्र गणितीय विश्लेषण</span>
+                    <span id="poly-shape-title" class="text-white">घन (Cube)</span>
+                  </div>
+                  <div id="poly-desc-box" class="text-slate-300 leading-relaxed text-[11px]">
+                    घनमा ६ वटा बराबर वर्ग, १२ वटा बराबर सिधा किनारा र ८ वटा शीर्षबिन्दु हुन्छन् ।
+                  </div>
+                  <div class="mt-2 p-2.5 bg-black/40 rounded-xl font-mono text-xs border border-indigo-500/30">
+                    <div id="poly-euler-calc" class="text-emerald-400 font-bold">
+                      F + V - E = 6 + 8 - 12 = 2
+                    </div>
+                    <div class="text-[10px] text-slate-400 mt-1">
+                      सम्बन्ध: <span class="text-cyan-300">कुना ($V$) - किनारा ($E$) + सतह ($F$) = २</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Interactive Euler Unknown Solver -->
+                <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700/60 space-y-2">
+                  <h4 class="text-xs font-bold text-amber-300 uppercase tracking-wider">⚡ यूलर सूत्र अज्ञात मान क्यालकुलेटर</h4>
+                  <p class="text-[11px] text-slate-300">कुनै दुईवटा मान प्रविष्ट गर्नुहोस्, तेस्रो मान तुरुन्त पत्ता लाग्नेछ:</p>
+                  <div class="grid grid-cols-3 gap-2">
+                    <div>
+                      <label class="text-[10px] text-slate-400 block mb-1">सतह ($F$)</label>
+                      <input id="calc-f-input" type="number" value="6" oninput="solveEulerUnknown('F')" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-1.5 text-center text-xs text-white font-bold" />
+                    </div>
+                    <div>
+                      <label class="text-[10px] text-slate-400 block mb-1">कुना ($V$)</label>
+                      <input id="calc-v-input" type="number" value="8" oninput="solveEulerUnknown('V')" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-1.5 text-center text-xs text-white font-bold" />
+                    </div>
+                    <div>
+                      <label class="text-[10px] text-slate-400 block mb-1">किनारा ($E$)</label>
+                      <input id="calc-e-input" type="number" value="12" oninput="solveEulerUnknown('E')" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-1.5 text-center text-xs text-white font-bold" />
+                    </div>
+                  </div>
+                  <div id="calc-solver-result" class="text-[11px] font-bold text-cyan-300 text-center mt-1">
+                    $E = F + V - 2 = 6 + 8 - 2 = 12$
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUB-LAB 2: CURVED SOLIDS EXPLORER -->
+            <div id="ch17-sublab-curved" class="hidden grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <div class="lg:col-span-7 bg-slate-950/70 p-4 rounded-2xl border border-indigo-900/60 flex flex-col items-center">
+                <div class="w-full flex justify-between items-center text-xs text-slate-400 mb-2">
+                  <span>वक्र ठोस आकृति अवलोकन गर्नुहोस्</span>
+                  <span id="curved-part-badge" class="px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 font-bold">बेलना (Cylinder)</span>
+                </div>
+
+                <div class="w-full max-w-[460px] aspect-square bg-slate-900 rounded-xl relative overflow-hidden border border-slate-800 flex items-center justify-center p-2">
+                  <svg id="svg-curved-lab" viewBox="0 0 400 400" class="w-full h-full select-none">
+                    <defs>
+                      <pattern id="curved-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                      </pattern>
+                    </defs>
+                    <rect width="400" height="400" fill="url(#curved-grid)" />
+
+                    <!-- Dynamic Curved Shapes Container -->
+                    <g id="curved-svg-shapes">
+                      <!-- Rendered dynamically for Cylinder, Cone, Sphere -->
+                    </g>
+                  </svg>
+                </div>
+
+                <div class="w-full mt-3 p-3 bg-indigo-950/80 rounded-xl border border-indigo-700/50 flex items-center justify-between text-xs md:text-sm">
+                  <div class="text-slate-300">
+                    सतहको प्रकार: <span id="curved-surface-types" class="text-cyan-400 font-bold">२ समतल (वृत्त) + १ वक्र सतह</span>
+                  </div>
+                  <div class="text-amber-400 font-bold text-xs">
+                    शीर्षबिन्दु ($V$): <span id="curved-v-count">०</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Curved Controls Panel -->
+              <div class="lg:col-span-5 space-y-4">
+                <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700/60 space-y-3">
+                  <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider">वक्र ठोस आकृति छनोट गर्नुहोस्</h4>
+                  <div class="grid grid-cols-3 gap-2">
+                    <button id="btn-curved-cyl" onclick="setCurvedShape('cylinder')" class="px-3 py-2 rounded-xl bg-cyan-600 text-white font-bold text-xs shadow-sm transition cursor-pointer">
+                      बेलना (Cylinder)
+                    </button>
+                    <button id="btn-curved-cone" onclick="setCurvedShape('cone')" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold text-xs transition cursor-pointer">
+                      सोली (Cone)
+                    </button>
+                    <button id="btn-curved-sph" onclick="setCurvedShape('sphere')" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold text-xs transition cursor-pointer">
+                      गोला (Sphere)
+                    </button>
+                  </div>
+                </div>
+
+                <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700/60 space-y-3 text-xs">
+                  <h4 class="text-xs font-bold text-amber-300 uppercase tracking-wider">विशेषता तथा तथ्यहरू</h4>
+                  <div id="curved-desc-box" class="text-slate-300 leading-relaxed text-[11px]">
+                    बेलनामा माथि र तल २ ओटा बराबर वृत्ताकार समतलीय आधारहरू हुन्छन् र वरिपरि एउटा वक्र सतह हुन्छ । यसमा २ ओटा घुमाउरा किनारा हुन्छन् तर कुनै कुना हुँदैन ।
+                  </div>
+                  <div class="p-3 bg-amber-950/40 rounded-xl border border-amber-700/40 text-amber-200 text-[11px] leading-relaxed">
+                    ⚠️ <strong>यूलर सूत्र किन लागू हुँदैन?</strong><br>
+                    यूलरको सूत्र ($F+V-E=2$) केवल समतलीय बहुभुजाकार सतहहरू (Flat polygonal faces) भएका बहुफलकमा मात्र लागू हुन्छ । वक्र सतह भएका वस्तुहरूमा यो प्रत्यक्ष लागू हुँदैन ।
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUB-LAB 3: 3D NET / UNPOLDING LAB -->
+            <div id="ch17-sublab-net" class="hidden grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <div class="lg:col-span-7 bg-slate-950/70 p-4 rounded-2xl border border-indigo-900/60 flex flex-col items-center">
+                <div class="w-full flex justify-between items-center text-xs text-slate-400 mb-2">
+                  <span>ठोस वस्तुलाई खोलेर समतलमा फैलाउँदा देखिने जाली (Net)</span>
+                  <span id="net-part-badge" class="px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 font-bold">घनको नेट (Cube Net)</span>
+                </div>
+
+                <div class="w-full max-w-[460px] aspect-square bg-slate-900 rounded-xl relative overflow-hidden border border-slate-800 flex items-center justify-center p-2">
+                  <svg id="svg-net-lab" viewBox="0 0 400 400" class="w-full h-full select-none">
+                    <defs>
+                      <pattern id="net-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                      </pattern>
+                    </defs>
+                    <rect width="400" height="400" fill="url(#net-grid)" />
+
+                    <!-- Dynamic Net SVG Container -->
+                    <g id="net-svg-shapes">
+                      <!-- Rendered dynamically for Cube Net, Cuboid Net, Cylinder Net, Cone Net -->
+                    </g>
+                  </svg>
+                </div>
+
+                <div class="w-full mt-3 p-3 bg-indigo-950/80 rounded-xl border border-indigo-700/50 flex items-center justify-between text-xs md:text-sm">
+                  <div class="text-slate-300">
+                    नेटको बनावट: <span id="net-desc-summary" class="text-purple-300 font-bold">६ वटा बराबर वर्गहरू (क्रस ढाँचा)</span>
+                  </div>
+                  <div class="text-emerald-400 font-bold text-xs">
+                    सतह सङ्ख्या: <span id="net-faces-count">६</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Net Selection Panel -->
+              <div class="lg:col-span-5 space-y-4">
+                <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700/60 space-y-3">
+                  <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider">नेट (जाली) छनोट गर्नुहोस्</h4>
+                  <div class="grid grid-cols-2 gap-2">
+                    <button id="btn-net-cube" onclick="setNetShape('cube')" class="px-3 py-2 rounded-xl bg-purple-600 text-white font-bold text-xs shadow-sm transition cursor-pointer">
+                      घनको नेट (६ वर्ग)
+                    </button>
+                    <button id="btn-net-cuboid" onclick="setNetShape('cuboid')" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold text-xs transition cursor-pointer">
+                      षड्मुखाको नेट (६ आयत)
+                    </button>
+                    <button id="btn-net-cylinder" onclick="setNetShape('cylinder')" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold text-xs transition cursor-pointer">
+                      बेलनाको नेट (१ आयत + २ वृत्त)
+                    </button>
+                    <button id="btn-net-cone" onclick="setNetShape('cone')" class="px-3 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold text-xs transition cursor-pointer">
+                      सोलीको नेट (१ वृत्त + १ क्षेत्रक)
+                    </button>
+                  </div>
+                </div>
+
+                <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700/60 space-y-2 text-xs">
+                  <h4 class="text-xs font-bold text-indigo-300 uppercase tracking-wider">जाली (Net) को महत्त्व</h4>
+                  <p class="text-slate-300 leading-relaxed text-[11px]">
+                    कुनै ठोस वस्तुको बाहिरी सतहलाई पट्याएर बनाउन वा कागजबाट बट्टा निर्माण गर्न नेट अनिवार्य हुन्छ ।
+                  </p>
+                  <div id="net-tip-box" class="p-3 bg-purple-950/40 rounded-xl border border-purple-700/40 text-purple-200 text-[11px] leading-relaxed">
+                    💡 <strong>घनको नेट:</strong> ६ वटा वर्गहरूलाई विभिन्न ११ तरिकाले मिलाएर घनको नेट बनाउन सकिन्छ । तीमध्ये 'T' वा क्रस ढाँचा सबैभन्दा लोकप्रिय छ ।
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>

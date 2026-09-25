@@ -1,0 +1,1049 @@
+<!-- ================= CHAPTER 20 VIEW CONTAINER ================= -->
+      <div id="chapter-view-20" class="flex-1 flex flex-col hidden">
+        <!-- Top Chapter Banner -->
+        <div class="border-b border-slate-100 pb-5 mb-6 flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <div class="flex items-center gap-2 text-xs font-bold text-blue-600 mb-1">
+              एकाइ ६: तथ्याङ्कशास्त्र (Unit 6: Statistics — अन्तिम एकाइ तथा अन्तिम पाठ)
+            </div>
+            <h2 class="text-2xl md:text-3xl font-black text-slate-900">पाठ २०: तथ्याङ्कशास्त्र (Statistics)</h2>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs bg-slate-100 text-slate-700 font-semibold px-3 py-1 rounded-xl border border-slate-200">पाठ्यपुस्तक पृष्ठ २२४–२३३</span>
+            <span class="text-xs bg-emerald-100 text-emerald-700 font-semibold px-3 py-1 rounded-xl border border-emerald-200">अभ्यास २०.१, २०.२ र एकाइ ६ मिश्रित अभ्यास</span>
+          </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="flex border-b border-slate-200 gap-2 mb-6 overflow-x-auto pb-1 text-sm font-bold">
+          <button onclick="setTabCh20('concepts')" id="ch20-tab-concepts" class="px-5 py-2.5 rounded-xl bg-blue-600 text-white shadow-sm font-bold transition whitespace-nowrap cursor-pointer">
+            १. अवधारणा र तथ्याङ्क-स्तम्भचित्र ल्याब
+          </button>
+          <button onclick="setTabCh20('exercises')" id="ch20-tab-exercises" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+            २. सम्पूर्ण अभ्यास समाधान (२०.१, २०.२ र मिश्रित)
+          </button>
+          <button onclick="setTabCh20('tiers')" id="ch20-tab-tiers" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+            ३. तीन तहका नमुना प्रश्नहरू (१६ प्रश्न)
+          </button>
+          <button onclick="setTabCh20('quiz')" id="ch20-tab-quiz" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+            ४. स्वमूल्याङ्कन क्विज (१० प्रश्न)
+          </button>
+        </div>
+
+<!-- ================= CHAPTER 20: TAB 1 (CONCEPTS & INTERACTIVE LAB) ================= -->
+<div id="ch20-view-concepts" class="space-y-8">
+  <!-- Key Concept Cards Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Card 1: Data & Frequency -->
+    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl p-6 shadow-sm">
+      <div class="flex items-center gap-3 mb-3">
+        <span class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-black text-lg">१</span>
+        <div>
+          <h3 class="font-extrabold text-lg text-slate-900">तथ्याङ्क, बारम्बारता र मिलान चिह्न (Data & Tally Marks)</h3>
+          <span class="text-xs text-blue-700 font-semibold">कोरा आँकडालाई पाँच-पाँचको समूहमा व्यवस्थित गर्ने कला</span>
+        </div>
+      </div>
+      <div class="text-sm text-slate-700 space-y-2 leading-relaxed">
+        <p>कुनै उद्देश्यका लागि सङ्कलन गरिएका सङ्ख्यात्मक सूचनाहरूलाई <strong>तथ्याङ्क (Data)</strong> भनिन्छ। अव्यवस्थित सुरुवाती तथ्याङ्कलाई <strong>कोरा तथ्याङ्क (Raw Data)</strong> भनिन्छ।</p>
+        <ul class="list-disc list-inside space-y-1.5 text-xs md:text-sm text-slate-600 bg-white/70 p-3.5 rounded-xl border border-blue-100">
+          <li><strong>बारम्बारता (Frequency - $f$):</strong> तथ्याङ्कमा कुनै मान कति पटक दोहोरिएको छ भन्ने सङ्ख्या।</li>
+          <li><strong>मिलान चिह्न (Tally Mark):</strong> गणना गर्दा प्रयोग गरिने ठाडो धर्सा ($|$) र चार धर्सापछि पाँचौँले छड्के काट्ने ($||||\mkern-12mu/$) नियम। यसले गर्दा ठूला सङ्ख्याहरू ५-५ को समूहमा छिटो गन्न सकिन्छ।</li>
+          <li><strong>प्राथमिक तथ्याङ्क:</strong> आफैँले स्थलगत रूपमा सङ्कलन गरेको मौलिक तथ्याङ्क।</li>
+          <li><strong>द्वितीयक तथ्याङ्क:</strong> अरूले पहिले नै प्रकाशित गरेको स्रोतबाट लिइएको तथ्याङ्क।</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Card 2: Bar Diagram Rules -->
+    <div class="bg-gradient-to-br from-emerald-50 to-teal-50 border border-teal-100 rounded-2xl p-6 shadow-sm">
+      <div class="flex items-center gap-3 mb-3">
+        <span class="w-10 h-10 rounded-xl bg-teal-600 text-white flex items-center justify-center font-black text-lg">२</span>
+        <div>
+          <h3 class="font-extrabold text-lg text-slate-900">साधारण स्तम्भ चित्र (Simple Bar Diagram)</h3>
+          <span class="text-xs text-teal-700 font-semibold">आयताकार खम्बाहरूबाट दृश्य तुलना गर्ने वैज्ञानिक विधि</span>
+        </div>
+      </div>
+      <div class="text-sm text-slate-700 space-y-2 leading-relaxed">
+        <p>तथ्याङ्कलाई समान चौडाइ भएका आयताकार स्तम्भ (खम्बा) हरूको उचाइद्वारा दृश्य रूपमा प्रस्तुत गर्ने चित्रलाई <strong>स्तम्भ चित्र</strong> भनिन्छ।</p>
+        <div class="bg-white/80 p-3.5 rounded-xl border border-teal-100 text-xs md:text-sm text-slate-700 space-y-1.5">
+          <div class="font-bold text-teal-900 flex items-center gap-1.5">
+            <svg style="width: 18px; height: 18px; min-width: 18px; display: inline-block; vertical-align: middle;" class="text-teal-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            स्तम्भ चित्रका ४ सुनौला अनिवार्य नियमहरू (पृष्ठ २२९):
+          </div>
+          <ol class="list-decimal list-inside space-y-1 pl-2 text-xs text-slate-600">
+            <li><strong>अक्षहरू:</strong> तेर्सो $X$-अक्षमा विषय/शीर्षक र ठाडो $Y$-अक्षमा बारम्बारता स्पष्ट कोर्नुपर्छ।</li>
+            <li><strong>शीर्षक (Title):</strong> स्तम्भ चित्रको स्पष्ट शीर्षक अनिवार्य लेख्नुपर्छ।</li>
+            <li><strong>समान चौडाइ:</strong> सबै स्तम्भहरूको चौडाइ ठ्याक्कै <strong>बराबर</strong> हुनुपर्छ।</li>
+            <li><strong>समान खाली दूरी:</strong> दुई स्तम्भबिचको दूरी सधैँ <strong>समान</strong> छोड्नुपर्छ।</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tally Marks Reference & Bar Diagram Construction Guide -->
+  <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+      <div>
+        <h4 class="font-black text-slate-900 text-base md:text-lg flex items-center gap-2">
+          <span>📊 मिलान चिह्न (Tally Marks) र मानहरूको प्रदर्शन तालिका</span>
+        </h4>
+        <p class="text-xs text-slate-500">पाँच-पाँचको समूहमा तथ्याङ्क सङ्कलन गर्ने मानक विधि</p>
+      </div>
+      <span class="text-xs bg-blue-100 text-blue-900 font-bold px-3 py-1 rounded-xl">पाठ्यपुस्तक पृष्ठ २२६ तालिका</span>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3 text-center text-xs">
+      <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+        <span class="text-slate-400 block text-[10px]">सङ्ख्या १</span>
+        <span class="font-mono text-base font-black text-blue-600">|</span>
+        <span class="text-[10px] text-slate-500 block">१ धर्सा</span>
+      </div>
+      <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+        <span class="text-slate-400 block text-[10px]">सङ्ख्या २</span>
+        <span class="font-mono text-base font-black text-blue-600">||</span>
+        <span class="text-[10px] text-slate-500 block">२ धर्सा</span>
+      </div>
+      <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+        <span class="text-slate-400 block text-[10px]">सङ्ख्या ३</span>
+        <span class="font-mono text-base font-black text-blue-600">|||</span>
+        <span class="text-[10px] text-slate-500 block">३ धर्सा</span>
+      </div>
+      <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+        <span class="text-slate-400 block text-[10px]">सङ्ख्या ४</span>
+        <span class="font-mono text-base font-black text-blue-600">||||</span>
+        <span class="text-[10px] text-slate-500 block">४ ठाडो धर्सा</span>
+      </div>
+      <div class="bg-emerald-50 p-2.5 rounded-xl border border-emerald-200">
+        <span class="text-emerald-700 block text-[10px] font-bold">सङ्ख्या ५</span>
+        <span class="font-mono text-base font-black text-emerald-600"><s>||||</s></span>
+        <span class="text-[10px] text-emerald-700 block font-bold">१ पूरा बण्डल (५)</span>
+      </div>
+      <div class="bg-emerald-50 p-2.5 rounded-xl border border-emerald-200">
+        <span class="text-emerald-700 block text-[10px] font-bold">सङ्ख्या १०</span>
+        <span class="font-mono text-base font-black text-emerald-600"><s>||||</s> <s>||||</s></span>
+        <span class="text-[10px] text-emerald-700 block font-bold">२ पूरा बण्डल</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE LAB CONTAINER -->
+  <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl text-white space-y-6">
+    <!-- Lab Header & Mode Selector -->
+    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-5">
+      <div>
+        <div class="flex items-center gap-2 text-xs font-bold text-cyan-400 mb-1">
+          <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+          पाठ २० अन्तरक्रियात्मक प्रयोगशाला (Interactive Statistics Lab)
+        </div>
+        <h3 class="text-xl md:text-2xl font-black text-white">तथ्याङ्क र स्तम्भ चित्र स्टुडियो (Statistics & Bar Studio)</h3>
+      </div>
+
+      <!-- Mode Selector Pills -->
+      <div class="flex items-center gap-2 bg-slate-800/80 p-1.5 rounded-2xl border border-slate-700">
+        <button onclick="switchCh20Lab('barStudio')" id="ch20-lab-btn-barStudio" class="px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition">
+          १. स्तम्भ चित्र निर्माता
+        </button>
+        <button onclick="switchCh20Lab('tallyLab')" id="ch20-lab-btn-tallyLab" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-300 hover:text-white transition">
+          २. ट्याली मार्क जेनेरेटर
+        </button>
+        <button onclick="switchCh20Lab('readerLab')" id="ch20-lab-btn-readerLab" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-300 hover:text-white transition">
+          ३. स्तम्भ चित्र पठन क्विज
+        </button>
+      </div>
+    </div>
+
+    <!-- ================= LAB MODE 1: DYNAMIC BAR CHART STUDIO ================= -->
+    <div id="ch20-lab-mode-barStudio" class="space-y-6">
+      <!-- Dataset Selector Controls -->
+      <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-800/60 p-3.5 rounded-2xl border border-slate-700">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs font-bold text-slate-400 mr-1">नमुना तथ्याङ्क छान्नुहोस्:</span>
+          <button onclick="loadBarPreset('absent')" id="btn-bar-absent" class="bar-preset-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-blue-600 text-white">अनुपस्थित विद्यार्थी (६ दिन)</button>
+          <button onclick="loadBarPreset('subjects')" id="btn-bar-subjects" class="bar-preset-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">सौरभको परीक्षा प्राप्ताङ्क</button>
+          <button onclick="loadBarPreset('population')" id="btn-bar-population" class="bar-preset-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">सहरको जनसङ्ख्या वृद्धि</button>
+          <button onclick="loadBarPreset('expenses')" id="btn-bar-expenses" class="bar-preset-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">परिवारको वार्षिक खर्च</button>
+          <button onclick="loadBarPreset('animals')" id="btn-bar-animals" class="bar-preset-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 text-slate-200 hover:bg-slate-600">पशु फार्मको तथ्याङ्क</button>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs text-slate-400">रङ थिम:</span>
+          <select id="ch20-bar-theme" onchange="renderBarStudio()" class="bg-slate-900 text-xs text-slate-200 px-3 py-1.5 rounded-xl border border-slate-700 focus:outline-none focus:border-cyan-500">
+            <option value="indigo">इन्डिगो र निलो (Indigo-Blue)</option>
+            <option value="emerald">समुन्द्री हरियो (Emerald-Teal)</option>
+            <option value="amber">सुनौलो अम्बर (Amber-Gold)</option>
+            <option value="multi">बहुरङ्गी स्तम्भ (Multi-color)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Canvas and Metric Summary -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <!-- SVG Canvas -->
+        <div class="lg:col-span-8 flex flex-col justify-center items-center bg-slate-950 p-4 rounded-2xl border border-slate-800 relative overflow-hidden">
+          <div id="bar-chart-title" class="text-sm font-extrabold text-cyan-300 mb-2">
+            अनुपस्थित विद्यार्थी सङ्ख्या सम्बन्धी साधारण स्तम्भ चित्र
+          </div>
+          <svg id="ch20-bar-svg" viewBox="0 0 540 340" class="w-full max-w-[560px] h-[320px]">
+            <rect x="0" y="0" width="540" height="340" fill="#090d16" rx="16" />
+            <!-- Rendered dynamically via JS -->
+            <g id="bar-grid-group"></g>
+            <g id="bar-elements-group"></g>
+            <g id="bar-axes-group"></g>
+            <g id="bar-labels-group"></g>
+          </svg>
+
+          <!-- Floating Scale Badge -->
+          <div class="absolute top-5 right-6 bg-slate-900/90 backdrop-blur px-3 py-1.5 rounded-xl border border-slate-700 text-[11px] text-amber-300 font-semibold flex items-center gap-1.5">
+            <span>📏 स्केल (Scale):</span>
+            <span id="bar-scale-text">Y-अक्ष: १ से.मि. = ५ एकाइ</span>
+          </div>
+        </div>
+
+        <!-- Metric & Analysis Cards -->
+        <div class="lg:col-span-4 space-y-3">
+          <div class="bg-slate-800/80 p-4 rounded-2xl border border-slate-700 space-y-2.5 text-xs">
+            <h4 class="font-bold text-sm text-cyan-400 border-b border-slate-700 pb-1.5 flex items-center justify-between">
+              <span>📈 तथ्याङ्क विश्लेषण सारांश</span>
+              <span id="bar-items-count" class="text-[11px] text-slate-400">६ वटा स्तम्भ</span>
+            </h4>
+            
+            <div class="flex justify-between items-center bg-slate-900/60 p-2.5 rounded-xl border border-slate-800">
+              <span class="text-slate-400">सर्वोच्च मान (Maximum):</span>
+              <span id="bar-metric-max" class="font-black text-emerald-400 text-sm">२५</span>
+            </div>
+
+            <div class="flex justify-between items-center bg-slate-900/60 p-2.5 rounded-xl border border-slate-800">
+              <span class="text-slate-400">न्यूनतम मान (Minimum):</span>
+              <span id="bar-metric-min" class="font-black text-rose-400 text-sm">५</span>
+            </div>
+
+            <div class="flex justify-between items-center bg-slate-900/60 p-2.5 rounded-xl border border-slate-800">
+              <span class="text-slate-400">कुल योग (Total Sum):</span>
+              <span id="bar-metric-sum" class="font-black text-cyan-300 text-sm">६५</span>
+            </div>
+
+            <div class="flex justify-between items-center bg-slate-900/60 p-2.5 rounded-xl border border-slate-800">
+              <span class="text-slate-400">औसत मान (Average / Mean):</span>
+              <span id="bar-metric-avg" class="font-bold text-amber-300 text-sm">१०.८३</span>
+            </div>
+          </div>
+
+          <div class="bg-blue-950/40 p-3.5 rounded-2xl border border-blue-800/40 text-[11px] text-blue-200 leading-relaxed">
+            💡 <strong>स्मरण रहोस्:</strong> प्रत्येक स्तम्भको चौडाइ र दुई स्तम्भबिचको दूरी ठ्याक्कै समान छ, जसले गर्दा खम्बाहरूको उचाइबाट सीधै तुलना गर्न सकिन्छ।
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= LAB MODE 2: TALLY MARKS & FREQUENCY GENERATOR ================= -->
+    <div id="ch20-lab-mode-tallyLab" class="hidden space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-800/60 p-3.5 rounded-2xl border border-slate-700">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs font-bold text-slate-400 mr-1">नमुना कोरा तथ्याङ्क:</span>
+          <button onclick="loadTallyPreset('scores')" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 hover:bg-slate-600 text-slate-200 transition">गणित प्राप्ताङ्क (३० जना)</button>
+          <button onclick="loadTallyPreset('heights')" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 hover:bg-slate-600 text-slate-200 transition">विद्यार्थी उचाइ (३२ जना)</button>
+          <button onclick="loadTallyPreset('transport')" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 hover:bg-slate-600 text-slate-200 transition">यातायातका साधन (४० जना)</button>
+          <button onclick="loadTallyPreset('dice')" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-700 hover:bg-slate-600 text-slate-200 transition">पासा फ्याँक्दा (२५ पटक)</button>
+        </div>
+        <div class="flex items-center gap-2">
+          <input type="text" id="tally-custom-item" placeholder="नयाँ मान थप्नुहोस्..." class="bg-slate-900 text-xs text-slate-200 px-3 py-1.5 rounded-xl border border-slate-700 focus:outline-none focus:border-cyan-500 w-36">
+          <button onclick="addTallyItem()" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white transition flex items-center gap-1">
+            <span>+ थप्नुहोस्</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Tally Table Dynamic Display -->
+      <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+          <h4 id="tally-dataset-title" class="font-extrabold text-sm md:text-base text-cyan-300">
+            कक्षा ६ का ३० जना विद्यार्थीहरूको गणित प्राप्ताङ्कको बारम्बारता तालिका
+          </h4>
+          <span id="tally-total-count" class="text-xs bg-blue-500/20 text-blue-300 font-bold px-3 py-1 rounded-xl border border-blue-500/30">कुल सङ्ख्या N = ३०</span>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs md:text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-900 text-slate-300 font-bold border-b border-slate-800">
+                <th class="p-3 w-16 text-center">क्र.सं.</th>
+                <th class="p-3">मान / शीर्षक (Value)</th>
+                <th class="p-3">मिलान चिह्न (Tally Mark)</th>
+                <th class="p-3 w-32 text-center">बारम्बारता ($f$)</th>
+              </tr>
+            </thead>
+            <tbody id="tally-table-body" class="divide-y divide-slate-800/80 text-slate-300">
+              <!-- Rendered dynamically via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= LAB MODE 3: BAR CHART READER LAB ================= -->
+    <div id="ch20-lab-mode-readerLab" class="hidden space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-800/60 p-3.5 rounded-2xl border border-slate-700">
+        <div class="text-xs text-slate-300 font-semibold">
+          स्तम्भ चित्र हेरेर सोधिएका प्रश्नहरूको सही उत्तर पत्ता लगाउनुहोस् र तत्काल पृष्ठपोषण पाउनुहोस्।
+        </div>
+        <button onclick="nextReaderQuestion()" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white transition flex items-center gap-1.5">
+          <span>🔄 अर्को प्रश्न हेर्नुहोस्</span>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <!-- Interactive Chart Viewer -->
+        <div class="lg:col-span-7 flex flex-col items-center justify-center bg-slate-950 p-4 rounded-2xl border border-slate-800 relative">
+          <div id="reader-chart-title" class="text-xs font-bold text-cyan-300 mb-2">
+            कक्षा ६ देखि १२ सम्मका विद्यार्थीहरूको सङ्ख्या
+          </div>
+          <svg id="ch20-reader-svg" viewBox="0 0 460 300" class="w-full max-w-[480px] h-[280px]">
+            <rect x="0" y="0" width="460" height="300" fill="#090d16" rx="16" />
+            <g id="reader-svg-elements"></g>
+          </svg>
+        </div>
+
+        <!-- Question Card -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700 space-y-4 text-xs">
+            <div class="flex items-center justify-between border-b border-slate-700 pb-2">
+              <span id="reader-q-num" class="font-bold text-xs text-blue-400">प्रश्न १ / ५</span>
+              <span id="reader-score-badge" class="px-2.5 py-0.5 rounded-full text-[11px] font-black bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">अङ्क: ० / ५</span>
+            </div>
+
+            <p id="reader-q-text" class="font-extrabold text-sm text-slate-100 leading-relaxed">
+              कुन कक्षामा सबैभन्दा धेरै विद्यार्थीहरू अध्ययनरत छन्?
+            </p>
+
+            <div id="reader-options-container" class="space-y-2">
+              <!-- Rendered via JS -->
+            </div>
+
+            <div id="reader-feedback" class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-xs font-semibold text-slate-400 min-h-[36px]">
+              विकल्प छानेर आफ्नो उत्तर परीक्षण गर्नुहोस्!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ================= END TAB 1 ================= -->
+
+<!-- ================= CHAPTER 20: TAB 2 (EXERCISES & UNIT 6 REVIEW) ================= -->
+<div id="ch20-view-exercises" class="hidden space-y-8">
+  <!-- Sub-section Switcher -->
+  <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-100 p-2 rounded-2xl border border-slate-200">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="text-xs font-bold text-slate-500 ml-2">अभ्यास खण्ड छान्नुहोस्:</span>
+      <button onclick="filterCh20Exercises('all')" id="btn-sub20-all" class="ch20-sub-btn px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-sm transition">
+        सबै देखाउनुहोस् (All)
+      </button>
+      <button onclick="filterCh20Exercises('ex20_1')" id="btn-sub20-ex20_1" class="ch20-sub-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-slate-200 transition">
+        अभ्यास २०.१ (बारम्बारता र ट्याली)
+      </button>
+      <button onclick="filterCh20Exercises('ex20_2')" id="btn-sub20-ex20_2" class="ch20-sub-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-slate-200 transition">
+        अभ्यास २०.२ (स्तम्भ चित्र)
+      </button>
+      <button onclick="filterCh20Exercises('unit6_mixed')" id="btn-sub20-mixed" class="ch20-sub-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 hover:bg-slate-200 transition">
+        एकाइ ६ मिश्रित अभ्यास (१–३)
+      </button>
+    </div>
+    <div class="text-xs text-slate-500 font-semibold mr-2">
+      पाठ्यपुस्तक पृष्ठ २२७–२३३
+    </div>
+  </div>
+
+  <!-- ================= SECTION 1: EXERCISE 20.1 ================= -->
+  <div id="sec-ch20-ex20_1" class="space-y-6">
+    <div class="border-b border-blue-200 pb-3 flex items-center justify-between">
+      <div>
+        <h3 class="text-xl font-black text-slate-900 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-bold">२०.१</span>
+          <span>अभ्यास २०.१ : मिलान चिह्न र बारम्बारता तालिका (पृष्ठ २२७–२२८)</span>
+        </h3>
+        <p class="text-xs text-slate-500 mt-0.5">प्राप्ताङ्क, उचाइ, दैनिक ज्याला र यातायात साधन वर्गीकरण</p>
+      </div>
+      <span class="text-xs bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-xl">४ मुख्य प्रश्नहरू + परियोजना</span>
+    </div>
+
+    <!-- Q1: Math Marks 30 Students -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-700 text-xs font-black">प्रश्न १</span>
+          <span>कक्षा ६ का ३० जना विद्यार्थीहरूको २० पूर्णाङ्कको गणित परीक्षाको प्राप्ताङ्कको बारम्बारता तालिका :</span>
+        </h4>
+        <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg">पृष्ठ २२७</span>
+      </div>
+
+      <div class="text-xs text-slate-600 bg-slate-50 p-3 rounded-xl border border-slate-200 font-mono">
+        दिइएको कोरा तथ्याङ्क: 2, 14, 9, 6, 13, 7, 8, 11, 12, 9, 5, 4, 15, 19, 20, 17, 16, 13, 20, 19, 15, 9, 15, 12, 17, 13, 18, 19, 16, 15
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs md:text-sm border-collapse">
+          <thead>
+            <tr class="bg-blue-50 text-blue-900 font-bold border-b border-blue-200">
+              <th class="p-2.5">क्र.सं.</th>
+              <th class="p-2.5">प्राप्ताङ्क (Marks)</th>
+              <th class="p-2.5">मिलान चिह्न (Tally Mark)</th>
+              <th class="p-2.5 text-center">विद्यार्थी सङ्ख्या ($f$)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700 font-medium">
+            <tr><td class="p-2 text-center">१</td><td class="p-2">२</td><td class="p-2 font-mono">|</td><td class="p-2 text-center font-bold">१</td></tr>
+            <tr><td class="p-2 text-center">२</td><td class="p-2">४</td><td class="p-2 font-mono">|</td><td class="p-2 text-center font-bold">१</td></tr>
+            <tr><td class="p-2 text-center">३</td><td class="p-2">५</td><td class="p-2 font-mono">|</td><td class="p-2 text-center font-bold">१</td></tr>
+            <tr><td class="p-2 text-center">४</td><td class="p-2">६</td><td class="p-2 font-mono">|</td><td class="p-2 text-center font-bold">१</td></tr>
+            <tr><td class="p-2 text-center">५</td><td class="p-2">७</td><td class="p-2 font-mono">|</td><td class="p-2 text-center font-bold">१</td></tr>
+            <tr><td class="p-2 text-center">६</td><td class="p-2">८</td><td class="p-2 font-mono">|</td><td class="p-2 text-center font-bold">१</td></tr>
+            <tr class="bg-blue-50/30"><td class="p-2 text-center">७</td><td class="p-2">९</td><td class="p-2 font-mono">|||</td><td class="p-2 text-center font-bold text-blue-600">३</td></tr>
+            <tr><td class="p-2 text-center">८</td><td class="p-2">११</td><td class="p-2 font-mono">|</td><td class="p-2 text-center font-bold">१</td></tr>
+            <tr><td class="p-2 text-center">९</td><td class="p-2">१२</td><td class="p-2 font-mono">||</td><td class="p-2 text-center font-bold">२</td></tr>
+            <tr class="bg-blue-50/30"><td class="p-2 text-center">१०</td><td class="p-2">१३</td><td class="p-2 font-mono">|||</td><td class="p-2 text-center font-bold text-blue-600">३</td></tr>
+            <tr><td class="p-2 text-center">११</td><td class="p-2">१४</td><td class="p-2 font-mono">|</td><td class="p-2 text-center font-bold">१</td></tr>
+            <tr class="bg-emerald-50/40"><td class="p-2 text-center font-bold text-emerald-800">१२</td><td class="p-2 font-bold text-emerald-800">१५ (अधिकतम)</td><td class="p-2 font-mono">||||</td><td class="p-2 text-center font-black text-emerald-600">४</td></tr>
+            <tr><td class="p-2 text-center">१३</td><td class="p-2">१६</td><td class="p-2 font-mono">||</td><td class="p-2 text-center font-bold">२</td></tr>
+            <tr><td class="p-2 text-center">१४</td><td class="p-2">१७</td><td class="p-2 font-mono">||</td><td class="p-2 text-center font-bold">२</td></tr>
+            <tr><td class="p-2 text-center">१५</td><td class="p-2">१८</td><td class="p-2 font-mono">|</td><td class="p-2 text-center font-bold">१</td></tr>
+            <tr class="bg-blue-50/30"><td class="p-2 text-center">१६</td><td class="p-2">१९</td><td class="p-2 font-mono">|||</td><td class="p-2 text-center font-bold text-blue-600">३</td></tr>
+            <tr><td class="p-2 text-center">१७</td><td class="p-2">२० (पूर्णाङ्क)</td><td class="p-2 font-mono">||</td><td class="p-2 text-center font-bold">२</td></tr>
+            <tr class="bg-slate-100 font-black"><td colspan="3" class="p-2.5 text-right">जम्मा विद्यार्थी सङ्ख्या ($N$):</td><td class="p-2.5 text-center text-blue-700 font-extrabold text-base">३०</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Q2: Student Heights -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-700 text-xs font-black">प्रश्न २</span>
+          <span>कक्षा १० का ३२ जना विद्यार्थीहरूको उचाइ (से.मि. मा) को बारम्बारता तालिका :</span>
+        </h4>
+        <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg">पृष्ठ २२७</span>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs md:text-sm border-collapse">
+          <thead>
+            <tr class="bg-indigo-50 text-indigo-900 font-bold border-b border-indigo-200">
+              <th class="p-2.5">क्र.सं.</th>
+              <th class="p-2.5">उचाइ (से.मि. मा)</th>
+              <th class="p-2.5">मिलान चिह्न (Tally Mark)</th>
+              <th class="p-2.5 text-center">विद्यार्थी सङ्ख्या ($f$)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700 font-medium">
+            <tr><td class="p-2 text-center">१</td><td class="p-2">१२०</td><td class="p-2 font-mono text-indigo-700"><s>||||</s> ||</td><td class="p-2 text-center font-bold">७</td></tr>
+            <tr><td class="p-2 text-center">२</td><td class="p-2">१२१</td><td class="p-2 font-mono text-indigo-700"><s>||||</s> |</td><td class="p-2 text-center font-bold">६</td></tr>
+            <tr><td class="p-2 text-center">३</td><td class="p-2">१२२</td><td class="p-2 font-mono text-indigo-700"><s>||||</s> ||</td><td class="p-2 text-center font-bold">७</td></tr>
+            <tr><td class="p-2 text-center">४</td><td class="p-2">१२३</td><td class="p-2 font-mono text-indigo-700"><s>||||</s> ||</td><td class="p-2 text-center font-bold">७</td></tr>
+            <tr><td class="p-2 text-center">५</td><td class="p-2">१२४</td><td class="p-2 font-mono text-indigo-700"><s>||||</s></td><td class="p-2 text-center font-bold">५</td></tr>
+            <tr class="bg-slate-100 font-black"><td colspan="3" class="p-2.5 text-right">कुल विद्यार्थी सङ्ख्या ($N$):</td><td class="p-2.5 text-center text-indigo-700 font-extrabold text-base">३२</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Q3: Daily Wages -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-700 text-xs font-black">प्रश्न ३</span>
+          <span>जुत्ता कारखानाका ४० जना कामदारहरूको दैनिक ज्याला (रू. मा) को बारम्बारता तालिका :</span>
+        </h4>
+        <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg">पृष्ठ २२७</span>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs md:text-sm border-collapse">
+          <thead>
+            <tr class="bg-amber-50 text-amber-900 font-bold border-b border-amber-200">
+              <th class="p-2.5">क्र.सं.</th>
+              <th class="p-2.5">दैनिक ज्याला (रू.)</th>
+              <th class="p-2.5">मिलान चिह्न (Tally Mark)</th>
+              <th class="p-2.5 text-center">कामदार सङ्ख्या ($f$)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700 font-medium">
+            <tr><td class="p-2 text-center">१</td><td class="p-2">१५०</td><td class="p-2 font-mono">||||</td><td class="p-2 text-center font-bold">४</td></tr>
+            <tr><td class="p-2 text-center">२</td><td class="p-2">१६०</td><td class="p-2 font-mono"><s>||||</s></td><td class="p-2 text-center font-bold">५</td></tr>
+            <tr><td class="p-2 text-center">३</td><td class="p-2">१७०</td><td class="p-2 font-mono"><s>||||</s></td><td class="p-2 text-center font-bold">५</td></tr>
+            <tr class="bg-amber-50/50"><td class="p-2 text-center font-bold text-amber-900">४</td><td class="p-2 font-bold text-amber-900">१८० (अधिकतम)</td><td class="p-2 font-mono text-amber-700"><s>||||</s> <s>||||</s></td><td class="p-2 text-center font-black text-amber-700">१०</td></tr>
+            <tr><td class="p-2 text-center">५</td><td class="p-2">१९०</td><td class="p-2 font-mono">|||</td><td class="p-2 text-center font-bold">३</td></tr>
+            <tr><td class="p-2 text-center">६</td><td class="p-2">२००</td><td class="p-2 font-mono"><s>||||</s></td><td class="p-2 text-center font-bold">५</td></tr>
+            <tr><td class="p-2 text-center">७</td><td class="p-2">२१०</td><td class="p-2 font-mono">|||</td><td class="p-2 text-center font-bold">३</td></tr>
+            <tr><td class="p-2 text-center">८</td><td class="p-2">२२०</td><td class="p-2 font-mono"><s>||||</s></td><td class="p-2 text-center font-bold">५</td></tr>
+            <tr class="bg-slate-100 font-black"><td colspan="3" class="p-2.5 text-right">कुल कामदार सङ्ख्या ($N$):</td><td class="p-2.5 text-center text-amber-700 font-extrabold text-base">४०</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Q4: Modes of Transport & Questions -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-700 text-xs font-black">प्रश्न ४</span>
+          <span>विद्यालय आउने यातायातका साधनहरूको बारम्बारता तालिका र उत्तरहरू :</span>
+        </h4>
+        <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg">पृष्ठ २२७–२२८</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Table -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs md:text-sm border-collapse">
+            <thead>
+              <tr class="bg-emerald-50 text-emerald-900 font-bold border-b border-emerald-200">
+                <th class="p-2">साधन</th>
+                <th class="p-2">मिलान चिह्न</th>
+                <th class="p-2 text-center">सङ्ख्या ($f$)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-slate-700">
+              <tr><td class="p-2 font-bold">बस</td><td class="p-2 font-mono text-emerald-700"><s>||||</s> ||||</td><td class="p-2 text-center font-bold">९</td></tr>
+              <tr><td class="p-2 font-bold">साइकल</td><td class="p-2 font-mono text-emerald-700"><s>||||</s> ||</td><td class="p-2 text-center font-bold">७</td></tr>
+              <tr><td class="p-2 font-bold">ट्याक्सी</td><td class="p-2 font-mono text-emerald-700"><s>||||</s> ||</td><td class="p-2 text-center font-bold">७</td></tr>
+              <tr><td class="p-2 font-bold">मोटरसाइकल</td><td class="p-2 font-mono text-emerald-700"><s>||||</s></td><td class="p-2 text-center font-bold">५</td></tr>
+              <tr class="bg-emerald-50/50"><td class="p-2 font-bold text-emerald-800">पैदल</td><td class="p-2 font-mono text-emerald-700"><s>||||</s> <s>||||</s> ||</td><td class="p-2 text-center font-black text-emerald-700">१२</td></tr>
+              <tr class="bg-slate-100 font-black"><td colspan="2" class="p-2 text-right">कुल:</td><td class="p-2 text-center text-emerald-700 text-base">४०</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Answers -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs md:text-sm space-y-2 text-slate-700">
+          <div><strong>(क) सबैभन्दा धेरै विद्यार्थी:</strong> <span class="text-emerald-700 font-bold">पैदल हिँडेर आउने समूहमा (१२ जना)</span>।</div>
+          <div><strong>(ख) सबैभन्दा कम विद्यार्थी:</strong> <span class="text-rose-600 font-bold">मोटरसाइकल प्रयोग गर्ने समूहमा (५ जना)</span>।</div>
+          <div><strong>(ग) पैदल आउने विद्यार्थी:</strong> <span class="font-bold">१२ जना</span>।</div>
+          <div><strong>(घ) बराबर विद्यार्थी हुने समूह:</strong> <span class="text-blue-700 font-bold">साइकल र ट्याक्सी</span> (दुवैमा बराबर ७-७ जना विद्यार्थी छन्)।</div>
+          <div><strong>(ङ) सो कक्षाको कुल विद्यार्थी सङ्ख्या:</strong> <span class="font-extrabold text-slate-900">$९ + ७ + ७ + ५ + १२ = \mathbf{४०}$ जना</span>।</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SECTION 2: EXERCISE 20.2 ================= -->
+  <div id="sec-ch20-ex20_2" class="space-y-6">
+    <div class="border-b border-teal-200 pb-3 flex items-center justify-between">
+      <div>
+        <h3 class="text-xl font-black text-slate-900 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-teal-600 text-white flex items-center justify-center text-sm font-bold">२०.२</span>
+          <span>अभ्यास २०.२ : साधारण स्तम्भ चित्र निर्माण तथा पठन (पृष्ठ २३०–२३१)</span>
+        </h3>
+        <p class="text-xs text-slate-500 mt-0.5">अनुपस्थित विद्यार्थी, त्रैमासिक प्राप्ताङ्क, कक्षा ६-१२ सङ्ख्या र पशु फार्म</p>
+      </div>
+      <span class="text-xs bg-teal-100 text-teal-800 font-bold px-3 py-1 rounded-xl">४ मुख्य प्रश्नहरू + परियोजना</span>
+    </div>
+
+    <!-- Q1 & Q2: Construction Details -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3 text-xs md:text-sm">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+          <h4 class="font-bold text-slate-900">प्रश्न १: अनुपस्थित विद्यार्थीहरूको स्तम्भ चित्र</h4>
+          <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">६ दिन</span>
+        </div>
+        <p class="text-slate-600 leading-relaxed">
+          <strong>तथ्याङ्क:</strong> आइतबार ५, सोमबार १०, मङ्गलबार २५, बुधबार १०, बिहीबार ५, शुक्रबार ५।
+        </p>
+        <div class="bg-teal-50 p-3 rounded-xl border border-teal-200 space-y-1 text-xs text-teal-900">
+          <div>• <strong>X-अक्ष:</strong> दिनहरू (आइतबारदेखि शुक्रबारसम्म समान चौडाइका स्तम्भ)</div>
+          <div>• <strong>Y-अक्ष:</strong> अनुपस्थित विद्यार्थी सङ्ख्या (स्केल: १ से.मि. = ५ जना)</div>
+          <div>• <strong>विशेषता:</strong> मङ्गलबारको स्तम्भ २५ जना (५ से.मि. अग्लो) सर्वोच्च हुन्छ।</div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3 text-xs md:text-sm">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+          <h4 class="font-bold text-slate-900">प्रश्न २: सौरभको त्रैमासिक परीक्षा प्राप्ताङ्क</h4>
+          <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">५ विषय</span>
+        </div>
+        <p class="text-slate-600 leading-relaxed">
+          <strong>तथ्याङ्क:</strong> नेपाली ६५, गणित ९०, अङ्ग्रेजी ७५, विज्ञान ८०, सामाजिक ५५।
+        </p>
+        <div class="bg-blue-50 p-3 rounded-xl border border-blue-200 space-y-1 text-xs text-blue-900">
+          <div>• <strong>X-अक्ष:</strong> विषयहरूको नाम (नेपाली, गणित, अङ्ग्रेजी, विज्ञान, सामाजिक)</div>
+          <div>• <strong>Y-अक्ष:</strong> प्राप्ताङ्क (स्केल: १ से.मि. = १० अङ्क)</div>
+          <div>• <strong>विशेषता:</strong> गणितमा ९० अङ्क (९ से.मि.) सर्वोच्च स्तम्भ बन्दछ।</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q3: School Students Bar Chart Reading -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded bg-teal-100 text-teal-700 text-xs font-black">प्रश्न ३</span>
+          <span>कक्षा ६ देखि १२ सम्मका विद्यार्थीहरूको सङ्ख्या स्तम्भ चित्रको विश्लेषण (पृष्ठ २३०–२३१) :</span>
+        </h4>
+        <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg">५ उपप्रश्नहरू</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2 text-slate-700">
+          <div><strong>(क) सबैभन्दा धेरै विद्यार्थी भएको कक्षा:</strong> <span class="text-teal-700 font-extrabold">कक्षा ८ (१०० जना)</span>।</div>
+          <div><strong>(ख) सबैभन्दा थोरै विद्यार्थी भएको कक्षा:</strong> <span class="text-rose-600 font-extrabold">कक्षा १० (७० जना)</span>।</div>
+          <div><strong>(ग) कक्षा ८ र ११ मा विद्यार्थी सङ्ख्या:</strong> <span class="font-bold">कक्षा ८ मा १०० जना र कक्षा ११ मा ७५ जना</span>।</div>
+          <div><strong>(घ) विद्यालयमा कक्षा ६ देखि १२ सम्मको कुल सङ्ख्या:</strong></div>
+          <div class="font-mono bg-white p-2 rounded border border-slate-200 text-teal-900 font-bold">
+            \(80 + 85 + 100 + 90 + 70 + 75 + 90 = \mathbf{590}\text{ जना}\)
+          </div>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-700 font-bold">
+                <th class="p-2">कक्षा</th>
+                <th class="p-2 text-center">६</th>
+                <th class="p-2 text-center">७</th>
+                <th class="p-2 text-center">८</th>
+                <th class="p-2 text-center">९</th>
+                <th class="p-2 text-center">१०</th>
+                <th class="p-2 text-center">११</th>
+                <th class="p-2 text-center">१२</th>
+                <th class="p-2 text-center font-black">कुल</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600 font-medium">
+              <tr class="border-t border-slate-200">
+                <td class="p-2 font-bold">सङ्ख्या</td>
+                <td class="p-2 text-center">८०</td>
+                <td class="p-2 text-center">८५</td>
+                <td class="p-2 text-center font-bold text-teal-700">१००</td>
+                <td class="p-2 text-center">९०</td>
+                <td class="p-2 text-center font-bold text-rose-600">७०</td>
+                <td class="p-2 text-center">७५</td>
+                <td class="p-2 text-center">९०</td>
+                <td class="p-2 text-center font-black text-blue-700">५९०</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q4: Animal Farm Bar Chart -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+      <h4 class="font-bold text-slate-900 text-sm md:text-base text-teal-900">
+        प्रश्न ४: पशु फार्ममा भएका पशुहरूको विवरण स्तम्भ चित्र
+      </h4>
+      <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs md:text-sm text-slate-700 space-y-1.5">
+        <p><strong>तथ्याङ्क:</strong> गाई १५, भैंसी १०, भेडा ३५, बाख्रा ४०, सुँगुर २५ (कुल १२५ पशुहरू)।</p>
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-center text-xs mt-2">
+          <div class="bg-white p-2 rounded-lg border border-slate-200">गाई: १५</div>
+          <div class="bg-white p-2 rounded-lg border border-slate-200">भैंसी: १०</div>
+          <div class="bg-white p-2 rounded-lg border border-slate-200">भेडा: ३५</div>
+          <div class="bg-emerald-50 text-emerald-900 font-bold p-2 rounded-lg border border-emerald-200">बाख्रा: ४० (सर्वोच्च)</div>
+          <div class="bg-white p-2 rounded-lg border border-slate-200">सुँगुर: २५</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SECTION 3: UNIT 6 MIXED REVIEW ================= -->
+  <div id="sec-ch20-unit6_mixed" class="space-y-6">
+    <div class="border-b border-indigo-200 pb-3 flex items-center justify-between">
+      <div>
+        <h3 class="text-xl font-black text-slate-900 flex items-center gap-2">
+          <span class="px-2.5 py-1 rounded-lg bg-indigo-600 text-white flex items-center justify-center text-xs font-bold whitespace-nowrap">एकाइ ६</span>
+          <span>एकाइ ६: तथ्याङ्कशास्त्र मिश्रित अभ्यास (Mixed Review - पृष्ठ २३१–२३३)</span>
+        </h3>
+        <p class="text-xs text-slate-500 mt-0.5">पाठ्यक्रमको अन्तिम अभ्यास: ३९ जनाको परिवार, ६ वर्षको जनसङ्ख्या र वार्षिक खर्चको पूर्ण समाधान</p>
+      </div>
+      <span class="text-xs bg-indigo-100 text-indigo-800 font-bold px-3 py-1 rounded-xl">३ मुख्य बृहत् प्रश्नहरू + परियोजना</span>
+    </div>
+
+    <!-- Review Q1: 39 Students Family Members -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base text-indigo-900">
+          प्रश्न १: कक्षा ६ का ३९ जना विद्यार्थीहरूको परिवार सदस्य सङ्ख्या (पृष्ठ २३१)
+        </h4>
+        <span class="text-xs bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">तालिका र स्तम्भ चित्र</span>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs md:text-sm border-collapse">
+          <thead>
+            <tr class="bg-indigo-50 text-indigo-900 font-bold border-b border-indigo-200">
+              <th class="p-2.5">क्र.सं.</th>
+              <th class="p-2.5">परिवार सदस्य सङ्ख्या</th>
+              <th class="p-2.5">मिलान चिह्न (Tally Mark)</th>
+              <th class="p-2.5 text-center">विद्यार्थी सङ्ख्या ($f$)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700">
+            <tr><td class="p-2 text-center">१</td><td class="p-2 font-bold">३ जना</td><td class="p-2 font-mono"><s>||||</s></td><td class="p-2 text-center font-bold">५</td></tr>
+            <tr><td class="p-2 text-center">२</td><td class="p-2 font-bold">४ जना</td><td class="p-2 font-mono"><s>||||</s> |||</td><td class="p-2 text-center font-bold">८</td></tr>
+            <tr class="bg-indigo-50/30"><td class="p-2 text-center">३</td><td class="p-2 font-bold text-indigo-800">५ जना</td><td class="p-2 font-mono text-indigo-700"><s>||||</s> <s>||||</s></td><td class="p-2 text-center font-black text-indigo-700">१०</td></tr>
+            <tr class="bg-indigo-50/30"><td class="p-2 text-center">४</td><td class="p-2 font-bold text-indigo-800">६ जना</td><td class="p-2 font-mono text-indigo-700"><s>||||</s> <s>||||</s></td><td class="p-2 text-center font-black text-indigo-700">१०</td></tr>
+            <tr><td class="p-2 text-center">५</td><td class="p-2 font-bold">७ जना</td><td class="p-2 font-mono"><s>||||</s> |</td><td class="p-2 text-center font-bold">६</td></tr>
+            <tr class="bg-slate-100 font-black"><td colspan="3" class="p-2.5 text-right">कुल विद्यार्थी ($N$):</td><td class="p-2.5 text-center text-indigo-700 font-extrabold text-base">३९</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Review Q2: City Population 6 Years -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base text-indigo-900">
+          प्रश्न २: सहरको ६ वर्षको जनसङ्ख्या (लाखमा) स्तम्भ चित्र विश्लेषण (पृष्ठ २३२)
+        </h4>
+        <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">२०७० देखि २०७५</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2 text-slate-700">
+          <div><strong>(क) सबैभन्दा धेरै जनसङ्ख्या भएको वर्ष:</strong> <span class="text-emerald-700 font-bold">२०७५ साल (१०० लाख)</span>।</div>
+          <div><strong>(ख) २०७२ सालको जनसङ्ख्या:</strong> <span class="font-bold text-blue-700">५० लाख</span>।</div>
+          <div><strong>(ग) थोरै जनसङ्ख्या वृद्धि भएको वर्ष:</strong> <span class="text-amber-700 font-bold">२०७१ सालमा (३५ लाखबाट ४० लाख पुग्दा ५ लाखले मात्र वृद्धि)</span>।</div>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-700 font-bold">
+                <th class="p-2">वर्ष</th>
+                <th class="p-2 text-center">२०७०</th>
+                <th class="p-2 text-center">२०७१</th>
+                <th class="p-2 text-center">२०७२</th>
+                <th class="p-2 text-center">२०७३</th>
+                <th class="p-2 text-center">२०७४</th>
+                <th class="p-2 text-center">२०७५</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-600 font-medium">
+              <tr class="border-t border-slate-200">
+                <td class="p-2 font-bold">जनसङ्ख्या (लाखमा)</td>
+                <td class="p-2 text-center">३५</td>
+                <td class="p-2 text-center">४०</td>
+                <td class="p-2 text-center">५०</td>
+                <td class="p-2 text-center">६५</td>
+                <td class="p-2 text-center">९०</td>
+                <td class="p-2 text-center font-bold text-emerald-700">१००</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review Q3: Family Annual Expenses -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+        <h4 class="font-bold text-slate-900 text-sm md:text-base text-indigo-900">
+          प्रश्न ३: परिवारको वार्षिक खर्च (रू. हजारमा) र प्रतिशत विश्लेषण (पृष्ठ २३३)
+        </h4>
+        <span class="text-xs bg-purple-100 text-purple-800 font-bold px-2 py-0.5 rounded">आधिकारिक उत्तर प्रमाणित</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+        <div class="bg-purple-50/50 p-4 rounded-xl border border-purple-100 space-y-2 text-slate-700">
+          <div><strong>(क) सबैभन्दा धेरै वार्षिक खर्च:</strong> <span class="font-bold text-purple-900">खानामा (५० हजार रूपैयाँ)</span>।</div>
+          <div><strong>(ख) शिक्षामा वार्षिक खर्च:</strong> <span class="font-bold text-blue-700">२० हजार रूपैयाँ</span>।</div>
+          <div><strong>(ग) बराबर खर्च हुने शीर्षकहरू:</strong> <span class="font-bold">कपडा, स्वास्थ्य र अन्य (प्रत्येकमा १५ हजार रूपैयाँ)</span>।</div>
+          <div><strong>(घ) वार्षिक कुल खर्च:</strong></div>
+          <div class="font-mono bg-white p-2 rounded border border-purple-200 text-purple-900 font-bold">
+            \(50 + 15 + 15 + 20 + 30 + 15 = \mathbf{140}\text{ हजार (१ लाख ४० हजार रू.)}\)
+          </div>
+          <div><strong>(ङ) खानामा खर्च प्रतिशत:</strong></div>
+          <div class="font-mono bg-white p-2 rounded border border-purple-200 text-emerald-700 font-bold">
+            \(\frac{50}{140} \times 100\% = \frac{5}{14} \times 100\% = \mathbf{35.71\%}\)
+          </div>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="bg-purple-100 text-purple-900 font-bold">
+                <th class="p-2">शीर्षक</th>
+                <th class="p-2 text-right">रकम (रू. हजारमा)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-purple-100 text-slate-700 font-medium">
+              <tr><td class="p-2">खाना</td><td class="p-2 text-right font-bold text-purple-900">५०</td></tr>
+              <tr><td class="p-2">कपडा</td><td class="p-2 text-right">१५</td></tr>
+              <tr><td class="p-2">स्वास्थ्य</td><td class="p-2 text-right">१५</td></tr>
+              <tr><td class="p-2">शिक्षा</td><td class="p-2 text-right font-bold">२०</td></tr>
+              <tr><td class="p-2">घरभाडा</td><td class="p-2 text-right font-bold">३०</td></tr>
+              <tr><td class="p-2">अन्य</td><td class="p-2 text-right">१५</td></tr>
+              <tr class="bg-purple-200 font-black"><td class="p-2">कुल खर्च</td><td class="p-2 text-right text-purple-900 text-sm">१४० (१ लाख ४० हजार)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ================= END TAB 2 ================= -->
+
+<!-- ================= CHAPTER 20: TAB 3 (TIERED MODEL QUESTIONS) ================= -->
+<div id="ch20-view-tiers" class="hidden space-y-8">
+  <div class="border-b border-slate-200 pb-4 flex flex-wrap items-center justify-between gap-3">
+    <div>
+      <h3 class="text-xl md:text-2xl font-black text-slate-900">पाठ २०: तीन तहका स्तरीकृत नमुना प्रश्नोत्तर (Tiered Model Q&A)</h3>
+      <p class="text-xs text-slate-500">CDC विशिष्टीकरण तालिका अनुसार ज्ञानात्मक, बोधात्मक र उच्च दक्षतायुक्त १६ प्रश्नहरू</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="text-xs bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-xl">५ ज्ञानात्मक</span>
+      <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-xl">६ बोधात्मक</span>
+      <span class="text-xs bg-purple-100 text-purple-800 font-bold px-3 py-1 rounded-xl">५ उच्च दक्षता</span>
+    </div>
+  </div>
+
+  <!-- TIER 1: KNOWLEDGE & RECALL (5 Questions) -->
+  <div class="space-y-4">
+    <div class="flex items-center gap-2 text-blue-700 font-black text-base border-b border-blue-200 pb-2">
+      <span class="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs font-bold">T1</span>
+      <h4>तह १: ज्ञानात्मक तथा आधारभूत प्रश्नहरू (Knowledge & Recall — ५ प्रश्न)</h4>
+    </div>
+
+    <!-- Q1 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १: तथ्याङ्क (Data) र कोरा तथ्याङ्क (Raw Data) भनेको के हो?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> निश्चित उद्देश्यका लागि सङ्कलन गरिएका संख्यात्मक सूचनाहरूको व्यवस्थित सङ्ग्रहलाई <strong>तथ्याङ्क (Data)</strong> भनिन्छ। सुरुमा सङ्कलन गरिएका तर कुनै क्रमबद्ध तालिका वा समूहमा नराखिएका अव्यवस्थित आँकडाहरूलाई <strong>कोरा तथ्याङ्क (Raw Data)</strong> भनिन्छ।
+      </p>
+    </div>
+
+    <!-- Q2 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न २: बारम्बारता (Frequency) भनेको के हो? उदाहरण दिनुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> कुनै तथ्याङ्कमा कुनै विशेष मान, सङ्ख्या वा वस्तु कति पटक दोहोरिएको छ, त्यो दोहोरिने सङ्ख्यालाई त्यसको <strong>बारम्बारता (Frequency - $f$)</strong> भनिन्छ। जस्तै: परीक्षामा १५ अङ्क पाउने विद्यार्थी ४ जना छन् भने १५ को बारम्बारता ४ हुन्छ।
+      </p>
+    </div>
+
+    <!-- Q3 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ३: सङ्ख्याहरू ५, ९, १३ र १७ का लागि मिलान चिह्न (Tally marks) कसरी लेखिन्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400 space-y-1">
+        <div>• ५ = <s>||||</s> (४ ठाडो धर्सालाई पाँचौँले छड्के काट्ने)</div>
+        <div>• ९ = <s>||||</s> ||||</div>
+        <div>• १३ = <s>||||</s> <s>||||</s> |||</div>
+        <div>• १७ = <s>||||</s> <s>||||</s> <s>||||</s> ||</div>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ४: साधारण स्तम्भ चित्र बनाउँदा $X$-अक्ष र $Y$-अक्षमा के-के राखिन्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> तेर्सो $X$-अक्षमा अध्ययन गरिने विषय वा शीर्षकहरू (जस्तै: दिन, कक्षा, विषय, साधन) राखिन्छ र ठाडो $Y$-अक्षमा तिनीहरूको बारम्बारता वा परिमाण राखिन्छ।
+      </p>
+    </div>
+
+    <!-- Q5 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ५: स्तम्भ चित्रमा सबै स्तम्भहरूको चौडाइ किन समान हुनुपर्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> स्तम्भको मान त्यसको उचाइले मात्र प्रतिनिधित्व गर्ने भएकाले चौडाइ फरक परेमा दृश्य तुलनामा भ्रम हुन सक्छ। त्यसैले सही र निष्पक्ष तुलनाका लागि सबै स्तम्भको चौडाइ समान हुनुपर्छ।
+      </p>
+    </div>
+  </div>
+
+  <!-- TIER 2: UNDERSTANDING & APPLICATION (6 Questions) -->
+  <div class="space-y-4">
+    <div class="flex items-center gap-2 text-emerald-700 font-black text-base border-b border-emerald-200 pb-2">
+      <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold">T2</span>
+      <h4>तह २: बोधात्मक तथा मध्यम स्तरका प्रश्नहरू (Understanding & Application — ६ प्रश्न)</h4>
+    </div>
+
+    <!-- Q6 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ६: प्राथमिक तथ्याङ्क र द्वितीयक तथ्याङ्क बीचको भिन्नता उदाहरणसहित स्पष्ट पार्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400 space-y-1">
+        <p>• <strong>प्राथमिक तथ्याङ्क:</strong> अनुसन्धानकर्ता आफैँले स्थलगत सोधपुछ वा अवलोकन गरी सङ्कलन गरेको मौलिक तथ्याङ्क (जस्तै: कक्षाका साथीहरूको उचाइ आफैँले नाप्नु)।</p>
+        <p>• <strong>द्वितीयक तथ्याङ्क:</strong> अरू कसैले पहिले नै प्रकाशित गरेको स्रोतबाट लिइएको तथ्याङ्क (जस्तै: विद्यालयको हाजिरी खाता वा जनगणना प्रतिवेदनबाट लिइएको विवरण)।</p>
+      </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ७: स्तम्भ चित्रमा स्केल (Scale) किन आवश्यक पर्छ? उदाहरणसहित प्रष्ट पार्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400 leading-relaxed">
+        <strong>उत्तर:</strong> यदि तथ्याङ्कमा मानहरू ५० वा १०० छन् भने ग्राफ पेपरमा ५० वा १०० से.मि. को रेखा कोर्न सम्भव हुँदैन। त्यसैले ठूला मानहरूलाई ग्राफमा अटाउन $1\text{ cm} = 10\text{ units}$ जस्ता समानुपातिक स्केल मान्नुपर्छ जसले गर्दा १० से.मि. को उचाइले १०० को मान प्रतिनिधित्व गर्न सक्छ।
+      </p>
+    </div>
+
+    <!-- Q8 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ८: एउटा स्तम्भ चित्रमा गणितको स्तम्भ ९ से.मि. अग्लो छ र स्केल $1\text{ cm} = 10\text{ marks}$ छ भने प्राप्ताङ्क कति हुन्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>समाधान:</strong> \(\text{प्राप्ताङ्क} = \text{स्तम्भको उचाइ} \times \text{स्केल} = 9\text{ cm} \times 10 = \mathbf{90\text{ अङ्क}}\)।
+      </p>
+    </div>
+
+    <!-- Q9 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ९: मिलान चिह्नमा पाँचौँ गणनालाई चारवटा धर्सामाथि छड्के काट्नुको वैज्ञानिक फाइदा के हो?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> पाँच-पाँचको समूह बनाउँदा ठूलो तथ्याङ्कलाई एक-एक गरी गन्नुको सट्टा ५, १०, १५, २० भन्दै छिटो, सहज र बिना कुनै गल्ती तुरुन्त जोड्न सकिन्छ।
+      </p>
+    </div>
+
+    <!-- Q10 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १०: बारम्बारता तालिका र स्तम्भ चित्र बीचको मुख्य भिन्नता के हो?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> बारम्बारता तालिकामा तथ्याङ्कलाई सङ्ख्यात्मक रूपमा प्रस्तुत गरिन्छ भने स्तम्भ चित्रमा सोही तथ्याङ्कलाई आयताकार खम्बाहरूको उचाइको माध्यमबाट दृश्य रूपमा (Visually) देखाइन्छ, जसले गर्दा हेर्नासाथ तुलना गर्न धेरै सजिलो हुन्छ।
+      </p>
+    </div>
+
+    <!-- Q11 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ११: साधारण स्तम्भ चित्र बनाउँदा ध्यान दिनुपर्ने ४ वटा अनिवार्य नियमहरू के-के हुन्?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> १. स्पष्ट X-अक्ष र Y-अक्ष कोर्नु, २. मुख्य शीर्षक लेख्नु, ३. प्रत्येक स्तम्भको चौडाइ बराबर बनाउनु, र ४. दुई स्तम्भबिचको खाली दूरी सधैँ बराबर राख्नु।
+      </p>
+    </div>
+  </div>
+
+  <!-- TIER 3: HIGHER ABILITY & PROBLEM SOLVING (5 Questions) -->
+  <div class="space-y-4">
+    <div class="flex items-center gap-2 text-purple-700 font-black text-base border-b border-purple-200 pb-2">
+      <span class="w-7 h-7 rounded-lg bg-purple-600 text-white flex items-center justify-center text-xs font-bold">T3</span>
+      <h4>तह ३: उच्च दक्षता तथा समस्या समाधान (Higher Ability — ५ प्रश्न)</h4>
+    </div>
+
+    <!-- Q12 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १२: वार्षिक खर्च स्तम्भ चित्र प्रतिशत विश्लेषण समस्या (पाठ्यपुस्तक पृष्ठ २३३)</span>
+        <span class="text-[11px] bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-mono">४ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-purple-500 space-y-1.5">
+        <p>एउटा परिवारको वार्षिक खर्च: खाना ५० हजार, कपडा १५ हजार, स्वास्थ्य १५ हजार, शिक्षा २० हजार, घरभाडा ३० हजार, अन्य १५ हजार छ।</p>
+        <p>• <strong>कुल खर्च:</strong> \(50 + 15 + 15 + 20 + 30 + 15 = 140\text{ हजार (१ लाख ४० हजार रू.)}\)</p>
+        <p>• <strong>खानामा खर्च प्रतिशत:</strong> \(\frac{50}{140} \times 100\% = \frac{5}{14} \times 100\% = \mathbf{35.71\%}\)</p>
+        <p>• <strong>शिक्षामा खर्च प्रतिशत:</strong> \(\frac{20}{140} \times 100\% = \frac{1}{7} \times 100\% = \mathbf{14.29\%}\)</p>
+      </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १३: गलत स्तम्भ चित्रमा त्रुटि पहिचान र सुधार विधि</span>
+        <span class="text-[11px] bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-mono">३ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-purple-500 space-y-1">
+        <p><strong>समस्या:</strong> रमेशले बनाएको स्तम्भ चित्रमा स्तम्भ १ को चौडाइ २ से.मि., स्तम्भ २ को चौडाइ ३.५ से.मि. छ र दुई स्तम्भबिचको दूरी फरक-फरक छ।</p>
+        <p><strong>त्रुटिहरू:</strong> १. स्तम्भहरूको चौडाइ असमान छ। २. स्तम्भबिचको खाली ठाउँ असमान छ।</p>
+        <p><strong>सुधार:</strong> सबै स्तम्भहरूको चौडाइ बराबर (जस्तै समान २ से.मि.) बनाउनुपर्छ र सबै स्तम्भहरू बिचको दूरी समान (जस्तै १ से.मि.) छोड्नुपर्छ।</p>
+      </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १४: खेलकुद प्राथमिकता सर्वेक्षण र स्केल निर्धारण</span>
+        <span class="text-[11px] bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-mono">३ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-purple-500 space-y-1">
+        <p>५० जना विद्यार्थीमा: फुटबल २०, क्रिकेट १५, भलिबल १० र ब्याडमिन्टन ५ जना छन्।</p>
+        <p>• ब्याडमिन्टनको बारम्बारता $= 50 - (20 + 15 + 10) = 5$ जना।</p>
+        <p>• अधिकतम मान २० भएकाले $Y$-अक्षमा <strong>१ से.मि. = ५ जना</strong> को स्केल राख्दा खम्बाहरू १ से.मि. देखि ४ से.मि. सम्मका स्पष्ट बन्दछन्।</p>
+      </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १५: सहरको जनसङ्ख्या वृद्धि दर तुलना (पृष्ठ २३२)</span>
+        <span class="text-[11px] bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-mono">४ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-700 pl-4 border-l-2 border-purple-500 space-y-1">
+        <p>२०७० मा ३५ लाख, २०७१ मा ४० लाख, २०७२ मा ५० लाख, २०७३ मा ६५ लाख, २०७४ मा ९० लाख, २०७५ मा १०० लाख।</p>
+        <p>• २०७१ मा वृद्धि: $40 - 35 = 5$ लाख (सबैभन्दा थोरै वृद्धि ✓)</p>
+        <p>• २०७४ मा वृद्धि: $90 - 65 = 25$ लाख (सबैभन्दा धेरै वृद्धि)</p>
+        <p>• ६ वर्षको कुल जनसङ्ख्या वृद्धि $= 100 - 35 = 65$ लाख।</p>
+      </div>
+    </div>
+
+    <!-- Q16 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १६: प्राथमिक तथ्याङ्क सङ्कलनको स्थलगत विधि र विश्वसनीयता</span>
+        <span class="text-[11px] bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-purple-500">
+        <strong>उत्तर:</strong> प्राथमिक तथ्याङ्क सङ्कलन गर्दा: १. उद्देश्यको स्पष्टता, २. तटस्थता र पूर्वाग्रहरहित प्रश्न सोध्नु, र ३. संकलित आँकडालाई तत्कालै ट्याली मार्कको सहायताले अभिलेख राख्नुपर्छ ताकि कुनै सूचना नछुटोस्।
+      </p>
+    </div>
+  </div>
+</div>
+<!-- ================= END TAB 3 ================= -->
+
+<!-- ================= CHAPTER 20: TAB 4 (SELF-ASSESSMENT QUIZ) ================= -->
+<div id="ch20-view-quiz" class="hidden space-y-6">
+  <!-- Quiz Top Score Banner -->
+  <div class="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 rounded-3xl p-6 text-white shadow-xl flex flex-wrap items-center justify-between gap-4">
+    <div>
+      <div class="flex items-center gap-2 text-xs font-bold text-cyan-300 mb-1">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        अध्याय २० स्वमूल्याङ्कन परीक्षा (Self-Assessment Quiz)
+      </div>
+      <h3 class="text-xl md:text-2xl font-black">तथ्याङ्कशास्त्र वस्तुगत बहुवैकल्पिक परीक्षा (१० प्रश्न)</h3>
+      <p class="text-xs text-blue-100 mt-1">प्रत्येक प्रश्नको सही उत्तर छानेर तुरुन्त पृष्ठपोषण र अङ्क प्राप्त गर्नुहोस्</p>
+    </div>
+
+    <div class="flex items-center gap-4 bg-white/10 backdrop-blur px-5 py-3 rounded-2xl border border-white/20">
+      <div class="text-right">
+        <span class="text-[11px] text-blue-200 block font-bold">तपाईंको प्राप्ताङ्क</span>
+        <span id="ch20-quiz-score" class="text-2xl md:text-3xl font-black text-cyan-300">० / १०</span>
+      </div>
+      <button onclick="resetCh20Quiz()" class="px-3.5 py-2 rounded-xl bg-white/20 hover:bg-white/30 text-xs font-bold transition flex items-center gap-1.5 border border-white/30 cursor-pointer">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+        पुनः सुरु गर्नुहोस्
+      </button>
+    </div>
+  </div>
+
+  <!-- Quiz Questions Container -->
+  <div id="ch20-quiz-container" class="space-y-4">
+    <!-- Rendered dynamically via ch20_script.js -->
+  </div>
+</div>
+<!-- ================= END TAB 4 ================= -->
+
+
+      </div>
+      <!-- ================= END CHAPTER 20 ================= -->

@@ -1,0 +1,40 @@
+{
+  "name": "डिजिटल गुरु",
+  "short_name": "डिजिटल गुरु",
+  "description": "नेपाल सरकार पाठ्यक्रम विकास केन्द्र (CDC) नयाँ पाठ्यक्रममा आधारित पूर्ण डिजिटल अध्ययन पोर्टल",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f1f5f9",
+  "theme_color": "#1e293b",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": [
+    "education",
+    "books",
+    "utilities"
+  ]
+}

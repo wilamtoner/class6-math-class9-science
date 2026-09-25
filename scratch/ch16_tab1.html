@@ -1,0 +1,416 @@
+
+        <!-- ================= CH16 TAB 1: CONCEPTS & LAB ================= -->
+        <div id="ch16-view-concepts" class="space-y-6">
+
+          <!-- Core Concepts Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Card 1: Circle & Centre -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-sm">१</span>
+                <h3 class="font-bold text-slate-800 text-base">वृत्त र केन्द्रबिन्दु</h3>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                निश्चित बिन्दुबाट समान दूरीमा घुम्ने बिन्दुहरूको पथ:
+              </p>
+              <div class="p-3 bg-blue-50 border border-blue-200 rounded-xl space-y-1.5 text-xs">
+                <div>• <strong>वृत्त (Circle):</strong> समतलमा बनेको पूर्ण बन्द गोलो वक्ररेखा ।</div>
+                <div>• <strong>केन्द्रबिन्दु (Centre - $O$):</strong> वृत्तको ठ्याक्कै बीचको स्थिर बिन्दु ।</div>
+                <div>• <strong>गुण:</strong> केन्द्रबाट परिधिका सबै बिन्दुहरू बराबर दूरीमा हुन्छन् ।</div>
+              </div>
+            </div>
+
+            <!-- Card 2: Radius & Diameter -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm">२</span>
+                <h3 class="font-bold text-slate-800 text-base">अर्धव्यास र व्यास</h3>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                वृत्तका मुख्य रेखीय आयामहरू:
+              </p>
+              <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl space-y-1.5 text-xs">
+                <div>• <strong>अर्धव्यास (Radius - $r$):</strong> केन्द्रदेखि परिधिसम्मको रेखाखण्ड ।</div>
+                <div>• <strong>व्यास (Diameter - $d$):</strong> केन्द्र भएर जाने दुवै छेउ परिधि छुने रेखा ।</div>
+                <div>• <strong>सम्बन्ध:</strong> $d = 2r$ वा $r = \frac{d}{2}$ (व्यास अर्धव्यासको दोब्बर) ।</div>
+              </div>
+            </div>
+
+            <!-- Card 3: Chord, Arc & Sector -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-sm">३</span>
+                <h3 class="font-bold text-slate-800 text-base">जीवा, चाप र क्षेत्रक</h3>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                वृत्तका आन्तरिक तथा परिधीय अङ्गहरू:
+              </p>
+              <div class="p-3 bg-amber-50 border border-amber-200 rounded-xl space-y-1.5 text-xs">
+                <div>• <strong>जीवा (Chord):</strong> परिधिका २ बिन्दु जोड्ने सीधा रेखा (व्यास = सबैभन्दा लामो) ।</div>
+                <div>• <strong>चाप (Arc):</strong> परिधिको कुनै एउटा परिमित टुक्रा भाग ।</div>
+                <div>• <strong>क्षेत्रक (Sector):</strong> २ अर्धव्यास र चापबीचको भित्री क्षेत्र ।</div>
+              </div>
+            </div>
+
+            <!-- Card 4: Circumference & Pi -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-sm">४</span>
+                <h3 class="font-bold text-slate-800 text-base">परिधि र $\pi$ (पाइ)</h3>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                वरिपरिको कुल घेरा र गणितीय सूत्र:
+              </p>
+              <div class="p-3 bg-purple-50 border border-purple-200 rounded-xl space-y-1.5 text-xs">
+                <div>• <strong>परिधि (Circumference - $C$):</strong> कुल घेराको लम्बाइ ($C = 2\pi r = \pi d$) ।</div>
+                <div>• <strong>$\pi$ (पाइ):</strong> परिधि र व्यासको अनुपात ($\frac{C}{d} \approx \frac{22}{7} \approx 3.14$) ।</div>
+                <div>• <strong>अर्धवृत्त:</strong> व्यासले वृत्तलाई बाँड्ने आधा भाग ($180^\circ$) ।</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Comprehensive Comparison Table: Parts of Circle -->
+          <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                वृत्तका मुख्य भागहरूको तुलनात्मक अध्ययन तालिका
+              </h4>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 font-semibold">८ अङ्गहरू</span>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-xs text-left border-collapse">
+                <thead>
+                  <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+                    <th class="p-2.5 font-bold">भागको नाम</th>
+                    <th class="p-2.5 font-bold">अङ्ग्रेजी नाम</th>
+                    <th class="p-2.5 font-bold">सङ्केत</th>
+                    <th class="p-2.5 font-bold">परिभाषा तथा स्थान</th>
+                    <th class="p-2.5 font-bold">मुख्य सूत्र / सम्बन्ध</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-150">
+                  <tr class="hover:bg-slate-50">
+                    <td class="p-2.5 font-bold text-blue-700">केन्द्रबिन्दु</td>
+                    <td class="p-2.5">Centre</td>
+                    <td class="p-2.5 font-mono">$O$</td>
+                    <td class="p-2.5">वृत्तको ठीक बीचमा रहने निश्चित स्थिर बिन्दु</td>
+                    <td class="p-2.5">सबै अर्धव्यास बराबर दूरीमा</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="p-2.5 font-bold text-emerald-700">अर्धव्यास</td>
+                    <td class="p-2.5">Radius</td>
+                    <td class="p-2.5 font-mono">$r$</td>
+                    <td class="p-2.5">केन्द्रबिन्दु र परिधिको कुनै बिन्दु जोड्ने रेखाखण्ड</td>
+                    <td class="p-2.5 font-semibold text-emerald-600">$r = \frac{d}{2}$</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="p-2.5 font-bold text-indigo-700">व्यास</td>
+                    <td class="p-2.5">Diameter</td>
+                    <td class="p-2.5 font-mono">$d$</td>
+                    <td class="p-2.5">केन्द्रबिन्दु भएर जाने सबैभन्दा लामो जीवा</td>
+                    <td class="p-2.5 font-semibold text-indigo-600">$d = 2r$</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="p-2.5 font-bold text-purple-700">परिधि</td>
+                    <td class="p-2.5">Circumference</td>
+                    <td class="p-2.5 font-mono">$C$</td>
+                    <td class="p-2.5">वृत्तको बाहिरी वरिपरिको कुल घेराको लम्बाइ</td>
+                    <td class="p-2.5 font-semibold text-purple-600">$C = 2\pi r = \pi d$</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="p-2.5 font-bold text-amber-700">जीवा</td>
+                    <td class="p-2.5">Chord</td>
+                    <td class="p-2.5 font-mono">$AB$</td>
+                    <td class="p-2.5">परिधिका कुनै दुई बिन्दुहरू जोड्ने रेखाखण्ड</td>
+                    <td class="p-2.5">व्यास सबैभन्दा लामो जीवा हो</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="p-2.5 font-bold text-rose-700">क्षेत्रक</td>
+                    <td class="p-2.5">Sector</td>
+                    <td class="p-2.5 font-mono">Sector $AOB$</td>
+                    <td class="p-2.5">दुई अर्धव्यासहरू र तिनीहरूबीचको चापले घेरिएको भाग</td>
+                    <td class="p-2.5">पिज्जाको टुक्रा जस्तो आकार</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="p-2.5 font-bold text-cyan-700">अर्धवृत्त</td>
+                    <td class="p-2.5">Semi-circle</td>
+                    <td class="p-2.5 font-mono">$\frown ACB$</td>
+                    <td class="p-2.5">व्यासले वृत्तलाई विभाजन गर्दा बन्ने आधा वृत्त</td>
+                    <td class="p-2.5">एउटा वृत्तमा २ अर्धवृत्त हुन्छन्</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="p-2.5 font-bold text-teal-700">चाप</td>
+                    <td class="p-2.5">Arc</td>
+                    <td class="p-2.5 font-mono">$\frown AB$</td>
+                    <td class="p-2.5">वृत्तको परिधिको कुनै एउटा परिमित खण्ड</td>
+                    <td class="p-2.5">लघुचाप र वृहत् चाप</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- ================= INTERACTIVE DYNAMIC CIRCLE LAB ================= -->
+          <div class="p-6 bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-3xl shadow-xl space-y-6">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-indigo-800/60 pb-4">
+              <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-bold border border-blue-400/30 mb-2">
+                  <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                  प्रयोगात्मक तथा अनुसन्धानात्मक प्रयोगशाला
+                </div>
+                <h3 class="text-xl md:text-2xl font-black text-white">पाठ १६ ज्यामितीय ल्याब: गतिशील वृत्त तथा अङ्ग अन्वेषक</h3>
+              </div>
+              <!-- Lab Mode Switcher -->
+              <div class="flex items-center gap-2 bg-slate-800/80 p-1.5 rounded-2xl border border-indigo-700/50">
+                <button id="btn-lab-circle" onclick="switchCh16Lab('circle')" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold bg-blue-600 text-white shadow-sm transition cursor-pointer">
+                  वृत्त अङ्ग अन्वेषक
+                </button>
+                <button id="btn-lab-wheel" onclick="switchCh16Lab('wheel')" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold text-slate-300 hover:text-white hover:bg-slate-700 transition cursor-pointer">
+                  पाङ्ग्रा र परिधि ल्याब
+                </button>
+              </div>
+            </div>
+
+            <!-- SUB-LAB 1: DYNAMIC CIRCLE EXPLORER -->
+            <div id="ch16-sublab-circle" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <!-- Visual Canvas / SVG Area -->
+              <div class="lg:col-span-7 bg-slate-950/70 p-4 rounded-2xl border border-indigo-900/60 flex flex-col items-center">
+                <div class="w-full flex justify-between items-center text-xs text-slate-400 mb-2">
+                  <span>अङ्ग छनोट गर्नुहोस् र अर्धव्यास स्लाइडर चलाउनुहोस्</span>
+                  <span id="circle-part-badge" class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-bold">अर्धव्यास (Radius)</span>
+                </div>
+                
+                <div class="w-full max-w-[460px] aspect-square bg-slate-900 rounded-xl relative overflow-hidden border border-slate-800 flex items-center justify-center p-2">
+                  <svg id="svg-circle-lab" viewBox="0 0 400 400" class="w-full h-full select-none">
+                    <!-- Grid background -->
+                    <defs>
+                      <pattern id="circ-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                      </pattern>
+                    </defs>
+                    <rect width="400" height="400" fill="url(#circ-grid)" />
+
+                    <!-- Sector Highlight Path (fill area between OA and OB) -->
+                    <path id="circ-sector" d="M 200 200 L 320 200 A 120 120 0 0 0 260 96 Z" fill="rgba(244, 63, 94, 0.3)" stroke="none" style="display:none;" />
+
+                    <!-- Semicircle Highlight Path -->
+                    <path id="circ-semicircle" d="M 80 200 A 120 120 0 0 1 320 200 Z" fill="rgba(16, 185, 129, 0.25)" stroke="none" style="display:none;" />
+
+                    <!-- Base Circle Boundary (Circumference) -->
+                    <circle id="circ-boundary" cx="200" cy="200" r="120" fill="rgba(59, 130, 246, 0.08)" stroke="#38bdf8" stroke-width="2.5" />
+
+                    <!-- Diameter Line CD -->
+                    <line id="circ-diam-line" x1="80" y1="200" x2="320" y2="200" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" style="display:none;" />
+
+                    <!-- Radius Line OA -->
+                    <line id="circ-radius-line" x1="200" y1="200" x2="320" y2="200" stroke="#10b981" stroke-width="3.5" stroke-linecap="round" />
+
+                    <!-- Radius Line OB (for sector) -->
+                    <line id="circ-radius-ob" x1="200" y1="200" x2="260" y2="96" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" style="display:none;" />
+
+                    <!-- Chord Line EF -->
+                    <line id="circ-chord-line" x1="100" y1="270" x2="300" y2="270" stroke="#ec4899" stroke-width="3" stroke-linecap="round" style="display:none;" />
+
+                    <!-- Arc AB highlight -->
+                    <path id="circ-arc-path" d="M 320 200 A 120 120 0 0 0 260 96" fill="none" stroke="#a855f7" stroke-width="5" stroke-linecap="round" style="display:none;" />
+
+                    <!-- Center point O -->
+                    <circle id="circ-node-O" cx="200" cy="200" r="6" fill="#f43f5e" stroke="#ffffff" stroke-width="2" />
+                    <text id="circ-text-O" x="190" y="190" fill="#ffffff" font-size="14" font-weight="bold">O</text>
+
+                    <!-- Vertex A -->
+                    <circle id="circ-node-A" cx="320" cy="200" r="5" fill="#3b82f6" stroke="#ffffff" stroke-width="1.5" />
+                    <text id="circ-text-A" x="332" y="205" fill="#ffffff" font-size="13" font-weight="bold">A</text>
+
+                    <!-- Vertex B (for sector/diameter) -->
+                    <circle id="circ-node-B" cx="260" cy="96" r="5" fill="#f43f5e" stroke="#ffffff" stroke-width="1.5" style="display:none;" />
+                    <text id="circ-text-B" x="270" y="90" fill="#ffffff" font-size="13" font-weight="bold" style="display:none;">B</text>
+
+                    <!-- Vertices C & D for diameter -->
+                    <circle id="circ-node-C" cx="80" cy="200" r="5" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" style="display:none;" />
+                    <text id="circ-text-C" x="65" y="205" fill="#ffffff" font-size="13" font-weight="bold" style="display:none;">C</text>
+                    <text id="circ-text-D" x="332" y="205" fill="#ffffff" font-size="13" font-weight="bold" style="display:none;">D</text>
+
+                    <!-- Vertices E & F for chord -->
+                    <circle id="circ-node-E" cx="100" cy="270" r="5" fill="#ec4899" stroke="#ffffff" stroke-width="1.5" style="display:none;" />
+                    <text id="circ-text-E" x="85" y="280" fill="#ffffff" font-size="13" font-weight="bold" style="display:none;">E</text>
+                    <circle id="circ-node-F" cx="300" cy="270" r="5" fill="#ec4899" stroke="#ffffff" stroke-width="1.5" style="display:none;" />
+                    <text id="circ-text-F" x="312" y="280" fill="#ffffff" font-size="13" font-weight="bold" style="display:none;">F</text>
+
+                    <!-- Dynamic Measurement Label -->
+                    <text id="circ-meas-label" x="260" y="190" fill="#10b981" font-size="12" font-weight="bold" text-anchor="middle">r = 7.0 cm</text>
+                  </svg>
+                </div>
+
+                <!-- Live Mathematical Values Bar -->
+                <div class="w-full mt-3 p-3 bg-indigo-950/80 rounded-xl border border-indigo-700/50 grid grid-cols-2 md:grid-cols-4 gap-2 text-center text-xs">
+                  <div class="p-2 bg-slate-900/80 rounded-lg">
+                    <span class="text-slate-400 block text-[10px]">अर्धव्यास (Radius)</span>
+                    <span id="live-r-val" class="text-emerald-400 font-extrabold text-sm">7.0 cm</span>
+                  </div>
+                  <div class="p-2 bg-slate-900/80 rounded-lg">
+                    <span class="text-slate-400 block text-[10px]">व्यास ($d = 2r$)</span>
+                    <span id="live-d-val" class="text-amber-400 font-extrabold text-sm">14.0 cm</span>
+                  </div>
+                  <div class="p-2 bg-slate-900/80 rounded-lg">
+                    <span class="text-slate-400 block text-[10px]">परिधि ($2\pi r$)</span>
+                    <span id="live-c-val" class="text-cyan-400 font-extrabold text-sm">44.0 cm</span>
+                  </div>
+                  <div class="p-2 bg-slate-900/80 rounded-lg">
+                    <span class="text-slate-400 block text-[10px]">क्षेत्रफल ($\pi r^2$)</span>
+                    <span id="live-a-val" class="text-pink-400 font-extrabold text-sm">153.9 cm²</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controls & Live Real-time Diagnostics -->
+              <div class="lg:col-span-5 space-y-4">
+                <!-- Part Highlight Buttons -->
+                <div class="p-4 bg-slate-950/70 rounded-2xl border border-indigo-900/60 space-y-2.5">
+                  <span class="text-xs font-bold text-slate-300 uppercase tracking-wider block">वृत्तका अङ्गहरू प्रदर्शन (Interactive Parts)</span>
+                  <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-2 text-xs">
+                    <button id="pbtn-centre" onclick="highlightCirclePart('centre')" class="p-2 rounded-xl bg-slate-800 hover:bg-blue-600 transition text-left font-semibold border border-slate-700">
+                      🔴 केन्द्रबिन्दु (Centre)
+                    </button>
+                    <button id="pbtn-radius" onclick="highlightCirclePart('radius')" class="p-2 rounded-xl bg-emerald-600 text-white transition text-left font-semibold border border-emerald-500">
+                      🟢 अर्धव्यास (Radius)
+                    </button>
+                    <button id="pbtn-diameter" onclick="highlightCirclePart('diameter')" class="p-2 rounded-xl bg-slate-800 hover:bg-blue-600 transition text-left font-semibold border border-slate-700">
+                      🟡 व्यास (Diameter)
+                    </button>
+                    <button id="pbtn-chord" onclick="highlightCirclePart('chord')" class="p-2 rounded-xl bg-slate-800 hover:bg-blue-600 transition text-left font-semibold border border-slate-700">
+                      🟣 जीवा (Chord)
+                    </button>
+                    <button id="pbtn-sector" onclick="highlightCirclePart('sector')" class="p-2 rounded-xl bg-slate-800 hover:bg-blue-600 transition text-left font-semibold border border-slate-700">
+                      🍕 क्षेत्रक (Sector)
+                    </button>
+                    <button id="pbtn-semicircle" onclick="highlightCirclePart('semicircle')" class="p-2 rounded-xl bg-slate-800 hover:bg-blue-600 transition text-left font-semibold border border-slate-700">
+                      🌓 अर्धवृत्त (Semi-circle)
+                    </button>
+                    <button id="pbtn-arc" onclick="highlightCirclePart('arc')" class="p-2 rounded-xl bg-slate-800 hover:bg-blue-600 transition text-left font-semibold border border-slate-700">
+                      🌈 चाप (Arc)
+                    </button>
+                    <button id="pbtn-circumference" onclick="highlightCirclePart('circumference')" class="p-2 rounded-xl bg-slate-800 hover:bg-blue-600 transition text-left font-semibold border border-slate-700">
+                      🔵 परिधि (Circumference)
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Radius Slider & Presets -->
+                <div class="p-4 bg-slate-950/70 rounded-2xl border border-indigo-900/60 space-y-3">
+                  <div class="flex justify-between items-center">
+                    <span class="text-xs font-bold text-slate-300 uppercase tracking-wider">अर्धव्यास नियन्त्रण (Radius Slider)</span>
+                    <span id="slider-r-label" class="font-extrabold text-cyan-400 text-xs">7.0 cm</span>
+                  </div>
+                  <input id="slider-circle-r" type="range" min="3.5" max="14" step="0.5" value="7" oninput="onCircleRadiusSliderChange()" class="w-full accent-blue-500 cursor-pointer" />
+                  
+                  <div class="grid grid-cols-4 gap-1.5 pt-1 text-[11px]">
+                    <button onclick="setCircleRadiusPreset(3.5)" class="p-1.5 bg-slate-800 hover:bg-blue-600 rounded-lg text-center font-bold">3.5 cm</button>
+                    <button onclick="setCircleRadiusPreset(7)" class="p-1.5 bg-slate-800 hover:bg-blue-600 rounded-lg text-center font-bold">7 cm</button>
+                    <button onclick="setCircleRadiusPreset(10.5)" class="p-1.5 bg-slate-800 hover:bg-blue-600 rounded-lg text-center font-bold">10.5 cm</button>
+                    <button onclick="setCircleRadiusPreset(14)" class="p-1.5 bg-slate-800 hover:bg-blue-600 rounded-lg text-center font-bold">14 cm</button>
+                  </div>
+                </div>
+
+                <!-- Explanation Card for Selected Part -->
+                <div class="p-4 bg-indigo-950/60 rounded-2xl border border-indigo-800/60 space-y-2 text-xs">
+                  <span id="part-info-title" class="font-bold text-emerald-400 uppercase tracking-wider block">अर्धव्यास (Radius - r)</span>
+                  <p id="part-info-desc" class="text-slate-300 leading-relaxed">
+                    वृत्तको केन्द्रबिन्दु $O$ बाट परिधिको कुनै पनि बिन्दु $A$ सम्म जोड्ने सीधा रेखाखण्डलाई अर्धव्यास भनिन्छ । यो व्यासको ठीक आधा ($r = \frac{d}{2}$) हुन्छ ।
+                  </p>
+                  <div id="part-info-formula" class="p-2 bg-slate-900/80 rounded-lg text-amber-300 font-mono text-[11px]">
+                    अर्धव्यास $r = 7.0\text{ cm} \implies \text{व्यास } d = 2 \times 7 = 14.0\text{ cm}$
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUB-LAB 2: WHEEL ROTATION & CIRCUMFERENCE LAB -->
+            <div id="ch16-sublab-wheel" class="hidden grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <div class="lg:col-span-7 bg-slate-950/70 p-4 rounded-2xl border border-indigo-900/60 flex flex-col items-center">
+                <div class="w-full flex justify-between items-center text-xs text-slate-400 mb-2">
+                  <span>पाङ्ग्रा १ फन्को घुम्दा पार गर्ने दूरी ठीक परिधि ($C = 2\pi r$) बराबर हुन्छ</span>
+                  <span id="wheel-rot-badge" class="px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 font-bold">१ फन्को (1 Rotation)</span>
+                </div>
+
+                <!-- Unfolding Wheel Animation SVG -->
+                <div class="w-full max-w-[460px] aspect-[16/10] bg-slate-900 rounded-xl relative overflow-hidden border border-slate-800 flex items-center justify-center p-3">
+                  <svg id="svg-wheel-lab" viewBox="0 0 440 260" class="w-full h-full select-none">
+                    <!-- Ground level -->
+                    <line x1="20" y1="210" x2="420" y2="210" stroke="#64748b" stroke-width="3" />
+                    <!-- Ruler tick marks -->
+                    <g stroke="#94a3b8" stroke-width="1">
+                      <line x1="40" y1="210" x2="40" y2="220" />
+                      <line x1="120" y1="210" x2="120" y2="218" />
+                      <line x1="200" y1="210" x2="200" y2="220" />
+                      <line x1="280" y1="210" x2="280" y2="218" />
+                      <line x1="360" y1="210" x2="360" y2="220" />
+                    </g>
+                    <text x="40" y="235" fill="#94a3b8" font-size="11" text-anchor="middle">0</text>
+                    <text x="200" y="235" fill="#94a3b8" font-size="11" text-anchor="middle">1 फन्को (C)</text>
+                    <text x="360" y="235" fill="#94a3b8" font-size="11" text-anchor="middle">2 फन्को (2C)</text>
+
+                    <!-- Unfolded Circumference Trace Line -->
+                    <line id="wheel-trace" x1="40" y1="208" x2="260" y2="208" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" />
+
+                    <!-- Rolling Wheel Body -->
+                    <circle id="wheel-circle" cx="120" cy="140" r="70" fill="rgba(59, 130, 246, 0.2)" stroke="#3b82f6" stroke-width="4" />
+                    <!-- Spokes -->
+                    <line id="spoke-1" x1="120" y1="70" x2="120" y2="210" stroke="#60a5fa" stroke-width="2" />
+                    <line id="spoke-2" x1="50" y1="140" x2="190" y2="140" stroke="#60a5fa" stroke-width="2" />
+                    <circle cx="120" cy="140" r="6" fill="#f43f5e" />
+
+                    <!-- Contact Point marker -->
+                    <circle id="wheel-contact" cx="120" cy="210" r="5" fill="#eab308" />
+
+                    <!-- Distance arrow on top of trace -->
+                    <text id="wheel-dist-label" x="150" y="195" fill="#38bdf8" font-size="12" font-weight="bold" text-anchor="middle">दूरी = 220 cm</text>
+                  </svg>
+                </div>
+
+                <div class="w-full mt-3 p-3 bg-indigo-950/80 rounded-xl border border-indigo-700/50 flex items-center justify-between text-xs md:text-sm">
+                  <div class="font-bold text-slate-300">
+                    पार गरेको जम्मा दूरी $= \text{फन्को सङ्ख्या } (N) \times \text{परिधि } (C)$
+                  </div>
+                  <div class="font-black text-cyan-400 text-sm md:text-base">
+                    $= <span id="wheel-calc-total">220 cm</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Wheel Controls -->
+              <div class="lg:col-span-5 space-y-4">
+                <div class="p-4 bg-slate-950/70 rounded-2xl border border-indigo-900/60 space-y-3 text-xs">
+                  <span class="font-bold text-slate-300 uppercase tracking-wider block">पाङ्ग्राको आकार (Radius)</span>
+                  <select id="wheel-radius-select" onchange="onWheelChange()" class="w-full p-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white font-bold">
+                    <option value="14">अर्धव्यास १४ से.मी. (परिधि = ८८ से.मी.)</option>
+                    <option value="21">अर्धव्यास २१ से.मी. (परिधि = १३२ से.मी.)</option>
+                    <option value="35" selected>अर्धव्यास ३५ से.मी. (साइकल पाङ्ग्रा, परिधि = २२० से.मी.)</option>
+                    <option value="70">अर्धव्यास ७० से.मी. (गाडी पाङ्ग्रा, परिधि = ४४० से.मी.)</option>
+                  </select>
+
+                  <span class="font-bold text-slate-300 uppercase tracking-wider block pt-2">फन्को सङ्ख्या (Number of Rotations)</span>
+                  <div class="grid grid-cols-4 gap-1.5 font-bold">
+                    <button onclick="setWheelRotations(1)" class="p-2 bg-slate-800 hover:bg-blue-600 rounded-lg text-center">१</button>
+                    <button onclick="setWheelRotations(5)" class="p-2 bg-slate-800 hover:bg-blue-600 rounded-lg text-center">५</button>
+                    <button onclick="setWheelRotations(10)" class="p-2 bg-slate-800 hover:bg-blue-600 rounded-lg text-center">१०</button>
+                    <button onclick="setWheelRotations(50)" class="p-2 bg-slate-800 hover:bg-blue-600 rounded-lg text-center">५०</button>
+                  </div>
+                  <input id="wheel-rot-input" type="number" min="1" max="1000" value="1" oninput="onWheelChange()" class="w-full p-2 bg-slate-900 border border-slate-700 rounded-xl text-cyan-400 font-bold text-center" />
+                </div>
+
+                <!-- Distance Summary -->
+                <div class="p-4 bg-indigo-950/60 rounded-2xl border border-indigo-800/60 space-y-2 text-xs">
+                  <span class="font-bold text-indigo-300 uppercase tracking-wider block">दूरी गणना विश्लेषण</span>
+                  <div class="p-2.5 bg-slate-900/80 rounded-xl space-y-1 font-mono text-[11px] text-slate-300">
+                    <div>१. परिधि $C = 2 \times \frac{22}{7} \times r = $ <span id="wheel-stat-c" class="text-emerald-400 font-bold">220 cm</span></div>
+                    <div>२. कुल दूरी $= N \times C = $ <span id="wheel-stat-dist-cm" class="text-cyan-400 font-bold">220 cm</span></div>
+                    <div>३. मिटरमा $= $ <span id="wheel-stat-dist-m" class="text-amber-400 font-bold">2.2 m</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>

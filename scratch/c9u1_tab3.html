@@ -1,0 +1,235 @@
+<!-- ================= TAB 3: TIERED MODEL QUESTIONS (16 QUESTIONS) ================= -->
+<div id="c9u1-view-tiers" class="hidden space-y-6">
+  <!-- Filter Controls -->
+  <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200">
+    <div class="flex items-center gap-2">
+      <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">तह अनुसार प्रश्नहरू:</span>
+      <div class="flex flex-wrap gap-1.5">
+        <button onclick="filterC9U1Tiers('all')" id="btn-c9u1-tier-all" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-xs cursor-pointer">
+          सबै १६ प्रश्नहरू
+        </button>
+        <button onclick="filterC9U1Tiers('k')" id="btn-c9u1-tier-k" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          ज्ञान तह (५ प्रश्न)
+        </button>
+        <button onclick="filterC9U1Tiers('u')" id="btn-c9u1-tier-u" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          बोध तह (६ प्रश्न)
+        </button>
+        <button onclick="filterC9U1Tiers('ha')" id="btn-c9u1-tier-ha" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 cursor-pointer">
+          प्रयोग र उच्च दक्षता (५ प्रश्न)
+        </button>
+      </div>
+    </div>
+    <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2.5 py-1 rounded-full">CDC विशिष्टीकरण तालिका अनुसार</span>
+  </div>
+
+  <!-- TIER 1: KNOWLEDGE (ज्ञान - ५ प्रश्न) -->
+  <div class="c9u1-tier-section space-y-3" data-tier="k">
+    <div class="flex items-center gap-2 px-1">
+      <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+      <h4 class="font-black text-slate-800 text-sm md:text-base">तह १: ज्ञान तह (Knowledge Level - १ अङ्कका प्रश्नहरू)</h4>
+    </div>
+
+    <!-- Q1 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १: वैज्ञानिक अध्ययन भनेको के हो?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> प्रकृतिका विभिन्न घटना, वस्तु तथा तथ्यहरूको अवलोकन, परिकल्पना, प्रयोगात्मक परीक्षण र निष्कर्षका आधारमा ज्ञान हासिल गर्ने व्यवस्थित र तार्किक विधिलाई वैज्ञानिक अध्ययन भनिन्छ।
+      </p>
+    </div>
+
+    <!-- Q2 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न २: कुनै उपकरणको 'न्यूनतम नाप (Least Count)' भन्नाले के बुझिन्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> कुनै पनि नाप्ने उपकरणले सही रूपमा नाप्न सक्ने सबैभन्दा सानो परिमाणलाई त्यस उपकरणको न्यूनतम नाप भनिन्छ।
+      </p>
+    </div>
+
+    <!-- Q3 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ३: १ गिगामिटर (१ Gm) मा कति मिटर हुन्छ? घाताङ्कमा लेख्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400 font-mono">
+        <strong>उत्तर:</strong> $1\text{ Gm} = 10^9\text{ m}$ (अर्थात् १ अर्ब मिटर)।
+      </p>
+    </div>
+
+    <!-- Q4 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ४: प्रयोगशालामा प्रयोग गरिने दुईवटा व्यक्तिगत सुरक्षा सामग्री (PPE) को नाम लेख्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> १. सुरक्षात्मक चस्मा (Safety Goggles) र २. ल्याब कोट वा एप्रोन (Lab Coat/Apron)।
+      </p>
+    </div>
+
+    <!-- Q5 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ५: आधुनिक वंशाणुशास्त्रका पिता (Father of Modern Genetics) कसलाई मानिन्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">१ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-blue-400">
+        <strong>उत्तर:</strong> ग्रेगर जोन मेन्डेल (Gregor Johann Mendel) लाई।
+      </p>
+    </div>
+  </div>
+
+  <!-- TIER 2: UNDERSTANDING (बोध - ६ प्रश्न) -->
+  <div class="c9u1-tier-section space-y-3" data-tier="u">
+    <div class="flex items-center gap-2 px-1 pt-2">
+      <span class="w-3 h-3 rounded-full bg-emerald-600"></span>
+      <h4 class="font-black text-slate-800 text-sm md:text-base">तह २: बोध तह (Understanding Level - २ अङ्कका प्रश्नहरू)</h4>
+    </div>
+
+    <!-- Q6 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ६: वैज्ञानिक अध्ययनमा 'परिकल्पना (Hypothesis)' किन महत्वपूर्ण मानिन्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> परिकल्पनाले अनुसन्धानकर्तालाई निश्चित वैज्ञानिक दिशा प्रदान गर्छ। यसले समस्याको सम्भावित उत्तर अनुमान गर्न र सो उत्तर परीक्षण गर्न कुन चर परिचालन गर्ने तथा कस्तो प्रयोग गर्ने भन्ने योजना बनाउन मार्गदर्शन गर्दछ।
+      </p>
+    </div>
+
+    <!-- Q7 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ७: वैज्ञानिक पद्धतिमा प्रयोग गर्दा 'औसत नाप' लिनु किन आवश्यक हुन्छ? स्पष्ट पार्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> मानिसको प्रतिक्रिया समय (reaction time), उपकरणको सूक्ष्म असन्तुलन र वातावरणीय प्रभावले गर्दा एकै पटकको नापमा त्रुटि हुन सक्छ। प्रयोगलाई कम्तीमा ३ पटक दोहोर्याएर औसत निकाल्दा ती त्रुटिहरू न्यून भई नाप वास्तविक मानको नजिक पुग्छ।
+      </p>
+    </div>
+
+    <!-- Q8 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ८: जीव विज्ञान र भौतिक विज्ञानबीचको अन्तरसम्बन्धलाई एउटा उपयुक्त उदाहरणसहित प्रस्ट पार्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> भौतिक विज्ञानका नियम र यन्त्रहरू जीव विज्ञानमा जीवन प्रक्रिया बुझ्न र उपचार गर्न प्रयोग हुन्छन्। उदाहरणका लागि, प्रकाशको अपवर्तन सिद्धान्त प्रयोग गरी डा. सन्दुक रुइतले विकास गरेको इन्ट्राअकुलर लेन्स (IOL) मार्फत आँखाको मोतीबिन्दुको सफल उपचार सम्भव भएको छ।
+      </p>
+    </div>
+
+    <!-- Q9 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ९: शुद्धता (Accuracy) र सूक्ष्मता (Precision) बीचको भिन्नता उदाहरणसहित लेख्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400 space-y-1">
+        <p>• <strong>Accuracy (शुद्धता):</strong> नापिएको मान वास्तविक मान (True Value) सँग कति नजिक छ भन्ने अवस्था। (जस्तै: वास्तविक लम्बाइ ५.० cm भएकोमा ४.९९ cm आउनु)।</p>
+        <p>• <strong>Precision (सूक्ष्मता):</strong> बारम्बार नाप्दा नतिजाहरू आपसमा कति नजिक छन् भन्ने अवस्था। (जस्तै: तीन पटक नाप्दा ४.६१ cm, ४.६२ cm, ४.६१ cm आउनु)।</p>
+      </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १०: कुनै सङ्ख्यालाई वैज्ञानिक सङ्केतनमा लेख्दा आधार अङ्क M को मान किन १ देखि १० को बीचमा हुनुपर्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> वैज्ञानिक सङ्केतनलाई अन्तर्राष्ट्रिय रूपमा एकरूप र मानक बनाउन $1 \le M < 10$ निर्धारण गरिएको हो। यसो गर्दा दशमलव सधैं पहिलो गैर-शून्य अङ्कपछि मात्र पर्छ, जसले गर्दा सङ्ख्याको आकार १० को घाताङ्क हेरेर तुरुन्तै तुलना गर्न सकिन्छ।
+      </p>
+    </div>
+
+    <!-- Q11 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न ११: रासायनिक प्रयोगशालामा काम गर्दा बोतलमा 'संक्षारक (Corrosive)' सङ्केत देख्दा के कस्ता सावधानी अपनाउनुपर्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">२ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-emerald-400">
+        <strong>उत्तर:</strong> संक्षारक रसायन (कडा अम्ल वा क्षार) ले छाला र आँखालाई जलाउँछ। त्यसैले बाक्लो पन्जा र सुरक्षा चस्मा अनिवार्य लगाउने, अम्लमा सिधै पानी नहाली पानीमा विस्तारै अम्ल हाल्ने र छालामा परे तुरुन्तै धेरै सफा पानीले धुनुपर्छ।
+      </p>
+    </div>
+  </div>
+
+  <!-- TIER 3: APPLICATION & HIGHER ABILITY (प्रयोग र उच्च दक्षता - ५ प्रश्न) -->
+  <div class="c9u1-tier-section space-y-3" data-tier="ha">
+    <div class="flex items-center gap-2 px-1 pt-2">
+      <span class="w-3 h-3 rounded-full bg-purple-600"></span>
+      <h4 class="font-black text-slate-800 text-sm md:text-base">तह ३: प्रयोग तथा उच्च दक्षता (Application & Higher Ability - ३ देखि ४ अङ्क)</h4>
+    </div>
+
+    <!-- Q12 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १२: एउटा विद्यार्थीले तारको व्यास नाप्न स्केल प्रयोग गर्दा १.५ mm र अर्कोले स्क्रू गज प्रयोग गर्दा १.५४ mm प्राप्त गरे। कुन नाप बढी भरपर्दो हुन्छ र किन?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">३ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-purple-400 space-y-1">
+        <p><strong>उत्तर:</strong> स्क्रू गज (Micrometer) बाट लिइएको <strong>१.५४ mm</strong> नाप बढी भरपर्दो र यथार्थ हुन्छ।</p>
+        <p><strong>कारण:</strong> साधारण स्केलको न्यूनतम नाप १ mm मात्र हुन्छ, जसले मिलिमिटरपछिको सूक्ष्म मान नाप्न सक्दैन (विद्यार्थीले अनुमान मात्र गरेको हो)। तर स्क्रू गजको न्यूनतम नाप ०.०१ mm हुने भएकाले यसले मिलिमिटरको सयौं भागसम्मको नाप यथार्थताका साथ मापन गर्दछ।</p>
+      </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १३: पानी तताउँदा समय र तापक्रमको सम्बन्ध अध्ययन गर्न विद्यार्थीले प्रयोग गरे। यस प्रयोगमा स्वतन्त्र चर, निर्भर चर र नियन्त्रित चर पहिचान गर्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">३ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-purple-400 space-y-1">
+        <p>• <strong>स्वतन्त्र चर (Independent Variable):</strong> तताएको समय (Time) — किनभने यो समय प्रयोगकर्ताको नियन्त्रणमा निरन्तर बित्छ।</p>
+        <p>• <strong>निर्भर चर (Dependent Variable):</strong> पानीको तापक्रम (Temperature) — किनभने तापक्रम समय बित्दै जाँदा समयमा निर्भर भएर परिवर्तन हुन्छ।</p>
+        <p>• <strong>नियन्त्रित चर (Controlled Variable):</strong> पानीको आयतन, बर्नरको ज्वाला, र भाँडोको प्रकार — जसलाई प्रयोगभरि स्थिर राखिन्छ।</p>
+      </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १४: पृथ्वीको पिण्ड $5972000000000000000000000\text{ kg}$ र हाइड्रोजन परमाणुको पिण्ड $0.00000000000000000000000000167\text{ kg}$ छ। वैज्ञानिक सङ्केतनमा रूपान्तरण गरी तुलना गर्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">३ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-purple-400 space-y-1">
+        <p>• <strong>पृथ्वीको पिण्ड:</strong> २४ स्थान बायाँ सार्दा: $$M_E = 5.972 \times 10^{24}\text{ kg}$$</p>
+        <p>• <strong>हाइड्रोजन परमाणुको पिण्ड:</strong> २७ स्थान दायाँ सार्दा: $$m_H = 1.67 \times 10^{-27}\text{ kg}$$</p>
+        <p><strong>तुलना:</strong> वैज्ञानिक सङ्केतनले अति विशाल ($10^{24}$) र अति सूक्ष्म ($10^{-27}$) परिमाणहरूलाई सहजै एकै मानक ढाँचामा हेर्न र शून्य गन्नुपर्ने झन्झट हटाउन सक्षम बनाएको छ।</p>
+      </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १५: "यदि कुनै अनुसन्धानमा परिकल्पना गलत प्रमाणित भयो भने त्यो प्रयोग पूर्ण रूपमा असफल भएको मानिन्छ।" के तपाईं यस भनाइसँग सहमत हुनुहुन्छ?</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">३ अङ्क</span>
+      </div>
+      <p class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-purple-400 leading-relaxed">
+        <strong>उत्तर: म यस भनाइसँग सहमत छैन।</strong>  
+        विज्ञानमा परिकल्पना गलत प्रमाणित हुनु असफलता होइन; बरु त्यो सत्यको नजिक पुग्ने नयाँ सिकाइ हो। यसले अनुमान गरिएको बाटो सही थिएन भन्ने ठोस प्रमाण दिन्छ, जसले वैज्ञानिकहरूलाई प्रश्न र परिकल्पना परिमार्जन गर्न मद्दत गर्छ र अन्ततः वास्तविक नियम पत्ता लगाउन मार्गप्रशस्त गर्छ। एडिसनले बल्ब बनाउँदा हजारौं असफल प्रयासपछि मात्र सही फिलामेन्ट फेला पारेका थिए।
+      </p>
+    </div>
+
+    <!-- Q16 -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-2">
+      <div class="font-bold text-slate-800 text-sm flex items-center justify-between">
+        <span>प्रश्न १६: विज्ञान प्रयोगशालामा सुरक्षित काम गर्नका लागि विद्यार्थी आचारसंहिता (Code of Conduct) को ५ बुँदे कार्ययोजना तयार गर्नुहोस्।</span>
+        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">४ अङ्क</span>
+      </div>
+      <div class="text-xs md:text-sm text-slate-600 pl-4 border-l-2 border-purple-400 space-y-1">
+        <p>१. <strong>व्यक्तिगत पूर्वतयारी:</strong> प्रयोगशाला प्रवेश गर्दा अनिवार्य रूपमा एप्रोन, पन्जा र चस्मा लगाउने तथा कपाल बाँध्ने।</p>
+        <p>२. <strong>अनुमतिबिना प्रयोग निषेध:</strong> शिक्षकको प्रत्यक्ष निर्देशनबिना कुनै रसायन वा ग्यास नखोल्ने।</p>
+        <p>३. <strong>चेतावनी सङ्केतको पालना:</strong> खतराको चिन्ह (Hazard Symbol) हेरेर मात्र सावधानीपूर्वक चलाउने, कहिल्यै नचाख्ने।</p>
+        <p>४. <strong>आपत्कालीन सचेतना:</strong> रसायन पोखिएमा तुरुन्त शिक्षकलाई खबर गर्ने र प्राथमिक उपचारको स्थान थाहा पाउने।</p>
+        <p>५. <strong>सफा विसर्जन:</strong> फोहोर तोकिएको ठाउँमा फाल्ने, भाँडा सफा गर्ने र साबुनपानीले हात धोएर मात्र बाहिरिने।</p>
+      </div>
+    </div>
+  </div>
+</div>

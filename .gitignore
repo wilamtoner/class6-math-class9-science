@@ -1,0 +1,13 @@
+# Backups
+*.bak*
+*.bak_*
+
+# Heavy temporary OCR image dumps
+scratch/pdf_*
+scratch/*.png
+scratch/__pycache__/
+__pycache__/
+
+# OS & Editor
+.DS_Store
+Thumbs.db

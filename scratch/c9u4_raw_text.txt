@@ -1,0 +1,589 @@
+$
+
+j|md ljsf;
+(Evolution)
+
+lrq 4.1
+
+tn lbOPsf k|Zgx¿df cfwfl/t eO{ 5nkmn ug'{xf];\ M
+-c_ k[YjLdf ;a}eGbf klxn] s'g ;hLjsf] pTklQ ePsf] lyof] xf]nf <
+-cf_ s] xfd|f] jl/kl/ kfOg] ;hLjx¿ klxnfb]lv g} cl:tTjdf lyP xf]nfg\ <
+-O_ ;hLjx¿df km/skgf s;/L cfof] xf]nf <
+-O{_ nfvf}F jif{ klxn] cl:tTjdf /x]sf hLjx¿sf af/]df s;/L yfxf kfOG5 xf]nf <
+cfw'lgs dfGotfcg';f/ k[YjLdf xfnsf ljsl;t hLjx¿ clt ;/n ;"Id hLjx¿af6 j|mdzM
+ljsf; ePsf] dflgG5 . jftfj/0fdf kl/jt{g xF'b} hfFbf ;hLjx¿sf] z/L/df klg kl/jt{g
+x'Fb} uof] . j|mdljsf;sf ljleGg k|df0fx¿sf cfwf/df ;fwf/0f ;hLjaf6 hl6n z/L/ ePsf
+;hLjx¿ pTkGg eP .
+xfd|f] jl/kl/ ljleGg lsl;dsf ;hLjx¿ kfOG5g\ . tL ;hLx¿cGtu{t AofS6]l/of, cldaf
+h:tf ;/n agf]6 ePsf hLjb]lv hl6n agf]6 ePsf ax'sf]ifLo :Qgwf/L hgfj/ tyf km"n
+km'Ng] jg:kltx¿ kb{5g\ . k|To]s hLjx¿ Ps csf{df leGg b]lvG5g\ . k[YjLsf] agf]6,
+xfjfkfgLcg';f/sf] hLjx¿sf] cg's"ntfnufot cGo ljljw sf/0fn] ubf{ hLjx¿df km/s
+u'0fx¿ ljsf; x'Fb} uPsf] dflgG5 . pbfx/0fsf nflu dflg; tyf xfQL b'j} hLj hldgdf
+a:g] 9f8 ePsf :tgwf/L hgfj/ x'g\ t/ klg logLx¿sf w]/} u'0fx¿ km/s 5g\ . oxfF;Dd ls
+k[YjLsf ljleGg e"efudf a:g] dflg;lar klg 5fnfsf] /ª, prfOnufot w]/} u'0fx¿df cGt/
+/x]sf] kfOG5 . To:t} u/L km"n km'Ng] jg:kltx¿ Pp6} ;d"xdf kb{5g\ t/ o:tf jg:kltx¿
+xhf/f}F lsl;dsf 5g\ / Ps csf{df km/s 5g\ .
+36							
+lj1fg tyf k|ljlwM sIff (
+
+4.1 j|md ljsf;sf] kl/ro (Inroduction to evolution)
+
+cfheGbf w]/} jif{ klxn] cl:tTjdf /x]sf hLjx¿sf af/]df ltgLx¿sf cjz]ifsf] cWoogaf6
+yfxf kfpg ;lsG5 . o;/L ;hLjx¿df kfOg] ;dfgtf / leGg u'0fx¿sf cfwf/df s] cg'dfg
+ug{ ;lsG5 eg] k[YjLsf] ;txdf ;a}eGbf klxn] ;fwf/0f hLjsf] pTklQ ePsf] x'g'k5{ .
+jftfj/0f kl/jt{g;Fu} ljleGg k|sf/sf hl6n ;hLjx¿sf] pTklQ ePsf] dflgG5 . ;hLjx¿sf]
+z/L/sf] agfj6 ;fwf/0faf6 hl6n ¿kdf kl/jt{g x'Fb} uP/ ;hLjx¿sf] gofF k|hflt ljsf;
+x'g] k|lj|mof g} j|md ljsf; xf] .
+lrqdf ;hLjx¿sf] j|mdljsf;sf] gd'gf
+b]vfOPsf] 5 . k[YjLsf] pTklQ ePsf] nfvf}F
+jif{kl5 dfq} k[YjLsf] ;txdf hLjx¿sf] pTklQ
+ePsf] ljZjf; 5 . ;'? ;'?df hLjx¿ afFRg
+;Sg] cg's"n jftfj/0f lyPg . k[YjLsf] ;txdf
+lg/Gt/ kl/jt{g eof] . kfgL k/]kl5 jftfj/0f
+kl/jt{g x'Fb} uof] . ljleGg k|sf/sf tŒjx¿lar
+/f;folgs k|ltlj|mof eof], kmn:j¿k hf}ljs
+c0f'sf] lgdf0f{ eof] . jftfj/0f kl/jt{g x'g]
+j|md lg/Gt/ rln/x\of] . h}ljs c0f' ag]kl5
+clt ;/n ;"Id hLjf0f' (Virus) sf] pTklQ
+x'g uof] . ;hLjsf nflu cg's"n jftfj/0f
+aGb} uof] . j|mdljsf;sf] j|mddf k|f]Sofl/of]6
+AofS6]l/of h:tf hLjx¿sf] pTklQ eO{ To;kl5
+
+lrq 4.2 hLjx¿sf] j|md ljsf;
+
+of]eGbf a9L ljsl;t o'Sofl/cf]l6s sf]ifsf] pTklt eof] . Pssf]ifLo hLjx¿ tyf jg:kltx¿sf]
+ljsf; eof] . To;kl5 cg's"n jtfj/0f ;Fu;Fu} ax'sf]ifLo hGt' tyf jg:kltx¿sf] pTklQ tyf
+ljsf; ePsf] dflgG5 .
+;hLjx¿df lg/Gt/ kl/jt{g x'g] j|md rln/xFbf ltgLx¿sf] zf/Ll/s agfj6 ;/naf6 hl6n x'Fb}
+uPsf] kfOG5 . o; j|mddf xfO8«f, 6]kjd{, u8\of}nf, k'tnL, hfFt]ls/f, tf/]df5f h:tf d]?b08
+gePsf hGt'x¿sf] ljsf; x'Fb} uof] . d]?b08 gePsf hGt'af6 d]?b08 ePsf kfgLdf a:g] ;/n
+hLj ;d'b|L 3f]8f, df5f cflbsf] ljsf; eof] . kfgLdf a:g] hLjaf6 peor/, peor/af6 3;|]/
+lxF8\g] hLj x'Fb} d]?b08 ePsf hl6n hgfj/x¿ h:t} 3f]8f, xfQL, dflg;sf] ljsf; eof] .
+To:t} k|sf/n] jg:kltcGtu{t Pssf]ifLo cNuLsf] pTklQkl5 ax'sf]ifLo cNuLsf] ljsf; eof]
+eg] jftfj/0f kl/jt{g ;Fu;Fu} of]eGbf ljsl;t a|fof]kmfO6f, 6]l/8f]kmfO6f jg:kltsf] pTklQ
+eof] . Pjd\ j|mdn] km"n gkm'Ng] jg:kltkZrft\ km"n km'Ng] jg:klt h:t}M lhDgf]:kd{ / km"n km'Ng]
+hl6n agf]6 ePsf jg:kltsf] pTklQ tyf ljsf; eof] . oL ;du| k|lj|mofnfO{ j|md ljsf;sf
+¿kdf lnOG5 .
+lj1fg tyf k|ljlwM sIff (
+
+37
+
+4.2 j|md ljsf;sf l;4fGtsf k|df0fx¿ (Evidences of organic evolution)
+
+k[YjLdf hLjx¿sf] ljsf; j|md ;/naf6 hl6n ePsf] xf] eGg] s'/fsf cfwf/x¿nfO{ k'li6
+ug{ ;xof]u ug]{ k|df0fx¿ g} j|md ljsf;sf l;4fGtsf k|df0fx¿ x'g\ . o:tf j|md ljsf;sf
+l;4fGtsf k|df0fdWo] d'Vo k|df0fnfO{ lgDgfg';f/ pNn]v ul/Psf] 5 M
+-s_ hLjfjz]ifaf6 k|fKt k|df0f (Evidences from fossil)
+w]/} jif{ klxn] d/]sf hGt' tyf jg:kltsf s'g} c+z, 5fk jf lrx\g kq] r6\6fgdf
+kfOG5, To;nfO{ hLjfjz]if (Fossil) elgG5 . hLjfjz]ifsf] af/]df cWoog ug]{
+ljifonfO{ Paleontology elgG5 .
+hLjfjz]ifsf] cWoogaf6 nfvf}F jif{ cl3
+cl:tTjdf /x]sf ;hLjx¿sf af/]df
+hfgsf/L lng ;lsG5 . hLjfjz]ifaf6 k|fKt
+k|df0fnfO{ j|md ljsf;sf] alnof] cfwf/
+dflgG5 .
+hLJffjz]if s;/L aG5 xf]nf < lrq x]/L
+5nkmn ug'{xf];\ .
+hLjfjz]if kq] r6\6fgdf dfq kfOG5 .
+;hLjx¿ d/]kl5 ltgsf] d[t z/L/nfO{ vf]nf,
+gbL, df6f] afn'jf;Fu} aufP/ n}hfG5 .
+cGtdf 7'nf] tfn jf ;d'b|df ldl;G5 /
+lj:tf/} lylu|g yfN5 . of] k|lj|mof lg/Gt/
+rlNf/xG5 . tfn jf ;d'b|sf] lkFwdf Pskl5
+csf]{ tx aGb} hfG5 . nfvfF} jif{kl5 kq]
+r6\6fg aGb5 . k|To]s txdf ePsf
+lrq 4.3 hLjfjz]if lgdf{0f k|lj|mof
+;hLjx¿sf] sdnf] efu tyf df+zk]zL un]/
+hfG5 eg] xf8 tyf ;]n'nf]h afFsL /xG5g\ . oL efux¿ Gf} r6\6fgsf kqdf d/]sf
+;hLjsf] 5fksf ¿kdf /xG5 h;nfO{ hLjfjz]if elgG5 .
+o;/L ag]sf] kq] r6\6fgsf] ;a}eGbf tNnf] kqdf ;fwf/0f agf]6 ePsf ;hLj h:t} clNusf]
+hLjfjz]if kfOPsf] 5 eg] dflyNnf] kqdf :tgwf/Lsf] hLjfjz]if kfOPsf] 5 . o;af6 s]
+olsg ug{ ;lsG5 eg] ;hLjx¿sf] ljsf; j|mdzM ;/naf6 hl6n ;+/rgf ePsf ;hLj
+ljsf; EfPsf] :ki6 x'G5 . o;sf/0f ljsf;sf] b[li6sf]0fn] hLjfjz]ifaf6 k|fKt k|df0fnfO{
+w]/} dxŒj lbPsf] 5 . slt k'/fgf] r6\6fg xf] egL olsg ug{ sfa{g 8]l6ª / o'/]lgod 8]l6ª
+ljlwaf6 cfo' lgwf{/0f ul/G5 . To;df ePsf] hLjfjz]ifsf] cfo' klg Tolt g} jif{ ePsf]
+dflgG5 . o;sf cfwf/df cfheGbf nfvfF} jif{ cl3 cl:tTjdf /x]sf ;hLjx¿sf af/]df
+hfgsf/L lng ;lsG5 M
+38							
+lj1fg tyf k|ljlwM sIff (
+
+-v_ t'ngfTds z/L/ /rgfaf6 k|fKt k|df0f (Evidences from comparative morphology
+and anatomy)
+
+k|s[ltdf kfOg] hGt' tyf jg:kltx¿sf] zf/Ll/s agf]6 cfcfˆg} lsl;dsf] x'G5 . t/ klg
+oL ;hLjx¿df s'g} g s'g} ;femf u'0fx¿ kfOG5g\ . o;n] s] b]vfpF5 eg] oL ;hLjx¿
+Pp6} k'vf{af6 pTklQ ePsf x'g\ eGg ;lsG5 . t'ngfTds z/L/ /rgfaf6 kfOg] k|df0fx¿
+lgDgcg';f/ /x]sf 5g\ M
+-c_ ;wdL{ cª\ux¿ (Homologous organs)
+d]?b08 ePsf hgfj/x¿sf] z/L/ ljleGg xf8sf
+6'j|mf ldnL ag]sf] x'G5 . d]?b08 ePsf hgfj/
+x¿sf ljleGg cª\usf] agf]6sf] cWoog ubf{ Pp6}
+9fFrf / j|mdaf6 xf8sf 6'j|mf ldnL ag]sf] kfOG5 .
+o;n] hGt'x¿sf] kf/:kfl/s ;DaGw /x]sf] yfxf
+kfpg ;lsG5 . ;hLjx¿df kfOg] cª\ux¿ Hf;sf]
+pTklQ (Embryomic origin) Pp6} x'G5 t/ km/s
+km/s sfdsf nflu k|of]u ul/G5 eg] To;nfO{
+;wdL{ cª\ux¿ (Homologous organ) elgG5,
+Hf:t}M dflg;sf] xft, 3f]8fsf] cufl8sf] v'6\6f,
+rd]/fsf] kv]6f, Xj]nsf] kv]6fdf kfOg] xf8x¿sf]
+agfj6 Pscfk;df ldNbf]h'Nbf] kfOG5 . dflg;sf]
+xft / 3f]8fsf] cufl8sf] v'6\6fsf] xf8sf] ;+/rgfdf
+j|mdzM Humerus, Radius, Ulna, Carpels, Meta
+carpels / Phalanges kfOG5 .
+
+lrq 4.4 3f]8fsf] cufl8sf] v'6\6f / dflg;sf] xft
+
+o; k|df0fn] pko{'St hgfj/x¿ k'vf{ ;d"xaf6 ljsl;t ePsf] tYo k|dfl0ft x'G5 . ;hLjx¿df kfOg]
+To:tf cª\ux¿ Hf:fsf] pTklQ (Embryonic origin) km/s km/s x'G5 t/ Pp6} sfo{sf nflu k|o]fu ul/G5
+eg] To:tf cª\ux¿nfO{ Pgfnf]u; (Analogous organ) elgG5, h:t} M ls/f, rd]/f / r/fsf kv]6fx¿
+p8\gsf nflu k|of]u x'g] eP tfklg ls/fsf] kv]6f, r/f / rd]/fsf] kv]6f eGbf
+km/s leqL agfj6 ePsf x'G5g\ . o;n] of] k|dfl0ft u5{ ls r/f, rd]/f /
+ls/fsf k'vf{ km/s km/s ;d"xsf x'g\ . Pjd\ k|sf/n] cGo cª\ux¿ Kflg ;dfGftf kfOG5 . To;}
+n] ;wdL{ cª\ux¿sf] cWoogaf6 k|fKt k|df0fn] j|mdljsf;sf] k'li6 ug{ dbt k'¥ofpF5 .
+-cf_
+
+cjz]iffª\uaf6 k|fKt k|df0f (Evidence from vestigial organ)
+
+xfd|f] z/L/df w]/} cª\ux¿ x'G5g\ . tLdWo] s]xL cª\ux¿sf] pkof]u gePsf] x'gfn] lgis[o eP/
+/x]sf x'G5g\ eg] s]xL cª\u cGo hgfj/df ljsl;t / sfo{d"ns x'G5g\ . o:tf gd'gfsf ¿kdf
+dfq /x]sf cª\ux¿nfO{ cjz]iffª\u elgG5 .
+lj1fg tyf k|ljlwM sIff (
+
+39
+
+ljleGg hgfj/ / jg:kltx¿df o:tf cjz]iffª\ux¿
+membrane
+/x]sf x'G5g\ . pbfx/0fsf ¿kdf dflg;sf] z/L/df /x]
+ear muscles
+pinel gland
+sf s]xL cjz]iffª\unfO{ g} lng ;lsG5 . dflg;df x'g] wisdom
+tonsil
+teeth
+s's'/ bfFt (Canine teeth) 9f8sf] tNnf] efudf /x]
+thymus gland
+sf] Tail vertebrae sfgnfO{ xNnfpg ;Sg] df+;k]zL
+x'G5g\ . o;}u/L kfrg k|0ffnLdf kfOg] eld{kmd{ Pk]lG8S;
+nipples
+/ cfFvfdf /x]sf lglS66]l6ª d]Da|]gsf] cjz]ifn] dflg;sf]
+k'vf{x¿sf] af/df atfO/x]sf 5G5g\ . pko'{St cjz]iffª\
+usf cfwf/df of] eGg ;lsG5 ls dflg;sf k'vf{x¿ cf]
+v/ h:tf kmnx¿nfO{ bfFtn] k'm6fpg ;Sg], k'R5/ ePsf,
+appendix
+zfsfxf/L / sfgnfO{ xNnfpg ;Sg] lsl;dsf lyP . o;}
+coccyx
+cfwf/df dfgjsf] j|mdljsf; PK;\x¿af6 ePsf]
+dfGotf 5 .
+-u_ b'O{
+
+ju{larsf
+
+hgfj/af6
+
+k|fKt
+
+k|df0fx¿
+
+lrq 4.5 dflg;df x'g] cjz]iffª\u
+
+(Evidences from bridge animals)
+
+lrq 4.6 Kn]l6k;
+
+lrq 4.7 cls{of]K6]l/S;sf] cjz]if
+
+8s ljN8 Kn]l6k; (duck build platepus) sf] zf/Ll/s agf]6sf] cWoog ubf{
+o;df b'O{ ju{sf hgfj/x¿sf u'0f kfOG5g\ . o;sf] r'Rrf] xfF;sf] h:tf] x'G5
+eg] z/L/ :tgwf/Lsf] h:tf] /f}n] 9fs]sf] x'G5 . To:t} u/L o;n] r/fn] h:tf] k'mn
+kf5{ eg] :tgwf/Ln] em} aRrfnfO{ :tgkfg u/fpF5 . o;af6 s] k|:6 x'G5 eg]
+r/fx¿sf] j|md ljsf; eP/ :tgwf/L hgfj/ df ljsf; eO{ cfPsf] xf] . o:t} u/L
+cfls{of]K6]l/;sf] cjz]ifsf] cWoogn] /]K6fOnx¿sf] j|mlds ljsf; kZrft\ r/fs]f
+ljsf; ePsf 5g\ . k|f]6f]K6]/; (protopterus) sf] cWoogaf6 df5fsf] j|mlds ljsf;
+eP/ peor/sf] ljsf; ePsf] dflgg5 . oxfF Kn]l6Kf;, cfls{of]K6]l/; / k|f]6f]K6]/;
+Bridge animal sf pbfx/0f x'g\ . h:fn] tNnf] ju{ / dflyNnf] ju{nfO{ hf]8\5g\ .
+b'O{ ju{sf] cGt/ ;DaGwn] klg al9 ljsl;t hgfj/x¿ sd ljsl;t hgfj/af6 g}
+ag]sf] tYo k|dfl0ft x'G5 .
+40							
+
+lj1fg tyf k|ljlwM sIff (
+
+-3_ e|"0f;DaGwL k|df0f (Embryonic evidences)
+d]?b08 ePsf hgfj/x¿sf] k|f/lDes cj:yfx¿sf cWoog ubf{ lgs} ;dfgtf
+kfOG5 . pbfx/0fsf nflu lrqdf b]vfOP h:t} df5f, ;fnfdfG8/, s5'jf, s'v'/f /
+dflg; ;'? cj:yfsf] e|"0fsf] agfj6 sl/a p:t} x'G5 . o; k|sf/ oL ;a} d]?b08
+gePsf hgfj/x¿ Pp6} k'vf{af6 ljsl;t ePsf x'g'k5{ . o;n] klg j|mdljsf;sf]
+l;4fGtnfO{ k'li6 ug{ dbt k'¥ofpF5 .
+k|f/lDes
+cj:yfsf] e|"0f
+dWo cj:yfsf]
+e|"0f
+
+kl/kSj e|"0f
+
+df5f
+
+;fnfdfG8/ s5'jf
+s'v'/f
+lrq 4.8 e|"0f;DaGwL k|df0f
+
+dflg;
+
+kl/of]hgf sfo{
+OG6/g]6 jf cGo ;|f]tx¿af6 j|md ljsf;sf k|df0f;DaGwL ljleGg lrqx¿ vf]hL ;ª\sng ug'{xf];\ .
+;ª\slnt lrqx¿ rf6{k]k/df 6f“:g'xf];\ / sIffdf k|bz{g u/L 5nkmn ug'{xf];\ .
+4.3 j|mdljsf;sf] l;4fGt (Theory of evolution)
+
+j|mdljsf;sf] l;4fGtsf] k|ltkfbgdf w]/} j}1flgsx¿n] of]ubfg u/]sf 5g\ . Jean Baptide
+Lamark (France), Alfred Russel Wallace, Charles Darwin (Enlgand) / Hugo De Vries
+(Holland) j}1flgsx¿n] j|mdljsf;;DaGwL ljleGg l;4fGtsf] k|ltkfbg u/]sf 5g\ .
+
+oLdWo] Lamark, Charles Darwin / Hugo De Vries sf j|mdljsf;;DaGwL l;4fGtx¿
+oxfF pNn]v ul/Psf] 5 .
+n]dfs{sf] l;4fGt (Lamarckism Theory)
+n]dfs{ Ps hgf k|mfG;]nL bfz{lgs x'g\ h;n] ;j{k|yd ljsf;j|md;DaGwL l;4fGt
+lbP . 5f]6f] 3fF6L ePsf lh/fkmsf] 3fF6L nfdf] s;/L eof] eGg] af/] o;} l;4fGtsf] cfwf/df
+lj1fg tyf k|ljlwM sIff (
+
+41
+
+JofVof u/] . n]dfs{sf] j|md ljsf;;DaGwL l;4fGt ;g\ 1809 df Philosophie Zoologique
+eGg] k':tsdf k|sflzt eof] . n]dfs{sf] l;4fGtnfO{ lgDglnlvt tLgcf]6f a'Fbfdf a'‰g
+;lsG5 M
+-s_ jftfjf/0fsf] k|ToIf k|efj (Direct environmental effect)
+-v_ cª\ux¿sf] pkof]u / cg'kof]u (Uses and disuses of organs)
+-u_ k|fKt u'0fx¿sf] ;Gtfgdf k|;f/0f (Inheritance of acquired characters)
+ablnFbf] jftjf/0fdf ;hLjsf nflu gofF gofF cfjZostf a9\b} hfG5g\ . o;n] ubf{
+;hLjsf] z/L/df kl/jt{g cfpF5 . o:tf] kl/jt{gdf cª\ux¿sf] ¿kdfGt/0fb]lv lnP/ gofF
+cª\usf] ljsf; / k'/fgf cª\ux¿sf] nf]k x'g] sfo{ klg x'g ;S5 . cª\usf] ¿kfGt/0f /
+gofF cª\usf] ljsf;n] cª\ux¿sf] pkof]u / cg'kof]udf klg k|ToIf c;/ kfb{5 . a9L
+pkof]udf cfpg] cª\ux¿sf] ljsf; a9L / sd pkof]udf cfpg] cª\ux¿sf] ljsf; sd
+x'G5 / cGttM To:tf cª\ux¿ nf]k x'G5g\ . ;hLjn] cª\ux¿sf] pkof]u / cg'kof]u tyf
+jftfj/0fLo k|efjn] k|fKt u'0fx¿sf] k|;f/0f ;Gtfgdf u5{ . o:t} kl/jt{g x/]s j+zdf x'Fb}
+hfFbf gofF hfltsf] pTklQ x'G5 .
+o; l;4fGtnfO{ lh/fkmsf] 3fF6Lsf] nDafO a9\g] ljsf;j|md;Fu o;/L hf]8\g ;lsG5 .
+;'?df ;a} lh/fkmx¿ 5f]6f] 3fF6L ePsf lyP . ltgLx¿ rp/df ePsf] 3fF; rb{y] .
+jftfj/0fLo kl/jt{gn] rp/sf] 3fF;df sdL cfpgfn] ltgLx¿ nDsL nDsL ?vsf] kft
+vfg yfn] . o;/L 3fF6Lsf] k|of]un] ubf{ 3fF6L cln cln ub}{ nfdf] eof] / x/]s j+zdf
+To;sf] k|;f/0f klg x'Fb} uof] . o;/L s}Fof}F j+z;Dd oxL k|lj|mof rn]/ clxn]sf nfdf 3fF6L
+ePsf lh/fkm ljsl;t eP . logsf] l;4fGtnfO{ k|of]uaf6 hfFRbf ;xL kfOPg / j|md
+ljsf;;DaGwL sltko k|Zgx¿af6 of] l;4fGt cg'Ql/t eof] h:t} M
+!=
+
+s] ;hLjn] cfˆgf] OR5f / cfjZostfcg';f/ cª\ux¿sf] ljsf; ug{ ;S5 <
+
+@= s] ;a} k|fKt u'0fx¿ ;Gtfgdf k|;f/0f x'G5g\ <
+8fla{gsf] l;4fGt (Darwin’s Theory)
+Charles Darwin cª\u|]h j}1flgs x'g\ . pgn] gofF hfltsf] pTklQ -Origin of new
+species) k':ts ;g\ 1859 df k|sflzt u/] . 8flj{gsf] l;4fGtnfO{ k|fs[lts 5gf]6sf]
+l;4fGt -Theory of natural selection_ klg elgG5 . pgn] k':tsdf hLj ljsf;;DaGwL
+
+lgDglnlvt cjwf/0ffx¿ cl3 ;f/]sf 5g\ .
+-s_ cTolws ;Gtfgf]Tkfbg Ifdtf (Enormus fertility)
+Kf|To]s ;hLjdf ;Gtfgf]Tkfbg ug]{ Ifdtf x'G5 . ;hLjx¿n] hGdfPsf ;GttLx¿
+;a} afFRg] xf] eg] csf]{ k':tfdf k'Ubf bf]AAf/ x'G5 . ;hLjx¿sf] ;ª\Vof HofldtLo
+cg'kftdf j[l4 xF'b} hfG5 t/ k|s[ltdf ;hLjx¿sf] ;ª\Vofsf] cg'kft o;/L cTolws
+42							
+
+lj1fg tyf k|ljlwM sIff (
+
+;ª\Vofdf geO{ sl/a plQg} /x]sf] kfOG5 . pbfx/0fsf nflu xfQLn] cfˆgf] hLjgdf
+sl/a 6 cf]6f aRrfx¿ dfq hGdfpF5 . o;/L hGd]sf hlt ;a} xfQLsf 5fjfx¿ afFRg]
+xf] eg] 750 jif{df Ps hf]8L xfQLaf6 1900000 ;Gtfg pTkfbg x'G5g\ .
+-v_ af“Rgsf nflu ;ª\3if{ (Struggle for existence)
+;hLjx¿n] hGdfPsf hlt ;a} ;Gtltx¿ afFRg] xf] eg] k|s[ltdf ;hLjx¿sf] ;ª\Vof
+cTolws j[l4 eP/ hfG5, h;n] ubf{ vfgf / a:gsf] cefj x'G5 . k|To]s ;hLjx¿n]
+vfg, a:g, k|hggnufot kl/jlt{t jftfj/0f;Fu afFRgsf nflu ;ª\3if{ jf k|lt:kwf{
+ug{'kg]{ x'G5 . o:f lsl;dsf] k|lt:kwf{ cfkm\g} ;d"xlar tyf km/s km/s k|hfltsf
+;d"xlar x'g] ub{5 . h'g hLjx¿ ;ª\3if{ ug{ ;kmn x'G5g\ tL ;hLjx¿dfq afFRg
+;Ifd x'G5g\ eg] ;ª\3if{df c;kmn x'g hLjx¿ nf]k eP/ hfG5g\ . o;nfO{ afFRgsf
+nflu ;ª\3if{ elgG5 .
+-u_ kl/j[lQ / j+zh (Variation and heredity)
+Kf|s[ltdf kfOg] ;hLjx¿ Pp6} k|hfltsf eP tfklg s]xL g s]xL u'0fx¿df leGgtf
+jf km/s x'G5 . cfkm\g} ;xf]b/ jf cfdfafa' tyf ;GttLx¿lar klg km/skg kfOG5,
+h:fnfO{ kl/j[lQ (Variation) elgG5 . jftfj/0f kl/jt{gsf sf/0fn] jf j+zf0f'df x'g]
+kl/jt{gsf (Genetic reason) sf/0fn] kl/j[lt x'G5 . kl/j[lQsf] sf/0faf6 gofF u'0f
+;hLjn] k|fKt u5{ / csf]{ j+zdf ;/]/ hfG5 . ;a} ;hLjx¿df jftfj/0fcg's"n
+kl/j[lQ gx'g klg ;S5 . t;y{ h'g ;hLjx¿df jftfj/0fcg's"n kl/j[lQ x'G5 tL
+afFRg ;Ifd x'G5g\ t/ k|lts"n kl/j[lQ ePdf afFRg ;Ifd xF'b}gg\ .
+-3_ k|fs[lts 5gf]6 (Natural selection)
+;hLjx¿df jftfj/0fcg';f/ cg's"n u'0fx¿ ljsf; ePdf afFRg ;S5g\ t/ k|lts"n
+u'0f ljsf; ePdf lj:tf/} nf]k x'Fb} hfG5g\ . s'g} ;hLj slt afFRg] / s;/L afFRg] eGg]
+s'/f k|s[lt :jod\ cfkm}Fn] lgwf{/0f ub{5 . afFRgsf nflu ;ª\3if{ ubf{ cg's"n u'0fx¿
+ljsf; x'Fb} hfG5g\ . tL u'0fx¿ ;Gtltx¿df ;b}{ hfG5g\ / k|To]s jz+df cem a9L
+cg's"n u'0fx¿ ljsf; x'Fb} hfG5g\ . w]/} jif{kl5 ;Gtltx¿ laNs'n} gofF u'0f ePsf
+b]vf k5{g\ . o:tf u'0fx¿sf] pkl:yltn] To; ;hLjnfO{ jftfj/0fdf afFRg ;Ifd
+t'NofpF5, h;nfO{ k|fs[lts 5gf]6 elgG5 .
+-ª_ gof“ k|hfltsf] pTklQ (Origin of new species)
+afFRgsf nflu ;ª3if{ ub}{ cg's"lnt ePsf ;hLjx¿ afFRgsf nflu ;Ifd x'G5g\ .
+o:tf cg's"lnt x'g] u'0f ;Gtltx¿df ;b}{ hfG5g\ . o;/L kl/jlt{t jftfj/0fdf
+afFRgsf nflu ;Ifd ;hLjsf cg's'lnt u'0fx¿ ;Gtltx¿df ;b}{ hfFbf w]/} j+zkl5
+k'vf{x¿eGbf km/s u'0f ePsf ;Gtfgsf] pTklQ x'G5 . log} ;Gtltx¿ gofF ;hLjsf
+¿kdf ljsl;t x'G5g\ . Pp6} k'vf{af6 b'O{ jf ;f]EfGbf a9L lsl;dsf gofF hLjsf]
+pTklQ x'g hfG5 .
+lj1fg tyf k|ljlwM sIff (
+
+43
+
+8fla{gsf] l;4fGtsf] cfnf]rgf (Criticism of Darwinism)
+1.
+
+8fla{gn] kl/j[lQaf6 hLjsf] pTklQ;DaGwL TfYonfO{ :ki6 ¿kdf j0f{g u/]sf 5}gg\ .
+
+s]xL ;hLjx¿df dfq cg's"n kl/j[lQ x'g] clg c¿df k|lts"n kl/j[lQ lsg x'g] eGg]
+		af/]df :ki6 JofVof u/]sf 5}gg\ .
+2.
+3.
+
+		
+
+k|fs[lts 5gf]6 gofF hfltsf] ljsf;sf] sf/s dfq xf] lsgeg] pTkl/jt{gaf6 klg
+hLjx¿df leGgtf cfpF5 .
+
+k|fs[lts 5gf]6df olb pkof]uL u'0f dfq 5gf]6 ePsf] eP sfd gnfUg] u'0fx¿ 5gf]6
+		gx'g' kg]{ xf] t/ ePs} kfOG5 .
+4.
+
+kl/j[lQ / pTkl/jt{g (Variation and mutation)
+s'g} vf; k|hfltsf] ;d"xdf /xg] x/]s ;hLjsf s]xL g s]xL u'0fx¿df km/skgf x'G5 . h'DNofx¿
+klg 7ofSs} p:t} kfOb}gg\ . o;/L lglZrt k|hfltx¿sf k|To]s ;b:ox¿lar x'g] km/skgfnfO{
+kl/j[lQ (Variation) elgG5 . o:tf] kl/j[lQ pxL k|hfltsf ;hLjx¿df klg b]lvG5 .
+;hLjx¿df kl/j[lQ b'O{ lsl;dn] ePsf] kfOG5 . o:tf] kl/j[lQ klxnf] Somatogenic Variation
+/ bf];|f] Blastogenic Variation x'G5 . pbfx/0fsf nflu v]nf8Lsf] df+zk]zLo'St z/L/,
+intelligence cflb somatogenic variation sf pbfx/0fx¿ x'g\ . o:tf u'0fx¿ cfkm\gf k':tfaf6
+;/]/ cfPsf x'Fb}gg\ / ;Gtltdf klg ;/]/ hfFb}gg\ cyf{t\ ;hLjsf] d[To';Fu} ;dfKt x'G5g\ .
+s'g} ;hLjsf] sf]ifdf ePsf j+zf0f'ut u'0f (Gene) df ePsf] kl/jt{gn] ubf{ x'g] kl/j[lQ
+Blastogenic Variation xf] . o; lsl;dsf] kl/j[lQ csf]{ jz+df ;/]/ hfG5 . pbfx/0fsf nflu
+5fnfsf] /ª, z/L/df x'g] /f+}Fsf] /ª, cfFvfsf] /ª cflb . ;hLjx¿df kl/j[lQ jl/kl/ /x]sf]
+jftfj/0fsf] c;/n] ubf{ klg x'g] ub{5 . ;hLjx¿n] Jfftfj/0fdf cg's"ng x'g ;f]xLcg';f/sf
+u'0fx¿ ljsf; u5{g\ .
+;hLjx¿n] k|fKt u/]sf kl/j[lQ ;a} cg's"n kl/j[lt (Favourable variartion) ePdf To:tf
+;hLj afFRg ;S5g\ / csf]{ jz+df hfg ;Ifd x'G5g\ t/ k|lts"n kl/j[lQ (Unfavourable
+variation) ljsf; ePdf To:tf ;hLjx¿ nf]k eP/ hfG5g\ . o;/L cg's"n kl/j[lQ ljsf;
+x'Fb} hfFbf ;hLj aFfRg ;Ifd x'G5g\, o;sf ;fy;fy} csf]{ jz+df hfg klg ;Ifd x'G5g\ . o:tf]
+cj:yfdf cfˆgf k'vf{eGbf km/s u'0f ePsf ;Gtlt ljsf; x'G5g\ . jftfj/0fn] ubf{ ;hLjx¿df
+kl/jt{g ePsf] x'G5 . Pp6} cfdfa'afsf ;Gtfgx¿ km/s km/s jftfj/0fdf x'Fbf pgLx¿sf]
+aflx/L ¿kdf km/skg cfpF5 . oL hLjx¿ j+zf0f'ut ¿kn] Pp6} eP klg jftfj/0fsf] c;/n]
+aflx/L ¿kdf leGgtf x'G5, o;nfO{ jftfj/0fLo kl/j[lQ elgG5 .
+j|mf]df]hf]ddf kl/jt{g x'g uO{ gofF u'0f ePsf] ;Gtltx¿ ljsf; x'g'nfO{ pTkl/jt{Gf
+(Mutation) elgG5 . pTkl/jt{g s'g} hLjdf PSsf;L b]vfkg]{ clg/Gt/ kl/j[lQ xf] . o;
+lsl;dsf u'0fx¿ n'Kt (recessive) x'G5g\, h:t} M xftdf 6 cf]6f cf}Fnf x'g', cf]7 sfl6Psf]
+44							
+
+lj1fg tyf k|ljlwM sIff (
+
+aRrf hGdg', 6fpsf] hf]l8Psf] aRrf hGdg', /f}F gePsf] d';f ljsl;t x'g' cflb .
+pTkl/jt{g x'g] k|d'v sf/0fdf j+zf0f' dfly /f;folgs kbfy{ jf /]l8of]wdL{ ljls/0fsf] k|efj
+xf] . h'g ;hLjgdf pTkl/jt{g x'G5 To;nfO{ Do'6\ofG6 / pTkl/jt{gsf] sf/s tŒjnfO{ Do'6fh]g
+elgG5 . pTkl/jt{gn] ubf{ g} cfdfafa'df x'Fb} gePsf nIf0fx¿ ;Gtfgdf b]vf k5{g\ .
+kl/of]hgf sfo{
+1.
+
+j/k/sf] ;d'bfo, ljBfno tyf 5/l5d]sdf xftdf ^ cf]6f cf}“nf ePsf dflg;, zf/Ll/s ¿kdf
+km/skgf ePsf dflg; cyjf kf“rcf]6f v'6\6f ePsf hgfj/ jf cGo cs:dft\ ePsf] kl/jt{gsf]
+cjnf]sg jf vf]hL ug{'xf];\ / tL pTkl/jt{g x'gsf sf/0fx¿ / tL kl/jt{gaf6 x'g] kmfObf
+a]kmfObf;DaGwL hfgsf/L ;ª\sng u/L k|ltj]bg tof/ ug'{xf];\ / sIffdf k|:t't ug'{xf];\
+
+2.
+
+cfˆgf] kl/jf/df ePsf h]i7 ;b:o;“u rf/ kF“r k':tf cufl8;Ddsf k'vf{x¿df ePsf
+u'0fx¿sf] ljj/0f ;ª\sng ug{'xf];\ . k'vf{ / clxn]sf ;Gtltdf kfOg] u'0fsf] tflŒjs
+km/s;lxtsf] ljj/0f tof/ u/L sIffdf k|:t't ug'{xf];\ .
+
+3.
+
+OG6/g]6sf dfWodaf6 pTkl/jt{g;DaGwL pbfx/0fx¿sf] lrq ;ª\sng ug{'xf];\ / tL
+lrqx¿nfO{ rf6{k]k/df 6f“; u/L k|b{zg ug{'xf];\ .
+
+x\o'uf] 8L le|hsf] pTkl/jt{gsf] l;4fGt (Hugo De Vries Mutation Theory)
+x\o'uf] 8L le|h (Hugo De Vries) g]b/Nof08sf jg:klt lj1 (Botanist) x'g\ . pgn] ;g 1901
+Dff pTkl/jt{g;DaGwL l;4fGt k|ltkfbg u/]sf x'g\ . cWoogsf j|mddf pgn] Evening Prime
+Rose (Oenothera lamarkina) la?jf k|of]u u/]sf lyP . pgn] pSt la?jfdf 14 cf]6f j|mf]df]hf]d
+x'g'kg]{df o;sf k|hfltdf 15, 16, 20, 22 s|f]df]hf]d ;ª\Vof kfP . x\o'uf] 8L le|hsfcg';f/ gofF
+hfltsf] pTklQ lg/Gt/ kl/j[lt (Continuous variaton) af6 geO{ pTkl/jt{g (mutation) af6
+x'G5 . pgsf cg';f/ pTkl/jt{gsf (mutation) l;4fGtx¿ lgDgcg';f/ 5g\ M
+1.
+
+gofF hfltsf] pTklQ pTkl/jt{g (mutation) sf sf/0fn] klg x'G5 . To;sf/0f pTkl/jt{g
+j|md ljsf;sf] Pp6f cfwf/ xf] .
+
+2.
+
+pTkl/jt{gdf PSsfl; gofF u'0f b]vfk5{g\ / t'?Gt} (functional) sfo{d"ns x'G5 .
+
+3.
+
+;a} pTkl/jt{gx¿ csf]{ jz+df ;/]/ hfGf ;S5g\ .
+
+4.
+
+pkof]uL kl/j[lQ ePsf hLjx¿ 5gf]6 x'G5g\ / cg'kof]uL kl/j[lQ ePsf hLjx¿ x/fP/ hfG5g\ .
+
+5.
+
+kl/j[lQ w]/} ePdf gofF hfltsf] pTklQ x'G5 .
+
+lj1fg tyf k|ljlwM sIff (
+
+45
+
+x\o'uf] 8L le|hsf] pTkl/jt{g;DaGwL l;4fGtsf] cfnf]rgf (Critism of Hugo De Vries Mutation
+Theory)
+
+x\o'uf] 8L le|hsf] pTkl/jt{g;DaGwL l;4fGtsf /fd|f kIfx¿ x'Fbfx'Fb} klg s]xL cfnf]rgfx¿ klg
+/x]sf 5g\ h;nfO{ lgDgfg';f/ pNn]v ug{ ;lsG5 M
+1.
+
+Oenothera lamarkiana la?jf k'/fgf] k|hfltsf] xfOla|8 (Hybrid) xf] o;df b]lvPsf gofF
+u'0f s|f]df]hf]dsf] 5'6\l6g] / Rearrangement n] ubf{ x'G5, pTkl/jt{gn] xf]Og .
+
+2.
+
+pTkl/jt{gsf] l;4fGtn] j|mdljsf;sf] s'g} lglZrt lbzf lbFb}g .
+
+3.
+
+olb pTkl/jt{g cfsl:ds ¿kdf b]vf kg]{ u'0f eP pSt hLjx¿ (Mutant) jftfj/0fdf cg's"ng
+x'g ;Sb}g lyP t/ To;f] ePsf] kfOFb}g .
+
+4.
+
+pgn] pTkl/jt{gdf k|s[ltsf] e"ldsfsf] j0f{g u/]sf] kfOFb}g .
+
+5.
+
+;fwf/0ftof pTkl/jt{gaf6 cfPsf u'0fx¿ recessive x'G5 .
+
+lj|mofsnfk 4.1
+sIffdf cWoog ug]{ ;fyLx¿ ;d"xdf ljefhg x'g'xf];\ . cfkm\gf ;d"xsf ;fyLx¿lardf
+cfkm\gf k':tf / cfkm"x¿df cfPsf] kl/j[lQ tyf pTkl/jt{gsf af/]df 5nkmn u/L tnsf]
+tflnsfdf e/L sIffdf k|:t't ug'{xf];\ .
+cfPsf] kl/jt{g
+kl/j[lQ
+pTkl/jt{g
+
+kl/jt{gsf] k|sf/ kl/jt{gsf] k|efj
+
+cEof;
+!= tnsf k|Zgsf] ;xL pQ/df l7s lrx\g -√_ nufpg'xf];\ M
+-s_ Kf|fs[lts 5gf]6 l;4fGtsf k|ltkfbs sf] x'g\ <
+		
+
+-c_ rfN;{ 8flj{g 		
+
+		
+
+		-O_ x\o'uf] 8L le|; 				
+
+-cf_ Nf]dfs{
+-O{_ hf]g u|]u/ d]G8n
+
+-v_ ;wdL{ cª\usf] pbfx/0f s'g xf] <
+		-c_ xfd|f] xft / 3f]8fsf] cufl8sf] v'6\6f
+
+-cf_ xfd|f] xft / xfQLsf] bf/f
+
+		-O_ xfd|f] sfg / v/fof]sf] sfg
+
+-O{_ dflg; / l;+xdf kfOg] s's'/ bfFt
+
+		
+
+46							
+
+lj1fg tyf k|ljlwM sIff (
+
+-u_ hLjfjz]if s'g r6\6fgdf kfOG5 <
+		-c_ kq] r6\6fg 			
+
+-cf_ cfUg]o r6\6fg
+
+		-O_ kl/jlt{t r6\6fg 			
+
+-O{_ Hjfnfd'vL r6\6fg
+
+-3_ j+zf0f' ;+/rgfdf kl/jt{g eO{ ;Gtltx¿df gofF u'0f b]lvg] k|lj|mofnfO{ s] elgG5 <
+		
+
+-c_ j|mdljsf; 		
+
+-cf_ pTkl/jt{g
+
+		-O_ kl/j[lQ 			
+
+-O{_ cjz]iffª\u
+
+@=
+
+sf/0f lbg'xf];\ M
+-s_ hLjfcjz]ifaf6 k|fKt k|df0fnfO{ j|mdljsf;sf] alnof] cfwf/ dflg5 .
+-v_ hGd]sf ;Gtltx¿sf] ;ª\Vof w]/} eP tfklg hLjx¿sf] hg;ª\Vof a9]sf] kfOFb}g .
+-u_ kl/j[lQ dfq} gofF hfltsf] pTklQsf] sf/s tŒj xf]Og .
+-3_ dflg;, afFb/, 3f]8f / r/fx¿ Pp6} k'vf{af6 ljsl;t eO{ cfPsf] dflgG5 .
+
+#=
+
+km/s 5'6\ofpg'xf];\ M
+-s_ kl/j[lt / pTkl/jt{g
+-v_ 8fla{g / 8L le|hsf] l;4fGt
+-u_ xf]df]nf]u; / Pgfnf]u; cª\ux¿
+-3_ cjz]if / cjz]iffª\u (fossil and vestigial Organ)
+
+$= tnsf k|Zgsf] pQ/ n]Vg'xf];\ M
+-s_ j|md ljsf; eg]sf] s] xf] <
+-v_ hLjfcjz]if s]nfO{ elgG5 < o;n] j|mdljsf;sf] k|df0fnfO{ s;/L k'li6 u5{ <
+-u_ hLjfcjz]if s;/L aG5, j0f{g ug'{xf]; .
+-3_ j|mdljsf;sf k|df0fx¿ s] s] x'g\ < pbfx/0f;lxt JofVof ug'{xf];\ .
+-ª_ 8fla{gsf] j|mdljsf;sf] l;4fGtnfO{ 5f]6s/Ldf j0f{g ug'{xf];\ .
+-r_ k|fs[lts 5gf]6 eg]sf] s] xf], j0f{g ug'{xf];\ .
+-5_ 8fla{gsf cg';f/ gofF hfltsf] pTklQ s;/L x'G5, j0f{g ug'{xf];\ .
+lj1fg tyf k|ljlwM sIff (
+
+47
+
+-h_ pTkl/jt{gsf ljz]iftf pNn]v ug'{xf];\ .
+-em_ pTkl/jt{gn] j|mdljsf;nfO{ s;/L dbt u5{ <
+-`_ j|mdljsf;sf nflu pTkl/jt{g g} d'Vo sf/s geO{ of] klg Pp6f yk sf/s tŒj
+		xf], :k:6 kfg{'xf];\ .
+-6_ 8fla{gsf] l;4fGtcg';f/ afFRgsf nflu ;ª\3if{ / ;Ifd g} afFRg ;S5 eGg] s'/fsf]
+		k'i6\ofO ug{'xf];\ .
+-7_ 8fla{gn] k|ltkfbg u/]sf] j|mdljsf;;DaGwL l;4fGtsf] s;/L cfnf]rgf ul/Psf] 5,
+		JofVof ug'{xf];\ .
+-8_ hLjfjz]ifsf] cWoogaf6 xfnsf hLjx¿ ljutsf] cljsl;t Pssf]ifLo / ax'sf]ifLo
+		 hLjaf6} pTklQ ePsf x'g\ eGg] s'/f k'li6 ug{'xf];\ .
+-9_ lbOPsf] lrq cWoog ug{'xf]; /
+		lgDg k|Zgsf] pQ/ n]Vg'xf];\ M
+		
+
+-c_ lrqdf s] b]vfOPsf] 5 <
+
+		 -cf_ lrqdf b]vfOPsf] j|mdljsf;sf] k|df0fn]
+			
+s'g s'g ju{nfO{ hf]8\g vf]H5,
+			 n]Vg'xf]; .
+		
+
+-O_
+
+o; lrqn] j|mdljsf; ePsf] ;DaGwdf yk k|df0f s;/L lbG5 n]Vg'xf];\ .
+
+-0f_ lbOPsf] lrq cWoog ug{'xf];\ / k|Zgsf] pQ/ n]Vg'xf];\ M
+		-c_ b]vfOPsf lrqdf s] kl/jt{g ePsf] 5 <
+		-cf_ s] o:tf u'0f ;a} hLjdf b]vf k5{g\ <
+		-O_
+
+of] u'0f b]vf kg{'sf sf/0f s] xf]nf <
+
+		
+
+o;n] j|mdljsf;df s;/L dbt k'¥ofpF5 <
+
+-O{_
+
+		 -p_ o; k|sf/sf] kl/jt{gsf tLgcf]6f kmfObf
+			 n]Vg'xf];\ .
+-t_ n]df{ssf] l;4fGt / 8flj{gsf] l;4fGtlar t'ngf ug'{xf];\ .
+
+48							
+
+lj1fg tyf k|ljlwM sIff (
+
+

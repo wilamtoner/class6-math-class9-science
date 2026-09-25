@@ -1,0 +1,585 @@
+
+      <!-- ================= CHAPTER 9: DISTANCE (दूरी) ================= -->
+      <div id="chapter-view-9" class="hidden flex-1 flex flex-col">
+        <!-- Top Chapter Banner -->
+        <div class="border-b border-slate-100 pb-5 mb-6 flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <div class="flex items-center gap-2 text-xs font-bold text-blue-600 mb-1">एकाइ ३: क्षेत्रमिति (Unit 3: Mensuration — पहिलो पाठ)</div>
+            <h2 class="text-2xl md:text-3xl font-black text-slate-900">पाठ ९: दूरी (Distance)</h2>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs bg-slate-100 text-slate-700 font-semibold px-3 py-1 rounded-xl border border-slate-200">पाठ्यपुस्तक पृष्ठ १०६–११०</span>
+            <span class="text-xs bg-indigo-100 text-indigo-800 font-bold px-3 py-1 rounded-xl border border-indigo-200">अभ्यास ९ तथा परियोजना कार्य</span>
+          </div>
+        </div>
+
+        <!-- Chapter 9 Navigation Tabs -->
+        <div class="flex border-b border-slate-200 gap-2 mb-6 overflow-x-auto pb-1 text-sm font-bold">
+          <button id="ch9-tab-concepts" onclick="setTabCh9('concepts')" class="px-5 py-2.5 rounded-xl bg-blue-600 text-white shadow-sm font-bold transition whitespace-nowrap cursor-pointer">
+            १. अवधारणा र दूरी क्याल्कुलेटर
+          </button>
+          <button id="ch9-tab-exercises" onclick="setTabCh9('exercises')" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+            २. सम्पूर्ण अभ्यास समाधान (अभ्यास ९ र परियोजना)
+          </button>
+          <button id="ch9-tab-tiers" onclick="setTabCh9('tiers')" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+            ३. तीन तहका नमुना प्रश्नहरू (१६ प्रश्न)
+          </button>
+          <button id="ch9-tab-quiz" onclick="setTabCh9('quiz')" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer">
+            ४. आत्म-मूल्याङ्कन क्विज
+          </button>
+        </div>
+
+        <!-- ================= CH9 TAB 1: CONCEPTS ================= -->
+        <div id="ch9-view-concepts" class="space-y-6">
+
+          <!-- Core Concepts Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Card 1: Definition & Units -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-sm">१</span>
+                <h3 class="font-bold text-slate-800 text-base">दूरी (Distance) र नापका प्रणालीहरू</h3>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                कुनै दुई निश्चित बिन्दुहरू बीचको कुल लम्बाइ वा अन्तरलाई <strong>दूरी (Distance / Length)</strong> भनिन्छ। दूरीको अन्तर्राष्ट्रिय मानक एकाइ (SI Unit) <strong>मिटर ($m$)</strong> हो।
+              </p>
+              <div class="p-3 bg-blue-50 border border-blue-200 rounded-xl space-y-2 text-xs">
+                <div class="font-bold text-blue-900 border-b border-blue-200 pb-1">प्रमुख दुई प्रणालीहरू:</div>
+                <div>• <strong>मेट्रिक प्रणाली (Metric):</strong> मिलिमिटर ($mm$), सेन्टिमिटर ($cm$), मिटर ($m$), किलोमिटर ($km$)</div>
+                <div>• <strong>इम्पेरियल प्रणाली (Imperial):</strong> इन्च ($in$), फिट ($ft$), गज ($yd$), माइल ($mile$)</div>
+              </div>
+            </div>
+
+            <!-- Card 2: Golden Rules of Conversion -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-sm">२</span>
+                <h3 class="font-bold text-slate-800 text-base">एकाइ रूपान्तरणको सुनौलो नियम</h3>
+              </div>
+              <div class="space-y-2 text-xs md:text-sm">
+                <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-900">
+                  <strong>नियम १ (ठूलो $	o$ सानो):</strong> ठूलो एकाइबाट सानो एकाइमा जाँदा रूपान्तरण दरले <strong>गुणन ($	imes$)</strong> गरिन्छ।<br>
+                  <span class="text-xs text-emerald-700">उदा: $5\text{ m} = 5 \times 100 = 500\text{ cm}$; $6\text{ ft} = 6 \times 12 = 72\text{ in}$</span>
+                </div>
+                <div class="p-3 bg-amber-50 border border-amber-200 rounded-xl text-amber-950">
+                  <strong>नियम २ (सानो $	o$ ठूलो):</strong> सानो एकाइबाट ठूलो एकाइमा जाँदा रूपान्तरण दरले <strong>भाग ($\div$)</strong> गरिन्छ।<br>
+                  <span class="text-xs text-amber-800">उदा: $480\text{ cm} = \frac{480}{100} = 4.8\text{ m}$; $36\text{ in} = \frac{36}{12} = 3\text{ ft}$</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formula Master Chart -->
+          <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-4">
+            <h3 class="font-bold text-slate-800 text-sm md:text-base flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+              पाठ्यक्रम विकास केन्द्र (CDC) अनुसार आधिकारिक रूपान्तरण सूत्र तालिका
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs md:text-sm">
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                <span class="block text-slate-500 font-medium text-xs">इन्च र सेन्टिमिटर</span>
+                <span class="font-bold text-slate-900 font-mono text-sm">$1\text{ in} = 2.54\text{ cm}$</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                <span class="block text-slate-500 font-medium text-xs">फिट र सेन्टिमिटर</span>
+                <span class="font-bold text-slate-900 font-mono text-sm">$1\text{ ft} = 30.48\text{ cm}$</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                <span class="block text-slate-500 font-medium text-xs">मिटर र फिट</span>
+                <span class="font-bold text-slate-900 font-mono text-sm">$1\text{ m} = 3.28\text{ ft}$</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                <span class="block text-slate-500 font-medium text-xs">मिटर र इन्च</span>
+                <span class="font-bold text-slate-900 font-mono text-sm">$1\text{ m} = 39.37\text{ in}$</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Live Distance Converter Simulator -->
+          <div class="p-5 md:p-6 bg-gradient-to-br from-indigo-900 via-blue-900 to-slate-900 text-white rounded-3xl shadow-xl space-y-5">
+            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/15 pb-4">
+              <div>
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-400 text-slate-950 inline-block mb-1">प्रत्यक्ष डिजिटल ल्याब</span>
+                <h3 class="text-lg md:text-xl font-black">दूरी तथा लम्बाइ रूपान्तरक सिमुलेटर (Distance Converter)</h3>
+              </div>
+              <span class="text-xs text-blue-200">१००% अफलाइन सक्रिय</span>
+            </div>
+
+            <!-- Converter Inputs -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <div>
+                <label class="block text-xs text-blue-200 mb-1 font-semibold">संख्यात्मक मान (Value):</label>
+                <input id="ch9-in-val" type="number" step="any" value="5" oninput="runCh9Convert()" class="w-full bg-white/10 border border-white/20 rounded-xl px-3.5 py-2 text-white font-mono font-bold focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-white/40 text-base" placeholder="मान राख्नुहोस्...">
+              </div>
+              <div>
+                <label class="block text-xs text-blue-200 mb-1 font-semibold">कुन एकाइबाट (From Unit):</label>
+                <select id="ch9-in-from" onchange="runCh9Convert()" class="w-full bg-slate-800 border border-white/20 rounded-xl px-3.5 py-2 text-white font-bold focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm cursor-pointer">
+                  <option value="m" selected>मिटर (m)</option>
+                  <option value="cm">सेन्टिमिटर (cm)</option>
+                  <option value="mm">मिलिमिटर (mm)</option>
+                  <option value="km">किलोमिटर (km)</option>
+                  <option value="ft">फिट (ft)</option>
+                  <option value="in">इन्च (in)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs text-blue-200 mb-1 font-semibold">कुन एकाइमा (To Unit):</label>
+                <select id="ch9-in-to" onchange="runCh9Convert()" class="w-full bg-slate-800 border border-white/20 rounded-xl px-3.5 py-2 text-white font-bold focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm cursor-pointer">
+                  <option value="ft" selected>फिट (ft)</option>
+                  <option value="m">मिटर (m)</option>
+                  <option value="cm">सेन्टिमिटर (cm)</option>
+                  <option value="mm">मिलिमिटर (mm)</option>
+                  <option value="km">किलोमिटर (km)</option>
+                  <option value="in">इन्च (in)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Presets -->
+            <div class="flex flex-wrap items-center gap-2 pt-1 text-xs">
+              <span class="text-blue-200 font-semibold">द्रुत नमुनाहरू:</span>
+              <button onclick="setCh9Preset(4.8, 'm', 'ft')" class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 transition cursor-pointer">कक्षाकोठा: ४.८ m $ightarrow$ ft</button>
+              <button onclick="setCh9Preset(58, 'in', 'cm')" class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 transition cursor-pointer">उचाइ: ५८ in $ightarrow$ cm</button>
+              <button onclick="setCh9Preset(250, 'cm', 'ft')" class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 transition cursor-pointer">बेन्च: २५० cm $ightarrow$ ft</button>
+              <button onclick="setCh9Preset(100, 'm', 'in')" class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 transition cursor-pointer">ट्र्याक: १०० m $ightarrow$ in</button>
+            </div>
+
+            <!-- Result Box -->
+            <div id="ch9-calc-res" class="bg-black/30 border border-white/15 rounded-2xl p-4 space-y-3">
+              <!-- Dynamically populated by runCh9Convert() -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ================= CH9 TAB 2: EXERCISES ================= -->
+        <div id="ch9-view-exercises" class="hidden space-y-6">
+
+          <!-- Sub-section Switcher -->
+          <div class="flex flex-wrap gap-2 border-b border-slate-200 pb-3">
+            <button id="ch9-ex-btn-sec1" onclick="setExerciseCh9('sec1')" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold bg-blue-600 text-white shadow-xs transition cursor-pointer">
+              खण्ड १: प्रश्न १ र प्रश्न २ (खाली ठाउँ र cm मा रूपान्तरण)
+            </button>
+            <button id="ch9-ex-btn-sec2" onclick="setExerciseCh9('sec2')" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold text-slate-600 hover:bg-slate-100 transition cursor-pointer">
+              खण्ड २: प्रश्न ३, ४ र ५ (in, ft र m मा रूपान्तरण)
+            </button>
+            <button id="ch9-ex-btn-sec3" onclick="setExerciseCh9('sec3')" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold text-slate-600 hover:bg-slate-100 transition cursor-pointer">
+              खण्ड ३: व्यावहारिक समस्या (प्रश्न ६-९ र परियोजना कार्य)
+            </button>
+          </div>
+
+          <!-- Section 1: Questions 1 & 2 -->
+          <div id="ch9-ex-sec1" class="space-y-4">
+            <!-- Q1 Card -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+                <h4 class="font-bold text-slate-900 text-sm md:text-base">प्रश्न १: खाली ठाउँ भर्नुहोस् (Fill in the blanks)</h4>
+                <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2.5 py-0.5 rounded-lg">५ प्रश्नहरू</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-600">(क)</span> $1\text{ m}$ मा <strong class="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">100</strong> $\text{cm}$ हुन्छ।
+                  <p class="text-xs text-slate-500 mt-1">कारण: मेट्रिक प्रणाली अनुसार $1\text{ m} = 100\text{ cm}$।</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-600">(ख)</span> $3\text{ ft}$ लामो शैक्षिक पाटीको लम्बाइ <strong class="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">36</strong> $\text{in}$ हुन्छ।
+                  <p class="text-xs text-slate-500 mt-1">कारण: $3 \times 12\text{ in} = 36\text{ in}$।</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-600">(ग)</span> तपाईँ $500\text{ m}$ हिँडेर विद्यालय आइपुग्नुभयो भने तपाईँ <strong class="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">1640</strong> $\text{ft}$ हिँड्नुभयो।
+                  <p class="text-xs text-slate-500 mt-1">कारण: $500 \times 3.28\text{ ft} = 1640\text{ ft}$।</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-600">(घ)</span> बेन्चको लम्बाइ $250\text{ cm}$ छ भने सो बेन्च <strong class="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">8.2</strong> $\text{ft}$ लामो हुन्छ।
+                  <p class="text-xs text-slate-500 mt-1">कारण: $\frac{250}{30.48} \approx 8.202\text{ ft} \approx 8.2\text{ ft}$।</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 md:col-span-2">
+                  <span class="font-bold text-blue-600">(ङ)</span> कक्षाकोठाको भुइँको लम्बाइ $500\text{ cm}$ रहेछ भने सो कोठाको लम्बाइ <strong class="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">196.85</strong> (वा पुस्तकको मुद्रण अनुसार 188.98) $\text{in}$ हुन्छ।
+                  <p class="text-xs text-slate-500 mt-1">कारण: $500 \div 2.54 = 196.85\text{ in}$। (पाठ्यपुस्तक उत्तरकुञ्जिकामा उदाहरण ३ को $480\text{ cm}$ को उत्तर $188.98$ छापिएको)।</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q2 Card -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+                <h4 class="font-bold text-slate-900 text-sm md:text-base">प्रश्न २: तल दिइएका सबै नापलाई सेन्टिमिटर ($\text{cm}$) मा बदल्नुहोस्</h4>
+                <span class="text-xs bg-indigo-100 text-indigo-800 font-bold px-2.5 py-0.5 rounded-lg">४ उप-प्रश्नहरू</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 space-y-1.5">
+                  <span class="font-bold text-blue-700">(क) $3\text{ m } 60\text{ cm}$</span>
+                  <p class="text-slate-600">= $3 \times 100\text{ cm} + 60\text{ cm}$<br>= $300 + 60$ = <strong class="text-emerald-700 font-mono">360 cm</strong></p>
+                </div>
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 space-y-1.5">
+                  <span class="font-bold text-blue-700">(ख) $6\text{ ft}$</span>
+                  <p class="text-slate-600">($1\text{ ft} = 30.48\text{ cm}$)<br>= $6 \times 30.48\text{ cm}$ = <strong class="text-emerald-700 font-mono">182.88 cm</strong></p>
+                </div>
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 space-y-1.5">
+                  <span class="font-bold text-blue-700">(ग) $8\text{ ft } 6\text{ in}$</span>
+                  <p class="text-slate-600">इन्चमा: $(8 \times 12 + 6) = 102\text{ in}$<br>$\text{cm}$ मा: $102 \times 2.54\text{ cm}$ = <strong class="text-emerald-700 font-mono">259.08 cm</strong></p>
+                </div>
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 space-y-1.5">
+                  <span class="font-bold text-blue-700">(घ) $11\text{ ft } 10\text{ in}$</span>
+                  <p class="text-slate-600">इन्चमा: $(11 \times 12 + 10) = 142\text{ in}$<br>$\text{cm}$ मा: $142 \times 2.54\text{ cm}$ = <strong class="text-emerald-700 font-mono">360.68 cm</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Questions 3, 4, 5 -->
+          <div id="ch9-ex-sec2" class="hidden space-y-4">
+            <!-- Q3 Card -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base border-b border-slate-100 pb-2">प्रश्न ३: तल दिइएका सबै नापलाई इन्च ($\text{in}$) मा बदल्नुहोस्</h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-700">(क) $7\text{ m}$</span>
+                  <p class="text-slate-600 mt-1">= $7 \times 39.37\text{ in} = 275.59\text{ in} \approx$ <strong class="text-emerald-700 font-mono">275.60 in</strong></p>
+                </div>
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-700">(ख) $15\text{ m } 30\text{ cm}$</span>
+                  <p class="text-slate-600 mt-1">= $15.3\text{ m} \times 39.37\text{ in} = 602.361 \approx$ <strong class="text-emerald-700 font-mono">602.36 in</strong></p>
+                </div>
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-700">(ग) $7\text{ ft } 8\text{ in}$</span>
+                  <p class="text-slate-600 mt-1">= $(7 \times 12) + 8 = 84 + 8 =$ <strong class="text-emerald-700 font-mono">92 in</strong></p>
+                </div>
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-700">(घ) $25\text{ ft } 6\text{ in}$</span>
+                  <p class="text-slate-600 mt-1">= $(25 \times 12) + 6 = 300 + 6 =$ <strong class="text-emerald-700 font-mono">306 in</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q4 Card -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base border-b border-slate-100 pb-2">प्रश्न ४: तल दिइएका सबै नापलाई फिट ($\text{ft}$) मा बदल्नुहोस्</h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-700">(क) $9\text{ m } 40\text{ cm}$</span>
+                  <p class="text-slate-600 mt-1">= $9.4\text{ m} \times 3.28\text{ ft} = 30.832 \approx$ <strong class="text-emerald-700 font-mono">30.83 ft</strong></p>
+                </div>
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-700">(ख) $14\text{ m } 25\text{ cm}$</span>
+                  <p class="text-slate-600 mt-1">= $14.25\text{ m} \times 3.28\text{ ft} =$ <strong class="text-emerald-700 font-mono">46.74 ft</strong></p>
+                </div>
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-700">(ग) $46\text{ m } 75\text{ cm}$</span>
+                  <p class="text-slate-600 mt-1">= $46.75\text{ m} \times 3.28\text{ ft} =$ <strong class="text-emerald-700 font-mono">153.34 ft</strong></p>
+                </div>
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-700">(घ) $32\text{ ft } 8\text{ in}$</span>
+                  <p class="text-slate-600 mt-1">= $32 + \frac{8}{12} = 32 + 0.667 \approx$ <strong class="text-emerald-700 font-mono">32.67 ft</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q5 Card -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <h4 class="font-bold text-slate-900 text-sm md:text-base border-b border-slate-100 pb-2">प्रश्न ५: तल दिइएका सबै नापलाई मिटर ($\text{m}$) मा बदल्नुहोस्</h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-700">(क) $24\text{ m } 80\text{ cm}$</span>
+                  <p class="text-slate-600 mt-1">= $24 + \frac{80}{100} = 24 + 0.8 =$ <strong class="text-emerald-700 font-mono">24.8 m</strong></p>
+                </div>
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-700">(ख) $53\text{ ft}$</span>
+                  <p class="text-slate-600 mt-1">= $\frac{53}{3.28}\text{ m} \approx$ <strong class="text-emerald-700 font-mono">16.16 m</strong> (पुस्तक कुञ्जिका: 16.19 m)</p>
+                </div>
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-700">(ग) $44\text{ ft } 10\text{ in}$</span>
+                  <p class="text-slate-600 mt-1">फिटमा: $44.833\text{ ft} \Rightarrow \frac{44.833}{3.28} \approx$ <strong class="text-emerald-700 font-mono">13.67 m</strong></p>
+                </div>
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                  <span class="font-bold text-blue-700">(घ) $88\text{ ft } 6\text{ in}$</span>
+                  <p class="text-slate-600 mt-1">फिटमा: $88.5\text{ ft} \Rightarrow \frac{88.5}{3.28} \approx$ <strong class="text-emerald-700 font-mono">26.98 m</strong> (पुस्तक कुञ्जिका: 24.54 m मुद्रण)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Word Problems 6 to 9 and Project -->
+          <div id="ch9-ex-sec3" class="hidden space-y-4">
+            <!-- Q6 -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-2">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+                <h4 class="font-bold text-slate-900 text-sm md:text-base">प्रश्न ६: खेतको लम्बाइ र चौडाइको फरक</h4>
+                <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">उत्तर: ४००.१६ ft</span>
+              </div>
+              <p class="text-xs md:text-sm text-slate-700 leading-relaxed">
+                <strong>प्रश्न:</strong> एउटा खेतको लम्बाइ $650\text{ ft } 10\text{ in}$ र चौडाइ $250\text{ ft } 8\text{ in}$ रहेछ भने चौडाइभन्दा लम्बाइ कति $\text{ft}$ ले बढी रहेछ?<br>
+                <strong>समाधान:</strong><br>
+                $\text{फरक} = (650\text{ ft } 10\text{ in}) - (250\text{ ft } 8\text{ in}) = 400\text{ ft } 2\text{ in}$<br>
+                फिटमा रूपान्तरण: $400 + \frac{2}{12} = 400 + 0.166... \approx$ <strong class="text-emerald-700 font-mono">400.16 ft</strong> (वा 400.17 ft)।
+              </p>
+            </div>
+
+            <!-- Q7 -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-2">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+                <h4 class="font-bold text-slate-900 text-sm md:text-base">प्रश्न ७: चौरको लम्बाइ र चौडाइको फरक</h4>
+                <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">उत्तर: ५८८.६४ ft</span>
+              </div>
+              <p class="text-xs md:text-sm text-slate-700 leading-relaxed">
+                <strong>प्रश्न:</strong> एउटा चौरको लम्बाइ $225\text{ m } 40\text{ cm}$ र चौडाइ $150\text{ ft } 8\text{ in}$ छ भने चौडाइभन्दा लम्बाइ कति $\text{ft}$ ले बढी रहेछ?<br>
+                <strong>समाधान:</strong><br>
+                १. लम्बाइ $= 225.4\text{ m} \times 3.28 = 739.312\text{ ft}$<br>
+                २. चौडाइ $= 150 + \frac{8}{12} = 150.667\text{ ft}$<br>
+                ३. $\text{फरक} = 739.312 - 150.667 =$ <strong class="text-emerald-700 font-mono">588.64 ft</strong>।
+              </p>
+            </div>
+
+            <!-- Q8 -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-2">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+                <h4 class="font-bold text-slate-900 text-sm md:text-base">प्रश्न ८: जोडिएको पर्खालको कुल लम्बाइ</h4>
+                <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">उत्तर: ६३६.३५ m</span>
+              </div>
+              <p class="text-xs md:text-sm text-slate-700 leading-relaxed">
+                <strong>प्रश्न:</strong> एउटा पर्खाल $567\text{ m } 50\text{ cm}$ लामो छ। त्यसैसँग जोडेर अर्को $225\text{ ft } 10\text{ in}$ लामो पर्खाल बनाइएको छ भने पर्खालको जम्मा लम्बाइ कति $\text{m}$ हुन्छ?<br>
+                <strong>समाधान:</strong><br>
+                १. पहिलो पर्खाल $= 567.5\text{ m}$<br>
+                २. दोस्रो पर्खाल $= 225 + \frac{10}{12} = 225.833\text{ ft} \Rightarrow \frac{225.833}{3.28} = 68.85\text{ m}$<br>
+                ३. $\text{जम्मा लम्बाइ} = 567.5 + 68.85 =$ <strong class="text-emerald-700 font-mono">636.35 m</strong>।
+              </p>
+            </div>
+
+            <!-- Q9 -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-2">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+                <h4 class="font-bold text-slate-900 text-sm md:text-base">प्रश्न ९: बाटो बनाउन बाँकी दूरी</h4>
+                <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">उत्तर: १४,१९०.९२ ft</span>
+              </div>
+              <p class="text-xs md:text-sm text-slate-700 leading-relaxed">
+                <strong>प्रश्न:</strong> एउटा $4567\text{ m } 20\text{ cm}$ लामो बाटो बनाउनुपर्नेमा $789\text{ ft } 6\text{ in}$ बाटो बनिसकेपछि कति बाटो बनाउन बाँकी रहन्छ?<br>
+                <strong>समाधान:</strong><br>
+                १. कुल बाटो $= 4567.2\text{ m} \times 3.28 = 14,980.416\text{ ft}$<br>
+                २. बनिसकेको बाटो $= 789.5\text{ ft}$<br>
+                ३. $\text{बाँकी बाटो} = 14,980.416 - 789.5 =$ <strong class="text-emerald-700 font-mono">14,190.92 ft</strong>।
+              </p>
+            </div>
+
+            <!-- Project Work Card -->
+            <div class="p-5 bg-blue-50/60 rounded-2xl border border-blue-200 shadow-sm space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                <h4 class="font-bold text-blue-950 text-sm md:text-base">परियोजना कार्य (Project Work — पारिवारिक उचाइ सर्वेक्षण)</h4>
+              </div>
+              <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+                पारिवारिक सदस्यहरूको उचाइ मापन र बहु-एकाइ रूपान्तरण तालिका:
+              </p>
+              <div class="overflow-x-auto bg-white rounded-xl border border-blue-100 shadow-xs">
+                <table class="w-full text-left text-xs md:text-sm">
+                  <thead class="bg-blue-100/60 text-blue-900 font-bold">
+                    <tr>
+                      <th class="p-2.5">सदस्य</th>
+                      <th class="p-2.5">उचाइ (ft)</th>
+                      <th class="p-2.5">इन्च (in)</th>
+                      <th class="p-2.5">सेन्टिमिटर (cm)</th>
+                      <th class="p-2.5">मिटर (m)</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-100 font-mono">
+                    <tr><td class="p-2.5 font-sans font-medium">हजुरबुबा</td><td class="p-2.5">5.4 ft</td><td class="p-2.5">64.8 in</td><td class="p-2.5">164.59 cm</td><td class="p-2.5 text-blue-700 font-bold">1.65 m</td></tr>
+                    <tr><td class="p-2.5 font-sans font-medium">बुबा</td><td class="p-2.5">5.6 ft</td><td class="p-2.5">67.2 in</td><td class="p-2.5">170.69 cm</td><td class="p-2.5 text-blue-700 font-bold">1.71 m</td></tr>
+                    <tr><td class="p-2.5 font-sans font-medium">आमा</td><td class="p-2.5">5.1 ft</td><td class="p-2.5">61.2 in</td><td class="p-2.5">155.45 cm</td><td class="p-2.5 text-blue-700 font-bold">1.55 m</td></tr>
+                    <tr><td class="p-2.5 font-sans font-medium">विद्यार्थी</td><td class="p-2.5">4.5 ft</td><td class="p-2.5">54.0 in</td><td class="p-2.5">137.16 cm</td><td class="p-2.5 text-blue-700 font-bold">1.37 m</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ================= CH9 TAB 3: THREE-TIER ================= -->
+        <div id="ch9-view-tiers" class="hidden space-y-6">
+          <div class="border-b border-slate-100 pb-3 flex items-center justify-between">
+            <h3 class="font-black text-slate-800 text-base md:text-lg">३-तहका नमुना प्रश्नोत्तरहरू (१६ प्रश्न)</h3>
+            <span class="text-xs bg-purple-100 text-purple-800 font-bold px-3 py-1 rounded-xl">Bloom's Taxonomy आधारित</span>
+          </div>
+
+          <!-- Tier 1 -->
+          <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+            <h4 class="font-bold text-slate-900 text-sm md:text-base text-blue-600">तह १: ज्ञान तह (Knowledge Level — ६ प्रश्न)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>१. दूरी भनेको के हो? यसको SI एकाइ के हो?</strong><br>
+                <span class="text-slate-600">कुनै दुई बिन्दुहरू बीचको कुल लम्बाइलाई दूरी भनिन्छ। यसको SI एकाइ मिटर ($m$) हो।</span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>२. $1\text{ m}$ मा कति $\text{cm}$ र $\text{mm}$ हुन्छ?</strong><br>
+                <span class="text-slate-600">$1\text{ m} = 100\text{ cm} = 1000\text{ mm}$ हुन्छ।</span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>३. $1\text{ ft}$ मा कति इन्च ($\text{in}$) हुन्छ?</strong><br>
+                <span class="text-slate-600">$1\text{ ft} = 12\text{ in}$ हुन्छ।</span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>४. $1\text{ in}$ मा कति सेन्टिमिटर हुन्छ?</strong><br>
+                <span class="text-slate-600">$1\text{ in} = 2.54\text{ cm}$ हुन्छ।</span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>५. $1\text{ m}$ मा कति फिट ($\text{ft}$) हुन्छ?</strong><br>
+                <span class="text-slate-600">$1\text{ m} = 3.28\text{ ft}$ हुन्छ।</span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>६. ठूलोबाट सानो एकाइमा लैजाँदा कुन क्रिया गरिन्छ?</strong><br>
+                <span class="text-slate-600">गुणन ($	imes$) क्रिया गरिन्छ।</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tier 2 -->
+          <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+            <h4 class="font-bold text-slate-900 text-sm md:text-base text-indigo-600">तह २: बोध तथा प्रयोग तह (Application Level — ६ प्रश्न)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>७. $12.5\text{ m}$ लाई $\text{cm}$ मा बदल्नुहोस्।</strong><br>
+                <span class="text-slate-600">$12.5 \times 100 = $ <strong class="text-emerald-700">1250 cm</strong></span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>८. $72\text{ in}$ लाई फिट ($\text{ft}$) मा बदल्नुहोस्।</strong><br>
+                <span class="text-slate-600">$\frac{72}{12} = $ <strong class="text-emerald-700">6 ft</strong></span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>९. $150\text{ cm}$ लामो टेबलको लम्बाइ इन्चमा कति हुन्छ?</strong><br>
+                <span class="text-slate-600">$\frac{150}{2.54} \approx $ <strong class="text-emerald-700">59.06 in</strong></span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>१०. $2.5\text{ km}$ लाई मिटरमा बदल्नुहोस्।</strong><br>
+                <span class="text-slate-600">$2.5 \times 1000 = $ <strong class="text-emerald-700">2500 m</strong></span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>११. $15\text{ ft } 9\text{ in}$ लाई दशमलव फिटमा बदल्नुहोस्।</strong><br>
+                <span class="text-slate-600">$15 + \frac{9}{12} = 15 + 0.75 = $ <strong class="text-emerald-700">15.75 ft</strong></span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>१२. $16.4\text{ ft}$ लाई मिटरमा बदल्नुहोस्।</strong><br>
+                <span class="text-slate-600">$\frac{16.4}{3.28} = $ <strong class="text-emerald-700">5 m</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+            <h4 class="font-bold text-slate-900 text-sm md:text-base text-purple-600">तह ३: उच्च दक्षता बहु-चरणीय समस्या (Higher Ability — ४ प्रश्न)</h4>
+            <div class="space-y-3 text-xs md:text-sm">
+              <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>१३. $400\text{ m}$ को ट्र्याकमा ४ पटक दौडँदा कति $\text{km}$ र कति $\text{ft}$ दूरी पार हुन्छ?</strong><br>
+                <span class="text-slate-600">कुल मिटर $= 400 \times 4 = 1600\text{ m}$।<br>किलोमिटरमा: $\frac{1600}{1000} = $ <strong class="text-emerald-700">1.6 km</strong>। फिटमा: $1600 \times 3.28 = $ <strong class="text-emerald-700">5,248 ft</strong>।</span>
+              </div>
+              <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>१४. मैदानको लम्बाइ $95\text{ m } 50\text{ cm}$ र चौडाइ $180\text{ ft } 4\text{ in}$ को अन्तर फिटमा निकाल्नुहोस्।</strong><br>
+                <span class="text-slate-600">लम्बाइ $= 95.5 \times 3.28 = 313.24\text{ ft}$। चौडाइ $= 180 + \frac{4}{12} = 180.333\text{ ft}$।<br>अन्तर $= 313.24 - 180.333 = $ <strong class="text-emerald-700">132.91 ft</strong>।</span>
+              </div>
+              <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>१५. $45\text{ km}$ यात्रामा पहिलो दिन $18\text{ km } 400\text{ m}$ र दोस्रो दिन $42,650\text{ ft}$ पार गरेपछि कति मिटर बाँकी रहन्छ?</strong><br>
+                <span class="text-slate-600">जम्मा $= 45,000\text{ m}$। पहिलो दिन $= 18,400\text{ m}$। दोस्रो दिन $= \frac{42650}{3.28} \approx 13,003.05\text{ m}$।<br>बाँकी $= 45000 - (18400 + 13003.05) = $ <strong class="text-emerald-700">13,596.95 m</strong>।</span>
+              </div>
+              <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                <strong>१६. $1.2\text{ km}$ तारबाट $250\text{ m } 80\text{ cm}$ र $1500\text{ ft}$ काट्दा बाँकी तार कति मिटर होला?</strong><br>
+                <span class="text-slate-600">सुरुको तार $= 1200\text{ m}$। टुक्रा १ $= 250.8\text{ m}$। टुक्रा २ $= \frac{1500}{3.28} \approx 457.32\text{ m}$।<br>बाँकी $= 1200 - (250.8 + 457.32) = $ <strong class="text-emerald-700">491.88 m</strong>।</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= CH9 TAB 4: QUIZ ================= -->
+        <div id="ch9-view-quiz" class="hidden space-y-6">
+          <div class="border-b border-slate-100 pb-3 flex items-center justify-between">
+            <div>
+              <h3 class="font-black text-slate-800 text-base md:text-lg">आत्म-मूल्याङ्कन क्विज (Self-Assessment Quiz)</h3>
+              <p class="text-xs text-slate-500">तत्काल प्रतिक्रिया र गणितीय व्याख्या सहित</p>
+            </div>
+            <button onclick="resetQuizCh9()" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-3 py-1.5 rounded-xl transition cursor-pointer">
+              पुनः प्रयास गर्नुहोस्
+            </button>
+          </div>
+
+          <div class="space-y-4">
+            <!-- Q1 -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-blue-600">प्रश्न १</span>
+                <span id="ch9-qbadge-0" class="text-xs font-bold px-2.5 py-0.5 rounded-lg bg-slate-100 text-slate-600">हल हुन बाँकी</span>
+              </div>
+              <p class="text-sm font-bold text-slate-800">१ मिटर ($1\text{ m}$) मा कति सेन्टिमिटर हुन्छ?</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs md:text-sm">
+                <button id="ch9-qbtn-0-0" onclick="checkQuizCh9(0, 0)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(A) 10 cm</button>
+                <button id="ch9-qbtn-0-1" onclick="checkQuizCh9(0, 1)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(B) 100 cm</button>
+                <button id="ch9-qbtn-0-2" onclick="checkQuizCh9(0, 2)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(C) 1000 cm</button>
+                <button id="ch9-qbtn-0-3" onclick="checkQuizCh9(0, 3)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(D) 12 cm</button>
+              </div>
+              <div id="ch9-qexp-0" class="hidden"></div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-blue-600">प्रश्न २</span>
+                <span id="ch9-qbadge-1" class="text-xs font-bold px-2.5 py-0.5 rounded-lg bg-slate-100 text-slate-600">हल हुन बाँकी</span>
+              </div>
+              <p class="text-sm font-bold text-slate-800">१ इन्च ($1\text{ in}$) बराबर कति सेन्टिमिटर हुन्छ?</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs md:text-sm">
+                <button id="ch9-qbtn-1-0" onclick="checkQuizCh9(1, 0)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(A) 2.54 cm</button>
+                <button id="ch9-qbtn-1-1" onclick="checkQuizCh9(1, 1)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(B) 3.28 cm</button>
+                <button id="ch9-qbtn-1-2" onclick="checkQuizCh9(1, 2)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(C) 30.48 cm</button>
+                <button id="ch9-qbtn-1-3" onclick="checkQuizCh9(1, 3)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(D) 39.37 cm</button>
+              </div>
+              <div id="ch9-qexp-1" class="hidden"></div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-blue-600">प्रश्न ३</span>
+                <span id="ch9-qbadge-2" class="text-xs font-bold px-2.5 py-0.5 rounded-lg bg-slate-100 text-slate-600">हल हुन बाँकी</span>
+              </div>
+              <p class="text-sm font-bold text-slate-800">१ मिटर ($1\text{ m}$) बराबर कति फिट हुन्छ?</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs md:text-sm">
+                <button id="ch9-qbtn-2-0" onclick="checkQuizCh9(2, 0)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(A) 12 ft</button>
+                <button id="ch9-qbtn-2-1" onclick="checkQuizCh9(2, 1)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(B) 2.54 ft</button>
+                <button id="ch9-qbtn-2-2" onclick="checkQuizCh9(2, 2)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(C) 3.28 ft</button>
+                <button id="ch9-qbtn-2-3" onclick="checkQuizCh9(2, 3)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(D) 30.48 ft</button>
+              </div>
+              <div id="ch9-qexp-2" class="hidden"></div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-blue-600">प्रश्न ४</span>
+                <span id="ch9-qbadge-3" class="text-xs font-bold px-2.5 py-0.5 rounded-lg bg-slate-100 text-slate-600">हल हुन बाँकी</span>
+              </div>
+              <p class="text-sm font-bold text-slate-800">६ फिट ($6\text{ ft}$) लाई इन्चमा बदल्दा कति इन्च हुन्छ?</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs md:text-sm">
+                <button id="ch9-qbtn-3-0" onclick="checkQuizCh9(3, 0)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(A) 60 in</button>
+                <button id="ch9-qbtn-3-1" onclick="checkQuizCh9(3, 1)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(B) 72 in</button>
+                <button id="ch9-qbtn-3-2" onclick="checkQuizCh9(3, 2)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(C) 36 in</button>
+                <button id="ch9-qbtn-3-3" onclick="checkQuizCh9(3, 3)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(D) 84 in</button>
+              </div>
+              <div id="ch9-qexp-3" class="hidden"></div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-blue-600">प्रश्न ५</span>
+                <span id="ch9-qbadge-4" class="text-xs font-bold px-2.5 py-0.5 rounded-lg bg-slate-100 text-slate-600">हल हुन बाँकी</span>
+              </div>
+              <p class="text-sm font-bold text-slate-800">सानो एकाइलाई ठूलो एकाइमा रूपान्तरण गर्दा के गर्नुपर्छ?</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs md:text-sm">
+                <button id="ch9-qbtn-4-0" onclick="checkQuizCh9(4, 0)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(A) गुणन गर्ने</button>
+                <button id="ch9-qbtn-4-1" onclick="checkQuizCh9(4, 1)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(B) भाग गर्ने</button>
+                <button id="ch9-qbtn-4-2" onclick="checkQuizCh9(4, 2)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(C) जोड्ने</button>
+                <button id="ch9-qbtn-4-3" onclick="checkQuizCh9(4, 3)" class="w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer">(D) घटाउने</button>
+              </div>
+              <div id="ch9-qexp-4" class="hidden"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- ================= END CHAPTER 9 ================= -->

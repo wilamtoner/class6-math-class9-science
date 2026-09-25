@@ -1,0 +1,31 @@
+<!-- ================= CHAPTER 19: TAB 4 (SELF-ASSESSMENT QUIZ) ================= -->
+<div id="ch19-view-quiz" class="hidden space-y-6">
+  <!-- Quiz Top Score Banner -->
+  <div class="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 rounded-3xl p-6 text-white shadow-xl flex flex-wrap items-center justify-between gap-4">
+    <div>
+      <div class="flex items-center gap-2 text-xs font-bold text-cyan-300 mb-1">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        अध्याय १९ स्वमूल्याङ्कन परीक्षा (Self-Assessment Quiz)
+      </div>
+      <h3 class="text-xl md:text-2xl font-black">सममिति र टेसेलेसन वस्तुगत बहुवैकल्पिक परीक्षा (१० प्रश्न)</h3>
+      <p class="text-xs text-blue-100 mt-1">प्रत्येक प्रश्नको सही उत्तर छानेर तुरुन्त पृष्ठपोषण र अङ्क प्राप्त गर्नुहोस्</p>
+    </div>
+
+    <div class="flex items-center gap-4 bg-white/10 backdrop-blur px-5 py-3 rounded-2xl border border-white/20">
+      <div class="text-right">
+        <span class="text-[11px] text-blue-200 block font-bold">तपाईंको प्राप्ताङ्क</span>
+        <span id="ch19-quiz-score" class="text-2xl md:text-3xl font-black text-cyan-300">० / १०</span>
+      </div>
+      <button onclick="resetCh19Quiz()" class="px-3.5 py-2 rounded-xl bg-white/20 hover:bg-white/30 text-xs font-bold transition flex items-center gap-1.5 border border-white/30 cursor-pointer">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+        पुनः सुरु गर्नुहोस्
+      </button>
+    </div>
+  </div>
+
+  <!-- Quiz Questions Container -->
+  <div id="ch19-quiz-container" class="space-y-4">
+    <!-- Rendered dynamically via ch19_script.js -->
+  </div>
+</div>
+<!-- ================= END TAB 4 ================= -->
