@@ -1,5 +1,5 @@
 // Service Worker for Class 6 Math & Class 9 Science Companion
-const CACHE_NAME = 'class6-math-v4';
+const CACHE_NAME = 'digital-guru-v5';
 const PRECACHE_ASSETS = [
   './',
   './index.html',
@@ -43,9 +43,26 @@ self.addEventListener('fetch', (event) => {
   // Only handle GET requests
   if (event.request.method !== 'GET') return;
 
-  const url = new URL(event.request.url);
+  const isHTML = event.request.mode === 'navigate' || 
+    (event.request.headers.get('accept') && event.request.headers.get('accept').includes('text/html'));
 
-  // Cache-First strategy with dynamic caching
+  // HTML / Navigation: Network-First so users always see latest updates immediately
+  if (isHTML) {
+    event.respondWith(
+      fetch(event.request)
+        .then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200) {
+            const copy = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+          }
+          return networkResponse;
+        })
+        .catch(() => caches.match(event.request).then((res) => res || caches.match('./index.html')))
+    );
+    return;
+  }
+
+  // Static Assets (Fonts, Icons, Media): Cache-First with dynamic caching
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
       if (cachedResponse) {
@@ -57,18 +74,12 @@ self.addEventListener('fetch', (event) => {
           return networkResponse;
         }
 
-        // Clone and store in cache for offline use
         const responseToCache = networkResponse.clone();
         caches.open(CACHE_NAME).then((cache) => {
           cache.put(event.request, responseToCache);
         });
 
         return networkResponse;
-      }).catch(() => {
-        // Fallback for HTML documents when completely offline
-        if (event.request.headers.get('accept') && event.request.headers.get('accept').includes('text/html')) {
-          return caches.match('./index.html');
-        }
       });
     })
   );
