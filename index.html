@@ -876,31 +876,35 @@ main {
 
   <!-- Header -->
   <header id="main-header" class="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 text-white shadow-lg sticky top-0 z-50" style="transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);">
-    <div class="max-w-7xl mx-auto px-4 py-3.5 flex flex-wrap items-center justify-between gap-4">
-      <div class="flex flex-wrap items-center gap-3">
+    <div class="max-w-7xl mx-auto px-3 md:px-4 py-2.5 md:py-3.5 flex items-center justify-between gap-2 md:gap-4 flex-nowrap md:flex-wrap">
+
+      <!-- LEFT: Hamburger + Logo + Title -->
+      <div class="flex items-center gap-2 md:gap-3 min-w-0">
         <!-- Hamburger: mobile only -->
-        <button onclick="toggleMobileSidebar()" class="mobile-menu-btn items-center justify-center w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 transition-all cursor-pointer shrink-0" title="अध्यायहरू हेर्नुहोस्" aria-label="Menu">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <button onclick="toggleMobileSidebar()" class="mobile-menu-btn items-center justify-center w-9 h-9 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 transition-all cursor-pointer shrink-0" title="अध्यायहरू हेर्नुहोस्" aria-label="Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
-        <div class="flex items-center space-x-3">
-          <div id="portal-grade-badge" class="w-11 h-11 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center font-black text-2xl shadow-inner border border-white/30">६</div>
-          <div>
-            <h1 id="portal-title" class="text-xl md:text-2xl font-black tracking-tight">डिजिटल गुरु</h1>
-            <p id="portal-subtitle" class="text-xs text-blue-200">कक्षा ६ : गणित — नेपाल सरकार पाठ्यक्रम विकास केन्द्र (CDC) नयाँ पाठ्यक्रम</p>
+        <div class="flex items-center gap-2 md:gap-3 min-w-0">
+          <div id="portal-grade-badge" class="w-9 h-9 md:w-11 md:h-11 rounded-xl md:rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center font-black text-xl md:text-2xl shadow-inner border border-white/30 shrink-0">६</div>
+          <div class="min-w-0">
+            <h1 id="portal-title" class="text-base md:text-2xl font-black tracking-tight leading-tight truncate">डिजिटल गुरु</h1>
+            <p id="portal-subtitle" class="hidden md:block text-xs text-blue-200 truncate">कक्षा ६ : गणित — नेपाल सरकार पाठ्यक्रम विकास केन्द्र (CDC) नयाँ पाठ्यक्रम</p>
           </div>
         </div>
-
-        <!-- Grade / Subject Switcher Pills -->
-        <div class="flex items-center p-1 bg-black/25 backdrop-blur-md rounded-2xl border border-white/20 shadow-inner">
-          <button id="btn-grade-6" onclick="selectGrade(6)" class="px-3.5 py-1.5 rounded-xl text-xs font-black transition flex items-center gap-1.5 bg-white text-blue-900 shadow-sm cursor-pointer">
-            <span>📐 कक्षा ६ : गणित</span>
-          </button>
-          <button id="btn-grade-9" onclick="selectGrade(9)" class="px-3.5 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1.5 text-white/90 hover:text-white hover:bg-white/10 cursor-pointer">
-            <span>🔬 कक्षा ९ : विज्ञान तथा प्रविधि</span>
-          </button>
-        </div>
       </div>
-      <div class="flex flex-wrap items-center gap-2">
+
+      <!-- MIDDLE: Grade Switcher Pills -->
+      <div class="flex items-center p-0.5 md:p-1 bg-black/25 backdrop-blur-md rounded-xl md:rounded-2xl border border-white/20 shadow-inner shrink-0">
+        <button id="btn-grade-6" onclick="selectGrade(6)" class="px-2.5 md:px-3.5 py-1 md:py-1.5 rounded-lg md:rounded-xl text-xs font-black transition flex items-center gap-1 md:gap-1.5 bg-white text-blue-900 shadow-sm cursor-pointer">
+          <span class="hidden sm:inline">📐</span><span>कक्षा ६</span>
+        </button>
+        <button id="btn-grade-9" onclick="selectGrade(9)" class="px-2.5 md:px-3.5 py-1 md:py-1.5 rounded-lg md:rounded-xl text-xs font-bold transition flex items-center gap-1 md:gap-1.5 text-white/90 hover:text-white hover:bg-white/10 cursor-pointer">
+          <span class="hidden sm:inline">🔬</span><span>कक्षा ९</span>
+        </button>
+      </div>
+
+      <!-- RIGHT: Desktop controls only (hidden on mobile) -->
+      <div class="hidden md:flex flex-wrap items-center gap-2">
         <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/25 text-emerald-200 border border-emerald-400/40 shadow-xs">✓ सम्पूर्ण अभ्यास र समाधान समावेश</span>
         <!-- Font Switcher Control -->
         <div class="inline-flex items-center gap-1.5 bg-white/20 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-bold border border-white/30 text-white shadow-xs" title="फन्ट छनौट गर्नुहोस्">
@@ -911,12 +915,10 @@ main {
             <option value="system">प्रणाली (System Sans)</option>
           </select>
         </div>
-
         <!-- Preeti Converter & Typing Pad Modal Button -->
         <button onclick="togglePreetiModal(true)" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-amber-400 text-slate-900 hover:bg-amber-300 transition cursor-pointer shadow-md hover:scale-105 active:scale-95" title="युनिकोड ↔ प्रिती रुपान्तरक तथा टाइपिङ प्याड">
           <span>⌨️ प्रिती रुपान्तरक</span>
         </button>
-
         <span id="offline-status-badge" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-white/20 text-white border border-white/30 shadow-xs" title="इन्टरनेट वा सर्भर बिना पनि १००% काम गर्छ">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
           <span>अफलाइन सक्रिय (Offline Ready)</span>
