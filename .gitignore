@@ -13,3 +13,4 @@ __pycache__/
 Thumbs.db
 .vercel
 .env*
+node_modules/
