@@ -1,0 +1,148 @@
+<!-- ========================================== -->
+<!-- UNIT 6: Nature and Environment (प्रकृति र वातावरण) -->
+<!-- ========================================== -->
+<div id="c9-view-6" class="hidden flex-1 flex flex-col">
+
+  <!-- Unit Header -->
+  <div class="bg-gradient-to-r from-emerald-600 to-teal-800 text-white p-4 md:p-6 shadow-md relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IiNmZmYiLz48L3N2Zz4=')]"></div>
+    <div class="relative z-10">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm border border-white/30">कक्षा ९ (Class 9)</span>
+        <span class="bg-emerald-500/40 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm border border-emerald-300/30">एकाइ ६ (Unit 6)</span>
+      </div>
+      <h2 class="text-2xl md:text-3xl font-bold mb-2">प्रकृति र वातावरण (Nature and Environment)</h2>
+      <p class="text-emerald-100 text-sm md:text-base opacity-90 max-w-2xl">
+        पारिस्थिक पद्धति, खाद्य शृङ्खला, ऊर्जा प्रवाह र जैविक अन्तरक्रियाहरूको भर्चुअल ल्याबसहितको सम्पूर्ण अध्ययन सामग्री।
+      </p>
+    </div>
+  </div>
+
+  <!-- Tab Navigation -->
+  <div class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+    <div class="flex overflow-x-auto hide-scrollbar p-1 gap-1">
+      <button onclick="switchTabC9U6('theory')" id="c9u6-tab-theory" class="flex-1 min-w-[120px] py-2.5 px-3 text-sm font-semibold rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200 transition-all">
+        📖 सिद्धान्त र ल्याब
+      </button>
+      <button onclick="switchTabC9U6('exercise')" id="c9u6-tab-exercise" class="flex-1 min-w-[120px] py-2.5 px-3 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 transition-all">
+        📝 अभ्यास समाधान
+      </button>
+      <button onclick="switchTabC9U6('qa')" id="c9u6-tab-qa" class="flex-1 min-w-[120px] py-2.5 px-3 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 transition-all">
+        ❓ नमुना प्रश्नहरू
+      </button>
+      <button onclick="switchTabC9U6('quiz')" id="c9u6-tab-quiz" class="flex-1 min-w-[120px] py-2.5 px-3 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-50 transition-all">
+        🎯 स्वमूल्याङ्कन
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="flex-1 overflow-y-auto p-4 md:p-6 bg-slate-50 relative pb-24" id="c9u6-content-scroll">
+
+    <!-- TAB 1: Theory and Virtual Lab -->
+    <div id="c9u6-content-theory" class="space-y-8 animate-fade-in">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 md:p-6">
+        <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+          <span class="text-emerald-600">🔬</span> भर्चुअल ल्याब: पारिस्थिक प्रणाली
+        </h3>
+
+        <!-- Lab Mode Selector -->
+        <div class="flex flex-wrap gap-2 mb-6 p-1 bg-slate-100 rounded-xl">
+          <button onclick="setLabModeC9U6('ecosystem')" id="c9u6-mode-btn-ecosystem" class="flex-1 py-2 px-3 text-sm font-semibold rounded-lg bg-white shadow text-emerald-700">१. इकोसिस्टम अन्वेषक</button>
+          <button onclick="setLabModeC9U6('energy_web')" id="c9u6-mode-btn-energy_web" class="flex-1 py-2 px-3 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-200 transition-colors">२. ऊर्जा प्रवाह र खाद्यजाल</button>
+          <button onclick="setLabModeC9U6('interactions')" id="c9u6-mode-btn-interactions" class="flex-1 py-2 px-3 text-sm font-medium rounded-lg text-slate-600 hover:bg-slate-200 transition-colors">३. जैविक अन्तरक्रिया</button>
+        </div>
+
+        <!-- Mode 1: Ecosystem Simulator -->
+        <div id="c9u6-lab-ecosystem" class="space-y-4">
+          <div class="flex gap-2 justify-center mb-4">
+            <button onclick="selectEcosystemTypeC9U6('grassland')" id="c9u6-eco-btn-grassland" class="px-4 py-1.5 rounded-full text-sm font-semibold bg-emerald-100 text-emerald-800 border border-emerald-300">चउर (Grassland)</button>
+            <button onclick="selectEcosystemTypeC9U6('pond')" id="c9u6-eco-btn-pond" class="px-4 py-1.5 rounded-full text-sm bg-blue-50 text-blue-600 border border-blue-200 hover:bg-blue-100 transition-colors">पोखरी (Pond)</button>
+          </div>
+          <div class="w-full max-w-[600px] mx-auto bg-emerald-50/50 rounded-xl border border-emerald-100 p-2 relative overflow-hidden" style="aspect-ratio: 16/9;">
+            <svg id="c9u6-ecosystem-svg" viewBox="0 0 800 450" class="w-full h-full drop-shadow-md select-none"></svg>
+          </div>
+          <div id="c9u6-organism-details" class="bg-slate-100 rounded-lg p-4 text-sm text-slate-700 min-h-[80px]">
+            चित्रमा रहेको कुनै जीवमा क्लिक गरी त्यसको विवरण हेर्नुहोस्।
+          </div>
+        </div>
+
+        <!-- Mode 2: Energy Flow & Cascade -->
+        <div id="c9u6-lab-energy_web" class="hidden space-y-4">
+          <div class="flex flex-col md:flex-row gap-6">
+            <div class="flex-1 bg-amber-50 rounded-xl p-4 border border-amber-200">
+              <h4 class="font-bold text-amber-900 mb-2">१०% ऊर्जा पिरामिड</h4>
+              <label class="text-xs text-amber-800 block mb-1">सूर्यबाट प्राप्त ऊर्जा (Joules):</label>
+              <input type="number" id="c9u6-energy-input" value="100000" onchange="calculateEnergyFlowC9U6()" class="w-full px-3 py-2 rounded border border-amber-300 text-sm mb-4 focus:outline-none focus:ring-2 focus:ring-amber-500">
+              <svg id="c9u6-energy-svg" viewBox="0 0 300 250" class="w-full h-auto drop-shadow-sm"></svg>
+            </div>
+            <div class="flex-1 bg-rose-50 rounded-xl p-4 border border-rose-200">
+              <h4 class="font-bold text-rose-900 mb-2">खाद्यजाल असन्तुलन (Cascade)</h4>
+              <p class="text-xs text-rose-700 mb-3">कुनै एक जीव लोप हुँदा के हुन्छ?</p>
+              <div class="space-y-2">
+                <button onclick="triggerCascadeEventC9U6('rats_killed')" class="w-full text-left px-3 py-2 text-sm bg-white rounded border border-rose-200 hover:bg-rose-100 text-rose-800 transition-colors">🐀 सबै मुसा मारिँदा (किसानको गल्ती)</button>
+                <button onclick="triggerCascadeEventC9U6('frogs_extinct')" class="w-full text-left px-3 py-2 text-sm bg-white rounded border border-rose-200 hover:bg-rose-100 text-rose-800 transition-colors">🐸 भ्यागुता लोप हुँदा</button>
+                <button onclick="triggerCascadeEventC9U6('normal')" class="w-full text-left px-3 py-2 text-sm bg-white rounded border border-emerald-200 hover:bg-emerald-100 text-emerald-800 transition-colors mt-4">🔄 सन्तुलनमा फर्काउनुहोस्</button>
+              </div>
+              <div id="c9u6-cascade-alert" class="mt-4 p-3 bg-white/60 rounded text-sm text-rose-900 font-medium min-h-[60px]">
+                कृपया एउटा घटना छान्नुहोस्।
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mode 3: Biotic Interactions -->
+        <div id="c9u6-lab-interactions" class="hidden space-y-4">
+           <div class="flex overflow-x-auto hide-scrollbar gap-2 pb-2">
+             <button onclick="selectInteractionC9U6('mutualism')" id="c9u6-int-btn-mutualism" class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-indigo-100 text-indigo-800 border border-indigo-300 whitespace-nowrap">पारस्परिकता (+,+)</button>
+             <button onclick="selectInteractionC9U6('commensalism')" id="c9u6-int-btn-commensalism" class="px-3 py-1.5 rounded-lg text-sm bg-slate-100 text-slate-700 border border-slate-300 whitespace-nowrap">सहभोजिता (+,0)</button>
+             <button onclick="selectInteractionC9U6('parasitism')" id="c9u6-int-btn-parasitism" class="px-3 py-1.5 rounded-lg text-sm bg-slate-100 text-slate-700 border border-slate-300 whitespace-nowrap">परजीविता (+,-)</button>
+             <button onclick="selectInteractionC9U6('predation')" id="c9u6-int-btn-predation" class="px-3 py-1.5 rounded-lg text-sm bg-slate-100 text-slate-700 border border-slate-300 whitespace-nowrap">सिकारिता (+,-)</button>
+             <button onclick="selectInteractionC9U6('competition')" id="c9u6-int-btn-competition" class="px-3 py-1.5 rounded-lg text-sm bg-slate-100 text-slate-700 border border-slate-300 whitespace-nowrap">प्रतिस्पर्धा (-,-)</button>
+           </div>
+           <div class="w-full max-w-[500px] mx-auto bg-indigo-50/50 rounded-xl border border-indigo-100 p-4 relative overflow-hidden" style="aspect-ratio: 4/3;">
+             <svg id="c9u6-interaction-svg" viewBox="0 0 400 300" class="w-full h-full drop-shadow-md select-none"></svg>
+           </div>
+           <div id="c9u6-interaction-desc" class="bg-indigo-50 rounded-lg p-4 text-sm text-indigo-900">
+             पारस्परिकता (Mutualism): यसमा दुवै जीवलाई फाइदा हुन्छ। जस्तै: मौरी र फूल।
+           </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TAB 2: Exercises -->
+    <div id="c9u6-content-exercise" class="hidden space-y-6 animate-fade-in" data-markdown-src="solutions/class9_science/unit06_nature_and_environment_solutions.md">
+        <!-- Rendered by markdown parser -->
+        <div class="text-center p-8 text-slate-500">लोड हुँदैछ...</div>
+    </div>
+
+    <!-- TAB 3: QA / Tiered Questions -->
+    <div id="c9u6-content-qa" class="hidden space-y-6 animate-fade-in" data-markdown-src="notes/class9_science/06_nature_and_environment.md">
+         <!-- Rendered by markdown parser -->
+         <div class="text-center p-8 text-slate-500">लोड हुँदैछ...</div>
+    </div>
+
+    <!-- TAB 4: Quiz -->
+    <div id="c9u6-content-quiz" class="hidden animate-fade-in">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 md:p-8 max-w-3xl mx-auto">
+        <div class="text-center mb-8">
+          <h3 class="text-2xl font-bold text-slate-800">स्वमूल्याङ्कन क्विज</h3>
+          <p class="text-slate-500 text-sm mt-2">प्रकृति र वातावरण एकाइमा तपाईंको बुझाइ परीक्षण गर्नुहोस्।</p>
+          <div id="c9u6-quiz-score-container" class="hidden mt-4 inline-block bg-emerald-50 border border-emerald-200 text-emerald-800 px-6 py-3 rounded-xl font-bold text-lg">
+            प्राप्ताङ्क: <span id="c9u6-quiz-score-val">०</span> / १०
+          </div>
+        </div>
+        <div id="c9u6-quiz-questions" class="space-y-8">
+          <!-- Populated by JS -->
+        </div>
+        <div class="mt-8 pt-6 border-t border-slate-100 text-center">
+          <button onclick="submitQuizC9U6()" id="c9u6-quiz-submit-btn" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-8 rounded-xl shadow-sm transition-all transform hover:scale-105">
+            उत्तरहरू बुझाउनुहोस्
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
