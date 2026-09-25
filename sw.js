@@ -1,10 +1,8 @@
-// Service Worker for Class 6 Math Offline Companion
-const CACHE_NAME = 'class6-math-v3';
+// Service Worker for Class 6 Math & Class 9 Science Companion
+const CACHE_NAME = 'class6-math-v4';
 const PRECACHE_ASSETS = [
   './',
   './index.html',
-  './class6_math_offline.html',
-  './कक्षा_६_गणित_डिजिटल_साथी.html',
   './manifest.json',
   './assets/fonts/preeti.otf',
   './assets/fonts/preeti-unicode.ttf',
@@ -69,7 +67,7 @@ self.addEventListener('fetch', (event) => {
       }).catch(() => {
         // Fallback for HTML documents when completely offline
         if (event.request.headers.get('accept') && event.request.headers.get('accept').includes('text/html')) {
-          return caches.match('./index.html') || caches.match('./कक्षा_६_गणित_डिजिटल_साथी.html');
+          return caches.match('./index.html');
         }
       });
     })
