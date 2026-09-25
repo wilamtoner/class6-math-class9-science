@@ -1,0 +1,21 @@
+{
+  "name": "class6-math-class9-science",
+  "version": "2.0.0",
+  "description": "High-Performance Digital Guru Class 6 Maths & Class 9 Science Webapp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nepal-curriculum",
+    "class6-maths",
+    "class9-science",
+    "pwa",
+    "offline-ready"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Wilam Toner",
+  "license": "MIT"
+}
