@@ -28338,14 +28338,624 @@ eq 6$</div>
 </div>
 
 
-      <!-- Placeholder View for Units 8 to 19 -->
+
+<!-- CLASS 9 SCIENCE: UNIT 8 - SIMPLE MACHINES (सरल यन्त्र) -->
+<div id="c9-view-8" class="hidden flex-1 min-w-0 flex flex-col">
+  <!-- Unit Header Banner -->
+  <div class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-3xl p-6 md:p-8 text-white shadow-xl mb-6 relative overflow-hidden" style="background: linear-gradient(135deg, #1e3a8a 0%, #312e81 50%, #0f172a 100%); color: #ffffff;">
+    <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
+    <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30">
+            कक्षा ९ • विज्ञान तथा प्रविधि
+          </span>
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+            एकाइ ८ • भौतिक विज्ञान (Physics)
+          </span>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-black tracking-tight text-white mb-2">
+          एकाइ ८: सरल यन्त्र (Simple Machines)
+        </h2>
+        <p class="text-xs md:text-sm text-slate-300 max-w-2xl leading-relaxed">
+          दैनिक जीवनमा कामलाई सजिलो, छिटो र सुविधाजनक बनाउने साधनहरू — उत्तोलक (Lever), घिर्नी (Pulley), छड्के सतह (Inclined Plane), पाङ्ग्रा र बिँड (Wheel & Axle), फेसो (Wedge) र पेच (Screw) को बृहत् अन्तरक्रियात्मक डिजिटल प्रयोगशाला।
+        </p>
+      </div>
+      <!-- Quick Formula Badges -->
+      <div class="flex flex-col gap-2 shrink-0">
+        <div class="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono font-bold text-blue-200 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          \( MA = \frac{L}{E} \)
+        </div>
+        <div class="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono font-bold text-indigo-200 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+          \( VR = \frac{d_E}{d_L} \)
+        </div>
+        <div class="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono font-bold text-amber-200 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+          \( \eta = \frac{MA}{VR} \times 100\% \)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unit 8 Tab Navigation Bar (Horizontal Scrollable with Claymorphism & SVG Icons) -->
+  <div class="flex items-center gap-2 overflow-x-auto pb-2 mb-6 scrollbar-none border-b border-slate-200">
+    <button onclick="setTabC9U8('concepts')" id="c9u8-tab-concepts" class="px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl bg-indigo-600 text-white shadow-md font-bold transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer ring-2 ring-indigo-400/30 min-h-[44px]">
+      <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+      <span>१. भर्चुअल भौतिक प्रयोगशाला (Virtual Physics Lab)</span>
+    </button>
+    <button onclick="setTabC9U8('exercises')" id="c9u8-tab-exercises" class="px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[44px]">
+      <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+      <span>२. सम्पूर्ण अभ्यास तथा समाधान (CDC Solutions)</span>
+    </button>
+    <button onclick="setTabC9U8('tiers')" id="c9u8-tab-tiers" class="px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[44px]">
+      <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+      <span>३. १६ स्तरीकृत नमुना प्रश्नोत्तर (Model Q&As)</span>
+    </button>
+    <button onclick="setTabC9U8('quiz')" id="c9u8-tab-quiz" class="px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[44px]">
+      <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+      <span>४. आत्म-मूल्याङ्कन क्विज (Self-Assessment Quiz)</span>
+    </button>
+  </div>
+
+  <!-- TAB 1: VIRTUAL PHYSICS LAB -->
+  <div id="c9u8-view-concepts" class="space-y-6">
+    <!-- Lab Submode Switcher -->
+    <div class="flex items-center gap-2 p-1.5 bg-slate-900/90 rounded-3xl text-white shadow-inner border border-slate-800">
+      <button onclick="setLabModeC9U8('lever')" id="c9u8-btn-mode-lever" class="flex-1 py-3 px-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-black text-xs md:text-sm shadow-md transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2 ring-2 ring-indigo-400/30">
+        <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
+        <span>१. उत्तोलक सिमुलेटर (Lever Lab)</span>
+      </button>
+      <button onclick="setLabModeC9U8('pulley')" id="c9u8-btn-mode-pulley" class="flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700/80 font-bold text-xs md:text-sm transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2">
+        <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-width="2"></circle><circle cx="12" cy="12" r="3" stroke-width="2"></circle><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v6m0 6v6"></path></svg>
+        <span>२. घिर्नी प्रणाली सिमुलेटर (Pulley Systems)</span>
+      </button>
+      <button onclick="setLabModeC9U8('inclined')" id="c9u8-btn-mode-inclined" class="flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700/80 font-bold text-xs md:text-sm transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2">
+        <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 20h16L4 4v16z"></path></svg>
+        <span>३. छड्के सतह र पाङ्ग्रा-बिँड (Incline & Wheel)</span>
+      </button>
+    </div>
+
+    <!-- Mode 1: Lever Simulator -->
+    <div id="c9u8-lab-mode-lever" class="space-y-6">
+      <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/80 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <h3 class="text-lg md:text-xl font-black text-slate-800 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-indigo-600"></span>
+              उत्तोलकको आघूर्ण र सन्तुलन प्रयोगशाला (Principle of Moments & Lever Classes)
+            </h3>
+            <p class="text-xs md:text-sm text-slate-500 mt-1">
+              उत्तोलकको सिद्धान्त: \( \text{लोड} \times \text{लोड भुजा} = \text{प्रयास} \times \text{प्रयास भुजा} \) \((L \times l_1 = E \times l_2)\)
+            </p>
+          </div>
+          <!-- Lever Class Selection Pills -->
+          <div class="flex items-center gap-1.5 bg-slate-100 p-1.5 rounded-2xl shrink-0">
+            <button onclick="setLeverClassC9U8(1)" id="c9u8-btn-lever-c1" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-xs cursor-pointer min-h-[38px]">
+              पहिलो श्रेणी (F बीचमा)
+            </button>
+            <button onclick="setLeverClassC9U8(2)" id="c9u8-btn-lever-c2" class="px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-indigo-900 cursor-pointer min-h-[38px]">
+              दोस्रो श्रेणी (L बीचमा)
+            </button>
+            <button onclick="setLeverClassC9U8(3)" id="c9u8-btn-lever-c3" class="px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-indigo-900 cursor-pointer min-h-[38px]">
+              तेस्रो श्रेणी (E बीचमा)
+            </button>
+          </div>
+        </div>
+
+        <!-- Lever Class Info Box -->
+        <div id="c9u8-lever-class-info" class="p-4 rounded-2xl bg-indigo-50/70 border border-indigo-100 text-xs md:text-sm text-indigo-950 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div class="space-y-1">
+            <div class="font-bold text-indigo-900 flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded-md bg-indigo-600 text-white text-[11px]">पहिलो श्रेणीको उत्तोलक</span>
+              आधारबिन्दु (Fulcrum) लोड र प्रयासको बीचमा रहन्छ।
+            </div>
+            <div class="text-xs text-indigo-700">
+              उदाहरणहरू: कैंची (Scissors), ढिकी (Dhiki), सि-स (See-saw), चिम्टा/प्लाइअर्स (Pliers), घन (Crowbar)।
+            </div>
+          </div>
+          <div class="shrink-0 px-3 py-1.5 rounded-xl bg-white border border-indigo-200 text-xs font-bold text-indigo-800 shadow-2xs">
+            यान्त्रिक फाइदा (MA): १ भन्दा बढी, १ बराबर वा १ भन्दा कम हुन सक्छ
+          </div>
+        </div>
+
+        <!-- Visual Lever Interactive Canvas/SVG -->
+        <div class="bg-slate-900 rounded-3xl p-6 relative overflow-hidden border border-slate-800 min-h-[260px] flex flex-col justify-between">
+          <div class="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800/80 pb-3">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+              <span class="font-mono text-cyan-300 font-bold">LIVE DYNAMIC LEVER MECHANISM</span>
+            </div>
+            <div id="c9u8-lever-status-badge" class="px-3 py-1 rounded-full text-[11px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              पूर्ण सन्तुलन (Balanced)
+            </div>
+          </div>
+
+          <!-- Dynamic SVG Beam -->
+          <div class="my-auto py-6 flex items-center justify-center">
+            <svg id="c9u8-lever-svg" viewBox="0 0 600 160" class="w-full max-w-2xl h-auto">
+              <!-- Ground line -->
+              <line x1="20" y1="140" x2="580" y2="140" stroke="#334155" stroke-width="3" stroke-dasharray="6,6" />
+
+              <!-- Fulcrum Triangle (Position dynamically updated) -->
+              <polygon id="c9u8-svg-fulcrum" points="300,100 280,140 320,140" fill="#4f46e5" stroke="#818cf8" stroke-width="2" />
+              <circle id="c9u8-svg-fulcrum-pivot" cx="300" cy="100" r="4" fill="#ffffff" />
+              <text id="c9u8-svg-fulcrum-text" x="300" y="155" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="bold">F (आधारबिन्दु)</text>
+
+              <!-- Lever Beam Group (Rotates dynamically around fulcrum) -->
+              <g id="c9u8-svg-beam-group" transform="rotate(0, 300, 100)">
+                <!-- Main Beam -->
+                <rect x="50" y="94" width="500" height="12" rx="4" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5" />
+                <line x1="50" y1="100" x2="550" y2="100" stroke="#cbd5e1" stroke-width="1" />
+
+                <!-- Load Box (L) on left side -->
+                <rect id="c9u8-svg-load-box" x="70" y="54" width="40" height="40" rx="6" fill="#ea580c" stroke="#f97316" stroke-width="2" />
+                <text id="c9u8-svg-load-text" x="90" y="78" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="black">L</text>
+
+                <!-- Effort Arrow / Weight (E) on right side -->
+                <rect id="c9u8-svg-effort-box" x="490" y="54" width="40" height="40" rx="6" fill="#0284c7" stroke="#38bdf8" stroke-width="2" />
+                <text id="c9u8-svg-effort-text" x="510" y="78" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="black">E</text>
+
+                <!-- Load Arm dimension line -->
+                <line id="c9u8-svg-larm-line" x1="90" y1="36" x2="300" y2="36" stroke="#ea580c" stroke-width="2" marker-start="url(#dot)" marker-end="url(#dot)" />
+                <text id="c9u8-svg-larm-text" x="195" y="30" text-anchor="middle" fill="#fdba74" font-size="11" font-weight="bold">लोड भुजा (l₁)</text>
+
+                <!-- Effort Arm dimension line -->
+                <line id="c9u8-svg-earm-line" x1="300" y1="36" x2="510" y2="36" stroke="#38bdf8" stroke-width="2" />
+                <text id="c9u8-svg-earm-text" x="405" y="30" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="bold">प्रयास भुजा (l₂)</text>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Bottom readout -->
+          <div class="flex flex-wrap items-center justify-between gap-4 text-xs font-mono pt-3 border-t border-slate-800/80">
+            <div class="text-orange-400 flex items-center gap-1.5">
+              <span>लोड आघूर्ण (L × l₁):</span>
+              <span id="c9u8-readout-load-moment" class="font-bold text-white">400 N·m</span>
+            </div>
+            <div class="text-sky-400 flex items-center gap-1.5">
+              <span>प्रयास आघूर्ण (E × l₂):</span>
+              <span id="c9u8-readout-effort-moment" class="font-bold text-white">400 N·m</span>
+            </div>
+            <div class="text-emerald-400 flex items-center gap-1.5">
+              <span>सन्तुलन अवस्था:</span>
+              <span id="c9u8-readout-balance-diff" class="font-bold text-emerald-300">0 N·m (Balanced)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lever Interactive Control Sliders -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+          <!-- Load (L) Slider -->
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-bold text-slate-700">लोड बल (Load, L)</label>
+              <span id="c9u8-val-load" class="text-xs font-mono font-black text-orange-600 px-2 py-0.5 rounded-md bg-orange-100">400 N</span>
+            </div>
+            <input type="range" id="c9u8-slider-load" min="50" max="1000" step="50" value="400" oninput="updateLeverSimC9U8()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-orange-600">
+            <p class="text-[11px] text-slate-500">यन्त्रद्वारा उचाल्नुपर्ने वस्तुको कुल तौल।</p>
+          </div>
+
+          <!-- Load Arm (l1) Slider -->
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-bold text-slate-700">लोड भुजा (Load Arm, l₁)</label>
+              <span id="c9u8-val-larm" class="text-xs font-mono font-black text-indigo-600 px-2 py-0.5 rounded-md bg-indigo-100">1.0 m</span>
+            </div>
+            <input type="range" id="c9u8-slider-larm" min="0.2" max="3.0" step="0.1" value="1.0" oninput="updateLeverSimC9U8()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600">
+            <p class="text-[11px] text-slate-500">आधारबिन्दुदेखि लोडसम्मको सिधा दूरी।</p>
+          </div>
+
+          <!-- Effort Arm (l2) Slider -->
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-bold text-slate-700">प्रयास भुजा (Effort Arm, l₂)</label>
+              <span id="c9u8-val-earm" class="text-xs font-mono font-black text-sky-600 px-2 py-0.5 rounded-md bg-sky-100">2.0 m</span>
+            </div>
+            <input type="range" id="c9u8-slider-earm" min="0.2" max="3.0" step="0.1" value="2.0" oninput="updateLeverSimC9U8()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-sky-600">
+            <p class="text-[11px] text-slate-500">आधारबिन्दुदेखि प्रयाससम्मको सिधा दूरी।</p>
+          </div>
+        </div>
+
+        <!-- Real-time Mathematical Readout Cards -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="p-4 rounded-2xl bg-blue-50/70 border border-blue-100 text-center space-y-1">
+            <div class="text-[11px] font-bold text-blue-700">आवश्यक प्रयास (Effort, E)</div>
+            <div id="c9u8-res-effort" class="text-xl md:text-2xl font-black text-blue-900 font-mono">200 N</div>
+            <div class="text-[10px] text-blue-600">\( E = \frac{L \times l_1}{l_2} \)</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-100 text-center space-y-1">
+            <div class="text-[11px] font-bold text-emerald-700">यान्त्रिक फाइदा (MA)</div>
+            <div id="c9u8-res-ma" class="text-xl md:text-2xl font-black text-emerald-900 font-mono">2.00</div>
+            <div class="text-[10px] text-emerald-600">\( MA = \frac{L}{E} \)</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-purple-50/70 border border-purple-100 text-center space-y-1">
+            <div class="text-[11px] font-bold text-purple-700">गति अनुपात (VR)</div>
+            <div id="c9u8-res-vr" class="text-xl md:text-2xl font-black text-purple-900 font-mono">2.00</div>
+            <div class="text-[10px] text-purple-600">\( VR = \frac{l_2}{l_1} \)</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-100 text-center space-y-1">
+            <div class="text-[11px] font-bold text-amber-700">कार्यक्षमता (Efficiency, \(\eta\))</div>
+            <div id="c9u8-res-eff" class="text-xl md:text-2xl font-black text-amber-900 font-mono">100%</div>
+            <div id="c9u8-res-nature" class="text-[10px] font-bold text-amber-700">बल गुणक (Force Multiplier)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mode 2: Pulley Systems Simulator -->
+    <div id="c9u8-lab-mode-pulley" class="hidden space-y-6">
+      <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/80 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <h3 class="text-lg md:text-xl font-black text-slate-800 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-cyan-600"></span>
+              घिर्नी प्रणाली सिमुलेटर (Pulley Systems & Block and Tackle)
+            </h3>
+            <p class="text-xs md:text-sm text-slate-500 mt-1">
+              घिर्नीहरूको संख्या \(n\) अनुसार गति अनुपात \(VR = n\) हुन्छ र बलको दिशा परिवर्तन गर्न सकिन्छ।
+            </p>
+          </div>
+          <!-- Friction Mode Toggle -->
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-slate-600">घर्षण (Friction):</span>
+            <button onclick="togglePulleyFrictionC9U8()" id="c9u8-btn-pulley-friction" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-200 text-slate-700 transition cursor-pointer min-h-[38px]">
+              शून्य घर्षण (आदर्श अवस्था, १००%)
+            </button>
+          </div>
+        </div>
+
+        <!-- Pulley Systems Quick Selector -->
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-2">
+          <button onclick="setPulleySystemC9U8(1)" id="c9u8-btn-psys-1" class="p-3 rounded-2xl border text-center transition cursor-pointer bg-cyan-50 border-cyan-300 text-cyan-900 font-bold min-h-[44px]">
+            <div class="text-xs">१ घिर्नी (एकल स्थिर)</div>
+            <div class="text-[11px] font-mono text-cyan-700">VR = 1</div>
+          </button>
+          <button onclick="setPulleySystemC9U8(2)" id="c9u8-btn-psys-2" class="p-3 rounded-2xl border text-center transition cursor-pointer bg-white border-slate-200 hover:bg-slate-50 text-slate-700 min-h-[44px]">
+            <div class="text-xs">२ घिर्नी प्रणाली</div>
+            <div class="text-[11px] font-mono text-slate-500">VR = 2</div>
+          </button>
+          <button onclick="setPulleySystemC9U8(3)" id="c9u8-btn-psys-3" class="p-3 rounded-2xl border text-center transition cursor-pointer bg-white border-slate-200 hover:bg-slate-50 text-slate-700 min-h-[44px]">
+            <div class="text-xs">३ घिर्नी प्रणाली</div>
+            <div class="text-[11px] font-mono text-slate-500">VR = 3</div>
+          </button>
+          <button onclick="setPulleySystemC9U8(4)" id="c9u8-btn-psys-4" class="p-3 rounded-2xl border text-center transition cursor-pointer bg-white border-slate-200 hover:bg-slate-50 text-slate-700 min-h-[44px]">
+            <div class="text-xs">४ घिर्नी प्रणाली</div>
+            <div class="text-[11px] font-mono text-slate-500">VR = 4</div>
+          </button>
+          <button onclick="setPulleySystemC9U8(5)" id="c9u8-btn-psys-5" class="p-3 rounded-2xl border text-center transition cursor-pointer bg-white border-slate-200 hover:bg-slate-50 text-slate-700 min-h-[44px]">
+            <div class="text-xs">५ घिर्नी प्रणाली</div>
+            <div class="text-[11px] font-mono text-slate-500">VR = 5</div>
+          </button>
+        </div>
+
+        <!-- Pulley Canvas / Visual Simulation -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="md:col-span-2 bg-slate-900 rounded-3xl p-6 relative overflow-hidden border border-slate-800 min-h-[300px] flex flex-col justify-between">
+            <div class="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800 pb-3">
+              <span class="font-mono text-cyan-300 font-bold">PULLEY BLOCK & TACKLE SYSTEM VISUALIZER</span>
+              <span id="c9u8-pulley-tag" class="px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 text-[11px] font-bold">VR = 1</span>
+            </div>
+
+            <!-- Dynamic SVG Pulley Rig -->
+            <div class="py-4 flex items-center justify-center">
+              <svg id="c9u8-pulley-svg" viewBox="0 0 400 240" class="w-full max-w-md h-auto">
+                <!-- Ceiling Beam -->
+                <rect x="50" y="10" width="300" height="14" rx="3" fill="#334155" stroke="#475569" stroke-width="1.5" />
+                <line x1="60" y1="10" x2="50" y2="2" stroke="#64748b" stroke-width="2" />
+                <line x1="120" y1="10" x2="110" y2="2" stroke="#64748b" stroke-width="2" />
+                <line x1="180" y1="10" x2="170" y2="2" stroke="#64748b" stroke-width="2" />
+                <line x1="240" y1="10" x2="230" y2="2" stroke="#64748b" stroke-width="2" />
+                <line x1="300" y1="10" x2="290" y2="2" stroke="#64748b" stroke-width="2" />
+
+                <!-- Top Pulley Block Support -->
+                <line x1="200" y1="24" x2="200" y2="50" stroke="#94a3b8" stroke-width="4" />
+
+                <!-- Pulleys rendering generated by JS -->
+                <g id="c9u8-pulley-dynamic-elements">
+                  <!-- Pulleys, ropes, and loads injected dynamically -->
+                </g>
+              </svg>
+            </div>
+
+            <!-- Readout summary -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-slate-300 pt-3 border-t border-slate-800">
+              <div>लोड स्थानान्तरण: <span class="text-orange-400 font-bold">1 m माथि</span></div>
+              <div>प्रयासको दूरी: <span id="c9u8-readout-edist" class="text-sky-400 font-bold">1 m तल</span></div>
+              <div>ऊर्जा नोक्सानी: <span id="c9u8-readout-eloss" class="text-rose-400 font-bold">0 J</span></div>
+            </div>
+          </div>
+
+          <!-- Pulley Controls & Math Results -->
+          <div class="space-y-4">
+            <!-- Load Slider -->
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+              <div class="flex items-center justify-between">
+                <label class="text-xs font-bold text-slate-700">लोड (Load, L)</label>
+                <span id="c9u8-val-pulley-load" class="text-xs font-mono font-black text-orange-600 px-2 py-0.5 rounded-md bg-orange-100">600 N</span>
+              </div>
+              <input type="range" id="c9u8-slider-pulley-load" min="100" max="2000" step="50" value="600" oninput="updatePulleySimC9U8()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-orange-600">
+            </div>
+
+            <!-- Calculated Metrics -->
+            <div class="p-4 rounded-2xl bg-indigo-50/70 border border-indigo-100 space-y-3">
+              <div class="text-xs font-bold text-indigo-900 border-b border-indigo-200/70 pb-2">गणना नतिजाहरू (Calculated Metrics)</div>
+              <div class="flex items-center justify-between text-xs">
+                <span class="text-slate-600">गति अनुपात (VR):</span>
+                <span id="c9u8-pulley-calc-vr" class="font-mono font-bold text-indigo-900 text-sm">1</span>
+              </div>
+              <div class="flex items-center justify-between text-xs">
+                <span class="text-slate-600">यान्त्रिक फाइदा (MA):</span>
+                <span id="c9u8-pulley-calc-ma" class="font-mono font-bold text-emerald-700 text-sm">1.00</span>
+              </div>
+              <div class="flex items-center justify-between text-xs">
+                <span class="text-slate-600">आवश्यक प्रयास बल (E):</span>
+                <span id="c9u8-pulley-calc-effort" class="font-mono font-bold text-sky-700 text-sm">600 N</span>
+              </div>
+              <div class="flex items-center justify-between text-xs">
+                <span class="text-slate-600">कार्यक्षमता (\(\eta\)):</span>
+                <span id="c9u8-pulley-calc-eff" class="font-mono font-bold text-amber-700 text-sm">100%</span>
+              </div>
+            </div>
+
+            <!-- Key Insight -->
+            <div class="p-3.5 rounded-2xl bg-amber-50/80 border border-amber-200 text-[11px] text-amber-900 leading-relaxed">
+              <strong>💡 स्मरण रहोस्:</strong> एकल स्थिर घिर्नीको \(VR = 1\) हुन्छ। यसले लोड उचाल्न आवश्यक बल घटाउँदैन, तर तलतिर बल लगाई माथितिर लोड उचाल्न सजिलो बनाउँछ (बलको दिशा परिवर्तन)।
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mode 3: Inclined Plane & Wheel-Axle Simulator -->
+    <div id="c9u8-lab-mode-inclined" class="hidden space-y-6">
+      <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/80 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <h3 class="text-lg md:text-xl font-black text-slate-800 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-emerald-600"></span>
+              छड्के सतह तथा पाङ्ग्रा र बिँड (Inclined Plane & Wheel-Axle)
+            </h3>
+            <p class="text-xs md:text-sm text-slate-500 mt-1">
+              छड्के सतहमा \(VR = \frac{l}{h}\) र पाङ्ग्रा र बिँडमा \(VR = \frac{R}{r}\) को प्रत्यक्ष अध्ययन।
+            </p>
+          </div>
+          <!-- Submode Toggle -->
+          <div class="flex items-center gap-1.5 bg-slate-100 p-1.5 rounded-2xl shrink-0">
+            <button onclick="setInclinedSubModeC9U8('plane')" id="c9u8-btn-sub-plane" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-600 text-white shadow-xs cursor-pointer min-h-[38px]">
+              छड्के सतह (Inclined Plane)
+            </button>
+            <button onclick="setInclinedSubModeC9U8('wheel')" id="c9u8-btn-sub-wheel" class="px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-emerald-900 cursor-pointer min-h-[38px]">
+              पाङ्ग्रा र बिँड (Wheel & Axle)
+            </button>
+          </div>
+        </div>
+
+        <!-- Submode A: Inclined Plane -->
+        <div id="c9u8-submode-plane" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Canvas / SVG of Slope -->
+            <div class="md:col-span-2 bg-slate-900 rounded-3xl p-6 relative overflow-hidden border border-slate-800 min-h-[260px] flex flex-col justify-between">
+              <div class="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800 pb-2">
+                <span class="font-mono text-emerald-300 font-bold">INCLINED PLANE SIMULATOR</span>
+                <span id="c9u8-plane-angle-tag" class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[11px] font-bold">कोण θ = 14.5°</span>
+              </div>
+              <div class="my-auto py-4 flex items-center justify-center">
+                <svg id="c9u8-plane-svg" viewBox="0 0 500 200" class="w-full max-w-lg h-auto">
+                  <!-- Ground -->
+                  <line x1="30" y1="170" x2="470" y2="170" stroke="#334155" stroke-width="2.5" />
+                  <!-- Triangle Incline (Right angled triangle) -->
+                  <polygon id="c9u8-svg-slope" points="50,170 430,170 430,70" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="2.5" />
+                  <!-- Height (h) line -->
+                  <line x1="445" y1="170" x2="445" y2="70" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,4" />
+                  <text id="c9u8-svg-height-text" x="460" y="125" fill="#7dd3fc" font-size="11" font-weight="bold">h = 2 m</text>
+                  <!-- Slope length (l) label -->
+                  <text id="c9u8-svg-length-text" x="220" y="105" fill="#a7f3d0" font-size="11" font-weight="bold" transform="rotate(-14, 220, 105)">l = 8 m</text>
+                  <!-- Box on Slope -->
+                  <g id="c9u8-svg-cart-group" transform="translate(200, 120) rotate(-14)">
+                    <rect x="-20" y="-20" width="40" height="24" rx="4" fill="#ea580c" stroke="#f97316" stroke-width="2" />
+                    <text x="0" y="-4" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">L</text>
+                    <line x1="20" y1="-8" x2="60" y2="-8" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)" />
+                    <text x="65" y="-5" fill="#38bdf8" font-size="10" font-weight="bold">E</text>
+                  </g>
+                </svg>
+              </div>
+              <div class="flex items-center justify-between text-xs font-mono text-slate-300 pt-2 border-t border-slate-800">
+                <div>गति अनुपात \( VR = \frac{l}{h} \): <span id="c9u8-plane-readout-vr" class="text-emerald-400 font-bold">4.00</span></div>
+                <div>आदर्श प्रयास \( E = \frac{L}{VR} \): <span id="c9u8-plane-readout-eff" class="text-sky-400 font-bold">125 N</span></div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="space-y-4">
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+                <div class="flex items-center justify-between">
+                  <label class="text-xs font-bold text-slate-700">छड्के सतहको लम्बाइ (Length, l)</label>
+                  <span id="c9u8-val-plane-len" class="text-xs font-mono font-black text-emerald-600 px-2 py-0.5 rounded-md bg-emerald-100">8 m</span>
+                </div>
+                <input type="range" id="c9u8-slider-plane-len" min="3" max="15" step="0.5" value="8" oninput="updateInclinedSimC9U8()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-600">
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+                <div class="flex items-center justify-between">
+                  <label class="text-xs font-bold text-slate-700">उचाइ (Height, h)</label>
+                  <span id="c9u8-val-plane-h" class="text-xs font-mono font-black text-sky-600 px-2 py-0.5 rounded-md bg-sky-100">2 m</span>
+                </div>
+                <input type="range" id="c9u8-slider-plane-h" min="1" max="5" step="0.5" value="2" oninput="updateInclinedSimC9U8()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-sky-600">
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+                <div class="flex items-center justify-between">
+                  <label class="text-xs font-bold text-slate-700">लोड (Load, L)</label>
+                  <span id="c9u8-val-plane-load" class="text-xs font-mono font-black text-orange-600 px-2 py-0.5 rounded-md bg-orange-100">500 N</span>
+                </div>
+                <input type="range" id="c9u8-slider-plane-load" min="100" max="1000" step="50" value="500" oninput="updateInclinedSimC9U8()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-orange-600">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submode B: Wheel & Axle -->
+        <div id="c9u8-submode-wheel" class="hidden space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Wheel SVG -->
+            <div class="md:col-span-2 bg-slate-900 rounded-3xl p-6 relative overflow-hidden border border-slate-800 min-h-[260px] flex flex-col justify-between">
+              <div class="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800 pb-2">
+                <span class="font-mono text-indigo-300 font-bold">WHEEL AND AXLE SIMULATOR</span>
+                <span id="c9u8-wheel-tag" class="px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 text-[11px] font-bold">VR = 5</span>
+              </div>
+              <div class="my-auto py-4 flex items-center justify-center">
+                <svg id="c9u8-wheel-svg" viewBox="0 0 300 200" class="w-full max-w-xs h-auto">
+                  <!-- Outer Big Wheel (Radius R) -->
+                  <circle cx="150" cy="100" r="70" fill="rgba(99, 102, 241, 0.15)" stroke="#6366f1" stroke-width="3" stroke-dasharray="5,5" />
+                  <line x1="150" y1="100" x2="220" y2="100" stroke="#818cf8" stroke-width="2" />
+                  <text x="185" y="94" fill="#a5b4fc" font-size="10" font-weight="bold">R (पाङ्ग्रा)</text>
+                  <!-- Inner Axle (Radius r) -->
+                  <circle cx="150" cy="100" r="25" fill="rgba(244, 63, 94, 0.25)" stroke="#f43f5e" stroke-width="2.5" />
+                  <line x1="150" y1="100" x2="150" y2="125" stroke="#fb7185" stroke-width="2" />
+                  <text x="155" y="118" fill="#fda4af" font-size="9" font-weight="bold">r (बिँड)</text>
+                  <!-- Center pivot -->
+                  <circle cx="150" cy="100" r="4" fill="#ffffff" />
+                  <!-- Effort on Wheel -->
+                  <line x1="80" y1="100" x2="80" y2="170" stroke="#38bdf8" stroke-width="2" />
+                  <rect x="65" y="170" width="30" height="20" rx="3" fill="#0284c7" />
+                  <text x="80" y="184" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="bold">E</text>
+                  <!-- Load on Axle -->
+                  <line x1="175" y1="100" x2="175" y2="150" stroke="#ea580c" stroke-width="2" />
+                  <rect x="160" y="150" width="30" height="20" rx="3" fill="#ea580c" />
+                  <text x="175" y="164" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="bold">L</text>
+                </svg>
+              </div>
+              <div class="flex items-center justify-between text-xs font-mono text-slate-300 pt-2 border-t border-slate-800">
+                <div>गति अनुपात \( VR = \frac{R}{r} \): <span id="c9u8-wheel-readout-vr" class="text-indigo-400 font-bold">5.00</span></div>
+                <div>आवश्यक प्रयास \( E = \frac{L}{VR} \): <span id="c9u8-wheel-readout-eff" class="text-sky-400 font-bold">100 N</span></div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="space-y-4">
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+                <div class="flex items-center justify-between">
+                  <label class="text-xs font-bold text-slate-700">पाङ्ग्राको अर्धव्यास (R)</label>
+                  <span id="c9u8-val-wheel-R" class="text-xs font-mono font-black text-indigo-600 px-2 py-0.5 rounded-md bg-indigo-100">25 cm</span>
+                </div>
+                <input type="range" id="c9u8-slider-wheel-R" min="10" max="50" step="1" value="25" oninput="updateWheelAxleSimC9U8()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600">
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+                <div class="flex items-center justify-between">
+                  <label class="text-xs font-bold text-slate-700">बिँडको अर्धव्यास (r)</label>
+                  <span id="c9u8-val-wheel-r" class="text-xs font-mono font-black text-rose-600 px-2 py-0.5 rounded-md bg-rose-100">5 cm</span>
+                </div>
+                <input type="range" id="c9u8-slider-wheel-r" min="2" max="15" step="1" value="5" oninput="updateWheelAxleSimC9U8()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-rose-600">
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+                <div class="flex items-center justify-between">
+                  <label class="text-xs font-bold text-slate-700">लोड (Load, L)</label>
+                  <span id="c9u8-val-wheel-load" class="text-xs font-mono font-black text-orange-600 px-2 py-0.5 rounded-md bg-orange-100">500 N</span>
+                </div>
+                <input type="range" id="c9u8-slider-wheel-load" min="100" max="1500" step="50" value="500" oninput="updateWheelAxleSimC9U8()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-orange-600">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 2: COMPLETE CDC TEXTBOOK SOLUTIONS -->
+  <div id="c9u8-view-exercises" class="hidden space-y-6">
+    <!-- Exercise Category Pills -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+      <button onclick="setExerciseC9U8('sec-mcqs')" id="c9u8-btn-sec-mcqs" class="px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-xs whitespace-nowrap cursor-pointer min-h-[44px]">
+        १. बहुवैकल्पिक प्रश्नहरू (१० MCQs)
+      </button>
+      <button onclick="setExerciseC9U8('sec-fill')" id="c9u8-btn-sec-fill" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-100 whitespace-nowrap cursor-pointer min-h-[44px]">
+        २. खाली ठाउँ र जोडा मिलाउने
+      </button>
+      <button onclick="setExerciseC9U8('sec-diff')" id="c9u8-btn-sec-diff" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-100 whitespace-nowrap cursor-pointer min-h-[44px]">
+        ३. फरक लेख्नुहोस् (Differences)
+      </button>
+      <button onclick="setExerciseC9U8('sec-reasons')" id="c9u8-btn-sec-reasons" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-100 whitespace-nowrap cursor-pointer min-h-[44px]">
+        ४. वैज्ञानिक कारण दिनुहोस् (Reasons)
+      </button>
+      <button onclick="setExerciseC9U8('sec-qa')" id="c9u8-btn-sec-qa" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-100 whitespace-nowrap cursor-pointer min-h-[44px]">
+        ५. प्रश्नोत्तर (Q&A)
+      </button>
+      <button onclick="setExerciseC9U8('sec-numericals')" id="c9u8-btn-sec-numericals" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-100 whitespace-nowrap cursor-pointer min-h-[44px]">
+        ६. प्रामाणिक गणितीय समस्याहरू (Numericals)
+      </button>
+    </div>
+
+    <!-- Container where JS renders dynamic exercise sections -->
+    <div id="c9u8-exercises-container" class="space-y-6">
+      <!-- Injected by renderC9U8Exercises() -->
+    </div>
+  </div>
+
+  <!-- TAB 3: 16 MULTI-TIER EXAM MODEL Q&AS -->
+  <div id="c9u8-view-tiers" class="hidden space-y-6">
+    <div class="bg-gradient-to-r from-indigo-900 to-slate-900 border border-indigo-800 rounded-3xl p-5 md:p-6 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-lg">
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span class="text-xs uppercase tracking-wider text-indigo-300 font-bold font-mono">CDC EXAM SUCCESS FRAMEWORK</span>
+        </div>
+        <h3 class="text-xl font-black text-white">एकाइ ८: १६ स्तरीकृत नमुना प्रश्नोत्तर (Tiered Model Q&As)</h3>
+        <p class="text-xs text-slate-300 mt-1">ज्ञान तथा स्मरण (Knowledge), बोध तथा समझ (Understanding), र उच्च दक्षता तथा प्रयोग (Higher Ability) को पूर्ण वर्गीकरण।</p>
+      </div>
+      <div class="flex items-center gap-2 shrink-0">
+        <span class="px-3 py-1.5 rounded-xl bg-white/10 text-xs font-bold text-indigo-200 border border-white/10">तह १ (६ प्रश्न)</span>
+        <span class="px-3 py-1.5 rounded-xl bg-white/10 text-xs font-bold text-sky-200 border border-white/10">तह २ (५ प्रश्न)</span>
+        <span class="px-3 py-1.5 rounded-xl bg-white/10 text-xs font-bold text-amber-200 border border-white/10">तह ३ (५ प्रश्न)</span>
+      </div>
+    </div>
+
+    <div id="c9u8-tiers-container" class="space-y-6">
+      <!-- Injected by renderC9U8Tiers() -->
+    </div>
+  </div>
+
+  <!-- TAB 4: SELF-ASSESSMENT QUIZ -->
+  <div id="c9u8-view-quiz" class="hidden space-y-6">
+    <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-indigo-100 text-indigo-800">आत्म-मूल्याङ्कन परीक्षा</span>
+          <span class="text-xs text-slate-500 font-medium">१० वस्तुगत बहुवैकल्पिक प्रश्नहरू</span>
+        </div>
+        <h3 class="text-lg md:text-xl font-black text-slate-800">सरल यन्त्र (Simple Machines) वस्तुगत परीक्षा</h3>
+      </div>
+      <!-- Score & Reset -->
+      <div class="flex items-center gap-3">
+        <div class="p-2.5 px-4 rounded-2xl bg-indigo-50 border border-indigo-100 text-center">
+          <div class="text-[10px] uppercase font-bold text-indigo-600">प्राप्ताङ्क (Score)</div>
+          <div id="c9u8-quiz-score" class="text-xl font-black text-indigo-900 font-mono">0 / 10</div>
+        </div>
+        <button onclick="resetQuizC9U8()" class="px-4 py-2.5 rounded-2xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition cursor-pointer min-h-[44px]">
+          पुन: सुरु गर्नुहोस् (Reset)
+        </button>
+      </div>
+    </div>
+
+    <!-- Quiz Questions Container -->
+    <div id="c9u8-quiz-container" class="space-y-4">
+      <!-- Injected by renderC9U8Quiz() -->
+    </div>
+  </div>
+</div>
+
+
+      <!-- Placeholder View for Units 9 to 19 -->
       <div id="c9-placeholder-view" class="hidden flex-1 min-w-0 flex flex-col items-center justify-center p-8 bg-slate-50 border border-slate-200 rounded-3xl text-center space-y-4 my-auto">
         <div class="w-16 h-16 rounded-3xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-3xl font-bold">
           🔬
         </div>
         <div>
           <h3 id="c9-placeholder-title" class="text-xl font-black text-slate-800">एकाइ ३: सूक्ष्मजीव</h3>
-          <p id="c9-placeholder-desc" class="text-xs md:text-sm text-slate-500 mt-1 max-w-md">यस एकाइको अध्ययन सामग्री तथा अभ्यास समाधान तयारीमा छ। हाल एकाइ १ देखि एकाइ ७ सम्म पूर्ण रूपमा उपलब्ध छन्।</p>
+          <p id="c9-placeholder-desc" class="text-xs md:text-sm text-slate-500 mt-1 max-w-md">यस एकाइको अध्ययन सामग्री तथा अभ्यास समाधान तयारीमा छ। हाल एकाइ १ देखि एकाइ ८ सम्म पूर्ण रूपमा उपलब्ध छन्।</p>
         </div>
         <div class="flex gap-2">
           <button onclick="switchGrade9Unit(1)" class="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-xs rounded-xl shadow-md transition cursor-pointer">
@@ -36537,6 +37147,7 @@ function switchGrade9Unit(unitNum) {
   const v5 = document.getElementById('c9-view-5');
   const v6 = document.getElementById('c9-view-6');
   const v7 = document.getElementById('c9-view-7');
+  const v8 = document.getElementById('c9-view-8');
   const vPlaceholder = document.getElementById('c9-placeholder-view');
 
   if (v1) v1.classList.add('hidden');
@@ -36546,6 +37157,7 @@ function switchGrade9Unit(unitNum) {
   if (v5) v5.classList.add('hidden');
   if (v6) v6.classList.add('hidden');
   if (v7) v7.classList.add('hidden');
+  if (v8) v8.classList.add('hidden');
   if (vPlaceholder) vPlaceholder.classList.add('hidden');
 
   if (unitNum === 1) {
@@ -36584,6 +37196,11 @@ function switchGrade9Unit(unitNum) {
     setTabC9U7('concepts');
     setLabModeC9U7('kinematics');
     if (typeof initC9U7 === 'function') initC9U7();
+  } else if (unitNum === 8) {
+    if (v8) v8.classList.remove('hidden');
+    setTabC9U8('concepts');
+    setLabModeC9U8('lever');
+    if (typeof initC9U8 === 'function') initC9U8();
   } else {
     if (vPlaceholder) {
       vPlaceholder.classList.remove('hidden');
@@ -46021,11 +46638,1243 @@ function initC9U7() {
   renderC9U7Quiz();
 }
 
+
+// =========================================================================
+// CLASS 9 SCIENCE: UNIT 8 - SIMPLE MACHINES (सरल यन्त्र) JAVASCRIPT
+// =========================================================================
+
+let activeC9U8Tab = 'concepts';
+let activeC9U8LabMode = 'lever';
+let activeC9U8LeverClass = 1;
+let activeC9U8PulleySystem = 1;
+let isC9U8PulleyFriction = false;
+let activeC9U8InclinedSubMode = 'plane';
+let activeC9U8ExerciseSec = 'sec-mcqs';
+
+let c9u8QuizAnswers = {};
+
+// -------------------------------------------------------------------------
+// Tab Switcher (concepts, exercises, tiers, quiz)
+// -------------------------------------------------------------------------
+function setTabC9U8(tab) {
+  activeC9U8Tab = tab;
+  playAudioC9U7('click');
+  const tabs = ['concepts', 'exercises', 'tiers', 'quiz'];
+  tabs.forEach(t => {
+    const view = document.getElementById(`c9u8-view-${t}`);
+    const btn = document.getElementById(`c9u8-tab-${t}`);
+    if (view) {
+      if (t === tab) view.classList.remove('hidden');
+      else view.classList.add('hidden');
+    }
+    if (btn) {
+      if (t === tab) {
+        btn.className = "px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl bg-indigo-600 text-white shadow-md font-bold transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer ring-2 ring-indigo-400/30 min-h-[44px]";
+      } else {
+        btn.className = "px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[44px]";
+      }
+    }
+  });
+
+  if (tab === 'concepts') {
+    renderCurrentC9U8Lab();
+  } else if (tab === 'exercises') {
+    renderC9U8Exercises();
+  } else if (tab === 'tiers') {
+    renderC9U8Tiers();
+  } else if (tab === 'quiz') {
+    renderC9U8Quiz();
+  }
+
+  const activeViewEl = document.getElementById(`c9u8-view-${tab}`);
+  if (activeViewEl && typeof typesetElement === 'function') {
+    typesetElement(activeViewEl);
+  }
+}
+
+// -------------------------------------------------------------------------
+// Lab Modes Switcher (lever, pulley, inclined)
+// -------------------------------------------------------------------------
+function setLabModeC9U8(mode) {
+  activeC9U8LabMode = mode;
+  playAudioC9U7('click');
+  const modes = ['lever', 'pulley', 'inclined'];
+  modes.forEach(m => {
+    const panel = document.getElementById(`c9u8-lab-mode-${m}`);
+    const btn = document.getElementById(`c9u8-btn-mode-${m}`);
+    if (panel) {
+      if (m === mode) panel.classList.remove('hidden');
+      else panel.classList.add('hidden');
+    }
+    if (btn) {
+      if (m === mode) {
+        btn.className = "flex-1 py-3 px-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-black text-xs md:text-sm shadow-md transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2 ring-2 ring-indigo-400/30";
+      } else {
+        btn.className = "flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700/80 font-bold text-xs md:text-sm transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2";
+      }
+    }
+  });
+
+  renderCurrentC9U8Lab();
+}
+
+function renderCurrentC9U8Lab() {
+  if (activeC9U8LabMode === 'lever') {
+    updateLeverSimC9U8();
+  } else if (activeC9U8LabMode === 'pulley') {
+    updatePulleySimC9U8();
+  } else if (activeC9U8LabMode === 'inclined') {
+    if (activeC9U8InclinedSubMode === 'plane') updateInclinedSimC9U8();
+    else updateWheelAxleSimC9U8();
+  }
+}
+
+// -------------------------------------------------------------------------
+// MODE 1: LEVER SIMULATOR FUNCTIONS
+// -------------------------------------------------------------------------
+function setLeverClassC9U8(cls) {
+  activeC9U8LeverClass = cls;
+  playAudioC9U7('click');
+  [1, 2, 3].forEach(c => {
+    const btn = document.getElementById(`c9u8-btn-lever-c${c}`);
+    if (btn) {
+      if (c === cls) {
+        btn.className = "px-3.5 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-xs cursor-pointer min-h-[38px]";
+      } else {
+        btn.className = "px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-indigo-900 cursor-pointer min-h-[38px]";
+      }
+    }
+  });
+
+  const infoEl = document.getElementById('c9u8-lever-class-info');
+  if (infoEl) {
+    if (cls === 1) {
+      infoEl.innerHTML = `
+        <div class="space-y-1">
+          <div class="font-bold text-indigo-900 flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded-md bg-indigo-600 text-white text-[11px]">पहिलो श्रेणीको उत्तोलक</span>
+            आधारबिन्दु (Fulcrum) लोड (L) र प्रयास (E) को बीचमा रहन्छ।
+          </div>
+          <div class="text-xs text-indigo-700">
+            उदाहरणहरू: कैंची (Scissors), ढिकी (Dhiki), सि-स (See-saw), चिम्टा/प्लाइअर्स (Pliers), घन (Crowbar)।
+          </div>
+        </div>
+        <div class="shrink-0 px-3 py-1.5 rounded-xl bg-white border border-indigo-200 text-xs font-bold text-indigo-800 shadow-2xs">
+          यान्त्रिक फाइदा (MA): १ भन्दा बढी, १ बराबर वा १ भन्दा कम हुन सक्छ
+        </div>`;
+    } else if (cls === 2) {
+      infoEl.innerHTML = `
+        <div class="space-y-1">
+          <div class="font-bold text-indigo-900 flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded-md bg-emerald-600 text-white text-[11px]">दोस्रो श्रेणीको उत्तोलक</span>
+            लोड (Load) आधारबिन्दु (F) र प्रयास (E) को बीचमा रहन्छ।
+          </div>
+          <div class="text-xs text-indigo-700">
+            उदाहरणहरू: ठेलागाडा (Wheelbarrow), कागती निचोर्ने साधन (Lemon Squeezer), सरौता (Nutcracker), बोतल ओपनर।
+          </div>
+        </div>
+        <div class="shrink-0 px-3 py-1.5 rounded-xl bg-white border border-indigo-200 text-xs font-bold text-emerald-800 shadow-2xs">
+          यान्त्रिक फाइदा (MA): सधैँ १ भन्दा बढी (MA > 1) — बल गुणक (Force Multiplier)
+        </div>`;
+    } else {
+      infoEl.innerHTML = `
+        <div class="space-y-1">
+          <div class="font-bold text-indigo-900 flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded-md bg-purple-600 text-white text-[11px]">तेस्रो श्रेणीको उत्तोलक</span>
+            प्रयास (Effort) आधारबिन्दु (F) र लोड (L) को बीचमा रहन्छ।
+          </div>
+          <div class="text-xs text-indigo-700">
+            उदाहरणहरू: चिम्टा (Tongs), फरुवा/बेल्चा (Shovel), झाडु (Broom), मानिसको हात, माछा मार्ने बल्छी।
+          </div>
+        </div>
+        <div class="shrink-0 px-3 py-1.5 rounded-xl bg-white border border-indigo-200 text-xs font-bold text-purple-800 shadow-2xs">
+          यान्त्रिक फाइदा (MA): सधैँ १ भन्दा कम (MA < 1) — गति गुणक (Speed Multiplier)
+        </div>`;
+    }
+  }
+
+  updateLeverSimC9U8();
+}
+
+function updateLeverSimC9U8() {
+  const loadSlider = document.getElementById('c9u8-slider-load');
+  const larmSlider = document.getElementById('c9u8-slider-larm');
+  const earmSlider = document.getElementById('c9u8-slider-earm');
+  if (!loadSlider || !larmSlider || !earmSlider) return;
+
+  const L = parseFloat(loadSlider.value);
+  const l1 = parseFloat(larmSlider.value);
+  const l2 = parseFloat(earmSlider.value);
+
+  document.getElementById('c9u8-val-load').textContent = `${L} N`;
+  document.getElementById('c9u8-val-larm').textContent = `${l1.toFixed(1)} m`;
+  document.getElementById('c9u8-val-earm').textContent = `${l2.toFixed(1)} m`;
+
+  const E = (L * l1) / l2;
+  const VR = l2 / l1;
+  const MA = L / E;
+  const efficiency = 100;
+
+  document.getElementById('c9u8-res-effort').textContent = `${E.toFixed(1)} N`;
+  document.getElementById('c9u8-res-ma').textContent = MA.toFixed(2);
+  document.getElementById('c9u8-res-vr').textContent = VR.toFixed(2);
+  document.getElementById('c9u8-res-eff').textContent = `${efficiency}%`;
+
+  const natureEl = document.getElementById('c9u8-res-nature');
+  if (natureEl) {
+    if (MA > 1.05) natureEl.textContent = 'बल गुणक (कम बलले धेरै लोड)';
+    else if (MA < 0.95) natureEl.textContent = 'गति गुणक (छिटो काम गर्न)';
+    else natureEl.textContent = 'दिशा परिवर्तक (MA ≈ 1)';
+  }
+
+  const loadMoment = L * l1;
+  const effortMoment = E * l2;
+  document.getElementById('c9u8-readout-load-moment').textContent = `${loadMoment.toFixed(1)} N·m`;
+  document.getElementById('c9u8-readout-effort-moment').textContent = `${effortMoment.toFixed(1)} N·m`;
+  document.getElementById('c9u8-readout-balance-diff').textContent = `0.0 N·m (सन्तुलित)`;
+
+  let fulcrumX = 300;
+  if (activeC9U8LeverClass === 1) {
+    const fraction = l1 / (l1 + l2);
+    fulcrumX = 50 + fraction * 500;
+  } else if (activeC9U8LeverClass === 2) {
+    fulcrumX = 80;
+  } else {
+    fulcrumX = 80;
+  }
+
+  const svgFulcrum = document.getElementById('c9u8-svg-fulcrum');
+  const svgPivot = document.getElementById('c9u8-svg-fulcrum-pivot');
+  const svgFText = document.getElementById('c9u8-svg-fulcrum-text');
+  if (svgFulcrum) {
+    svgFulcrum.setAttribute('points', `${fulcrumX},100 ${fulcrumX - 20},140 ${fulcrumX + 20},140`);
+  }
+  if (svgPivot) {
+    svgPivot.setAttribute('cx', fulcrumX);
+  }
+  if (svgFText) {
+    svgFText.setAttribute('x', fulcrumX);
+  }
+
+  const svgBeamGroup = document.getElementById('c9u8-svg-beam-group');
+  if (svgBeamGroup) {
+    svgBeamGroup.setAttribute('transform', `rotate(0, ${fulcrumX}, 100)`);
+  }
+
+  const loadBox = document.getElementById('c9u8-svg-load-box');
+  const loadText = document.getElementById('c9u8-svg-load-text');
+  const effortBox = document.getElementById('c9u8-svg-effort-box');
+  const effortText = document.getElementById('c9u8-svg-effort-text');
+
+  if (activeC9U8LeverClass === 1) {
+    if (loadBox) loadBox.setAttribute('x', 70);
+    if (loadText) loadText.setAttribute('x', 90);
+    if (effortBox) effortBox.setAttribute('x', 490);
+    if (effortText) effortText.setAttribute('x', 510);
+  } else if (activeC9U8LeverClass === 2) {
+    if (loadBox) loadBox.setAttribute('x', 270);
+    if (loadText) loadText.setAttribute('x', 290);
+    if (effortBox) effortBox.setAttribute('x', 490);
+    if (effortText) effortText.setAttribute('x', 510);
+  } else {
+    if (loadBox) loadBox.setAttribute('x', 490);
+    if (loadText) loadText.setAttribute('x', 510);
+    if (effortBox) effortBox.setAttribute('x', 270);
+    if (effortText) effortText.setAttribute('x', 290);
+  }
+}
+
+// -------------------------------------------------------------------------
+// MODE 2: PULLEY SYSTEMS SIMULATOR
+// -------------------------------------------------------------------------
+function setPulleySystemC9U8(num) {
+  activeC9U8PulleySystem = num;
+  playAudioC9U7('click');
+  [1, 2, 3, 4, 5].forEach(n => {
+    const btn = document.getElementById(`c9u8-btn-psys-${n}`);
+    if (btn) {
+      if (n === num) {
+        btn.className = "p-3 rounded-2xl border text-center transition cursor-pointer bg-cyan-50 border-cyan-300 text-cyan-900 font-bold min-h-[44px]";
+      } else {
+        btn.className = "p-3 rounded-2xl border text-center transition cursor-pointer bg-white border-slate-200 hover:bg-slate-50 text-slate-700 min-h-[44px]";
+      }
+    }
+  });
+
+  updatePulleySimC9U8();
+}
+
+function togglePulleyFrictionC9U8() {
+  isC9U8PulleyFriction = !isC9U8PulleyFriction;
+  playAudioC9U7('click');
+  const btn = document.getElementById('c9u8-btn-pulley-friction');
+  if (btn) {
+    if (isC9U8PulleyFriction) {
+      btn.className = "px-3.5 py-1.5 rounded-xl text-xs font-bold bg-amber-500 text-white transition cursor-pointer min-h-[38px]";
+      btn.textContent = "घर्षण सहित (व्यवहारिक अवस्था, ७५%)";
+    } else {
+      btn.className = "px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-200 text-slate-700 transition cursor-pointer min-h-[38px]";
+      btn.textContent = "शून्य घर्षण (आदर्श अवस्था, १००%)";
+    }
+  }
+  updatePulleySimC9U8();
+}
+
+function updatePulleySimC9U8() {
+  const loadSlider = document.getElementById('c9u8-slider-pulley-load');
+  if (!loadSlider) return;
+
+  const L = parseFloat(loadSlider.value);
+  document.getElementById('c9u8-val-pulley-load').textContent = `${L} N`;
+
+  const VR = activeC9U8PulleySystem;
+  let efficiency = isC9U8PulleyFriction ? 75 : 100;
+  let MA = (VR * efficiency) / 100;
+  let E = L / MA;
+
+  document.getElementById('c9u8-pulley-calc-vr').textContent = VR;
+  document.getElementById('c9u8-pulley-calc-ma').textContent = MA.toFixed(2);
+  document.getElementById('c9u8-pulley-calc-effort').textContent = `${E.toFixed(1)} N`;
+  document.getElementById('c9u8-pulley-calc-eff').textContent = `${efficiency}%`;
+
+  const pulleyTag = document.getElementById('c9u8-pulley-tag');
+  if (pulleyTag) pulleyTag.textContent = `${activeC9U8PulleySystem} घिर्नी प्रणाली • VR = ${VR}`;
+
+  const edistEl = document.getElementById('c9u8-readout-edist');
+  if (edistEl) edistEl.textContent = `${VR} m तल`;
+
+  const elossEl = document.getElementById('c9u8-readout-eloss');
+  if (elossEl) {
+    const inputWork = E * VR * 1;
+    const outputWork = L * 1;
+    const loss = isC9U8PulleyFriction ? (inputWork - outputWork) : 0;
+    elossEl.textContent = `${loss.toFixed(1)} J`;
+  }
+
+  const container = document.getElementById('c9u8-pulley-dynamic-elements');
+  if (!container) return;
+
+  if (activeC9U8PulleySystem === 1) {
+    container.innerHTML = `
+      <circle cx="200" cy="70" r="28" fill="#1e293b" stroke="#38bdf8" stroke-width="3" />
+      <circle cx="200" cy="70" r="6" fill="#f8fafc" />
+      <line x1="172" y1="70" x2="172" y2="170" stroke="#f59e0b" stroke-width="2.5" />
+      <line x1="228" y1="70" x2="228" y2="150" stroke="#f59e0b" stroke-width="2.5" />
+      <rect x="152" y="170" width="40" height="35" rx="5" fill="#ea580c" stroke="#f97316" stroke-width="2" />
+      <text x="172" y="192" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">L=${L}N</text>
+      <line x1="228" y1="150" x2="228" y2="190" stroke="#0284c7" stroke-width="3" />
+      <rect x="210" y="190" width="36" height="22" rx="4" fill="#0284c7" />
+      <text x="228" y="205" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">E=${E.toFixed(0)}N</text>
+    `;
+  } else {
+    container.innerHTML = `
+      <circle cx="185" cy="65" r="24" fill="#1e293b" stroke="#38bdf8" stroke-width="3" />
+      <circle cx="215" cy="65" r="24" fill="#1e293b" stroke="#38bdf8" stroke-width="3" />
+      <circle cx="185" cy="65" r="5" fill="#ffffff" />
+      <circle cx="215" cy="65" r="5" fill="#ffffff" />
+      <circle cx="200" cy="140" r="24" fill="#1e293b" stroke="#a855f7" stroke-width="3" />
+      <circle cx="200" cy="140" r="5" fill="#ffffff" />
+      <line x1="161" y1="65" x2="176" y2="140" stroke="#f59e0b" stroke-width="2.5" />
+      <line x1="200" y1="65" x2="200" y2="140" stroke="#f59e0b" stroke-width="2.5" />
+      <line x1="239" y1="65" x2="224" y2="140" stroke="#f59e0b" stroke-width="2.5" />
+      <line x1="200" y1="164" x2="200" y2="185" stroke="#94a3b8" stroke-width="3" />
+      <rect x="175" y="185" width="50" height="35" rx="5" fill="#ea580c" stroke="#f97316" stroke-width="2" />
+      <text x="200" y="206" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">L=${L}N</text>
+      <line x1="239" y1="65" x2="270" y2="170" stroke="#0284c7" stroke-width="2.5" />
+      <rect x="252" y="170" width="36" height="22" rx="4" fill="#0284c7" />
+      <text x="270" y="185" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">E=${E.toFixed(0)}N</text>
+    `;
+  }
+}
+
+// -------------------------------------------------------------------------
+// MODE 3: INCLINED PLANE & WHEEL-AXLE FUNCTIONS
+// -------------------------------------------------------------------------
+function setInclinedSubModeC9U8(sub) {
+  activeC9U8InclinedSubMode = sub;
+  playAudioC9U7('click');
+  const btnPlane = document.getElementById('c9u8-btn-sub-plane');
+  const btnWheel = document.getElementById('c9u8-btn-sub-wheel');
+  const pPlane = document.getElementById('c9u8-submode-plane');
+  const pWheel = document.getElementById('c9u8-submode-wheel');
+
+  if (sub === 'plane') {
+    if (btnPlane) btnPlane.className = "px-3.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-600 text-white shadow-xs cursor-pointer min-h-[38px]";
+    if (btnWheel) btnWheel.className = "px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-emerald-900 cursor-pointer min-h-[38px]";
+    if (pPlane) pPlane.classList.remove('hidden');
+    if (pWheel) pWheel.classList.add('hidden');
+    updateInclinedSimC9U8();
+  } else {
+    if (btnPlane) btnPlane.className = "px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-emerald-900 cursor-pointer min-h-[38px]";
+    if (btnWheel) btnWheel.className = "px-3.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-600 text-white shadow-xs cursor-pointer min-h-[38px]";
+    if (pPlane) pPlane.classList.add('hidden');
+    if (pWheel) pWheel.classList.remove('hidden');
+    updateWheelAxleSimC9U8();
+  }
+}
+
+function updateInclinedSimC9U8() {
+  const lenSlider = document.getElementById('c9u8-slider-plane-len');
+  const hSlider = document.getElementById('c9u8-slider-plane-h');
+  const loadSlider = document.getElementById('c9u8-slider-plane-load');
+  if (!lenSlider || !hSlider || !loadSlider) return;
+
+  const l = parseFloat(lenSlider.value);
+  let h = parseFloat(hSlider.value);
+  if (h >= l) {
+    h = l - 0.5;
+    hSlider.value = h;
+  }
+  const L = parseFloat(loadSlider.value);
+
+  document.getElementById('c9u8-val-plane-len').textContent = `${l.toFixed(1)} m`;
+  document.getElementById('c9u8-val-plane-h').textContent = `${h.toFixed(1)} m`;
+  document.getElementById('c9u8-val-plane-load').textContent = `${L} N`;
+
+  const VR = l / h;
+  const E_ideal = L / VR;
+  const sinTheta = h / l;
+  const angleDeg = Math.asin(sinTheta) * (180 / Math.PI);
+
+  document.getElementById('c9u8-plane-angle-tag').textContent = `ढलान कोण θ = ${angleDeg.toFixed(1)}°`;
+  document.getElementById('c9u8-plane-readout-vr').textContent = VR.toFixed(2);
+  document.getElementById('c9u8-plane-readout-eff').textContent = `${E_ideal.toFixed(1)} N`;
+
+  const svgSlope = document.getElementById('c9u8-svg-slope');
+  const svgHText = document.getElementById('c9u8-svg-height-text');
+  const svgLText = document.getElementById('c9u8-svg-length-text');
+  if (svgSlope) {
+    const topY = 170 - (h / 5.0) * 120;
+    svgSlope.setAttribute('points', `50,170 430,170 430,${topY}`);
+    if (svgHText) svgHText.textContent = `h = ${h.toFixed(1)} m`;
+    if (svgLText) svgLText.textContent = `l = ${l.toFixed(1)} m`;
+  }
+}
+
+function updateWheelAxleSimC9U8() {
+  const rSlider = document.getElementById('c9u8-slider-wheel-R');
+  const smallRSlider = document.getElementById('c9u8-slider-wheel-r');
+  const loadSlider = document.getElementById('c9u8-slider-wheel-load');
+  if (!rSlider || !smallRSlider || !loadSlider) return;
+
+  const R = parseFloat(rSlider.value);
+  const r = parseFloat(smallRSlider.value);
+  const L = parseFloat(loadSlider.value);
+
+  document.getElementById('c9u8-val-wheel-R').textContent = `${R} cm`;
+  document.getElementById('c9u8-val-wheel-r').textContent = `${r} cm`;
+  document.getElementById('c9u8-val-wheel-load').textContent = `${L} N`;
+
+  const VR = R / r;
+  const E_ideal = L / VR;
+
+  document.getElementById('c9u8-wheel-tag').textContent = `VR = ${VR.toFixed(1)}`;
+  document.getElementById('c9u8-wheel-readout-vr').textContent = VR.toFixed(2);
+  document.getElementById('c9u8-wheel-readout-eff').textContent = `${E_ideal.toFixed(1)} N`;
+}
+
+// -------------------------------------------------------------------------
+// TAB 2: EXERCISES DATA AND RENDERING
+// -------------------------------------------------------------------------
+const c9u8ExercisesData = {
+  mcqs: [
+    {
+      q: "१. कुनै यन्त्रमा लोड (L) र प्रयास (E) को अनुपातलाई के भनिन्छ?",
+      options: ["(क) गति अनुपात (Velocity Ratio)", "(ख) यान्त्रिक फाइदा (Mechanical Advantage)", "(ग) कार्यक्षमता (Efficiency)", "(घ) इनपुट कार्य (Input Work)"],
+      correct: 1,
+      reason: "यान्त्रिक फाइदा (MA) भनेको लोड र प्रयासको अनुपात हो: \\(MA = \\frac{L}{E}\\)।"
+    },
+    {
+      q: "२. दोस्रो श्रेणीको उत्तोलकको यान्त्रिक फाइदा (MA) सधैँ कस्तो हुन्छ?",
+      options: ["(क) १ भन्दा कम", "(ख) १ बराबर", "(ग) सधैँ १ भन्दा बढी (MA > 1)", "(घ) शून्य"],
+      correct: 2,
+      reason: "दोस्रो श्रेणीको उत्तोलकमा लोड बीचमा हुने भएकाले प्रयास भुजा सधैँ लोड भुजाभन्दा लामो हुन्छ (\\(l_2 > l_1\\)), त्यसैले \\(MA > 1\\) हुन्छ।"
+    },
+    {
+      q: "३. एकल स्थिर घिर्नीको गति अनुपात (Velocity Ratio) कति हुन्छ?",
+      options: ["(क) १", "(ख) २", "(ग) ३", "(घ) ४"],
+      correct: 0,
+      reason: "एकल स्थिर घिर्नीमा प्रयासले पार गरेको दूरी र लोडको दूरी बराबर हुन्छ (\\(d_E = d_L\\)), त्यसैले \\(VR = 1\\) हुन्छ।"
+    },
+    {
+      q: "४. कुनै पनि व्यवहारिक यन्त्रको कार्यक्षमता १००% हुन नसक्नुको मुख्य कारण कुन हो?",
+      options: ["(क) वायुमण्डलीय चाप", "(ख) घर्षण र गतिशील भागहरूको तौल", "(ग) गुरुत्वाकर्षण बल नहुनु", "(घ) लोड धेरै हुनु"],
+      correct: 1,
+      reason: "यन्त्रका पुर्जाहरू बीचको घर्षण र यन्त्रको आफ्नै तौलका कारण केही इनपुट ऊर्जा ताप र ध्वनिमा खेर जान्छ।"
+    },
+    {
+      q: "५. चिम्टा (Tongs) र मानिसको हात कुन श्रेणीको उत्तोलकका उदाहरण हुन्?",
+      options: ["(क) पहिलो श्रेणी", "(ख) दोस्रो श्रेणी", "(ग) तेस्रो श्रेणी", "(घ) चौथो श्रेणी"],
+      correct: 2,
+      reason: "चिम्टा र मानिसको हातमा प्रयास (Effort) आधारबिन्दु र लोडको बीचमा पर्ने हुनाले यी तेस्रो श्रेणीका उत्तोलक हुन्।"
+    },
+    {
+      q: "६. \\(l\\) लम्बाइ र \\(h\\) उचाइ भएको छड्के सतहको गति अनुपात (VR) निकाल्ने सूत्र कुन हो?",
+      options: ["(क) \\(VR = l \\times h\\)", "(ख) \\(VR = \\frac{l}{h}\\)", "(ग) \\(VR = \\frac{h}{l}\\)", "(घ) \\(VR = l + h\\)"],
+      correct: 1,
+      reason: "छड्के सतहमा प्रयासले पार गरेको दूरी लम्बाइ (\\(l\\)) र लोड उठेको उचाइ (\\(h\\)) हुने भएकाले \\(VR = \\frac{l}{h}\\) हुन्छ।"
+    },
+    {
+      q: "७. पाङ्ग्राको अर्धव्यास \\(R = 30\\text{ cm}\\) र बिँडको अर्धव्यास \\(r = 6\\text{ cm}\\) भएको पाङ्ग्रा र बिँडको गति अनुपात कति हुन्छ?",
+      options: ["(क) ५", "(ख) २४", "(ग) १८०", "(घ) ०.२"],
+      correct: 0,
+      reason: "\\(VR = \\frac{R}{r} = \\frac{30}{6} = 5\\)।"
+    },
+    {
+      q: "८. आघूर्णको सिद्धान्त (Principle of Moments) अनुसार कुन समीकरण सही छ?",
+      options: ["(क) \\(L \\times E = l_1 \\times l_2\\)", "(ख) \\(L \\times l_1 = E \\times l_2\\)", "(ग) \\(L + l_1 = E + l_2\\)", "(घ) \\(\\frac{L}{l_1} = \\frac{E}{l_2}\\)"],
+      correct: 1,
+      reason: "सन्तुलन अवस्थामा: क्लकवाइज आघूर्ण = एन्टी-क्लकवाइज आघूर्ण अर्थात् \\(L \\times l_1 = E \\times l_2\\)।"
+    },
+    {
+      q: "९. ४ वटा घिर्नी भएको ब्लक र ट्याकल प्रणालीको गति अनुपात (VR) कति हुन्छ?",
+      options: ["(क) २", "(ख) ३", "(ग) ४", "(घ) ८"],
+      correct: 2,
+      reason: "घिर्नी प्रणालीमा गति अनुपात प्रयोग गरिएका घिर्नीहरूको कुल संख्या (\\(n\\)) सँग बराबर हुन्छ, अर्थात् \\(VR = 4\\)।"
+    },
+    {
+      q: "१०. यन्त्रको कार्यक्षमता (Efficiency, \\(\\eta\\)) पत्ता लगाउने सही सूत्र कुन हो?",
+      options: ["(क) \\(\\eta = \\frac{VR}{MA} \\times 100\\%\\)", "(ख) \\(\\eta = \\frac{MA}{VR} \\times 100\\%\\)", "(ग) \\(\\eta = MA \\times VR\\)", "(घ) \\(\\eta = \\frac{E}{L} \\times 100\\%\\)"],
+      correct: 1,
+      reason: "कार्यक्षमता भनेको आउटपुट कार्य र इनपुट कार्यको प्रतिशत अनुपात हो, अर्थात् \\(\\eta = \\frac{MA}{VR} \\times 100\\%\\)।"
+    }
+  ],
+  diff: [
+    {
+      title: "१. पहिलो, दोस्रो र तेस्रो श्रेणीको उत्तोलक बीचको तुलना (Comparison of Lever Classes)",
+      table: [
+        ["तुलनाको आधार", "पहिलो श्रेणीको उत्तोलक", "दोस्रो श्रेणीको उत्तोलक", "तेस्रो श्रेणीको उत्तोलक"],
+        ["मध्य भाग", "आधारबिन्दु (F) बीचमा हुन्छ।", "लोड (L) बीचमा हुन्छ।", "प्रयास (E) बीचमा हुन्छ।"],
+        ["यान्त्रिक फाइदा (MA)", "१ भन्दा बढी, बराबर वा कम हुन सक्छ।", "सधैँ १ भन्दा बढी हुन्छ (MA > 1)।", "सधैँ १ भन्दा कम हुन्छ (MA < 1)।"],
+        ["मुख्य काम", "बलको दिशा परिवर्तन गर्न वा बल बढाउन।", "कम बलले धेरै लोड उचाल्न (बल गुणक)।", "कामको गति बढाउन (गति गुणक)।"],
+        ["दैनिक उदाहरण", "कैंची, ढिकी, सि-स, प्लाइअर्स, घन।", "ठेलागाडा, कागती निचोर्ने, सरौता।", "चिम्टा, झाडु, माछा मार्ने बल्छी, हात।"]
+      ]
+    },
+    {
+      title: "२. यान्त्रिक फाइदा (MA) र गति अनुपात (VR) बीचको फरक",
+      table: [
+        ["विशेषता", "यान्त्रिक फाइदा (Mechanical Advantage - MA)", "गति अनुपात (Velocity Ratio - VR)"],
+        ["परिभाषा", "लोड र प्रयासको अनुपातलाई MA भनिन्छ (\\(MA = \\frac{L}{E}\\))।", "प्रयासको दूरी र लोडको दूरीको अनुपातलाई VR भनिन्छ (\\(VR = \\frac{d_E}{d_L}\\))।"],
+        ["घर्षणको असर", "घर्षण बढेमा MA को मान घट्छ।", "घर्षणले VR को मानमा कुनै असर पार्दैन (स्थिर रहन्छ)।"],
+        ["मान", "व्यवहारिक यन्त्रमा MA सधैँ VR भन्दा कम हुन्छ (\\(MA < VR\\))।", "व्यवहारिक यन्त्रमा VR सधैँ MA भन्दा बढी हुन्छ (\\(VR > MA\\))।"],
+        ["एकाइ", "दुवै समान भौतिक राशिको अनुपात भएकाले एकाइविहीन हुन्छ।", "दुवै समान लम्बाइको अनुपात भएकाले एकाइविहीन हुन्छ।"]
+      ]
+    },
+    {
+      title: "३. आदर्श यन्त्र (Ideal Machine) र व्यवहारिक यन्त्र (Practical Machine)",
+      table: [
+        ["आधार", "आदर्श यन्त्र (Ideal Machine)", "व्यवहारिक यन्त्र (Practical Machine)"],
+        ["घर्षण", "घर्षण र पुर्जाको तौल शून्य मानिन्छ।", "घर्षण र पुर्जाहरूको तौल उपस्थित हुन्छ।"],
+        ["कार्यक्षमता", "कार्यक्षमता १००% हुन्छ (\\(\\eta = 100\\%\\))।", "कार्यक्षमता सधैँ १००% भन्दा कम हुन्छ (\\(\\eta < 100\\%\\))।"],
+        ["MA र VR सम्बन्ध", "यान्त्रिक फाइदा र गति अनुपात बराबर हुन्छ (\\(MA = VR\\))।", "यान्त्रिक फाइदा गति अनुपातभन्दा कम हुन्छ (\\(MA < VR\\))।"],
+        ["कार्यको तुलना", "लागत कार्य = उत्पादित कार्य (Input = Output)।", "लागत कार्य > उत्पादित कार्य (Input > Output)।"]
+      ]
+    },
+    {
+      title: "४. एकल स्थिर घिर्नी र एकल चल घिर्नी",
+      table: [
+        ["विशेषता", "एकल स्थिर घिर्नी (Single Fixed Pulley)", "एकल चल घिर्नी (Single Movable Pulley)"],
+        ["अक्षको स्थिति", "अक्ष कुनै स्थिर आधारमा बाँधिएको हुन्छ।", "लोडसँगै घिर्नीको अक्ष पनि माथि-तल सर्छ।"],
+        ["गति अनुपात", "गति अनुपात सधैँ १ हुन्छ (\\(VR = 1\\))।", "गति अनुपात सधैँ २ हुन्छ (\\(VR = 2\\))।"],
+        ["बलको प्रभाव", "बल बढाउँदैन, केवल बलको दिशा परिवर्तन गर्छ।", "बललाई दोब्बर बनाउँछ (आधा बलले उचाल्न सकिन्छ)।"]
+      ]
+    },
+    {
+      title: "५. इनपुट कार्य (लागत कार्य) र आउटपुट कार्य (उत्पादित कार्य)",
+      table: [
+        ["आधार", "इनपुट कार्य (Input Work)", "आउटपुट कार्य (Output Work)"],
+        ["परिभाषा", "यन्त्रमा प्रयास बलद्वारा गरिएको कार्यलाई इनपुट कार्य भनिन्छ।", "यन्त्रद्वारा लोडमाथि गरिएको उपयोगी कार्यलाई आउटपुट कार्य भनिन्छ।"],
+        ["सूत्र", "\\(\\text{Input Work} = E \\times d_E\\)", "\\(\\text{Output Work} = L \\times d_L\\)"],
+        ["परिमाण", "सधैँ आउटपुट कार्यभन्दा बढी वा बराबर हुन्छ।", "घर्षणका कारण सधैँ इनपुट कार्यभन्दा कम हुन्छ।"]
+      ]
+    }
+  ],
+  reasons: [
+    {
+      q: "१. कुनै पनि व्यवहारिक यन्त्रको कार्यक्षमता १००% हुन सक्दैन, किन? (Why cannot the efficiency of a practical machine be 100%?)",
+      a: "कुनै पनि यन्त्र पूर्ण रूपमा घर्षणरहित हुन सक्दैन। यन्त्र सञ्चालन गर्दा यन्त्रका गतिशील पुर्जाहरू बीचको घर्षण (Friction) विरुद्ध कार्य गर्नुपर्छ र यन्त्रका गतिशील भागहरूको आफ्नै तौल पनि उचाल्नुपर्ने हुन्छ। यसले गर्दा प्रयोग गरिएको इनपुट ऊर्जाको केही अंश ताप र ध्वनि ऊर्जामा खेर जान्छ, जसले गर्दा सधैँ उत्पादित कार्य (Output Work) लागत कार्य (Input Work) भन्दा कम हुन्छ। त्यसैले कुनै पनि व्यवहारिक यन्त्रको कार्यक्षमता १००% हुन सक्दैन।"
+    },
+    {
+      q: "२. पहाडी भेगमा बाटो सिधा नबनाई किन घुमाउरो (छड्के सतह) बनाइन्छ? (Why are roads in hilly areas winding rather than straight?)",
+      a: "पहाडको सिधा ठाडो बाटोमा उचाइ छोटो भए पनि उकालोको कोण धेरै हुन्छ, जसले गर्दा गाडीहरूलाई माथि चढ्न धेरै प्रयास बल (Effort) आवश्यक पर्छ। तर घुमाउरो बाटो बनाउँदा छड्के सतहको लम्बाइ (\\(l\\)) बढ्छ र उचाइ (\\(h\\)) बिस्तारै चढिन्छ। छड्के सतहको गति अनुपात \\(VR = \\frac{l}{h}\\) हुने भएकाले लम्बाइ बढ्दा गति अनुपात बढ्छ र गाडीलाई उकालो चढ्न थोरै बल (Effort) लगाए पुग्छ। यसरी काम सजिलो बनाउन पहाडमा घुमाउरो बाटो बनाइन्छ।"
+    },
+    {
+      q: "३. दोस्रो श्रेणीको उत्तोलकलाई बल गुणक (Force Multiplier) भनिन्छ, किन?",
+      a: "दोस्रो श्रेणीको उत्तोलकमा लोड (Load) आधारबिन्दु र प्रयासको बीचमा पर्दछ। यसले गर्दा प्रयास भुजा (\\(l_2\\)) सधैँ लोड भुजा (\\(l_1\\)) भन्दा लामो हुन्छ (\\(l_2 > l_1\\))। फलस्वरूप गति अनुपात र यान्त्रिक फाइदा सधैँ १ भन्दा बढी हुन्छ (\\(MA > 1\\))। यसको अर्थ थोरै प्रयास बल लगाएर पनि धेरै लोड सजिलै उचाल्न सकिन्छ। त्यसैले यसलाई 'बल गुणक' भनिन्छ।"
+    },
+    {
+      q: "४. तेस्रो श्रेणीको उत्तोलकको MA सधैँ १ भन्दा कम (MA < 1) भए पनि यसको प्रयोग किन गरिन्छ?",
+      a: "तेस्रो श्रेणीको उत्तोलकमा प्रयास भुजा लोड भुजाभन्दा छोटो हुने भएकाले \\(MA < 1\\) हुन्छ र लोडभन्दा बढी बल लगाउनुपर्छ। तर यस उत्तोलकमा प्रयासले थोरै दूरी पार गर्दा पनि लोड धेरै दूरीसम्म छिटो गतिमा सर्छ। अर्थात् यसले कामको गति र विस्थापन बढाउँछ। त्यसैले कामलाई छिटो र सुविधाजनक रूपमा सम्पन्न गर्न (जस्तै: चिम्टाले तातो कोइला टिप्न, झाडुले भुइँ सफा गर्न) तेस्रो श्रेणीको उत्तोलक प्रयोग गरिन्छ।"
+    },
+    {
+      q: "५. एकल स्थिर घिर्नीको यान्त्रिक फाइदा १ भन्दा बढी नभए पनि इनारबाट पानी तान्न यसकै प्रयोग किन गरिन्छ?",
+      a: "एकल स्थिर घिर्नीले लोड उचाल्न आवश्यक बलको परिमाण घटाउँदैन (\\(MA \\le 1\\))। तर यसले बल लगाउने दिशालाई उल्ट्याइदिन्छ — अर्थात् पानी उचाल्न माथितिर तान्नुको सट्टा आफ्नै शरीरको तौललाई उपयोग गर्दै सजिलैसँग तलतिर बल लगाउन सकिन्छ। तलतिर बल लगाउनु गुरुत्वाकर्षणका कारण शारीरिक रूपमा धेरै सुविधाजनक र सुरक्षित हुने भएकाले इनारबाट पानी तान्न एकल स्थिर घिर्नीको प्रयोग गरिन्छ।"
+    },
+    {
+      q: "६. यन्त्रका गतिशील भागहरूमा नियमित तेल वा ग्रिज (Lubricant) हाल्नुको कारण के हो?",
+      a: "यन्त्रका गतिशील पुर्जाहरू एक-आपसमा रगडिँदा अत्यधिक घर्षण बल उत्पन्न हुन्छ, जसले गर्दा पुर्जाहरू खिइन्छन् र इनपुट ऊर्जा तापको रूपमा खेर गएर कार्यक्षमता घट्छ। तेल वा ग्रिज हाल्दा पुर्जाहरू बीच चिल्लो तह बनेर घर्षण उल्लेख्य रूपमा घट्छ, पुर्जाहरू खिइनबाट जोगिन्छन्, र यन्त्रको कार्यक्षमता (Efficiency) र आयु वृद्धि हुन्छ।"
+    }
+  ],
+  qa: [
+    {
+      q: "१. सरल यन्त्र भनेको के हो? यसका कुनै चारवटा मुख्य फाइदाहरू उल्लेख गर्नुहोस्।",
+      a: "कुनै बाह्य ऊर्जाको जटिल रूपान्तरण नगरी हामीले लगाएको बललाई सुविधाजनक दिशामा मोडेर, बलको परिमाण बढाएर वा कामको गति बढाएर कामलाई सजिलो, छिटो र प्रभावकारी बनाउने साधारण बनावट भएका उपकरणलाई <b>सरल यन्त्र (Simple Machine)</b> भनिन्छ।<br><br><b>चार मुख्य फाइदाहरू:</b><br>१. थोरै प्रयास बल लगाएर धेरै लोड उचाल्न सकिन्छ (बल गुणकका रूपमा)।<br>२. बल लगाउने दिशालाई सुविधाजनक बनाउन सकिन्छ (जस्तै: घिर्नीमा तल तानेर माथि उचाल्ने)।<br>३. काम गर्ने गति र विस्थापन बढाउन सकिन्छ।<br>४. जोखिमपूर्ण कामहरू सुरक्षित र सजिलैसँग सम्पन्न गर्न सकिन्छ।"
+    },
+    {
+      q: "२. उत्तोलकको सिद्धान्त (Principle of Moments) के हो? यसको सूत्र प्रमाणित गर्नुहोस्।",
+      a: "उत्तोलकको सन्तुलन अवस्थामा आधारबिन्दुको वरिपरि लोडद्वारा उत्पन्न हुने घडीको दिशा विपरितको आघूर्ण (Anticlockwise Moment) र प्रयासद्वारा उत्पन्न हुने घडीको दिशाको आघूर्ण (Clockwise Moment) बराबर हुन्छ। यसैलाई <b>उत्तोलकको सिद्धान्त</b> भनिन्छ।<br><br>सूत्र: $$\\text{लोड} \\times \\text{लोड भुजा} = \\text{प्रयास} \\times \\text{प्रयास भुजा}$$ $$L \\times l_1 = E \\times l_2$$"
+    },
+    {
+      q: "३. गति अनुपात (VR), यान्त्रिक फाइदा (MA), र कार्यक्षमता (\\(\\eta\\)) बीचको सम्बन्ध प्रमाणित गर्नुहोस्।",
+      a: "कार्यक्षमताको परिभाषा अनुसार: $$\\eta = \\frac{\\text{आउटपुट कार्य}}{\\text{इनपुट कार्य}} \\times 100\\%$$ आउटपुट कार्य \\(= L \\times d_L\\) र इनपुट कार्य \\(= E \\times d_E\\) राख्दा: $$\\eta = \\frac{L \\times d_L}{E \\times d_E} \\times 100\\% = \\left(\\frac{L}{E}\\right) \\times \\left(\\frac{d_L}{d_E}\\right) \\times 100\\%$$ यहाँ \\(\\frac{L}{E} = MA\\) र \\(\\frac{d_E}{d_L} = VR \\implies \\frac{d_L}{d_E} = \\frac{1}{VR}\\) भएकाले: $$\\mathbf{\\eta = \\frac{MA}{VR} \\times 100\\%}$$ प्रमाणित भयो।"
+    },
+    {
+      q: "४. घिर्नी प्रणाली (Block and Tackle) मा गति अनुपात घिर्नीको संख्यासँग कसरी बराबर हुन्छ?",
+      a: "ब्लक र ट्याकल प्रणालीमा जतिवटा घिर्नीहरू प्रयोग गरिन्छ, लोडलाई उचाल्न त्यति नै वटा डोरीका खण्डहरूले लोडलाई समातेका हुन्छन्। यदि लोडलाई \\(x\\) मिटर माथि उचाल्नुपर्यो भने प्रत्येक डोरीको खण्ड \\(x\\) मिटरले छोटो हुनुपर्छ। त्यसैले स्वतन्त्र छेउमा प्रयासले \\(n \\times x\\) मिटर दूरी तान्नुपर्छ।<br>अतः गति अनुपात: $$VR = \\frac{\\text{प्रयासको दूरी}}{\\text{लोडको दूरी}} = \\frac{n \\times x}{x} = n$$ यसरी घिर्नी प्रणालीको गति अनुपात घिर्नीहरूको संख्या (\\(n\\)) सँग बराबर हुन्छ।"
+    },
+    {
+      q: "५. छड्के सतह (Inclined Plane), पेच (Screw), र फेसो (Wedge) बीचको अन्तरसम्बन्ध व्याख्या गर्नुहोस्।",
+      a: "यी तीनवटै यन्त्रहरू मूलतः <b>छड्के सतहको सिद्धान्त</b>मा आधारित हुन्छन्:<br>१. <b>छड्के सतह:</b> तेर्सो जमिनसँग कुनै निश्चित कोण बनाएर राखिएको भिरालो सतह हो।<br>२. <b>पेच (Screw):</b> एउटा धातुको बेलनाकार डन्डीमा छड्के सतहलाई घुमाउरो रूपमा बेरेर थ्रेड (Threads) बनाइएको यन्त्र हो।<br>३. <b>फेसो (Wedge):</b> दुईवटा छड्के सतहहरूलाई एक-आपसमा आधार जोडेर धारिलो टुप्पो बनाइएको यन्त्र हो (जस्तै: बन्चरो, चक्कु)।<br>अतः पेच र फेसो दुवै छड्के सतहका परिष्कृत रूप हुन्।"
+    },
+    {
+      q: "६. यन्त्रको कार्यक्षमता बढाउन के-कस्ता उपायहरू अपनाउन सकिन्छ?",
+      a: "यन्त्रको कार्यक्षमता बढाउने प्रमुख उपायहरू निम्नानुसार छन्:<br>१. गतिशील पुर्जाहरूमा नियमित रूपमा तेल, ग्रिज वा लुब्रिकेन्ट प्रयोग गरी घर्षण घटाउने।<br>२. पुर्जाहरूमा बल बेयरिङ (Ball Bearings) प्रयोग गरी रोलिङ घर्षणमा बदल्ने।<br>३. घिर्नी र चल पुर्जाहरूलाई हलुका तर बलियो धातु (जस्तै: आल्मुनियम वा कार्बन फाइबर) बाट बनाएर यन्त्रको तौल घटाउने।<br>४. पुर्जाहरूमा खिया लाग्न नदिन रङ लगाउने वा नियमित मर्मत गर्ने।"
+    }
+  ],
+  numericals: [
+    {
+      title: "हिसाब १: पहिलो श्रेणीको उत्तोलक (Lever Calculation)",
+      q: "एउटा पहिलो श्रेणीको उत्तोलकको कुल लम्बाइ \\(2.5\\text{ m}\\) छ। यदि आधारबिन्दु लोडबाट \\(0.5\\text{ m}\\) को दूरीमा छ भने \\(800\\text{ N}\\) को लोड उचाल्न कति प्रयास बल लगाउनुपर्ला? उक्त उत्तोलकको यान्त्रिक फाइदा (MA) र गति अनुपात (VR) पनि गणना गर्नुहोस् (घर्षण शून्य मान्दा)।",
+      given: [
+        "उत्तोलकको कुल लम्बाइ = \\(2.5\\text{ m}\\)",
+        "लोड भुजा (Load Arm, \\(l_1\\)) = \\(0.5\\text{ m}\\)",
+        "प्रयास भुजा (Effort Arm, \\(l_2\\)) = कुल लम्बाइ - \\(l_1 = 2.5\\text{ m} - 0.5\\text{ m} = 2.0\\text{ m}\\)",
+        "लोड (Load, \\(L\\)) = \\(800\\text{ N}\\)"
+      ],
+      toFind: [
+        "आवश्यक प्रयास बल (Effort, \\(E\\)) = ?",
+        "यान्त्रिक फाइदा (MA) = ?",
+        "गति अनुपात (VR) = ?"
+      ],
+      formulas: [
+        "उत्तोलकको सिद्धान्त अनुसार: \\(L \\times l_1 = E \\times l_2\\)",
+        "यान्त्रिक फाइदा: \\(MA = \\frac{L}{E}\\)",
+        "गति अनुपात: \\(VR = \\frac{l_2}{l_1}\\)"
+      ],
+      steps: [
+        "चरण १: उत्तोलकको सिद्धान्त अनुसार आवश्यक प्रयास बल (\\(E\\)) निकाल्दा:",
+        "$$800 \\times 0.5 = E \\times 2.0$$",
+        "$$400 = 2.0 \\times E \\implies E = \\frac{400}{2.0} = 200\\text{ N}$$",
+        "चरण २: गति अनुपात (VR) गणना गर्दा:",
+        "$$VR = \\frac{l_2}{l_1} = \\frac{2.0}{0.5} = 4$$",
+        "चरण ३: यान्त्रिक फाइदा (MA) गणना गर्दा:",
+        "$$MA = \\frac{L}{E} = \\frac{800}{200} = 4$$"
+      ],
+      conclusion: "उक्त लोड उचाल्न आवश्यक प्रयास बल \\(200\\text{ N}\\) हुन्छ र उत्तोलकको यान्त्रिक फाइदा (MA) तथा गति अनुपात (VR) दुवै \\(4\\) हुन्छन्।"
+    },
+    {
+      title: "हिसाब २: घिर्नी प्रणाली र कार्यक्षमता (Block and Tackle Pulley)",
+      q: "४ वटा घिर्नी भएको एउटा घिर्नी प्रणाली (Block and Tackle) को प्रयोग गरी \\(1200\\text{ N}\\) को लोडलाई \\(3\\text{ m}\\) माथि उचाल्न \\(400\\text{ N}\\) को प्रयास बल लगाइन्छ। गणना गर्नुहोस्: (क) यान्त्रिक फाइदा (MA), (ख) गति अनुपात (VR), (ग) कार्यक्षमता (\\(\\eta\\)), र (घ) प्रयासले पार गरेको दूरी (\\(d_E\\))।",
+      given: [
+        "घिर्नीहरूको संख्या (\\(n\\)) = \\(4\\)",
+        "लोड (Load, \\(L\\)) = \\(1200\\text{ N}\\)",
+        "लोडले पार गरेको दूरी (\\(d_L\\)) = \\(3\\text{ m}\\)",
+        "लगाइएको प्रयास (Effort, \\(E\\)) = \\(400\\text{ N}\\)"
+      ],
+      toFind: [
+        "(क) यान्त्रिक फाइदा (\\(MA\\)) = ?",
+        "(ख) गति अनुपात (\\(VR\\)) = ?",
+        "(ग) कार्यक्षमता (\\(\\eta\\)) = ?",
+        "(घ) प्रयासको दूरी (\\(d_E\\)) = ?"
+      ],
+      formulas: [
+        "गति अनुपात: \\(VR = n\\)",
+        "यान्त्रिक फाइदा: \\(MA = \\frac{L}{E}\\)",
+        "कार्यक्षमता: \\(\\eta = \\frac{MA}{VR} \\times 100\\%\\)",
+        "दूरी सम्बन्ध: \\(d_E = VR \\times d_L\\)"
+      ],
+      steps: [
+        "चरण १: गति अनुपात (VR) निकाल्दा (घिर्नी संख्या \\(n = 4\\)):",
+        "$$VR = 4$$",
+        "चरण २: यान्त्रिक फाइदा (MA) निकाल्दा:",
+        "$$MA = \\frac{L}{E} = \\frac{1200}{400} = 3$$",
+        "चरण ३: कार्यक्षमता (\\(\\eta\\)) निकाल्दा:",
+        "$$\\eta = \\frac{MA}{VR} \\times 100\\% = \\frac{3}{4} \\times 100\\% = 75\\%$$",
+        "चरण ४: प्रयासले पार गरेको दूरी (\\(d_E\\)) निकाल्दा:",
+        "$$d_E = VR \\times d_L = 4 \\times 3\\text{ m} = 12\\text{ m}$$"
+      ],
+      conclusion: "उक्त घिर्नी प्रणालीको यान्त्रिक फाइदा \\(3\\), गति अनुपात \\(4\\), कार्यक्षमता \\(75\\%\\) र प्रयासले पार गरेको दूरी \\(12\\text{ m}\\) हुन्छ।"
+    },
+    {
+      title: "हिसाब ३: छड्के सतह र घर्षण ऊर्जा नोक्सानी (Inclined Plane)",
+      q: "\\(12\\text{ m}\\) लामो र \\(3\\text{ m}\\) अग्लो छड्के सतहको प्रयोग गरेर \\(600\\text{ N}\\) तौल भएको बाकसलाई माथि चढाउन \\(200\\text{ N}\\) बल लगाउनुपर्छ भने: (क) गति अनुपात (VR), (ख) यान्त्रिक फाइदा (MA), र (ग) कार्यक्षमता (\\(\\eta\\)) निकाल्नुहोस्। साथै घर्षणविरुद्ध नष्ट भएको ऊर्जा पनि हिसाब गर्नुहोस्।",
+      given: [
+        "छड्के सतहको लम्बाइ (\\(l\\)) = \\(12\\text{ m}\\)",
+        "उचाइ (\\(h\\)) = \\(3\\text{ m}\\)",
+        "लोड (\\(L\\)) = \\(600\\text{ N}\\)",
+        "प्रयास बल (\\(E\\)) = \\(200\\text{ N}\\)"
+      ],
+      toFind: [
+        "गति अनुपात (VR) = ?",
+        "यान्त्रिक फाइदा (MA) = ?",
+        "कार्यक्षमता (\\(\\eta\\)) = ?",
+        "घर्षणविरुद्ध नष्ट भएको ऊर्जा = ?"
+      ],
+      formulas: [
+        "\\(VR = \\frac{l}{h}\\)",
+        "\\(MA = \\frac{L}{E}\\)",
+        "\\(\\eta = \\frac{MA}{VR} \\times 100\\%\\)",
+        "\\(\\text{ऊर्जा नोक्सानी} = \\text{लागत कार्य (Input)} - \\text{उत्पादित कार्य (Output)}\\)"
+      ],
+      steps: [
+        "चरण १: गति अनुपात निकाल्दा:",
+        "$$VR = \\frac{l}{h} = \\frac{12}{3} = 4$$",
+        "चरण २: यान्त्रिक फाइदा निकाल्दा:",
+        "$$MA = \\frac{L}{E} = \\frac{600}{200} = 3$$",
+        "चरण ३: कार्यक्षमता निकाल्दा:",
+        "$$\\eta = \\frac{MA}{VR} \\times 100\\% = \\frac{3}{4} \\times 100\\% = 75\\%$$",
+        "चरण ४: घर्षणविरुद्ध नष्ट भएको कार्य निकाल्दा:",
+        "$$\\text{इनपुट कार्य} = E \\times l = 200\\text{ N} \\times 12\\text{ m} = 2400\\text{ J}$$",
+        "$$\\text{आउटपुट कार्य} = L \\times h = 600\\text{ N} \\times 3\\text{ m} = 1800\\text{ J}$$",
+        "$$\\text{नष्ट ऊर्जा} = 2400\\text{ J} - 1800\\text{ J} = 600\\text{ J}$$"
+      ],
+      conclusion: "उक्त छड्के सतहको VR = \\(4\\), MA = \\(3\\), कार्यक्षमता = \\(75\\%\\) र घर्षणविरुद्ध नष्ट भएको ऊर्जा \\(600\\text{ J}\\) हुन्छ।"
+    },
+    {
+      title: "हिसाब ४: पाङ्ग्रा र बिँड (Wheel and Axle)",
+      q: "एउटा पाङ्ग्रा र बिँडमा पाङ्ग्राको अर्धव्यास \\(40\\text{ cm}\\) र बिँडको अर्धव्यास \\(8\\text{ cm}\\) छ। यदि यस यन्त्रको कार्यक्षमता \\(80\\%\\) भए, बिँडमा बाँधिएको \\(1600\\text{ N}\\) लोड उचाल्न पाङ्ग्रामा कति प्रयास बल लगाउनुपर्छ?",
+      given: [
+        "पाङ्ग्राको अर्धव्यास (\\(R\\)) = \\(40\\text{ cm}\\)",
+        "बिँडको अर्धव्यास (\\(r\\)) = \\(8\\text{ cm}\\)",
+        "कार्यक्षमता (\\(\\eta\\)) = \\(80\\%\\)",
+        "लोड (\\(L\\)) = \\(1600\\text{ N}\\)"
+      ],
+      toFind: [
+        "गति अनुपात (VR) = ?",
+        "यान्त्रिक फाइदा (MA) = ?",
+        "आवश्यक प्रयास बल (\\(E\\)) = ?"
+      ],
+      formulas: [
+        "पाङ्ग्रा र बिँडको गति अनुपात: \\(VR = \\frac{R}{r}\\)",
+        "कार्यक्षमता सम्बन्ध: \\(\\eta = \\frac{MA}{VR} \\times 100\\% \\implies MA = \\frac{\\eta \\times VR}{100}\\)",
+        "यान्त्रिक फाइदा: \\(MA = \\frac{L}{E} \\implies E = \\frac{L}{MA}\\)"
+      ],
+      steps: [
+        "चरण १: गति अनुपात (VR) गणना गर्दा:",
+        "$$VR = \\frac{R}{r} = \\frac{40\\text{ cm}}{8\\text{ cm}} = 5$$",
+        "चरण २: यान्त्रिक फाइदा (MA) गणना गर्दा:",
+        "$$MA = \\frac{\\eta \\times VR}{100} = \\frac{80 \\times 5}{100} = \\frac{400}{100} = 4$$",
+        "चरण ३: आवश्यक प्रयास बल (\\(E\\)) निकाल्दा:",
+        "$$E = \\frac{L}{MA} = \\frac{1600\\text{ N}}{4} = 400\\text{ N}$$"
+      ],
+      conclusion: "उक्त \\(1600\\text{ N}\\) को लोड उचाल्न पाङ्ग्रामा \\(400\\text{ N}\\) प्रयास बल लगाउनुपर्छ।"
+    },
+    {
+      title: "हिसाब ५: दोस्रो श्रेणीको उत्तोलक - ठेलागाडा (Wheelbarrow Problem)",
+      q: "एउटा ठेलागाडाको कुल लम्बाइ \\(1.5\\text{ m}\\) छ। यसमा लोड आधारबिन्दु (पाङ्ग्राको अक्ष) बाट \\(0.3\\text{ m}\\) को दूरीमा राखिएको छ। ठेलागाडामा \\(900\\text{ N}\\) को इँटाहरू लोड गरिएको छ भने बिँड समातेर उचाल्न कति बल लगाउनुपर्छ? उक्त अवस्थामा यान्त्रिक फाइदा (MA) कति हुन्छ?",
+      given: [
+        "ठेलागाडाको कुल लम्बाइ = प्रयास भुजा (Effort Arm, \\(l_2\\)) = \\(1.5\\text{ m}\\)",
+        "लोड भुजा (Load Arm, \\(l_1\\)) = \\(0.3\\text{ m}\\)",
+        "लोड (Load, \\(L\\)) = \\(900\\text{ N}\\)"
+      ],
+      toFind: [
+        "आवश्यक प्रयास बल (\\(E\\)) = ?",
+        "यान्त्रिक फाइदा (\\(MA\\)) = ?"
+      ],
+      formulas: [
+        "उत्तोलकको सन्तुलन नियम: \\(L \\times l_1 = E \\times l_2\\)",
+        "यान्त्रिक फाइदा: \\(MA = \\frac{L}{E}\\)"
+      ],
+      steps: [
+        "चरण १: उत्तोलकको सन्तुलन नियम प्रयोग गरी प्रयास बल (E) निकाल्दा:",
+        "$$900 \\times 0.3 = E \\times 1.5$$",
+        "$$270 = 1.5 \\times E \\implies E = \\frac{270}{1.5} = 180\\text{ N}$$",
+        "चरण २: यान्त्रिक फाइदा (MA) निकाल्दा:",
+        "$$MA = \\frac{L}{E} = \\frac{900}{180} = 5$$"
+      ],
+      conclusion: "ठेलागाडाको बिँड समातेर उचाल्न केवल \\(180\\text{ N}\\) बल लगाए पुग्छ र यसको यान्त्रिक फाइदा \\(5\\) हुन्छ (अर्थात् बल ५ गुणाले वृद्धि भएको छ)।"
+    }
+  ]
+};
+
+function setExerciseC9U8(sec) {
+  activeC9U8ExerciseSec = sec;
+  playAudioC9U7('click');
+  const sections = ['sec-mcqs', 'sec-fill', 'sec-diff', 'sec-reasons', 'sec-qa', 'sec-numericals'];
+  sections.forEach(s => {
+    const btn = document.getElementById(`c9u8-btn-${s}`);
+    if (btn) {
+      if (s === sec) {
+        btn.className = "px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-xs whitespace-nowrap cursor-pointer min-h-[44px]";
+      } else {
+        btn.className = "px-4 py-2 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-100 whitespace-nowrap cursor-pointer min-h-[44px]";
+      }
+    }
+  });
+
+  renderC9U8Exercises();
+}
+
+function renderC9U8Exercises() {
+  const container = document.getElementById('c9u8-exercises-container');
+  if (!container) return;
+
+  if (activeC9U8ExerciseSec === 'sec-mcqs') {
+    container.innerHTML = `
+      <div class="space-y-4">
+        <div class="p-4 rounded-2xl bg-indigo-50/70 border border-indigo-100 flex items-center justify-between">
+          <span class="text-xs font-bold text-indigo-900">पाठ्यपुस्तक अभ्यास: खण्ड १ — बहुवैकल्पिक वस्तुगत प्रश्नहरू</span>
+          <span class="px-2.5 py-0.5 rounded-full bg-indigo-200 text-indigo-800 text-[11px] font-bold">१० प्रश्नहरू</span>
+        </div>
+        <div class="grid grid-cols-1 gap-4">
+          ${c9u8ExercisesData.mcqs.map((item, idx) => `
+            <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-2xs space-y-3">
+              <div class="font-bold text-sm md:text-base text-slate-800">${item.q}</div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                ${item.options.map((opt, oIdx) => `
+                  <div class="p-3 rounded-xl border text-xs md:text-sm font-medium ${oIdx === item.correct ? 'bg-emerald-50 border-emerald-300 text-emerald-950 font-bold' : 'bg-slate-50 border-slate-200 text-slate-700'}">
+                    ${opt} ${oIdx === item.correct ? '✓ (सही उत्तर)' : ''}
+                  </div>
+                `).join('')}
+              </div>
+              <div class="p-3 rounded-xl bg-slate-100/80 text-xs text-slate-600 border border-slate-200/60 leading-relaxed">
+                <strong>कारण/स्पष्टीकरण:</strong> ${item.reason}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  } else if (activeC9U8ExerciseSec === 'sec-fill') {
+    container.innerHTML = `
+      <div class="space-y-6">
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs space-y-4">
+          <h4 class="font-black text-slate-800 text-base border-b pb-2">खण्ड २ (क): उपयुक्त शब्द राखी खाली ठाउँ भर्नुहोस्</h4>
+          <div class="space-y-3 text-xs md:text-sm text-slate-700">
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">१. कामलाई सजिलो, छिटो र सुविधाजनक बनाउने साधनलाई <strong class="text-indigo-600 underline">सरल यन्त्र</strong> भनिन्छ।</div>
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">२. लोड र प्रयासको अनुपातलाई <strong class="text-indigo-600 underline">यान्त्रिक फाइदा (MA)</strong> भनिन्छ।</div>
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">३. दोस्रो श्रेणीको उत्तोलकमा आधारबिन्दु र प्रयासको बीचमा <strong class="text-indigo-600 underline">लोड (Load)</strong> रहन्छ।</div>
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">४. घर्षणरहित अवस्थामा यन्त्रको कार्यक्षमता <strong class="text-indigo-600 underline">१००%</strong> हुन्छ।</div>
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">५. एकल स्थिर घिर्नीले बलको परिमाण नबढाई केवल बलको <strong class="text-indigo-600 underline">दिशा परिवर्तन</strong> गर्दछ।</div>
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">६. पाङ्ग्रा र बिँडमा पाङ्ग्राको अर्धव्यास र बिँडको अर्धव्यासको अनुपातलाई <strong class="text-indigo-600 underline">गति अनुपात (VR)</strong> भनिन्छ।</div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs space-y-4">
+          <h4 class="font-black text-slate-800 text-base border-b pb-2">खण्ड २ (ख): समूह 'क' र समूह 'ख' बीच जोडा मिलाउनुहोस्</h4>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs md:text-sm text-left border-collapse">
+              <thead>
+                <tr class="bg-slate-100 text-slate-700">
+                  <th class="p-3 border border-slate-200">समूह 'क'</th>
+                  <th class="p-3 border border-slate-200">समूह 'ख' (सही जोडा)</th>
+                  <th class="p-3 border border-slate-200">वैज्ञानिक आधार</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200">
+                <tr><td class="p-3 border border-slate-200 font-bold">१. कैंची (Scissors)</td><td class="p-3 border border-slate-200 text-indigo-700 font-bold">पहिलो श्रेणीको उत्तोलक</td><td class="p-3 border border-slate-200 text-slate-600">आधारबिन्दु (Fulcrum) बीचमा हुने</td></tr>
+                <tr><td class="p-3 border border-slate-200 font-bold">२. ठेलागाडा (Wheelbarrow)</td><td class="p-3 border border-slate-200 text-indigo-700 font-bold">दोस्रो श्रेणीको उत्तोलक</td><td class="p-3 border border-slate-200 text-slate-600">लोड (Load) बीचमा हुने</td></tr>
+                <tr><td class="p-3 border border-slate-200 font-bold">३. चिम्टा (Tongs)</td><td class="p-3 border border-slate-200 text-indigo-700 font-bold">तेस्रो श्रेणीको उत्तोलक</td><td class="p-3 border border-slate-200 text-slate-600">प्रयास (Effort) बीचमा हुने</td></tr>
+                <tr><td class="p-3 border border-slate-200 font-bold">४. ज्याक स्क्रु (Jack Screw)</td><td class="p-3 border border-slate-200 text-indigo-700 font-bold">पेच (Screw)</td><td class="p-3 border border-slate-200 text-slate-600">छड्के सतह बेरिएर बनेको</td></tr>
+                <tr><td class="p-3 border border-slate-200 font-bold">५. बन्चरो (Axe)</td><td class="p-3 border border-slate-200 text-indigo-700 font-bold">फेसो (Wedge)</td><td class="p-3 border border-slate-200 text-slate-600">दुई छड्के सतह जोडिएको धारिलो साधन</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    `;
+  } else if (activeC9U8ExerciseSec === 'sec-diff') {
+    container.innerHTML = `
+      <div class="space-y-6">
+        ${c9u8ExercisesData.diff.map(item => `
+          <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs space-y-4">
+            <h4 class="font-black text-slate-800 text-base">${item.title}</h4>
+            <div class="overflow-x-auto">
+              <table class="w-full text-xs md:text-sm text-left border-collapse">
+                <thead>
+                  <tr class="bg-indigo-50 text-indigo-900">
+                    ${item.table[0].map(th => `<th class="p-3 border border-indigo-100 font-bold">${th}</th>`).join('')}
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                  ${item.table.slice(1).map(row => `
+                    <tr class="hover:bg-slate-50/50">
+                      ${row.map((cell, cIdx) => `<td class="p-3 border border-slate-200 ${cIdx === 0 ? 'font-bold text-slate-800' : 'text-slate-600'}">${cell}</td>`).join('')}
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  } else if (activeC9U8ExerciseSec === 'sec-reasons') {
+    container.innerHTML = `
+      <div class="space-y-4">
+        ${c9u8ExercisesData.reasons.map(item => `
+          <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-2xs space-y-2">
+            <h4 class="font-bold text-sm md:text-base text-slate-800 flex items-start gap-2">
+              <span class="w-2 h-2 rounded-full bg-rose-500 shrink-0 mt-2"></span>
+              <span>${item.q}</span>
+            </h4>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs md:text-sm text-slate-700 leading-relaxed">
+              <strong>वैज्ञानिक उत्तर:</strong> ${item.a}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  } else if (activeC9U8ExerciseSec === 'sec-qa') {
+    container.innerHTML = `
+      <div class="space-y-4">
+        ${c9u8ExercisesData.qa.map(item => `
+          <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-2xs space-y-2">
+            <h4 class="font-bold text-sm md:text-base text-slate-800 flex items-start gap-2">
+              <span class="w-2 h-2 rounded-full bg-indigo-500 shrink-0 mt-2"></span>
+              <span>${item.q}</span>
+            </h4>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs md:text-sm text-slate-700 leading-relaxed">
+              ${item.a}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  } else if (activeC9U8ExerciseSec === 'sec-numericals') {
+    container.innerHTML = `
+      <div class="space-y-6">
+        <div class="p-4 rounded-2xl bg-indigo-50/70 border border-indigo-100 flex items-center justify-between">
+          <span class="text-xs font-bold text-indigo-900">पाठ्यपुस्तकका सम्पूर्ण प्रामाणिक गणितीय समस्याहरू (५-बक्स पाठ्यपुस्तक ढाँचा)</span>
+          <span class="px-2.5 py-0.5 rounded-full bg-indigo-200 text-indigo-800 text-[11px] font-bold">५ हिसाबहरू</span>
+        </div>
+
+        ${c9u8ExercisesData.numericals.map((item, idx) => `
+          <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200 shadow-xs space-y-5">
+            <div class="flex items-center justify-between border-b pb-3">
+              <h4 class="text-base md:text-lg font-black text-slate-800 flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded-lg bg-indigo-600 text-white text-xs font-bold">हिसाब #${idx + 1}</span>
+                <span>${item.title}</span>
+              </h4>
+            </div>
+
+            <!-- Problem Statement -->
+            <div class="p-4 rounded-2xl bg-slate-900 text-white text-xs md:text-sm leading-relaxed border border-slate-800">
+              <span class="text-indigo-300 font-bold">प्रश्न: </span>${item.q}
+            </div>
+
+            <!-- 5-Box Authentic Step Flow -->
+            <div class="space-y-4">
+              <!-- Box 1: Given -->
+              <div class="p-4 rounded-2xl bg-blue-50/60 border border-blue-100 space-y-2">
+                <div class="text-xs font-bold text-blue-900 uppercase tracking-wider flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                  १. दिइएको मानहरू (Given Data):
+                </div>
+                <ul class="text-xs md:text-sm text-blue-950 space-y-1 list-disc list-inside">
+                  ${item.given.map(g => `<li>${g}</li>`).join('')}
+                </ul>
+              </div>
+
+              <!-- Box 2: To Find -->
+              <div class="p-4 rounded-2xl bg-amber-50/60 border border-amber-100 space-y-2">
+                <div class="text-xs font-bold text-amber-900 uppercase tracking-wider flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+                  २. पत्ता लगाउनुपर्ने (To Find):
+                </div>
+                <ul class="text-xs md:text-sm text-amber-950 space-y-1 list-disc list-inside">
+                  ${item.toFind.map(tf => `<li>${tf}</li>`).join('')}
+                </ul>
+              </div>
+
+              <!-- Box 3: Formulas -->
+              <div class="p-4 rounded-2xl bg-purple-50/60 border border-purple-100 space-y-2">
+                <div class="text-xs font-bold text-purple-900 uppercase tracking-wider flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-purple-600"></span>
+                  ३. प्रयोग हुने सूत्रहरू (Formulas Used):
+                </div>
+                <ul class="text-xs md:text-sm text-purple-950 space-y-1 list-disc list-inside">
+                  ${item.formulas.map(fm => `<li>${fm}</li>`).join('')}
+                </ul>
+              </div>
+
+              <!-- Box 4: Step-by-step Calculation -->
+              <div class="p-4 md:p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+                <div class="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-slate-700"></span>
+                  ४. चरणबद्ध गणितीय गणना (Step-by-Step Calculation):
+                </div>
+                <div class="space-y-2 text-xs md:text-sm text-slate-800 leading-relaxed font-mono">
+                  ${item.steps.map(st => `<div>${st}</div>`).join('')}
+                </div>
+              </div>
+
+              <!-- Box 5: Final Conclusion -->
+              <div class="p-4 rounded-2xl bg-emerald-50/80 border border-emerald-200 text-xs md:text-sm text-emerald-950 leading-relaxed font-medium">
+                <strong class="text-emerald-800 font-bold">५. अन्तिम निष्कर्ष:</strong> ${item.conclusion}
+              </div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  if (typeof typesetElement === 'function') {
+    typesetElement(container);
+  }
+}
+
+// -------------------------------------------------------------------------
+// TAB 3: 16 MULTI-TIER EXAM MODEL Q&AS
+// -------------------------------------------------------------------------
+const c9u8TiersData = {
+  tier1: [
+    { q: "१. सरल यन्त्र (Simple Machine) को परिभाषा दिनुहोस्।", a: "कामलाई सजिलो, छिटो र सुविधाजनक दिशामा सम्पन्न गर्न प्रयोग गरिने साधारण बनावट भएका उपकरणहरूलाई सरल यन्त्र भनिन्छ।" },
+    { q: "२. यान्त्रिक फाइदा (MA) को एकाइ के हुन्छ?", a: "यान्त्रिक फाइदा दुई समान बलहरू (लोड र प्रयास) को अनुपात भएकाले यसको कुनै एकाइ हुँदैन (यो एकाइविहीन अनुपात हो)।" },
+    { q: "३. गति अनुपात (VR) को परिभाषा लेख्नुहोस्।", a: "प्रयासले पार गरेको दूरी (\\(d_E\\)) र लोडले पार गरेको दूरी (\\(d_L\\)) को अनुपातलाई गति अनुपात (VR) भनिन्छ।" },
+    { q: "४. घिर्नी (Pulley) का दुई मुख्य प्रकारहरू के-के हुन्?", a: "१. एकल स्थिर घिर्नी (Single Fixed Pulley)<br>२. एकल चल घिर्नी (Single Movable Pulley)।" },
+    { q: "५. पाङ्ग्रा र बिँड (Wheel & Axle) को गति अनुपात निकाल्ने सूत्र लेख्नुहोस्।", a: "पाङ्ग्राको अर्धव्यास \\(R\\) र बिँडको अर्धव्यास \\(r\\) भए: $$\\mathbf{VR = \\frac{R}{r}}$$" },
+    { q: "६. फेसो (Wedge) भनेको के हो? दुईवटा उदाहरण दिनुहोस्।", a: "दुईवटा छड्के सतहहरूलाई आपसमा जोडेर बनाइएको धारिलो टुप्पो भएको यन्त्रलाई फेसो भनिन्छ। उदाहरण: बन्चरो, चक्कु, छेस्को।" }
+  ],
+  tier2: [
+    { q: "१. उत्तोलकको आधारबिन्दु, लोड र प्रयासको स्थितिका आधारमा तीन श्रेणीको वर्गीकरण स्पष्ट पार्नुहोस्।", a: "१. <b>पहिलो श्रेणी:</b> आधारबिन्दु बीचमा (F बीचमा) — उदा: कैंची, ढिकी।<br>२. <b>दोस्रो श्रेणी:</b> लोड बीचमा (L बीचमा) — उदा: ठेलागाडा, सरौता।<br>३. <b>तेस्रो श्रेणी:</b> प्रयास बीचमा (E बीचमा) — उदा: चिम्टा, मानिसको हात।" },
+    { q: "२. घर्षणले यान्त्रिक फाइदा (MA) र गति अनुपात (VR) मा कस्तो फरक पार्दछ?", a: "घर्षणले गर्दा लोड उचाल्न बढी प्रयास बल चाहिन्छ, जसले गर्दा MA को मान घट्छ। तर गति अनुपात केवल यन्त्रको ज्यामितीय बनावट (दूरी) मा निर्भर गर्ने हुनाले घर्षणले VR मा कुनै असर गर्दैन र यो स्थिर रहन्छ।" },
+    { q: "३. एकल चल घिर्नीमा लोड उचाल्दा प्रयास बल किन आधा मात्र लाग्छ?", a: "एकल चल घिर्नीमा लोडलाई डोरीका दुईवटा खण्डहरूले समातेका हुन्छन्। प्रत्येक खण्डमा लोडको आधा तौल (\\(L/2\\)) बराबरको तनाव उत्पन्न हुने भएकाले आदर्श अवस्थामा आधा प्रयास बल (\\(E = L/2\\)) लगाए पुग्छ।" },
+    { q: "४. 'कुनै यन्त्रको कार्यक्षमता ८०% छ' भन्नुको अर्थ के हो?", a: "यसको अर्थ उक्त यन्त्रमा प्रदान गरिएको कुल इनपुट ऊर्जा वा लागत कार्यको ८०% भाग मात्र उपयोगी आउटपुट कार्यमा रूपान्तरण हुन्छ र बाँकी २०% ऊर्जा घर्षण र पुर्जाको तौलका कारण खेर जान्छ।" },
+    { q: "५. पेच (Screw) लाई घुमाउरो छड्के सतह किन भनिन्छ?", a: "एउटा कागजको त्रिकोणाकार छड्के सतहलाई सिन्कामा बेर्दा छड्के भागले स्क्रुको थ्रेड (Thread) जस्तै ढाँचा बनाउँछ। त्यसैले पेचलाई डन्डीमा बेरिएको छड्के सतह भनिन्छ।" }
+  ],
+  tier3: [
+    { q: "१. यदि कुनै यन्त्रको गति अनुपात (VR) ४ र कार्यक्षमता ७५% छ भने \\(1500\\text{ N}\\) को लोड उठाउन कति प्रयास चाहिन्छ? साथै हराएको ऊर्जाको दर विश्लेषण गर्नुहोस्।", a: "१. \\(MA = \\frac{\\eta \\times VR}{100} = \\frac{75 \\times 4}{100} = 3\\)<br>२. \\(E = \\frac{L}{MA} = \\frac{1500}{3} = 500\\text{ N}\\)<br>३. विश्लेषण: लोडलाई \\(1\\text{ m}\\) उचाल्दा आउटपुट कार्य \\(= 1500\\text{ J}\\), इनपुट कार्य \\(= 500 \\times 4 = 2000\\text{ J}\\)। अतः \\(500\\text{ J}\\) ऊर्जा घर्षणविरुद्ध खेर जान्छ।" },
+    { q: "२. एउटा ठेलागाडामा लोडलाई पाङ्ग्रा नजिक राख्दा र बिँड नजिक राख्दा के फरक पर्छ? वैज्ञानिक तर्क दिनुहोस्।", a: "ठेलागाडा दोस्रो श्रेणीको उत्तोलक हो जहाँ पाङ्ग्रा आधारबिन्दु हो। लोडलाई पाङ्ग्राको जति नजिक राख्यो, लोड भुजा (\\(l_1\\)) त्यति नै छोटो हुन्छ। \\(MA = \\frac{l_2}{l_1}\\) भएकाले लोड भुजा छोटो हुँदा यान्त्रिक फाइदा धेरै बढ्छ र उचाल्न निकै थोरै बल लाग्छ। तर लोड बिँड नजिक राख्दा लोड भुजा लामो भई धेरै बल लगाउनुपर्छ।" },
+    { q: "३. 'ऊर्जा संरक्षणको नियम (Law of Conservation of Energy)' ले गर्दा कुनै यन्त्रको MA कहिल्यै पनि VR भन्दा बढी हुन सक्दैन, कसरी?", a: "ऊर्जा संरक्षणको नियम अनुसार यन्त्रले ऊर्जा आफैँ सिर्जना गर्न सक्दैन। त्यसैले उत्पादित कार्य लागत कार्यभन्दा बढी हुन सम्भव छैन (\\(\\text{Output Work} \\le \\text{Input Work}\\))।<br>\\(L \\times d_L \\le E \\times d_E \\implies \\frac{L}{E} \\le \\frac{d_E}{d_L} \\implies \\mathbf{MA \\le VR}\\)। अतः कुनै पनि अवस्थामा MA को मान VR भन्दा ठूलो हुन सक्दैन।" },
+    { q: "४. निर्माण कार्यमा प्रयोग हुने क्रेन (Crane) मा घिर्नी र पाङ्ग्रा-बिँडको संयोजन कसरी गरिन्छ?", a: "क्रेन एउटा जटिल यन्त्र हो। यसमा भारी वजन उचाल्न धेरै घिर्नीहरू भएको ब्लक र ट्याकल प्रणाली जडान गरिन्छ जसले ठूलो यान्त्रिक फाइदा प्रदान गर्छ। उक्त डोरीलाई घुमाउन मोटरसँग जोडिएको पाङ्ग्रा र बिँड (विन्च) प्रयोग गरिन्छ, जसले थप बल वृद्धि गरी भारी वस्तुहरू सहजै उचाल्न मद्दत गर्दछ।" },
+    { q: "५. सिँढी (Stairs) को ढलान कम गर्दा र बढी गर्दा हिँड्ने व्यक्तिको बल र शक्तिको खपतमा पर्ने प्रभाव विश्लेषण गर्नुहोस्।", a: "ढलान कम गर्दा सिँढीको लम्बाइ बढ्छ र गति अनुपात (\\(VR = \\frac{l}{h}\\)) बढ्छ, जसले गर्दा प्रत्येक पाइलामा लगाउनुपर्ने प्रयास बल (Effort) निकै कम हुन्छ र थाकिँदैन। तर ढलान धेरै ठाडो भएमा गति अनुपात घट्छ र गुरुत्वाकर्षणविरुद्ध एकैपटक धेरै बल लगाउनुपर्ने हुँदा मुटु र मांसपेशीमा अत्यधिक भार पर्न गई व्यक्ति छिट्टै थाक्छ।" }
+  ]
+};
+
+function renderC9U8Tiers() {
+  const container = document.getElementById('c9u8-tiers-container');
+  if (!container) return;
+
+  container.innerHTML = `
+    <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs space-y-4">
+      <div class="flex items-center justify-between border-b pb-3">
+        <h4 class="font-black text-slate-800 text-base flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+          <span>तह १: ज्ञान तथा स्मरण सम्बन्धी प्रश्नोत्तर (Knowledge & Recall — ६ प्रश्न)</span>
+        </h4>
+        <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700">१ अङ्क भार</span>
+      </div>
+      <div class="space-y-3">
+        ${c9u8TiersData.tier1.map(item => `
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
+            <div class="font-bold text-xs md:text-sm text-slate-800">${item.q}</div>
+            <div class="text-xs md:text-sm text-indigo-950 font-medium pl-2 border-l-2 border-indigo-500">${item.a}</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+
+    <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs space-y-4">
+      <div class="flex items-center justify-between border-b pb-3">
+        <h4 class="font-black text-slate-800 text-base flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-sky-600"></span>
+          <span>तह २: बोध तथा समझ सम्बन्धी प्रश्नोत्तर (Understanding & Conceptual — ५ प्रश्न)</span>
+        </h4>
+        <span class="px-3 py-1 rounded-full text-xs font-bold bg-sky-50 text-sky-700">२ अङ्क भार</span>
+      </div>
+      <div class="space-y-3">
+        ${c9u8TiersData.tier2.map(item => `
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
+            <div class="font-bold text-xs md:text-sm text-slate-800">${item.q}</div>
+            <div class="text-xs md:text-sm text-sky-950 font-medium pl-2 border-l-2 border-sky-500 leading-relaxed">${item.a}</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+
+    <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs space-y-4">
+      <div class="flex items-center justify-between border-b pb-3">
+        <h4 class="font-black text-slate-800 text-base flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-600"></span>
+          <span>तह ३: प्रयोग, विश्लेषण र उच्च क्षमता (Application & Higher Ability — ५ प्रश्न)</span>
+        </h4>
+        <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-700">३-४ अङ्क भार</span>
+      </div>
+      <div class="space-y-3">
+        ${c9u8TiersData.tier3.map(item => `
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
+            <div class="font-bold text-xs md:text-sm text-slate-800">${item.q}</div>
+            <div class="text-xs md:text-sm text-amber-950 font-medium pl-2 border-l-2 border-amber-500 leading-relaxed">${item.a}</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+
+  if (typeof typesetElement === 'function') {
+    typesetElement(container);
+  }
+}
+
+// -------------------------------------------------------------------------
+// TAB 4: SELF-ASSESSMENT QUIZ
+// -------------------------------------------------------------------------
+const c9u8QuizData = [
+  {
+    q: "१. कुनै पहिलो श्रेणीको उत्तोलकमा लोड भुजा १ मिटर र प्रयास भुजा ३ मिटर भए यसको गति अनुपात (VR) कति हुन्छ?",
+    options: ["(A) ०.३३", "(B) १", "(C) ३", "(D) ४"],
+    correct: 2,
+    exp: "\\(VR = \\frac{l_2}{l_1} = \\frac{3}{1} = 3\\)।"
+  },
+  {
+    q: "२. दोस्रो श्रेणीको उत्तोलकको उदाहरण कुन हो?",
+    options: ["(A) कैंची", "(B) ठेलागाडा", "(C) चिम्टा", "(D) ढिकी"],
+    correct: 1,
+    exp: "ठेलागाडामा लोड बीचमा रहने भएकाले यो दोस्रो श्रेणीको उत्तोलक हो।"
+  },
+  {
+    q: "३. एकल स्थिर घिर्नीको यान्त्रिक फाइदा (MA) सधैँ कस्तो हुन्छ?",
+    options: ["(A) १ भन्दा बढी", "(B) १ वा १ भन्दा कम (MA ≤ 1)", "(C) सधैँ २", "(D) शून्य"],
+    correct: 1,
+    exp: "घर्षणका कारण एकल स्थिर घिर्नीको MA सधैँ १ वा १ भन्दा कम हुन्छ।"
+  },
+  {
+    q: "४. \\(10\\text{ m}\\) लामो र \\(2\\text{ m}\\) अग्लो छड्के सतहको गति अनुपात कति हुन्छ?",
+    options: ["(A) ५", "(B) ८", "(C) १२", "(D) २०"],
+    correct: 0,
+    exp: "\\(VR = \\frac{l}{h} = \\frac{10}{2} = 5\\)।"
+  },
+  {
+    q: "५. ५ वटा घिर्नी भएको ब्लक एन्ड ट्याकल प्रणालीको आदर्श यान्त्रिक फाइदा कति हुन्छ?",
+    options: ["(A) १", "(B) २.५", "(C) ५", "(D) १०"],
+    correct: 2,
+    exp: "आदर्श अवस्थामा \\(MA = VR = n = 5\\) हुन्छ।"
+  },
+  {
+    q: "६. यन्त्रमा इनपुट कार्य \\(1000\\text{ J}\\) र आउटपुट कार्य \\(800\\text{ J}\\) भए कार्यक्षमता कति हुन्छ?",
+    options: ["(A) ८०%", "(B) १००%", "(C) १२५%", "(D) १८०%"],
+    correct: 0,
+    exp: "\\(\\eta = \\frac{800}{1000} \\times 100\\% = 80\\%\\)।"
+  },
+  {
+    q: "७. तेस्रो श्रेणीको उत्तोलकको मुख्य विशेषता कुन हो?",
+    options: ["(A) MA > 1", "(B) आधारबिन्दु बीचमा", "(C) गति बढाउन प्रयोग गरिन्छ (Speed Multiplier)", "(D) बल घटाउन प्रयोग गरिन्छ"],
+    correct: 2,
+    exp: "तेस्रो श्रेणीको उत्तोलकमा MA < 1 हुन्छ, तर यसले कामको गति र दूरी बढाउँछ।"
+  },
+  {
+    q: "८. पाङ्ग्राको अर्धव्यास \\(50\\text{ cm}\\) र बिँडको अर्धव्यास \\(10\\text{ cm}\\) भए गति अनुपात कति हुन्छ?",
+    options: ["(A) ५", "(B) १०", "(C) ४०", "(D) ५००"],
+    correct: 0,
+    exp: "\\(VR = \\frac{R}{r} = \\frac{50}{10} = 5\\)।"
+  },
+  {
+    q: "९. दुईवटा छड्के सतहहरूलाई पछाडिबाट जोडेर बनाइएको सरल यन्त्र कुन हो?",
+    options: ["(A) पेच", "(B) फेसो (Wedge)", "(C) घिर्नी", "(D) उत्तोलक"],
+    correct: 1,
+    exp: "दुईवटा छड्के सतहहरू जोडिएर फेसो (Wedge) बन्छ।"
+  },
+  {
+    q: "१०. यन्त्रको कार्यक्षमता बढाउन कुन उपाय उपयुक्त हुन्छ?",
+    options: ["(A) पुर्जाको तौल बढाउने", "(B) घर्षण बढाउने", "(C) लुब्रिकेन्ट (तेल/ग्रिज) प्रयोग गर्ने", "(D) लोड हटाउने"],
+    correct: 2,
+    exp: "लुब्रिकेन्टले घर्षण घटाउँछ र यन्त्रको कार्यक्षमता बढाउँछ।"
+  }
+];
+
+function renderC9U8Quiz() {
+  const container = document.getElementById('c9u8-quiz-container');
+  if (!container) return;
+
+  container.innerHTML = c9u8QuizData.map((item, qIdx) => {
+    const userAns = c9u8QuizAnswers[qIdx];
+    const isAnswered = userAns !== undefined;
+    const isCorrect = userAns === item.correct;
+
+    return `
+      <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-2xs space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-500">प्रश्न #${qIdx + 1}</span>
+          <span id="c9u8-qbadge-${qIdx}" class="text-xs font-bold px-2.5 py-0.5 rounded-lg ${
+            !isAnswered ? 'bg-slate-100 text-slate-600' : (isCorrect ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700')
+          }">
+            ${!isAnswered ? 'हल हुन बाँकी' : (isCorrect ? '✓ सही उत्तर' : '✗ गलत उत्तर')}
+          </span>
+        </div>
+        <div class="font-bold text-sm md:text-base text-slate-800">${item.q}</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          ${item.options.map((opt, oIdx) => {
+            let btnClass = "w-full text-left p-3 rounded-xl border border-slate-200 hover:bg-slate-50 transition font-medium cursor-pointer text-xs md:text-sm";
+            if (isAnswered) {
+              if (oIdx === item.correct) {
+                btnClass = "w-full text-left p-3 rounded-xl border-2 border-emerald-500 bg-emerald-50 text-emerald-900 font-bold text-xs md:text-sm";
+              } else if (oIdx === userAns) {
+                btnClass = "w-full text-left p-3 rounded-xl border-2 border-rose-500 bg-rose-50 text-rose-900 font-bold text-xs md:text-sm";
+              } else {
+                btnClass = "w-full text-left p-3 rounded-xl border border-slate-200 text-slate-400 opacity-60 text-xs md:text-sm";
+              }
+            }
+            return `<button id="c9u8-qbtn-${qIdx}-${oIdx}" onclick="checkQuizC9U8(${qIdx}, ${oIdx})" ${isAnswered ? 'disabled' : ''} class="${btnClass}">${opt}</button>`;
+          }).join('')}
+        </div>
+        ${isAnswered ? `
+          <div class="p-3 rounded-xl bg-slate-100 text-xs text-slate-700 border border-slate-200 leading-relaxed">
+            <strong>स्पष्टीकरण:</strong> ${item.exp}
+          </div>
+        ` : ''}
+      </div>
+    `;
+  }).join('');
+
+  if (typeof typesetElement === 'function') {
+    typesetElement(container);
+  }
+}
+
+function checkQuizC9U8(qIndex, optIndex) {
+  if (c9u8QuizAnswers[qIndex] !== undefined) return;
+  c9u8QuizAnswers[qIndex] = optIndex;
+  playAudioC9U7('click');
+
+  let score = 0;
+  c9u8QuizData.forEach((q, idx) => {
+    if (c9u8QuizAnswers[idx] === q.correct) score++;
+  });
+
+  const scoreEl = document.getElementById('c9u8-quiz-score');
+  if (scoreEl) scoreEl.textContent = `${score} / 10`;
+
+  renderC9U8Quiz();
+}
+
+function resetQuizC9U8() {
+  c9u8QuizAnswers = {};
+  playAudioC9U7('click');
+  const scoreEl = document.getElementById('c9u8-quiz-score');
+  if (scoreEl) scoreEl.textContent = `0 / 10`;
+  renderC9U8Quiz();
+}
+
+// -------------------------------------------------------------------------
+// UNIT 8 INITIALIZATION
+// -------------------------------------------------------------------------
+function initC9U8() {
+  updateLeverSimC9U8();
+  updatePulleySimC9U8();
+  updateInclinedSimC9U8();
+  renderC9U8Quiz();
+}
+
+
 // Ensure startup trigger if active
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
     if (typeof currentGrade !== 'undefined' && currentGrade === 9 && typeof activeUnit9 !== 'undefined' && activeUnit9 === 7 && typeof initC9U7 === 'function') {
       initC9U7();
+    } else if (typeof currentGrade !== 'undefined' && currentGrade === 9 && typeof activeUnit9 !== 'undefined' && activeUnit9 === 8 && typeof initC9U8 === 'function') {
+      initC9U8();
     }
   });
 }
