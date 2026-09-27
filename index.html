@@ -28948,14 +28948,765 @@ eq 6$</div>
 </div>
 
 
-      <!-- Placeholder View for Units 9 to 19 -->
+
+<!-- CLASS 9 SCIENCE: UNIT 9 - ENERGY (ऊर्जा) -->
+<div id="c9-view-9" class="hidden flex-1 min-w-0 flex flex-col">
+  <!-- Unit Header Banner -->
+  <div class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-3xl p-6 md:p-8 text-white shadow-xl mb-6 relative overflow-hidden" style="background: linear-gradient(135deg, #1e3a8a 0%, #312e81 50%, #0f172a 100%); color: #ffffff;">
+    <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
+    <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30">
+            कक्षा ९ • विज्ञान तथा प्रविधि
+          </span>
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+            एकाइ ९ • भौतिक विज्ञान (Physics)
+          </span>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-black tracking-tight text-white mb-2">
+          एकाइ ९: ऊर्जा (Energy)
+        </h2>
+        <p class="text-xs md:text-sm text-slate-300 max-w-2xl leading-relaxed">
+          कार्य गर्ने सामर्थ्य, स्थितिज र गतिज ऊर्जा, ऊर्जा संरक्षणको नियम, शक्ति र घरायसी विद्युत खपतको बृहत् अन्तरक्रियात्मक डिजिटल प्रयोगशाला।
+        </p>
+      </div>
+      <!-- Quick Formula Badges -->
+      <div class="flex flex-col gap-2 shrink-0">
+        <div class="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono font-bold text-blue-200 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          \( E_k = \frac{1}{2}mv^2 \)
+        </div>
+        <div class="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono font-bold text-indigo-200 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+          \( E_p = mgh \)
+        </div>
+        <div class="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono font-bold text-amber-200 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+          \( P = \frac{W}{t} \)
+        </div>
+        <div class="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono font-bold text-purple-200 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+          \( 1\text{ kWh} = 3.6 \times 10^6\text{ J} \)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unit 9 Tab Navigation Bar (Horizontal Scrollable with Claymorphism & SVG Icons) -->
+  <div class="flex items-center gap-2 overflow-x-auto pb-2 mb-6 scrollbar-none border-b border-slate-200">
+    <button onclick="setTabC9U9('concepts')" id="c9u9-tab-concepts" class="px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl bg-indigo-600 text-white shadow-md font-bold transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer ring-2 ring-indigo-400/30 min-h-[44px]">
+      <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+      <span>१. भर्चुअल भौतिक प्रयोगशाला (Virtual Physics Lab)</span>
+    </button>
+    <button onclick="setTabC9U9('exercises')" id="c9u9-tab-exercises" class="px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[44px]">
+      <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+      <span>२. सम्पूर्ण अभ्यास तथा समाधान (CDC Solutions)</span>
+    </button>
+    <button onclick="setTabC9U9('tiers')" id="c9u9-tab-tiers" class="px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[44px]">
+      <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+      <span>३. १६ स्तरीकृत नमुना प्रश्नोत्तर (Model Q&As)</span>
+    </button>
+    <button onclick="setTabC9U9('quiz')" id="c9u9-tab-quiz" class="px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[44px]">
+      <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+      <span>४. आत्म-मूल्याङ्कन क्विज (Self-Assessment Quiz)</span>
+    </button>
+  </div>
+
+  <!-- TAB 1: VIRTUAL PHYSICS LAB -->
+  <div id="c9u9-view-concepts" class="space-y-6">
+    <!-- Lab Submode Switcher -->
+    <div class="flex items-center gap-2 p-1.5 bg-slate-900/90 rounded-3xl text-white shadow-inner border border-slate-800">
+      <button onclick="setLabModeC9U9('peke')" id="c9u9-btn-mode-peke" class="flex-1 py-3 px-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-black text-xs md:text-sm shadow-md transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2 ring-2 ring-indigo-400/30">
+        <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        <span>१. स्थितिज र गतिज ऊर्जा सिमुलेटर (PE & KE Lab)</span>
+      </button>
+      <button onclick="setLabModeC9U9('pendulum')" id="c9u9-btn-mode-pendulum" class="flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700/80 font-bold text-xs md:text-sm transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2">
+        <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-width="2"></circle><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v9l4 4"></path></svg>
+        <span>२. ऊर्जा संरक्षण लोलक सिमुलेटर (Conservation Pendulum)</span>
+      </button>
+      <button onclick="setLabModeC9U9('bill')" id="c9u9-btn-mode-bill" class="flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700/80 font-bold text-xs md:text-sm transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2">
+        <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+        <span>३. शक्ति र विद्युत महसुल क्यालकुलेटर (Power & Electricity Bill)</span>
+      </button>
+    </div>
+
+    <!-- MODE 1: PE & KE SIMULATOR -->
+    <div id="c9u9-lab-mode-peke" class="space-y-6">
+      <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/80 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <h3 class="text-lg md:text-xl font-black text-slate-800 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-indigo-600"></span>
+              स्थितिज ऊर्जा र गतिज ऊर्जा प्रयोगशाला (Potential & Kinetic Energy Lab)
+            </h3>
+            <p class="text-xs md:text-sm text-slate-500 mt-1">
+              पिण्ड, उचाइ र गतिको मान परिवर्तन गरी स्थितिज ऊर्जा \( (E_p = mgh) \) र गतिज ऊर्जा \( (E_k = \frac{1}{2}mv^2) \) को प्रत्यक्ष गणितीय सम्बन्ध हेर्नुहोस्।
+            </p>
+          </div>
+          <div class="flex items-center gap-2 bg-indigo-50 text-indigo-900 px-3.5 py-1.5 rounded-xl border border-indigo-200/60 text-xs font-bold shrink-0">
+            <span>गुरुत्वप्रवेग \( g = 9.8\text{ m/s}^2 \)</span>
+          </div>
+        </div>
+
+        <!-- PE/KE Canvas & Interactive Visualizer -->
+        <div class="bg-slate-950 rounded-2xl p-4 md:p-6 text-white space-y-4">
+          <div class="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800 pb-2">
+            <span class="font-bold text-slate-300">दृश्य सिमुलेटर (Visual Physics Canvas)</span>
+            <span class="font-mono text-cyan-400">उचाइ र गतिको ऊर्जा रूपान्तरण</span>
+          </div>
+
+          <div class="w-full overflow-hidden flex items-center justify-center py-2">
+            <svg id="c9u9-svg-peke" viewBox="0 0 600 240" class="w-full max-w-2xl h-auto select-none">
+              <!-- Background Grid & Ground -->
+              <rect x="0" y="0" width="600" height="240" fill="#0f172a" rx="12" />
+              <line x1="40" y1="200" x2="560" y2="200" stroke="#334155" stroke-width="4" />
+              <!-- Ground Pattern / Hatch -->
+              <line x1="40" y1="205" x2="560" y2="205" stroke="#1e293b" stroke-width="6" stroke-dasharray="8 6" />
+              <text x="560" y="218" text-anchor="end" fill="#64748b" font-size="10" font-weight="bold">जमिन (Ground Level, h = 0)</text>
+
+              <!-- Height Tower / Scale (Left side) -->
+              <rect x="70" y="30" width="16" height="170" fill="#1e293b" stroke="#475569" stroke-width="1.5" rx="3" />
+              <!-- Tower Height Scale Markings -->
+              <line x1="86" y1="30" x2="94" y2="30" stroke="#94a3b8" stroke-width="1.5" />
+              <text x="100" y="34" fill="#94a3b8" font-size="9" font-mono>50m</text>
+              <line x1="86" y1="64" x2="94" y2="64" stroke="#94a3b8" stroke-width="1.5" />
+              <text x="100" y="68" fill="#94a3b8" font-size="9" font-mono>40m</text>
+              <line x1="86" y1="98" x2="94" y2="98" stroke="#94a3b8" stroke-width="1.5" />
+              <text x="100" y="102" fill="#94a3b8" font-size="9" font-mono>30m</text>
+              <line x1="86" y1="132" x2="94" y2="132" stroke="#94a3b8" stroke-width="1.5" />
+              <text x="100" y="136" fill="#94a3b8" font-size="9" font-mono>20m</text>
+              <line x1="86" y1="166" x2="94" y2="166" stroke="#94a3b8" stroke-width="1.5" />
+              <text x="100" y="170" fill="#94a3b8" font-size="9" font-mono>10m</text>
+
+              <!-- Dynamic Height Indicator Line & Text -->
+              <line id="c9u9-svg-pe-line" x1="130" y1="166" x2="130" y2="200" stroke="#10b981" stroke-width="2" stroke-dasharray="4 3" />
+              <circle id="c9u9-svg-pe-arrow-top" cx="130" cy="166" r="3" fill="#10b981" />
+              <circle id="c9u9-svg-pe-arrow-bottom" cx="130" cy="200" r="3" fill="#10b981" />
+              <text id="c9u9-svg-pe-htext" x="138" y="186" fill="#34d399" font-size="11" font-bold font-mono>h = 10 m</text>
+
+              <!-- Mass Bob on Tower/Air (Elevated object with Potential Energy) -->
+              <g id="c9u9-svg-pe-obj" transform="translate(180, 150)">
+                <circle cx="0" cy="0" r="18" fill="#059669" stroke="#34d399" stroke-width="2" />
+                <text x="0" y="4" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold" id="c9u9-svg-pe-mass-text">10kg</text>
+                <text x="0" y="-24" text-anchor="middle" fill="#6ee7b7" font-size="10" font-weight="bold">सञ्चित Ep</text>
+              </g>
+
+              <!-- Moving Mass on Ground / Track (Object with Kinetic Energy) -->
+              <g id="c9u9-svg-ke-obj" transform="translate(320, 182)">
+                <!-- Speed trail -->
+                <line x1="-30" y1="0" x2="-15" y2="0" stroke="#6366f1" stroke-width="2" stroke-dasharray="4 2" />
+                <line x1="-25" y1="5" x2="-15" y2="5" stroke="#6366f1" stroke-width="2" stroke-dasharray="3 2" />
+                <line x1="-25" y1="-5" x2="-15" y2="-5" stroke="#6366f1" stroke-width="2" stroke-dasharray="3 2" />
+                <!-- Velocity Vector Arrow -->
+                <line x1="16" y1="0" x2="48" y2="0" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)" />
+                <polygon points="46,-4 54,0 46,4" fill="#38bdf8" />
+                <!-- Body -->
+                <circle cx="0" cy="0" r="18" fill="#4f46e5" stroke="#818cf8" stroke-width="2" />
+                <text x="0" y="4" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold" id="c9u9-svg-ke-mass-text">10kg</text>
+                <text x="32" y="-10" text-anchor="start" fill="#7dd3fc" font-size="10" font-weight="bold" font-mono id="c9u9-svg-ke-vtext">v = 10 m/s</text>
+                <text x="0" y="30" text-anchor="middle" fill="#a5b4fc" font-size="10" font-weight="bold">गतिशील Ek</text>
+              </g>
+
+              <!-- Live Energy Comparative Bar Charts (Inside SVG) -->
+              <g transform="translate(430, 30)">
+                <rect x="0" y="0" width="150" height="150" fill="#1e293b" rx="8" stroke="#334155" />
+                <text x="75" y="18" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">ऊर्जा तुलना (Joules)</text>
+                <!-- Ep Bar -->
+                <rect x="25" y="120" width="30" height="0" id="c9u9-svg-bar-ep" fill="#10b981" rx="3" />
+                <text x="40" y="135" text-anchor="middle" fill="#34d399" font-size="10" font-weight="bold">Ep</text>
+                <text x="40" y="115" text-anchor="middle" fill="#ffffff" font-size="9" font-mono id="c9u9-svg-bar-ep-text">980J</text>
+                <!-- Ek Bar -->
+                <rect x="85" y="120" width="30" height="0" id="c9u9-svg-bar-ek" fill="#6366f1" rx="3" />
+                <text x="100" y="135" text-anchor="middle" fill="#818cf8" font-size="10" font-weight="bold">Ek</text>
+                <text x="100" y="115" text-anchor="middle" fill="#ffffff" font-size="9" font-mono id="c9u9-svg-bar-ek-text">500J</text>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Bottom readout banner -->
+          <div class="flex flex-wrap items-center justify-between gap-4 text-xs font-mono pt-3 border-t border-slate-800">
+            <div class="text-emerald-400 flex items-center gap-1.5">
+              <span>स्थितिज ऊर्जा (mgh):</span>
+              <span id="c9u9-readout-ep" class="font-bold text-white">980.0 J</span>
+            </div>
+            <div class="text-indigo-400 flex items-center gap-1.5">
+              <span>गतिज ऊर्जा (½mv²):</span>
+              <span id="c9u9-readout-ek" class="font-bold text-white">500.0 J</span>
+            </div>
+            <div class="text-amber-400 flex items-center gap-1.5">
+              <span>कुल यान्त्रिक ऊर्जा (Ep + Ek):</span>
+              <span id="c9u9-readout-etotal" class="font-bold text-amber-200">1480.0 J</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sliders Controls Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+          <!-- Mass (m) Slider -->
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-bold text-slate-700">वस्तुको पिण्ड (Mass, m)</label>
+              <span id="c9u9-val-mass" class="text-xs font-mono font-black text-indigo-600 px-2 py-0.5 rounded-md bg-indigo-100">10 kg</span>
+            </div>
+            <input type="range" id="c9u9-slider-mass" min="1" max="100" step="1" value="10" oninput="updatePEKESimC9U9()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600">
+            <p class="text-[11px] text-slate-500">पिण्ड बढ्दा स्थितिज र गतिज दुवै ऊर्जा समानुपातिक रूपमा बढ्छन्।</p>
+          </div>
+
+          <!-- Height (h) Slider -->
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-bold text-slate-700">उचाइ (Height, h)</label>
+              <span id="c9u9-val-height" class="text-xs font-mono font-black text-emerald-600 px-2 py-0.5 rounded-md bg-emerald-100">10 m</span>
+            </div>
+            <input type="range" id="c9u9-slider-height" min="0" max="50" step="1" value="10" oninput="updatePEKESimC9U9()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-600">
+            <p class="text-[11px] text-slate-500">उचाइ शून्य हुँदा जमिनमा स्थितिज ऊर्जा शून्य हुन्छ।</p>
+          </div>
+
+          <!-- Velocity (v) Slider -->
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-bold text-slate-700">गति (Velocity, v)</label>
+              <span id="c9u9-val-velocity" class="text-xs font-mono font-black text-sky-600 px-2 py-0.5 rounded-md bg-sky-100">10 m/s</span>
+            </div>
+            <input type="range" id="c9u9-slider-velocity" min="0" max="40" step="1" value="10" oninput="updatePEKESimC9U9()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-sky-600">
+            <p class="text-[11px] text-slate-500">गति २ गुणा हुँदा गतिज ऊर्जा ४ गुणा (वर्ग अनुसार) बढ्छ।</p>
+          </div>
+        </div>
+
+        <!-- Real-time Mathematical Breakdown Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-100 space-y-1">
+            <div class="text-[11px] font-bold text-emerald-700">१. स्थितिज ऊर्जा (Potential Energy)</div>
+            <div id="c9u9-calc-ep-formula" class="text-xs font-mono text-emerald-800">\( E_p = mgh = 10 \times 9.8 \times 10 \)</div>
+            <div id="c9u9-res-ep" class="text-xl md:text-2xl font-black text-emerald-900 font-mono">980 J</div>
+            <div class="text-[10px] text-emerald-600">स्थान वा अवस्थाका कारण सञ्चित हुने ऊर्जा।</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-indigo-50/70 border border-indigo-100 space-y-1">
+            <div class="text-[11px] font-bold text-indigo-700">२. गतिज ऊर्जा (Kinetic Energy)</div>
+            <div id="c9u9-calc-ek-formula" class="text-xs font-mono text-indigo-800">\( E_k = \frac{1}{2}mv^2 = \frac{1}{2} \times 10 \times 10^2 \)</div>
+            <div id="c9u9-res-ek" class="text-xl md:text-2xl font-black text-indigo-900 font-mono">500 J</div>
+            <div class="text-[10px] text-indigo-600">गतिको कारणले वस्तुमा उत्पन्न हुने कार्य गर्ने सामर्थ्य।</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-purple-50/70 border border-purple-100 space-y-1">
+            <div class="text-[11px] font-bold text-purple-700">३. वर्ग सम्बन्ध (Velocity-KE Multiplier)</div>
+            <div class="text-xs font-mono text-purple-800">\( E_k \propto v^2 \) (गतिको वर्गसँग समानुपातिक)</div>
+            <div id="c9u9-res-multiplier" class="text-base md:text-lg font-black text-purple-900">गति २ गुणा → Ek ४ गुणा</div>
+            <div class="text-[10px] text-purple-600">गति तीव्र हुँदा दुर्घटनामा क्षति अधिक हुनुको मुख्य वैज्ञानिक कारण।</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODE 2: CONSERVATION OF ENERGY PENDULUM SIMULATOR -->
+    <div id="c9u9-lab-mode-pendulum" class="hidden space-y-6">
+      <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/80 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <h3 class="text-lg md:text-xl font-black text-slate-800 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-cyan-600"></span>
+              ऊर्जा संरक्षणको नियम तथा सरल लोलक (Law of Conservation of Energy - Pendulum)
+            </h3>
+            <p class="text-xs md:text-sm text-slate-500 mt-1">
+              लोलक दोलन गर्दा चरम बिन्दु (Extreme) र मध्य बिन्दु (Mean) बीच स्थितिज र गतिज ऊर्जाको निरन्तर रूपान्तरण तर कुल ऊर्जा स्थिर \( (E_p + E_k = \text{Constant}) \) रहने नियम।
+            </p>
+          </div>
+          <!-- Play / Pause animation button -->
+          <div class="flex items-center gap-2">
+            <button onclick="togglePendulumAnimC9U9()" id="c9u9-btn-pendulum-play" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow transition flex items-center gap-2 cursor-pointer min-h-[44px]">
+              <svg id="c9u9-icon-play" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+              <span id="c9u9-text-play">एनिमेसन सुरु (Play Swing)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Pendulum Visual SVG Canvas -->
+        <div class="bg-slate-950 rounded-2xl p-4 md:p-6 text-white space-y-4">
+          <div class="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800 pb-2">
+            <span class="font-bold text-slate-300">लोलकको दोलन तथा ऊर्जा रूपान्तरण</span>
+            <span id="c9u9-pendulum-state-badge" class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30 text-[11px]">मध्य बिन्दु (Mean Position)</span>
+          </div>
+
+          <div class="w-full overflow-hidden flex items-center justify-center py-2">
+            <svg id="c9u9-svg-pendulum" viewBox="0 0 600 280" class="w-full max-w-2xl h-auto select-none">
+              <!-- Background -->
+              <rect x="0" y="0" width="600" height="280" fill="#0f172a" rx="12" />
+
+              <!-- Rigid Support at Top -->
+              <rect x="220" y="15" width="160" height="12" fill="#334155" stroke="#475569" stroke-width="1.5" rx="3" />
+              <line x1="220" y1="15" x2="380" y2="15" stroke="#64748b" stroke-width="3" stroke-dasharray="8 4" />
+              <!-- Pivot point -->
+              <circle cx="300" cy="27" r="5" fill="#f8fafc" stroke="#38bdf8" stroke-width="2" />
+              <text x="300" y="12" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">आड (Pivot Point)</text>
+
+              <!-- Reference Vertical Line (Dotted) -->
+              <line x1="300" y1="27" x2="300" y2="225" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 4" />
+              <!-- Trajectory Arc (Dotted) -->
+              <path d="M 180 195 Q 300 240 420 195" fill="none" stroke="#1e293b" stroke-width="2" stroke-dasharray="4 4" />
+
+              <!-- Extreme Points Labels & Heights -->
+              <!-- Left Extreme A -->
+              <circle cx="180" cy="195" r="4" fill="#38bdf8" opacity="0.4" />
+              <text x="155" y="190" text-anchor="end" fill="#38bdf8" font-size="11" font-weight="bold">A (चरम बायाँ)</text>
+              <text x="155" y="205" text-anchor="end" fill="#64748b" font-size="9" font-mono>Ep=Max, Ek=0</text>
+
+              <!-- Right Extreme B -->
+              <circle cx="420" cy="195" r="4" fill="#38bdf8" opacity="0.4" />
+              <text x="445" y="190" text-anchor="start" fill="#38bdf8" font-size="11" font-weight="bold">B (चरम दायाँ)</text>
+              <text x="445" y="205" text-anchor="start" fill="#64748b" font-size="9" font-mono>Ep=Max, Ek=0</text>
+
+              <!-- Mean Position O -->
+              <text x="300" y="255" text-anchor="middle" fill="#34d399" font-size="11" font-weight="bold">O (मध्य बिन्दु: Ek=Max, Ep=0)</text>
+
+              <!-- Swing String & Bob Group (Rotated around 300, 27) -->
+              <g id="c9u9-svg-pendulum-rod" transform="rotate(0, 300, 27)">
+                <!-- String -->
+                <line x1="300" y1="27" x2="300" y2="225" stroke="#cbd5e1" stroke-width="2.5" />
+                <!-- Bob -->
+                <circle cx="300" cy="225" r="18" fill="#0284c7" stroke="#38bdf8" stroke-width="2.5" />
+                <circle cx="300" cy="225" r="5" fill="#e0f2fe" />
+                <text x="300" y="260" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">Bob</text>
+              </g>
+
+              <!-- Live Energy Proportion Display Gauge (Inside SVG) -->
+              <g transform="translate(40, 40)">
+                <rect x="0" y="0" width="130" height="90" fill="#1e293b" rx="8" stroke="#334155" />
+                <text x="65" y="16" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="bold">ऊर्जा वितरण (%)</text>
+                <!-- Ep Bar -->
+                <rect x="15" y="30" width="100" height="12" fill="#0f172a" rx="4" />
+                <rect id="c9u9-svg-pbar-ep" x="15" y="30" width="0" height="12" fill="#10b981" rx="4" />
+                <text x="15" y="55" fill="#34d399" font-size="9" font-mono id="c9u9-svg-ptext-ep">Ep: 0%</text>
+                <!-- Ek Bar -->
+                <rect x="15" y="65" width="100" height="12" fill="#0f172a" rx="4" />
+                <rect id="c9u9-svg-pbar-ek" x="15" y="65" width="100" height="12" fill="#6366f1" rx="4" />
+                <text x="15" y="90" fill="#818cf8" font-size="9" font-mono id="c9u9-svg-ptext-ek">Ek: 100%</text>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Pendulum Readout Metrics -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 pt-2 text-xs font-mono border-t border-slate-800">
+            <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800">
+              <div class="text-slate-400 text-[10px]">कोण (Angle, θ)</div>
+              <div id="c9u9-readout-pendulum-angle" class="font-bold text-white text-sm">0.0°</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800">
+              <div class="text-emerald-400 text-[10px]">स्थितिज ऊर्जा (Ep)</div>
+              <div id="c9u9-readout-pendulum-ep" class="font-bold text-emerald-300 text-sm">0.0 J</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800">
+              <div class="text-indigo-400 text-[10px]">गतिज ऊर्जा (Ek)</div>
+              <div id="c9u9-readout-pendulum-ek" class="font-bold text-indigo-300 text-sm">100.0 J</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800">
+              <div class="text-amber-400 text-[10px]">कुल यान्त्रिक ऊर्जा (E)</div>
+              <div class="font-bold text-amber-300 text-sm">100.0 J (Constant)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Position Slider Control -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+          <div class="flex items-center justify-between">
+            <label class="text-xs font-bold text-slate-700">लोलकको स्थिति म्यानुअल नियन्त्रण (Swing Position Slider)</label>
+            <span id="c9u9-val-pendulum-slider" class="text-xs font-mono font-black text-cyan-600 px-2.5 py-0.5 rounded-md bg-cyan-100">मध्य बिन्दु (0°)</span>
+          </div>
+          <input type="range" id="c9u9-slider-pendulum" min="-30" max="30" step="1" value="0" oninput="manualPendulumMoveC9U9(this.value)" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-cyan-600">
+          <div class="flex justify-between text-[11px] text-slate-500 font-bold px-1">
+            <span>← चरम बायाँ (A: -30°)</span>
+            <span>मध्य बिन्दु (O: 0°)</span>
+            <span>चरम दायाँ (B: +30°) →</span>
+          </div>
+        </div>
+
+        <!-- Conservation Law Concept Box -->
+        <div class="p-4 rounded-2xl bg-cyan-50/70 border border-cyan-100 text-xs md:text-sm text-cyan-950 space-y-2">
+          <div class="font-bold text-cyan-900 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-cyan-600"></span>
+            ऊर्जा संरक्षणको वैज्ञानिक निष्कर्ष:
+          </div>
+          <p class="leading-relaxed">
+            जब लोलक उच्चतम बिन्दु <strong>A वा B</strong> मा पुग्छ, यसको गति शून्य \( (v = 0) \) हुन्छ, त्यसैले गतिज ऊर्जा शून्य र स्थितिज ऊर्जा अधिकतम \( (E_p = mgh) \) हुन्छ। जब यो बीचको बिन्दु <strong>O</strong> मा आउँछ, उचाइ शून्य भई सम्पूर्ण स्थितिज ऊर्जा गतिज ऊर्जा \( (E_k = \frac{1}{2}mv^2) \) मा रूपान्तरण हुन्छ। बीचको जुनसुकै स्थानमा कुल ऊर्जा \( E = E_p + E_k = mgh \) सधैँ स्थिर रहन्छ।
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODE 3: WORK, POWER & ELECTRICITY BILL CALCULATOR -->
+    <div id="c9u9-lab-mode-bill" class="hidden space-y-6">
+      <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/80 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <h3 class="text-lg md:text-xl font-black text-slate-800 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-amber-600"></span>
+              कार्य, शक्ति र घरायसी विद्युत महसुल क्यालकुलेटर (Power & Electricity Bill Lab)
+            </h3>
+            <p class="text-xs md:text-sm text-slate-500 mt-1">
+              कार्य \( (W = F \times s) \), शक्ति \( (P = \frac{W}{t}) \) र घरायसी विद्युत उपकरणहरूको मासिक युनिट तथा महसुल गणना गर्नुहोस्।
+            </p>
+          </div>
+          <div class="px-3 py-1 rounded-xl bg-amber-50 text-amber-900 border border-amber-200 font-mono text-xs font-bold shrink-0">
+            \( 1\text{ HP} = 746\text{ W} \) • \( 1\text{ Unit} = 1\text{ kWh} \)
+          </div>
+        </div>
+
+        <!-- SECTION A: WORK & POWER CALCULATOR -->
+        <div class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-indigo-50/40 border border-slate-200/80 space-y-4">
+          <h4 class="text-sm font-black text-slate-800 flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded bg-indigo-600 text-white text-[11px]">खण्ड 'क'</span>
+            कार्य र शक्ति क्यालकुलेटर (Work & Power Calculation)
+          </h4>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Force (F) -->
+            <div class="space-y-1.5">
+              <label class="text-xs font-bold text-slate-700">लागेको बल (Force, F in N)</label>
+              <input type="number" id="c9u9-input-force" value="600" min="1" step="10" oninput="updateWorkPowerC9U9()" class="w-full px-3.5 py-2 rounded-xl bg-white border border-slate-300 text-sm font-mono font-bold focus:ring-2 focus:ring-indigo-500 outline-none">
+              <p class="text-[10px] text-slate-500">वस्तुमा लगाइएको सिधा बल।</p>
+            </div>
+            <!-- Distance (s) -->
+            <div class="space-y-1.5">
+              <label class="text-xs font-bold text-slate-700">पार गरेको दुरी (Distance, s in m)</label>
+              <input type="number" id="c9u9-input-dist" value="10" min="1" step="0.5" oninput="updateWorkPowerC9U9()" class="w-full px-3.5 py-2 rounded-xl bg-white border border-slate-300 text-sm font-mono font-bold focus:ring-2 focus:ring-indigo-500 outline-none">
+              <p class="text-[10px] text-slate-500">बलको दिशामा भएको विस्थापन।</p>
+            </div>
+            <!-- Time (t) -->
+            <div class="space-y-1.5">
+              <label class="text-xs font-bold text-slate-700">लागेको समय (Time, t in s)</label>
+              <input type="number" id="c9u9-input-time" value="20" min="0.1" step="1" oninput="updateWorkPowerC9U9()" class="w-full px-3.5 py-2 rounded-xl bg-white border border-slate-300 text-sm font-mono font-bold focus:ring-2 focus:ring-indigo-500 outline-none">
+              <p class="text-[10px] text-slate-500">कार्य सम्पन्न गर्न लागेको सेकेन्ड।</p>
+            </div>
+          </div>
+
+          <!-- Output Cards for Work & Power -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 text-center">
+              <div class="text-[11px] font-bold text-slate-600">कुल कार्य (Work Done, W)</div>
+              <div id="c9u9-out-work" class="text-lg md:text-xl font-black text-indigo-900 font-mono mt-0.5">6000 J</div>
+              <div class="text-[10px] text-slate-400">\( W = F \times s \)</div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 text-center">
+              <div class="text-[11px] font-bold text-slate-600">शक्ति (Power in Watts & kW)</div>
+              <div id="c9u9-out-power-w" class="text-lg md:text-xl font-black text-emerald-900 font-mono mt-0.5">300 W (0.3 kW)</div>
+              <div class="text-[10px] text-slate-400">\( P = \frac{W}{t} \)</div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 text-center">
+              <div class="text-[11px] font-bold text-slate-600">हर्सपावर (Horsepower, HP)</div>
+              <div id="c9u9-out-power-hp" class="text-lg md:text-xl font-black text-amber-900 font-mono mt-0.5">0.402 HP</div>
+              <div class="text-[10px] text-slate-400">\( HP = \frac{P}{746} \)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION B: HOUSEHOLD ELECTRIC APPLIANCES & BILL CALCULATOR -->
+        <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-50/50 to-orange-50/30 border border-amber-200/80 space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <h4 class="text-sm font-black text-slate-800 flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-amber-600 text-white text-[11px]">खण्ड 'ख'</span>
+              घरायसी विद्युत महसुल क्यालकुलेटर (NEA Electric Bill Calculator)
+            </h4>
+            <div class="flex items-center gap-2">
+              <label class="text-xs font-bold text-slate-700">प्रतियुनिट दर (रू.):</label>
+              <input type="number" id="c9u9-bill-rate" value="9.50" step="0.5" min="1" oninput="updateElectricityBillC9U9()" class="w-20 px-2 py-1 rounded-lg bg-white border border-slate-300 text-xs font-mono font-bold outline-none text-right">
+            </div>
+          </div>
+
+          <!-- Appliances Table -->
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs border-collapse">
+              <thead>
+                <tr class="bg-amber-100/70 text-amber-950 font-bold border-b border-amber-200">
+                  <th class="p-2.5 rounded-tl-xl">विद्युत उपकरण</th>
+                  <th class="p-2.5">संख्या (N)</th>
+                  <th class="p-2.5">प्रति उपकरण क्षमता (Watts)</th>
+                  <th class="p-2.5">दैनिक प्रयोग (Hours/day)</th>
+                  <th class="p-2.5 rounded-tr-xl text-right">दैनिक खपत (Wh)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-amber-100 text-slate-700 font-medium">
+                <!-- Row 1: Bulbs -->
+                <tr>
+                  <td class="p-2.5 font-bold text-slate-900 flex items-center gap-1.5">
+                    <span>💡</span> चिम (LED Bulbs)
+                  </td>
+                  <td class="p-2.5">
+                    <input type="number" id="c9u9-app-num-1" value="4" min="0" oninput="updateElectricityBillC9U9()" class="w-16 px-2 py-1 rounded border border-slate-200 font-mono">
+                  </td>
+                  <td class="p-2.5">
+                    <input type="number" id="c9u9-app-watt-1" value="15" min="1" oninput="updateElectricityBillC9U9()" class="w-20 px-2 py-1 rounded border border-slate-200 font-mono"> W
+                  </td>
+                  <td class="p-2.5">
+                    <input type="number" id="c9u9-app-hrs-1" value="6" min="0" max="24" oninput="updateElectricityBillC9U9()" class="w-16 px-2 py-1 rounded border border-slate-200 font-mono"> h
+                  </td>
+                  <td id="c9u9-app-wh-1" class="p-2.5 text-right font-mono font-bold text-slate-900">360 Wh</td>
+                </tr>
+
+                <!-- Row 2: TV -->
+                <tr>
+                  <td class="p-2.5 font-bold text-slate-900 flex items-center gap-1.5">
+                    <span>📺</span> टेलिभिजन (TV)
+                  </td>
+                  <td class="p-2.5">
+                    <input type="number" id="c9u9-app-num-2" value="1" min="0" oninput="updateElectricityBillC9U9()" class="w-16 px-2 py-1 rounded border border-slate-200 font-mono">
+                  </td>
+                  <td class="p-2.5">
+                    <input type="number" id="c9u9-app-watt-2" value="80" min="1" oninput="updateElectricityBillC9U9()" class="w-20 px-2 py-1 rounded border border-slate-200 font-mono"> W
+                  </td>
+                  <td class="p-2.5">
+                    <input type="number" id="c9u9-app-hrs-2" value="4" min="0" max="24" oninput="updateElectricityBillC9U9()" class="w-16 px-2 py-1 rounded border border-slate-200 font-mono"> h
+                  </td>
+                  <td id="c9u9-app-wh-2" class="p-2.5 text-right font-mono font-bold text-slate-900">320 Wh</td>
+                </tr>
+
+                <!-- Row 3: Refrigerator -->
+                <tr>
+                  <td class="p-2.5 font-bold text-slate-900 flex items-center gap-1.5">
+                    <span>🧊</span> फ्रिज (Refrigerator)
+                  </td>
+                  <td class="p-2.5">
+                    <input type="number" id="c9u9-app-num-3" value="1" min="0" oninput="updateElectricityBillC9U9()" class="w-16 px-2 py-1 rounded border border-slate-200 font-mono">
+                  </td>
+                  <td class="p-2.5">
+                    <input type="number" id="c9u9-app-watt-3" value="150" min="1" oninput="updateElectricityBillC9U9()" class="w-20 px-2 py-1 rounded border border-slate-200 font-mono"> W
+                  </td>
+                  <td class="p-2.5">
+                    <input type="number" id="c9u9-app-hrs-3" value="12" min="0" max="24" oninput="updateElectricityBillC9U9()" class="w-16 px-2 py-1 rounded border border-slate-200 font-mono"> h
+                  </td>
+                  <td id="c9u9-app-wh-3" class="p-2.5 text-right font-mono font-bold text-slate-900">1800 Wh</td>
+                </tr>
+
+                <!-- Row 4: Heater / Water Pump -->
+                <tr>
+                  <td class="p-2.5 font-bold text-slate-900 flex items-center gap-1.5">
+                    <span>🔥</span> हिटर / गिजर (Heater)
+                  </td>
+                  <td class="p-2.5">
+                    <input type="number" id="c9u9-app-num-4" value="1" min="0" oninput="updateElectricityBillC9U9()" class="w-16 px-2 py-1 rounded border border-slate-200 font-mono">
+                  </td>
+                  <td class="p-2.5">
+                    <input type="number" id="c9u9-app-watt-4" value="1000" min="1" oninput="updateElectricityBillC9U9()" class="w-20 px-2 py-1 rounded border border-slate-200 font-mono"> W
+                  </td>
+                  <td class="p-2.5">
+                    <input type="number" id="c9u9-app-hrs-4" value="2" min="0" max="24" oninput="updateElectricityBillC9U9()" class="w-16 px-2 py-1 rounded border border-slate-200 font-mono"> h
+                  </td>
+                  <td id="c9u9-app-wh-4" class="p-2.5 text-right font-mono font-bold text-slate-900">2000 Wh</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Total Monthly Calculation Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+            <div class="p-4 rounded-2xl bg-white border border-amber-200 text-center">
+              <div class="text-[11px] font-bold text-amber-800">दैनिक खपत (Daily Energy)</div>
+              <div id="c9u9-bill-daily-kwh" class="text-xl md:text-2xl font-black text-amber-900 font-mono mt-0.5">4.48 kWh</div>
+              <div class="text-[10px] text-amber-700">युनिट प्रति दिन</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-white border border-amber-200 text-center">
+              <div class="text-[11px] font-bold text-amber-800">मासिक खपत (३० दिन)</div>
+              <div id="c9u9-bill-monthly-units" class="text-xl md:text-2xl font-black text-indigo-900 font-mono mt-0.5">134.4 युनिट</div>
+              <div class="text-[10px] text-indigo-700">\( \text{दैनिक} \times 30 \)</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-amber-600 text-white text-center shadow-md">
+              <div class="text-[11px] font-bold text-amber-100">मासिक विद्युत महसुल (NPR)</div>
+              <div id="c9u9-bill-total-cost" class="text-2xl md:text-3xl font-black font-mono mt-0.5">रू. १२७६.८०</div>
+              <div class="text-[10px] text-amber-200">दर: रु. ९.५० / युनिट</div>
+            </div>
+          </div>
+
+          <!-- Energy Saving Tip -->
+          <div class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 flex items-start gap-2.5">
+            <span class="text-base">💡</span>
+            <div>
+              <strong>ऊर्जा दक्षता सुझाव (Energy Efficiency Tip):</strong> यदि १०० वाटको परम्परागत फिलामेन्ट चिमको सट्टा १५ वाटको एलईडी चिम प्रयोग गरियो भने, दैनिक ६ घण्टा बाल्दा प्रति चिम मासिक <strong>१५.३ युनिट बिजुली</strong> र <strong>रू. १४५ भन्दा बढी</strong> बचत हुन्छ!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 2: COMPLETE CDC TEXTBOOK SOLUTIONS -->
+  <div id="c9u9-view-exercises" class="hidden space-y-6">
+    <!-- Exercise Sub-section Navigation Bar -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none border-b border-slate-200">
+      <button onclick="setExerciseSecC9U9('sec-mcqs')" id="c9u9-exsec-btn-sec-mcqs" class="px-3.5 py-1.5 rounded-xl bg-indigo-600 text-white font-bold text-xs whitespace-nowrap shadow-xs cursor-pointer min-h-[38px]">
+        १. बहुवैकल्पिक प्रश्न (१० MCQs)
+      </button>
+      <button onclick="setExerciseSecC9U9('sec-fill')" id="c9u9-exsec-btn-sec-fill" class="px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs whitespace-nowrap cursor-pointer min-h-[38px]">
+        २. खाली ठाउँ र जोडा (Fill & Match)
+      </button>
+      <button onclick="setExerciseSecC9U9('sec-diff')" id="c9u9-exsec-btn-sec-diff" class="px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs whitespace-nowrap cursor-pointer min-h-[38px]">
+        ३. फरक लेख्नुहोस् (५ Differences)
+      </button>
+      <button onclick="setExerciseSecC9U9('sec-reasons')" id="c9u9-exsec-btn-sec-reasons" class="px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs whitespace-nowrap cursor-pointer min-h-[38px]">
+        ४. वैज्ञानिक कारण (६ Reasons)
+      </button>
+      <button onclick="setExerciseSecC9U9('sec-qa')" id="c9u9-exsec-btn-sec-qa" class="px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs whitespace-nowrap cursor-pointer min-h-[38px]">
+        ५. प्रश्नोत्तर (६ Q&As)
+      </button>
+      <button onclick="setExerciseSecC9U9('sec-numericals')" id="c9u9-exsec-btn-sec-numericals" class="px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs whitespace-nowrap cursor-pointer min-h-[38px]">
+        ६. गणितीय समस्याहरू (५ Numericals)
+      </button>
+    </div>
+
+    <!-- Section 1: MCQs -->
+    <div id="c9u9-sec-mcqs" class="space-y-4">
+      <div class="bg-indigo-50/70 border border-indigo-100 rounded-2xl p-4 text-xs md:text-sm text-indigo-950 font-bold flex items-center justify-between">
+        <span>अभ्यास खण्ड १: पाठ्यपुस्तकका १० बहुवैकल्पिक प्रश्नहरू र सही विकल्पको वैज्ञानिक कारण</span>
+        <span class="px-2.5 py-0.5 rounded-full bg-indigo-600 text-white text-[11px]">१० प्रश्नहरू</span>
+      </div>
+      <div id="c9u9-mcqs-container" class="space-y-3">
+        <!-- Injected dynamically or rendered -->
+      </div>
+    </div>
+
+    <!-- Section 2: Fill in Blanks & Match -->
+    <div id="c9u9-sec-fill" class="hidden space-y-6">
+      <!-- Fill in the blanks -->
+      <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm space-y-4">
+        <h4 class="text-base font-black text-slate-800 flex items-center gap-2 border-b border-slate-100 pb-3">
+          <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+          (क) खाली ठाउँमा उपयुक्त शब्द भर्नुहोस्:
+        </h4>
+        <div id="c9u9-fill-container" class="space-y-3">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+
+      <!-- Match the Following -->
+      <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm space-y-4">
+        <h4 class="text-base font-black text-slate-800 flex items-center gap-2 border-b border-slate-100 pb-3">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+          (ख) समूह 'क' र समूह 'ख' बीच जोडा मिलाउनुहोस्:
+        </h4>
+        <div id="c9u9-match-container">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Differences -->
+    <div id="c9u9-sec-diff" class="hidden space-y-4">
+      <div class="bg-indigo-50/70 border border-indigo-100 rounded-2xl p-4 text-xs md:text-sm text-indigo-950 font-bold">
+        अभ्यास खण्ड ३: पाठ्यपुस्तकका ५ वटा मुख्य भिन्नताहरू (Differences Table)
+      </div>
+      <div id="c9u9-diff-container" class="space-y-4">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+
+    <!-- Section 4: Scientific Reasons -->
+    <div id="c9u9-sec-reasons" class="hidden space-y-4">
+      <div class="bg-indigo-50/70 border border-indigo-100 rounded-2xl p-4 text-xs md:text-sm text-indigo-950 font-bold">
+        अभ्यास खण्ड ४: वैज्ञानिक कारण दिनुहोस् (६ प्रश्नहरू)
+      </div>
+      <div id="c9u9-reasons-container" class="space-y-4">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+
+    <!-- Section 5: Conceptual Q&As -->
+    <div id="c9u9-sec-qa" class="hidden space-y-4">
+      <div class="bg-indigo-50/70 border border-indigo-100 rounded-2xl p-4 text-xs md:text-sm text-indigo-950 font-bold">
+        अभ्यास खण्ड ५: विस्तृत प्रश्नोत्तर तथा वैज्ञानिक निगमनहरू (६ Q&As)
+      </div>
+      <div id="c9u9-qa-container" class="space-y-4">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+
+    <!-- Section 6: Numericals in 5-Box Format -->
+    <div id="c9u9-sec-numericals" class="hidden space-y-6">
+      <div class="bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl p-5 text-white shadow-md flex items-center justify-between">
+        <div>
+          <h4 class="text-base font-black">अभ्यास खण्ड ६: पाठ्यपुस्तकका ५ वटा प्रामाणिक गणितीय समस्याहरू</h4>
+          <p class="text-xs text-blue-200 mt-1">
+            १. दिइएको मानहरू • २. पत्ता लगाउनुपर्ने • ३. प्रयोग हुने सूत्र • ४. चरणबद्ध हिसाब • ५. अन्तिम निष्कर्ष (५-बक्स ढाँचा)
+          </p>
+        </div>
+        <span class="px-3 py-1 rounded-full bg-white/20 text-xs font-bold shrink-0">५ समस्याहरू</span>
+      </div>
+      <div id="c9u9-numericals-container" class="space-y-6">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 3: 16 MULTI-TIER EXAM MODEL Q&As -->
+  <div id="c9u9-view-tiers" class="hidden space-y-6">
+    <!-- Tier Selector Buttons -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none border-b border-slate-200">
+      <button onclick="setTierFilterC9U9('all')" id="c9u9-tier-btn-all" class="px-4 py-2 rounded-xl bg-indigo-600 text-white font-bold text-xs shadow-xs cursor-pointer min-h-[38px]">
+        सबै १६ प्रश्नहरू (All)
+      </button>
+      <button onclick="setTierFilterC9U9('t1')" id="c9u9-tier-btn-t1" class="px-4 py-2 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs cursor-pointer min-h-[38px]">
+        तह १: ज्ञान र स्मरण (६ प्रश्न)
+      </button>
+      <button onclick="setTierFilterC9U9('t2')" id="c9u9-tier-btn-t2" class="px-4 py-2 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs cursor-pointer min-h-[38px]">
+        तह २: बोध र समझ (५ प्रश्न)
+      </button>
+      <button onclick="setTierFilterC9U9('t3')" id="c9u9-tier-btn-t3" class="px-4 py-2 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs cursor-pointer min-h-[38px]">
+        तह ३: प्रयोग र उच्च क्षमता (५ प्रश्न)
+      </button>
+    </div>
+
+    <!-- Tiers Container -->
+    <div id="c9u9-tiers-container" class="space-y-4">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+
+  <!-- TAB 4: SELF-ASSESSMENT QUIZ -->
+  <div id="c9u9-view-quiz" class="hidden space-y-6">
+    <!-- Quiz Header Banner -->
+    <div class="bg-gradient-to-r from-indigo-900 via-purple-900 to-slate-900 rounded-3xl p-6 text-white shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+          परीक्षा तयारी • आत्म-मूल्याङ्कन
+        </span>
+        <h3 class="text-xl md:text-2xl font-black mt-2">एकाइ ९: ऊर्जा अनलाइन वस्तुगत परीक्षा (Quiz)</h3>
+        <p class="text-xs md:text-sm text-slate-300 mt-1">
+          १० वटा महत्त्वपूर्ण वस्तुगत तथा गणितीय प्रश्नहरूको सही उत्तर छान्नुहोस् र आफ्नो ज्ञान परीक्षण गर्नुहोस्।
+        </p>
+      </div>
+
+      <!-- Live Score Card -->
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 text-center shrink-0 min-w-[160px]">
+        <div class="text-xs font-bold text-slate-300">तपाईंको प्राप्ताङ्क</div>
+        <div class="text-3xl font-black text-amber-300 font-mono my-1" id="c9u9-quiz-score">0 / 10</div>
+        <div class="text-[11px] font-bold text-slate-300" id="c9u9-quiz-feedback">प्रश्नहरूको उत्तर दिनुहोस्</div>
+      </div>
+    </div>
+
+    <!-- Quiz Action Bar -->
+    <div class="flex items-center justify-between gap-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+      <div class="text-xs text-slate-600 font-bold flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+        <span>प्रत्येक प्रश्नको १ अङ्क (पूर्णाङ्क: १०)</span>
+      </div>
+      <button onclick="resetQuizC9U9()" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition cursor-pointer flex items-center gap-1.5 min-h-[44px]">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+        <span>पुनः सुरु (Reset Quiz)</span>
+      </button>
+    </div>
+
+    <!-- Quiz Questions Container -->
+    <div id="c9u9-quiz-container" class="space-y-4">
+      <!-- Injected by renderC9U9Quiz() -->
+    </div>
+  </div>
+</div>
+
+
+      <!-- Placeholder View for Units 10 to 19 -->
       <div id="c9-placeholder-view" class="hidden flex-1 min-w-0 flex flex-col items-center justify-center p-8 bg-slate-50 border border-slate-200 rounded-3xl text-center space-y-4 my-auto">
         <div class="w-16 h-16 rounded-3xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-3xl font-bold">
           🔬
         </div>
         <div>
           <h3 id="c9-placeholder-title" class="text-xl font-black text-slate-800">एकाइ ३: सूक्ष्मजीव</h3>
-          <p id="c9-placeholder-desc" class="text-xs md:text-sm text-slate-500 mt-1 max-w-md">यस एकाइको अध्ययन सामग्री तथा अभ्यास समाधान तयारीमा छ। हाल एकाइ १ देखि एकाइ ८ सम्म पूर्ण रूपमा उपलब्ध छन्।</p>
+          <p id="c9-placeholder-desc" class="text-xs md:text-sm text-slate-500 mt-1 max-w-md">यस एकाइको अध्ययन सामग्री तथा अभ्यास समाधान तयारीमा छ। हाल एकाइ १ देखि एकाइ ९ सम्म पूर्ण रूपमा उपलब्ध छन्।</p>
         </div>
         <div class="flex gap-2">
           <button onclick="switchGrade9Unit(1)" class="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-xs rounded-xl shadow-md transition cursor-pointer">
@@ -30142,7 +30893,7 @@ eq 6$</div>
       const nodes = [];
       let n;
       while ((n = walker.nextNode())) {
-        if (n.nodeValue && n.nodeValue.includes('$')) {
+        if (n.nodeValue && (n.nodeValue.includes('$') || n.nodeValue.includes('\\(') || n.nodeValue.includes('\\['))) {
           const tag = n.parentNode ? n.parentNode.nodeName.toUpperCase() : '';
           if (tag !== 'SCRIPT' && tag !== 'STYLE' && tag !== 'TEXTAREA') {
             nodes.push(n);
@@ -30152,20 +30903,20 @@ eq 6$</div>
 
       nodes.forEach((tNode) => {
         const text = tNode.nodeValue;
-        if (!text || !text.includes('$')) return;
-        const parts = text.split(/(\$\$[\s\S]*?\$\$|\$[^$\n]+?\$)/g);
+        if (!text || (!text.includes('$') && !text.includes('\\(') && !text.includes('\\['))) return;
+        const parts = text.split(/(\$\$[\s\S]*?\$\$|\$[^$\n]+?\$|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\))/g);
         if (parts.length <= 1) return;
 
         const fragment = document.createDocumentFragment();
         parts.forEach((part) => {
-          if (part.startsWith('$$') && part.endsWith('$$') && part.length >= 4) {
+          if ((part.startsWith('$$') && part.endsWith('$$') && part.length >= 4) || (part.startsWith('\\[') && part.endsWith('\\]') && part.length >= 4)) {
             const math = part.slice(2, -2);
             const span = document.createElement('span');
             span.className = 'offline-math block my-2 text-center';
             span.innerHTML = formatLaTeXText(math);
             fragment.appendChild(span);
-          } else if (part.startsWith('$') && part.endsWith('$') && part.length >= 2) {
-            const math = part.slice(1, -1);
+          } else if ((part.startsWith('$') && part.endsWith('$') && part.length >= 2) || (part.startsWith('\\(') && part.endsWith('\\)') && part.length >= 4)) {
+            const math = part.startsWith('$') ? part.slice(1, -1) : part.slice(2, -2);
             const span = document.createElement('span');
             span.className = 'offline-math';
             span.innerHTML = formatLaTeXText(math);
@@ -37148,6 +37899,7 @@ function switchGrade9Unit(unitNum) {
   const v6 = document.getElementById('c9-view-6');
   const v7 = document.getElementById('c9-view-7');
   const v8 = document.getElementById('c9-view-8');
+  const v9 = document.getElementById('c9-view-9');
   const vPlaceholder = document.getElementById('c9-placeholder-view');
 
   if (v1) v1.classList.add('hidden');
@@ -37158,6 +37910,7 @@ function switchGrade9Unit(unitNum) {
   if (v6) v6.classList.add('hidden');
   if (v7) v7.classList.add('hidden');
   if (v8) v8.classList.add('hidden');
+  if (v9) v9.classList.add('hidden');
   if (vPlaceholder) vPlaceholder.classList.add('hidden');
 
   if (unitNum === 1) {
@@ -37201,6 +37954,11 @@ function switchGrade9Unit(unitNum) {
     setTabC9U8('concepts');
     setLabModeC9U8('lever');
     if (typeof initC9U8 === 'function') initC9U8();
+  } else if (unitNum === 9) {
+    if (v9) v9.classList.remove('hidden');
+    setTabC9U9('concepts');
+    setLabModeC9U9('peke');
+    if (typeof initC9U9 === 'function') initC9U9();
   } else {
     if (vPlaceholder) {
       vPlaceholder.classList.remove('hidden');
@@ -47868,6 +48626,1444 @@ function initC9U8() {
 }
 
 
+// =========================================================================
+// CLASS 9 SCIENCE: UNIT 9 - ENERGY (ऊर्जा) JAVASCRIPT
+// =========================================================================
+
+let activeC9U9Tab = 'concepts';
+let activeC9U9LabMode = 'peke';
+let isC9U9PendulumPlaying = false;
+let c9u9PendulumAngle = 0;
+let c9u9PendulumAnimId = null;
+let c9u9PendulumStartTime = null;
+
+let activeC9U9ExerciseSec = 'sec-mcqs';
+let activeC9U9TierFilter = 'all';
+let c9u9QuizAnswers = {};
+
+// -------------------------------------------------------------------------
+// Web Audio API Synthesizer
+// -------------------------------------------------------------------------
+function playAudioC9U9(type) {
+  try {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContext) return;
+    const ctx = new AudioContext();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    const now = ctx.currentTime;
+
+    if (type === 'click') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(650, now);
+      gain.gain.setValueAtTime(0.08, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.08);
+      osc.start(now);
+      osc.stop(now + 0.08);
+    } else if (type === 'swing') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(220, now);
+      osc.frequency.exponentialRampToValueAtTime(440, now + 0.25);
+      gain.gain.setValueAtTime(0.06, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+      osc.start(now);
+      osc.stop(now + 0.25);
+    } else if (type === 'correct') {
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(523.25, now);
+      osc.frequency.setValueAtTime(659.25, now + 0.1);
+      osc.frequency.setValueAtTime(783.99, now + 0.2);
+      gain.gain.setValueAtTime(0.12, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+      osc.start(now);
+      osc.stop(now + 0.35);
+    } else if (type === 'wrong') {
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(250, now);
+      osc.frequency.exponentialRampToValueAtTime(140, now + 0.2);
+      gain.gain.setValueAtTime(0.12, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.2);
+      osc.start(now);
+      osc.stop(now + 0.2);
+    }
+  } catch(e) {}
+}
+
+// -------------------------------------------------------------------------
+// Tab Switcher (concepts, exercises, tiers, quiz)
+// -------------------------------------------------------------------------
+function setTabC9U9(tab) {
+  activeC9U9Tab = tab;
+  playAudioC9U9('click');
+  const tabs = ['concepts', 'exercises', 'tiers', 'quiz'];
+  tabs.forEach(t => {
+    const view = document.getElementById(`c9u9-view-${t}`);
+    const btn = document.getElementById(`c9u9-tab-${t}`);
+    if (view) {
+      if (t === tab) view.classList.remove('hidden');
+      else view.classList.add('hidden');
+    }
+    if (btn) {
+      if (t === tab) {
+        btn.className = "px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl bg-indigo-600 text-white shadow-md font-bold transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer ring-2 ring-indigo-400/30 min-h-[44px]";
+      } else {
+        btn.className = "px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[44px]";
+      }
+    }
+  });
+
+  if (tab === 'concepts') {
+    renderCurrentC9U9Lab();
+  } else if (tab === 'exercises') {
+    renderC9U9Exercises();
+  } else if (tab === 'tiers') {
+    renderC9U9Tiers();
+  } else if (tab === 'quiz') {
+    renderC9U9Quiz();
+  }
+
+  const activeViewEl = document.getElementById(`c9u9-view-${tab}`);
+  if (activeViewEl && typeof typesetElement === 'function') {
+    typesetElement(activeViewEl);
+  }
+}
+
+// -------------------------------------------------------------------------
+// Lab Modes Switcher (peke, pendulum, bill)
+// -------------------------------------------------------------------------
+function setLabModeC9U9(mode) {
+  activeC9U9LabMode = mode;
+  playAudioC9U9('click');
+  const modes = ['peke', 'pendulum', 'bill'];
+  modes.forEach(m => {
+    const panel = document.getElementById(`c9u9-lab-mode-${m}`);
+    const btn = document.getElementById(`c9u9-btn-mode-${m}`);
+    if (panel) {
+      if (m === mode) panel.classList.remove('hidden');
+      else panel.classList.add('hidden');
+    }
+    if (btn) {
+      if (m === mode) {
+        btn.className = "flex-1 py-3 px-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-black text-xs md:text-sm shadow-md transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2 ring-2 ring-indigo-400/30";
+      } else {
+        btn.className = "flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700/80 font-bold text-xs md:text-sm transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2";
+      }
+    }
+  });
+
+  renderCurrentC9U9Lab();
+}
+
+function renderCurrentC9U9Lab() {
+  if (activeC9U9LabMode === 'peke') {
+    updatePEKESimC9U9();
+  } else if (activeC9U9LabMode === 'pendulum') {
+    manualPendulumMoveC9U9(c9u9PendulumAngle || 0);
+  } else if (activeC9U9LabMode === 'bill') {
+    updateWorkPowerC9U9();
+    updateElectricityBillC9U9();
+  }
+}
+
+// -------------------------------------------------------------------------
+// MODE 1: POTENTIAL & KINETIC ENERGY (PE & KE) SIMULATOR
+// -------------------------------------------------------------------------
+function updatePEKESimC9U9() {
+  const m = parseFloat(document.getElementById('c9u9-slider-mass')?.value || 10);
+  const h = parseFloat(document.getElementById('c9u9-slider-height')?.value || 10);
+  const v = parseFloat(document.getElementById('c9u9-slider-velocity')?.value || 10);
+  const g = 9.8;
+
+  // Potential Energy Ep = mgh
+  const ep = m * g * h;
+  // Kinetic Energy Ek = 1/2 m v^2
+  const ek = 0.5 * m * v * v;
+  const etotal = ep + ek;
+
+  // Text values on sliders
+  const vMass = document.getElementById('c9u9-val-mass');
+  const vHeight = document.getElementById('c9u9-val-height');
+  const vVelocity = document.getElementById('c9u9-val-velocity');
+  if (vMass) vMass.textContent = `${m} kg`;
+  if (vHeight) vHeight.textContent = `${h} m`;
+  if (vVelocity) vVelocity.textContent = `${v} m/s`;
+
+  // Readouts
+  const rEp = document.getElementById('c9u9-readout-ep');
+  const rEk = document.getElementById('c9u9-readout-ek');
+  const rEtotal = document.getElementById('c9u9-readout-etotal');
+  if (rEp) rEp.textContent = `${ep.toFixed(1)} J`;
+  if (rEk) rEk.textContent = `${ek.toFixed(1)} J`;
+  if (rEtotal) rEtotal.textContent = `${etotal.toFixed(1)} J`;
+
+  // Real-time cards
+  const cEpForm = document.getElementById('c9u9-calc-ep-formula');
+  const resEp = document.getElementById('c9u9-res-ep');
+  const cEkForm = document.getElementById('c9u9-calc-ek-formula');
+  const resEk = document.getElementById('c9u9-res-ek');
+  const resMult = document.getElementById('c9u9-res-multiplier');
+
+  if (cEpForm) cEpForm.innerHTML = `\\( E_p = mgh = ${m} \\times 9.8 \\times ${h} \\)`;
+  if (resEp) resEp.textContent = ep >= 1000 ? `${(ep / 1000).toFixed(2)} kJ (${ep.toFixed(0)} J)` : `${ep.toFixed(1)} J`;
+
+  if (cEkForm) cEkForm.innerHTML = `\\( E_k = \\frac{1}{2}mv^2 = 0.5 \\times ${m} \\times (${v})^2 \\)`;
+  if (resEk) resEk.textContent = ek >= 1000 ? `${(ek / 1000).toFixed(2)} kJ (${ek.toFixed(0)} J)` : `${ek.toFixed(1)} J`;
+
+  if (resMult) {
+    const ekDoubled = 0.5 * m * (v * 2) * (v * 2);
+    resMult.textContent = `गति ${v} m/s बाट ${v * 2} m/s हुँदा: Ek = ${ekDoubled.toFixed(0)} J (४ गुणा)`;
+  }
+
+  // Update SVG Canvas
+  // Tower height max 50m mapped to y=30 to y=200 (range 170px)
+  const py = 200 - (h / 50) * 170;
+  const peLine = document.getElementById('c9u9-svg-pe-line');
+  const peTop = document.getElementById('c9u9-svg-pe-arrow-top');
+  const peText = document.getElementById('c9u9-svg-pe-htext');
+  const peObj = document.getElementById('c9u9-svg-pe-obj');
+  const peMassText = document.getElementById('c9u9-svg-pe-mass-text');
+
+  if (peLine) {
+    peLine.setAttribute('y1', py);
+    peLine.setAttribute('y2', '200');
+  }
+  if (peTop) peTop.setAttribute('cy', py);
+  if (peText) {
+    peText.setAttribute('y', Math.min(195, py + (200 - py) / 2 + 4));
+    peText.textContent = `h = ${h} m`;
+  }
+  if (peObj) {
+    peObj.setAttribute('transform', `translate(180, ${py})`);
+  }
+  if (peMassText) peMassText.textContent = `${m}kg`;
+
+  // Moving object
+  const keMassText = document.getElementById('c9u9-svg-ke-mass-text');
+  const keValText = document.getElementById('c9u9-svg-ke-vtext');
+  if (keMassText) keMassText.textContent = `${m}kg`;
+  if (keValText) keValText.textContent = `v = ${v} m/s`;
+
+  // Comparative bar chart (max scale 5000J)
+  const maxBarHeight = 90;
+  const scaleRef = Math.max(ep, ek, 1000);
+  const hEpBar = Math.min(maxBarHeight, Math.max(4, (ep / scaleRef) * maxBarHeight));
+  const hEkBar = Math.min(maxBarHeight, Math.max(4, (ek / scaleRef) * maxBarHeight));
+
+  const barEp = document.getElementById('c9u9-svg-bar-ep');
+  const barEk = document.getElementById('c9u9-svg-bar-ek');
+  const textEp = document.getElementById('c9u9-svg-bar-ep-text');
+  const textEk = document.getElementById('c9u9-svg-bar-ek-text');
+
+  if (barEp) {
+    barEp.setAttribute('y', 130 - hEpBar);
+    barEp.setAttribute('height', hEpBar);
+  }
+  if (barEk) {
+    barEk.setAttribute('y', 130 - hEkBar);
+    barEk.setAttribute('height', hEkBar);
+  }
+  if (textEp) {
+    textEp.setAttribute('y', 125 - hEpBar);
+    textEp.textContent = ep >= 1000 ? `${(ep / 1000).toFixed(1)}k` : `${Math.round(ep)}J`;
+  }
+  if (textEk) {
+    textEk.setAttribute('y', 125 - hEkBar);
+    textEk.textContent = ek >= 1000 ? `${(ek / 1000).toFixed(1)}k` : `${Math.round(ek)}J`;
+  }
+
+  // Trigger MathJax re-render if available
+  const p1 = document.getElementById('c9u9-calc-ep-formula');
+  const p2 = document.getElementById('c9u9-calc-ek-formula');
+  if (p1 && typeof typesetElement === 'function') typesetElement(p1);
+  if (p2 && typeof typesetElement === 'function') typesetElement(p2);
+}
+
+// -------------------------------------------------------------------------
+// MODE 2: CONSERVATION OF ENERGY PENDULUM SIMULATOR
+// -------------------------------------------------------------------------
+function togglePendulumAnimC9U9() {
+  isC9U9PendulumPlaying = !isC9U9PendulumPlaying;
+  const btn = document.getElementById('c9u9-btn-pendulum-play');
+  const text = document.getElementById('c9u9-text-play');
+  const icon = document.getElementById('c9u9-icon-play');
+
+  if (isC9U9PendulumPlaying) {
+    playAudioC9U9('swing');
+    if (btn) btn.className = "px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold shadow transition flex items-center gap-2 cursor-pointer min-h-[44px]";
+    if (text) text.textContent = "एनिमेसन रोक्नुहोस् (Pause)";
+    if (icon) icon.innerHTML = '<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path>';
+    c9u9PendulumStartTime = performance.now();
+    runPendulumAnimationLoopC9U9();
+  } else {
+    playAudioC9U9('click');
+    if (btn) btn.className = "px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow transition flex items-center gap-2 cursor-pointer min-h-[44px]";
+    if (text) text.textContent = "एनिमेसन सुरु (Play Swing)";
+    if (icon) icon.innerHTML = '<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>';
+    if (c9u9PendulumAnimId) {
+      cancelAnimationFrame(c9u9PendulumAnimId);
+      c9u9PendulumAnimId = null;
+    }
+  }
+}
+
+function runPendulumAnimationLoopC9U9() {
+  if (!isC9U9PendulumPlaying) return;
+  const now = performance.now();
+  const elapsed = (now - c9u9PendulumStartTime) / 1000;
+  // Natural period T ≈ 2 seconds -> omega = 2pi / T ≈ pi
+  const maxAmp = 30; // degrees
+  const angle = maxAmp * Math.sin(Math.PI * elapsed);
+  c9u9PendulumAngle = angle;
+
+  renderPendulumFrameC9U9(angle);
+
+  // Sync slider
+  const slider = document.getElementById('c9u9-slider-pendulum');
+  if (slider) slider.value = Math.round(angle);
+
+  c9u9PendulumAnimId = requestAnimationFrame(runPendulumAnimationLoopC9U9);
+}
+
+function manualPendulumMoveC9U9(angleVal) {
+  if (isC9U9PendulumPlaying) {
+    togglePendulumAnimC9U9(); // Pause if user touches slider
+  }
+  const angle = parseFloat(angleVal);
+  c9u9PendulumAngle = angle;
+  renderPendulumFrameC9U9(angle);
+}
+
+function renderPendulumFrameC9U9(angle) {
+  const maxAmp = 30;
+  const angleRad = (angle * Math.PI) / 180;
+  const maxAngleRad = (maxAmp * Math.PI) / 180;
+
+  // Potential energy fraction: Ep proportional to 1 - cos(theta)
+  const hFraction = (1 - Math.cos(angleRad)) / (1 - Math.cos(maxAngleRad));
+  const epPercent = Math.min(100, Math.max(0, hFraction * 100));
+  const ekPercent = 100 - epPercent;
+
+  // Update SVG rotation
+  const rod = document.getElementById('c9u9-svg-pendulum-rod');
+  if (rod) {
+    rod.setAttribute('transform', `rotate(${angle}, 300, 27)`);
+  }
+
+  // Update SVG gauge bars
+  const pbarEp = document.getElementById('c9u9-svg-pbar-ep');
+  const pbarEk = document.getElementById('c9u9-svg-pbar-ek');
+  const ptextEp = document.getElementById('c9u9-svg-ptext-ep');
+  const ptextEk = document.getElementById('c9u9-svg-ptext-ek');
+
+  if (pbarEp) pbarEp.setAttribute('width', Math.round(epPercent));
+  if (pbarEk) pbarEk.setAttribute('width', Math.round(ekPercent));
+  if (ptextEp) ptextEp.textContent = `Ep: ${epPercent.toFixed(0)}%`;
+  if (ptextEk) ptextEk.textContent = `Ek: ${ekPercent.toFixed(0)}%`;
+
+  // Readouts
+  const rAngle = document.getElementById('c9u9-readout-pendulum-angle');
+  const rEp = document.getElementById('c9u9-readout-pendulum-ep');
+  const rEk = document.getElementById('c9u9-readout-pendulum-ek');
+  const vSlider = document.getElementById('c9u9-val-pendulum-slider');
+  const badge = document.getElementById('c9u9-pendulum-state-badge');
+
+  if (rAngle) rAngle.textContent = `${angle.toFixed(1)}°`;
+  if (rEp) rEp.textContent = `${epPercent.toFixed(1)} J`;
+  if (rEk) rEk.textContent = `${ekPercent.toFixed(1)} J`;
+
+  if (vSlider) {
+    if (Math.abs(angle) < 2) vSlider.textContent = `मध्य बिन्दु (0°)`;
+    else if (angle < 0) vSlider.textContent = `बायाँ चरम तर्फ (${angle.toFixed(0)}°)`;
+    else vSlider.textContent = `दायाँ चरम तर्फ (+${angle.toFixed(0)}°)`;
+  }
+
+  if (badge) {
+    if (Math.abs(angle) >= 28) {
+      badge.className = "px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-400 font-bold border border-cyan-500/30 text-[11px]";
+      badge.textContent = "चरम बिन्दु: Ep अधिकतम, Ek = ०";
+    } else if (Math.abs(angle) <= 3) {
+      badge.className = "px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30 text-[11px]";
+      badge.textContent = "मध्य बिन्दु: Ek अधिकतम, Ep = ०";
+    } else {
+      badge.className = "px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-400 font-bold border border-indigo-500/30 text-[11px]";
+      badge.textContent = "मध्यवर्ती बिन्दु: Ep + Ek = स्थिर (१०० J)";
+    }
+  }
+}
+
+// -------------------------------------------------------------------------
+// MODE 3: WORK, POWER & ELECTRICITY BILL CALCULATOR
+// -------------------------------------------------------------------------
+function updateWorkPowerC9U9() {
+  const f = parseFloat(document.getElementById('c9u9-input-force')?.value || 600);
+  const s = parseFloat(document.getElementById('c9u9-input-dist')?.value || 10);
+  const t = parseFloat(document.getElementById('c9u9-input-time')?.value || 20);
+
+  const work = f * s; // Joules
+  const powerW = t > 0 ? work / t : 0; // Watts
+  const powerKW = powerW / 1000;
+  const powerHP = powerW / 746;
+
+  const outWork = document.getElementById('c9u9-out-work');
+  const outPW = document.getElementById('c9u9-out-power-w');
+  const outHP = document.getElementById('c9u9-out-power-hp');
+
+  if (outWork) outWork.textContent = `${work.toFixed(0)} J (${(work/1000).toFixed(2)} kJ)`;
+  if (outPW) outPW.textContent = `${powerW.toFixed(1)} W (${powerKW.toFixed(3)} kW)`;
+  if (outHP) outHP.textContent = `${powerHP.toFixed(3)} HP`;
+}
+
+function updateElectricityBillC9U9() {
+  // Appliance 1: LED Bulbs
+  const n1 = parseFloat(document.getElementById('c9u9-app-num-1')?.value || 0);
+  const w1 = parseFloat(document.getElementById('c9u9-app-watt-1')?.value || 0);
+  const h1 = parseFloat(document.getElementById('c9u9-app-hrs-1')?.value || 0);
+  const wh1 = n1 * w1 * h1;
+  const elWh1 = document.getElementById('c9u9-app-wh-1');
+  if (elWh1) elWh1.textContent = `${wh1.toFixed(0)} Wh`;
+
+  // Appliance 2: TV
+  const n2 = parseFloat(document.getElementById('c9u9-app-num-2')?.value || 0);
+  const w2 = parseFloat(document.getElementById('c9u9-app-watt-2')?.value || 0);
+  const h2 = parseFloat(document.getElementById('c9u9-app-hrs-2')?.value || 0);
+  const wh2 = n2 * w2 * h2;
+  const elWh2 = document.getElementById('c9u9-app-wh-2');
+  if (elWh2) elWh2.textContent = `${wh2.toFixed(0)} Wh`;
+
+  // Appliance 3: Refrigerator
+  const n3 = parseFloat(document.getElementById('c9u9-app-num-3')?.value || 0);
+  const w3 = parseFloat(document.getElementById('c9u9-app-watt-3')?.value || 0);
+  const h3 = parseFloat(document.getElementById('c9u9-app-hrs-3')?.value || 0);
+  const wh3 = n3 * w3 * h3;
+  const elWh3 = document.getElementById('c9u9-app-wh-3');
+  if (elWh3) elWh3.textContent = `${wh3.toFixed(0)} Wh`;
+
+  // Appliance 4: Heater
+  const n4 = parseFloat(document.getElementById('c9u9-app-num-4')?.value || 0);
+  const w4 = parseFloat(document.getElementById('c9u9-app-watt-4')?.value || 0);
+  const h4 = parseFloat(document.getElementById('c9u9-app-hrs-4')?.value || 0);
+  const wh4 = n4 * w4 * h4;
+  const elWh4 = document.getElementById('c9u9-app-wh-4');
+  if (elWh4) elWh4.textContent = `${wh4.toFixed(0)} Wh`;
+
+  // Total daily Wh & kWh
+  const totalDailyWh = wh1 + wh2 + wh3 + wh4;
+  const dailyKWh = totalDailyWh / 1000;
+  const monthlyUnits = dailyKWh * 30;
+
+  const rate = parseFloat(document.getElementById('c9u9-bill-rate')?.value || 9.5);
+  const totalCost = monthlyUnits * rate;
+
+  const elDailyKWh = document.getElementById('c9u9-bill-daily-kwh');
+  const elMonthlyUnits = document.getElementById('c9u9-bill-monthly-units');
+  const elTotalCost = document.getElementById('c9u9-bill-total-cost');
+
+  if (elDailyKWh) elDailyKWh.textContent = `${dailyKWh.toFixed(2)} kWh`;
+  if (elMonthlyUnits) elMonthlyUnits.textContent = `${monthlyUnits.toFixed(1)} युनिट`;
+  if (elTotalCost) elTotalCost.textContent = `रू. ${totalCost.toFixed(2)}`;
+}
+
+// -------------------------------------------------------------------------
+// EXERCISES SUB-SECTION SWITCHER & RENDERERS
+// -------------------------------------------------------------------------
+function setExerciseSecC9U9(secId) {
+  activeC9U9ExerciseSec = secId;
+  playAudioC9U9('click');
+  const sections = ['sec-mcqs', 'sec-fill', 'sec-diff', 'sec-reasons', 'sec-qa', 'sec-numericals'];
+  sections.forEach(s => {
+    const el = document.getElementById(`c9u9-${s}`);
+    const btn = document.getElementById(`c9u9-exsec-btn-${s}`);
+    if (el) {
+      if (s === secId) el.classList.remove('hidden');
+      else el.classList.add('hidden');
+    }
+    if (btn) {
+      if (s === secId) {
+        btn.className = "px-3.5 py-1.5 rounded-xl bg-indigo-600 text-white font-bold text-xs whitespace-nowrap shadow-xs cursor-pointer min-h-[38px]";
+      } else {
+        btn.className = "px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs whitespace-nowrap cursor-pointer min-h-[38px]";
+      }
+    }
+  });
+
+  const activeSecEl = document.getElementById(`c9u9-${secId}`);
+  if (activeSecEl && typeof typesetElement === 'function') {
+    typesetElement(activeSecEl);
+  }
+}
+
+function renderC9U9Exercises() {
+  renderC9U9MCQs();
+  renderC9U9FillAndMatch();
+  renderC9U9Differences();
+  renderC9U9Reasons();
+  renderC9U9QAs();
+  renderC9U9Numericals();
+}
+
+// 1. MCQs Data & Renderer
+const c9u9MCQData = [
+  {
+    q: "कार्य गर्ने दरलाई के भनिन्छ?",
+    opts: ["ऊर्जा", "शक्ति", "बल", "गति"],
+    ans: 1,
+    reason: "प्रति सेकेन्ड हुने कार्यको परिमाण वा कार्य गर्ने दरलाई शक्ति भनिन्छ (\\( P = \\frac{W}{t} \\))।"
+  },
+  {
+    q: "कुनै वस्तुको गति दोब्बर बनाउँदा त्यसको गतिज ऊर्जा कति गुणा हुन्छ?",
+    opts: ["दोब्बर (२ गुणा)", "तीन गुणा", "चार गुणा", "आधा"],
+    ans: 2,
+    reason: "\\( E_k = \\frac{1}{2}mv^2 \\) अनुसार गतिज ऊर्जा गतिको वर्गसँग समानुपातिक (\\( E_k \\propto v^2 \\)) हुन्छ। गति २ गुणा (\\( 2v \\)) हुँदा \\( (2v)^2 = 4v^2 \\) अर्थात् गतिज ऊर्जा ४ गुणा बढ्छ।"
+  },
+  {
+    q: "बाँधमा थुनिएको पानीमा कुन ऊर्जा सञ्चित हुन्छ?",
+    opts: ["रासायनिक ऊर्जा", "गतिज ऊर्जा", "स्थितिज ऊर्जा", "ताप ऊर्जा"],
+    ans: 2,
+    reason: "पृथ्वीको सतहभन्दा निश्चित उचाइमा पानी सङ्कलन गरी राखिएकोले यसको स्थिति वा उचाइ (\\( h \\)) को कारणले गर्दा यसमा गुरुत्वीय स्थितिज ऊर्जा (\\( E_p = mgh \\)) सञ्चित हुन्छ।"
+  },
+  {
+    q: "१ किलोवाट-घण्टा (1 kWh) विद्युत ऊर्जा कति जुलसँग बराबर हुन्छ?",
+    opts: ["1000 J", "3.6 × 10⁵ J", "3.6 × 10⁶ J", "3.6 × 10⁷ J"],
+    ans: 2,
+    reason: "\\( 1\\text{ kWh} = 1000\\text{ W} \\times 3600\\text{ s} = 3,600,000\\text{ J} = 3.6 \\times 10^6\\text{ J} \\) हुन्छ।"
+  },
+  {
+    q: "तलका मध्ये कुन नवीकरणीय ऊर्जाको स्रोत हो?",
+    opts: ["कोइला", "डिजेल", "प्राकृतिक ग्यास", "सौर्य ऊर्जा"],
+    ans: 3,
+    reason: "सौर्य ऊर्जा प्रकृतिमा निरन्तर प्राप्त भइरहने र कहिल्यै नसकिने स्वच्छ एवं नवीकरणीय ऊर्जा स्रोत हो।"
+  },
+  {
+    q: "७४६ वाट शक्ति बराबर कति हर्सपावर (HP) हुन्छ?",
+    opts: ["०.५ HP", "१ HP", "२ HP", "१० HP"],
+    ans: 1,
+    reason: "शक्ति मापनको ब्रिटिश इन्जिनियरिङ एकाइ अनुसार १ हर्सपावर बराबर ७४६ वाट (\\( 1\\text{ HP} = 746\\text{ W} \\)) हुन्छ।"
+  },
+  {
+    q: "स्वतन्त्र रूपमा खसिरहेको वस्तुको जमिन छुने ठिक अगाडिको अवस्थामा कुन ऊर्जा अधिकतम हुन्छ?",
+    opts: ["स्थितिज ऊर्जा", "गतिज ऊर्जा", "रासायनिक ऊर्जा", "आणविक ऊर्जा"],
+    ans: 1,
+    reason: "जमिन छुने बेला उचाइ शून्य (\\( h = 0 \\)) हुने हुँदा स्थितिज ऊर्जा शून्य हुन्छ र सम्पूर्ण स्थितिज ऊर्जा उच्च गतिको कारण गतिज ऊर्जामा रूपान्तरण हुन्छ।"
+  },
+  {
+    q: "ऊर्जाको SI एकाइ कुन हो?",
+    opts: ["वाट (Watt)", "जुल (Joule)", "न्युटन (Newton)", "पास्कल (Pascal)"],
+    ans: 1,
+    reason: "कार्य र ऊर्जा दुवैको अन्तर्राष्ट्रिय (SI) एकाइ जुल (Joule, J) हो। वाट शक्तिको एकाइ हो।"
+  },
+  {
+    q: "तन्काइएको गुलेलीको रबर वा कमानीमा कुन प्रकारको ऊर्जा हुन्छ?",
+    opts: ["गुरुत्वीय स्थितिज ऊर्जा", "प्रत्यास्थ स्थितिज ऊर्जा", "गतिज ऊर्जा", "ध्वनि ऊर्जा"],
+    ans: 1,
+    reason: "रबर वा कमानीको बनावट तथा आकारमा परिवर्तन ल्याउँदा वस्तुमा प्रत्यास्थ स्थितिज ऊर्जा (Elastic Potential Energy) सञ्चित हुन्छ।"
+  },
+  {
+    q: "१०० वाटको चिम दैनिक १० घण्टा बाल्दा १ दिनमा कति युनिट विद्युत खपत हुन्छ?",
+    opts: ["०.१ युनिट", "१ युनिट", "१० युनिट", "१०० युनिट"],
+    ans: 1,
+    reason: "खपत युनिट \\( = \\frac{\\text{वाट} \\times \\text{घण्टा}}{१०००} = \\frac{100 \\times 10}{1000} = 1\\text{ kWh} = 1\\text{ युनिट} \\)।"
+  }
+];
+
+function renderC9U9MCQs() {
+  const container = document.getElementById('c9u9-mcqs-container');
+  if (!container) return;
+  const letters = ['(क)', '(ख)', '(ग)', '(घ)'];
+  container.innerHTML = c9u9MCQData.map((item, idx) => `
+    <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs space-y-3">
+      <div class="flex items-start gap-3">
+        <span class="w-7 h-7 rounded-xl bg-indigo-50 text-indigo-700 font-bold text-xs flex items-center justify-center shrink-0 border border-indigo-200">
+          ${idx + 1}
+        </span>
+        <div class="flex-1 text-sm font-bold text-slate-800 leading-snug">
+          ${item.q}
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pl-10">
+        ${item.opts.map((opt, oIdx) => `
+          <div class="px-3.5 py-2 rounded-xl text-xs flex items-center gap-2 ${oIdx === item.ans ? 'bg-emerald-50 text-emerald-950 font-bold border border-emerald-200' : 'bg-slate-50 text-slate-700 border border-slate-100'}">
+            <span class="${oIdx === item.ans ? 'text-emerald-700 font-black' : 'text-slate-400 font-bold'}">${letters[oIdx]}</span>
+            <span>${opt}</span>
+            ${oIdx === item.ans ? '<span class="ml-auto text-emerald-600 text-xs">✓ सही उत्तर</span>' : ''}
+          </div>
+        `).join('')}
+      </div>
+      <div class="ml-10 p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs text-slate-600 leading-relaxed">
+        <strong class="text-slate-800">वैज्ञानिक कारण:</strong> ${item.reason}
+      </div>
+    </div>
+  `).join('');
+}
+
+// 2. Fill in Blanks & Match Renderer
+function renderC9U9FillAndMatch() {
+  const fillContainer = document.getElementById('c9u9-fill-container');
+  if (fillContainer) {
+    const fills = [
+      { q: "१. कार्य गर्ने सामर्थ्यलाई ................ भनिन्छ।", a: "ऊर्जा (Energy)" },
+      { q: "२. १ सेकेन्डमा १ जुल कार्य हुँदा खर्च हुने शक्तिलाई ................ भनिन्छ।", a: "१ वाट (1 Watt)" },
+      { q: "३. उचाइमा रहेको वस्तुमा ................ ऊर्जा सञ्चित हुन्छ।", a: "गुरुत्वीय स्थितिज ऊर्जा (mgh)" },
+      { q: "४. ऊर्जालाई न त उत्पादन गर्न सकिन्छ न त नष्ट नै गर्न सकिन्छ, यसलाई ................ भनिन्छ।", a: "ऊर्जा संरक्षणको नियम (Law of Conservation of Energy)" },
+      { q: "५. घरेलु विद्युत खपत नाप्ने यन्त्रलाई ................ भनिन्छ।", a: "किलोवाट घण्टा मिटर (KWh Meter / विद्युत मिटर)" }
+    ];
+    fillContainer.innerHTML = fills.map(f => `
+      <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs md:text-sm">
+        <span class="font-medium text-slate-800">${f.q}</span>
+        <span class="px-3 py-1 rounded-xl bg-indigo-100 text-indigo-900 font-black shrink-0 border border-indigo-200 self-start sm:self-auto">${f.a}</span>
+      </div>
+    `).join('');
+  }
+
+  const matchContainer = document.getElementById('c9u9-match-container');
+  if (matchContainer) {
+    const matches = [
+      { a: "१. १ किलोवाट घण्टा (1 kWh)", b: "\\( 3.6 \\times 10^6\\text{ J} \\) (३६ लाख जुल)" },
+      { a: "२. १ हर्सपावर (1 HP)", b: "७४६ वाट (746 Watts)" },
+      { a: "३. गतिज ऊर्जा (Kinetic Energy)", b: "\\( \\frac{1}{2}mv^2 \\)" },
+      { a: "४. स्थितिज ऊर्जा (Potential Energy)", b: "\\( mgh \\)" },
+      { a: "५. शक्ति (Power)", b: "\\( \\frac{W}{t} \\) (कार्य / समय)" }
+    ];
+    matchContainer.innerHTML = `
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs md:text-sm border-collapse">
+          <thead>
+            <tr class="bg-emerald-50 text-emerald-950 font-bold border-b border-emerald-200">
+              <th class="p-3 rounded-tl-xl text-left">समूह 'क'</th>
+              <th class="p-3 rounded-tr-xl text-left">समूह 'ख' (सही जोडा)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700">
+            ${matches.map(m => `
+              <tr>
+                <td class="p-3 font-bold text-slate-900">${m.a}</td>
+                <td class="p-3 font-mono font-bold text-emerald-800 bg-emerald-50/30">${m.b}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
+}
+
+// 3. Differences Renderer (5 Tables)
+function renderC9U9Differences() {
+  const container = document.getElementById('c9u9-diff-container');
+  if (!container) return;
+  const diffs = [
+    {
+      title: "१. कार्य (Work) र शक्ति (Power) बीचको भिन्नता",
+      col1: "कार्य (Work)",
+      col2: "शक्ति (Power)",
+      points: [
+        ["कुनै वस्तुमा बल लगाई बलकै दिशामा विस्थापन गराउँदा कार्य सम्पन्न हुन्छ।", "प्रति सेकेन्ड हुने कार्यको परिमाण वा कार्य गर्ने दरलाई शक्ति भनिन्छ।"],
+        ["यसको सूत्र \\( W = F \\times s \\) हो।", "यसको सूत्र \\( P = \\frac{W}{t} \\) हो।"],
+        ["कार्य समयमा निर्भर हुँदैन।", "शक्ति समयमा निर्भर हुन्छ (समय कम लाग्दा शक्ति बढी हुन्छ)।"],
+        ["यसको SI एकाइ जुल (Joule, J) हो।", "यसको SI एकाइ वाट (Watt, W) हो।"]
+      ]
+    },
+    {
+      title: "२. स्थितिज ऊर्जा (Potential Energy) र गतिज ऊर्जा (Kinetic Energy)",
+      col1: "स्थितिज ऊर्जा (Potential Energy)",
+      col2: "गतिज ऊर्जा (Kinetic Energy)",
+      points: [
+        ["वस्तुको स्थान, उचाइ वा बनावटमा भएको परिवर्तनको कारण सञ्चित हुने ऊर्जा हो।", "कुनै गतिशील वस्तुमा गतिको कारणले उत्पन्न हुने कार्य गर्ने सामर्थ्य हो।"],
+        ["यसको सूत्र \\( E_p = mgh \\) हो।", "यसको सूत्र \\( E_k = \\frac{1}{2}mv^2 \\) हो।"],
+        ["वस्तु स्थिर अवस्थामा वा उचाइमा रहँदा पनि यसमा यो ऊर्जा रहन्छ।", "वस्तु स्थिर हुँदा यो ऊर्जा शून्य हुन्छ (\\( v = 0 \\implies E_k = 0 \\))।"],
+        ["उदाहरण: बाँधमा थुनिएको पानी, तन्काइएको गुलेली।", "उदाहरण: बगिरहेको नदी, गुडिरहेको कार, बन्दुकबाट निस्किएको गोली।"]
+      ]
+    },
+    {
+      title: "३. नवीकरणीय ऊर्जा (Renewable) र अनवीकरणीय ऊर्जा (Non-renewable)",
+      col1: "नवीकरणीय ऊर्जा (Renewable)",
+      col2: "अनवीकरणीय ऊर्जा (Non-renewable)",
+      points: [
+        ["प्रकृतिमा निरन्तर प्राप्त भइरहने र प्रयोग गरेर कहिल्यै नसकिने ऊर्जा स्रोत हो।", "प्रकृतिमा सीमित भण्डार भएको र निरन्तर प्रयोग गर्दा रित्तिने ऊर्जा स्रोत हो।"],
+        ["यसको प्रयोगले वातावरण प्रदूषण नगण्य वा हुँदैन।", "यसको प्रयोगले कार्बन उत्सर्जन भई वायु प्रदूषण र विश्वव्यापी तापक्रम वृद्धि हुन्छ।"],
+        ["यसलाई पुनः उत्पादन गर्न सकिन्छ।", "यसलाई बन्न लाखौँ वर्ष लाग्ने हुँदा तत्काल पुनः उत्पादन गर्न सकिँदैन।"],
+        ["उदाहरण: सौर्य ऊर्जा, जलविद्युत, वायु ऊर्जा, बायोमास।", "उदाहरण: कोइला, खनिज तेल (पेट्रोल/डिजेल), प्राकृतिक ग्यास।"]
+      ]
+    },
+    {
+      title: "४. जीवावशेष इन्धन (Fossil Fuels) र बायोमास (Biomass)",
+      col1: "जीवावशेष इन्धन (Fossil Fuels)",
+      col2: "बायोमास (Biomass)",
+      points: [
+        ["लाखौँ वर्ष पहिले जमिनमुनि पुरिएका जीव तथा वनस्पतिका अवशेषबाट बन्दछ।", "हालका जीवित वा भर्खरै मरेका वनस्पति तथा प्राणीजन्य जैविक वस्तुबाट प्राप्त हुन्छ।"],
+        ["यो अनवीकरणीय ऊर्जाको स्रोत हो।", "यो नवीकरणीय ऊर्जाको स्रोत हो।"],
+        ["यसको निरन्तर दोहनले भविष्यमा ऊर्जा संकट निम्त्याउँछ।", "कृषि तथा वनस्पति व्यवस्थापन गरेर यसलाई निरन्तर उत्पादन गर्न सकिन्छ।"],
+        ["उदाहरण: पेट्रोल, डिजेल, मट्टितेल, कोइला।", "उदाहरण: दाउरा, गोबरग्यास (Biogas), कृषिका अवशेष।"]
+      ]
+    },
+    {
+      title: "५. १ किलोवाट (1 kW) र १ किलोवाट घण्टा (1 kWh)",
+      col1: "१ किलोवाट (1 kW)",
+      col2: "१ किलोवाट घण्टा (1 kWh)",
+      points: [
+        ["यो शक्तिको ठूलो एकाइ हो (\\( 1\\text{ kW} = 1000\\text{ W} \\))।", "यो विद्युत ऊर्जाको व्यावसायिक वा घरायसी एकाइ हो।"],
+        ["यसले कार्य गर्ने दरलाई बुझाउँछ।", "यसले कुल खपत भएको विद्युत ऊर्जाको परिमाणलाई बुझाउँछ।"],
+        ["१ सेकेन्डमा १००० जुल कार्य हुनु १ किलोवाट हो।", "१००० वाट क्षमताको उपकरण १ घण्टा चल्दा १ किलोवाट घण्टा ऊर्जा खर्च हुन्छ।"],
+        ["\\( 1\\text{ kW} = 1000\\text{ J/s} \\)", "\\( 1\\text{ kWh} = 3.6 \\times 10^6\\text{ J} \\) (१ युनिट)"]
+      ]
+    }
+  ];
+
+  container.innerHTML = diffs.map(d => `
+    <div class="bg-white rounded-3xl p-5 md:p-6 border border-slate-200/80 shadow-xs space-y-3">
+      <h4 class="text-sm md:text-base font-black text-slate-800 flex items-center gap-2 border-b border-slate-100 pb-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+        ${d.title}
+      </h4>
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs md:text-sm border-collapse">
+          <thead>
+            <tr class="bg-slate-100 text-slate-800 font-bold border-b border-slate-200">
+              <th class="p-2.5 text-left w-1/2">${d.col1}</th>
+              <th class="p-2.5 text-left w-1/2 bg-indigo-50/50 text-indigo-950">${d.col2}</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700">
+            ${d.points.map(p => `
+              <tr>
+                <td class="p-2.5 align-top leading-relaxed">• ${p[0]}</td>
+                <td class="p-2.5 align-top leading-relaxed bg-indigo-50/20 font-medium text-slate-800">• ${p[1]}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  `).join('');
+}
+
+// 4. Scientific Reasons Renderer (6 Reasons)
+function renderC9U9Reasons() {
+  const container = document.getElementById('c9u9-reasons-container');
+  if (!container) return;
+  const reasons = [
+    {
+      q: "१. सूर्यलाई पृथ्वीको सम्पूर्ण ऊर्जाको मुख्य स्रोत (Ultimate Source of Energy) मानिन्छ, किन?",
+      ans: "पृथ्वीमा पाइने प्रायः सम्पूर्ण ऊर्जा प्रत्यक्ष वा अप्रत्यक्ष रूपमा सूर्यबाटै प्राप्त हुन्छ। वनस्पतिले सूर्यको प्रकाश प्रयोग गरी प्रकाश संश्लेषण प्रक्रियाद्वारा खाना बनाई रासायनिक ऊर्जा सञ्चित गर्छन्। यही वनस्पति र जीवजन्तुबाट बायोमास र कालान्तरमा जीवावशेष इन्धन (कोइला, पेट्रोलियम) बन्दछ। सौर्य तापले नै जलचक्र सञ्चालन गरी वर्षा गराउँछ, जसबाट नदी बगेर जलविद्युत उत्पादन हुन्छ र हावा चल्दा वायु ऊर्जा प्राप्त हुन्छ। तसर्थ, सूर्यलाई पृथ्वीको मुख्य ऊर्जा स्रोत मानिन्छ।"
+    },
+    {
+      q: "२. बाँधमा सञ्चित पानीमा स्थितिज ऊर्जा हुन्छ, किन?",
+      ans: "गुरुत्वीय स्थितिज ऊर्जा पृथ्वीको सतहभन्दा निश्चित उचाइमा रहेका वस्तुहरूमा त्यसको स्थितिको कारण सञ्चित हुन्छ (\\( E_p = mgh \\))। जलविद्युत आयोजनाका लागि बाँध बनाएर पानीलाई जमिनको सतहभन्दा धेरै माथिल्लो उचाइमा थुनेर राखिने हुनाले उक्त उचाइको कारण सञ्चित पानीमा स्थितिज ऊर्जा हुन्छ।"
+    },
+    {
+      q: "३. गुडिरहेको सवारी साधनको गति दोब्बर बनाउँदा रोक्न आवश्यक दुरी वा गतिज ऊर्जा चार गुणा बढ्छ, किन?",
+      ans: "वैज्ञानिक सूत्र \\( E_k = \\frac{1}{2}mv^2 \\) अनुसार कुनै गतिशील वस्तुको गतिज ऊर्जा त्यसको गतिको वर्गसँग समानुपातिक हुन्छ (\\( E_k \\propto v^2 \\))। जब गति २ गुणा (\\( 2v \\)) बनाइन्छ, तब गतिज ऊर्जा \\( (2)^2 = 4 \\) गुणा बढ्छ। सवारी साधनलाई रोक्न ब्रेकले उक्त चार गुणा गतिज ऊर्जा विरुद्ध कार्य गर्नुपर्ने हुँदा रोक्ने दुरी (Braking Distance) पनि चार गुणा बढ्छ।"
+    },
+    {
+      q: "४. नेपालमा आयातित जीवावशेष इन्धनभन्दा जलविद्युत र सौर्य ऊर्जालाई प्राथमिकता दिनुपर्छ, किन?",
+      ans: "जीवावशेष इन्धन (पेट्रोल, डिजेल, ग्यास) नेपालमा पाइँदैन र यसको आयातमा वार्षिक खर्बौं रुपैयाँ बाहिरिन्छ, साथै यसले गम्भीर वायु प्रदूषण गराउँछ। अर्कोतर्फ, नेपालमा जलस्रोतको प्रचुर सम्भावना भएकाले जलविद्युत स्वदेशमै उत्पादन हुने सस्तो, कहिल्यै नसकिने र शून्य कार्बन उत्सर्जन गर्ने स्वच्छ नवीकरणीय ऊर्जा हो। यसले राष्ट्रिय अर्थतन्त्र बलियो बनाउने, व्यापार घाटा घटाउने र वातावरण जोगाउने हुँदा यसलाई प्राथमिकता दिनुपर्छ।"
+    },
+    {
+      q: "५. ऊर्जा संरक्षणको नियम अनुसार ब्रम्हाण्डको कुल ऊर्जा स्थिर रहन्छ, कसरी?",
+      ans: "ऊर्जा संरक्षणको नियम (Law of Conservation of Energy) अनुसार ऊर्जालाई न त नयाँ सिर्जना गर्न सकिन्छ, न त यसलाई नष्ट नै गर्न सकिन्छ; यसलाई केवल एउटा रूपबाट अर्को रूपमा रूपान्तरण मात्र गर्न सकिन्छ। जब कुनै प्रणालीमा एक प्रकारको ऊर्जा घट्छ, त्यति नै बराबरको अर्को प्रकारको ऊर्जा उत्पन्न हुन्छ। तसर्थ, सम्पूर्ण ब्रम्हाण्डलाई एउटा बन्द प्रणाली (Closed System) मान्दा यसको कुल ऊर्जा सधैँ अपरिवर्तनीय र स्थिर रहन्छ।"
+    },
+    {
+      q: "६. जैविक ग्यास (Biogas) लाई ग्रामीण नेपालका लागि वातावरणमैत्री तथा किफायती इन्धन मानिन्छ, किन?",
+      ans: "जैविक ग्यास गाईवस्तुको गोबर र जैविक फोहोरलाई अक्सिजनविहीन अवस्थामा कुहाएर (Anaerobic Digestion) बनाइन्छ। यसले वनजङ्गलको दाउरा कटानी रोक्छ, धुवाँरहित सफा ज्वाला दिने हुनाले महिला तथा बालबालिकाको श्वासप्रश्वास सम्बन्धी स्वास्थ्य जोगाउँछ, र ग्यास निस्किसकेपछिको लेदो (Slurry) उत्कृष्ट प्राङ्गारिक मलको रूपमा खेतबारीमा प्रयोग गर्न सकिन्छ।"
+    }
+  ];
+
+  container.innerHTML = reasons.map(r => `
+    <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs space-y-2.5">
+      <div class="font-bold text-slate-900 text-xs md:text-sm flex items-start gap-2.5">
+        <span class="w-6 h-6 rounded-lg bg-indigo-600 text-white text-xs flex items-center justify-center shrink-0 mt-0.5 font-mono">Q</span>
+        <span>${r.q}</span>
+      </div>
+      <div class="ml-8 p-3.5 rounded-xl bg-slate-50 border border-slate-100 text-xs md:text-sm text-slate-700 leading-relaxed">
+        <strong class="text-indigo-900">वैज्ञानिक कारण:</strong> ${r.ans}
+      </div>
+    </div>
+  `).join('');
+}
+
+// 5. Conceptual Q&As Renderer (6 Detailed Q&As)
+function renderC9U9QAs() {
+  const container = document.getElementById('c9u9-qa-container');
+  if (!container) return;
+  const qas = [
+    {
+      q: "१. कार्य, ऊर्जा र शक्तिबीचको अन्तरसम्बन्ध दैनिक जीवनको उदाहरणसहित स्पष्ट पार्नुहोस्।",
+      ans: `
+        <div class="space-y-2 leading-relaxed">
+          <p><strong>१. कार्य (Work):</strong> कुनै वस्तुमा बल प्रयोग गरी त्यसलाई बलकै दिशामा निश्चित दुरीसम्म सार्दा कार्य हुन्छ (\\( W = F \\times s \\))।</p>
+          <p><strong>२. ऊर्जा (Energy):</strong> कार्य गर्नका लागि चाहिने क्षमता वा सामर्थ्यलाई ऊर्जा भनिन्छ। जति कार्य सम्पन्न हुन्छ, ठिक त्यति नै ऊर्जा खर्च हुन्छ वा रूपान्तरण हुन्छ। तसर्थ कार्य र ऊर्जाको एकाइ एउटै (जुल, J) हुन्छ।</p>
+          <p><strong>३. शक्ति (Power):</strong> कार्य कति छिटो वा ढिलो सम्पन्न भयो भन्ने कार्य गर्ने दरलाई शक्ति भनिन्छ (\\( P = \\frac{W}{t} \\))।</p>
+          <p class="p-2.5 rounded-xl bg-indigo-50/60 border border-indigo-100 text-indigo-950 font-medium">
+            <strong>दैनिक उदाहरण:</strong> ५० केजीको चामलको बोरालाई पहिलो तलामा लैजानु 'कार्य' हो। त्यो बोरा उचाल्न मानिसको शरीरमा खानाबाट प्राप्त भएको 'रासायनिक ऊर्जा' खर्च हुन्छ। यदि रामले उक्त बोरा २० सेकेन्डमा पुर्याउँछ र श्यामले ४० सेकेन्ड लगाउँछ भने, दुवैले गरेको 'कार्य' र खर्च भएको 'ऊर्जा' समान भए तापनि छिटो लैजाने रामको 'शक्ति' श्यामको भन्दा दोब्बर हुन्छ।
+          </p>
+        </div>
+      `
+    },
+    {
+      q: "२. गतिज ऊर्जाको वैज्ञानिक सूत्र \\( E_k = \\frac{1}{2}mv^2 \\) निगमन (Derivation) गर्नुहोस्।",
+      ans: `
+        <div class="space-y-3 leading-relaxed">
+          <p>मानौँ, \\( m \\) पिण्ड भएको कुनै स्थिर वस्तु (प्रारम्भिक गति \\( u = 0 \\)) मा \\( F \\) परिमाणको बाह्य बल लगाउँदा त्यसमा \\( a \\) प्रवेग उत्पन्न भई \\( s \\) दुरी पार गरेपछि अन्तिम गति \\( v \\) प्राप्त हुन्छ।</p>
+          <p>बलले गर्दा सम्पन्न भएको कार्य:</p>
+          <div class="p-2.5 rounded-xl bg-slate-100 font-mono text-xs md:text-sm">\\( W = F \\times s \\quad \\text{--- (समीकरण १)} \\)</div>
+          <p>न्युटनको चाल सम्बन्धी दोस्रो नियम अनुसार, \\( F = m \\times a \\)। यस मानलाई समीकरण १ मा राख्दा:</p>
+          <div class="p-2.5 rounded-xl bg-slate-100 font-mono text-xs md:text-sm">\\( W = m \\times a \\times s \\quad \\text{--- (समीकरण २)} \\)</div>
+          <p>चालको तेस्रो समीकरण अनुसार:</p>
+          <div class="p-2.5 rounded-xl bg-slate-100 font-mono text-xs md:text-sm">
+            \\( v^2 = u^2 + 2as \\)<br>
+            यहाँ वस्तु सुरुमा स्थिर रहेकोले \\( u = 0 \\):<br>
+            \\( v^2 = 0 + 2as \\implies v^2 = 2as \\implies as = \\frac{v^2}{2} \\)
+          </div>
+          <p>समीकरण २ मा \\( as = \\frac{v^2}{2} \\) को मान प्रतिस्थापन गर्दा:</p>
+          <div class="p-2.5 rounded-xl bg-indigo-50 border border-indigo-200 text-indigo-950 font-mono font-bold text-xs md:text-sm">
+            \\( W = m \\times \\left( \\frac{v^2}{2} \\right) = \\frac{1}{2} m v^2 \\)
+          </div>
+          <p>सम्पन्न भएको यही कार्य नै वस्तुमा गतिज ऊर्जा (\\( E_k \\)) को रूपमा सञ्चित हुन्छ। अतः</p>
+          <div class="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-950 font-mono font-black text-sm">
+            \\( E_k = \\frac{1}{2} m v^2 \\) (प्रमाणित भयो)
+          </div>
+        </div>
+      `
+    },
+    {
+      q: "३. स्वतन्त्र रूपमा उचाइबाट खसिरहेको वस्तुमा कुल यान्त्रिक ऊर्जा (\\( E_p + E_k = mgh \\)) स्थिर रहन्छ भनी प्रमाणित गर्नुहोस्।",
+      ans: `
+        <div class="space-y-3 leading-relaxed">
+          <p>मानौँ, \\( m \\) पिण्ड भएको वस्तु जमिनको सतहबाट \\( h \\) उचाइमा रहेको बिन्दु A मा स्थिर छ। यो वस्तु स्वतन्त्र रूपमा तल खस्दा जमिनको सतह C मा पुग्नु अगाडि बाटोको कुनै बिन्दु B हुँदै जान्छ।</p>
+          <div class="space-y-2">
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+              <strong>बिन्दु A मा (उचाइ h मा स्थिर रहँदा):</strong><br>
+              प्रारम्भिक गति \\( u = 0 \\implies E_k = \\frac{1}{2}m(0)^2 = 0 \\)<br>
+              उचाइ = \\( h \\implies E_p = mgh \\)<br>
+              कुल ऊर्जा \\( E_A = E_p + E_k = mgh + 0 = mgh \\)
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+              <strong>बिन्दु B मा (वस्तु \\( x \\) दुरी तल खसेपछिको अवस्था):</strong><br>
+              जमिनबाट उचाइ = \\( (h - x) \\implies E_p = mg(h - x) = mgh - mgx \\)<br>
+              गति \\( v_B^2 = u^2 + 2gx = 0 + 2gx = 2gx \\)<br>
+              गतिज ऊर्जा \\( E_k = \\frac{1}{2} m v_B^2 = \\frac{1}{2} m (2gx) = mgx \\)<br>
+              कुल ऊर्जा \\( E_B = E_p + E_k = (mgh - mgx) + mgx = mgh \\)
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+              <strong>बिन्दु C मा (जमिन छुनै लाग्दा, उचाइ = ०):</strong><br>
+              उचाइ = \\( 0 \\implies E_p = mg(0) = 0 \\)<br>
+              जमिन छुँदाको गति \\( v^2 = u^2 + 2gh = 2gh \\)<br>
+              गतिज ऊर्जा \\( E_k = \\frac{1}{2} m v^2 = \\frac{1}{2} m (2gh) = mgh \\)<br>
+              कुल ऊर्जा \\( E_C = E_p + E_k = 0 + mgh = mgh \\)
+            </div>
+          </div>
+          <p class="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-950 font-bold text-xs md:text-sm">
+            निष्कर्ष: बिन्दु A, B र C तीनवटै अवस्थामा कुल यान्त्रिक ऊर्जा \\( E = mgh \\) सधैँ स्थिर रहन्छ। यसले ऊर्जा संरक्षणको नियमलाई प्रमाणित गर्दछ।
+          </p>
+        </div>
+      `
+    },
+    {
+      q: "४. १ वाट शक्ति र १ किलोवाट-घण्टा (1 kWh) को परिभाषा लेख्नुहोस् तथा जुल र किलोवाट-घण्टाबीचको सम्बन्ध निकाल्नुहोस्।",
+      ans: `
+        <div class="space-y-3 leading-relaxed">
+          <p><strong>१ वाट शक्ति (1 Watt Power):</strong> १ सेकेन्ड समयमा १ जुल बराबरको कार्य सम्पन्न हुन्छ वा ऊर्जा खर्च हुन्छ भने उक्त कार्य गर्ने दरलाई १ वाट शक्ति भनिन्छ (\\( 1\\text{ W} = \\frac{1\\text{ J}}{1\\text{ s}} \\))।</p>
+          <p><strong>१ किलोवाट घण्टा (1 kWh / 1 Unit):</strong> १ किलोवाट (१००० वाट) क्षमता भएको कुनै विद्युतीय उपकरण १ घण्टा लगातार चलाउँदा खपत हुने कुल विद्युत ऊर्जाको परिमाणलाई १ किलोवाट घण्टा वा १ युनिट भनिन्छ।</p>
+          <div class="p-3 rounded-xl bg-indigo-50 border border-indigo-200 text-indigo-950 space-y-1">
+            <strong>जुल र किलोवाट घण्टाबीचको सम्बन्ध:</strong><br>
+            \\( 1\\text{ kWh} = 1\\text{ kW} \\times 1\\text{ घण्टा} \\)<br>
+            \\( 1\\text{ kWh} = 1000\\text{ W} \\times 3600\\text{ s} \\)<br>
+            \\( 1\\text{ kWh} = 1000\\text{ J/s} \\times 3600\\text{ s} \\)<br>
+            \\( 1\\text{ kWh} = 3,600,000\\text{ J} = 3.6 \\times 10^6\\text{ J} \\)
+          </div>
+        </div>
+      `
+    },
+    {
+      q: "५. नेपालमा ऊर्जा संकटका मुख्य कारणहरू के-के हुन् र यसको दीर्घकालीन समाधानका उपायहरू उल्लेख गर्नुहोस्।",
+      ans: `
+        <div class="space-y-3 leading-relaxed">
+          <p><strong>नेपालमा ऊर्जा संकटका मुख्य कारणहरू:</strong></p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>पेट्रोलियम पदार्थ र एलपी ग्यासमा पूर्ण रूपमा विदेशी आयातमा निर्भर हुनु।</li>
+            <li>प्रचुर जलस्रोत भए पनि ठूला जलाशययुक्त जलविद्युत आयोजनाहरूको न्यून विकास हुनु (हिउँदमा नदीमा पानी घट्दा उत्पादनमा कमी आउनु)।</li>
+            <li>विद्युत प्रसारण लाइन (Transmission Grid) को अभाव र प्राविधिक चुहावट।</li>
+            <li>परम्परागत दाउरा र गुइँठामा ग्रामीण जनसंख्याको ठूलो निर्भरता।</li>
+          </ul>
+          <p><strong>दीर्घकालीन समाधानका उपायहरू:</strong></p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>हिउँद र बर्खा दुवै समयमा पर्याप्त बिजुली उत्पादन गर्न जलाशययुक्त (Storage type) जलविद्युत आयोजना निर्माण गर्ने।</li>
+            <li>यातायातमा विद्युतीय सवारी (EV) र भान्सामा इन्डक्सन चुल्होको प्रयोगलाई राष्ट्रिय रूपमा प्रोत्साहन गरी पेट्रोलियम आयात विस्थापन गर्ने।</li>
+            <li>सौर्य ऊर्जा (Solar) र वायु ऊर्जा जस्ता वैकल्पिक नवीकरणीय ऊर्जाको सम्मिश्रण (Energy Mix) बढाउने।</li>
+          </ul>
+        </div>
+      `
+    },
+    {
+      q: "६. बायोमास (Biomass) भनेको के हो? गोबरग्यास प्लान्टको कार्यविधि र यसका फाइदाहरू उल्लेख गर्नुहोस्।",
+      ans: `
+        <div class="space-y-3 leading-relaxed">
+          <p><strong>बायोमास (Biomass):</strong> वनस्पति र प्राणीजन्य जैविक अवशेषहरूबाट प्राप्त हुने नवीकरणीय ऊर्जाको स्रोतलाई बायोमास भनिन्छ। जस्तै: दाउरा, गोबर, कृषिजन्य फोहोर आदि।</p>
+          <p><strong>गोबरग्यास प्लान्टको कार्यविधि:</strong> इनलेट ट्याङ्कीबाट गाईवस्तुको गोबर र पानीलाई १:१ को अनुपातमा घोलेर भूमिगत डाइजेस्टरमा पठाइन्छ। डाइजेस्टरभित्र हावा (अक्सिजन) नछिर्ने वातावरणमा एनारोबिक ब्याक्टेरिया (Anaerobic Bacteria) ले गोबरलाई कुहाएर रासायनिक प्रक्रियाद्वारा मुख्यतया <strong>मिथेन (CH₄, करिब ६०-७०%)</strong> र कार्बन डाइअक्साइड ग्यास उत्पादन गर्छन्। सो ग्यास पाइपमार्फत भान्सामा इन्धनको रूपमा लगिन्छ।</p>
+          <p><strong>मुख्य फाइदाहरू:</strong> दाउराको बचत भई वन विनाश रोकिने, धुवाँरहित सफा इन्धन प्राप्त हुने, र बाहिर निस्कने लेदो (Slurry) नाइट्रोजनयुक्त उत्कृष्ट जैविक मल बन्ने।</p>
+        </div>
+      `
+    }
+  ];
+
+  container.innerHTML = qas.map(qa => `
+    <div class="bg-white rounded-3xl p-5 md:p-6 border border-slate-200/80 shadow-xs space-y-3">
+      <h4 class="text-sm md:text-base font-black text-slate-800 flex items-start gap-2.5">
+        <span class="w-6 h-6 rounded-lg bg-indigo-600 text-white text-xs flex items-center justify-center shrink-0 mt-0.5 font-bold">प्र</span>
+        <span>${qa.q}</span>
+      </h4>
+      <div class="p-4 rounded-2xl bg-slate-50/80 border border-slate-100 text-xs md:text-sm text-slate-700">
+        ${qa.ans}
+      </div>
+    </div>
+  `).join('');
+}
+
+// 6. Numericals Renderer (5 Problems in 5-Box Format)
+function renderC9U9Numericals() {
+  const container = document.getElementById('c9u9-numericals-container');
+  if (!container) return;
+  const numericals = [
+    {
+      title: "समस्या १: धरहराको टुप्पोमा ढुङ्गाको स्थितिज ऊर्जा गणना",
+      q: "५० केजी पिण्ड भएको ढुङ्गो २० मिटर अग्लो धरहराको टुप्पोमा राख्दा त्यसमा सञ्चित स्थितिज ऊर्जा कति हुन्छ? (गुरुत्वप्रवेग \\( g = 9.8\\text{ m/s}^2 \\) मान्नुहोस्)",
+      box1: [
+        "ढुङ्गाको पिण्ड (\\( m \\)) = \\( 50\\text{ kg} \\)",
+        "उचाइ (\\( h \\)) = \\( 20\\text{ m} \\)",
+        "गुरुत्वप्रवेग (\\( g \\)) = \\( 9.8\\text{ m/s}^2 \\)"
+      ],
+      box2: "ढुङ्गामा सञ्चित स्थितिज ऊर्जा (\\( E_p \\)) = ?",
+      box3: "\\( E_p = mgh \\)",
+      box4: [
+        "हामीलाई थाहा छ,",
+        "\\( E_p = m \\times g \\times h \\)",
+        "\\( E_p = 50 \\times 9.8 \\times 20 \\)",
+        "\\( E_p = 50 \\times 196 \\)",
+        "\\( E_p = 9800\\text{ J} = 9.8\\text{ kJ} \\)"
+      ],
+      box5: "अतः धरहराको टुप्पोमा रहेको उक्त ढुङ्गामा सञ्चित स्थितिज ऊर्जा ९८०० जुल (वा ९.८ kJ) हुन्छ।"
+    },
+    {
+      title: "समस्या २: ७२ किमी/घण्टाको गतिमा गुडिरहेको कारको गतिज ऊर्जा गणना",
+      q: "१००० केजी पिण्ड भएको एउटा कार ७२ किमी/घण्टा (\\( 72\\text{ km/h} \\)) को गतिमा सडकमा गुडिरहेको छ भने त्यसको गतिज ऊर्जा कति हुन्छ?",
+      box1: [
+        "कारको पिण्ड (\\( m \\)) = \\( 1000\\text{ kg} \\)",
+        "कारको गति (\\( v \\)) = \\( 72\\text{ km/h} = \\frac{72 \\times 1000\\text{ m}}{3600\\text{ s}} = 20\\text{ m/s} \\)"
+      ],
+      box2: "कारको गतिज ऊर्जा (\\( E_k \\)) = ?",
+      box3: "\\( E_k = \\frac{1}{2} m v^2 \\)",
+      box4: [
+        "हामीलाई थाहा छ,",
+        "\\( E_k = \\frac{1}{2} \\times m \\times v^2 \\)",
+        "\\( E_k = \\frac{1}{2} \\times 1000 \\times (20)^2 \\)",
+        "\\( E_k = 500 \\times 400 \\)",
+        "\\( E_k = 200,000\\text{ J} = 200\\text{ kJ} \\)"
+      ],
+      box5: "अतः ७२ किमी/घण्टाको गतिमा गुडिरहेको उक्त कारको गतिज ऊर्जा २,००,००० जुल (वा २०० kJ) हुन्छ।"
+    },
+    {
+      title: "समस्या ३: स्वतन्त्र खसाइ र जमिन छुने बेलाको गति तथा गतिज ऊर्जा",
+      q: "४५ मिटर अग्लो भिरबाट २ केजी पिण्ड भएको ढुङ्गा स्वतन्त्र रूपमा खसाल्दा जमिनमा ठोक्किनु ठिक अगाडिको त्यसको गति (\\( v \\)) र गतिज ऊर्जा (\\( E_k \\)) कति हुन्छ? (\\( g = 9.8\\text{ m/s}^2 \\))",
+      box1: [
+        "ढुङ्गाको पिण्ड (\\( m \\)) = \\( 2\\text{ kg} \\)",
+        "भिरको उचाइ (\\( h \\)) = \\( 45\\text{ m} \\)",
+        "प्रारम्भिक गति (\\( u \\)) = \\( 0\\text{ m/s} \\)",
+        "गुरुत्वप्रवेग (\\( g \\)) = \\( 9.8\\text{ m/s}^2 \\)"
+      ],
+      box2: "जमिन छुने बेलाको गति (\\( v \\)) = ? र गतिज ऊर्जा (\\( E_k \\)) = ?",
+      box3: "\\( v = \\sqrt{u^2 + 2gh} \\) र \\( E_k = \\frac{1}{2}mv^2 \\) (वा ऊर्जा संरक्षण अनुसार \\( E_k = E_p = mgh \\))",
+      box4: [
+        "१. चालको तेस्रो समीकरणबाट जमिन छुने बेलाको गति:",
+        "\\( v^2 = u^2 + 2gh = 0^2 + 2 \\times 9.8 \\times 45 = 882 \\)",
+        "\\( v = \\sqrt{882} \\approx 29.7\\text{ m/s} \\)",
+        "२. ऊर्जा संरक्षणको नियम अनुसार, उचाइको सम्पूर्ण स्थितिज ऊर्जा जमिनमा गतिज ऊर्जामा परिणत हुन्छ:",
+        "\\( E_k = mgh = 2 \\times 9.8 \\times 45 = 882\\text{ J} \\)",
+        "\\( (\\text{वा } E_k = \\frac{1}{2} m v^2 = \\frac{1}{2} \\times 2 \\times 882 = 882\\text{ J}) \\)"
+      ],
+      box5: "अतः जमिनमा ठोक्किनु ठिक अगाडि ढुङ्गाको गति २९.७ मिटर/सेकेन्ड र गतिज ऊर्जा ८८२ जुल हुन्छ।"
+    },
+    {
+      title: "समस्या ४: मानिसले सिँढी चढ्दा गरेको कार्य र शक्ति हिसाब",
+      q: "६० केजी पिण्ड भएको एक व्यक्तिले १० मिटर अग्लो सिँढी २० सेकेन्डमा उक्लन्छ भने उसले गरेको कार्य र उसको शक्ति हिसाब गर्नुहोस्। (\\( g = 9.8\\text{ m/s}^2 \\))",
+      box1: [
+        "मानिसको पिण्ड (\\( m \\)) = \\( 60\\text{ kg} \\)",
+        "चढेको उचाइ (\\( h \\)) = \\( 10\\text{ m} \\)",
+        "लागेको समय (\\( t \\)) = \\( 20\\text{ s} \\)",
+        "गुरुत्वप्रवेग (\\( g \\)) = \\( 9.8\\text{ m/s}^2 \\)"
+      ],
+      box2: "गरिएको कुल कार्य (\\( W \\)) = ? र शक्ति (\\( P \\)) = ?",
+      box3: "\\( W = mgh \\) र \\( P = \\frac{W}{t} \\)",
+      box4: [
+        "१. सम्पन्न भएको कार्य:",
+        "\\( W = mgh = 60 \\times 9.8 \\times 10 = 5880\\text{ J} \\)",
+        "२. उक्त व्यक्तिको शक्ति:",
+        "\\( P = \\frac{W}{t} = \\frac{5880}{20} = 294\\text{ W} \\)",
+        "\\( (\\text{हर्सपावरमा: } HP = \\frac{294}{746} \\approx 0.394\\text{ HP}) \\)"
+      ],
+      box5: "अतः उक्त व्यक्तिले गरेको कार्य ५८८० जुल र शक्ति २९४ वाट (लगभग ०.३९४ HP) हुन्छ।"
+    },
+    {
+      title: "समस्या ५: घरायसी विद्युत खपत र मासिक महसुल गणना",
+      q: "एउटा घरमा १०० वाटका ४ वटा चिम दैनिक ६ घण्टा र १००० वाटको हिटर दैनिक २ घण्टा बालिन्छ। यदि नेपाल विद्युत प्राधिकरणको महसुल दर प्रतियुनिट रु. ९.५० भए, बैशाख महिना (३० दिन) को कुल विद्युत महसुल कति तिर्नुपर्ला?",
+      box1: [
+        "चिमको संख्या = \\( 4 \\), क्षमता = \\( 100\\text{ W} \\), समय = \\( 6\\text{ h/day} \\)",
+        "हिटरको संख्या = \\( 1 \\), क्षमता = \\( 1000\\text{ W} \\), समय = \\( 2\\text{ h/day} \\)",
+        "दिन संख्या (\\( T \\)) = \\( 30\\text{ दिन} \\), महसुल दर = रु. \\( 9.50/\\text{unit} \\)"
+      ],
+      box2: "कुल विद्युत ऊर्जा खपत युनिटमा (\\( E \\)) = ? र ३० दिनको जम्मा महसुल = ?",
+      box3: "\\( \\text{दैनिक Wh} = \\sum (N \\times P \\times t) \\), \\( \\text{युनिट} = \\frac{\\text{Wh}}{1000} \\), \\( \\text{महसुल} = \\text{युनिट} \\times \\text{दर} \\)",
+      box4: [
+        "१. चिमले दैनिक खपत गर्ने ऊर्जा = \\( 4 \\times 100\\text{ W} \\times 6\\text{ h} = 2400\\text{ Wh} \\)",
+        "२. हिटरले दैनिक खपत गर्ने ऊर्जा = \\( 1 \\times 1000\\text{ W} \\times 2\\text{ h} = 2000\\text{ Wh} \\)",
+        "३. जम्मा दैनिक ऊर्जा खपत = \\( 2400 + 2000 = 4400\\text{ Wh} = \\frac{4400}{1000} = 4.4\\text{ kWh (युनिट/दिन)} \\)",
+        "४. बैशाख महिना (३० दिन) को कुल खपत = \\( 4.4 \\times 30 = 132\\text{ युनिट} \\)",
+        "५. जम्मा विद्युत महसुल = \\( 132 \\times 9.50 = \\text{रू. १२५४} \\)"
+      ],
+      box5: "अतः बैशाख महिनामा जम्मा १३२ युनिट विद्युत खपत भई कुल महसुल रू. १२५४ (बाह्र सय चौवन्न रुपैयाँ) तिर्नुपर्छ।"
+    }
+  ];
+
+  container.innerHTML = numericals.map(num => `
+    <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/80 shadow-sm space-y-4">
+      <div class="border-b border-slate-100 pb-3">
+        <h4 class="text-base md:text-lg font-black text-indigo-950">${num.title}</h4>
+        <p class="text-xs md:text-sm font-bold text-slate-700 mt-1 leading-relaxed bg-slate-50 p-3 rounded-xl border border-slate-100">
+          <strong>प्रश्न:</strong> ${num.q}
+        </p>
+      </div>
+
+      <!-- 5-Box Layout -->
+      <div class="space-y-3">
+        <!-- Box 1: Given -->
+        <div class="p-3.5 rounded-2xl bg-blue-50/70 border border-blue-100 text-xs md:text-sm">
+          <div class="font-bold text-blue-900 mb-1 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            १. दिइएका मानहरू (Given Values):
+          </div>
+          <div class="pl-4 space-y-0.5 text-blue-950 font-medium">
+            ${num.box1.map(b => `<div>• ${b}</div>`).join('')}
+          </div>
+        </div>
+
+        <!-- Box 2: To Find -->
+        <div class="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-100 text-xs md:text-sm">
+          <div class="font-bold text-amber-900 mb-1 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+            २. पत्ता लगाउनुपर्ने मान (To Find):
+          </div>
+          <div class="pl-4 font-bold text-amber-950">${num.box2}</div>
+        </div>
+
+        <!-- Box 3: Formula -->
+        <div class="p-3.5 rounded-2xl bg-purple-50/70 border border-purple-100 text-xs md:text-sm">
+          <div class="font-bold text-purple-900 mb-1 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-purple-600"></span>
+            ३. प्रयोग हुने सूत्रहरू (Formulas to Use):
+          </div>
+          <div class="pl-4 font-mono font-bold text-purple-950">${num.box3}</div>
+        </div>
+
+        <!-- Box 4: Step-by-step Solution -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs md:text-sm">
+          <div class="font-bold text-slate-800 mb-2 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+            ४. चरणबद्ध हिसाब (Step-by-step Calculation):
+          </div>
+          <div class="pl-4 space-y-1 font-mono text-slate-800">
+            ${num.box4.map(step => `<div class="leading-relaxed">${step}</div>`).join('')}
+          </div>
+        </div>
+
+        <!-- Box 5: Final Conclusion -->
+        <div class="p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs md:text-sm font-bold text-emerald-950 flex items-center gap-2">
+          <span class="text-base text-emerald-600">✓</span>
+          <div><strong>५. अन्तिम निष्कर्ष (Final Answer):</strong> ${num.box5}</div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// -------------------------------------------------------------------------
+// TAB 3: 16 MULTI-TIER EXAM MODEL QUESTIONS
+// -------------------------------------------------------------------------
+const c9u9TiersData = [
+  // TIER 1: KNOWLEDGE & RECALL (6 Questions)
+  {
+    tier: 't1',
+    tierName: 'तह १: ज्ञान र स्मरण (Knowledge & Recall)',
+    marks: '१ अङ्क',
+    q: "१. ऊर्जा (Energy) भनेको के हो? यसको SI एकाइ के हो?",
+    ans: "कुनै वस्तु वा प्रणालीले कार्य गर्न सक्ने सामर्थ्य वा क्षमतालाई ऊर्जा भनिन्छ। कार्य र ऊर्जा दुवैको अन्तर्राष्ट्रिय (SI) एकाइ जुल (Joule, J) हो।"
+  },
+  {
+    tier: 't1',
+    tierName: 'तह १: ज्ञान र स्मरण (Knowledge & Recall)',
+    marks: '२ अङ्क',
+    q: "२. स्थितिज ऊर्जा र गतिज ऊर्जाको परिभाषा दिनुहोस्।",
+    ans: "<strong>स्थितिज ऊर्जा:</strong> कुनै वस्तुको स्थान, उचाइ वा बनावटमा आएको परिवर्तनको कारण वस्तुमा सञ्चित हुने ऊर्जालाई स्थितिज ऊर्जा भनिन्छ (\\( E_p = mgh \\))।<br><strong>गतिज ऊर्जा:</strong> कुनै वस्तुमा गतिको कारणले उत्पन्न हुने कार्य गर्ने सामर्थ्यलाई गतिज ऊर्जा भनिन्छ (\\( E_k = \\frac{1}{2}mv^2 \\))।"
+  },
+  {
+    tier: 't1',
+    tierName: 'तह १: ज्ञान र स्मरण (Knowledge & Recall)',
+    marks: '२ अङ्क',
+    q: "३. शक्ति (Power) भनेको के हो? १ वाट शक्ति भन्नाले के बुझिन्छ?",
+    ans: "कार्य गर्ने समय दरलाई शक्ति भनिन्छ (\\( P = \\frac{W}{t} \\))। १ सेकेन्ड समयमा १ जुल कार्य सम्पन्न हुन्छ भने उक्त वस्तुको शक्तिलाई १ वाट (1 Watt) भनिन्छ।"
+  },
+  {
+    tier: 't1',
+    tierName: 'तह १: ज्ञान र स्मरण (Knowledge & Recall)',
+    marks: '१ अङ्क',
+    q: "४. ऊर्जा संरक्षणको नियम (Law of Conservation of Energy) लेख्नुहोस्।",
+    ans: "ऊर्जा संरक्षणको नियम अनुसार, 'ऊर्जालाई न त उत्पादन गर्न सकिन्छ, न त नष्ट नै गर्न सकिन्छ; यसलाई केवल एउटा रूपबाट अर्को रूपमा रूपान्तरण मात्र गर्न सकिन्छ।'"
+  },
+  {
+    tier: 't1',
+    tierName: 'तह १: ज्ञान र स्मरण (Knowledge & Recall)',
+    marks: '१ अङ्क',
+    q: "५. १ किलोवाट घण्टा (1 kWh) विद्युत ऊर्जा भनेको के हो?",
+    ans: "१ किलोवाट (१००० वाट) क्षमता भएको कुनै विद्युतीय उपकरण १ घण्टा लगातार चलाउँदा खर्च हुने कुल विद्युत ऊर्जालाई १ किलोवाट घण्टा (१ युनिट) भनिन्छ।"
+  },
+  {
+    tier: 't1',
+    tierName: 'तह १: ज्ञान र स्मरण (Knowledge & Recall)',
+    marks: '२ अङ्क',
+    q: "६. नवीकरणीय र अनवीकरणीय ऊर्जा स्रोतका दुई/दुईवटा उदाहरण दिनुहोस्।",
+    ans: "<strong>नवीकरणीय ऊर्जा स्रोत:</strong> सौर्य ऊर्जा र जलविद्युत।<br><strong>अनवीकरणीय ऊर्जा स्रोत:</strong> कोइला र पेट्रोलियम (डिजेल/पेट्रोल)।"
+  },
+
+  // TIER 2: UNDERSTANDING & CONCEPTUAL (5 Questions)
+  {
+    tier: 't2',
+    tierName: 'तह २: बोध र समझ (Understanding & Conceptual)',
+    marks: '२ अङ्क',
+    q: "७. बगिरहेको नदीको पानीमा कुन ऊर्जा हुन्छ र त्यसबाट बिजुली कसरी उत्पादन गरिन्छ?",
+    ans: "बगिरहेको नदीको पानीमा गतिज ऊर्जा (Kinetic Energy) हुन्छ। नदीको पानीलाई बाँध बाँधेर निश्चित उचाइबाट पेनस्टक पाइपमार्फत तीव्र गतिमा टर्बाइनको ब्लेडमा खसाइन्छ। पानीको गतिज ऊर्जाले टर्बाइन घुमाउँछ (यान्त्रिक ऊर्जा) र टर्बाइनसँग जोडिएको जेनेरेटर घुम्दा यान्त्रिक ऊर्जा विद्युत ऊर्जामा रूपान्तरण हुन्छ।"
+  },
+  {
+    tier: 't2',
+    tierName: 'तह २: बोध र समझ (Understanding & Conceptual)',
+    marks: '२ अङ्क',
+    q: "८. गुलेलीको रबर तन्काउँदा र छोड्दा हुने ऊर्जा रूपान्तरण व्याख्या गर्नुहोस्।",
+    ans: "जब गुलेलीको रबरलाई हातले पछाडितर्फ तन्काइन्छ, तन्काउन गरिएको कार्य रबरमा 'प्रत्यास्थ स्थितिज ऊर्जा (Elastic Potential Energy)' को रूपमा सञ्चित हुन्छ। जब रबरलाई छोडिन्छ, उक्त सञ्चित स्थितिज ऊर्जा तत्कालै गुलेलीको मट्याङ्ग्रामा उच्च 'गतिज ऊर्जा (Kinetic Energy)' मा रूपान्तरण भई मट्याङ्ग्रा तीव्र गतिमा अगाडि हुत्तिन्छ।"
+  },
+  {
+    tier: 't2',
+    tierName: 'तह २: बोध र समझ (Understanding & Conceptual)',
+    marks: '३ अङ्क',
+    q: "९. कार्य र शक्तिबीच के सम्बन्ध छ? एउटै काम छिटो गर्दा र ढिलो गर्दा कार्य र शक्तिमा के फरक पर्छ?",
+    ans: "कार्य र शक्तिबीच \\( P = \\frac{W}{t} \\) को सम्बन्ध हुन्छ। यदि कुनै काम (जस्तै १०० वटा इँटा छतमा लैजाने) छिटो गरियोस् वा ढिलो, बल र विस्थापन समान हुने भएकाले <strong>सम्पन्न कार्य सधैँ समान</strong> रहन्छ। तर समय थोरै लाग्दा <strong>शक्ति धेरै</strong> हुन्छ र समय धेरै लाग्दा <strong>शक्ति थोरै</strong> हुन्छ।"
+  },
+  {
+    tier: 't2',
+    tierName: 'तह २: बोध र समझ (Understanding & Conceptual)',
+    marks: '२ अङ्क',
+    q: "१०. नवीकरणीय ऊर्जालाई 'भविष्यको ऊर्जा' किन भनिन्छ? दुईवटा वैज्ञानिक कारण दिनुहोस्।",
+    ans: "१. पृथ्वीमा रहेको कोइला तथा खनिज तेल केही दशकभित्र रित्तिने निश्चित छ, तर नवीकरणीय ऊर्जा (घाम, पानी, हावा) प्रकृतिमा निरन्तर प्राप्त भइरहन्छ र कहिल्यै सकिँदैन।<br>२. यसको प्रयोगले हरितगृह ग्यास उत्सर्जन नहुने भएकाले जलवायु परिवर्तन र विश्वव्यापी तापक्रम वृद्धि नियन्त्रण गरी पृथ्वीलाई भावी पुस्ताका लागि सुरक्षित राख्न मद्दत गर्दछ।"
+  },
+  {
+    tier: 't2',
+    tierName: 'तह २: बोध र समझ (Understanding & Conceptual)',
+    marks: '३ अङ्क',
+    q: "११. बायो-ग्यास प्लान्टमा मिथेन ग्यास कसरी उत्पादन हुन्छ र यसले वातावरण संरक्षणमा कसरी टेवा पुर्याउँछ?",
+    ans: "डाइजेस्टरभित्र गाईवस्तुको गोबर र पानीलाई अक्सिजनरहित (Anaerobic) अवस्थामा राख्दा मिथेनोजेनिक ब्याक्टेरियाले जैविक पदार्थलाई कुहाएर करिब ६०-७०% मिथेन ग्यास उत्पादन गर्छन्। यसले दाउराको प्रयोग घटाई वनजङ्गल विनाश रोक्छ, धुवाँरहित खाना पकाउने वातावरण दिन्छ र खुला फोहोरबाट वायुमण्डलमा सिधै मिथेन उत्सर्जन हुनबाट जोगाउँछ।"
+  },
+
+  // TIER 3: APPLICATION & HIGHER ABILITY (5 Questions)
+  {
+    tier: 't3',
+    tierName: 'तह ३: प्रयोग, विश्लेषण र उच्च क्षमता (Application & Higher Ability)',
+    marks: '४ अङ्क',
+    q: "१२. गतिज ऊर्जाको सूत्र \\( E_k = \\frac{1}{2}mv^2 \\) निगमन गर्नुहोस् र यदि गति ३ गुणा बढाइयो भने गतिज ऊर्जामा कस्तो परिवर्तन आउँछ, गणितीय विश्लेषण गर्नुहोस्।",
+    ans: `
+      \\( W = F \\times s = (ma) \\times s = m(as) \\)। चालको समीकरण \\( v^2 = u^2 + 2as \\) मा \\( u = 0 \\) हुँदा \\( as = \\frac{v^2}{2} \\)। तसर्थ \\( W = \\frac{1}{2}mv^2 \\implies E_k = \\frac{1}{2}mv^2 \\)।<br>
+      <strong>गणितीय विश्लेषण:</strong> यदि गति ३ गुणा (\\( v' = 3v \\)) बनाइयो भने:<br>
+      \\( E_k' = \\frac{1}{2}m(3v)^2 = \\frac{1}{2}m(9v^2) = 9 \\left( \\frac{1}{2}mv^2 \\right) = 9 E_k \\)।<br>
+      अर्थात्, गति ३ गुणा बढ्दा गतिज ऊर्जा <strong>९ गुणा (वर्ग अनुसार)</strong> बढ्छ।
+    `
+  },
+  {
+    tier: 't3',
+    tierName: 'तह ३: प्रयोग, विश्लेषण र उच्च क्षमता (Application & Higher Ability)',
+    marks: '४ अङ्क',
+    q: "१३. उचाइ \\( h \\) बाट खसिरहेको वस्तुको उच्चतम, मध्यवर्ती र जमिन छुने बिन्दुमा कुल यान्त्रिक ऊर्जा स्थिर रहन्छ भनी प्रमाणित गर्नुहोस्।",
+    ans: "उच्चतम बिन्दुमा \\( u=0 \\implies E_k=0, E_p=mgh \\implies E=mgh \\)। बाटोको बिन्दुमा (\\( x \\) दुरी खस्दा): \\( E_p=mg(h-x), E_k=mgx \\implies E=mgh \\)। जमिन छुने बेला: \\( h=0 \\implies E_p=0, E_k=\\frac{1}{2}m(2gh)=mgh \\implies E=mgh \\)। अतः हरेक बिन्दुमा कुल ऊर्जा \\( E = mgh = \\text{स्थिर} \\) रहन्छ।"
+  },
+  {
+    tier: 't3',
+    tierName: 'तह ३: प्रयोग, विश्लेषण र उच्च क्षमता (Application & Higher Ability)',
+    marks: '३ अङ्क',
+    q: "१४. यदि कुनै कारको गति २० मिटर/सेकेन्डबाट बढाएर ४० मिटर/सेकेन्ड पुर्याइयो भने त्यसको गतिज ऊर्जामा कति प्रतिशत वृद्धि हुन्छ?",
+    ans: `
+      प्रारम्भिक गतिज ऊर्जा: \\( E_1 = \\frac{1}{2}m(20)^2 = 200m \\)<br>
+      अन्तिम गतिज ऊर्जा: \\( E_2 = \\frac{1}{2}m(40)^2 = 800m \\)<br>
+      ऊर्जा वृद्धि: \\( \\Delta E = E_2 - E_1 = 800m - 200m = 600m \\)<br>
+      प्रतिशत वृद्धि = \\( \\frac{\\Delta E}{E_1} \\times 100\\% = \\frac{600m}{200m} \\times 100\\% = 300\\% \\)<br>
+      अतः गति दोब्बर हुँदा गतिज ऊर्जामा <strong>३००% (चार गुणा)</strong> वृद्धि हुन्छ।
+    `
+  },
+  {
+    tier: 't3',
+    tierName: 'तह ३: प्रयोग, विश्लेषण र उच्च क्षमता (Application & Higher Ability)',
+    marks: '४ अङ्क',
+    q: "१५. नेपालमा जलविद्युतको प्रचुर सम्भावना हुँदाहुँदै पनि पेट्रोलियम पदार्थमाथिको परनिर्भरता घटाउन नसकिनुका मुख्य कारण र तीनवटा व्यावहारिक नीतिगत उपायहरू प्रस्तुत गर्नुहोस्।",
+    ans: "<strong>कारणहरू:</strong> हिउँदमा नदीमा पानी घट्दा उत्पादनमा गिरावट आउनु, अन्तरदेशीय तथा आन्तरिक उच्च भोल्टेज प्रसारण लाइनको अभाव, र उद्योग तथा भान्सामा इन्डक्सन र विद्युतीय सवारीको पहुँच विस्तारमा सुस्तता।<br><strong>उपायहरू:</strong> १. जलाशययुक्त आयोजना (जस्तै बुढीगण्डकी) शीघ्र सम्पन्न गर्ने। २. विद्युतीय चुल्हो र ईभी गाडीमा भन्सार छुट तथा विद्युत महसुलमा विशेष सहुलियत दिने। ३. कृषिमा डिजेल पम्पको सट्टा सौर्य र विद्युतीय सिँचाइ प्रणाली अनिवार्य गर्ने।"
+  },
+  {
+    tier: 't3',
+    tierName: 'तह ३: प्रयोग, विश्लेषण र उच्च क्षमता (Application & Higher Ability)',
+    marks: '४ अङ्क',
+    q: "१६. एउटा विद्यालयमा ६० वाटका २० वटा पङ्खा दैनिक ६ घण्टा र ४० वाटका ३० वटा ट्युबलाइट दैनिक ५ घण्टा चल्छन्। यदि सबै ट्युबलाई १५ वाटको एलईडीले र पङ्खालाई ३० वाटको बीएलडीसी (BLDC) पङ्खाले फेरियो भने मासिक कति युनिट बिजुली र कति रुपैयाँ (प्रतियुनिट रु. १० का दरले) बचत होला?",
+    ans: `
+      <strong>१. पुरानो दैनिक खपत:</strong><br>
+      पङ्खा: \\( 20 \\times 60 \\times 6 = 7200\\text{ Wh} \\)<br>
+      ट्युब: \\( 30 \\times 40 \\times 5 = 6000\\text{ Wh} \\)<br>
+      जम्मा पुरानो दैनिक = \\( 13200\\text{ Wh} = 13.2\\text{ kWh} \\)<br>
+      <strong>२. नयाँ दैनिक खपत:</strong><br>
+      बीएलडीसी पङ्खा: \\( 20 \\times 30 \\times 6 = 3600\\text{ Wh} \\)<br>
+      एलईडी: \\( 30 \\times 15 \\times 5 = 2250\\text{ Wh} \\)<br>
+      जम्मा नयाँ दैनिक = \\( 5850\\text{ Wh} = 5.85\\text{ kWh} \\)<br>
+      <strong>३. दैनिक बचत:</strong> \\( 13.2 - 5.85 = 7.35\\text{ kWh (युनिट/दिन)} \\)<br>
+      मासिक बचत (३० दिन) = \\( 7.35 \\times 30 = 220.5\\text{ युनिट} \\)<br>
+      मासिक आर्थिक बचत = \\( 220.5 \\times 10 = \\text{रू. २२०५} \\)
+    `
+  }
+];
+
+function setTierFilterC9U9(filter) {
+  activeC9U9TierFilter = filter;
+  playAudioC9U9('click');
+  const filters = ['all', 't1', 't2', 't3'];
+  filters.forEach(f => {
+    const btn = document.getElementById(`c9u9-tier-btn-${f}`);
+    if (btn) {
+      if (f === filter) {
+        btn.className = "px-4 py-2 rounded-xl bg-indigo-600 text-white font-bold text-xs shadow-xs cursor-pointer min-h-[38px]";
+      } else {
+        btn.className = "px-4 py-2 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs cursor-pointer min-h-[38px]";
+      }
+    }
+  });
+
+  renderC9U9Tiers();
+}
+
+function renderC9U9Tiers() {
+  const container = document.getElementById('c9u9-tiers-container');
+  if (!container) return;
+  const filtered = activeC9U9TierFilter === 'all'
+    ? c9u9TiersData
+    : c9u9TiersData.filter(d => d.tier === activeC9U9TierFilter);
+
+  container.innerHTML = filtered.map(t => `
+    <div class="bg-white rounded-3xl p-5 md:p-6 border border-slate-200/80 shadow-xs space-y-3">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold ${t.tier === 't1' ? 'bg-blue-100 text-blue-900' : t.tier === 't2' ? 'bg-emerald-100 text-emerald-900' : 'bg-purple-100 text-purple-900'}">
+          ${t.tierName}
+        </span>
+        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 font-mono text-xs font-bold">${t.marks}</span>
+      </div>
+      <h4 class="text-sm md:text-base font-black text-slate-900 leading-snug">
+        ${t.q}
+      </h4>
+      <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 text-xs md:text-sm text-slate-700 leading-relaxed">
+        <strong class="text-indigo-950">नमुना उत्तर:</strong> ${t.ans}
+      </div>
+    </div>
+  `).join('');
+
+  if (typeof typesetElement === 'function') {
+    typesetElement(container);
+  }
+}
+
+// -------------------------------------------------------------------------
+// TAB 4: SELF-ASSESSMENT QUIZ ENGINE (10 Questions)
+// -------------------------------------------------------------------------
+const c9u9QuizQuestions = [
+  {
+    q: "१. कार्य गर्ने सामर्थ्य वा क्षमतालाई के भनिन्छ?",
+    opts: ["ऊर्जा (Energy)", "शक्ति (Power)", "बल (Force)", "चाप (Pressure)"],
+    ans: 0,
+    exp: "कार्य गर्न सक्ने सामर्थ्यलाई ऊर्जा भनिन्छ। प्रति सेकेन्ड हुने कार्यको दरलाई शक्ति भनिन्छ।"
+  },
+  {
+    q: "२. १० केजी पिण्ड भएको वस्तुलाई ५ मिटर उचाइमा राख्दा त्यसमा कति स्थितिज ऊर्जा हुन्छ? (g = 9.8 m/s²)",
+    opts: ["४९० जुल (490 J)", "९८ जुल (98 J)", "५० जुल (50 J)", "४९ जुल (49 J)"],
+    ans: 0,
+    exp: "\\( E_p = mgh = 10 \\times 9.8 \\times 5 = 490\\text{ J} \\)।"
+  },
+  {
+    q: "३. कुनै वस्तुको गति ३ गुणा बढाइयो भने त्यसको गतिज ऊर्जा कति गुणा हुन्छ?",
+    opts: ["३ गुणा", "६ गुणा", "९ गुणा", "२७ गुणा"],
+    ans: 2,
+    exp: "\\( E_k \\propto v^2 \\) अनुसार गति ३ गुणा हुँदा गतिज ऊर्जा \\( (3)^2 = 9 \\) गुणा हुन्छ।"
+  },
+  {
+    q: "४. १ किलोवाट घण्टा (1 kWh) विद्युत ऊर्जा कति जुल बराबर हुन्छ?",
+    opts: ["3.6 × 10⁶ J", "3.6 × 10⁵ J", "1000 J", "3600 J"],
+    ans: 0,
+    exp: "\\( 1\\text{ kWh} = 1000\\text{ W} \\times 3600\\text{ s} = 3.6 \\times 10^6\\text{ J} \\) (३६ लाख जुल)।"
+  },
+  {
+    q: "५. शक्तिको अन्तर्राष्ट्रिय (SI) एकाइ कुन हो?",
+    opts: ["जुल (Joule)", "वाट (Watt)", "न्युटन (Newton)", "पास्कल (Pascal)"],
+    ans: 1,
+    exp: "शक्तिको SI एकाइ वाट (Watt) हो। जुल ऊर्जा र कार्यको एकाइ हो।"
+  },
+  {
+    q: "६. १ हर्सपावर (1 HP) मा कति वाट हुन्छ?",
+    opts: ["५०० वाट", "७४६ वाट", "१००० वाट", "७५० वाट"],
+    ans: 1,
+    exp: "ब्रिटिश इन्जिनियरिङ प्रणाली अनुसार १ हर्सपावर बराबर ७४६ वाट हुन्छ।"
+  },
+  {
+    q: "७. तलका मध्ये कुन नवीकरणीय ऊर्जाको स्रोत हो?",
+    opts: ["कोइला", "पेट्रोलियम", "प्राकृतिक ग्यास", "सौर्य ऊर्जा"],
+    ans: 3,
+    exp: "सौर्य ऊर्जा प्रकृतिमा निरन्तर प्राप्त भइरहने र कहिल्यै नसकिने नवीकरणीय ऊर्जा हो।"
+  },
+  {
+    q: "८. स्वतन्त्र रूपमा खसिरहेको वस्तुको जमिन छुने ठिक अगाडिको बिन्दुमा कुन ऊर्जा शून्य हुन्छ?",
+    opts: ["गतिज ऊर्जा", "स्थितिज ऊर्जा", "कुल यान्त्रिक ऊर्जा", "ताप ऊर्जा"],
+    ans: 1,
+    exp: "जमिन छुने बिन्दुमा उचाइ शून्य (\\( h = 0 \\)) हुने हुँदा स्थितिज ऊर्जा \\( E_p = mgh = 0 \\) हुन्छ।"
+  },
+  {
+    q: "९. ५० वाटको चिम दैनिक २० घण्टा बाल्दा १ दिनमा कति युनिट विद्युत खपत हुन्छ?",
+    opts: ["०.५ युनिट", "१ युनिट", "२ युनिट", "१० युनिट"],
+    ans: 1,
+    exp: "\\( \\text{युनिट} = \\frac{50 \\times 20}{1000} = \\frac{1000}{1000} = 1\\text{ kWh} = 1\\text{ युनिट} \\)।"
+  },
+  {
+    q: "१०. ऊर्जा संरक्षणको नियम अनुसार कुनै बन्द प्रणालीमा कुल ऊर्जा:",
+    opts: ["बढ्दै जान्छ", "घट्दै जान्छ", "सधैँ स्थिर रहन्छ", "शून्य हुन्छ"],
+    ans: 2,
+    exp: "ऊर्जा संरक्षणको नियम अनुसार ऊर्जा सिर्जना वा नष्ट हुन नसक्ने भएकाले कुल ऊर्जा सधैँ स्थिर (अपरिवर्तनीय) रहन्छ।"
+  }
+];
+
+function renderC9U9Quiz() {
+  const container = document.getElementById('c9u9-quiz-container');
+  if (!container) return;
+
+  const total = c9u9QuizQuestions.length;
+  let correctCount = 0;
+  let answeredCount = 0;
+
+  const html = c9u9QuizQuestions.map((qItem, qIdx) => {
+    const userSelected = c9u9QuizAnswers[qIdx];
+    const isAnswered = typeof userSelected !== 'undefined';
+    if (isAnswered) {
+      answeredCount++;
+      if (userSelected === qItem.ans) correctCount++;
+    }
+
+    return `
+      <div class="bg-white rounded-3xl p-5 md:p-6 border border-slate-200/80 shadow-xs space-y-3">
+        <div class="flex items-start gap-3">
+          <span class="w-7 h-7 rounded-xl bg-indigo-50 text-indigo-700 font-bold text-xs flex items-center justify-center shrink-0 border border-indigo-200">
+            ${qIdx + 1}
+          </span>
+          <div class="text-sm font-bold text-slate-800 leading-snug">
+            ${qItem.q}
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pl-10">
+          ${qItem.opts.map((opt, oIdx) => {
+            let optClass = "px-3.5 py-2.5 rounded-xl text-xs flex items-center gap-2 cursor-pointer transition border ";
+            if (!isAnswered) {
+              optClass += "bg-slate-50 text-slate-700 border-slate-200/80 hover:bg-indigo-50/60 hover:text-indigo-900";
+            } else if (oIdx === qItem.ans) {
+              optClass += "bg-emerald-50 text-emerald-950 border-emerald-300 font-bold ring-2 ring-emerald-400/30";
+            } else if (userSelected === oIdx) {
+              optClass += "bg-rose-50 text-rose-950 border-rose-300 font-bold";
+            } else {
+              optClass += "bg-slate-50 text-slate-400 border-slate-100 opacity-60";
+            }
+
+            return `
+              <div onclick="selectQuizC9U9Option(${qIdx}, ${oIdx})" class="${optClass} min-h-[44px]">
+                <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${isAnswered && oIdx === qItem.ans ? 'bg-emerald-600 text-white' : isAnswered && userSelected === oIdx ? 'bg-rose-600 text-white' : 'bg-slate-200 text-slate-700'}">
+                  ${String.fromCharCode(65 + oIdx)}
+                </span>
+                <span>${opt}</span>
+                ${isAnswered && oIdx === qItem.ans ? '<span class="ml-auto text-emerald-600 font-bold">✓</span>' : ''}
+                ${isAnswered && userSelected === oIdx && oIdx !== qItem.ans ? '<span class="ml-auto text-rose-600 font-bold">✗</span>' : ''}
+              </div>
+            `;
+          }).join('')}
+        </div>
+
+        ${isAnswered ? `
+          <div class="ml-10 p-3 rounded-xl ${userSelected === qItem.ans ? 'bg-emerald-50/60 border border-emerald-100 text-emerald-950' : 'bg-rose-50/60 border border-rose-100 text-rose-950'} text-xs leading-relaxed">
+            <strong class="font-bold">${userSelected === qItem.ans ? '✓ स्याबास! सही उत्तर।' : '✗ गलत उत्तर!'}</strong>
+            <span class="text-slate-600 ml-1">${qItem.exp}</span>
+          </div>
+        ` : ''}
+      </div>
+    `;
+  }).join('');
+
+  container.innerHTML = html;
+
+  // Update Score & Feedback
+  const scoreEl = document.getElementById('c9u9-quiz-score');
+  const feedEl = document.getElementById('c9u9-quiz-feedback');
+  if (scoreEl) scoreEl.textContent = `${correctCount} / ${total}`;
+  if (feedEl) {
+    if (answeredCount === 0) feedEl.textContent = "प्रश्नहरूको उत्तर दिनुहोस्";
+    else if (answeredCount < total) feedEl.textContent = `${answeredCount} वटा हल गरियो (${correctCount} सही)`;
+    else {
+      const pct = (correctCount / total) * 100;
+      if (pct >= 80) feedEl.textContent = `उत्कृष्ट नतिजा! (${pct}%) 🎉`;
+      else if (pct >= 50) feedEl.textContent = `धेरै राम्रो! (${pct}%) 👍`;
+      else feedEl.textContent = `अझै मिहिनेत गर्नुहोस् (${pct}%) 📖`;
+    }
+  }
+
+  if (typeof typesetElement === 'function') {
+    typesetElement(container);
+  }
+}
+
+function selectQuizC9U9Option(qIdx, optIdx) {
+  if (typeof c9u9QuizAnswers[qIdx] !== 'undefined') return; // once answered, lock
+  c9u9QuizAnswers[qIdx] = optIdx;
+  const isCorrect = optIdx === c9u9QuizQuestions[qIdx].ans;
+  if (isCorrect) playAudioC9U9('correct');
+  else playAudioC9U9('wrong');
+  renderC9U9Quiz();
+}
+
+function resetQuizC9U9() {
+  playAudioC9U9('click');
+  c9u9QuizAnswers = {};
+  renderC9U9Quiz();
+}
+
+// -------------------------------------------------------------------------
+// UNIT 9 INITIALIZATION
+// -------------------------------------------------------------------------
+function initC9U9() {
+  updatePEKESimC9U9();
+  renderPendulumFrameC9U9(0);
+  updateWorkPowerC9U9();
+  updateElectricityBillC9U9();
+  renderC9U9Exercises();
+  renderC9U9Tiers();
+  renderC9U9Quiz();
+
+  const c9v9 = document.getElementById('c9-view-9');
+  if (c9v9 && typeof typesetElement === 'function') {
+    typesetElement(c9v9);
+  }
+}
+
+
+
 // Ensure startup trigger if active
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
@@ -47875,6 +50071,8 @@ if (document.readyState === 'loading') {
       initC9U7();
     } else if (typeof currentGrade !== 'undefined' && currentGrade === 9 && typeof activeUnit9 !== 'undefined' && activeUnit9 === 8 && typeof initC9U8 === 'function') {
       initC9U8();
+    } else if (typeof currentGrade !== 'undefined' && currentGrade === 9 && typeof activeUnit9 !== 'undefined' && activeUnit9 === 9 && typeof initC9U9 === 'function') {
+      initC9U9();
     }
   });
 }
