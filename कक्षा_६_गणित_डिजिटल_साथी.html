@@ -30488,14 +30488,687 @@ eq 6$</div>
 </div>
 
 
-      <!-- Placeholder View for Units 11 to 19 -->
+      <!-- ========================================== -->
+<!-- GRADE 9 SCIENCE: UNIT 11 - विद्युत् (Electricity) -->
+<!-- Clean Light Modern Textbook Design (Class 6 Math / Unit 10 System) -->
+<!-- ========================================== -->
+<div id="c9-view-11" class="hidden space-y-8">
+
+  <!-- Header Banner (Clean White Card Style) -->
+  <div class="bg-white border-b border-slate-100 rounded-3xl p-5 md:p-6 shadow-sm">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
+            कक्षा ९ विज्ञान तथा प्रविधि | एकाइ ११
+          </span>
+          <span class="text-xs text-slate-500 font-medium">
+            • पाठ्यपुस्तक पृष्ठ १७३–१९३
+          </span>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-black text-slate-900 mt-2 tracking-tight">
+          एकाइ ११: विद्युत् (Electricity)
+        </h2>
+        <p class="text-xs md:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
+          विद्युत धारा, ओहमको नियम, श्रेणीक्रम र समानान्तर जडान, विद्युत सामर्थ्य तथा महसुलको बृहत् डिजिटल प्रयोगशाला
+        </p>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-2xs">
+          ✓ सम्पूर्ण पाठ्यपुस्तक अभ्यास तथा प्रयोगशाला समावेश
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Formula & Core Law Cards (Light Tinted 4-Card Grid) -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+    <div class="p-3.5 bg-blue-50/70 border border-blue-200 rounded-2xl flex items-center justify-between shadow-xs">
+      <div>
+        <div class="text-[11px] font-bold text-blue-800">ओहमको नियम</div>
+        <div class="font-mono font-black text-blue-900 text-sm mt-0.5">\(V = I \times R\)</div>
+      </div>
+      <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+    </div>
+    <div class="p-3.5 bg-indigo-50/70 border border-indigo-200 rounded-2xl flex items-center justify-between shadow-xs">
+      <div>
+        <div class="text-[11px] font-bold text-indigo-800">विद्युत सामर्थ्य</div>
+        <div class="font-mono font-black text-indigo-900 text-sm mt-0.5">\(P = V \times I = \frac{V^2}{R}\)</div>
+      </div>
+      <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+    </div>
+    <div class="p-3.5 bg-teal-50/70 border border-teal-200 rounded-2xl flex items-center justify-between shadow-xs">
+      <div>
+        <div class="text-[11px] font-bold text-teal-800">विद्युत खपत (युनिट)</div>
+        <div class="font-mono font-black text-teal-900 text-sm mt-0.5">\(\text{kWh} = \frac{P \times N \times T}{1000}\)</div>
+      </div>
+      <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span>
+    </div>
+    <div class="p-3.5 bg-purple-50/70 border border-purple-200 rounded-2xl flex items-center justify-between shadow-xs">
+      <div>
+        <div class="text-[11px] font-bold text-purple-800">१ युनिट ऊर्जा (जुलमा)</div>
+        <div class="font-mono font-black text-purple-900 text-sm mt-0.5">\(1\text{ kWh} = 3.6 \times 10^6\text{ J}\)</div>
+      </div>
+      <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+    </div>
+  </div>
+
+  <!-- Navigation Tabs (Class 6 Math Pill Style) -->
+  <div class="flex border-b border-slate-200 gap-2 mb-6 overflow-x-auto pb-1 text-sm font-bold">
+    <button onclick="setTabC9U11('concepts')" id="c9u11-tab-concepts" class="px-5 py-2.5 rounded-xl bg-blue-600 text-white shadow-sm font-bold transition whitespace-nowrap cursor-pointer">
+      १. अवधारणा र भर्चुअल प्रयोगशाला
+    </button>
+    <button onclick="setTabC9U11('exercises')" id="c9u11-tab-exercises" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap font-medium cursor-pointer">
+      २. पाठ्यपुस्तकका सम्पूर्ण अभ्यासहरू र समाधान
+    </button>
+    <button onclick="setTabC9U11('tiers')" id="c9u11-tab-tiers" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap font-medium cursor-pointer">
+      ३. तीन तहका नमुना प्रश्नहरू
+    </button>
+    <button onclick="setTabC9U11('quiz')" id="c9u11-tab-quiz" class="px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap font-medium cursor-pointer">
+      ४. आत्म-मूल्याङ्कन क्विज
+    </button>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAB 1: CONCEPTS & VIRTUAL PHYSICS LAB -->
+  <!-- ========================================================================= -->
+  <div id="c9u11-view-concepts" class="space-y-6">
+
+    <!-- 1. Background / Theoretical Overview (Class 6 Style) -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-5 shadow-sm space-y-3">
+      <div class="flex items-center gap-2">
+        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-600 text-white">११.० पूर्वअवलोकन</span>
+        <h3 class="text-lg font-black text-blue-950">विद्युत धारा, इलेक्ट्रोमोटिभ फोर्स र ओहमको नियम (पाठ्यपुस्तक पृष्ठ १७३–१७९)</h3>
+      </div>
+      <p class="text-slate-700 leading-relaxed text-sm">
+        सुचालक तारमा प्रति सेकेन्ड प्रवाह हुने विद्युत चार्जको परिमाणलाई <strong>विद्युत धारा (Electric Current, \(I = \frac{Q}{t}\))</strong> भनिन्छ। खुला परिपथमा सेलका दुई ध्रुवहरूबीचको भोल्टेजलाई <strong>इलेक्ट्रोमोटिभ फोर्स (EMF)</strong> र बन्द परिपथमा चार्ज एक बिन्दुबाट अर्को बिन्दुसम्म लैजान गरिने कार्यलाई <strong>पोटेन्सियल फरक (Potential Difference, \(V\))</strong> भनिन्छ। जर्मन भौतिकशास्त्री जर्ज साइमन ओहमका अनुसार, भौतिक अवस्था स्थिर रहँदा सुचालकका दुई छेउबीचको पोटेन्सियल फरक त्यसमा बग्ने विद्युत धारासँग समानुपातिक हुन्छ।
+      </p>
+      <div class="p-3 bg-white rounded-xl border border-blue-100 text-xs md:text-sm text-blue-900 font-mono text-center shadow-2xs">
+        \(V = I \times R \quad \text{तथा} \quad I = \frac{V}{R} \quad [V = \text{पोटेन्सियल फरक (V)}, I = \text{धारा (A)}, R = \text{अवरोध } (\Omega)]\)
+      </div>
+    </div>
+
+    <!-- 2. Well-Defined CDC Comparison Table (Class 6 Style) -->
+    <div class="border border-slate-200 rounded-2xl overflow-hidden shadow-xs bg-white">
+      <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 font-bold text-slate-800 text-sm flex justify-between items-center">
+        <span>श्रेणीक्रम जडान र समानान्तर जडान बीच तुलना (तुलनात्मक वैज्ञानिक विश्लेषण)</span>
+        <span class="text-xs bg-slate-200 text-slate-700 px-2 py-0.5 rounded font-mono">CDC मापदण्ड</span>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-slate-50 text-slate-600 border-b text-xs uppercase">
+            <tr>
+              <th class="p-3.5 border-r border-slate-200">तुलनाको आधार</th>
+              <th class="p-3.5 border-r border-slate-200">श्रेणीक्रम जडान (Series Combination)</th>
+              <th class="p-3.5">समानान्तर जडान (Parallel Combination)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700">
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-3.5 font-bold border-r border-slate-100 bg-slate-50/40">१. करेन्टको मार्ग</td>
+              <td class="p-3.5 border-r border-slate-100">करेन्ट प्रवाहका लागि एउटै मात्र मार्ग हुन्छ; सबै लोडमा समान करेन्ट बग्छ।</td>
+              <td class="p-3.5 text-emerald-900 font-medium">करेन्ट प्रवाहका लागि एकभन्दा बढी हाँगा/मार्गहरू हुन्छन्; करेन्ट बाँडिन्छ।</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-3.5 font-bold border-r border-slate-100 bg-slate-50/40">२. पोटेन्सियल फरक</td>
+              <td class="p-3.5 border-r border-slate-100">स्रोतको कुल भोल्टेज प्रत्येक अवरोधकमा बाँडिन्छ (\(V = V_1 + V_2 + V_3\))।</td>
+              <td class="p-3.5 text-emerald-900 font-medium">प्रत्येक लोडका छेउहरूमा स्रोतको भोल्टेज बराबर नै हुन्छ (\(V = V_1 = V_2 = V_3\))।</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-3.5 font-bold border-r border-slate-100 bg-slate-50/40">३. समतुल्य अवरोध (\(R_{eq}\))</td>
+              <td class="p-3.5 border-r border-slate-100">कुल अवरोध अधिकतम हुन्छ: \(R_s = R_1 + R_2 + R_3\)</td>
+              <td class="p-3.5 text-emerald-900 font-medium">कुल अवरोध न्यूनतम हुन्छ: \(\frac{1}{R_p} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}\)</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-3.5 font-bold border-r border-slate-100 bg-slate-50/40">४. एउटा लोड बिग्रँदा</td>
+              <td class="p-3.5 border-r border-slate-100">परिपथ खुल्छ (Open circuit), जसले गर्दा अन्य सबै उपकरणहरू तत्काल बन्द हुन्छन्।</td>
+              <td class="p-3.5 text-emerald-900 font-medium">अन्य उपकरणहरूमा कुनै असर पर्दैन, ती सामान्य रूपमा चलिरहन्छन्।</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-3.5 font-bold border-r border-slate-100 bg-slate-50/40">५. व्यावहारिक उपयोग</td>
+              <td class="p-3.5 border-r border-slate-100">तिहारको झिलिमिली बत्ती (Decorative fairy lights), फ्युज तार जडान।</td>
+              <td class="p-3.5 text-emerald-900 font-medium">घरेलु विद्युत वाइरिङ (Household electric wiring, विद्यालय तथा कार्यालय)।</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 3. Segmented Switcher for 3 Virtual Labs -->
+    <div class="bg-slate-100 rounded-2xl border border-slate-200 p-1.5 flex gap-1">
+      <button onclick="setLabModeC9U11('ohms')" id="c9u11-mode-btn-ohms" class="flex-1 py-2.5 px-3 rounded-xl bg-blue-600 text-white font-bold text-xs md:text-sm shadow-sm transition whitespace-nowrap cursor-pointer flex items-center justify-center gap-1.5">
+        ⚡ १. ओहमको नियम तथा V-I ग्राफ
+      </button>
+      <button onclick="setLabModeC9U11('circuit')" id="c9u11-mode-btn-circuit" class="flex-1 py-2.5 px-3 rounded-xl bg-white text-slate-700 hover:bg-slate-50 border border-slate-200 font-semibold text-xs md:text-sm transition whitespace-nowrap cursor-pointer flex items-center justify-center gap-1.5">
+        💡 २. सर्किट बिल्डर (श्रेणी vs समानान्तर)
+      </button>
+      <button onclick="setLabModeC9U11('tariff')" id="c9u11-mode-btn-tariff" class="flex-1 py-2.5 px-3 rounded-xl bg-white text-slate-700 hover:bg-slate-50 border border-slate-200 font-semibold text-xs md:text-sm transition whitespace-nowrap cursor-pointer flex items-center justify-center gap-1.5">
+        💰 ३. घरेलु विद्युत खपत तथा महसुल क्याल्कुलेटर
+      </button>
+    </div>
+
+    <!-- ================= LAB 1: OHM'S LAW & V-I GRAPH LAB ================= -->
+    <div id="c9u11-lab-ohms" class="space-y-6">
+      <div class="bg-white border border-slate-200 rounded-3xl p-5 shadow-xs space-y-5">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+          <div>
+            <h4 class="text-base font-black text-slate-900 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+              ओहमको नियम प्रयोगशाला तथा गतिशील V-I वक्र रेखा (Dynamic Ohm's Law Lab)
+            </h4>
+            <p class="text-xs text-slate-500 mt-0.5">
+              पोटेन्सियल फरक (\(V\)) र अवरोध (\(R\)) परिवर्तन गरी विद्युत धारा (\(I\)), सामर्थ्य (\(P\)) र ग्राफको ढलान प्रत्यक्ष अवलोकन गर्नुहोस्।
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 border border-blue-200 font-mono text-xs font-bold" id="c9u11-ohms-badge">
+              V = I × R
+            </span>
+          </div>
+        </div>
+
+        <!-- Controls & Sliders Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-slate-50/70 p-4 rounded-2xl border border-slate-200">
+          <div>
+            <div class="flex justify-between text-xs font-bold text-slate-700 mb-1">
+              <span>पोटेन्सियल फरक (\(V\)):</span>
+              <span class="text-blue-600 font-mono" id="c9u11-ohms-v-val">12.0 V</span>
+            </div>
+            <input type="range" id="c9u11-ohms-v" min="0" max="24" step="0.5" value="12" oninput="updateOhmsLabC9U11()" class="w-full accent-blue-600 cursor-pointer">
+            <div class="flex justify-between text-[10px] text-slate-400 mt-0.5">
+              <span>0 V</span>
+              <span>12 V</span>
+              <span>24 V</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-bold text-slate-700 mb-1">
+              <span>विद्युत अवरोध (\(R\)):</span>
+              <span class="text-indigo-600 font-mono" id="c9u11-ohms-r-val">10 Ω</span>
+            </div>
+            <input type="range" id="c9u11-ohms-r" min="1" max="50" step="1" value="10" oninput="updateOhmsLabC9U11()" class="w-full accent-indigo-600 cursor-pointer">
+            <div class="flex justify-between text-[10px] text-slate-400 mt-0.5">
+              <span>1 Ω</span>
+              <span>25 Ω</span>
+              <span>50 Ω</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-bold text-slate-700 mb-1">
+              <span>तारको लम्बाइ (\(L\)):</span>
+              <span class="text-teal-600 font-mono" id="c9u11-ohms-l-val">1.0 m</span>
+            </div>
+            <input type="range" id="c9u11-ohms-l" min="0.5" max="3" step="0.5" value="1" oninput="updateOhmsWireFactorsC9U11()" class="w-full accent-teal-600 cursor-pointer">
+            <div class="flex justify-between text-[10px] text-slate-400 mt-0.5">
+              <span>0.5 m (कम अवरोध)</span>
+              <span>3.0 m (बढी)</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-bold text-slate-700 mb-1">
+              <span>तारको मोटाइ / व्यास (\(A\)):</span>
+              <span class="text-purple-600 font-mono" id="c9u11-ohms-a-val">मध्यम (Medium)</span>
+            </div>
+            <select id="c9u11-ohms-a" onchange="updateOhmsWireFactorsC9U11()" class="w-full text-xs font-bold bg-white border border-slate-300 rounded-xl px-2.5 py-1.5 text-slate-700">
+              <option value="thin">पातलो तार (Thin - उच्च अवरोध)</option>
+              <option value="medium" selected>मध्यम तार (Medium)</option>
+              <option value="thick">मोटो तार (Thick - न्यून अवरोध)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Readout Metrics & Canvas Graph -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+          <!-- Canvas Graph Container -->
+          <div class="lg:col-span-2 border border-slate-200 rounded-2xl p-3 bg-slate-900 text-white relative">
+            <div class="flex justify-between items-center text-xs text-slate-300 mb-2 px-2">
+              <span class="font-bold flex items-center gap-1.5 text-amber-400">
+                📈 V-I वक्र रेखा ग्राफ (भोल्टेज बनाम धारा)
+              </span>
+              <span class="font-mono text-[11px] text-slate-400">
+                ढलान (Slope) = R = <span id="c9u11-ohms-slope" class="text-emerald-400 font-bold">10.0 Ω</span>
+              </span>
+            </div>
+            <div class="relative w-full h-[240px]">
+              <canvas id="c9u11-ohms-canvas" class="w-full h-full block rounded-xl"></canvas>
+            </div>
+            <div class="flex justify-between text-[10px] text-slate-400 mt-2 px-2">
+              <span>x-अक्ष: पोटेन्सियल फरक \(V\) (Volts)</span>
+              <span>y-अक्ष: विद्युत धारा \(I\) (Amperes)</span>
+              <span class="text-cyan-300">● हालको अवस्था विन्दु</span>
+            </div>
+          </div>
+
+          <!-- Digital Multi-Meters Readout -->
+          <div class="space-y-3 flex flex-col justify-between">
+            <div class="p-3.5 bg-blue-50 border border-blue-200 rounded-2xl shadow-2xs">
+              <div class="text-xs font-bold text-blue-800">१. एम्मिटर रिडिङ (धारा \(I\))</div>
+              <div class="text-2xl font-black text-blue-950 font-mono mt-1" id="c9u11-ohms-current">1.20 A</div>
+              <div class="text-[11px] text-blue-700 mt-0.5">\(I = \frac{V}{R} = \frac{12}{10} = 1.20\text{ A}\)</div>
+            </div>
+
+            <div class="p-3.5 bg-indigo-50 border border-indigo-200 rounded-2xl shadow-2xs">
+              <div class="text-xs font-bold text-indigo-800">२. विद्युत सामर्थ्य (Power \(P\))</div>
+              <div class="text-2xl font-black text-indigo-950 font-mono mt-1" id="c9u11-ohms-power">14.40 W</div>
+              <div class="text-[11px] text-indigo-700 mt-0.5">\(P = V \times I = 12 \times 1.2 = 14.4\text{ W}\)</div>
+            </div>
+
+            <div class="p-3.5 bg-emerald-50 border border-emerald-200 rounded-2xl shadow-2xs">
+              <div class="text-xs font-bold text-emerald-800">३. इलेक्ट्रॉन बहाव गति (Drift Effect)</div>
+              <div class="text-xs font-semibold text-emerald-950 mt-1 flex items-center justify-between">
+                <span>बहाव दर:</span>
+                <span class="font-mono font-bold" id="c9u11-ohms-electrons">७.५ × १०^१८ electrons/s</span>
+              </div>
+              <div class="text-[11px] text-emerald-700 mt-0.5">\(n = \frac{Q}{e} = \frac{I \times 1}{1.6 \times 10^{-19}}\)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= LAB 2: CIRCUIT BUILDER (SERIES VS PARALLEL) ================= -->
+    <div id="c9u11-lab-circuit" class="hidden space-y-6">
+      <div class="bg-white border border-slate-200 rounded-3xl p-5 shadow-xs space-y-5">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+          <div>
+            <h4 class="text-base font-black text-slate-900 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-indigo-600"></span>
+              सर्किट बिल्डर: श्रेणीक्रम बनाम समानान्तर जडान (DC Circuit Builder)
+            </h4>
+            <p class="text-xs text-slate-500 mt-0.5">
+              बल्बहरूलाई श्रेणी वा समानान्तर क्रममा जोडेर भोल्टेज बाँडफाँड, धारा वितरण, र कुनै एउटा बल्ब विच्छेद गर्दा बाँकी बल्बमा पर्ने असर परीक्षण गर्नुहोस्।
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="toggleCircuitTypeC9U11('series')" id="c9u11-circ-type-series" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-xs cursor-pointer">
+              श्रेणीक्रम (Series)
+            </button>
+            <button onclick="toggleCircuitTypeC9U11('parallel')" id="c9u11-circ-type-parallel" class="px-3 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-blue-900 hover:bg-slate-100 cursor-pointer">
+              समानान्तर (Parallel)
+            </button>
+          </div>
+        </div>
+
+        <!-- Circuit Canvas Animation Display -->
+        <div class="border border-slate-200 rounded-2xl p-4 bg-slate-950 text-white relative">
+          <div class="flex justify-between items-center text-xs text-slate-300 mb-2">
+            <span class="font-bold text-amber-400" id="c9u11-circ-mode-title">
+              💡 श्रेणीक्रम परिपथ (Series Circuit) — एउटै मार्ग, धारा समान, भोल्टेज बाँडिने
+            </span>
+            <div class="flex items-center gap-2">
+              <button onclick="toggleCircuitMasterSwitchC9U11()" id="c9u11-master-switch-btn" class="px-3 py-1 rounded-lg text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white cursor-pointer">
+                स्वीच: अन (ON)
+              </button>
+              <button onclick="breakBulbC9U11(1)" id="c9u11-break-bulb-btn" class="px-3 py-1 rounded-lg text-xs font-bold bg-rose-600 hover:bg-rose-500 text-white cursor-pointer">
+                बल्ब १ विच्छेद (Fuse Bulb 1)
+              </button>
+            </div>
+          </div>
+
+          <div class="relative w-full h-[220px]">
+            <canvas id="c9u11-circuit-canvas" class="w-full h-full block rounded-xl"></canvas>
+          </div>
+        </div>
+
+        <!-- Circuit Control & Bulb Specifications Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-2xl">
+            <div class="text-xs font-bold text-slate-700 mb-1">ब्याट्री भोल्टेज (\(V\)):</div>
+            <div class="text-lg font-black text-slate-900 font-mono" id="c9u11-circ-v-display">12 V</div>
+            <input type="range" id="c9u11-circ-v" min="3" max="24" step="3" value="12" oninput="updateCircuitLabC9U11()" class="w-full accent-blue-600 mt-2 cursor-pointer">
+          </div>
+
+          <div class="p-3.5 bg-blue-50/70 border border-blue-200 rounded-2xl">
+            <div class="flex justify-between text-xs font-bold text-blue-900 mb-1">
+              <span>बल्ब १ (\(R_1\)):</span>
+              <span id="c9u11-b1-state" class="text-[10px] text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">सक्रिय</span>
+            </div>
+            <div class="text-sm font-black font-mono text-blue-950" id="c9u11-b1-stats">10 Ω | 4.0 V | 0.4 A</div>
+            <input type="range" id="c9u11-circ-r1" min="5" max="30" step="5" value="10" oninput="updateCircuitLabC9U11()" class="w-full accent-blue-600 mt-2 cursor-pointer">
+          </div>
+
+          <div class="p-3.5 bg-indigo-50/70 border border-indigo-200 rounded-2xl">
+            <div class="flex justify-between text-xs font-bold text-indigo-900 mb-1">
+              <span>बल्ब २ (\(R_2\)):</span>
+              <span id="c9u11-b2-state" class="text-[10px] text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">सक्रिय</span>
+            </div>
+            <div class="text-sm font-black font-mono text-indigo-950" id="c9u11-b2-stats">10 Ω | 4.0 V | 0.4 A</div>
+            <input type="range" id="c9u11-circ-r2" min="5" max="30" step="5" value="10" oninput="updateCircuitLabC9U11()" class="w-full accent-indigo-600 mt-2 cursor-pointer">
+          </div>
+
+          <div class="p-3.5 bg-teal-50/70 border border-teal-200 rounded-2xl">
+            <div class="flex justify-between text-xs font-bold text-teal-900 mb-1">
+              <span>बल्ब ३ (\(R_3\)):</span>
+              <span id="c9u11-b3-state" class="text-[10px] text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">सक्रिय</span>
+            </div>
+            <div class="text-sm font-black font-mono text-teal-950" id="c9u11-b3-stats">10 Ω | 4.0 V | 0.4 A</div>
+            <input type="range" id="c9u11-circ-r3" min="5" max="30" step="5" value="10" oninput="updateCircuitLabC9U11()" class="w-full accent-teal-600 mt-2 cursor-pointer">
+          </div>
+        </div>
+
+        <!-- Equivalent Resistance & Total Current Metric Bar -->
+        <div class="p-4 bg-slate-100 border border-slate-200 rounded-2xl flex flex-wrap items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="text-slate-500 font-bold">समतुल्य अवरोध (\(R_{eq}\)):</span>
+            <span class="text-slate-900 font-black font-mono text-sm ml-1" id="c9u11-circ-req">30.0 Ω</span>
+          </div>
+          <div>
+            <span class="text-slate-500 font-bold">कुल विद्युत धारा (\(I_{total}\)):</span>
+            <span class="text-blue-700 font-black font-mono text-sm ml-1" id="c9u11-circ-itotal">0.40 A</span>
+          </div>
+          <div>
+            <span class="text-slate-500 font-bold">कुल विद्युत सामर्थ्य (\(P_{total}\)):</span>
+            <span class="text-indigo-700 font-black font-mono text-sm ml-1" id="c9u11-circ-ptotal">4.80 W</span>
+          </div>
+          <div class="text-slate-600 font-medium italic" id="c9u11-circ-summary-note">
+            श्रेणीक्रममा कुल अवरोध सबैभन्दा ठूलो अवरोधभन्दा पनि बढी हुन्छ।
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= LAB 3: HOME ENERGY & TARIFF CALCULATOR ================= -->
+    <div id="c9u11-lab-tariff" class="hidden space-y-6">
+      <div class="bg-white border border-slate-200 rounded-3xl p-5 shadow-xs space-y-5">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+          <div>
+            <h4 class="text-base font-black text-slate-900 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-teal-600"></span>
+              घरेलु विद्युत खपत तथा महसुल क्याल्कुलेटर (Home Energy & Tariff Lab)
+            </h4>
+            <p class="text-xs text-slate-500 mt-0.5">
+              पाठ्यपुस्तकको अभ्यास खण्ड ५ (छ) र परियोजना कार्य अनुसार विभिन्न घरायसी उपकरणहरूको सामर्थ्य, सङ्ख्या र प्रयोग समय राखी मासिक खपत र महसुल गणना गर्नुहोस्।
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="loadDefaultTariffPresetC9U11()" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-teal-600 text-white shadow-xs cursor-pointer">
+              पाठ्यपुस्तक नमुना (CDC Preset)
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Appliances Matrix Table -->
+        <div class="border border-slate-200 rounded-2xl overflow-x-auto shadow-2xs">
+          <table class="w-full text-left text-xs">
+            <thead class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
+              <tr>
+                <th class="p-3">उपकरणको नाम</th>
+                <th class="p-3">सामर्थ्य (\(P\) Watts)</th>
+                <th class="p-3">सङ्ख्या (\(N\))</th>
+                <th class="p-3">दैनिक प्रयोग (\(T\) घण्टा)</th>
+                <th class="p-3">दैनिक खपत (kWh)</th>
+                <th class="p-3">मासिक खपत (Units)</th>
+              </tr>
+            </thead>
+            <tbody id="c9u11-tariff-table-body" class="divide-y divide-slate-100 text-slate-700">
+              <!-- Injected by updateTariffLabC9U11() -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tariff Results & Bill Breakdown Card -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-4 bg-teal-50 border border-teal-200 rounded-2xl shadow-2xs">
+            <div class="text-xs font-bold text-teal-800">मासिक कुल खपत (Units / kWh)</div>
+            <div class="text-2xl font-black text-teal-950 font-mono mt-1" id="c9u11-tariff-units">230.70 kWh</div>
+            <div class="text-[11px] text-teal-700 mt-1">
+              दैनिक औसत: <span class="font-bold font-mono" id="c9u11-tariff-daily-avg">7.69 kWh</span>
+            </div>
+          </div>
+
+          <div class="p-4 bg-blue-50 border border-blue-200 rounded-2xl shadow-2xs">
+            <div class="text-xs font-bold text-blue-800">ऊर्जा रूपान्तरण (MegaJoules)</div>
+            <div class="text-2xl font-black text-blue-950 font-mono mt-1" id="c9u11-tariff-joules">830.52 MJ</div>
+            <div class="text-[11px] text-blue-700 mt-1">
+              \(1\text{ Unit} = 3.6 \times 10^6\text{ J} = 3.6\text{ MJ}\)
+            </div>
+          </div>
+
+          <div class="p-4 bg-emerald-50 border border-emerald-200 rounded-2xl shadow-2xs">
+            <div class="text-xs font-bold text-emerald-800">मासिक विद्युत महसुल (रु. १० / युनिट)</div>
+            <div class="text-2xl font-black text-emerald-950 font-mono mt-1" id="c9u11-tariff-total-bill">रु. २,३०७.००</div>
+            <div class="text-[11px] text-emerald-700 mt-1">
+              पाठ्यपुस्तकको अभ्यास खण्ड ५ (छ) सँग १००% प्रमाणीकृत
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAB 2: TEXTBOOK EXERCISES & SOLUTIONS -->
+  <!-- ========================================================================= -->
+  <div id="c9u11-view-exercises" class="hidden space-y-6">
+
+    <!-- Secondary Navigation for Exercises Sections -->
+    <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-none border-b border-slate-200">
+      <button onclick="setExerciseSecC9U11('sec-mcq')" id="c9u11-ex-btn-sec-mcq" class="px-4 py-2 rounded-xl bg-blue-600 text-white font-bold text-xs md:text-sm whitespace-nowrap shadow-sm cursor-pointer">
+        १. बहुवैकल्पिक प्रश्न (१० MCQs)
+      </button>
+      <button onclick="setExerciseSecC9U11('sec-fill')" id="c9u11-ex-btn-sec-fill" class="px-4 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 font-bold text-xs md:text-sm whitespace-nowrap cursor-pointer">
+        २. खाली ठाउँ र जोडा (Fill & Match)
+      </button>
+      <button onclick="setExerciseSecC9U11('sec-diff')" id="c9u11-ex-btn-sec-diff" class="px-4 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 font-bold text-xs md:text-sm whitespace-nowrap cursor-pointer">
+        ३. फरक लेख्नुहोस् (५ Differences)
+      </button>
+      <button onclick="setExerciseSecC9U11('sec-reasons')" id="c9u11-ex-btn-sec-reasons" class="px-4 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 font-bold text-xs md:text-sm whitespace-nowrap cursor-pointer">
+        ४. वैज्ञानिक कारण (६ Reasons)
+      </button>
+      <button onclick="setExerciseSecC9U11('sec-long')" id="c9u11-ex-btn-sec-long" class="px-4 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 font-bold text-xs md:text-sm whitespace-nowrap cursor-pointer">
+        ५. विस्तृत प्रश्नोत्तर (६ Long Qs)
+      </button>
+      <button onclick="setExerciseSecC9U11('sec-numericals')" id="c9u11-ex-btn-sec-numericals" class="px-4 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 font-bold text-xs md:text-sm whitespace-nowrap cursor-pointer">
+        ६. गणितीय समस्याहरू (६ Numericals)
+      </button>
+    </div>
+
+    <!-- Section 1: MCQs -->
+    <div id="c9u11-sec-mcq" class="space-y-4">
+      <div class="bg-blue-50/70 border border-blue-200 rounded-2xl p-4 text-blue-950 font-bold flex items-center justify-between">
+        <div>अभ्यास खण्ड १: १० बहुवैकल्पिक वस्तुगत प्रश्नहरू (MCQs)</div>
+        <span class="text-xs bg-blue-200 text-blue-800 px-2.5 py-1 rounded-full">पाठ्यपुस्तक प्रश्न १ (क-च) + थप</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="c9u11-mcq-container">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+
+    <!-- Section 2: Fill & Match -->
+    <div id="c9u11-sec-fill" class="hidden space-y-6">
+      <div class="bg-blue-50/70 border border-blue-200 rounded-2xl p-4 text-blue-950 font-bold flex items-center justify-between">
+        <div>अभ्यास खण्ड २: खाली ठाउँ भर्ने तथा उपयुक्त जोडा मिलाउने</div>
+        <span class="text-xs bg-blue-200 text-blue-800 px-2.5 py-1 rounded-full">प्रामाणिक शब्दावली</span>
+      </div>
+
+      <!-- Fill in the blanks Card -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs space-y-4">
+        <h4 class="font-black text-slate-900 text-sm">क. खाली ठाउँ भर्नुहोस्:</h4>
+        <div class="space-y-3 text-xs md:text-sm text-slate-700">
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+            १. खुला परिपथमा सेलका दुई ध्रुवहरूबीचको भोल्टेजलाई <strong class="text-blue-700 underline">इलेक्ट्रोमोटिभ फोर्स (EMF)</strong> भनिन्छ।
+          </div>
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+            २. भौतिक अवस्था स्थिर रहँदा सुचालक भएर बग्ने विद्युत धारा त्यसका दुई छेउबीचको पोटेन्सियल फरकसँग <strong class="text-blue-700 underline">समानुपातिक</strong> हुन्छ।
+          </div>
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+            ३. \(1\text{ kWh}\) विद्युत शक्तिलाई सामान्य बोलिचालीमा <strong class="text-blue-700 underline">१ युनिट (1 Unit)</strong> भनिन्छ।
+          </div>
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+            ४. विद्युत परिपथमा धाराको मान नाप्ने एम्मिटरलाई सधैं <strong class="text-blue-700 underline">श्रेणीक्रम (Series)</strong> मा जोडिन्छ।
+          </div>
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+            ५. परिपथमा विद्युत अवरोध घटबढ गराई धारा नियन्त्रण गर्न <strong class="text-blue-700 underline">रियोस्ट्याट (Rheostat)</strong> को प्रयोग गरिन्छ।
+          </div>
+        </div>
+      </div>
+
+      <!-- Matching Card -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs space-y-4">
+        <h4 class="font-black text-slate-900 text-sm">ख. उपयुक्त जोडा मिलाउनुहोस्:</h4>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs md:text-sm">
+            <thead class="bg-slate-100 text-slate-700 font-bold border-b">
+              <tr>
+                <th class="p-3">समूह 'क' (भौतिक राशि वा अवयव)</th>
+                <th class="p-3">समूह 'ख' (एकाइ वा वैज्ञानिक विशेषता)</th>
+                <th class="p-3 text-emerald-800">सही जोडा (Correct Match)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-slate-700">
+              <tr>
+                <td class="p-3 font-medium">१. विद्युत धारा (Electric Current)</td>
+                <td class="p-3">ओहम (\(\Omega\))</td>
+                <td class="p-3 font-bold text-emerald-700">एम्पियर (Ampere - A)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-medium">२. पोटेन्सियल फरक (Potential Difference)</td>
+                <td class="p-3">किलोवाट-घण्टा (kWh)</td>
+                <td class="p-3 font-bold text-emerald-700">भोल्ट (Volt - V)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-medium">३. विद्युत अवरोध (Resistance)</td>
+                <td class="p-3">वाट (Watt - W)</td>
+                <td class="p-3 font-bold text-emerald-700">ओहम (Ohm - \(\Omega\))</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-medium">४. विद्युत सामर्थ्य (Electric Power)</td>
+                <td class="p-3">एम्पियर (A)</td>
+                <td class="p-3 font-bold text-emerald-700">वाट (Watt - W)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-medium">५. व्यावसायिक विद्युत ऊर्जा</td>
+                <td class="p-3">उच्च अवरोध र उच्च पग्लने विन्दु</td>
+                <td class="p-3 font-bold text-emerald-700">किलोवाट-घण्टा (kWh / युनिट)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-medium">६. नाइक्रोम तार (Nichrome wire)</td>
+                <td class="p-3">भोल्ट (V)</td>
+                <td class="p-3 font-bold text-emerald-700">उच्च अवरोध र उच्च पग्लने विन्दु (८०% Ni + २०% Cr)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Differences Tables -->
+    <div id="c9u11-sec-diff" class="hidden space-y-6">
+      <div class="bg-blue-50/70 border border-blue-200 rounded-2xl p-4 text-blue-950 font-bold flex items-center justify-between">
+        <div>अभ्यास खण्ड ३: ५ वटा महत्त्वपूर्ण वैज्ञानिक फरकहरू (Differences Tables)</div>
+        <span class="text-xs bg-blue-200 text-blue-800 px-2.5 py-1 rounded-full">पाठ्यपुस्तक प्रश्न २ + थप</span>
+      </div>
+      <div class="space-y-5" id="c9u11-diff-container">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+
+    <!-- Section 4: Give Reasons -->
+    <div id="c9u11-sec-reasons" class="hidden space-y-4">
+      <div class="bg-blue-50/70 border border-blue-200 rounded-2xl p-4 text-blue-950 font-bold flex items-center justify-between">
+        <div>अभ्यास खण्ड ४: ६ वटा वैज्ञानिक कारण दिनुहोस् (Scientific Reasons)</div>
+        <span class="text-xs bg-blue-200 text-blue-800 px-2.5 py-1 rounded-full">पाठ्यपुस्तक प्रश्न ३ + थप</span>
+      </div>
+      <div class="space-y-4" id="c9u11-reasons-container">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+
+    <!-- Section 5: Long Qs & Derivations -->
+    <div id="c9u11-sec-long" class="hidden space-y-4">
+      <div class="bg-blue-50/70 border border-blue-200 rounded-2xl p-4 text-blue-950 font-bold flex items-center justify-between">
+        <div>अभ्यास खण्ड ५: ६ विस्तृत प्रश्नोत्तर तथा वैज्ञानिक निगमन (Long Qs & Derivations)</div>
+        <span class="text-xs bg-blue-200 text-blue-800 px-2.5 py-1 rounded-full">पाठ्यपुस्तक प्रश्न ४ + ५</span>
+      </div>
+      <div class="space-y-4" id="c9u11-long-container">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+
+    <!-- Section 6: Numericals (5-Box Step Flow) -->
+    <div id="c9u11-sec-numericals" class="hidden space-y-6">
+      <div class="bg-blue-50/70 border border-blue-200 rounded-2xl p-4 text-blue-950 font-bold flex items-center justify-between">
+        <div>
+          <div class="text-base">अभ्यास खण्ड ६: पाठ्यपुस्तकका ६ वटा प्रामाणिक गणितीय समस्याहरू</div>
+          <div class="text-xs text-blue-800 font-normal mt-0.5">१. दिइएको मानहरू • २. पत्ता लगाउनुपर्ने • ३. प्रयोग हुने सूत्र • ४. चरणबद्ध हिसाब • ५. अन्तिम निष्कर्ष (५-बक्स ढाँचा)</div>
+        </div>
+        <span class="text-xs bg-blue-200 text-blue-900 px-2.5 py-1 rounded-full font-bold">६ समस्याहरू</span>
+      </div>
+      <div class="space-y-6" id="c9u11-numericals-container">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAB 3: TIERED MODEL QUESTIONS -->
+  <!-- ========================================================================= -->
+  <div id="c9u11-view-tiers" class="hidden space-y-6">
+    <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none border-b border-slate-200">
+      <button onclick="setTierFilterC9U11('all')" id="c9u11-tier-btn-all" class="px-4 py-2 rounded-xl bg-blue-600 text-white font-bold text-xs shadow-xs cursor-pointer min-h-[38px]">
+        सबै १६ प्रश्नहरू (All)
+      </button>
+      <button onclick="setTierFilterC9U11('tier1')" id="c9u11-tier-btn-tier1" class="px-4 py-2 rounded-xl text-slate-600 hover:bg-slate-100 font-bold text-xs cursor-pointer min-h-[38px]">
+        तह १: ज्ञान तथा स्मरण (६)
+      </button>
+      <button onclick="setTierFilterC9U11('tier2')" id="c9u11-tier-btn-tier2" class="px-4 py-2 rounded-xl text-slate-600 hover:bg-slate-100 font-bold text-xs cursor-pointer min-h-[38px]">
+        तह २: बोध तथा समझ (५)
+      </button>
+      <button onclick="setTierFilterC9U11('tier3')" id="c9u11-tier-btn-tier3" class="px-4 py-2 rounded-xl text-slate-600 hover:bg-slate-100 font-bold text-xs cursor-pointer min-h-[38px]">
+        तह ३: प्रयोग र उच्च क्षमता (५)
+      </button>
+    </div>
+
+    <div class="space-y-4" id="c9u11-tiers-container">
+      <!-- Injected by renderC9U11Tiers() -->
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAB 4: SELF-ASSESSMENT QUIZ -->
+  <!-- ========================================================================= -->
+  <div id="c9u11-view-quiz" class="hidden space-y-6">
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white">
+          ११.४ परीक्षा तयारी • आत्म-मूल्याङ्कन
+        </span>
+        <h3 class="text-xl md:text-2xl font-black text-slate-900 mt-2">एकाइ ११: विद्युत् अनलाइन वस्तुगत परीक्षा (Quiz)</h3>
+        <p class="text-xs md:text-sm text-slate-600 mt-1">
+          १० वटा महत्त्वपूर्ण वस्तुगत तथा गणितीय प्रश्नहरूको सही उत्तर छान्नुहोस् र आफ्नो ज्ञान परीक्षण गर्नुहोस्।
+        </p>
+      </div>
+
+      <div class="bg-white border border-blue-200 rounded-2xl p-4 text-center shrink-0 min-w-[160px] shadow-xs">
+        <div class="text-xs font-bold text-slate-500">तपाईंको प्राप्ताङ्क</div>
+        <div class="text-3xl font-black text-blue-600 font-mono my-1" id="c9u11-quiz-score">0 / 10</div>
+        <div class="text-[11px] font-bold text-slate-600" id="c9u11-quiz-feedback">प्रश्नहरूको उत्तर दिनुहोस्</div>
+      </div>
+    </div>
+
+    <div class="space-y-5" id="c9u11-quiz-container">
+      <!-- Injected by renderC9U11Quiz() -->
+    </div>
+  </div>
+
+</div>
+<!-- ================= END GRADE 9 SCIENCE: UNIT 11 ================= -->
+
+
+<!-- Placeholder View for Units 12 to 19 -->
       <div id="c9-placeholder-view" class="hidden flex-1 min-w-0 flex flex-col items-center justify-center p-8 bg-slate-50 border border-slate-200 rounded-3xl text-center space-y-4 my-auto">
         <div class="w-16 h-16 rounded-3xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-3xl font-bold">
           🔬
         </div>
         <div>
-          <h3 id="c9-placeholder-title" class="text-xl font-black text-slate-800">एकाइ ३: सूक्ष्मजीव</h3>
-          <p id="c9-placeholder-desc" class="text-xs md:text-sm text-slate-500 mt-1 max-w-md">यस एकाइको अध्ययन सामग्री तथा अभ्यास समाधान तयारीमा छ। हाल एकाइ १ देखि एकाइ १० सम्म पूर्ण रूपमा उपलब्ध छन्।</p>
+          <h3 id="c9-placeholder-title" class="text-xl font-black text-slate-800">एकाइ १२: ब्रह्माण्ड</h3>
+          <p id="c9-placeholder-desc" class="text-xs md:text-sm text-slate-500 mt-1 max-w-md">यस एकाइको अध्ययन सामग्री तथा अभ्यास समाधान तयारीमा छ। हाल एकाइ १ देखि एकाइ ११ सम्म पूर्ण रूपमा उपलब्ध छन्।</p>
         </div>
         <div class="flex gap-2">
           <button onclick="switchGrade9Unit(1)" class="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-xs rounded-xl shadow-md transition cursor-pointer">
@@ -31632,7 +32305,7 @@ eq 6$</div>
     // 3. Built-in Pure-CSS Offline LaTeX Math Renderer
     function formatLaTeXText(s) {
       s = s.trim();
-      let fracRegex = /\\frac\s*\{([^{}]+)\}\s*\{([^{}]+)\}/g;
+      let fracRegex = /\\frac\s*\{((?:[^{}]|\{[^{}]*\})+)\}\s*\{((?:[^{}]|\{[^{}]*\})+)\}/g;
       while (fracRegex.test(s)) {
         s = s.replace(fracRegex, '<span class="offline-frac"><span class="top">$1</span><span class="bot">$2</span></span>');
       }
@@ -38703,6 +39376,7 @@ function switchGrade9Unit(unitNum) {
   const v8 = document.getElementById('c9-view-8');
   const v9 = document.getElementById('c9-view-9');
   const v10 = document.getElementById('c9-view-10');
+  const v11 = document.getElementById('c9-view-11');
   const vPlaceholder = document.getElementById('c9-placeholder-view');
 
   if (v1) v1.classList.add('hidden');
@@ -38715,6 +39389,7 @@ function switchGrade9Unit(unitNum) {
   if (v8) v8.classList.add('hidden');
   if (v9) v9.classList.add('hidden');
   if (v10) v10.classList.add('hidden');
+  if (v11) v11.classList.add('hidden');
   if (vPlaceholder) vPlaceholder.classList.add('hidden');
 
   if (unitNum === 1) {
@@ -38768,6 +39443,11 @@ function switchGrade9Unit(unitNum) {
     setTabC9U10('concepts');
     setLabModeC9U10('wave');
     if (typeof initC9U10 === 'function') initC9U10();
+  } else if (unitNum === 11) {
+    if (v11) v11.classList.remove('hidden');
+    setTabC9U11('concepts');
+    setLabModeC9U11('ohms');
+    if (typeof initC9U11 === 'function') initC9U11();
   } else {
     if (vPlaceholder) {
       vPlaceholder.classList.remove('hidden');
@@ -52447,6 +53127,1585 @@ function initC9U10() {
 }
 
 
+// ============================================================================
+// CLASS 9 SCIENCE: UNIT 11 - विद्युत् (Electricity) JAVASCRIPT ENGINE
+// ============================================================================
+
+let c9u11CurrentTab = 'concepts';
+let c9u11LabMode = 'ohms';
+let c9u11CircuitType = 'series'; // 'series' or 'parallel'
+let c9u11CircuitMasterOn = true;
+let c9u11BulbBroken = [false, false, false]; // bulb 0, 1, 2 broken state
+let c9u11ElectronOffset = 0;
+
+// Tariff Lab Appliances Data
+let c9u11Appliances = [
+  { name: "एलइडी बल्ब (LED Bulbs)", power: 7, count: 10, hours: 6 },
+  { name: "टेलिभिजन (Color TV)", power: 150, count: 1, hours: 8 },
+  { name: "सिलिङ पङ्खा (Ceiling Fans)", power: 150, count: 4, hours: 10 },
+  { name: "विद्युत इस्त्री (Electric Iron)", power: 750, count: 1, hours: 0.1 }, // ~40 min/week = 0.1 hr/day
+  { name: "पानी उमाल्ने कित्ली (Electric Kettle)", power: 3000, count: 1, hours: 0.067 }, // 4 min/day
+  { name: "कोठा तताउने हिटर (Room Heater)", power: 1100, count: 1, hours: 1 }
+];
+
+// Tab Switching
+function setTabC9U11(tab) {
+  c9u11CurrentTab = tab;
+  const tabs = ['concepts', 'exercises', 'tiers', 'quiz'];
+  tabs.forEach(t => {
+    const btn = document.getElementById('c9u11-tab-' + t);
+    const view = document.getElementById('c9u11-view-' + t);
+    if (view) view.classList.toggle('hidden', t !== tab);
+    if (btn) {
+      if (t === tab) {
+        btn.className = "px-5 py-2.5 rounded-xl bg-blue-600 text-white shadow-sm font-bold transition whitespace-nowrap cursor-pointer";
+      } else {
+        btn.className = "px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap font-medium cursor-pointer";
+      }
+    }
+  });
+
+  if (tab === 'concepts') {
+    setLabModeC9U11(c9u11LabMode);
+  } else if (tab === 'exercises') {
+    setExerciseSecC9U11('sec-mcq');
+  }
+
+  // Trigger KaTeX typesetting
+  const c9v11 = document.getElementById('c9-view-11');
+  if (c9v11 && typeof typesetElement === 'function') {
+    typesetElement(c9v11);
+  }
+}
+
+// Lab Mode Switching
+function setLabModeC9U11(mode) {
+  c9u11LabMode = mode;
+  const modes = ['ohms', 'circuit', 'tariff'];
+  modes.forEach(m => {
+    const btn = document.getElementById('c9u11-mode-btn-' + m);
+    const lab = document.getElementById('c9u11-lab-' + m);
+    if (lab) lab.classList.toggle('hidden', m !== mode);
+    if (btn) {
+      if (m === mode) {
+        btn.className = "flex-1 py-2.5 px-3 rounded-xl bg-blue-600 text-white font-bold text-xs md:text-sm shadow-sm transition whitespace-nowrap cursor-pointer flex items-center justify-center gap-1.5";
+      } else {
+        btn.className = "flex-1 py-2.5 px-3 rounded-xl bg-white text-slate-700 hover:bg-slate-50 border border-slate-200 font-semibold text-xs md:text-sm transition whitespace-nowrap cursor-pointer flex items-center justify-center gap-1.5";
+      }
+    }
+  });
+
+  if (mode === 'ohms') {
+    updateOhmsLabC9U11();
+  } else if (mode === 'circuit') {
+    updateCircuitLabC9U11();
+  } else if (mode === 'tariff') {
+    updateTariffLabC9U11();
+  }
+}
+
+// ============================================================================
+// LAB 1: OHM'S LAW & DYNAMIC V-I GRAPH
+// ============================================================================
+function updateOhmsLabC9U11() {
+  const vSlider = document.getElementById('c9u11-ohms-v');
+  const rSlider = document.getElementById('c9u11-ohms-r');
+  if (!vSlider || !rSlider) return;
+
+  const V = parseFloat(vSlider.value) || 12;
+  const R = parseFloat(rSlider.value) || 10;
+  const I = V / R;
+  const P = V * I;
+  const electrons = (I / 1.6e-19) / 1e18; // 10^18 electrons/sec
+
+  const vVal = document.getElementById('c9u11-ohms-v-val');
+  const rVal = document.getElementById('c9u11-ohms-r-val');
+  const iDisp = document.getElementById('c9u11-ohms-current');
+  const pDisp = document.getElementById('c9u11-ohms-power');
+  const eDisp = document.getElementById('c9u11-ohms-electrons');
+  const slopeDisp = document.getElementById('c9u11-ohms-slope');
+
+  if (vVal) vVal.textContent = V.toFixed(1) + " V";
+  if (rVal) rVal.textContent = R.toFixed(0) + " Ω";
+  if (iDisp) iDisp.textContent = I.toFixed(2) + " A";
+  if (pDisp) pDisp.textContent = P.toFixed(2) + " W";
+  if (eDisp) eDisp.textContent = electrons.toFixed(2) + " × १०^१८ electrons/s";
+  if (slopeDisp) slopeDisp.textContent = R.toFixed(1) + " Ω";
+
+  drawOhmsCanvasC9U11(V, R, I);
+}
+
+function updateOhmsWireFactorsC9U11() {
+  const lSlider = document.getElementById('c9u11-ohms-l');
+  const aSelect = document.getElementById('c9u11-ohms-a');
+  const rSlider = document.getElementById('c9u11-ohms-r');
+  if (!lSlider || !aSelect || !rSlider) return;
+
+  const L = parseFloat(lSlider.value) || 1.0;
+  const A = aSelect.value;
+  const lVal = document.getElementById('c9u11-ohms-l-val');
+  if (lVal) lVal.textContent = L.toFixed(1) + " m";
+
+  let aFactor = 1.0;
+  if (A === 'thin') aFactor = 1.8;
+  else if (A === 'thick') aFactor = 0.55;
+
+  const baseResistance = 10;
+  const newR = Math.min(50, Math.max(1, Math.round(baseResistance * L * aFactor)));
+  rSlider.value = newR;
+  updateOhmsLabC9U11();
+}
+
+function drawOhmsCanvasC9U11(V, R, I) {
+  const canvas = document.getElementById('c9u11-ohms-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const rect = canvas.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1;
+  const w = rect.width || 560;
+  const h = rect.height || 240;
+
+  if (canvas.width !== Math.round(w * dpr) || canvas.height !== Math.round(h * dpr)) {
+    canvas.width = Math.round(w * dpr);
+    canvas.height = Math.round(h * dpr);
+  }
+
+  ctx.save();
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, w, h);
+
+  // Background
+  ctx.fillStyle = '#0f172a';
+  ctx.fillRect(0, 0, w, h);
+
+  // Split view: Left = Circuit diagram with animated electrons, Right = V-I Graph
+  const midX = w * 0.46;
+
+  // --- LEFT SIDE: CIRCUIT DIAGRAM ---
+  ctx.strokeStyle = '#334155';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(midX, 10);
+  ctx.lineTo(midX, h - 10);
+  ctx.stroke();
+
+  // Circuit loop coords
+  const pad = 25;
+  const circW = midX - pad * 2;
+  const circH = h - pad * 2;
+  const cx = pad;
+  const cy = pad;
+
+  // Wire
+  ctx.strokeStyle = '#38bdf8';
+  ctx.lineWidth = 3;
+  ctx.strokeRect(cx, cy, circW, circH);
+
+  // Battery on top wire
+  const batX = cx + circW * 0.5;
+  ctx.fillStyle = '#0f172a';
+  ctx.fillRect(batX - 22, cy - 8, 44, 16);
+  ctx.strokeStyle = '#f59e0b';
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.moveTo(batX - 10, cy - 10);
+  ctx.lineTo(batX - 10, cy + 10); // Long positive plate
+  ctx.moveTo(batX + 5, cy - 6);
+  ctx.lineTo(batX + 5, cy + 6); // Short negative plate
+  ctx.stroke();
+
+  ctx.fillStyle = '#f59e0b';
+  ctx.font = 'bold 10px monospace';
+  ctx.fillText('+' + V.toFixed(0) + 'V -', batX - 20, cy - 14);
+
+  // Resistor on bottom wire
+  const resX = cx + circW * 0.5;
+  ctx.fillStyle = '#0f172a';
+  ctx.fillRect(resX - 25, cy + circH - 10, 50, 20);
+  ctx.strokeStyle = '#ec4899';
+  ctx.lineWidth = 2.5;
+  ctx.beginPath();
+  // Zig-zag resistor
+  ctx.moveTo(resX - 25, cy + circH);
+  ctx.lineTo(resX - 18, cy + circH - 6);
+  ctx.lineTo(resX - 10, cy + circH + 6);
+  ctx.lineTo(resX - 2, cy + circH - 6);
+  ctx.lineTo(resX + 6, cy + circH + 6);
+  ctx.lineTo(resX + 14, cy + circH - 6);
+  ctx.lineTo(resX + 25, cy + circH);
+  ctx.stroke();
+
+  ctx.fillStyle = '#ec4899';
+  ctx.font = 'bold 10px monospace';
+  ctx.fillText('R = ' + R.toFixed(0) + 'Ω', resX - 22, cy + circH + 18);
+
+  // Ammeter on right wire
+  const amY = cy + circH * 0.5;
+  ctx.fillStyle = '#0f172a';
+  ctx.fillRect(cx + circW - 12, amY - 12, 24, 24);
+  ctx.beginPath();
+  ctx.arc(cx + circW, amY, 12, 0, Math.PI * 2);
+  ctx.fillStyle = '#1e293b';
+  ctx.fill();
+  ctx.strokeStyle = '#38bdf8';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  ctx.fillStyle = '#38bdf8';
+  ctx.font = 'bold 10px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('A', cx + circW, amY);
+
+  // Animated drifting electrons
+  c9u11ElectronOffset = (c9u11ElectronOffset + I * 0.7) % 30;
+  ctx.fillStyle = '#38bdf8';
+  const perimeter = 2 * (circW + circH);
+  const numElectrons = 16;
+  for (let i = 0; i < numElectrons; i++) {
+    const dist = (i * (perimeter / numElectrons) + c9u11ElectronOffset) % perimeter;
+    let ex = 0, ey = 0;
+    if (dist < circW) {
+      ex = cx + dist; ey = cy;
+    } else if (dist < circW + circH) {
+      ex = cx + circW; ey = cy + (dist - circW);
+    } else if (dist < 2 * circW + circH) {
+      ex = cx + circW - (dist - (circW + circH)); ey = cy + circH;
+    } else {
+      ex = cx; ey = cy + circH - (dist - (2 * circW + circH));
+    }
+    ctx.beginPath();
+    ctx.arc(ex, ey, 2.5, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // --- RIGHT SIDE: V-I GRAPH ---
+  const gx = midX + 35;
+  const gy = 25;
+  const gw = w - gx - 25;
+  const gh = h - gy - 35;
+
+  // Axes
+  ctx.strokeStyle = '#475569';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(gx, gy);
+  ctx.lineTo(gx, gy + gh);
+  ctx.lineTo(gx + gw, gy + gh);
+  ctx.stroke();
+
+  // Grid lines
+  ctx.strokeStyle = '#1e293b';
+  ctx.lineWidth = 1;
+  ctx.setLineDash([3, 3]);
+  for (let step = 1; step <= 4; step++) {
+    const py = gy + gh - (gh / 4) * step;
+    ctx.beginPath();
+    ctx.moveTo(gx, py);
+    ctx.lineTo(gx + gw, py);
+    ctx.stroke();
+
+    const px = gx + (gw / 4) * step;
+    ctx.beginPath();
+    ctx.moveTo(px, gy);
+    ctx.lineTo(px, gy + gh);
+    ctx.stroke();
+  }
+  ctx.setLineDash([]);
+
+  // Labels
+  ctx.fillStyle = '#94a3b8';
+  ctx.font = '9px sans-serif';
+  ctx.textAlign = 'right';
+  ctx.fillText('0', gx - 5, gy + gh + 3);
+  ctx.fillText('2.5A', gx - 5, gy + 8);
+  ctx.textAlign = 'center';
+  ctx.fillText('0V', gx, gy + gh + 15);
+  ctx.fillText('12V', gx + gw * 0.5, gy + gh + 15);
+  ctx.fillText('24V', gx + gw, gy + gh + 15);
+
+  // Linear Ohm's Law Line: I = V / R
+  const maxV = 24;
+  const maxI = 2.5; // Scale max for canvas
+  const slopeLineEndY = gy + gh - ((maxV / R) / maxI) * gh;
+  ctx.strokeStyle = '#10b981';
+  ctx.lineWidth = 2.5;
+  ctx.beginPath();
+  ctx.moveTo(gx, gy + gh);
+  ctx.lineTo(gx + gw, Math.max(gy, slopeLineEndY));
+  ctx.stroke();
+
+  // Current Operating Point (V, I)
+  const ptX = gx + (V / maxV) * gw;
+  const ptY = gy + gh - (I / maxI) * gh;
+
+  ctx.strokeStyle = '#f59e0b';
+  ctx.lineWidth = 1;
+  ctx.setLineDash([2, 2]);
+  ctx.beginPath();
+  ctx.moveTo(ptX, gy + gh);
+  ctx.lineTo(ptX, ptY);
+  ctx.lineTo(gx, ptY);
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  ctx.beginPath();
+  ctx.arc(ptX, ptY, 5, 0, Math.PI * 2);
+  ctx.fillStyle = '#f59e0b';
+  ctx.fill();
+  ctx.strokeStyle = '#ffffff';
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+
+  ctx.restore();
+}
+
+// ============================================================================
+// LAB 2: CIRCUIT BUILDER (SERIES VS PARALLEL)
+// ============================================================================
+function toggleCircuitTypeC9U11(type) {
+  c9u11CircuitType = type;
+  const btnSer = document.getElementById('c9u11-circ-type-series');
+  const btnPar = document.getElementById('c9u11-circ-type-parallel');
+  const title = document.getElementById('c9u11-circ-mode-title');
+  const note = document.getElementById('c9u11-circ-summary-note');
+
+  if (type === 'series') {
+    if (btnSer) btnSer.className = "px-3 py-1.5 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-xs cursor-pointer";
+    if (btnPar) btnPar.className = "px-3 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-blue-900 hover:bg-slate-100 cursor-pointer";
+    if (title) title.textContent = "💡 श्रेणीक्रम परिपथ (Series Circuit) — एउटै मार्ग, धारा समान, भोल्टेज बाँडिने";
+    if (note) note.textContent = "श्रेणीक्रममा कुल अवरोध सबैभन्दा ठूलो अवरोधभन्दा पनि बढी हुन्छ: Rs = R1 + R2 + R3";
+  } else {
+    if (btnPar) btnPar.className = "px-3 py-1.5 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-xs cursor-pointer";
+    if (btnSer) btnSer.className = "px-3 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-blue-900 hover:bg-slate-100 cursor-pointer";
+    if (title) title.textContent = "💡 समानान्तर परिपथ (Parallel Circuit) — सबै लोडमा पूर्ण भोल्टेज, धारा बाँडिने";
+    if (note) note.textContent = "समानान्तर क्रममा कुल अवरोध सबैभन्दा सानो अवरोधभन्दा पनि कम हुन्छ: 1/Rp = 1/R1 + 1/R2 + 1/R3";
+  }
+
+  updateCircuitLabC9U11();
+}
+
+function toggleCircuitMasterSwitchC9U11() {
+  c9u11CircuitMasterOn = !c9u11CircuitMasterOn;
+  const btn = document.getElementById('c9u11-master-switch-btn');
+  if (btn) {
+    if (c9u11CircuitMasterOn) {
+      btn.className = "px-3 py-1 rounded-lg text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white cursor-pointer";
+      btn.textContent = "स्वीच: अन (ON)";
+    } else {
+      btn.className = "px-3 py-1 rounded-lg text-xs font-bold bg-rose-600 hover:bg-rose-500 text-white cursor-pointer";
+      btn.textContent = "स्वीच: अफ (OFF)";
+    }
+  }
+  updateCircuitLabC9U11();
+}
+
+function breakBulbC9U11(bulbNum) {
+  // Toggle broken state of bulb 0, 1, or 2
+  const idx = bulbNum - 1;
+  c9u11BulbBroken[idx] = !c9u11BulbBroken[idx];
+  const btn = document.getElementById('c9u11-break-bulb-btn');
+  if (btn) {
+    if (c9u11BulbBroken[idx]) {
+      btn.textContent = "बल्ब १ मर्मत गर्नुहोस् (Repair Bulb 1)";
+      btn.className = "px-3 py-1 rounded-lg text-xs font-bold bg-amber-600 hover:bg-amber-500 text-white cursor-pointer";
+    } else {
+      btn.textContent = "बल्ब १ विच्छेद (Fuse Bulb 1)";
+      btn.className = "px-3 py-1 rounded-lg text-xs font-bold bg-rose-600 hover:bg-rose-500 text-white cursor-pointer";
+    }
+  }
+  updateCircuitLabC9U11();
+}
+
+function updateCircuitLabC9U11() {
+  const vSlider = document.getElementById('c9u11-circ-v');
+  const r1Slider = document.getElementById('c9u11-circ-r1');
+  const r2Slider = document.getElementById('c9u11-circ-r2');
+  const r3Slider = document.getElementById('c9u11-circ-r3');
+  if (!vSlider || !r1Slider || !r2Slider || !r3Slider) return;
+
+  const V = parseFloat(vSlider.value) || 12;
+  const R1 = parseFloat(r1Slider.value) || 10;
+  const R2 = parseFloat(r2Slider.value) || 10;
+  const R3 = parseFloat(r3Slider.value) || 10;
+
+  const vDisp = document.getElementById('c9u11-circ-v-display');
+  if (vDisp) vDisp.textContent = V.toFixed(0) + " V";
+
+  let req = 0;
+  let totalI = 0;
+  let v1 = 0, v2 = 0, v3 = 0;
+  let i1 = 0, i2 = 0, i3 = 0;
+
+  if (!c9u11CircuitMasterOn) {
+    req = (c9u11CircuitType === 'series') ? (R1 + R2 + R3) : (1 / (1/R1 + 1/R2 + 1/R3));
+    totalI = 0;
+  } else if (c9u11CircuitType === 'series') {
+    // In series, if ANY bulb is broken, open circuit => 0 current
+    if (c9u11BulbBroken[0] || c9u11BulbBroken[1] || c9u11BulbBroken[2]) {
+      req = Infinity;
+      totalI = 0;
+      v1 = 0; v2 = 0; v3 = 0;
+      i1 = 0; i2 = 0; i3 = 0;
+    } else {
+      req = R1 + R2 + R3;
+      totalI = V / req;
+      i1 = totalI; i2 = totalI; i3 = totalI;
+      v1 = i1 * R1; v2 = i2 * R2; v3 = i3 * R3;
+    }
+  } else {
+    // Parallel: each active bulb gets full V
+    let invReq = 0;
+    if (!c9u11BulbBroken[0]) { i1 = V / R1; v1 = V; invReq += 1/R1; } else { i1 = 0; v1 = 0; }
+    if (!c9u11BulbBroken[1]) { i2 = V / R2; v2 = V; invReq += 1/R2; } else { i2 = 0; v2 = 0; }
+    if (!c9u11BulbBroken[2]) { i3 = V / R3; v3 = V; invReq += 1/R3; } else { i3 = 0; v3 = 0; }
+
+    req = invReq > 0 ? (1 / invReq) : Infinity;
+    totalI = i1 + i2 + i3;
+  }
+
+  const totalP = (c9u11CircuitMasterOn && isFinite(req)) ? (V * totalI) : 0;
+
+  // Update DOM displays
+  const reqDisp = document.getElementById('c9u11-circ-req');
+  const iDisp = document.getElementById('c9u11-circ-itotal');
+  const pDisp = document.getElementById('c9u11-circ-ptotal');
+  if (reqDisp) reqDisp.textContent = isFinite(req) ? req.toFixed(1) + " Ω" : "अनन्त (खुला परिपथ)";
+  if (iDisp) iDisp.textContent = totalI.toFixed(2) + " A";
+  if (pDisp) pDisp.textContent = totalP.toFixed(2) + " W";
+
+  // Bulb states
+  const b1State = document.getElementById('c9u11-b1-state');
+  const b2State = document.getElementById('c9u11-b2-state');
+  const b3State = document.getElementById('c9u11-b3-state');
+  const b1Stats = document.getElementById('c9u11-b1-stats');
+  const b2Stats = document.getElementById('c9u11-b2-stats');
+  const b3Stats = document.getElementById('c9u11-b3-stats');
+
+  if (b1State) {
+    if (c9u11BulbBroken[0]) {
+      b1State.textContent = "विच्छेद (Broken)";
+      b1State.className = "text-[10px] text-rose-700 bg-rose-100 px-1.5 py-0.5 rounded";
+    } else {
+      b1State.textContent = "सक्रिय";
+      b1State.className = "text-[10px] text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded";
+    }
+  }
+  if (b1Stats) b1Stats.textContent = R1.toFixed(0) + " Ω | " + v1.toFixed(1) + " V | " + i1.toFixed(2) + " A";
+  if (b2Stats) b2Stats.textContent = R2.toFixed(0) + " Ω | " + v2.toFixed(1) + " V | " + i2.toFixed(2) + " A";
+  if (b3Stats) b3Stats.textContent = R3.toFixed(0) + " Ω | " + v3.toFixed(1) + " V | " + i3.toFixed(2) + " A";
+
+  drawCircuitCanvasC9U11(V, [R1, R2, R3], [v1, v2, v3], [i1, i2, i3]);
+}
+
+function drawCircuitCanvasC9U11(V, Rs, Vs, Is) {
+  const canvas = document.getElementById('c9u11-circuit-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const rect = canvas.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1;
+  const w = rect.width || 600;
+  const h = rect.height || 220;
+
+  if (canvas.width !== Math.round(w * dpr) || canvas.height !== Math.round(h * dpr)) {
+    canvas.width = Math.round(w * dpr);
+    canvas.height = Math.round(h * dpr);
+  }
+
+  ctx.save();
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, w, h);
+
+  // Background
+  ctx.fillStyle = '#090d16';
+  ctx.fillRect(0, 0, w, h);
+
+  const pad = 35;
+  const circW = w - pad * 2;
+  const circH = h - pad * 2;
+  const cx = pad;
+  const cy = pad;
+
+  if (c9u11CircuitType === 'series') {
+    // --- SERIES LOOP ---
+    ctx.strokeStyle = c9u11CircuitMasterOn && Is[0] > 0 ? '#38bdf8' : '#334155';
+    ctx.lineWidth = 3;
+    ctx.strokeRect(cx, cy, circW, circH);
+
+    // Battery on Left wire
+    const batY = cy + circH * 0.5;
+    ctx.fillStyle = '#090d16';
+    ctx.fillRect(cx - 10, batY - 22, 20, 44);
+    ctx.strokeStyle = '#f59e0b';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(cx - 12, batY - 10); ctx.lineTo(cx + 12, batY - 10);
+    ctx.moveTo(cx - 6, batY + 8); ctx.lineTo(cx + 6, batY + 8);
+    ctx.stroke();
+
+    ctx.fillStyle = '#f59e0b';
+    ctx.font = 'bold 10px monospace';
+    ctx.fillText('+' + V + 'V', cx + 16, batY - 5);
+
+    // 3 Bulbs along bottom wire
+    const bulbXs = [cx + circW * 0.25, cx + circW * 0.5, cx + circW * 0.75];
+    for (let i = 0; i < 3; i++) {
+      const bx = bulbXs[i];
+      const by = cy + circH;
+      ctx.fillStyle = '#090d16';
+      ctx.fillRect(bx - 16, by - 16, 32, 32);
+
+      const lit = c9u11CircuitMasterOn && !c9u11BulbBroken[i] && Is[i] > 0;
+      const glow = lit ? Math.min(1.0, (Vs[i] / (V / 3)) * 0.8) : 0;
+
+      // Glow effect
+      if (lit) {
+        const rad = ctx.createRadialGradient(bx, by, 2, bx, by, 24);
+        rad.addColorStop(0, 'rgba(250, 204, 21, ' + glow + ')');
+        rad.addColorStop(1, 'rgba(250, 204, 21, 0)');
+        ctx.fillStyle = rad;
+        ctx.beginPath();
+        ctx.arc(bx, by, 24, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      // Bulb circle
+      ctx.beginPath();
+      ctx.arc(bx, by, 12, 0, Math.PI * 2);
+      ctx.fillStyle = lit ? '#fef08a' : (c9u11BulbBroken[i] ? '#475569' : '#1e293b');
+      ctx.fill();
+      ctx.strokeStyle = c9u11BulbBroken[i] ? '#ef4444' : '#f59e0b';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      // Filament
+      ctx.strokeStyle = lit ? '#b45309' : '#64748b';
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.moveTo(bx - 6, by + 4);
+      ctx.lineTo(bx - 2, by - 5);
+      ctx.lineTo(bx + 2, by - 5);
+      ctx.lineTo(bx + 6, by + 4);
+      ctx.stroke();
+
+      // Label
+      ctx.fillStyle = '#e2e8f0';
+      ctx.font = 'bold 9px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('बल्ब ' + (i + 1) + (c9u11BulbBroken[i] ? ' ✖' : ''), bx, by - 16);
+      ctx.fillStyle = '#38bdf8';
+      ctx.fillText(Vs[i].toFixed(1) + 'V', bx, by + 24);
+    }
+  } else {
+    // --- PARALLEL CIRCUIT ---
+    ctx.strokeStyle = '#38bdf8';
+    ctx.lineWidth = 3;
+
+    // Main bus rail Left & Right
+    const busLeft = cx + circW * 0.15;
+    const busRight = cx + circW * 0.85;
+
+    ctx.beginPath();
+    ctx.moveTo(busLeft, cy);
+    ctx.lineTo(busLeft, cy + circH);
+    ctx.moveTo(busRight, cy);
+    ctx.lineTo(busRight, cy + circH);
+    ctx.stroke();
+
+    // Battery on Top connecting rails
+    ctx.beginPath();
+    ctx.moveTo(busLeft, cy);
+    ctx.lineTo(cx + circW * 0.5 - 20, cy);
+    ctx.moveTo(cx + circW * 0.5 + 20, cy);
+    ctx.lineTo(busRight, cy);
+    ctx.stroke();
+
+    const batX = cx + circW * 0.5;
+    ctx.fillStyle = '#090d16';
+    ctx.fillRect(batX - 20, cy - 10, 40, 20);
+    ctx.strokeStyle = '#f59e0b';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(batX - 10, cy - 12); ctx.lineTo(batX - 10, cy + 12);
+    ctx.moveTo(batX + 6, cy - 7); ctx.lineTo(batX + 6, cy + 7);
+    ctx.stroke();
+    ctx.fillStyle = '#f59e0b';
+    ctx.font = 'bold 10px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('+' + V + 'V', batX, cy - 16);
+
+    // 3 Parallel branch rungs
+    const branchYs = [cy + circH * 0.28, cy + circH * 0.58, cy + circH * 0.88];
+    for (let i = 0; i < 3; i++) {
+      const by = branchYs[i];
+      const bx = cx + circW * 0.5;
+
+      const lit = c9u11CircuitMasterOn && !c9u11BulbBroken[i] && Is[i] > 0;
+      ctx.strokeStyle = lit ? '#38bdf8' : '#334155';
+      ctx.lineWidth = 2.5;
+      ctx.beginPath();
+      ctx.moveTo(busLeft, by);
+      ctx.lineTo(bx - 18, by);
+      ctx.moveTo(bx + 18, by);
+      ctx.lineTo(busRight, by);
+      ctx.stroke();
+
+      // Glow
+      if (lit) {
+        const rad = ctx.createRadialGradient(bx, by, 2, bx, by, 24);
+        rad.addColorStop(0, 'rgba(250, 204, 21, 0.9)');
+        rad.addColorStop(1, 'rgba(250, 204, 21, 0)');
+        ctx.fillStyle = rad;
+        ctx.beginPath();
+        ctx.arc(bx, by, 24, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      ctx.beginPath();
+      ctx.arc(bx, by, 12, 0, Math.PI * 2);
+      ctx.fillStyle = lit ? '#fef08a' : (c9u11BulbBroken[i] ? '#475569' : '#1e293b');
+      ctx.fill();
+      ctx.strokeStyle = c9u11BulbBroken[i] ? '#ef4444' : '#f59e0b';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      // Filament
+      ctx.strokeStyle = lit ? '#b45309' : '#64748b';
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.moveTo(bx - 6, by + 4);
+      ctx.lineTo(bx - 2, by - 5);
+      ctx.lineTo(bx + 2, by - 5);
+      ctx.lineTo(bx + 6, by + 4);
+      ctx.stroke();
+
+      ctx.fillStyle = '#e2e8f0';
+      ctx.font = 'bold 9px sans-serif';
+      ctx.textAlign = 'left';
+      ctx.fillText('बल्ब ' + (i + 1) + (c9u11BulbBroken[i] ? ' (विच्छेद)' : ''), bx + 22, by + 3);
+      ctx.fillStyle = '#38bdf8';
+      ctx.fillText(Vs[i].toFixed(0) + 'V | ' + Is[i].toFixed(2) + 'A', bx + 22, by + 14);
+    }
+  }
+
+  ctx.restore();
+}
+
+// ============================================================================
+// LAB 3: TARIFF CALCULATOR
+// ============================================================================
+function updateTariffLabC9U11() {
+  const tbody = document.getElementById('c9u11-tariff-table-body');
+  if (!tbody) return;
+
+  let totalDailyKWh = 0;
+  let html = '';
+
+  c9u11Appliances.forEach((item, idx) => {
+    const dailyKWh = (item.power * item.count * item.hours) / 1000;
+    const monthlyKWh = dailyKWh * 30;
+    totalDailyKWh += dailyKWh;
+
+    html += `
+      <tr class="hover:bg-slate-50/60">
+        <td class="p-3 font-semibold text-slate-800">${item.name}</td>
+        <td class="p-3">
+          <input type="number" min="1" max="5000" value="${item.power}" onchange="changeAppliancePowerC9U11(${idx}, this.value)" class="w-20 px-2 py-1 bg-white border border-slate-300 rounded-lg text-xs font-mono font-bold">
+        </td>
+        <td class="p-3">
+          <input type="number" min="0" max="50" value="${item.count}" onchange="changeApplianceCountC9U11(${idx}, this.value)" class="w-16 px-2 py-1 bg-white border border-slate-300 rounded-lg text-xs font-mono font-bold">
+        </td>
+        <td class="p-3">
+          <input type="number" min="0" max="24" step="0.5" value="${item.hours}" onchange="changeApplianceHoursC9U11(${idx}, this.value)" class="w-16 px-2 py-1 bg-white border border-slate-300 rounded-lg text-xs font-mono font-bold">
+        </td>
+        <td class="p-3 font-mono text-slate-600 font-bold">${dailyKWh.toFixed(3)} kWh</td>
+        <td class="p-3 font-mono font-black text-teal-800">${monthlyKWh.toFixed(2)} Units</td>
+      </tr>
+    `;
+  });
+
+  tbody.innerHTML = html;
+
+  const totalMonthlyKWh = totalDailyKWh * 30;
+  const totalJoules = totalMonthlyKWh * 3.6; // Megajoules
+  const ratePerUnit = 10; // Rs. 10 per unit CDC standard
+  const totalBill = totalMonthlyKWh * ratePerUnit;
+
+  const unitsDisp = document.getElementById('c9u11-tariff-units');
+  const dailyAvgDisp = document.getElementById('c9u11-tariff-daily-avg');
+  const joulesDisp = document.getElementById('c9u11-tariff-joules');
+  const billDisp = document.getElementById('c9u11-tariff-total-bill');
+
+  if (unitsDisp) unitsDisp.textContent = totalMonthlyKWh.toFixed(2) + " kWh";
+  if (dailyAvgDisp) dailyAvgDisp.textContent = totalDailyKWh.toFixed(2) + " kWh";
+  if (joulesDisp) joulesDisp.textContent = totalJoules.toFixed(2) + " MJ";
+  if (billDisp) billDisp.textContent = "रु. " + totalBill.toLocaleString('ne-NP', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+function changeAppliancePowerC9U11(idx, val) {
+  c9u11Appliances[idx].power = Math.max(1, parseFloat(val) || 1);
+  updateTariffLabC9U11();
+}
+
+function changeApplianceCountC9U11(idx, val) {
+  c9u11Appliances[idx].count = Math.max(0, parseInt(val, 10) || 0);
+  updateTariffLabC9U11();
+}
+
+function changeApplianceHoursC9U11(idx, val) {
+  c9u11Appliances[idx].hours = Math.max(0, parseFloat(val) || 0);
+  updateTariffLabC9U11();
+}
+
+function loadDefaultTariffPresetC9U11() {
+  // Matches textbook problem 5(छ) exactly
+  c9u11Appliances = [
+    { name: "१० ओटा एलइडी बल्ब (LED Bulbs)", power: 7, count: 10, hours: 6 },
+    { name: "१ ओटा टेलिभिजन (Color TV)", power: 150, count: 1, hours: 8 },
+    { name: "४ ओटा सिलिङ पङ्खा (Ceiling Fans)", power: 150, count: 4, hours: 10 },
+    { name: "१ ओटा विद्युत इस्त्री (Electric Iron)", power: 750, count: 1, hours: (40 / 7) / 60 }, // 40 min per week = ~0.0952 hr/day
+  ];
+  updateTariffLabC9U11();
+}
+
+// ============================================================================
+// EXERCISES SECTION NAVIGATION & DATA
+// ============================================================================
+function setExerciseSecC9U11(secId) {
+  const secs = ['sec-mcq', 'sec-fill', 'sec-diff', 'sec-reasons', 'sec-long', 'sec-numericals'];
+  secs.forEach(s => {
+    const el = document.getElementById('c9u11-' + s);
+    const btn = document.getElementById('c9u11-ex-btn-' + s);
+    if (el) el.classList.toggle('hidden', s !== secId);
+    if (btn) {
+      if (s === secId) {
+        btn.className = "px-4 py-2 rounded-xl bg-blue-600 text-white font-bold text-xs md:text-sm whitespace-nowrap shadow-sm cursor-pointer";
+      } else {
+        btn.className = "px-4 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 font-bold text-xs md:text-sm whitespace-nowrap cursor-pointer";
+      }
+    }
+  });
+
+  const c9v11 = document.getElementById('c9-view-11');
+  if (c9v11 && typeof typesetElement === 'function') {
+    typesetElement(c9v11);
+  }
+}
+
+// 1. MCQs Data
+const c9u11MCQs = [
+  {
+    q: "(क) तलका ग्राफमध्ये कुन ग्राफले ओहमको नियमलाई सही रूपमा प्रदर्शन गर्दछ?",
+    opts: [
+      "A (पोटेन्सियल फरक र धाराबीचको सीधा रेखा, ढलान = R)",
+      "B (पराबलय / Parabolic Curve)",
+      "C (अवरोध विहीन तेर्सो रेखा)",
+      "D (अनियमित वक्र रेखा)"
+    ],
+    ans: 0,
+    exp: "ओहमको नियमअनुसार तापक्रम स्थिर रहँदा पोटेन्सियल फरक र धारा समानुपातिक (V ∝ I) हुने भएकाले V-I ग्राफ मूलबिन्दुबाट जाने सीधा रेखा हुन्छ।"
+  },
+  {
+    q: "(ख) विद्युत हिटरमा प्रयोग हुने हिटिङ एलिमेन्ट (Heating element) कुन पदार्थबाट बनाइन्छ?",
+    opts: [
+      "तामा (Copper)",
+      "कन्स्टेन्टन (Constantan)",
+      "टङ्स्टेन (Tungsten)",
+      "नाइक्रोम (Nichrome — निकल र क्रोमियमको मिश्रधातु)"
+    ],
+    ans: 3,
+    exp: "नाइक्रोमको विशिष्ट प्रतिरोध (Resistivity) उच्च हुनुका साथै पग्लने विन्दु उच्च हुने र उच्च तापक्रममा पनि अक्सिकरण नहुने भएकाले हिटिङ उपकरणमा प्रयोग गरिन्छ।"
+  },
+  {
+    q: "(ग) गार्हस्थ्य (घरेलु) विद्युत परिपथमा विद्युत लोडहरूलाई समानान्तर क्रममा जडान गर्नुको मुख्य कारण कुन हो?",
+    opts: [
+      "सबै लोडबाट समान करेन्ट पठाउन",
+      "सबै लोडलाई समान पोटेन्सियल फरक (२२० भोल्ट) मा राख्न र छुट्टाछुट्टै नियन्त्रण गर्न",
+      "विद्युत परिपथमा अवरोध बढाउन",
+      "विद्युत महसुल कम गर्न"
+    ],
+    ans: 1,
+    exp: "समानान्तर जडानमा प्रत्येक उपकरणले पूर्ण २२० भोल्ट प्राप्त गर्दछन् र एउटा उपकरण बन्द गर्दा अरू उपकरणहरूमा कुनै असर पर्दैन।"
+  },
+  {
+    q: "(घ) बल्ब A मा २२० V, ०.५ A र बल्ब B मा २२० V, ०.४५ A उल्लेख गरिएको छ। दुवैले पूर्ण क्षमतामा कार्य गरिरहेको अवस्थामा कुन भनाइ सही हुन्छ?",
+    opts: [
+      "प्रतिघण्टा B ले A भन्दा बढी विद्युत खपत गर्छ",
+      "प्रतिसेकेन्ड A ले B भन्दा बढी शक्ति रूपान्तरण गर्छ (PA = 110 W > PB = 99 W)",
+      "प्रतिसेकेन्ड B बाट उत्पन्न हुने ताप A को भन्दा बढी हुन्छ",
+      "बल्ब A भन्दा B को प्रयोग बढाउँदा विद्युत महसुल बढ्छ"
+    ],
+    ans: 1,
+    exp: "सामर्थ्य P = V × I बाट PA = 220 × 0.5 = 110 W र PB = 220 × 0.45 = 99 W हुन्छ। अतः A ले बढी शक्ति रूपान्तरण गर्छ।"
+  },
+  {
+    q: "(ङ) १० ओहम र १५ ओहमका दुईवटा अवरोधकहरू समानान्तर क्रममा जोड्दा समतुल्य अवरोध (Equivalent Resistance) कति हुन्छ?",
+    opts: ["२५ Ω", "१२ Ω", "६ Ω", "५ Ω"],
+    ans: 2,
+    exp: "1/Rp = 1/10 + 1/15 = (3 + 2)/30 = 5/30 => Rp = 30/5 = 6 Ω।"
+  },
+  {
+    q: "(च) १ किलोवाट (1 kW) को हिटरलाई १ घण्टा प्रयोग गर्दा रूपान्तरण हुने विद्युत ऊर्जा कति हुन्छ?",
+    opts: ["३.६ × १०^५ J", "३.६ × १०^४ J", "३.६ × १०^३ J", "३.६ × १०^६ J (३.६ मेगाजुल)"],
+    ans: 3,
+    exp: "1 kWh = 1000 W × 3600 s = 3.6 × 10^6 Joules (३.६ मेगाजुल)।"
+  },
+  {
+    q: "(छ) सुचालक तारको लम्बाइ दोब्बर बनाउँदा उक्त तारको विद्युत अवरोधमा कस्तो परिवर्तन आउँछ?",
+    opts: [
+      "अवरोध आधा हुन्छ",
+      "अवरोध दोब्बर हुन्छ (R ∝ L)",
+      "अवरोध चार गुणा हुन्छ",
+      "अवरोधमा कुनै परिवर्तन आउँदैन"
+    ],
+    ans: 1,
+    exp: "अवरोध तारको लम्बाइसँग समानुपातिक हुन्छ (R ∝ L)। तसर्थ लम्बाइ दोब्बर हुँदा अवरोध पनि दोब्बर हुन्छ।"
+  },
+  {
+    q: "(ज) विद्युत परिपथमा धारा नाप्ने एम्मिटर (Ammeter) को अवरोध कस्तो हुनुपर्दछ?",
+    opts: [
+      "अति न्यून (नगण्य)",
+      "अति उच्च",
+      "परिपथको अवरोध बराबर",
+      "शून्यभन्दा सधैं धेरै ठूलो"
+    ],
+    ans: 0,
+    exp: "एम्मिटरलाई परिपथमा श्रेणीक्रममा जोड्नुपर्ने हुनाले यसको आफ्नै अवरोध अति न्यून (आदर्श अवस्थामा शून्य) हुनुपर्छ ता कि मुख्य धारा नघटोस्।"
+  },
+  {
+    q: "(झ) भोल्टमिटरलाई परिपथमा किन समानान्तर क्रममा जोडिन्छ?",
+    opts: [
+      "परिपथको धारा बढाउन",
+      "यसको अवरोध उच्च हुने भएकाले परिपथको मुख्य धारा नरोकियोस् र दुई विन्दुबीचको सही भोल्टेज नाप्न सकियोस्",
+      "परिपथलाई सर्ट सर्किट हुनबाट जोगाउन",
+      "विद्युत महसुल बचाउन"
+    ],
+    ans: 1,
+    exp: "भोल्टमिटरको अवरोध अति उच्च हुन्छ। यसलाई समानान्तर क्रममा जोड्दा यसबाट अत्यन्तै न्यून करेन्ट बग्छ र मुख्य परिपथको भोल्टेज यथावत रहन्छ।"
+  },
+  {
+    q: "(ञ) कुनै सुचालक भएर १ सेकेन्डमा १ कुलम्ब चार्ज प्रवाह हुँदा उत्पन्न हुने विद्युत धारा कति हुन्छ?",
+    opts: ["१ भोल्ट", "१ ओहम", "१ एम्पियर (1 Ampere)", "१ वाट"],
+    ans: 2,
+    exp: "विद्युत धारा I = Q / t = 1 C / 1 s = 1 A (एम्पियर)।"
+  }
+];
+
+// 2. Differences Data
+const c9u11Differences = [
+  {
+    title: "१. इलेक्ट्रोमोटिभ फोर्स (EMF) र पोटेन्सियल फरक (Potential Difference - PD)",
+    col1: "इलेक्ट्रोमोटिभ फोर्स (EMF)",
+    col2: "पोटेन्सियल फरक (Potential Difference)",
+    pts: [
+      ["खुला परिपथ (Open Circuit) मा सेलका दुई ध्रुवहरूबीचको अधिकतम पोटेन्सियल फरकलाई EMF भनिन्छ।", "बन्द परिपथ (Closed Circuit) मा कुनै दुई विन्दुहरूबीच एकाइ पोजिटिभ चार्ज सार्न गरिने कार्यलाई पोटेन्सियल फरक भनिन्छ।"],
+      ["यो परिपथको अवरोध (Resistance) मा भर पर्दैन।", "यो परिपथमा जोडिएका उपकरणहरूको अवरोधमा भर पर्दछ।"],
+      ["यो विद्युत धारा प्रवाहको मुख्य कारण (Cause) हो।", "यो विद्युत धारा प्रवाहको परिणाम (Effect) हो।"],
+      ["यसको मान बन्द परिपथमा पोटेन्सियल फरकभन्दा सधैं बढी हुन्छ (E > V)।", "यसको मान सेलको आन्तरिक अवरोधका कारण EMF भन्दा कम हुन्छ (V = E - Ir)।"]
+    ]
+  },
+  {
+    title: "२. लोडहरूको श्रेणीक्रम जडान (Series) र समानान्तर जडान (Parallel)",
+    col1: "श्रेणीक्रम जडान (Series Combination)",
+    col2: "समानान्तर जडान (Parallel Combination)",
+    pts: [
+      ["सबै लोडहरूलाई एउटै तारमा लहरै जोडिन्छ, करेन्ट प्रवाहको एउटै मात्र मार्ग हुन्छ।", "सबै लोडहरूका छेउहरू साझा दुई विन्दुहरूमा जोडिन्छन्, करेन्ट विभिन्न हाँगाहरूमा बाँडिन्छ।"],
+      ["सबै लोडहरू भएर समान विद्युत धारा बग्छ (I = I1 = I2 = I3)।", "सबै लोडहरूमा समान पोटेन्सियल फरक हुन्छ (V = V1 = V2 = V3)।"],
+      ["कुल समतुल्य अवरोध अधिकतम हुन्छ: Rs = R1 + R2 + R3", "कुल समतुल्य अवरोध न्यूनतम हुन्छ: 1/Rp = 1/R1 + 1/R2 + 1/R3"],
+      ["एउटा लोड बिग्रँदा वा बन्द गर्दा सम्पूर्ण परिपथ बन्द हुन्छ।", "एउटा लोड बन्द गर्दा बाँकी लोडहरू सामान्य रूपमा चलिरहन्छन्।"],
+      ["उदाहरण: चाडपर्वको झिलिमिली बत्ती।", "उदाहरण: घरेलु विद्युत वाइरिङ।"]
+    ]
+  },
+  {
+    title: "३. एम्पियर (Ampere) र भोल्ट (Volt)",
+    col1: "एम्पियर (Ampere - A)",
+    col2: "भोल्ट (Volt - V)",
+    pts: [
+      ["यो विद्युत धारा (Electric Current) को SI एकाइ हो।", "यो पोटेन्सियल फरक (Potential Difference) र EMF को SI एकाइ हो।"],
+      ["सुचालक भएर प्रति सेकेन्ड १ कुलम्ब चार्ज बग्दा १ एम्पियर धारा हुन्छ (1 A = 1 C/s)।", "१ कुलम्ब चार्जलाई एक विन्दुबाट अर्को विन्दुसम्म सार्न १ जुल कार्य हुँदा १ भोल्ट हुन्छ (1 V = 1 J/C)।"],
+      ["यसलाई परिपथमा एम्मिटर (Ammeter) द्वारा नापिन्छ।", "यसलाई परिपथमा भोल्टमिटर (Voltmeter) द्वारा नापिन्छ।"]
+    ]
+  },
+  {
+    title: "४. विद्युत शक्ति (Electric Energy) र विद्युत सामर्थ्य (Electric Power)",
+    col1: "विद्युत शक्ति (Electric Energy - W)",
+    col2: "विद्युत सामर्थ्य (Electric Power - P)",
+    pts: [
+      ["विद्युत परिपथमा चार्ज प्रवाह हुँदा रूपान्तरण हुने कुल कार्य वा ऊर्जालाई विद्युत शक्ति भनिन्छ।", "विद्युत परिपथमा प्रति सेकेन्ड रूपान्तरण हुने विद्युत ऊर्जाको दरलाई विद्युत सामर्थ्य भनिन्छ।"],
+      ["यसको SI एकाइ जुल (Joule - J) हो, र व्यावसायिक एकाइ किलोवाट-घण्टा (kWh) हो।", "यसको SI एकाइ वाट (Watt - W) वा जुल प्रति सेकेन्ड (J/s) हो।"],
+      ["सूत्र: W = V × I × t = I²Rt", "सूत्र: P = W / t = V × I = I²R = V² / R"]
+    ]
+  },
+  {
+    title: "५. एम्मिटर (Ammeter) र भोल्टमिटर (Voltmeter)",
+    col1: "एम्मिटर (Ammeter)",
+    col2: "भोल्टमिटर (Voltmeter)",
+    pts: [
+      ["यो परिपथमा बग्ने विद्युत धारा नाप्न प्रयोग गरिने यन्त्र हो।", "यो परिपथका कुनै दुई विन्दुबीचको पोटेन्सियल फरक नाप्न प्रयोग गरिने यन्त्र हो।"],
+      ["यसलाई परिपथमा सधैं श्रेणीक्रम (Series) मा जोडिन्छ।", "यसलाई परिपथमा सधैं समानान्तर क्रम (Parallel) मा जोडिन्छ।"],
+      ["यसको आन्तरिक अवरोध अति न्यून (नगण्य) हुन्छ।", "यसको आन्तरिक अवरोध अति उच्च हुन्छ।"]
+    ]
+  }
+];
+
+// 3. Reasons Data
+const c9u11Reasons = [
+  {
+    q: "(क) बल्बलाई एउटा ड्राइ सेलसँग जडान गरिएको भन्दा दुईओटा सेलको समूहसँग श्रेणीक्रममा जडान गर्दा बढी चम्किलो देखियो, किन?",
+    a: "सेलहरूलाई श्रेणीक्रममा जोड्दा तिनीहरूको कुल इलेक्ट्रोमोटिभ फोर्स (EMF) थपिन्छ (E_total = E1 + E2 = 1.5 V + 1.5 V = 3.0 V)। ओहमको नियम (I = V/R) अनुसार भोल्टेज दोब्बर हुँदा बल्ब भएर बग्ने विद्युत धारा र सामर्थ्य (P = V²/R वा P = I²R) झण्डै चार गुणाले बढ्छ। विद्युत ऊर्जाको ताप र प्रकाशमा रूपान्तरण तीव्र हुने भएकाले बल्ब बढी चम्किलो बल्छ।"
+  },
+  {
+    q: "(ख) विद्युत हिटर र गिजरको हिटिङ क्वाइलमा नाइक्रोम तारको प्रयोग गरिन्छ, किन?",
+    a: "नाइक्रोम (८०% निकल र २०% क्रोमियमको मिश्रधातु) को विशिष्ट प्रतिरोध (Resistivity) तामाभन्दा लगभग ६० गुणा बढी हुन्छ, जसले गर्दा विद्युत धारा बहँदा जुलको ताप नियम (H = I²Rt) अनुसार अत्यधिक ताप उत्पन्न हुन्छ। साथै यसको पग्लने विन्दु अति उच्च (झण्डै १४००°C) हुन्छ र उच्च तापक्रममा रातो तातो हुँदा पनि हावाको अक्सिजनसँग प्रतिक्रिया गरी अक्सिकरण (Oxidize/Burn) हुँदैन।"
+  },
+  {
+    q: "(ग) गार्हस्थ्य (घरेलु) विद्युत परिपथमा विद्युत लोडहरूलाई समानान्तर क्रममा जडान गरिन्छ, किन?",
+    a: "घरेलु विद्युत परिपथमा समानान्तर जडान गर्नुका मुख्य तीन वैज्ञानिक कारणहरू छन्: (१) समानान्तर क्रममा प्रत्येक उपकरणले स्रोतको पूर्ण भोल्टेज (२२० भोल्ट) प्राप्त गर्दछन्, (२) प्रत्येक उपकरणको लागि छुट्टाछुट्टै स्वीच प्रयोग गर्न सकिन्छ, र (३) कुनै एउटा उपकरण बिग्रिएमा वा बन्द गरिएमा अन्य उपकरणहरूको परिपथमा कुनै बाधा नपुगी सामान्य रूपमा चलिरहन्छन्।"
+  },
+  {
+    q: "(घ) समान लम्बाइ भएका मोटो तार र पातलो तारमध्ये मोटो तारको अवरोध किन कम हुन्छ?",
+    a: "सुचालकको अवरोध त्यसको क्रस-सेक्सन क्षेत्रफल (मोटाइ) सँग व्युत्क्रमानुपातिक हुन्छ (R ∝ 1/A)। मोटो तारको क्रस-सेक्सन क्षेत्रफल ठूलो हुने भएकाले त्यसमा इलेक्ट्रोनहरू प्रवाह हुनका लागि बढी स्थान उपलब्ध हुन्छ र धातुका परमाणुहरूसँग इलेक्ट्रोनको ठक्कर कम हुन्छ, जसले गर्दा पातलो तारको तुलनामा मोटो तारको अवरोध कम हुन्छ।"
+  },
+  {
+    q: "(ङ) विद्युत परिपथमा फ्युज तारलाई सधैं लाइभ (फेज) तारमा श्रेणीक्रममा जोडिन्छ, किन?",
+    a: "फ्युज तार सुरक्षात्मक यन्त्र हो। यसलाई लाइभ तारमा श्रेणीक्रममा जोड्दा परिपथको सम्पूर्ण करेन्ट फ्युज भएर मात्र घरभित्र प्रवेश गर्छ। यदि परिपथमा ओभरलोड वा सर्ट सर्किट भई अत्यधिक करेन्ट बगेमा फ्युज तार तातेर पग्लिन्छ र लाइभ तारको विद्युत सम्बन्ध तत्काल विच्छेद हुन्छ, जसले गर्दा घरका महंगा उपकरणहरू जल्नबाट र आगलागी हुनबाट जोगिन्छन्।"
+  },
+  {
+    q: "(च) साधारण फिलामेन्ट बल्बभन्दा LED बल्ब प्रयोग गर्दा विद्युत महसुल उल्लेखनीय रूपमा कम उठ्छ, किन?",
+    a: "फिलामेन्ट बल्बले खपत गर्ने विद्युत ऊर्जाको ९०% भन्दा बढी भाग ताप ऊर्जामा खेर फाल्छ र केवल १०% मात्र प्रकाशमा रूपान्तरण गर्छ। तर सेमिकन्डक्टर प्रविधिमा आधारित LED (Light Emitting Diode) ले विद्युत ऊर्जालाई सिधै प्रकाशमा रूपान्तरण गर्ने हुनाले ६० वाटको फिलामेन्ट बल्ब बराबरको उज्यालो केवल ७ वाटको LED ले दिन्छ। सामर्थ्य कम हुनाले (P कम) विद्युत खपत युनिट घट्छ र महसुल निकै कम उठ्छ।"
+  }
+];
+
+// 4. Long Questions & Derivations Data
+const c9u11Long = [
+  {
+    q: "१. ओहमको नियम लेख्नुहोस् र V = IR सम्बन्ध देखाउँदै V-I ग्राफको व्याख्या गर्नुहोस्।",
+    a: `
+      <div class="space-y-2 text-xs md:text-sm text-slate-700 leading-relaxed">
+        <p><strong>ओहमको नियम (Ohm's Law):</strong> भौतिक अवस्था (विशेष गरी तापक्रम) स्थिर रहँदा कुनै सुचालक भएर बग्ने विद्युत धारा (\\(I\\)) त्यसका दुई छेउहरूबीचको पोटेन्सियल फरक (\\(V\\)) सँग समानुपातिक हुन्छ।</p>
+        <div class="p-3 bg-slate-50 rounded-xl font-mono text-center text-blue-900 border border-slate-200">
+          $$V \\propto I \\implies V = I \\times R \\quad \\text{वा} \\quad R = \\frac{V}{I}$$
+        </div>
+        <p>यहाँ \\(R\\) एउटा समानुपातिक स्थिराङ्क हो, जसलाई सुचालकको <strong>विद्युत अवरोध (Resistance)</strong> भनिन्छ।</p>
+        <p><strong>V-I ग्राफको व्याख्या:</strong> जब x-अक्षमा पोटेन्सियल फरक (\\(V\\)) र y-अक्षमा विद्युत धारा (\\(I\\)) राखी ग्राफ कोरछौं, मूलबिन्दु \\((0,0)\\) बाट जाने एउटा सीधा रेखा (Straight line) प्राप्त हुन्छ। यस रेखाको ढलानको व्युत्क्रम (\\(\\frac{1}{\\text{Slope}} = \\frac{V}{I} = R\\)) ले उक्त सुचालकको अवरोध जनाउँछ। यदि तापक्रम बढ्यो भने यो रेखा सिधा नरही वक्र बन्दछ।</p>
+      </div>
+    `
+  },
+  {
+    q: "२. श्रेणीक्रम जडानमा जोडिएका तीन अवरोधकहरूको समतुल्य अवरोध Rs = R1 + R2 + R3 हुन्छ भनी प्रमाणित गर्नुहोस्।",
+    a: `
+      <div class="space-y-2 text-xs md:text-sm text-slate-700 leading-relaxed">
+        <p>मानौँ तीनवटा अवरोधकहरू \\(R_1, R_2\\) र \\(R_3\\) लाई \\(V\\) भोल्टेज भएको ब्याट्रीसँग श्रेणीक्रममा जोडिएको छ।</p>
+        <p>१. श्रेणीक्रममा करेन्टको एउटै मार्ग हुने भएकाले प्रत्येक अवरोधकबाट समान धारा \\(I\\) बग्छ।</p>
+        <p>२. स्रोतको कुल पोटेन्सियल फरक \\(V\\) तीनवटै अवरोधकमा बाँडिन्छ:</p>
+        <div class="p-2 bg-slate-50 rounded-xl font-mono text-center text-blue-900 border border-slate-200">
+          $$V = V_1 + V_2 + V_3 \\quad \\text{--- (समीकरण १)}$$
+        </div>
+        <p>ओहमको नियमअनुसार, प्रत्येक अवरोधकका छेउबीचको पोटेन्सियल फरक:</p>
+        <p>\\(V_1 = I R_1\\), \\(V_2 = I R_2\\), र \\(V_3 = I R_3\\)</p>
+        <p>यदि यस परिपथको कुल समतुल्य अवरोध \\(R_s\\) भए, \\(V = I R_s\\) हुन्छ।</p>
+        <p>यी मानहरू समीकरण १ मा प्रतिस्थापन गर्दा:</p>
+        <div class="p-3 bg-white rounded-xl font-mono text-center text-emerald-900 border border-emerald-200 font-bold">
+          $$I R_s = I R_1 + I R_2 + I R_3 \\implies I R_s = I (R_1 + R_2 + R_3)$$
+          $$R_s = R_1 + R_2 + R_3 \\quad \\text{(प्रमाणित)}$$
+        </div>
+      </div>
+    `
+  },
+  {
+    q: "३. समानान्तर क्रममा जोडिएका तीन अवरोधकहरूको समतुल्य अवरोध 1/Rp = 1/R1 + 1/R2 + 1/R3 हुन्छ भनी प्रमाणित गर्नुहोस्।",
+    a: `
+      <div class="space-y-2 text-xs md:text-sm text-slate-700 leading-relaxed">
+        <p>मानौँ तीनवटा अवरोधकहरू \\(R_1, R_2\\) र \\(R_3\\) लाई \\(V\\) भोल्टेज भएको ब्याट्रीसँग समानान्तर क्रममा जोडिएको छ।</p>
+        <p>१. समानान्तर क्रममा सबै अवरोधकका छेउहरू साझा विन्दुमा जोडिने हुनाले प्रत्येकमा समान पोटेन्सियल फरक \\(V\\) हुन्छ।</p>
+        <p>२. परिपथको कुल धारा \\(I\\) तीनवटा हाँगाहरूमा विभाजित हुन्छ:</p>
+        <div class="p-2 bg-slate-50 rounded-xl font-mono text-center text-blue-900 border border-slate-200">
+          $$I = I_1 + I_2 + I_3 \\quad \\text{--- (समीकरण १)}$$
+        </div>
+        <p>ओहमको नियम (\\(I = \\frac{V}{R}\\)) अनुसार प्रत्येक हाँगाको धारा:</p>
+        <p>\\(I_1 = \\frac{V}{R_1}\\), \\(I_2 = \\frac{V}{R_2}\\), र \\(I_3 = \\frac{V}{R_3}\\)</p>
+        <p>यदि कुल समतुल्य अवरोध \\(R_p\\) भए, कुल धारा \\(I = \\frac{V}{R_p}\\) हुन्छ।</p>
+        <p>यी मानहरू समीकरण १ मा प्रतिस्थापन गर्दा:</p>
+        <div class="p-3 bg-white rounded-xl font-mono text-center text-emerald-900 border border-emerald-200 font-bold">
+          $$\\frac{V}{R_p} = \\frac{V}{R_1} + \\frac{V}{R_2} + \\frac{V}{R_3} \\implies V \\left(\\frac{1}{R_p}\\right) = V \\left(\\frac{1}{R_1} + \\frac{1}{R_2} + \\frac{1}{R_3}\\right)$$
+          $$\\frac{1}{R_p} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\frac{1}{R_3} \\quad \\text{(प्रमाणित)}$$
+        </div>
+      </div>
+    `
+  },
+  {
+    q: "४. १ किलोवाट-घण्टा (1 kWh) विद्युत शक्ति ३.६ × १०^६ जुल बराबर हुन्छ भनी गणितीय रूपमा देखाउनुहोस्।",
+    a: `
+      <div class="space-y-2 text-xs md:text-sm text-slate-700 leading-relaxed">
+        <p><strong>१ किलोवाट-घण्टा (1 kWh):</strong> १ किलोवाट सामर्थ्य भएको कुनै विद्युत उपकरणलाई लगातार १ घण्टासम्म सञ्चालन गर्दा खपत हुने विद्युत ऊर्जाको परिमाणलाई १ किलोवाट-घण्टा (वा १ युनिट) भनिन्छ।</p>
+        <div class="p-3 bg-slate-50 rounded-xl font-mono text-center text-blue-950 border border-slate-200">
+          $$1\\text{ kWh} = 1\\text{ kW} \\times 1\\text{ hr}$$
+          $$= 1000\\text{ W} \\times (60 \\times 60)\\text{ s}$$
+          $$= 1000\\text{ J/s} \\times 3600\\text{ s}$$
+          $$= 3,600,000\\text{ J} = 3.6 \\times 10^6\\text{ J} = 3.6\\text{ MJ}$$
+        </div>
+        <p>अतः १ युनिट विद्युत खपत हुँदा ३.६ मेगाजुल बराबरको ऊर्जा रूपान्तरण हुन्छ भनी प्रमाणित भयो।</p>
+      </div>
+    `
+  },
+  {
+    q: "५. विद्युत सामर्थ्य भनेको के हो? यसका सूत्रहरू P = VI, P = I²R र P = V²/R को निगमन गरी व्यावहारिक उपयोग खुलाउनुहोस्।",
+    a: `
+      <div class="space-y-2 text-xs md:text-sm text-slate-700 leading-relaxed">
+        <p><strong>विद्युत सामर्थ्य (Electric Power, P):</strong> परिपथमा विद्युत ऊर्जा रूपान्तरण हुने दरलाई विद्युत सामर्थ्य भनिन्छ। (\\(P = \\frac{W}{t}\\))</p>
+        <p><strong>निगमन:</strong> पोटेन्सियल फरकको परिभाषाबाट कार्य \\(W = V \\times Q\\) हुन्छ।</p>
+        <p>धाराको परिभाषाबाट चार्ज \\(Q = I \\times t\\) हुन्छ।</p>
+        <p>तसर्थ, \\(W = V \\times (I \\times t) = V I t\\)</p>
+        <p>१. सामर्थ्य \\(P = \\frac{W}{t} = \\frac{V I t}{t} = V I\\)</p>
+        <p>२. ओहमको नियमबाट \\(V = I R\\) राख्दा: \\(P = (I R) \\times I = I^2 R\\)</p>
+        <p>३. ओहमको नियमबाट \\(I = \\frac{V}{R}\\) राख्दा: \\(P = V \\times \\left(\\frac{V}{R}\\right) = \\frac{V^2}{R}\\)</p>
+        <p><strong>उपयोग:</strong> \\(P = I^2 R\\) प्रसारण लाइनमा हुने ऊर्जा चुहावट (Heat loss) हिसाब गर्न र \\(P = \\frac{V^2}{R}\\) स्थिर भोल्टेज (२२०V) मा चल्ने घरायसी उपकरणहरूको अवरोध गणना गर्न प्रयोग गरिन्छ।</p>
+      </div>
+    `
+  },
+  {
+    q: "६. पाठ्यपुस्तक प्रश्न ४ (झ): सुरजले ३ भोल्टको ब्याट्रीमा जोडिएका बल्बहरूको जडानबाट एउटा बल्ब हटाउँदा बाँकी बल्ब बढी चम्किलो भएको अनुभव गरे। बल्बहरू कुन क्रममा जोडिएका थिए र उज्यालो बढ्नुको कारण के हो?",
+    a: `
+      <div class="space-y-2 text-xs md:text-sm text-slate-700 leading-relaxed">
+        <p><strong>१. जडानको प्रकार:</strong> बल्बहरू <strong>श्रेणीक्रम (Series Combination)</strong> मा जोडिएका थिए। (यदि समानान्तर हुन्थ्यो भने एउटा बल्ब हटाउँदा बाँकीको उज्यालोमा कुनै फरक पर्दैनथ्यो।)</p>
+        <p><strong>२. उज्यालो बढ्नुको वैज्ञानिक कारण:</strong></p>
+        <p>श्रेणीक्रममा कुल अवरोध \\(R_s = R_1 + R_2\\) हुन्छ। जब एउटा बल्ब हटाइन्छ, परिपथको कुल अवरोध घटेर केवल एउटा बल्बको अवरोध (\\(R_1\\)) मात्र बाँकी रहन्छ।</p>
+        <p>ओहमको नियम (\\(I = \\frac{V}{R}\\)) अनुसार कुल अवरोध घट्दा परिपथमा बग्ने विद्युत धारा (\\(I\\)) उल्लेख्य रूपमा बढ्छ।</p>
+        <p>बाँकी रहेको बल्बले पाउने भोल्टेज पनि पहिले बाँडिएर (\\(1.5\\text{ V}\\)) पाएकोमा अब ब्याट्रीको पूर्ण \\(3\\text{ V}\\) पाउँछ। विद्युत सामर्थ्य \\(P = \\frac{V^2}{R}\\) अनुसार सामर्थ्य ४ गुणा बढ्ने भएकाले बाँकी बल्ब निकै बढी चम्किलो बलेको हो।</p>
+      </div>
+    `
+  }
+];
+
+// 5. CDC Numericals (5-Box Standard Flow)
+const c9u11Numericals = [
+  {
+    num: "१",
+    title: "समस्या १ (क): सुचालक तारमा करेन्ट र चार्ज प्रवाह समय गणना",
+    given: [
+      "विद्युत धारा (Current, \\(I\\)) = \\(10\\text{ mA} = 10 \\times 10^{-3}\\text{ A} = 0.01\\text{ A}\\)",
+      "प्रवाह हुने चार्ज (Electric Charge, \\(Q\\)) = \\(0.2\\text{ C}\\)"
+    ],
+    toFind: "चार्ज बहन लाग्ने समय (Time, \\(t\\)) = ?",
+    formula: "I = \\frac{Q}{t} \\implies t = \\frac{Q}{I}",
+    steps: [
+      "सूत्रअनुसार मानहरू प्रतिस्थापन गर्दा:",
+      "\\(t = \\frac{0.2\\text{ C}}{0.01\\text{ A}}\\)",
+      "\\(t = \\frac{0.2}{0.01} = 20\\text{ s}\\)"
+    ],
+    ans: "सुचालक तारमा ०.२ कुलम्ब चार्ज बहन लाग्ने समय २० सेकेन्ड (20 s) हुन्छ।"
+  },
+  {
+    num: "२",
+    title: "समस्या २ (ख): निश्चित समयमा प्रवाह हुने विद्युत चार्ज गणना",
+    given: [
+      "विद्युत धारा (Current, \\(I\\)) = \\(5\\text{ mA} = 5 \\times 10^{-3}\\text{ A} = 0.005\\text{ A}\\)",
+      "समय (Time, \\(t\\)) = \\(1\\text{ minute} = 60\\text{ s}\\)"
+    ],
+    toFind: "तार भएर बहने कुल चार्ज (Charge, \\(Q\\)) = ?",
+    formula: "Q = I \\times t",
+    steps: [
+      "सूत्रअनुसार मानहरू प्रतिस्थापन गर्दा:",
+      "\\(Q = 0.005\\text{ A} \\times 60\\text{ s}\\)",
+      "\\(Q = 0.3\\text{ C}\\)"
+    ],
+    ans: "उक्त तार भएर १ मिनेटमा ०.३ कुलम्ब (0.3 C) चार्ज प्रवाह हुन्छ।"
+  },
+  {
+    num: "३",
+    title: "समस्या ३ (ग): टर्च लाइट बल्बको अवरोध र सामर्थ्य गणना",
+    given: [
+      "बल्बको पोटेन्सियल फरक (Voltage, \\(V\\)) = \\(3\\text{ V}\\)",
+      "बल्ब भएर जाने धारा (Current, \\(I\\)) = \\(500\\text{ mA} = 0.5\\text{ A}\\)"
+    ],
+    toFind: "१. बल्बको अवरोध (\\(R\\)) = ?, २. बल्बको सामर्थ्य (\\(P\\)) = ?",
+    formula: "R = \\frac{V}{I} \\quad \\text{तथा} \\quad P = V \\times I",
+    steps: [
+      "१. अवरोध गणना गर्दा:",
+      "\\(R = \\frac{3\\text{ V}}{0.5\\text{ A}} = 6\\ \\Omega\\)",
+      "२. सामर्थ्य गणना गर्दा:",
+      "\\(P = 3\\text{ V} \\times 0.5\\text{ A} = 1.5\\text{ W}\\)"
+    ],
+    ans: "उक्त टर्च लाइट बल्बको अवरोध ६ ओहम (6 Ω) र सामर्थ्य १.५ वाट (1.5 W) हुन्छ।"
+  },
+  {
+    num: "४",
+    title: "समस्या ४ (घ): घरेलु परिपथमा हिटर र CFL को करेन्ट र अवरोध गणना",
+    given: [
+      "घरेलु पोटेन्सियल फरक (Voltage, \\(V\\)) = \\(220\\text{ V}\\)",
+      "हिटरको सामर्थ्य (\\(P_1\\)) = \\(1100\\text{ W}\\)",
+      "CFL को सामर्थ्य (\\(P_2\\)) = \\(11\\text{ W}\\)"
+    ],
+    toFind: "प्रत्येक उपकरणको करेन्ट (\\(I_1, I_2\\)) र अवरोध (\\(R_1, R_2\\)) = ?",
+    formula: "I = \\frac{P}{V} \\quad \\text{तथा} \\quad R = \\frac{V^2}{P}",
+    steps: [
+      "१. हिटरको लागि:",
+      "\\(I_1 = \\frac{1100\\text{ W}}{220\\text{ V}} = 5\\text{ A}\\)",
+      "\\(R_1 = \\frac{220\\text{ V}}{5\\text{ A}} = 44\\ \\Omega\\)",
+      "२. CFL को लागि:",
+      "\\(I_2 = \\frac{11\\text{ W}}{220\\text{ V}} = 0.05\\text{ A}\\)",
+      "\\(R_2 = \\frac{220\\text{ V}}{0.05\\text{ A}} = 4400\\ \\Omega\\)"
+    ],
+    ans: "हिटर भएर ५ एम्पियर धारा बग्छ र यसको अवरोध ४४ ओहम हुन्छ; CFL भएर ०.०५ एम्पियर धारा बग्छ र यसको अवरोध ४४०० ओहम हुन्छ।"
+  },
+  {
+    num: "५",
+    title: "समस्या ५ (ङ): इलेक्ट्रिक कित्ली (Kettle) को अधिकतम करेन्ट र विद्युत खपत",
+    given: [
+      "घरेलु पोटेन्सियल फरक (Voltage, \\(V\\)) = \\(220\\text{ V}\\)",
+      "कित्लीको सामर्थ्य (Power, \\(P\\)) = \\(3000\\text{ W} = 3\\text{ kW}\\)",
+      "पानी उम्लन लाग्ने समय (Time, \\(t\\)) = \\(4\\text{ min} = \\frac{4}{60}\\text{ hr} = \\frac{1}{15}\\text{ hr}\\)"
+    ],
+    toFind: "१. अधिकतम करेन्ट (\\(I\\)) = ?, २. खपत हुने विद्युत युनिट (\\(\\text{kWh}\\)) = ?",
+    formula: "I = \\frac{P}{V} \\quad \\text{तथा} \\quad \\text{खपत} = P (\\text{kW}) \\times t (\\text{hr})",
+    steps: [
+      "१. अधिकतम करेन्ट गणना गर्दा:",
+      "\\(I = \\frac{3000\\text{ W}}{220\\text{ V}} \\approx 13.64\\text{ A}\\)",
+      "२. विद्युत खपत गणना गर्दा:",
+      "\\(\\text{खपत} = 3\\text{ kW} \\times \\frac{4}{60}\\text{ hr} = 3 \\times 0.0667 = 0.2\\text{ kWh}\\) (युनिट)"
+    ],
+    ans: "उक्त कित्लीबाट १३.६४ एम्पियर अधिकतम करेन्ट बग्दछ र यसले ०.२ युनिट (0.2 kWh) विद्युत खपत गर्दछ।"
+  },
+  {
+    num: "६",
+    title: "समस्या ६ (छ): घरायसी उपकरणहरूको मासिक विद्युत खपत तथा महसुल गणना",
+    given: [
+      "१० ओटा LED बल्ब (७ W): दैनिक ६ घण्टा प्रयोग",
+      "१ ओटा TV (१५० W): दैनिक ८ घण्टा प्रयोग",
+      "४ ओटा पङ्खा (१५० W): दैनिक १० घण्टा प्रयोग",
+      "१ ओटा इस्त्री (७५० W): हप्ताको ४० मिनेट प्रयोग = \\(40 \\times 4 = 160\\text{ मिनेट/महिना} = 2.667\\text{ घण्टा/महिना}\\)",
+      "प्रतियुनिट विद्युत महसुल दर = रु. १०"
+    ],
+    toFind: "मासिक कुल विद्युत खपत (Units / kWh) र मासिक महसुल (Total Bill) = ?",
+    formula: "\\text{Units} = \\frac{P \\times N \\times T \\times 30}{1000} \\quad \\text{तथा} \\quad \\text{महसुल} = \\text{कुल युनिट} \\times \\text{दर}",
+    steps: [
+      "१. LED बल्बको मासिक खपत = \\(\\frac{7 \\times 10 \\times 6 \\times 30}{1000} = 12.6\\text{ kWh}\\)",
+      "२. TV को मासिक खपत = \\(\\frac{150 \\times 1 \\times 8 \\times 30}{1000} = 36.0\\text{ kWh}\\)",
+      "३. पङ्खाको मासिक खपत = \\(\\frac{150 \\times 4 \\times 10 \\times 30}{1000} = 180.0\\text{ kWh}\\)",
+      "४. इस्त्रीको मासिक खपत = \\(\\frac{750 \\times 1 \\times 2.667}{1000} = 2.0\\text{ kWh}\\) (दैनिक औसत लिँदा \\(2.14\\text{ kWh}\\))",
+      "मासिक कुल खपत = \\(12.6 + 36.0 + 180.0 + 2.14 = 230.74\\text{ kWh} \\approx 230.7\\text{ kWh}\\)",
+      "५. मासिक विद्युत महसुल = \\(230.7 \\times 10 = \\text{रु. } 2307.00\\)"
+    ],
+    ans: "उक्त घरमा मासिक कुल विद्युत खपत २३०.७ युनिट (kWh) हुन्छ र मासिक विद्युत महसुल रु. २,३०७/- हुन्छ।"
+  }
+];
+
+// Render All Exercises
+function renderC9U11Exercises() {
+  // Render MCQs
+  const mcqContainer = document.getElementById('c9u11-mcq-container');
+  if (mcqContainer) {
+    let html = '';
+    c9u11MCQs.forEach((item, idx) => {
+      html += `
+        <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-xs space-y-3">
+          <div class="text-xs md:text-sm font-bold text-slate-800">${item.q}</div>
+          <div class="space-y-1.5 text-xs">
+      `;
+      item.opts.forEach((opt, oIdx) => {
+        const isCorrect = oIdx === item.ans;
+        html += `
+          <div class="p-2 rounded-xl flex items-center justify-between ${isCorrect ? 'bg-emerald-50 border border-emerald-200 text-emerald-950 font-bold' : 'bg-slate-50 border border-slate-100 text-slate-600'}">
+            <span>(${String.fromCharCode(97 + oIdx)}) ${opt}</span>
+            ${isCorrect ? '<span class="text-xs bg-emerald-600 text-white px-2 py-0.5 rounded font-bold">सही उत्तर</span>' : ''}
+          </div>
+        `;
+      });
+      html += `
+          </div>
+          <div class="p-2.5 bg-blue-50/60 rounded-xl border border-blue-100 text-[11px] text-blue-900 leading-relaxed">
+            <strong>वैज्ञानिक कारण:</strong> ${item.exp}
+          </div>
+        </div>
+      `;
+    });
+    mcqContainer.innerHTML = html;
+  }
+
+  // Render Differences
+  const diffContainer = document.getElementById('c9u11-diff-container');
+  if (diffContainer) {
+    let html = '';
+    c9u11Differences.forEach(item => {
+      html += `
+        <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-xs">
+          <div class="bg-slate-100 px-4 py-2.5 border-b border-slate-200 font-black text-slate-800 text-xs md:text-sm">
+            ${item.title}
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs md:text-sm">
+              <thead class="bg-slate-50 text-slate-600 border-b">
+                <tr>
+                  <th class="p-3 w-1/2 border-r border-slate-200 font-bold">${item.col1}</th>
+                  <th class="p-3 w-1/2 font-bold">${item.col2}</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-slate-700">
+      `;
+      item.pts.forEach((pt, pIdx) => {
+        html += `
+          <tr class="hover:bg-slate-50/50">
+            <td class="p-3 border-r border-slate-100 align-top">${pIdx + 1}. ${pt[0]}</td>
+            <td class="p-3 align-top text-emerald-900 font-medium">${pIdx + 1}. ${pt[1]}</td>
+          </tr>
+        `;
+      });
+      html += `
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+    });
+    diffContainer.innerHTML = html;
+  }
+
+  // Render Reasons
+  const reasonsContainer = document.getElementById('c9u11-reasons-container');
+  if (reasonsContainer) {
+    let html = '';
+    c9u11Reasons.forEach(item => {
+      html += `
+        <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-xs space-y-2">
+          <h4 class="text-xs md:text-sm font-bold text-slate-900 flex items-start gap-2">
+            <span class="text-blue-600 font-black">▶</span>
+            <span>${item.q}</span>
+          </h4>
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs md:text-sm text-slate-700 leading-relaxed">
+            <span class="font-bold text-slate-800">उत्तर: </span>${item.a}
+          </div>
+        </div>
+      `;
+    });
+    reasonsContainer.innerHTML = html;
+  }
+
+  // Render Long Qs
+  const longContainer = document.getElementById('c9u11-long-container');
+  if (longContainer) {
+    let html = '';
+    c9u11Long.forEach(item => {
+      html += `
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs space-y-3">
+          <h4 class="text-xs md:text-sm font-black text-slate-900 flex items-start gap-2">
+            <span class="px-2 py-0.5 rounded-md text-[11px] font-bold bg-blue-100 text-blue-800">विस्तृत</span>
+            <span>${item.q}</span>
+          </h4>
+          <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-2">
+            ${item.a}
+          </div>
+        </div>
+      `;
+    });
+    longContainer.innerHTML = html;
+  }
+
+  // Render Numericals (5-Box Standard)
+  const numContainer = document.getElementById('c9u11-numericals-container');
+  if (numContainer) {
+    let html = '';
+    c9u11Numericals.forEach(item => {
+      html += `
+        <div class="bg-white border border-slate-200 rounded-3xl p-5 shadow-xs space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+            <h4 class="text-sm md:text-base font-black text-slate-900 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-mono font-bold">${item.num}</span>
+              ${item.title}
+            </h4>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono font-bold">५-बक्स ढाँचा</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+            <!-- Box 1: Given Data -->
+            <div class="p-3.5 bg-blue-50/60 border border-blue-200 rounded-2xl">
+              <div class="font-bold text-blue-900 mb-1.5">१. दिइएको मानहरू (Given Data):</div>
+              <ul class="list-disc list-inside space-y-1 text-slate-700">
+                ${item.given.map(g => `<li>${g}</li>`).join('')}
+              </ul>
+            </div>
+
+            <!-- Box 2: To Find -->
+            <div class="p-3.5 bg-indigo-50/60 border border-indigo-200 rounded-2xl">
+              <div class="font-bold text-indigo-900 mb-1.5">२. पत्ता लगाउनुपर्ने (To Find):</div>
+              <div class="text-slate-700 font-semibold">${item.toFind}</div>
+            </div>
+          </div>
+
+          <!-- Box 3: Formulas Used -->
+          <div class="p-3.5 bg-purple-50/60 border border-purple-200 rounded-2xl text-xs md:text-sm">
+            <div class="font-bold text-purple-900 mb-1">३. प्रयोग हुने सूत्रहरू (Formulas Used):</div>
+            <div class="font-mono text-center text-purple-950 font-bold">$$${item.formula}$$</div>
+          </div>
+
+          <!-- Box 4: Step-by-Step Calculation -->
+          <div class="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-2 text-xs md:text-sm">
+            <div class="font-bold text-slate-900">४. चरणबद्ध गणितीय गणना (Step-by-Step Calculation):</div>
+            <div class="font-mono space-y-1 text-slate-800">
+              ${item.steps.map(s => `<div>${s}</div>`).join('')}
+            </div>
+          </div>
+
+          <!-- Box 5: Final Conclusion -->
+          <div class="p-3.5 bg-emerald-50 border border-emerald-200 rounded-2xl flex items-center gap-2 text-xs md:text-sm">
+            <span class="text-emerald-700 font-black text-base">✓</span>
+            <div>
+              <span class="font-bold text-emerald-900">५. अन्तिम निष्कर्ष: </span>
+              <span class="text-emerald-950 font-semibold">${item.ans}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+    numContainer.innerHTML = html;
+  }
+}
+
+// ============================================================================
+// TAB 3: TIERED MODEL QUESTIONS (16 QUESTIONS)
+// ============================================================================
+const c9u11Tiers = [
+  // Tier 1: Knowledge & Recall (6)
+  { tier: "tier1", title: "तह १: ज्ञान तथा स्मरण", q: "विद्युत धारा (Electric Current) भनेको के हो? यसको SI एकाइ लेख्नुहोस्।", a: "कुनै सुचालक तारको क्रस-सेक्सन भएर प्रति सेकेन्ड प्रवाह हुने विद्युत चार्जको परिमाणलाई विद्युत धारा भनिन्छ। यसको SI एकाइ एम्पियर (Ampere - A) हो।" },
+  { tier: "tier1", title: "तह १: ज्ञान तथा स्मरण", q: "१ एम्पियर विद्युत धारालाई परिभाषित गर्नुहोस्।", a: "कुनै सुचालक तार भएर १ सेकेन्डको समयमा १ कुलम्ब विद्युत चार्ज प्रवाह हुँदा उक्त तारमा बग्ने विद्युत धारालाई १ एम्पियर (1 A = 1 C / 1 s) भनिन्छ।" },
+  { tier: "tier1", title: "तह १: ज्ञान तथा स्मरण", q: "पोटेन्सियल फरक (Potential Difference) भनेको के हो? यसको SI एकाइ के हो?", a: "बन्द विद्युत परिपथमा १ कुलम्ब पोजिटिभ चार्जलाई एक विन्दुबाट अर्को विन्दुसम्म सार्न गरिने कार्यलाई ती दुई विन्दुबीचको पोटेन्सियल फरक भनिन्छ। यसको SI एकाइ भोल्ट (Volt - V) हो।" },
+  { tier: "tier1", title: "तह १: ज्ञान तथा स्मरण", q: "१ ओहम (1 Ω) विद्युत अवरोधलाई परिभाषित गर्नुहोस्।", a: "कुनै सुचालकका दुई छेउहरूबीच १ भोल्टको पोटेन्सियल फरक कायम गर्दा त्यसमा १ एम्पियर विद्युत धारा बग्दछ भने उक्त सुचालकको विद्युत अवरोध १ ओहम हुन्छ।" },
+  { tier: "tier1", title: "तह १: ज्ञान तथा स्मरण", q: "विद्युत सामर्थ्य (Electric Power) भनेको के हो? यसको SI एकाइ लेख्नुहोस्।", a: "कुनै विद्युत उपकरणले प्रति सेकेन्ड रूपान्तरण गर्ने विद्युत ऊर्जाको दरलाई विद्युत सामर्थ्य भनिन्छ। यसको SI एकाइ वाट (Watt - W) हो।" },
+  { tier: "tier1", title: "तह १: ज्ञान तथा स्मरण", q: "१ युनिट विद्युत ऊर्जा भन्नाले के बुझिन्छ?", a: "१००० वाट (१ किलोवाट) सामर्थ्य भएको कुनै विद्युत उपकरणलाई लगातार १ घण्टासम्म प्रयोग गर्दा खपत हुने विद्युत ऊर्जालाई १ युनिट (वा १ किलोवाट-घण्टा, 1 kWh) भनिन्छ।" },
+
+  // Tier 2: Understanding & Conceptual (5)
+  { tier: "tier2", title: "तह २: बोध तथा समझ", q: "सुचालकको तापक्रम बढ्दा धातुको अवरोध किन बढ्छ?", a: "धातुको तापक्रम बढ्दा त्यसमा रहेका परमाणुहरूको कम्पन तीव्र हुन्छ। जसले गर्दा सुचालक भएर बग्ने स्वतन्त्र इलेक्ट्रोनहरूसँग परमाणुहरूको ठक्करको दर उल्लेख्य रूपमा बढ्छ, फलस्वरूप विद्युत अवरोध बढ्छ।" },
+  { tier: "tier2", title: "तह २: बोध तथा समझ", q: "घरेलु विद्युत वाइरिङमा २२० भोल्ट पोटेन्सियल फरक हुनुको वैज्ञानिक अर्थ के हो?", a: "यसको अर्थ घरेलु परिपथमा जोडिएका उपकरणहरू भएर १ कुलम्ब चार्ज प्रवाह हुँदा स्रोत (ट्रान्सफर्मर/लाइन) ले ती उपकरणहरूलाई २२० जुल विद्युत ऊर्जा प्रदान गर्दछ भन्ने हुन्छ।" },
+  { tier: "tier2", title: "तह २: बोध तथा समझ", q: "फ्युज तारको अवरोध र पग्लने विन्दु कस्तो हुनुपर्छ र किन?", a: "फ्युज तारको अवरोध तुलनात्मक रूपमा उच्च र पग्लने विन्दु न्यून (Low melting point) हुनुपर्छ। जसले गर्दा परिपथमा अधिक करेन्ट बहँदा तुरुन्तै तातेर पग्लिन सकोस् र घरका उपकरणहरू जल्नबाट बचून्।" },
+  { tier: "tier2", title: "तह २: बोध तथा समझ", q: "चाडपर्वमा बालिने झिलिमिली बत्तीको एउटा बल्ब फुट्दा पूरै लहर किन निभ्छ?", a: "झिलिमिली बत्तीहरू श्रेणीक्रम (Series Combination) मा जोडिएका हुन्छन्। श्रेणीक्रममा करेन्टको एउटै मार्ग हुने भएकाले एउटा बल्ब फुट्दा सम्पूर्ण परिपथ खुला (Open circuit) भई करेन्ट रोकिन्छ र पूरै लहर निभ्छ।" },
+  { tier: "tier2", title: "तह २: बोध तथा समझ", q: "एम्मिटरलाई परिपथमा समानान्तर क्रममा झुक्किएर जोड्दा के हुन्छ?", a: "एम्मिटरको आन्तरिक अवरोध अति न्यून (लगभग शून्य) हुन्छ। यसलाई समानान्तर क्रममा जोड्दा यसबाट अत्यन्त उच्च करेन्ट बग्छ (Short circuit हुन्छ), जसले गर्दा एम्मिटरको क्वाइल जलेर तुरुन्त नष्ट हुन सक्छ।" },
+
+  // Tier 3: Application & Higher Ability (5)
+  { tier: "tier3", title: "तह ३: प्रयोग र उच्च क्षमता", q: "कुनै विद्यार्थीले प्रयोगशालामा ओहमको नियम परीक्षण गर्दा V-I ग्राफ सीधा रेखा नआएर माथितिर घुमेको पाए, यसको सम्भावित कारण के हुन सक्छ?", a: "विद्यार्थीले लामो समयसम्म परिपथमा लगातार धारा प्रवाहित गर्दा सुचालक तार तात्यो (तापक्रम बढ्यो)। ओहमको नियम केवल तापक्रम स्थिर रहँदा मात्र लागु हुन्छ। तापक्रम बढेपछि तारको अवरोध बढेकाले V-I ग्राफ सीधा रेखा नभई वक्र (Non-linear) बनेको हो।" },
+  { tier: "tier3", title: "तह ३: प्रयोग र उच्च क्षमता", q: "समान भोल्टेज (२२०V) का १०० W र ६० W का दुई बल्बहरूमध्ये कुनको फिलामेन्ट मोटो हुन्छ? गणितीय कारण सहित विश्लेषण गर्नुहोस्।", a: "सामर्थ्यको सूत्र P = V² / R बाट R = V² / P हुन्छ। अतः १०० वाटको बल्बको अवरोध (R = 220²/100 = 484 Ω) ६० वाटको बल्बको अवरोध (R = 220²/60 = 806.7 Ω) भन्दा कम हुन्छ। अवरोध क्रस-सेक्सन क्षेत्रफलसँग व्युत्क्रमानुपातिक (R ∝ 1/A) हुने हुनाले कम अवरोध भएको १०० वाटको बल्बको फिलामेन्ट मोटो हुन्छ।" },
+  { tier: "tier3", title: "तह ३: प्रयोग र उच्च क्षमता", q: "नेपाल विद्युत प्राधिकरण (NEA) ले प्रसारण लाइनमा बिजुली पठाउँदा भोल्टेज अत्यधिक बढाएर (e.g. 132 kV वा 400 kV) पठाउनुको वैज्ञानिक कारण के हो?", a: "निश्चित सामर्थ्य (P = VI) प्रसारण गर्दा भोल्टेज (V) अत्यधिक बढाउँदा प्रसारण लाइनको करेन्ट (I) निकै घट्छ। प्रसारण तारमा तापको रूपमा खेर जाने ऊर्जा H = I²Rt हुन्छ। करेन्ट घट्दा ऊर्जा चुहावट (I²R loss) निकै न्यून हुन्छ र बिजुली लामो दुरीसम्म कुशलतापूर्वक पुर्‍याउन सकिन्छ।" },
+  { tier: "tier3", title: "तह ३: प्रयोग र उच्च क्षमता", q: "दुईवटा समान बल्बहरूलाई पहिले श्रेणीक्रममा र पछि समानान्तर क्रममा उही ब्याट्रीसँग जोड्दा कुन अवस्थामा ब्याट्री छिटो रित्तिन्छ र किन?", a: "समानान्तर क्रममा ब्याट्री छिटो रित्तिन्छ। किनभने समानान्तर क्रममा समतुल्य अवरोध आधा (Rp = R/2) हुन्छ, जसले गर्दा ब्याट्रीबाट बग्ने कुल करेन्ट दोब्बर (I = 2V/R) हुन्छ र सामर्थ्य खपत चार गुणा बढी हुन्छ, जबकि श्रेणीक्रममा कुल अवरोध दोब्बर (Rs = 2R) भई करेन्ट आधा मात्र बग्छ।" },
+  { tier: "tier3", title: "तह ३: प्रयोग र उच्च क्षमता", q: "एक घरमा मासिक २०० युनिट विद्युत खपत भइरहेकोमा सबै फिलामेन्ट बल्बहरू हटाई LED प्रयोग गर्दा मासिक खपत ८० युनिटमा झर्‍यो। प्रतियुनिट रु. १० का दरले १ वर्षमा कति रकम बचत हुन्छ?", a: "मासिक बचत युनिट = २०० - ८० = १२० युनिट। मासिक रकम बचत = १२० × रु. १० = रु. १,२००। वार्षिक कुल बचत = रु. १,२०० × १२ महिना = रु. १४,४००। अतः ऊर्जा दक्ष LED प्रयोग गर्दा १ वर्षमा रु. १४,४०० बचत हुन्छ।" }
+];
+
+function setTierFilterC9U11(filter) {
+  const tiers = ['all', 'tier1', 'tier2', 'tier3'];
+  tiers.forEach(t => {
+    const btn = document.getElementById('c9u11-tier-btn-' + t);
+    if (btn) {
+      if (t === filter) {
+        btn.className = "px-4 py-2 rounded-xl bg-blue-600 text-white font-bold text-xs shadow-xs cursor-pointer min-h-[38px]";
+      } else {
+        btn.className = "px-4 py-2 rounded-xl text-slate-600 hover:bg-slate-100 font-bold text-xs cursor-pointer min-h-[38px]";
+      }
+    }
+  });
+
+  const container = document.getElementById('c9u11-tiers-container');
+  if (!container) return;
+
+  const filtered = (filter === 'all') ? c9u11Tiers : c9u11Tiers.filter(t => t.tier === filter);
+  let html = '';
+  filtered.forEach((item, idx) => {
+    html += `
+      <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-xs space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold px-2 py-0.5 rounded-full ${item.tier === 'tier1' ? 'bg-blue-100 text-blue-800' : (item.tier === 'tier2' ? 'bg-indigo-100 text-indigo-800' : 'bg-purple-100 text-purple-800')}">
+            ${item.title}
+          </span>
+          <span class="text-[11px] text-slate-400 font-mono">प्रश्न #${idx + 1}</span>
+        </div>
+        <div class="text-xs md:text-sm font-bold text-slate-900">${item.q}</div>
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs md:text-sm text-slate-700 leading-relaxed">
+          <strong class="text-slate-900">उत्तर: </strong>${item.a}
+        </div>
+      </div>
+    `;
+  });
+  container.innerHTML = html;
+
+  const c9v11 = document.getElementById('c9-view-11');
+  if (c9v11 && typeof typesetElement === 'function') {
+    typesetElement(c9v11);
+  }
+}
+
+// ============================================================================
+// TAB 4: SELF-ASSESSMENT QUIZ (10 QUESTIONS)
+// ============================================================================
+const c9u11QuizData = [
+  {
+    q: "१. कुनै सुचालक भएर बग्ने विद्युत धारा (I) र पोटेन्सियल फरक (V) बीचको सम्बन्ध कसले पत्ता लगाएका हुन्?",
+    opts: ["माइकल फ्याराडे", "जर्ज साइमन ओहम (Georg Simon Ohm)", "जेम्स वाट", "आइज्याक न्युटन"],
+    ans: 1,
+    exp: "जर्मन भौतिकशास्त्री जर्ज साइमन ओहमले सन् १८२७ मा V = IR सम्बन्ध पत्ता लगाएका थिए।"
+  },
+  {
+    q: "२. १२ भोल्टको ब्याट्रीमा ६ ओहमको अवरोधक जोड्दा परिपथमा कति एम्पियर धारा बग्दछ?",
+    opts: ["७२ A", "६ A", "२ A (2 Amperes)", "०.५ A"],
+    ans: 2,
+    exp: "ओहमको नियमअनुसार I = V / R = 12 / 6 = 2 A।"
+  },
+  {
+    q: "३. ६ ओहम र १२ ओहमका दुईवटा अवरोधकहरूलाई समानान्तर क्रममा जोड्दा समतुल्य अवरोध कति हुन्छ?",
+    opts: ["१८ Ω", "४ Ω", "६ Ω", "२ Ω"],
+    ans: 1,
+    exp: "1/Rp = 1/6 + 1/12 = (2 + 1)/12 = 3/12 = 1/4 => Rp = 4 Ω।"
+  },
+  {
+    q: "४. खुला परिपथमा सेलका दुई ध्रुवहरूबीचको भोल्टेजलाई के भनिन्छ?",
+    opts: ["पोटेन्सियल फरक", "इलेक्ट्रोमोटिभ फोर्स (EMF)", "विद्युत अवरोध", "विद्युत सामर्थ्य"],
+    ans: 1,
+    exp: "सेलबाट कुनै करेन्ट नबगेको अवस्थामा यसका दुई ध्रुवहरूबीचको भोल्टेजलाई EMF भनिन्छ।"
+  },
+  {
+    q: "५. १०० वाटको चिमलाई दैनिक १० घण्टाका दरले ३० दिन बाल्दा कति युनिट विद्युत खपत हुन्छ?",
+    opts: ["३०० युनिट", "३० युनिट (30 kWh)", "३ युनिट", "३००० युनिट"],
+    ans: 1,
+    exp: "Units = (100 W × 1 × 10 hr × 30) / 1000 = 30,000 / 1000 = 30 kWh (युनिट)।"
+  },
+  {
+    q: "६. विद्युत हिटरको तार कुन मिश्रधातुबाट बनेको हुन्छ?",
+    opts: ["काँस (Bronze)", "नाइक्रोम (Nichrome)", "पित्तल (Brass)", "स्टिल (Steel)"],
+    ans: 1,
+    exp: "नाइक्रोम निकल र क्रोमियमको मिश्रधातु हो, जसको विशिष्ट प्रतिरोध र पग्लने विन्दु उच्च हुन्छ।"
+  },
+  {
+    q: "७. घरेलु विद्युत परिपथमा उपकरणहरू किन समानान्तर क्रममा जोडिन्छन्?",
+    opts: [
+      "सबैले समान २२० भोल्ट पाउन र एउटा बिग्रँदा अरू नरोकिन",
+      "विद्युत परिपथको अवरोध अत्यधिक बढाउन",
+      "सबै उपकरणबाट समान करेन्ट बगाउन",
+      "सर्ट सर्किट गराउन"
+    ],
+    ans: 0,
+    exp: "समानान्तर क्रममा प्रत्येक उपकरणले पूर्ण २२० भोल्ट पाउँछन् र छुट्टाछुट्टै नियन्त्रण गर्न सकिन्छ।"
+  },
+  {
+    q: "८. विद्युत परिपथमा एम्मिटरलाई कुन क्रममा जोडिन्छ?",
+    opts: ["समानान्तर क्रममा", "श्रेणीक्रम (Series) मा", "जुनसुकै क्रममा", "परिपथ बाहिर"],
+    ans: 1,
+    exp: "एम्मिटरको अवरोध नगण्य हुने भएकाले सम्पूर्ण करेन्ट नाप्न यसलाई श्रेणीक्रममा जोडिन्छ।"
+  },
+  {
+    q: "९. १ किलोवाट-घण्टा (1 kWh) कति जुल बराबर हुन्छ?",
+    opts: ["३.६ × १०^६ J", "३.६ × १०^५ J", "१००० J", "३६०० J"],
+    ans: 0,
+    exp: "1 kWh = 1000 W × 3600 s = 3.6 × 10^6 J (३.६ मेगाजुल)।"
+  },
+  {
+    q: "१०. २२० भोल्ट लाइनमा चल्ने ४४ ओहम अवरोध भएको हिटरको सामर्थ्य कति हुन्छ?",
+    opts: ["११०० वाट (1100 W)", "२२०० वाट", "५०० वाट", "४४०० वाट"],
+    ans: 0,
+    exp: "P = V² / R = (220 × 220) / 44 = 48,400 / 44 = 1100 W।"
+  }
+];
+
+let c9u11UserQuizAnswers = {};
+
+function renderC9U11Quiz() {
+  const container = document.getElementById('c9u11-quiz-container');
+  if (!container) return;
+
+  let html = '';
+  c9u11QuizData.forEach((item, qIdx) => {
+    const userSelected = c9u11UserQuizAnswers[qIdx];
+    html += `
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs space-y-3">
+        <div class="text-xs md:text-sm font-bold text-slate-900">${item.q}</div>
+        <div class="space-y-2 text-xs">
+    `;
+    item.opts.forEach((opt, oIdx) => {
+      let optClass = "p-3 rounded-xl border transition cursor-pointer text-slate-700 bg-slate-50 border-slate-200 hover:bg-slate-100";
+      if (userSelected !== undefined) {
+        if (oIdx === item.ans) {
+          optClass = "p-3 rounded-xl border bg-emerald-50 border-emerald-300 text-emerald-950 font-bold";
+        } else if (userSelected === oIdx) {
+          optClass = "p-3 rounded-xl border bg-rose-50 border-rose-300 text-rose-950 font-bold";
+        } else {
+          optClass = "p-3 rounded-xl border bg-slate-50/50 border-slate-100 text-slate-400 opacity-60";
+        }
+      }
+      html += `
+        <div onclick="selectQuizC9U11Option(${qIdx}, ${oIdx})" class="${optClass} flex items-center justify-between">
+          <span>(${String.fromCharCode(97 + oIdx)}) ${opt}</span>
+          ${userSelected !== undefined && oIdx === item.ans ? '<span class="text-xs bg-emerald-600 text-white px-2 py-0.5 rounded font-bold">सही</span>' : ''}
+          ${userSelected !== undefined && userSelected === oIdx && oIdx !== item.ans ? '<span class="text-xs bg-rose-600 text-white px-2 py-0.5 rounded font-bold">गलत</span>' : ''}
+        </div>
+      `;
+    });
+    html += `</div>`;
+
+    if (userSelected !== undefined) {
+      html += `
+        <div class="p-3 bg-blue-50/60 rounded-xl border border-blue-100 text-[11px] text-blue-900 leading-relaxed">
+          <strong>स्पष्टीकरण:</strong> ${item.exp}
+        </div>
+      `;
+    }
+    html += `</div>`;
+  });
+
+  html += `
+    <div class="text-center pt-2">
+      <button onclick="resetQuizC9U11()" class="px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition cursor-pointer">
+        🔄 परीक्षा पुन: सुरु गर्नुहोस् (Reset Quiz)
+      </button>
+    </div>
+  `;
+
+  container.innerHTML = html;
+}
+
+function selectQuizC9U11Option(qIdx, oIdx) {
+  if (c9u11UserQuizAnswers[qIdx] !== undefined) return;
+  c9u11UserQuizAnswers[qIdx] = oIdx;
+
+  let score = 0;
+  Object.keys(c9u11UserQuizAnswers).forEach(q => {
+    if (c9u11UserQuizAnswers[q] === c9u11QuizData[q].ans) {
+      score++;
+    }
+  });
+
+  const scoreEl = document.getElementById('c9u11-quiz-score');
+  const feedEl = document.getElementById('c9u11-quiz-feedback');
+  if (scoreEl) scoreEl.textContent = score + " / 10";
+  if (feedEl) {
+    if (score >= 8) feedEl.textContent = "उत्कृष्ट नतिजा! तपाईंको अवधारणा स्पष्ट छ।";
+    else if (score >= 5) feedEl.textContent = "राम्रो! थप अभ्यास गरी पूर्ण अङ्क ल्याउनुहोस्।";
+    else feedEl.textContent = "पाठ्यक्रमको अवधारणा पुनरावलोकन गर्नुहोस्।";
+  }
+
+  renderC9U11Quiz();
+}
+
+function resetQuizC9U11() {
+  c9u11UserQuizAnswers = {};
+  const scoreEl = document.getElementById('c9u11-quiz-score');
+  const feedEl = document.getElementById('c9u11-quiz-feedback');
+  if (scoreEl) scoreEl.textContent = "0 / 10";
+  if (feedEl) feedEl.textContent = "प्रश्नहरूको उत्तर दिनुहोस्";
+  renderC9U11Quiz();
+}
+
+// ============================================================================
+// INITIALIZATION
+// ============================================================================
+function initC9U11() {
+  renderC9U11Exercises();
+  setTierFilterC9U11('all');
+  renderC9U11Quiz();
+  updateOhmsLabC9U11();
+  updateCircuitLabC9U11();
+  updateTariffLabC9U11();
+
+  const c9v11 = document.getElementById('c9-view-11');
+  if (c9v11 && typeof typesetElement === 'function') {
+    typesetElement(c9v11);
+  }
+}
+
+
+
 
 
 
@@ -52461,6 +54720,8 @@ if (document.readyState === 'loading') {
       initC9U9();
     } else if (typeof currentGrade !== 'undefined' && currentGrade === 9 && typeof activeUnit9 !== 'undefined' && activeUnit9 === 10 && typeof initC9U10 === 'function') {
       initC9U10();
+    } else if (typeof currentGrade !== 'undefined' && currentGrade === 9 && typeof activeUnit9 !== 'undefined' && activeUnit9 === 11 && typeof initC9U11 === 'function') {
+      initC9U11();
     }
   });
 }
