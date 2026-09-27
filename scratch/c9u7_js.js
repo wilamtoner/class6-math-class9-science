@@ -127,9 +127,9 @@ function setTabC9U7(tab) {
     }
     if (btn) {
       if (t === tab) {
-        btn.className = "px-5 py-2.5 rounded-xl bg-blue-600 text-white shadow-sm font-bold transition whitespace-nowrap cursor-pointer";
+        btn.className = "px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl bg-indigo-600 text-white shadow-md font-bold transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer ring-2 ring-indigo-400/30 min-h-[44px]";
       } else {
-        btn.className = "px-5 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition whitespace-nowrap cursor-pointer";
+        btn.className = "px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[44px]";
       }
     }
   });
@@ -161,9 +161,9 @@ function setLabModeC9U7(mode) {
     }
     if (btn) {
       if (m === mode) {
-        btn.className = "flex-1 py-3 px-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-black text-xs md:text-sm shadow-md transition cursor-pointer";
+        btn.className = "flex-1 py-3 px-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-black text-xs md:text-sm shadow-md transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2 ring-2 ring-indigo-400/30";
       } else {
-        btn.className = "flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white font-bold text-xs md:text-sm transition cursor-pointer";
+        btn.className = "flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700/80 font-bold text-xs md:text-sm transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2";
       }
     }
   });
