@@ -1214,10 +1214,10 @@ function renderNewtonDemoSVGC9U7() {
 
 # Part 5: Tab 2 Exercises Data & Renderer
 js_parts.append("""// =========================================================================
-// TAB 2: EXERCISE SOLUTIONS RENDERER
+// TAB 2: EXERCISE SOLUTIONS RENDERER (AUTHENTIC TEXTBOOK FORMAT)
 // =========================================================================
 const C9U7_EXERCISES_DATA = [
-  // 1. MCQs
+  // 1. MCQs (क देखि च सम्म)
   {
     type: 'mcq',
     id: 'mcq-1',
@@ -1240,7 +1240,7 @@ const C9U7_EXERCISES_DATA = [
     q: '१ (ग). गुड्दै गरेको बसबाट ओर्लनु जोखिमपूर्ण हुन्छ । यस भनाइलाई कुन आधारमा पुष्टि गर्न सकिन्छ ?',
     opts: ['(अ) स्थिर इनर्सिया', '(आ) चाल इनर्सिया (Inertia of motion)', '(इ) चालसम्बन्धी दोस्रो नियम', '(ई) चालसम्बन्धी तेस्रो नियम'],
     ans: 1,
-    exp: 'गुडिरहेको बसबाट ओर्लँदा जमिन छुनासाथ खुट्टा स्थिर हुन्छ तर शरीरको माथिल्लो भाग चाल इनर्सियाका कारण अगाडि नै हुत्तिने हुँदा लडेर गम्भीर चोट लाग्छ।'
+    exp: 'बस गुडिरहँदा यात्रुको सम्पूर्ण शरीर पनि चाल अवस्थामा हुन्छ। भुइँमा टेक्नासाथ खुट्टा स्थिर भए पनि शरीरको माथिल्लो भाग चाल इनर्सियाले अगाडि हुत्तिएर पछारिने खतरा हुन्छ।'
   },
   {
     type: 'mcq',
@@ -1248,7 +1248,7 @@ const C9U7_EXERCISES_DATA = [
     q: '१ (घ). क्रिया र प्रतिक्रियाका सन्दर्भमा कुन भनाइ सही हुन्छ ?',
     opts: ['(अ) एकले अर्कोलाई रद्द गर्न सक्छन्', '(आ) दुवै एउटै वस्तुमा लाग्छन्', '(इ) बराबर तर उही दिशामा लाग्छन्', '(ई) दुई फरक फरक वस्तुमा लाग्छन्'],
     ans: 3,
-    exp: 'न्युटनको तेस्रो नियम अनुसार क्रिया र प्रतिक्रिया सधैँ दुई भिन्न वस्तुहरूमा लाग्छन्; त्यसैले यिनीहरूले कहिल्यै पनि एकअर्कालाई रद्द (cancel out) गर्न सक्दैनन्।'
+    exp: 'न्युटनको तेस्रो नियम अनुसार क्रिया र प्रतिक्रिया सधैँ दुई भिन्न वस्तुहरूमा लाग्ने भएकाले यिनीहरूले कहिल्यै पनि एकअर्कालाई रद्द (cancel out) गर्न सक्दैनन्।'
   },
   {
     type: 'mcq',
@@ -1256,76 +1256,76 @@ const C9U7_EXERCISES_DATA = [
     q: '१ (ङ). इलास्टिसिटीको प्रयोग कुन हो ?',
     opts: ['(अ) माटोलाई आकार दिएर गमलामा रूपान्तरण गर्नु', '(आ) फलामलाई पिटेर पाता बनाउनु', '(इ) मिचेको पिठोलाई रोटीको आकार दिनु', '(ई) ब्याडमिन्टनको र्याकेटले कक हान्नु'],
     ans: 3,
-    exp: 'ब्याडमिन्टन र्याकेटको जालीमा उच्च इलास्टिसिटी हुन्छ; कक ठोक्किँदा जाली क्षणभर विरूपित भई रिस्टोरिङ बलले ककलाई तीव्र गतिमा उछिट्टाएर पुनः सुरुको आकारमा फर्कन्छ।'
+    exp: 'ब्याडमिन्टन र्याकेटको जाली उच्च इलास्टिक वस्तु हो जसले कक ठोक्किँदा आन्तरिक रिस्टोरिङ बल उत्पन्न गरी ककलाई उछिट्टाएर पुनः आफ्नो आकार प्राप्त गर्दछ। अन्य विकल्पहरू प्लास्टिक विरूपण हुन्।'
   },
   {
     type: 'mcq',
     id: 'mcq-6',
     q: '१ (च). सडकमा समान गतिले गुडिरहेका मालबाहक ट्रक र कारमा समान बल लगाउन सक्ने ब्रेकको प्रयोग गरी रोकिएमा तलका मध्ये कुन भनाइ सही हुन्छ ?',
-    opts: ['(अ) ट्रकले पार गर्ने दुरी कारले पार गर्ने दुरीभन्दा कम हुन्छ', '(आ) कारले पार गर्ने दुरी ट्रकले पार गर्ने दुरीभन्दा कम हुन्छ', '(इ) दुवैले पार गर्ने दुरी समान हुन्छ', '(ई) दुरी पिण्डसँग सम्बन्धित हुँदैन'],
+    opts: ['(अ) ट्रकले पार गर्ने दूरी कारले पार गर्ने दूरीभन्दा कम हुन्छ', '(आ) कारले पार गर्ने दूरी ट्रकले पार गर्ने दूरीभन्दा कम हुन्छ', '(इ) ट्रक र कारले पार गर्ने दूरी समान हुन्छ', '(ई) ट्रकले पार गर्ने दूरी कारसँग सम्बन्धित हुँदैन'],
     ans: 1,
-    exp: 'मन्दता a = F/m अनुसार बढी पिण्ड भएको ट्रकमा मन्दता कम उत्पन्न हुन्छ, जसले गर्दा रोकिन लामो दूरी पार गर्नुपर्छ; कम पिण्ड भएको कार थोरै दूरीमै रोकिन्छ।'
+    exp: 'a = F/m अनुसार भारी ट्रकमा मन्दता कम उत्पन्न भई रोकिन धेरै दूरी लाग्छ, तर हलुका कारमा अत्यधिक मन्दता उत्पन्न भई छोटो दूरीमै रोकिन्छ।'
   },
 
-  // 2. Differences
+  // 2. Differences (क देखि ग सम्म)
   {
     type: 'diff',
     id: 'diff-1',
-    title: '२ (क). स्थानान्तरण-समय ग्राफ र गति-समय ग्राफबिच फरक',
+    title: '२ (क). स्थानान्तरण-समय ग्राफ र गति-समय ग्राफबिच भिन्नता',
     col1: 'स्थानान्तरण-समय ग्राफ (s-t Graph)',
     col2: 'गति-समय ग्राफ (v-t Graph)',
     rows: [
-      ['अक्षहरू', 'Y-अक्षमा स्थानान्तरण (s) र X-अक्षमा समय (t) हुन्छ।', 'Y-अक्षमा गति (v) र X-अक्षमा समय (t) हुन्छ।'],
+      ['अक्षहरू (Axes)', 'Y-अक्षमा स्थानान्तरण (s) र X-अक्षमा समय (t) राखिन्छ।', 'Y-अक्षमा गति वा वेग (v) र X-अक्षमा समय (t) राखिन्छ।'],
       ['झुकाव (Slope)', 'रेखाको झुकावले वस्तुको गति वा वेग (v = Δs/Δt) दिन्छ।', 'रेखाको झुकावले वस्तुको प्रवेग (a = Δv/Δt) दिन्छ।'],
-      ['क्षेत्रफल (Area)', 'रेखा मुनिको क्षेत्रफलको कुनै भौतिक अर्थ हुँदैन।', 'रेखा मुनिको क्षेत्रफलले पार गरेको स्थानान्तरण वा दूरी (s) दिन्छ।'],
-      ['तेर्सो रेखा', 'समय अक्षसँग समानान्तर रेखाले वस्तु स्थिर रहेको देखाउँछ।', 'समय अक्षसँग समानान्तर रेखाले वस्तु समान गतिमा रहेको देखाउँछ।']
+      ['रेखा मुनिको क्षेत्रफल', 'यसको क्षेत्रफलको कुनै भौतिक अर्थ हुँदैन।', 'रेखा मुनिको क्षेत्रफलले पार गरेको स्थानान्तरण (s = Area) दिन्छ।'],
+      ['तेर्सो समानान्तर रेखा', 'समय अक्षसँग समानान्तर रेखाले वस्तु स्थिर रहेको देखाउँछ।', 'समय अक्षसँग समानान्तर रेखाले वस्तु समान गतिमा रहेको देखाउँछ।']
     ]
   },
   {
     type: 'diff',
     id: 'diff-2',
-    title: '२ (ख). स्थिर इनर्सिया र चाल इनर्सियाबिच फरक',
+    title: '२ (ख). स्थिर इनर्सिया र चाल इनर्सियाबिच भिन्नता',
     col1: 'स्थिर इनर्सिया (Inertia of Rest)',
     col2: 'चाल इनर्सिया (Inertia of Motion)',
     rows: [
-      ['परिभाषा', 'बाह्य बल नलागेसम्म स्थिर वस्तु स्थिर रहिरहन खोज्ने गुण।', 'बाह्य बल नलागेसम्म चालमा रहेको वस्तु समान गतिले चलिरहन खोज्ने गुण।'],
-      ['प्रभाव', 'यसले वस्तुलाई चालमा आउनबाट रोक्ने चेष्टा गर्दछ।', 'यसले गुडिरहेको वस्तुलाई रोकिन वा दिशा बदल्न विरोध गर्दछ।'],
-      ['बसमा असर', 'बस अचानक गुड्दा यात्रुहरू पछाडितर्फ हुत्तिन्छन्।', 'गुडिरहेको बस अचानक रोकिँदा यात्रुहरू अगाडितर्फ हुत्तिन्छन्।'],
-      ['उदाहरण', 'रुखको हाँगा हल्लाउँदा फलफूल र पातहरू तल झर्नु।', 'साइकलमा प्याडल मार्न छाडे पनि केही परसम्म गुडिरहनु।']
+      ['परिभाषा', 'बाह्य बल नलागेसम्म स्थिर वस्तु स्थिर नै रहन खोज्ने गुण।', 'बाह्य बल नलागेसम्म चालमा रहेको वस्तु समान गतिले चलिरहन खोज्ने गुण।'],
+      ['प्रभाव', 'यसले वस्तुलाई चाल अवस्थामा आउन विरोध गर्दछ।', 'यसले गुडिरहेको वस्तुलाई रोकिन वा दिशा बदल्न विरोध गर्दछ।'],
+      ['सवारीमा असर', 'बस अचानक गुड्न थाल्दा यात्रुहरू पछाडितर्फ हुत्तिन्छन्।', 'गुडिरहेको बसमा ब्रेक लगाउँदा यात्रुहरू अगाडितर्फ हुत्तिन्छन्।'],
+      ['उदाहरण', 'रुख हल्लाउँदा फलफूल झर्नु; कम्बलको धुलो झार्नु।', 'गुडिरहेको साइकल प्याडल नमारीकन पनि केही पर गुडिरहनु।']
     ]
   },
   {
     type: 'diff',
     id: 'diff-3',
-    title: '२ (ग). इलास्टिसिटी र प्लास्टिसिटीबिच फरक',
+    title: '२ (ग). इलास्टिसिटी र प्लास्टिसिटीबिच भिन्नता',
     col1: 'इलास्टिसिटी (Elasticity)',
     col2: 'प्लास्टिसिटी (Plasticity)',
     rows: [
-      ['परिभाषा', 'विरूपक बल हटाउँदा वस्तु पुनः सुरुको वास्तविक आकारमा फर्कने गुण।', 'विरूपक बल हटाउँदा वस्तु सुरुको आकारमा नफर्की विरूपितमै रहने गुण।'],
-      ['रिस्टोरिङ बल', 'आन्तरिक रिस्टोरिङ बल (Restoring Force) पूर्ण विकसित हुन्छ।', 'आन्तरिक रिस्टोरिङ बल विकसित हुँदैन।'],
-      ['प्रकृति', 'यो अस्थायी (Temporary) परिवर्तन हो।', 'यो स्थायी (Permanent) परिवर्तन हो।'],
-      ['उदाहरण', 'रबर ब्यान्ड, स्टिलको स्प्रिङ, ब्याडमिन्टनको जाली।', 'गिलो माटो, मुछिएको पिठो, प्लास्टिकिन (Play-dough)।']
+      ['परिभाषा', 'बाह्य बल हटाउँदा वस्तु पुनः सुरुको आकारमा फर्कने गुण।', 'बाह्य बल हटाउँदा पनि वस्तु विरूपित अवस्थामै रहने गुण।'],
+      ['रिस्टोरिङ बल', 'यसमा आन्तरिक रिस्टोरिङ बल (Restoring Force) विकसित हुन्छ।', 'यसमा आन्तरिक रिस्टोरिङ बल विकसित हुँदैन।'],
+      ['विरूपणको प्रकृति', 'यस प्रकारको परिवर्तन अस्थायी (Temporary) हुन्छ।', 'यस प्रकारको परिवर्तन स्थायी (Permanent) हुन्छ।'],
+      ['उदाहरण', 'रबर ब्यान्ड, स्टिलको स्प्रिङ, ब्याडमिन्टनको जाली।', 'गिलो माटो, मुछिएको पिठो, प्लास्टिकिन, मैन।']
     ]
   },
 
-  // 3. Reasons
+  // 3. Give Reasons (क देखि च सम्म)
   {
     type: 'reason',
     id: 'reason-1',
     q: '३ (क). समान गतिले गुडिरहेका मोटरसाइकल, कार, ट्रक, बस, ट्रेन आदिलाई स्थिर अवस्थामा ल्याउन फरक फरक समय लाग्छ, किन ?',
-    ans: 'वस्तुको संवेग (Momentum, p = mv) पिण्डमा निर्भर गर्छ। गति समान भए तापनि ट्रेन र ट्रकको पिण्ड अत्यधिक हुने भएकाले संवेग निकै धेरै हुन्छ, तर मोटरसाइकलको पिण्ड थोरै हुँदा संवेग कम हुन्छ। न्युटनको दोस्रो नियम अनुसार रोक्न लाग्ने समय t = Δp / F हुन्छ। तसर्थ, समान ब्रेक बल लगाउँदा संवेग धेरै भएका ठूला सवारी साधनलाई स्थिर अवस्थामा ल्याउन धेरै समय लाग्छ र कम संवेग भएका साधन छिट्टै रोकिन्छन्।'
+    ans: 'सवारी साधनहरू समान गतिमा भए पनि तिनीहरूको पिण्ड (m) फरक-फरक हुन्छ। संवेग p = mv अनुसार रेल र ट्रकको पिण्ड अत्यधिक हुँदा संवेग निकै धेरै हुन्छ तर मोटरसाइकलको संवेग थोरै हुन्छ। न्युटनको दोस्रो नियम अनुसार संवेग शून्य बनाउन लाग्ने समय t = Δp / F हुन्छ। तसर्थ समान ब्रेक बल लगाउँदा धेरै संवेग भएका भारी सवारी साधनहरूलाई रोक्न धेरै समय लाग्छ।'
   },
   {
     type: 'reason',
     id: 'reason-2',
     q: '३ (ख). रुख हल्लाउँदा पात तथा फल खस्छन्, किन ?',
-    ans: 'हाँगा हल्लाउनुअघि हाँगा, पात र फलफूल सबै स्थिर अवस्थामा हुन्छन्। हाँगा हल्लाउँदा हाँगा तुरुन्तै चाल अवस्थामा आउँछ, तर त्यसमा झुन्डिएका फल र पातहरू स्थिर इनर्सिया (Inertia of rest) का कारण आफ्नै पूर्ववत् स्थिर अवस्थामै रहन खोज्छन्। यसले गर्दा फल र हाँगाबीचको डाँठ तन्किएर चुँडिन्छ र गुरुत्व बलका कारण पात तथा फलफूलहरू भुइँमा खस्छन्।'
+    ans: 'रुखको हाँगा हल्लाउँदा हाँगा तुरुन्तै चाल अवस्थामा आउँछ। तर हाँगामा झुन्डिएका फलफूल र पातहरू स्थिर इनर्सिया (Inertia of Rest) का कारण आफ्नै पूर्ववत् स्थिर अवस्थामै रहिरहन खोज्छन्। यसले गर्दा फलको डाँठ र हाँगाबीच तीव्र खिचाव उत्पन्न भई डाँठ चुँडिन्छ र पृथ्वीको गुरुत्व बलका कारण पात तथा फलफूलहरू भुइँमा खस्छन्।'
   },
   {
     type: 'reason',
     id: 'reason-3',
     q: '३ (ग). बस यात्राका क्रममा यात्रुले आफ्नो सिटसँगै भुइँमा राखेको झोला बस चलेको केही समयपछि अगाडिको सिटनजिक पुगेको भेटे, किन ?',
-    ans: 'बस गुडिरहेको अवस्थामा भुइँमा रहेको झोला पनि बसकै गतिमा अगाडि बढिरहेको हुन्छ। जब चालकले बाटोको खाल्डाखुल्डी वा मोडमा अचानक ब्रेक लगाउँछ, बसको भुइँ रोकिन्छ। तर भुइँमा रहेको झोला चाल इनर्सिया (Inertia of motion) का कारण आफ्नै पूर्ववत् गतिमा अगाडि नै हुत्तिन्छ। झोला र भुइँबीचको घर्षण कम भएकाले झोला चिप्लिएर अगाडिको सिटनजिक पुगेको हो।'
+    ans: 'बस गुडिरहेको बेला बस र त्यसमाथि राखिएको झोला दुवै समान गतिमा अगाडि बढिरहेका हुन्छन्। चालकले अचानक ब्रेक लगाउँदा बसको भुइँ रोकिन्छ, तर भुइँको झोला चाल इनर्सिया (Inertia of Motion) का कारण आफ्नै पूर्ववत् गतिमा अगाडितर्फ नै हुत्तिन्छ। झोला र बसको भुइँबीचको घर्षण कम भएकाले झोला चिप्लिएर अगाडिको सिटनजिक पुगेको हो।'
   },
   {
     type: 'reason',
@@ -1346,76 +1346,491 @@ const C9U7_EXERCISES_DATA = [
     ans: 'प्रत्येक इलास्टिक वस्तुको तन्काउन सकिने एउटा निश्चित अधिकतम विरूपक बलको सीमा हुन्छ, जसलाई इलास्टिक सीमा (Elastic Limit) भनिन्छ। यदि रबर बेन्डलाई इलास्टिक सीमाभन्दा बढी तन्काइयो भने यसको इलास्टिक गुण नष्ट भई स्थायी प्लास्टिक विरूपण हुन्छ (रबर लत्रन्छ) वा यसका अणुहरूबीचको आणविक बन्धन चुँडिएर रबर बेन्ड चटक्क फुट्छ।'
   },
 
-  // 4. Structured Questions
+  // 4. Structured Questions (क देखि त सम्म - जम्मा १६ प्रश्नहरू)
   {
     type: 'structured',
     id: 'struct-1',
     q: '४ (क). औसत गति र प्रवेगको परिभाषा लेख्नुहोस् ।',
-    ans: '• औसत गति (Average Velocity): वस्तुले पार गरेको जम्मा स्थानान्तरणलाई जम्मा समयले भाग गर्दा आउने मान (v_av = s / t)। SI एकाइ: m/s।\\n• प्रवेग (Acceleration): समयसँगै वस्तुको वेगमा आउने परिवर्तनको दर (a = (v - u) / t)। SI एकाइ: m/s²।'
+    htmlContent: `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="p-4 rounded-2xl bg-blue-50/70 border border-blue-200 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-blue-600 text-white">१. औसत गति (Average Velocity)</span>
+            <span class="text-xs font-mono text-blue-700 font-bold">SI: m/s</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-700">
+            कुनै चालमा रहेको वस्तुले पार गरेको जम्मा स्थानान्तरणलाई उक्त स्थानान्तरण पार गर्न लागेको जम्मा समयले भाग गर्दा आउने मानलाई <strong>औसत गति</strong> भनिन्छ।
+          </p>
+          <div class="p-3 rounded-xl bg-white border border-blue-100 space-y-2">
+            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">पाठ्यपुस्तक सूत्र (Textbook Formula):</div>
+            <div class="offline-math text-center py-1.5 text-sm md:text-base font-bold text-blue-950 block">
+              औसत गति (v<sub>av</sub>) = <span class="offline-frac"><span class="top">जम्मा स्थानान्तरण (s)</span><span class="bot">जम्मा समय (t)</span></span> = <span class="offline-frac"><span class="top">s</span><span class="bot">t</span></span>
+            </div>
+            <div class="text-xs text-slate-600 pt-1.5 border-t border-slate-100 flex items-center justify-between">
+              <span>समान प्रवेगको अवस्थामा:</span>
+              <span class="offline-math font-bold text-slate-900">v<sub>av</sub> = <span class="offline-frac"><span class="top">u + v</span><span class="bot">2</span></span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-indigo-50/70 border border-indigo-200 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-indigo-600 text-white">२. प्रवेग (Acceleration)</span>
+            <span class="text-xs font-mono text-indigo-700 font-bold">SI: m/s²</span>
+          </div>
+          <p class="text-xs md:text-sm text-slate-700">
+            समयको अन्तरालसँगै वस्तुको वेग वा गतिमा आउने परिवर्तनको दरलाई <strong>प्रवेग</strong> भनिन्छ। (समयसँगै गति घट्ने दरलाई मन्दता वा ऋणात्मक प्रवेग भनिन्छ)।
+          </p>
+          <div class="p-3 rounded-xl bg-white border border-indigo-100 space-y-2">
+            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">पाठ्यपुस्तक सूत्र (Textbook Formula):</div>
+            <div class="offline-math text-center py-1.5 text-sm md:text-base font-bold text-indigo-950 block">
+              प्रवेग (a) = <span class="offline-frac"><span class="top">अन्तिम गति (v) – सुरुको गति (u)</span><span class="bot">लागेको समय (t)</span></span> = <span class="offline-frac"><span class="top">v - u</span><span class="bot">t</span></span>
+            </div>
+            <div class="text-xs text-slate-600 pt-1.5 border-t border-slate-100 flex items-center justify-between">
+              <span>मन्दता (Retardation):</span>
+              <span class="offline-math font-bold text-slate-900">a = ऋणात्मक (-a)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    `
   },
   {
     type: 'structured',
     id: 'struct-2',
     q: '४ (ख). सिधा रेखीय चालका ३ समीकरणहरूको निगमन गर्नुहोस् ।',
-    ans: '१. v = u + at को निगमन: प्रवेगको परिभाषा a = (v - u) / t बाट क्रस-गुणन गर्दा at = v - u ⟹ v = u + at।\\n\\n२. v² = u² + 2as को निगमन: s = ((u + v) / 2) × t र t = (v - u) / a प्रतिस्थापन गर्दा s = ((v + u)(v - u)) / 2a = (v² - u²) / 2a ⟹ 2as = v² - u² ⟹ v² = u² + 2as।\\n\\n३. s = ut + ½at² को निगमन: s = ((u + v) / 2) × t मा v = u + at राख्दा s = ((u + u + at) / 2) × t = ((2u + at) / 2) × t = (u + ½at) × t = ut + ½at²।'
+    htmlContent: `
+      <div class="space-y-4">
+        <!-- Assumptions Header Box -->
+        <div class="p-3.5 rounded-2xl bg-amber-50 border border-amber-200 text-xs md:text-sm text-amber-950 space-y-1">
+          <div class="font-bold flex items-center gap-1.5 text-amber-900">
+            <span>📌</span><span>पाठ्यपुस्तक प्रारम्भिक मान्यताहरू (Initial Assumptions & Symbols):</span>
+          </div>
+          <p class="text-slate-700 leading-relaxed">
+            मानौँ, कुनै वस्तु सुरुको गति <span class="offline-math font-bold">u</span> ले सिधा रेखामा गुडिरहेको छ। समान प्रवेग <span class="offline-math font-bold">a</span> का कारण <span class="offline-math font-bold">t</span> समयपछि उक्त वस्तुले <span class="offline-math font-bold">s</span> स्थानान्तरण पार गरी अन्तिम गति <span class="offline-math font-bold">v</span> प्राप्त गर्दछ।
+          </p>
+        </div>
+
+        <!-- Derivation 1: v = u + at -->
+        <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-3 shadow-xs">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+            <h5 class="font-bold text-sm md:text-base text-blue-900 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs">१</span>
+              पहिलो समीकरण: v = u + at को निगमन (गति, प्रवेग र समय सम्बन्धी)
+            </h5>
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800">समीकरण (i)</span>
+          </div>
+          <div class="space-y-2 text-xs md:text-sm">
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">प्रवेगको परिभाषा अनुसार:</span>
+              <span class="offline-math font-bold text-slate-900">प्रवेग (a) = <span class="offline-frac"><span class="top">अन्तिम गति – सुरुको गति</span><span class="bot">समय</span></span></span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">सङ्केतमा मान राख्दा:</span>
+              <span class="offline-math font-bold text-blue-900">a = <span class="offline-frac"><span class="top">v - u</span><span class="bot">t</span></span></span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">क्रस-गुणन (Cross-multiplication) गर्दा:</span>
+              <span class="offline-math font-bold text-slate-900">at = v - u</span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">स्थान परिवर्तन गरी मिलाउँदा:</span>
+              <span class="offline-math font-bold text-emerald-800">v = u + at</span>
+            </div>
+          </div>
+          <div class="p-2.5 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-between text-xs md:text-sm shadow-sm">
+            <span>💡 प्रमाणित समीकरण १:</span>
+            <span class="offline-math text-base text-yellow-300 font-bold tracking-wider">v = u + at &nbsp; — (i)</span>
+          </div>
+        </div>
+
+        <!-- Derivation 2: v² = u² + 2as -->
+        <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-3 shadow-xs">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+            <h5 class="font-bold text-sm md:text-base text-indigo-900 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center text-xs">२</span>
+              दोस्रो समीकरण: v² = u² + 2as को निगमन (गति, प्रवेग र स्थानान्तरण सम्बन्धी)
+            </h5>
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-indigo-100 text-indigo-800">समीकरण (ii)</span>
+          </div>
+          <div class="space-y-2 text-xs md:text-sm">
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">समान प्रवेगमा गुडिरहेको वस्तुको औसत गति:</span>
+              <span class="offline-math font-bold text-slate-900">औसत गति (v<sub>av</sub>) = <span class="offline-frac"><span class="top">u + v</span><span class="bot">2</span></span></span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">स्थानान्तरण = औसत गति × समय:</span>
+              <span class="offline-math font-bold text-slate-900">s = <span class="offline-frac"><span class="top">u + v</span><span class="bot">2</span></span> × t &nbsp; — (क)</span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">पहिलो समीकरण v = u + at बाट समय t को मान निकाल्दा:</span>
+              <span class="offline-math font-bold text-indigo-900">v - u = at &nbsp; ⟹ &nbsp; t = <span class="offline-frac"><span class="top">v - u</span><span class="bot">a</span></span> &nbsp; — (ख)</span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">समीकरण (ख) बाट t को मान समीकरण (क) मा प्रतिस्थापन गर्दा:</span>
+              <span class="offline-math font-bold text-slate-900">s = <span class="offline-frac"><span class="top">v + u</span><span class="bot">2</span></span> × <span class="offline-frac"><span class="top">v - u</span><span class="bot">a</span></span></span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">अंशहरू गुणन गर्दा (सूत्र: (a+b)(a-b) = a² - b²):</span>
+              <span class="offline-math font-bold text-slate-900">s = <span class="offline-frac"><span class="top">v² - u²</span><span class="bot">2a</span></span></span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">क्रस-गुणन गर्दा:</span>
+              <span class="offline-math font-bold text-slate-900">2as = v² - u²</span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">स्थान परिवर्तन गरी मिलाउँदा:</span>
+              <span class="offline-math font-bold text-emerald-800">v² = u² + 2as</span>
+            </div>
+          </div>
+          <div class="p-2.5 rounded-xl bg-indigo-600 text-white font-bold flex items-center justify-between text-xs md:text-sm shadow-sm">
+            <span>💡 प्रमाणित समीकरण २:</span>
+            <span class="offline-math text-base text-yellow-300 font-bold tracking-wider">v² = u² + 2as &nbsp; — (ii)</span>
+          </div>
+        </div>
+
+        <!-- Derivation 3: s = ut + 1/2at^2 -->
+        <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-3 shadow-xs">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+            <h5 class="font-bold text-sm md:text-base text-purple-900 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-purple-600 text-white flex items-center justify-center text-xs">३</span>
+              तेस्रो समीकरण: s = ut + ½at² को निगमन (समय, प्रवेग र स्थानान्तरण सम्बन्धी)
+            </h5>
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-800">समीकरण (iii)</span>
+          </div>
+          <div class="space-y-2 text-xs md:text-sm">
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">समान प्रवेगमा स्थानान्तरण = औसत गति × समय:</span>
+              <span class="offline-math font-bold text-slate-900">s = <span class="offline-frac"><span class="top">u + v</span><span class="bot">2</span></span> × t &nbsp; — (क)</span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">पहिलो समीकरण v = u + at बाट v को मान समीकरण (क) मा राख्दा:</span>
+              <span class="offline-math font-bold text-purple-900">s = <span class="offline-frac"><span class="top">u + (u + at)</span><span class="bot">2</span></span> × t</span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">अंशहरू जोड्दा:</span>
+              <span class="offline-math font-bold text-slate-900">s = <span class="offline-frac"><span class="top">2u + at</span><span class="bot">2</span></span> × t</span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">भिन्नलाई छुट्याउँदा:</span>
+              <span class="offline-math font-bold text-slate-900">s = (<span class="offline-frac"><span class="top">2u</span><span class="bot">2</span></span> + <span class="offline-frac"><span class="top">at</span><span class="bot">2</span></span>) × t = (u + <span class="offline-frac"><span class="top">1</span><span class="bot">2</span></span>at) × t</span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+              <span class="text-slate-600">कोष्ठक खोली t ले गुणन गर्दा:</span>
+              <span class="offline-math font-bold text-emerald-800">s = ut + <span class="offline-frac"><span class="top">1</span><span class="bot">2</span></span>at²</span>
+            </div>
+          </div>
+          <div class="p-2.5 rounded-xl bg-purple-600 text-white font-bold flex items-center justify-between text-xs md:text-sm shadow-sm">
+            <span>💡 प्रमाणित समीकरण ३:</span>
+            <span class="offline-math text-base text-yellow-300 font-bold tracking-wider">s = ut + ½at² &nbsp; — (iii)</span>
+          </div>
+        </div>
+      </div>
+    `
   },
   {
     type: 'structured',
     id: 'struct-3',
-    q: '४ (ङ). खरायो र कछुवाको दौड कथा (ग्राफको अवलोकनका आधारमा)',
-    ans: 'कछुवा मूलबिन्दुबाट निरन्तर समान गतिमा हिँडिरह्यो (Uniform velocity straight line)। खरायो सुरुमा तीव्र वेगले दौडियो (ठाडो झुकाव), तर कछुवा धेरै पछाडि छ भनी रुखमुनि सुत्यो (तेर्सो रेखा Slope=0 जहाँ समय बढ्यो तर दूरी बढेन)। कछुवा नरोकिई अगाडि बढी फिनिसिङ लाइन पुग्यो। खरायो ब्युँझेर दौडँदा कछुवाले दौड जितिसकेको थियो (Slow and steady wins the race)।'
+    q: '४ (ग). सिधा रेखीय चालमा समान गतिले गुडिरहेको वस्तुको चाल देखाउन एक एकओटा स्थानान्तरण समय ग्राफ र गति समय ग्राफ कोर्नुहोस् ।',
+    htmlContent: `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
+        <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-cyan-100 text-cyan-800">१. स्थानान्तरण-समय ग्राफ (s-t)</span>
+            <span class="text-xs font-mono text-cyan-700 font-bold">Slope = v</span>
+          </div>
+          <p class="text-slate-600">
+            समान गतिमा समयसँगै स्थानान्तरण समान दरले बढ्छ। त्यसैले ग्राफ मूलबिन्दु (०,०) बाट सुरु भई समान झुकावमा सिधा माथितिर जान्छ।
+          </p>
+          <div class="p-2 rounded-xl bg-slate-50 flex items-center justify-center">
+            <svg viewBox="0 0 160 110" class="w-40 h-28">
+              <line x1="25" y1="90" x2="150" y2="90" stroke="#64748b" stroke-width="2"/>
+              <line x1="25" y1="90" x2="25" y2="15" stroke="#64748b" stroke-width="2"/>
+              <text x="140" y="105" font-size="9" fill="#475569">t (s)</text>
+              <text x="10" y="20" font-size="9" fill="#475569">s (m)</text>
+              <line x1="25" y1="90" x2="135" y2="25" stroke="#0284c7" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="25" cy="90" r="3" fill="#0284c7"/>
+              <circle cx="135" cy="25" r="3" fill="#0284c7"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-indigo-100 text-indigo-800">२. गति-समय ग्राफ (v-t)</span>
+            <span class="text-xs font-mono text-indigo-700 font-bold">Slope = 0</span>
+          </div>
+          <p class="text-slate-600">
+            समान गतिमा समय बित्दै जाँदा पनि गतिको मान परिवर्तन हुँदैन (प्रवेग a = ०)। त्यसैले रेखा समय अक्षसँग समानान्तर तेर्सो हुन्छ।
+          </p>
+          <div class="p-2 rounded-xl bg-slate-50 flex items-center justify-center">
+            <svg viewBox="0 0 160 110" class="w-40 h-28">
+              <line x1="25" y1="90" x2="150" y2="90" stroke="#64748b" stroke-width="2"/>
+              <line x1="25" y1="90" x2="25" y2="15" stroke="#64748b" stroke-width="2"/>
+              <text x="140" y="105" font-size="9" fill="#475569">t (s)</text>
+              <text x="10" y="20" font-size="9" fill="#475569">v (m/s)</text>
+              <line x1="25" y1="50" x2="140" y2="50" stroke="#6366f1" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="25" cy="50" r="3" fill="#6366f1"/>
+              <circle cx="140" cy="50" r="3" fill="#6366f1"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    `
   },
   {
     type: 'structured',
     id: 'struct-4',
+    q: '४ (घ). दिइएको तथ्याङ्कका आधारमा स्थानान्तरण समय ग्राफको झुकावबाट पहिलो ४ सेकेन्डको औसत गति हिसाब गर्नुहोस् ।',
+    htmlContent: `
+      <div class="space-y-3 text-xs md:text-sm">
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse border border-slate-200 text-center font-mono">
+            <tr class="bg-slate-100 font-bold text-slate-800">
+              <td class="border border-slate-200 p-2">समय t (s)</td>
+              <td class="border border-slate-200 p-2">०</td>
+              <td class="border border-slate-200 p-2">२</td>
+              <td class="border border-slate-200 p-2">४</td>
+              <td class="border border-slate-200 p-2">६</td>
+              <td class="border border-slate-200 p-2">८</td>
+              <td class="border border-slate-200 p-2">१०</td>
+              <td class="border border-slate-200 p-2">१२</td>
+              <td class="border border-slate-200 p-2">१४</td>
+            </tr>
+            <tr class="text-blue-900">
+              <td class="border border-slate-200 p-2 font-bold text-slate-700">दूरी s (m)</td>
+              <td class="border border-slate-200 p-2">०</td>
+              <td class="border border-slate-200 p-2">४</td>
+              <td class="border border-slate-200 p-2">८</td>
+              <td class="border border-slate-200 p-2">८</td>
+              <td class="border border-slate-200 p-2">१२</td>
+              <td class="border border-slate-200 p-2">८</td>
+              <td class="border border-slate-200 p-2">४</td>
+              <td class="border border-slate-200 p-2">०</td>
+            </tr>
+          </table>
+        </div>
+        <div class="p-3.5 rounded-xl bg-blue-50/60 border border-blue-200 space-y-2">
+          <strong>पहिलो ४ सेकेन्ड (० देखि ४ s) को औसत गति हिसाब:</strong>
+          <div class="space-y-1 font-mono text-slate-800">
+            <div>सुरुको बिन्दु: t₁ = 0 s, s₁ = 0 m</div>
+            <div>अन्तिम बिन्दु: t₂ = 4 s, s₂ = 8 m</div>
+            <div class="offline-math text-base font-bold text-blue-900 py-1">
+              औसत गति (v) = झुकाव (Slope) = <span class="offline-frac"><span class="top">s₂ - s₁</span><span class="bot">t₂ - t₁</span></span> = <span class="offline-frac"><span class="top">8 m - 0 m</span><span class="bot">4 s - 0 s</span></span> = <span class="offline-frac"><span class="top">8</span><span class="bot">4</span></span> = 2 m/s
+            </div>
+          </div>
+          <div class="p-2 rounded-lg bg-emerald-100 text-emerald-950 font-bold">
+            ✓ उत्तर: पहिलो ४ सेकेन्डमा वस्तुको औसत गति २ m/s (समान गति) रहेको छ।
+          </div>
+        </div>
+      </div>
+    `
+  },
+  {
+    type: 'structured',
+    id: 'struct-5',
+    q: '४ (ङ). खरायो र कछुवाको दौड कथा (ग्राफको अवलोकनका आधारमा)',
+    ans: '१. कछुवाको चाल: कछुवा मूलबिन्दुबाट निरन्तर समान गतिमा अगाडि बढिरह्यो (Uniform velocity straight line)।\\n२. खरायोको चाल: खरायो सुरुमा अत्यधिक वेगले दौडियो (ठाडो झुकाव), तर कछुवा निकै पछाडि छ भनी रुखमुनि सुत्यो (तेर्सो रेखा Slope=0 जहाँ समय बढ्यो तर स्थानान्तरण बढेन)।\\n३. अन्तिम नतिजा: कछुवा निरन्तर हिँडेर फिनिसिङ लाइन पुग्यो। खरायो ब्युँझेर ज्यान फाली दौडे पनि कछुवाले दौड जितिसकेको थियो (Slow and steady wins the race)।'
+  },
+  {
+    type: 'structured',
+    id: 'struct-6',
+    q: '४ (च). इनर्सिया भनेको के हो ? स्थिर इनर्सिया र चाल इनर्सियाका दुई दुईओटा उदाहरण लेख्नुहोस् ।',
+    ans: 'परिभाषा: बाह्य असन्तुलित बलको प्रयोग नहुन्जेल वस्तु आफ्नो स्थिर अवस्था वा सिधा रेखामा समान गतिको चाल अवस्थालाई यथावत् कायम राख्न खोज्ने अन्तर्निहित गुणलाई इनर्सिया (Inertia) भनिन्छ।\\n\\n• स्थिर इनर्सियाका २ उदाहरण:\\n१. गिलासको मुखमाथि पोस्टकार्डमा रहेको सिक्का झट्का दिँदा गिलासमा खस्नु।\\n२. स्थिर रहेको बस अचानक गुड्न थाल्दा यात्रुहरू पछाडितर्फ हुत्तिनु।\\n\\n• चाल इनर्सियाका २ उदाहरण:\\n१. गुडिरहेको बसमा एक्कासि ब्रेक लगाउँदा यात्रुहरू अगाडितर्फ हुत्तिनु।\\n२. लामो फड्को मार्ने खेलाडी उफ्रनुअघि केही परबाट तीव्र गतिमा दौडेर आउनु।'
+  },
+  {
+    type: 'structured',
+    id: 'struct-7',
+    q: '४ (छ). पिण्ड र इनर्सियाबिचको सम्बन्ध लेख्नुहोस् ।',
+    ans: 'वस्तुको पिण्ड (Mass) नै त्यसको इनर्सियाको वास्तविक भौतिक नाप हो। वस्तुको इनर्सिया त्यसको पिण्डसँग प्रत्यक्ष समानुपातिक हुन्छ (Inertia ∝ Mass)।\\nअर्थात्, पिण्ड जति धेरै हुन्छ, त्यसको इनर्सिया पनि त्यति नै धेरै हुन्छ र त्यसको अवस्था बदल्न धेरै बल चाहिन्छ। उदाहरणका लागि, गुडिरहेको साइकललाई थोरै बलले रोक्न सकिन्छ किनभने यसको पिण्ड कम हुन्छ, तर समान गतिमा गुडिरहेको भारी रेललाई रोक्न अत्यधिक ब्रेक बल चाहिन्छ किनभने यसको पिण्ड र इनर्सिया निकै धेरै हुन्छ।'
+  },
+  {
+    type: 'structured',
+    id: 'struct-8',
+    q: '४ (ज). चालसम्बन्धी न्युटनको पहिलो नियम लेख्नुहोस् ।',
+    ans: 'नियम: "कुनै वस्तुमाथि बाह्य असन्तुलित बलले असर नगरेसम्म, स्थिर अवस्थामा रहेको वस्तु स्थिर अवस्थामै रहन्छ र चाल अवस्थामा रहेको वस्तु सिधा रेखामा समान गतिले निरन्तर चलिरहन्छ।"\\n(यस नियमलाई इनर्सियाको नियम - Law of Inertia पनि भनिन्छ)।'
+  },
+  {
+    type: 'structured',
+    id: 'struct-9',
+    q: '४ (झ). परिणामात्मक बलले वस्तुको अवस्था बदल्छ भनी देखाउन दुईओटा उदाहरण लेख्नुहोस् ।',
+    ans: '१. स्थिर अवस्थाबाट चाल अवस्थामा: मैदानमा स्थिर रहेको फुटबललाई खेलाडीले किक हान्दा (परिणामात्मक बल लगाउँदा) बल स्थिर अवस्थाबाट तीव्र वेगले चाल अवस्थामा जान्छ।\\n२. चाल अवस्थाबाट स्थिर अवस्थामा: गुडिरहेको साइकलमा ब्रेक लगाउँदा उत्पन्न घर्षण बल (विपरीत परिणामात्मक बल) ले गुडिरहेको साइकललाई रोकेर स्थिर अवस्थामा ल्याउँछ।'
+  },
+  {
+    type: 'structured',
+    id: 'struct-10',
+    q: '४ (ञ). तीव्र गति र न्युटनको पहिलो नियमका आधारमा पहाडका घुम्तीहरूमा हुन सक्ने बस दुर्घटनाबारे व्याख्या गर्नुहोस् ।',
+    ans: 'पहाडका सडकहरू साँघुरा र तीखा घुम्ती भएका हुन्छन्। तीव्र गतिमा गुडिरहेको बस र यात्रुहरूमा न्युटनको पहिलो नियम अनुसार सिधा दिशामै अगाडि बढिरहने दिशाको इनर्सिया (Inertia of Direction) हुन्छ। जब तीव्र गतिको बस अचानक तीखो मोडमा आइपुग्छ, पाङ्ग्रा र सडकबीचको घर्षणले बसलाई घुमाउन पर्याप्त सेन्ट्रिपेटल बल दिन सक्दैन। फलस्वरूप बस मोडिन नसकी दिशाको इनर्सियाले गर्दा सिधा भीरबाट तल खसी भयानक दुर्घटना हुन पुग्छ। त्यसैले पहाडी घुम्तीमा गति नियन्त्रण गर्नु अपरिहार्य छ।'
+  },
+  {
+    type: 'structured',
+    id: 'struct-11',
     q: '४ (ट). चालसम्बन्धी न्युटनको दोस्रो नियम लेखी F = ma प्रमाणित गर्नुहोस् ।',
-    ans: 'नियम: "कुनै वस्तुमा उत्पन्न हुने प्रवेग लगाइएको बलसँग समानुपातिक (a ∝ F) र पिण्डसँग व्युत्क्रमानुपातिक (a ∝ 1/m) हुन्छ।"\\n\\nप्रमाण: दुवैलाई मिलाउँदा a ∝ F/m ⟹ F ∝ ma ⟹ F = k·ma। SI एकाइमा 1 kg पिण्डमा 1 m/s² प्रवेग उत्पन्न गर्न 1 N बल चाहिन्छ (1 = k × 1 × 1 ⟹ k = 1)। तसर्थ F = ma प्रमाणित भयो।'
+    htmlContent: `
+      <div class="space-y-3 text-xs md:text-sm">
+        <div class="p-3.5 rounded-2xl bg-blue-50 border border-blue-200 text-blue-950 font-medium">
+          <strong>📌 न्युटनको चालसम्बन्धी दोस्रो नियम (Newton's Second Law):</strong>
+          <p class="mt-1 italic">
+            "कुनै वस्तुमा उत्पन्न हुने प्रवेग उक्त वस्तुमा लगाइएको परिणामात्मक बलसँग समानुपातिक हुन्छ र वस्तुको पिण्डसँग व्युत्क्रमानुपातिक हुन्छ, तथा प्रवेगको दिशा बलकै दिशामा हुन्छ।"
+          </p>
+        </div>
+        <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-2 shadow-xs">
+          <div class="text-slate-700">
+            मानौँ, <span class="offline-math font-bold">m</span> पिण्ड भएको वस्तुमा <span class="offline-math font-bold">F</span> परिमाणको बल लगाउँदा <span class="offline-math font-bold">a</span> प्रवेग उत्पन्न हुन्छ।
+          </div>
+          <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+            <span class="text-slate-600">१. नियमको पहिलो खण्ड अनुसार (प्रवेग बलसँग समानुपातिक):</span>
+            <span class="offline-math font-bold text-blue-900">a ∝ F &nbsp; — (१)</span>
+          </div>
+          <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+            <span class="text-slate-600">२. नियमको दोस्रो खण्ड अनुसार (प्रवेग पिण्डसँग व्युत्क्रमानुपातिक):</span>
+            <span class="offline-math font-bold text-blue-900">a ∝ <span class="offline-frac"><span class="top">1</span><span class="bot">m</span></span> &nbsp; — (२)</span>
+          </div>
+          <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+            <span class="text-slate-600">३. समीकरण (१) र (२) लाई संयुक्त रूपमा मिलाउँदा:</span>
+            <span class="offline-math font-bold text-slate-900">a ∝ <span class="offline-frac"><span class="top">F</span><span class="bot">m</span></span> &nbsp; ⟹ &nbsp; F ∝ ma</span>
+          </div>
+          <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+            <span class="text-slate-600">४. समानुपातिक चिन्ह हटाई स्थिराङ्क k राख्दा:</span>
+            <span class="offline-math font-bold text-slate-900">F = k · ma &nbsp; — (३)</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-100 text-slate-700 space-y-1">
+            <strong>५. १ न्युटन (1 N) बलको परिभाषा अनुसार:</strong>
+            <p>1 kg पिण्ड भएको वस्तुमा 1 m/s² प्रवेग उत्पन्न गराउने बललाई 1 N भनिन्छ।<br>
+            अर्थात् m = 1 kg, a = 1 m/s² हुँदा F = 1 N हुन्छ।<br>
+            मान समीकरण (३) मा राख्दा: 1 = k × 1 × 1 &nbsp; ⟹ &nbsp; <strong>k = 1</strong>।</p>
+          </div>
+          <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
+            <span class="text-slate-600">६. k = 1 समीकरण (३) मा प्रतिस्थापन गर्दा:</span>
+            <span class="offline-math font-bold text-emerald-800">F = 1 · ma = ma</span>
+          </div>
+          <div class="p-2.5 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-between text-xs md:text-sm">
+            <span>💡 प्रमाणित सूत्र (Newton's 2nd Law Formula):</span>
+            <span class="offline-math text-base text-yellow-300 font-bold tracking-wider">F = ma &nbsp; (प्रमाणित भयो)</span>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  {
+    type: 'structured',
+    id: 'struct-12',
+    q: '४ (ठ). चालसम्बन्धी न्युटनको तेस्रो नियम लेख्नुहोस् ।',
+    ans: 'नियम: "प्रत्येक क्रियाको बराबर तर विपरीत दिशामा प्रतिक्रिया हुन्छ।"\\n(To every action, there is always an equal and opposite reaction.)\\nसूत्र रूपमा: F_Action = - F_Reaction।'
+  },
+  {
+    type: 'structured',
+    id: 'struct-13',
+    q: '४ (ड). दैनिक जीवनमा न्युटनका चालसम्बन्धी तीनओटै नियममा आधारित क्रियाकलापका दुई दुईओटा उदाहरणहरू लेख्नुहोस् ।',
+    ans: '• पहिलो नियममा आधारित क्रियाकलाप:\\n१. कोट वा कम्बललाई लट्ठीले हिर्काउँदा धुलो झर्नु।\\n२. गुडिरहेको गाडी अचानक रोकिँदा यात्रु अगाडि हुत्तिनु।\\n\\n• दोस्रो नियममा आधारित क्रियाकलाप:\\n१. क्रिकेट खेलाडीले क्याच लिँदा हातलाई पछाडि तानेर बलको धक्का कम गर्नु।\\n२. उही बलले हिर्काउँदा हलुका बल तीव्र वेगले हुत्तिनु तर भारी ढुङ्गो कम सर्नु (a = F/m)।\\n\\n• तेस्रो नियममा आधारित क्रियाकलाप:\\n१. पौडी खेल्दा पानीलाई पछाडि धकेल्दा पानीले मानिसलाई अगाडि धकेल्नु।\\n२. बन्दुकबाट गोली अगाडि छुट्दा बन्दुक पछाडि धकेलिनु (Recoil)।'
+  },
+  {
+    type: 'structured',
+    id: 'struct-14',
+    q: '४ (ढ). न्युटनका चालसम्बन्धी तीनओटै नियमका दुई दुईओटा उपयोगहरूको व्याख्या (तालिका सहित)',
+    htmlContent: `
+      <div class="overflow-x-auto text-xs md:text-sm">
+        <table class="w-full border-collapse border border-slate-200 text-left">
+          <thead>
+            <tr class="bg-slate-100 text-slate-800 font-bold">
+              <th class="border border-slate-200 p-2.5">नियम</th>
+              <th class="border border-slate-200 p-2.5">दैनिक उपयोग</th>
+              <th class="border border-slate-200 p-2.5">वैज्ञानिक व्याख्या</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-slate-50">
+              <td class="border border-slate-200 p-2.5 font-bold text-blue-700">पहिलो नियम</td>
+              <td class="border border-slate-200 p-2.5">गाडीमा सिटबेल्टको प्रयोग</td>
+              <td class="border border-slate-200 p-2.5 text-slate-600">दुर्घटनामा यात्रु चाल इनर्सियाले अगाडि हुत्तिएर ठोक्किनबाट सिटबेल्टले जोगाउँछ।</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="border border-slate-200 p-2.5 font-bold text-blue-700">पहिलो नियम</td>
+              <td class="border border-slate-200 p-2.5">हतौडाको बिँड कस्ने कार्य</td>
+              <td class="border border-slate-200 p-2.5 text-slate-600">बिँडलाई भुइँमा बजार्दा बिँड रोकिन्छ तर भारी फलामको टाउको इनर्सियाले बिँडमा झन् कसिन्छ।</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="border border-slate-200 p-2.5 font-bold text-indigo-700">दोस्रो नियम</td>
+              <td class="border border-slate-200 p-2.5">गाडीमा एयरब्याग (Airbag)</td>
+              <td class="border border-slate-200 p-2.5 text-slate-600">एयरब्याग फुल्दा रोकिने समय (t) बढ्छ, जसले गर्दा संवेग परिवर्तनको दर घटेर घातक बल न्यूनतम हुन्छ।</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="border border-slate-200 p-2.5 font-bold text-indigo-700">दोस्रो नियम</td>
+              <td class="border border-slate-200 p-2.5">हाई जम्पमा बालुवा/स्पन्ज</td>
+              <td class="border border-slate-200 p-2.5 text-slate-600">खेलाडी खस्दा दबिएर समय बढ्छ र शरीरमा लाग्ने प्रतिक्रिया बल कम भई हाड भाँच्चिनबाट बच्छ।</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="border border-slate-200 p-2.5 font-bold text-purple-700">तेस्रो नियम</td>
+              <td class="border border-slate-200 p-2.5">रकेट र जेट इन्जिनको उडान</td>
+              <td class="border border-slate-200 p-2.5 text-slate-600">च्याम्बरबाट ग्यास पछाडि निस्कँदा (क्रिया), त्यति नै बलले रकेटलाई अन्तरिक्षतर्फ उडाउँछ (प्रतिक्रिया)।</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="border border-slate-200 p-2.5 font-bold text-purple-700">तेस्रो नियम</td>
+              <td class="border border-slate-200 p-2.5">डुङ्गा खियाउने चप्पू (Oar)</td>
+              <td class="border border-slate-200 p-2.5 text-slate-600">चप्पूले पानीलाई पछाडि धकेल्छ (क्रिया), र पानीले डुङ्गालाई अगाडि धकेल्छ (प्रतिक्रिया)।</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    type: 'structured',
+    id: 'struct-15',
+    q: '४ (ण). चित्रमा देखाइएका क्रियाकलापमा क्रिया र प्रतिक्रिया छुट्याउनुहोस् ।',
+    ans: '१. डुङ्गाबाट किनारमा उफ्रँदा: खुट्टाले डुङ्गालाई पछाडि धकेल्ने बल = क्रिया; डुङ्गाले मानिसलाई अगाडि हुत्याउने बल = प्रतिक्रिया।\\n२. बन्दुकबाट गोली छुट्दा: बन्दुकले गोलीलाई अगाडि हुत्याउने बल = क्रिया; गोलीले बन्दुकलाई पछाडि धकेल्ने धक्का (Recoil) = प्रतिक्रिया।\\n३. फुकेको बेलुन छोड्दा: हावा पछाडि तीव्र निस्कनु = क्रिया; हावाले बेलुनलाई अगाडि उडाउनु = प्रतिक्रिया।\\n४. पौडी खेल्दा: हातखुट्टाले पानी पछाडि धकेल्नु = क्रिया; पानीले शरीरलाई अगाडि हुत्याउनु = प्रतिक्रिया।'
+  },
+  {
+    type: 'structured',
+    id: 'struct-16',
+    q: '४ (त). उदाहरणसहित इलास्टिसिटी र प्लास्टिसिटी परिभाषित गर्नुहोस् ।',
+    ans: '• इलास्टिसिटी (Elasticity): बाह्य विरूपक बल लगाएर आकार बदलेपछि उक्त बाह्य बल हटाउँदा वस्तु पुनः आफ्नो सुरुको वास्तविक आकार र रूपमै फर्कने अन्तर्निहित गुणलाई इलास्टिसिटी भनिन्छ। (उदा: रबर ब्यान्ड, धातुको स्प्रिङ, ब्याडमिन्टनको जाली)।\\n\\n• प्लास्टिसिटी (Plasticity): बाह्य विरूपक बल हटाउँदा पनि वस्तु आफ्नो सुरुको रूपमा नफर्की नयाँ विरूपित रूपमै स्थायी रहने गुणलाई प्लास्टिसिटी भनिन्छ। (उदा: गिलो माटो, मुछिएको पिठो, प्लास्टिकिन, मैन)।'
   },
 
-  // 5. Numerical Problems
+  // 5. Numerical Problems (क देखि ङ सम्मका ५ वटै आधिकारिक हिसाबहरू)
   {
     type: 'numerical',
     id: 'num-1',
-    q: '५ (क). हवाईजहाज धावनमार्गमा दक्षिणतर्फ गुड्दाको स्थानान्तरण र गति',
-    given: 'सुरुको गति u = 0 m/s, प्रवेग a = 1.5 m/s², समय t = 30 s',
-    formula: 's = ut + ½at²,  v = u + at',
-    calc: 's = (0 × 30) + ½ × 1.5 × (30)² = 0 + 0.75 × 900 = 675 m (दक्षिण)\\nv = 0 + (1.5 × 30) = 45 m/s (दक्षिण)',
+    q: '५ (क). स्थिर अवस्थाबाट धावनमार्गमा दक्षिणतर्फ गुड्दा हवाईजहाजको स्थानान्तरण र गति',
+    given: '• सुरुको गति (u) = 0 m/s (स्थिर अवस्थाबाट गुड्न सुरु गरेकोले)<br>• समान प्रवेग (a) = 1.5 m/s² (दक्षिणतर्फ)<br>• उड्न लागेको समय (t) = 30 s',
+    formula: '• स्थानान्तरण: s = ut + ½at²<br>• अन्तिम गति: v = u + at',
+    calc: '१. स्थानान्तरणका लागि:<br>s = (0 × 30) + ½ × 1.5 × (30)²<br>s = 0 + ½ × 1.5 × 900 = 0.75 × 900 = 675 m (दक्षिण)<br><br>२. जमिन छोड्नुपूर्वको गतिको लागि:<br>v = 0 + (1.5 × 30) = 45 m/s (दक्षिण)  [अर्थात् 162 km/h]',
     res: 'स्थानान्तरण = ६७५ m (दक्षिण) र उड्नुपूर्वको गति = ४५ m/s (दक्षिण)'
   },
   {
     type: 'numerical',
     id: 'num-2',
-    q: '५ (ख). पुलबाट पानीमा ढुङ्गा खसाल्दा पानीको सतहबाट पुलको उचाइ',
-    given: 'सुरुको गति u = 0 m/s, गुरुत्वप्रवेग g = 9.8 m/s², समय t = 2 s',
-    formula: 'h = ut + ½gt²',
-    calc: 'h = (0 × 2) + ½ × 9.8 × (2)² = 0 + 4.9 × 4 = 19.6 m',
-    res: 'पुलको उचाइ = १९.६ m'
+    q: '५ (ख). पुलबाट नदीको पानीमा ढुङ्गा खसाल्दा पानीको सतहबाट पुलको उचाइ',
+    given: '• सुरुको गति (u) = 0 m/s (स्वतन्त्र रूपमा खसालिएको)<br>• गुरुत्वप्रवेग (g) = 9.8 m/s²<br>• पानीसम्म पुग्न लागेको समय (t) = 2 s',
+    formula: '• ठाडो खसाइको उचाइ सूत्र: h = ut + ½gt²',
+    calc: 'h = (0 × 2) + ½ × 9.8 × (2)²<br>h = 0 + 4.9 × 4 = 19.6 m<br><br>ठोक्किने बेलाको गति:<br>v = u + gt = 0 + 9.8 × 2 = 19.6 m/s',
+    res: 'पानीको सतहबाट पुलको उचाइ = १९.६ m'
   },
   {
     type: 'numerical',
     id: 'num-3',
     q: '५ (ग). सुरज र साइकल ओरालो बाटोमा गुड्दा लागेको परिणामात्मक बल',
-    given: 'सुरजको पिण्ड m₁ = 50 kg, साइकल m₂ = 15 kg, कुल पिण्ड m = 65 kg, प्रवेग a = 2 m/s²',
-    formula: 'F = ma',
-    calc: 'F = 65 kg × 2 m/s² = 130 N',
-    res: 'परिणामात्मक बल = १३० N'
+    given: '• सुरजको पिण्ड (m₁) = 50 kg<br>• साइकलको पिण्ड (m₂) = 15 kg<br>• कुल पिण्ड (m = m₁ + m₂) = 65 kg<br>• उत्पन्न प्रवेग (a) = 2 m/s²',
+    formula: '• न्युटनको दोस्रो नियम: F = ma',
+    calc: 'F = m × a<br>F = 65 kg × 2 m/s²<br>F = 130 N',
+    res: 'साइकलमा लागेको परिणामात्मक बल = १३० N'
   },
   {
     type: 'numerical',
     id: 'num-4',
-    q: '५ (घ). कारमा ब्रेक लगाउँदा लागेको परिणामात्मक बल',
-    given: 'पिण्ड m = 1500 kg, u = 72 km/h = 20 m/s, v = 18 km/h = 5 m/s, दूरी s = 50 m',
-    formula: 'v² = u² + 2as,  F = ma',
-    calc: '(5)² = (20)² + 2 × a × 50 ⟹ 25 = 400 + 100a ⟹ 100a = -375 ⟹ a = -3.75 m/s²\\nF = 1500 kg × (-3.75 m/s²) = -5625 N',
-    res: 'परिणामात्मक ब्रेक बल = ५६२५ N (गतिको विपरित दिशामा)'
+    q: '५ (घ). १५०० केजीको कारमा ब्रेक लगाउँदा लागेको परिणामात्मक बल र मन्दता',
+    given: '• कारको पिण्ड (m) = 1500 kg<br>• सुरुको गति (u) = 72 km/h = (72 × 1000)/3600 = 20 m/s<br>• अन्तिम गति (v) = 18 km/h = (18 × 1000)/3600 = 5 m/s<br>• पार गरेको दूरी (s) = 50 m',
+    formula: '• चालको समीकरण: v² = u² + 2as<br>• न्युटनको दोस्रो नियम: F = ma',
+    calc: '१. प्रवेग (a) को लागि:<br>(5)² = (20)² + 2 × a × 50<br>25 = 400 + 100a<br>100a = 25 - 400 = -375<br>a = -375 / 100 = -3.75 m/s²  (मन्दता = 3.75 m/s²)<br><br>२. परिणामात्मक ब्रेक बलका लागि:<br>F = 1500 kg × (-3.75 m/s²) = -5625 N',
+    res: 'मन्दता = ३.७५ m/s² र परिणामात्मक ब्रेक बल = ५६२५ N (गतिको विपरित दिशामा)'
   },
   {
     type: 'numerical',
     id: 'num-5',
-    q: '५ (ङ). बसको गति-समय ग्राफ विश्लेषण (खण्ड CD को स्थानान्तरण)',
-    given: 'गति v = 20 m/s (समान गति), समय अन्तराल t = 14s - 10s = 4 s',
-    formula: 's = v × t (रेखा मुनिको क्षेत्रफल)',
-    calc: 's = 20 m/s × 4 s = 80 m (पूर्व तर्फ)',
+    q: '५ (ङ). बसको गति-समय ग्राफ विश्लेषण (खण्ड CD को प्रवेग र स्थानान्तरण)',
+    given: '• खण्ड CD मा गति (v) = 20 m/s (समान गति)<br>• समय अन्तराल (t) = 14 s - 10 s = 4 s<br>• खण्ड CD को प्रवेग = 0 m/s²',
+    formula: '• स्थानान्तरण s = v × t (रेखा मुनिको आयतको क्षेत्रफल = लम्बाइ × चौडाइ)',
+    calc: 'खण्ड CD मा रेखा तेर्सो भएकाले गति स्थिर (20 m/s) छ:<br>प्रवेग a = (20 - 20) / 4 = 0 m/s²<br><br>पार गरेको स्थानान्तरण:<br>s = 20 m/s × 4 s = 80 m (पूर्व तर्फ)',
     res: 'खण्ड CD को प्रवेग = ० m/s² र स्थानान्तरण = ८० m पूर्व'
   },
 
@@ -1529,35 +1944,54 @@ function renderC9U7Exercises() {
       `;
     } else if (item.type === 'structured') {
       html += `
-        <div class="c9u7-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3">
-          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">
-            ४. विस्तृत प्रश्नोत्तर (Structured Q&A)
-          </span>
-          <h4 class="text-sm md:text-base font-bold text-slate-900">${item.q}</h4>
-          <div class="p-3.5 rounded-2xl bg-purple-50/40 border border-purple-200 text-xs md:text-sm text-slate-800 leading-relaxed whitespace-pre-line">
-            ${item.ans}
+        <div class="c9u7-ex-card bg-white border border-slate-200 rounded-3xl p-5 md:p-6 shadow-sm space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold px-3 py-1 rounded-full bg-purple-100 text-purple-800">
+              ४. विस्तृत प्रश्नोत्तर (Structured Q&A)
+            </span>
+            <span class="text-xs font-mono font-semibold text-purple-600 bg-purple-50 px-2.5 py-0.5 rounded-lg border border-purple-200">
+              पाठ्यपुस्तक ढाँचा
+            </span>
+          </div>
+          <h4 class="text-base md:text-lg font-bold text-slate-900 border-b border-slate-100 pb-2.5">
+            ${item.q}
+          </h4>
+          <div class="space-y-3 text-xs md:text-sm text-slate-800 leading-relaxed">
+            ${item.htmlContent ? item.htmlContent : `<div class="p-3.5 rounded-2xl bg-purple-50/40 border border-purple-200 whitespace-pre-line">${item.ans}</div>`}
           </div>
         </div>
       `;
     } else if (item.type === 'numerical') {
       html += `
-        <div class="c9u7-ex-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3">
+        <div class="c9u7-ex-card bg-white border border-slate-200 rounded-3xl p-5 md:p-6 shadow-sm space-y-4">
           <div class="flex items-center justify-between">
-            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">
+            <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-100 text-emerald-800">
               ५. गणितीय समस्या (Numerical Problem)
             </span>
-            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-500 text-white font-mono">
-              हल सहित
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-600 text-white font-mono shadow-xs">
+              ✓ पूर्ण हल
             </span>
           </div>
-          <h4 class="text-sm md:text-base font-bold text-slate-900">${item.q}</h4>
-          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-xs md:text-sm text-slate-800 space-y-2">
-            <div class="font-mono text-slate-600"><strong>दिइएको छ:</strong> ${item.given}</div>
-            <div class="font-mono text-indigo-700"><strong>सूत्र:</strong> ${item.formula}</div>
-            <div class="font-mono text-slate-800 whitespace-pre-line bg-white p-2.5 rounded-xl border border-slate-200"><strong>गणना:</strong>\\n${item.calc}</div>
-            <div class="p-2 rounded-xl bg-emerald-100 text-emerald-900 font-bold">
-              ✓ ${item.res}
+          <h4 class="text-base md:text-lg font-bold text-slate-900 border-b border-slate-100 pb-2.5">
+            ${item.q}
+          </h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+            <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+              <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">१. दिइएको मानहरू (Given Data)</div>
+              <div class="space-y-1 font-mono text-slate-700 leading-relaxed">${item.given}</div>
             </div>
+            <div class="p-3.5 rounded-2xl bg-indigo-50/60 border border-indigo-200 space-y-2">
+              <div class="text-xs font-bold text-indigo-600 uppercase tracking-wider">२. पत्ता लगाउनुपर्ने र सूत्र (Formulas)</div>
+              <div class="space-y-1 font-mono text-indigo-900 leading-relaxed">${item.formula}</div>
+            </div>
+          </div>
+          <div class="p-4 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50/30 border border-slate-200 space-y-2 text-xs md:text-sm">
+            <div class="text-xs font-bold text-blue-700 uppercase tracking-wider">३. चरणबद्ध हिसाब (Step-by-step Solution)</div>
+            <div class="p-3 rounded-xl bg-white border border-slate-200 space-y-2 font-mono text-slate-800 leading-relaxed">${item.calc}</div>
+          </div>
+          <div class="p-3.5 rounded-2xl bg-emerald-50 border-2 border-emerald-400 text-emerald-950 font-bold flex items-center justify-between text-xs md:text-sm">
+            <span>💡 अन्तिम निष्कर्ष:</span>
+            <span class="font-mono text-sm md:text-base">${item.res}</span>
           </div>
         </div>
       `;
@@ -1577,6 +2011,12 @@ function renderC9U7Exercises() {
   });
 
   container.innerHTML = html;
+
+  if (window.MathJax && window.MathJax.Hub) {
+    window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub, container]);
+  } else if (window.renderOfflineMath) {
+    window.renderOfflineMath(container);
+  }
 }
 """)
 
@@ -1598,28 +2038,28 @@ const C9U7_TIERS_DATA = [
     id: 'k-2',
     badge: 'ज्ञानात्मक (K2)',
     q: '२. १ न्युटन बल (1 Newton Force) लाई परिभाषित गर्नुहोस् ।',
-    ans: '१ किलोग्राम (1 kg) पिण्ड भएको कुनै वस्तुमा बलको दिशामा १ मिटर प्रति सेकेन्ड वर्ग (1 m/s²) को प्रवेग उत्पन्न गराउन आवश्यक पर्ने परिणामात्मक बाह्य बललाई १ न्युटन बल (1 N) भनिन्छ।\\nसूत्र: 1 N = 1 kg × 1 m/s² = 1 kg·m/s²।'
+    ans: '१ किलोग्राम (1 kg) पिण्ड भएको कुनै वस्तुमा १ मिटर प्रति सेकेन्ड वर्ग (1 m/s²) को प्रवेग उत्पन्न गराउन आवश्यक पर्ने बाह्य परिणामात्मक बललाई १ न्युटन (1 N) बल भनिन्छ।\\nसूत्र: 1 N = 1 kg × 1 m/s² = 1 kg·m/s²।'
   },
   {
     tier: 'knowledge',
     id: 'k-3',
     badge: 'ज्ञानात्मक (K3)',
-    q: '३. संवेग (Linear Momentum) भनेको के हो ? यसको गणितीय सूत्र र SI एकाइ लेख्नुहोस् ।',
-    ans: 'कुनै चालमा रहेको वस्तुको पिण्ड र त्यसको वेगको गुणनफलबाट प्राप्त हुने गतिको जम्मा परिमाणलाई संवेग भनिन्छ।\\n• गणितीय सूत्र: p = m × v\\n• SI एकाइ: किलोग्राम मिटर प्रति सेकेन्ड (kg·m/s)।'
+    q: '३. संवेग (Momentum) भनेको के हो ? यसको गणितीय सूत्र र SI एकाइ लेख्नुहोस् ।',
+    ans: 'कुनै चालमा रहेको वस्तुमा भएको गति र पिण्डको संयुक्त प्रभावलाई संवेग भनिन्छ। अर्को शब्दमा, वस्तुको पिण्ड (m) र वेग (v) को गुणनफललाई संवेग (p) भनिन्छ।\\n• सूत्र: p = m × v\\n• SI एकाइ: किलोग्राम मिटर प्रति सेकेन्ड (kg·m/s)।'
   },
   {
     tier: 'knowledge',
     id: 'k-4',
     badge: 'ज्ञानात्मक (K4)',
-    q: '४. गति-समय ग्राफको रेखा मुनिको क्षेत्रफलले के जनाउँछ ?',
-    ans: 'गति-समय ग्राफ (v-t Graph) को रेखा र समय-अक्षबीचको बन्द क्षेत्रफलले उक्त समयावधिमा वस्तुले पार गरेको जम्मा स्थानान्तरण वा दूरी (s) जनाउँछ। (Area = v × t = Distance s)।'
+    q: '४. चालसम्बन्धी न्युटनको पहिलो नियम लेख्नुहोस् ।',
+    ans: '"कुनै वस्तुमाथि बाह्य असन्तुलित बलले असर नगरेसम्म, स्थिर अवस्थामा रहेको वस्तु स्थिर अवस्थामै रहन्छ र चाल अवस्थामा रहेको वस्तु सिधा रेखामा समान गतिले निरन्तर चलिरहन्छ।" यस नियमलाई इनर्सियाको नियम (Law of Inertia) पनि भनिन्छ।'
   },
   {
     tier: 'knowledge',
     id: 'k-5',
     badge: 'ज्ञानात्मक (K5)',
     q: '५. इलास्टिक सीमा (Elastic Limit) भनेको के हो ?',
-    ans: 'कुनै इलास्टिक वस्तुमा लगाउन सकिने विरूपक बलको त्यो अधिकतम मान, जसभित्र बल हटाउँदा वस्तु पूर्ण रूपमा आफ्नो सुरुको आकारमा फर्कन सक्छ तर त्योभन्दा बढी बल लगाउँदा वस्तुमा स्थायी विरूपण आउँछ वा चुँडिन्छ, त्यसलाई इलास्टिक सीमा भनिन्छ।'
+    ans: 'कुनै इलास्टिक वस्तुमा बाह्य विरूपक बल लगाउँदा आफ्नो इलास्टिक गुण कायम राख्न सक्ने अधिकतम बलको सीमालाई इलास्टिक सीमा भनिन्छ। यो सीमाभन्दा बढी बल लगाएमा वस्तुमा स्थायी प्लास्टिक विरूपण हुन्छ वा वस्तु चुँडिन्छ।'
   },
 
   // 6 Understanding
@@ -1627,43 +2067,43 @@ const C9U7_TIERS_DATA = [
     tier: 'understanding',
     id: 'u-1',
     badge: 'बोधात्मक (U1)',
-    q: '६. गति-समय ग्राफमा सिधा तेर्सो रेखा र सिधा माथितिर गएको रेखाले जनाउने चालको प्रकृतिबिच तुलना गर्नुहोस् ।',
-    ans: '• सिधा तेर्सो रेखा (समय अक्षसँग समानान्तर): झुकाव शून्य (Slope = 0) हुन्छ। यसले वस्तु समान गति (Uniform velocity) मा रहेको र प्रवेग शून्य (a = 0) रहेको जनाउँछ।\\n• सिधा माथितिर गएको रेखा: झुकाव स्थिर र धनात्मक हुन्छ। यसले वस्तु समान प्रवेग (Uniform acceleration) ले गुडिरहेको जनाउँछ।'
+    q: '६. समान गतिमा गुडिरहेका कार र ट्रकलाई रोक्न ट्रकमा किन धेरै ब्रेक बल आवश्यक पर्छ ?',
+    ans: 'संवेग p = mv अनुसार, गति समान भए तापनि ट्रकको पिण्ड (m) कारको भन्दा अत्यधिक धेरै हुन्छ। फलस्वरूप ट्रकको संवेग कारको भन्दा निकै धेरै हुन्छ। संवेग परिवर्तनको दर नै बल (F = Δp/t) भएकाले निश्चित समयमा धेरै संवेग भएको ट्रकलाई रोक्न धेरै ब्रेक बल आवश्यक पर्दछ।'
   },
   {
     tier: 'understanding',
     id: 'u-2',
     badge: 'बोधात्मक (U2)',
-    q: '७. गुडिरहेको बसमा चालकले अचानक ब्रेक लगाउँदा यात्रुहरू अगाडितर्फ किन हुत्तिन्छन् ?',
-    ans: 'बस गुडिरहँदा यात्रुको सम्पूर्ण शरीर पनि बसकै गतिमा चाल अवस्थामा हुन्छ। अचानक ब्रेक लगाउँदा बसको सिट र भुइँसँग सम्पर्कमा रहेको शरीरको तल्लो भाग तुरुन्तै स्थिर अवस्थामा आउँछ। तर शरीरको माथिल्लो भाग चाल इनर्सिया (Inertia of motion) का कारण अगाडि नै बढिरहन खोज्ने हुनाले यात्रुहरू अगाडितर्फ हुत्तिन्छन्।'
+    q: '७. चालका तीन समीकरणहरू (Equations of Motion) प्रयोग गर्नका लागि आवश्यक मुख्य सर्त के हो ?',
+    ans: 'चालका समीकरणहरू (v = u + at, v² = u² + 2as, s = ut + ½at²) प्रयोग गर्न वस्तु सिधा रेखामा (Linear motion) गुडिरहेको हुनुपर्छ र त्यसको प्रवेग एकनास वा समान (Uniform acceleration) हुनुपर्छ। प्रवेग परिवर्तनशील वा असमान भएमा यी समीकरणहरू सिधै प्रयोग गर्न सकिँदैन।'
   },
   {
     tier: 'understanding',
     id: 'u-3',
     badge: 'बोधात्मक (U3)',
-    q: '८. क्रिकेट खेलमा फिल्डरले क्याच समात्दा आफ्नो हात पछाडितर्फ किन तान्छ ?',
-    ans: 'न्युटनको दोस्रो नियम अनुसार F = Δp / t हुन्छ। हात पछाडि तान्दा बललाई रोकिन लाग्ने समय (t) बढ्छ, जसले गर्दा संवेग परिवर्तनको दर घटेर हत्केलामा बलले लगाउने ठक्कर बल (F) निकै कम हुन्छ र हातमा चोटपटक लाग्नबाट जोगिन्छ।'
+    q: '८. क्रिया र प्रतिक्रिया बलहरू परिमाणमा बराबर र विपरीत दिशामा भए तापनि तिनीहरूले एकअर्कालाई किन रद्द (Cancel) गर्दैनन् ?',
+    ans: 'क्रिया र प्रतिक्रिया बलहरू कहिल्यै पनि एउटै वस्तुमा लाग्दैनन्। न्युटनको तेस्रो नियम अनुसार यदि पहिलो वस्तुले दोस्रो वस्तुमा क्रिया बल लगाउँछ भने दोस्रो वस्तुले पहिलो वस्तुमा प्रतिक्रिया बल लगाउँछ। दुई भिन्न वस्तुहरूमा लाग्ने भएकाले यिनीहरूले एकअर्कालाई रद्द गर्न सक्दैनन्।'
   },
   {
     tier: 'understanding',
     id: 'u-4',
     badge: 'बोधात्मक (U4)',
-    q: '९. न्युटनको तेस्रो नियम अनुसार क्रिया र प्रतिक्रिया बल बराबर र विपरीत हुन्छन् भने तिनीहरूले एकअर्कालाई किन रद्द गर्दैनन् ?',
-    ans: 'कुनै दुई बलहरूले एकअर्कालाई रद्द गर्नका लागि ती बलहरू एउटै वस्तुमा विपरीत दिशाबाट लागेको हुनुपर्छ। तर न्युटनको तेस्रो नियम अनुसार क्रिया पहिलो वस्तुले दोस्रो वस्तुमा र प्रतिक्रिया दोस्रो वस्तुले पहिलो वस्तुमा लगाउँछ। क्रिया र प्रतिक्रिया दुई फरक वस्तुहरूमा लाग्ने हुनाले यिनीहरूले कहिल्यै एकअर्कालाई रद्द गर्न सक्दैनन्।'
+    q: '९. दूरी-समय ग्राफको झुकाव (Slope) ले गति दिन्छ भनी कसरी पुष्टि गर्न सकिन्छ ?',
+    ans: 'ग्राफको झुकाव Slope = (Y-अक्षमा परिवर्तन) / (X-अक्षमा परिवर्तन) हुन्छ। दूरी-समय ग्राफमा Y-अक्षमा दूरी (s) र X-अक्षमा समय (t) राखिन्छ। तसर्थ झुकाव Slope = Δs / Δt हुन्छ। दूरी पार गर्न लागेको समयको दर नै गति (Velocity) भएकाले झुकावले वस्तुको गति जनाउँछ।'
   },
   {
     tier: 'understanding',
     id: 'u-5',
     badge: 'बोधात्मक (U5)',
-    q: '१०. रबर ब्यान्डलाई तन्काउँदा आकार परिवर्तन हुन्छ तर बल हटाउँदा पुरानै आकारमा फर्कन्छ, किन ?',
-    ans: 'रबर उच्च इलास्टिसिटी भएको वस्तु हो। तन्काउँदा यसका अणुहरूबीच विरूपक बलको विपरीत दिशामा तीव्र आन्तरिक रिस्टोरिङ बल (Restoring force) विकसित हुन्छ। जब बाह्य बल हटाइन्छ, यही रिस्टोरिङ बलले अणुहरूलाई पुनः सुरुको न्यूनतम ऊर्जाको अवस्थामा तानेर पुरानै आकारमा फर्काउँछ।'
+    q: '१०. गुडिरहेको बसबाट एक्कासि हामफाल्दा मानिस अगाडितर्फ किन पछारिन्छ ?',
+    ans: 'बस गुडिरहँदा यात्रुको सम्पूर्ण शरीर पनि बसकै गतिमा चाल अवस्थामा हुन्छ। भुइँमा खुट्टाले टेक्नासाथ खुट्टा घर्षणका कारण तुरुन्तै स्थिर अवस्थामा आउँछ, तर शरीरको माथिल्लो भाग चाल इनर्सिया (Inertia of motion) का कारण अगाडि नै हुत्तिन्छ, जसले गर्दा मानिस सन्तुलन गुमाएर अगाडि पछारिन्छ।'
   },
   {
     tier: 'understanding',
     id: 'u-6',
     badge: 'बोधात्मक (U6)',
-    q: '११. पहाडी घुम्तीहरूमा सडकको बाहिरी भागलाई भित्री भागभन्दा केही अग्लो (Banking of Roads) किन बनाइन्छ ?',
-    ans: 'तीव्र गतिमा गुडिरहेको गाडी घुम्तीमा मोडिँदा दिशाको इनर्सियाका कारण सिधा अगाडि भीरबाट खस्ने खतरा हुन्छ। सडकको बाहिरी भाग अग्लो बनाउँदा गाडीको तौल र जमिनको प्रतिक्रिया बलको तेर्सो घटकले आवश्यक सेन्ट्रिपेटल बल प्रदान गर्छ, जसले गर्दा गाडी नचिप्लिई सुरक्षित घुम्न सक्छ।'
+    q: '११. रबरको बल र गिलो माटोको डल्लो भुइँमा खसाल्दा रबरको बल उफ्रन्छ तर माटो टाँसिन्छ, किन ?',
+    ans: 'रबरको बल उच्च इलास्टिसिटी भएको वस्तु हो। ठोक्किँदा विरूपणको विरोध गर्दै तत्काल तीव्र आन्तरिक रिस्टोरिङ बल उत्पन्न गरी बललाई माथितिर धकेल्छ। तर गिलो माटो प्लास्टिक वस्तु हो जसमा आन्तरिक रिस्टोरिङ बल विकसित हुँदैन र यसले स्थायी रूपमा नयाँ आकार ग्रहण गरी भुइँमै टाँसिन्छ।'
   },
 
   // 5 Higher Ability
@@ -1671,36 +2111,36 @@ const C9U7_TIERS_DATA = [
     tier: 'higher_ability',
     id: 'ha-1',
     badge: 'उच्च दक्षता (HA1)',
-    q: '१२. कार स्थिर अवस्थाबाट सुरु भई १०s सम्म २ m/s² प्रवेगले गुड्छ, त्यसपछि २०s समान गतिले र ५s मा रोकिन्छ। जम्मा दूरी कति हुन्छ ?',
-    ans: '• खण्ड १ (०-१०s): u = 0, a = 2, t = 10 ⟹ v = 20 m/s, s₁ = ½ × 2 × 100 = 100 m।\\n• खण्ड २ (१०-३०s): v = 20 m/s समान, t = 20s ⟹ s₂ = 20 × 20 = 400 m।\\n• खण्ड ३ (३०-३५s): u = 20, v = 0, t = 5s ⟹ s₃ = ½ × (20 + 0) × 5 = 50 m।\\n• जम्मा दूरी s = १०० + ४०० + ५० = ५५० मिटर (550 m)।'
+    q: '१२. रकेट प्रक्षेपण (Rocket Launch) को वैज्ञानिक कार्यप्रणाली न्युटनको तेस्रो नियम र संवेग संरक्षणको सिद्धान्तका आधारमा विश्लेषण गर्नुहोस् ।',
+    ans: 'रकेटको दहन च्याम्बरमा इन्धन बल्दा अत्यधिक चाप र उच्च तापक्रमको ग्यास पछाडिको नोजलबाट तीव्र गतिमा बाहिर निस्कन्छ।\\n१. न्युटनको तेस्रो नियम अनुसार: ग्यास पछाडि निस्कनु "क्रिया बल" हो भने त्यसको प्रतिक्रिया स्वरूप निस्किएको ग्यासले रकेटलाई अगाडितर्फ उत्तिकै शक्तिशाली "प्रतिक्रिया बल" (Upward thrust) प्रदान गर्दछ।\\n२. संवेग संरक्षण नियम अनुसार: पछाडि निस्कने ग्यासको संवेग र रकेटको अगाडि बढ्ने संवेग बराबर हुन्छ (m_gas × v_gas = M_rocket × V_rocket)। यसै सिद्धान्तले गर्दा अन्तरिक्षको हावाविहीन शून्यतामा पनि रकेट तीव्र गतिमा अगाडि बढ्न सक्छ।'
   },
   {
     tier: 'higher_ability',
     id: 'ha-2',
     badge: 'उच्च दक्षता (HA2)',
-    q: '१३. १००० kg को ट्रक ५४ km/h गतिबाट २ सेकेन्डमा रोकिँदा मन्दता बल कति लाग्छ र सिटबेल्ट नबाँधे के हुन्थ्यो ?',
-    ans: '• u = 54 km/h = 15 m/s, v = 0, t = 2s ⟹ a = (0 - 15) / 2 = -7.5 m/s²।\\n• मन्दता बल F = ma = 1000 kg × (-7.5 m/s²) = -7500 N (परिमाण ७५०० N)।\\n• सिटबेल्ट नबाँधेको भए चालकको शरीर चाल इनर्सियाका कारण १५ m/s कै वेगले अगाडि हुत्तिएर स्टेरिङ र विन्डसिल्डमा भयानक रूपमा बजारिने थियो।'
+    q: '१३. आधुनिक सवारी साधनहरूमा एयरब्याग (Airbag) र क्रम्पल जोन (Crumple Zone) ले यात्रुको ज्यान कसरी जोगाउँछन् ? न्युटनको दोस्रो नियमका आधारमा पुष्टि गर्नुहोस् ।',
+    ans: 'न्युटनको दोस्रो नियम अनुसार बल F = Δp / Δt हुन्छ, अर्थात् संवेग परिवर्तन हुन लाग्ने समय (Δt) जति धेरै हुन्छ, वस्तुमा लाग्ने बल (F) त्यति नै कम हुन्छ।\\nदुर्घटनाका बेला गाडीको अगाडिको भाग (Crumple zone) कुच्चिएर र एयरब्याग तुरुन्तै फुलेर यात्रु रोकिन लाग्ने समय (Collision time Δt) उल्लेखनीय रूपमा बढाइदिन्छन्। समय बढेपछि यात्रुको शरीरमा पर्ने घातक धक्का वा बल अत्यन्त न्यून हुन पुग्छ, जसले गर्दा यात्रु गम्भीर चोटपटक र मृत्युबाट जोगिन्छन्।'
   },
   {
     tier: 'higher_ability',
     id: 'ha-3',
     badge: 'उच्च दक्षता (HA3)',
-    q: '१४. ४ kg बन्दुकबाट ०.०२ kg (२०g) को गोली ४०० m/s वेगले निस्कँदा बन्दुक पछाडि धकेलिने वेग हिसाब गर्नुहोस् ।',
-    ans: 'संवेग संरक्षणको सिद्धान्त अनुसार सुरुको कुल संवेग = अन्तिम कुल संवेग (0 = M·V + m·v)।\\n⟹ 4 × V + 0.02 × 400 = 0 ⟹ 4V + 8 = 0 ⟹ 4V = -8 ⟹ V = -2 m/s।\\nउत्तर: बन्दुक पछाडि धकेलिने वेग २ m/s हो (न्युटनको तेस्रो नियम र संवेग संरक्षण)।'
+    q: '१४. ५४ km/h को गतिमा गुडिरहेको १२०० kg को कारलाई चालकले ब्रेक लगाई ६ सेकेन्डमा रोकेछन् भने उत्पन्न मन्दता र ब्रेकले लगाएको परिणामात्मक बल हिसाब गर्नुहोस् ।',
+    ans: 'दिइएको छ:\\n• सुरुको गति u = 54 km/h = (54 × 1000)/3600 = 15 m/s\\n• अन्तिम गति v = 0 m/s (कार रोकिएकोले)\\n• समय t = 6 s\\n• पिण्ड m = 1200 kg\\n\\n१. प्रवेग a = (v - u) / t = (0 - 15) / 6 = -2.5 m/s²\\n(ऋणात्मक चिन्हले मन्दता जनाउँछ, तसर्थ मन्दता = २.५ m/s²)।\\n\\n२. परिणामात्मक बल F = m × a = 1200 kg × (-2.5 m/s²) = -3000 N।\\nउत्तर: उत्पन्न मन्दता २.५ m/s² र ब्रेक बल ३००० N (गतिको विपरित दिशामा) हो।'
   },
   {
     tier: 'higher_ability',
     id: 'ha-4',
     badge: 'उच्च दक्षता (HA4)',
-    q: '१५. ४४.१ मिटर अग्लो पुलबाट ढुङ्गा खसाल्दा पानीमा ठोक्किन लाग्ने समय र पानी छुँदाको वेग हिसाब गर्नुहोस् ।',
-    ans: '• u = 0, h = 44.1 m, g = 9.8 m/s²।\\n• h = ut + ½gt² ⟹ 44.1 = 0 + 4.9t² ⟹ t² = 44.1 / 4.9 = 9 ⟹ t = 3 सेकेन्ड।\\n• अन्तिम वेग v = u + gt = 0 + (9.8 × 3) = २९.४ m/s।'
+    q: '१५. पहाडी सडकका घुम्तीहरूमा बाहिरी भागलाई भित्री भागभन्दा केही अग्लो (Banking of Roads) किन बनाइन्छ ?',
+    ans: 'सवारी साधन घुम्तीमा मोडिँदा त्यसलाई आवश्यक पर्ने सेन्ट्रिपेटल बल पाङ्ग्रा र सडकबीचको घर्षणले मात्र पर्याप्त नहुन सक्छ। विशेष गरी वर्षाको समयमा सडक चिप्लो हुँदा घर्षण झन् घट्छ र गाडी दिशाको इनर्सियाले भीरबाट खस्ने खतरा हुन्छ।\\nसडकको बाहिरी छेउलाई केही उठाएर (Banking गरेर) बनाउँदा, सडकले गाडीमा लगाउने सामान्य प्रतिक्रिया बल (Normal Reaction) को तेर्सो घटक (N sin θ) ले घुम्नका लागि आवश्यक सेन्ट्रिपेटल बल प्रदान गर्छ। यसले गर्दा घर्षणमा मात्र भर पर्नु पर्दैन र तीव्र गतिको गाडी पनि नचिप्लिई सुरक्षित रूपमा मोडिन सक्छ।'
   },
   {
     tier: 'higher_ability',
     id: 'ha-5',
     badge: 'उच्च दक्षता (HA5)',
-    q: '१६. रकेट प्रक्षेपण (Rocket Launch) को कार्यप्रणालीलाई न्युटनको तेस्रो नियम र संवेग संरक्षणका आधारमा व्याख्या गर्नुहोस् ।',
-    ans: '१. क्रिया बल: रकेटको इन्जिनमा इन्धन जलेर अत्यधिक ताप र चापको ग्यास नोजलबाट तीव्र वेगमा पछाडि निस्कन्छ।\\n२. प्रतिक्रिया बल: न्युटनको तेस्रो नियम (F_Action = -F_Reaction) अनुसार पछाडि निस्किएको ग्यासले रकेटमा बराबर तर अगाडितर्फ अपवर्ड थ्रस्ट (Upward thrust) दिन्छ।\\n३. संवेग संरक्षण: पछाडि निस्कने ग्यासको संवेग बराबर रकेटले माथितिर संवेग प्राप्त गर्छ, जसले गर्दा रकेट तीव्र प्रवेगका साथ अन्तरिक्षमा उड्छ।'
+    q: '१६. कुनै स्प्रिङमा १० N भार झुन्ड्याउँदा २ cm तन्किन्छ भने ३० N भार झुन्ड्याउँदा कति तन्किन्छ ? यदि ५० N भार झुन्ड्याउँदा स्प्रिङ पुरानै अवस्थामा फर्केन भने यसको वैज्ञानिक कारण के हो ?',
+    ans: '१. हुकको नियम (Hooke\\\'s Law) अनुसार इलास्टिक सीमाभित्र विरूपण भारसँग समानुपातिक हुन्छ (F = kx)।\\nयहाँ k = F₁ / x₁ = 10 N / 2 cm = 5 N/cm।\\n३० N भार झुन्ड्याउँदा तन्किने लम्बाइ x₂ = F₂ / k = 30 N / 5 = ६ cm तन्किन्छ।\\n\\n२. ५० N भार झुन्ड्याउँदा स्प्रिङ पुरानै अवस्थामा नफर्कनुको कारण:\\nउक्त स्प्रिङको इलास्टिक सीमा (Elastic Limit) ३० N देखि ४० N को बीचमा रहेको थियो। ५० N भारले स्प्रिङको इलास्टिक सीमा नाघेकाले यसका अणुहरूबीचको आणविक बन्धन स्थायी रूपमा सरेर स्प्रिङमा स्थायी प्लास्टिक विरूपण (Plastic Deformation) भयो। त्यसैले भार हटाउँदा पनि यो पुरानै आकारमा फर्कन सकेन।'
   }
 ];
 
@@ -1738,15 +2178,15 @@ function renderC9U7Tiers() {
     if (item.tier === 'higher_ability') badgeClass = 'bg-rose-100 text-rose-800';
 
     html += `
-      <div class="c9u7-tier-card bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-3">
+      <div class="c9u7-tier-card bg-white border border-slate-200 rounded-3xl p-5 md:p-6 shadow-sm space-y-3">
         <div class="flex items-center justify-between">
-          <span class="text-xs font-bold px-2.5 py-1 rounded-full ${badgeClass}">
+          <span class="text-xs font-bold px-3 py-1 rounded-full ${badgeClass}">
             ${item.badge}
           </span>
-          <span class="text-xs font-mono text-slate-400">CDC Model Q&A</span>
+          <span class="text-xs font-mono text-slate-400 font-semibold">CDC Model Question</span>
         </div>
-        <h4 class="text-sm md:text-base font-bold text-slate-900">${item.q}</h4>
-        <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-xs md:text-sm text-slate-800 leading-relaxed whitespace-pre-line">
+        <h4 class="text-base font-bold text-slate-900">${item.q}</h4>
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs md:text-sm text-slate-800 leading-relaxed whitespace-pre-line">
           ${item.ans}
         </div>
       </div>
@@ -1754,6 +2194,12 @@ function renderC9U7Tiers() {
   });
 
   container.innerHTML = html;
+
+  if (window.MathJax && window.MathJax.Hub) {
+    window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub, container]);
+  } else if (window.renderOfflineMath) {
+    window.renderOfflineMath(container);
+  }
 }
 """)
 
