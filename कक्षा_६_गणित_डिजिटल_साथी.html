@@ -29699,14 +29699,684 @@ eq 6$</div>
 </div>
 
 
-      <!-- Placeholder View for Units 10 to 19 -->
+
+<!-- CLASS 9 SCIENCE: UNIT 10 - WAVE (तरङ्ग) -->
+<div id="c9-view-10" class="hidden flex-1 min-w-0 flex flex-col">
+  <!-- Unit Header Banner -->
+  <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-6 md:p-8 text-white shadow-xl mb-6 relative overflow-hidden" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%); color: #ffffff;">
+    <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>
+    <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+            कक्षा ९ • विज्ञान तथा प्रविधि
+          </span>
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+            एकाइ १० • भौतिक विज्ञान (Physics)
+          </span>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-black tracking-tight text-white mb-2">
+          एकाइ १०: तरङ्ग (Wave)
+        </h2>
+        <p class="text-xs md:text-sm text-slate-300 max-w-2xl leading-relaxed">
+          कम्पन र ऊर्जा प्रसारण, अनुप्रस्थ र अनुदैर्ध्य तरङ्ग, ध्वनि र प्रकाश, तरङ्ग समीकरण \(v = f \lambda\), प्रतिध्वनि र सोनारको बृहत् अन्तरक्रियात्मक डिजिटल प्रयोगशाला।
+        </p>
+      </div>
+      <!-- Quick Formula Badges -->
+      <div class="flex flex-col gap-2 shrink-0">
+        <div class="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono font-bold text-cyan-200 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+          \( v = f \lambda \)
+        </div>
+        <div class="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono font-bold text-indigo-200 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+          \( f = \frac{1}{T} \)
+        </div>
+        <div class="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono font-bold text-emerald-200 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          \( d = \frac{v \times t}{2} \)
+        </div>
+        <div class="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono font-bold text-purple-200 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+          \( c = 3 \times 10^8\text{ m/s} \)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unit 10 Tab Navigation Bar -->
+  <div class="flex items-center gap-2 overflow-x-auto pb-2 mb-6 scrollbar-none border-b border-slate-200">
+    <button onclick="setTabC9U10('concepts')" id="c9u10-tab-concepts" class="px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl bg-indigo-600 text-white shadow-md font-bold transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer ring-2 ring-indigo-400/30 min-h-[44px]">
+      <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+      <span>१. भर्चुअल भौतिक प्रयोगशाला (Virtual Physics Lab)</span>
+    </button>
+    <button onclick="setTabC9U10('exercises')" id="c9u10-tab-exercises" class="px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[44px]">
+      <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+      <span>२. सम्पूर्ण अभ्यास तथा समाधान (CDC Solutions)</span>
+    </button>
+    <button onclick="setTabC9U10('tiers')" id="c9u10-tab-tiers" class="px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[44px]">
+      <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+      <span>३. १६ स्तरीकृत नमुना प्रश्नोत्तर (Model Q&As)</span>
+    </button>
+    <button onclick="setTabC9U10('quiz')" id="c9u10-tab-quiz" class="px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[44px]">
+      <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+      <span>४. आत्म-मूल्याङ्कन क्विज (Self-Assessment Quiz)</span>
+    </button>
+  </div>
+
+  <!-- TAB 1: VIRTUAL PHYSICS LAB -->
+  <div id="c9u10-view-concepts" class="space-y-6">
+    <!-- Lab Submode Switcher -->
+    <div class="flex items-center gap-2 p-1.5 bg-slate-900/90 rounded-3xl text-white shadow-inner border border-slate-800">
+      <button onclick="setLabModeC9U10('wave')" id="c9u10-btn-mode-wave" class="flex-1 py-3 px-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-black text-xs md:text-sm shadow-md transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2 ring-2 ring-indigo-400/30">
+        <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        <span>१. तरङ्ग गति र रूप सिमुलेटर (Wave Motion Lab)</span>
+      </button>
+      <button onclick="setLabModeC9U10('echo')" id="c9u10-btn-mode-echo" class="flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700/80 font-bold text-xs md:text-sm transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2">
+        <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-width="2"></circle><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v9l4 4"></path></svg>
+        <span>२. प्रतिध्वनि र सोनार गहिराइ (Echo & SONAR Lab)</span>
+      </button>
+      <button onclick="setLabModeC9U10('audio')" id="c9u10-btn-mode-audio" class="flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700/80 font-bold text-xs md:text-sm transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2">
+        <svg class="icon-sm" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+        <span>३. फ्रिक्वेन्सी स्पेक्ट्रम र अडियो (Audio & Frequency Lab)</span>
+      </button>
+    </div>
+
+    <!-- MODE 1: WAVE MOTION SIMULATOR (Transverse vs Longitudinal) -->
+    <div id="c9u10-lab-mode-wave" class="space-y-6">
+      <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/80 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <h3 class="text-lg md:text-xl font-black text-slate-800 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-cyan-600"></span>
+              तरङ्ग गति र भौतिक स्वरूप प्रयोगशाला (Wave Motion & Mechanics)
+            </h3>
+            <p class="text-xs md:text-sm text-slate-500 mt-1">
+              आवृत्ति \( (f) \), आयाम \( (A) \) र गतिको प्रत्यक्ष नियन्त्रणबाट तरङ्ग समीकरण \( (v = f \lambda) \) को परीक्षण गर्नुहोस्।
+            </p>
+          </div>
+          <!-- Wave Type Switcher (Transverse vs Longitudinal) -->
+          <div class="flex items-center gap-1.5 bg-slate-100 p-1.5 rounded-2xl shrink-0">
+            <button onclick="setWaveTypeC9U10('transverse')" id="c9u10-btn-wavetype-transverse" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-xs cursor-pointer min-h-[38px]">
+              अनुप्रस्थ तरङ्ग (Transverse)
+            </button>
+            <button onclick="setWaveTypeC9U10('longitudinal')" id="c9u10-btn-wavetype-longitudinal" class="px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-indigo-900 cursor-pointer min-h-[38px]">
+              अनुदैर्ध्य तरङ्ग (Longitudinal)
+            </button>
+          </div>
+        </div>
+
+        <!-- Wave Type Information Banner -->
+        <div id="c9u10-wavetype-info" class="p-4 rounded-2xl bg-indigo-50/70 border border-indigo-100 text-xs md:text-sm text-indigo-950 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div class="space-y-1">
+            <div class="font-bold text-indigo-900 flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded-md bg-indigo-600 text-white text-[11px]" id="c9u10-wavetype-badge">अनुप्रस्थ तरङ्ग</span>
+              <span id="c9u10-wavetype-title">माध्यमका कणहरू तरङ्ग प्रसारणको दिशासँग लम्ब (Perpendicular, 90°) भएर कम्पन गर्छन्।</span>
+            </div>
+            <p class="text-indigo-800 text-xs" id="c9u10-wavetype-desc">
+              यसमा उच्च बिन्दुलाई <strong>शृङ्ग (Crest)</strong> र न्यून बिन्दुलाई <strong>गर्त (Trough)</strong> भनिन्छ। जस्तै: पानीको छाल, प्रकाश तरङ्ग।
+            </p>
+          </div>
+          <button onclick="toggleWaveAnimC9U10()" id="c9u10-btn-wave-play" class="px-4 py-2 rounded-xl bg-indigo-600 text-white font-bold text-xs shadow transition cursor-pointer min-h-[44px] shrink-0 flex items-center gap-2">
+            <span id="c9u10-wave-play-text">रोक्नुहोस् (Pause)</span>
+          </button>
+        </div>
+
+        <!-- Wave SVG Visualizer Canvas -->
+        <div class="bg-slate-950 rounded-2xl p-4 md:p-6 text-white space-y-4">
+          <div class="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800 pb-2">
+            <span class="font-bold text-slate-300">डाइनामिक तरङ्ग क्यानभास (Dynamic Waveform Canvas)</span>
+            <span class="font-mono text-cyan-400" id="c9u10-canvas-lambda-readout">λ = 20.0 m</span>
+          </div>
+
+          <div class="w-full overflow-hidden flex items-center justify-center py-2">
+            <svg id="c9u10-svg-wave" viewBox="0 0 600 220" class="w-full max-w-2xl h-auto select-none">
+              <!-- Grid Background -->
+              <rect x="0" y="0" width="600" height="220" fill="#0f172a" rx="12" />
+              <!-- Center Equilibrium Line -->
+              <line x1="40" y1="110" x2="560" y2="110" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 4" />
+              <text x="560" y="105" text-anchor="end" fill="#64748b" font-size="9" font-mono>सन्तुलन रेखा (Equilibrium Line)</text>
+
+              <!-- Dynamic Wave Path (For Transverse Wave) -->
+              <path id="c9u10-svg-sine-path" d="" fill="none" stroke="#38bdf8" stroke-width="3.5" />
+
+              <!-- Longitudinal Particles Group (For Longitudinal Wave) -->
+              <g id="c9u10-svg-long-group" class="hidden">
+                <!-- Injected dynamically in loop -->
+              </g>
+
+              <!-- Amplitude Marker Line -->
+              <g id="c9u10-svg-amp-marker">
+                <line id="c9u10-svg-amp-line" x1="150" y1="110" x2="150" y2="60" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3 2" />
+                <circle cx="150" cy="60" r="3" fill="#f59e0b" />
+                <text id="c9u10-svg-amp-text" x="156" y="85" fill="#fbbf24" font-size="10" font-mono font-bold>A = 3 cm</text>
+              </g>
+
+              <!-- Wavelength Marker Line -->
+              <g id="c9u10-svg-lambda-marker">
+                <line id="c9u10-svg-lambda-line" x1="150" y1="35" x2="350" y2="35" stroke="#10b981" stroke-width="2" />
+                <circle id="c9u10-svg-lambda-dot1" cx="150" cy="35" r="3" fill="#10b981" />
+                <circle id="c9u10-svg-lambda-dot2" cx="350" cy="35" r="3" fill="#10b981" />
+                <text id="c9u10-svg-lambda-text" x="250" y="28" text-anchor="middle" fill="#34d399" font-size="11" font-mono font-bold>तरङ्ग लम्बाइ (λ)</text>
+              </g>
+
+              <!-- Crest and Trough Labels -->
+              <text id="c9u10-svg-crest-label" x="150" y="50" text-anchor="middle" fill="#38bdf8" font-size="10" font-weight="bold">शृङ्ग (Crest)</text>
+              <text id="c9u10-svg-trough-label" x="250" y="180" text-anchor="middle" fill="#818cf8" font-size="10" font-weight="bold">गर्त (Trough)</text>
+            </svg>
+          </div>
+
+          <!-- Bottom Readout Banner -->
+          <div class="flex flex-wrap items-center justify-between gap-4 text-xs font-mono pt-3 border-t border-slate-800">
+            <div class="text-cyan-400 flex items-center gap-1.5">
+              <span>तरङ्ग गति (v):</span>
+              <span id="c9u10-readout-v" class="font-bold text-white">40 m/s</span>
+            </div>
+            <div class="text-indigo-400 flex items-center gap-1.5">
+              <span>आवृत्ति (f):</span>
+              <span id="c9u10-readout-f" class="font-bold text-white">2.0 Hz</span>
+            </div>
+            <div class="text-emerald-400 flex items-center gap-1.5">
+              <span>तरङ्ग लम्बाइ (λ = v/f):</span>
+              <span id="c9u10-readout-lambda" class="font-bold text-emerald-300">20.0 m</span>
+            </div>
+            <div class="text-amber-400 flex items-center gap-1.5">
+              <span>आवधिक समय (T = 1/f):</span>
+              <span id="c9u10-readout-timeperiod" class="font-bold text-amber-200">0.50 s</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sliders Controls Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+          <!-- Frequency (f) Slider -->
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-bold text-slate-700">आवृत्ति (Frequency, f)</label>
+              <span id="c9u10-val-f" class="text-xs font-mono font-black text-indigo-600 px-2 py-0.5 rounded-md bg-indigo-100">2.0 Hz</span>
+            </div>
+            <input type="range" id="c9u10-slider-f" min="1" max="10" step="0.5" value="2" oninput="updateWaveSimC9U10()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600">
+            <p class="text-[11px] text-slate-500">प्रति सेकेन्ड उत्पन्न हुने पूर्ण तरङ्ग संख्या।</p>
+          </div>
+
+          <!-- Amplitude (A) Slider -->
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-bold text-slate-700">आयाम (Amplitude, A)</label>
+              <span id="c9u10-val-amp" class="text-xs font-mono font-black text-amber-600 px-2 py-0.5 rounded-md bg-amber-100">3 cm</span>
+            </div>
+            <input type="range" id="c9u10-slider-amp" min="1" max="5" step="0.5" value="3" oninput="updateWaveSimC9U10()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-amber-600">
+            <p class="text-[11px] text-slate-500">सन्तुलन रेखाबाट कणहरूको अधिकतम विस्थापन।</p>
+          </div>
+
+          <!-- Wave Velocity (v) Slider -->
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-bold text-slate-700">तरङ्ग गति (Velocity, v)</label>
+              <span id="c9u10-val-v" class="text-xs font-mono font-black text-cyan-600 px-2 py-0.5 rounded-md bg-cyan-100">40 m/s</span>
+            </div>
+            <input type="range" id="c9u10-slider-v" min="10" max="100" step="5" value="40" oninput="updateWaveSimC9U10()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-cyan-600">
+            <p class="text-[11px] text-slate-500">माध्यममा तरङ्ग प्रसारण हुने सिधा गति।</p>
+          </div>
+        </div>
+
+        <!-- Interactive Formula Breakdown Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-4 rounded-2xl bg-cyan-50/70 border border-cyan-100 space-y-1">
+            <div class="text-[11px] font-bold text-cyan-700">१. तरङ्ग समीकरण (Wave Equation)</div>
+            <div id="c9u10-calc-wave-formula" class="text-xs font-mono text-cyan-900">\( v = f \lambda \implies \lambda = \frac{v}{f} = \frac{40}{2} = 20\text{ m} \)</div>
+            <div class="text-[10px] text-cyan-600">गति र आवृत्तिको अनुपात नै तरङ्ग लम्बाइ हो।</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-indigo-50/70 border border-indigo-100 space-y-1">
+            <div class="text-[11px] font-bold text-indigo-700">२. आवधिक समय (Time Period)</div>
+            <div id="c9u10-calc-tp-formula" class="text-xs font-mono text-indigo-900">\( T = \frac{1}{f} = \frac{1}{2} = 0.50\text{ s} \)</div>
+            <div class="text-[10px] text-indigo-600">एउटा पूर्ण कम्पन पुरा गर्न लाग्ने समय।</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-100 space-y-1">
+            <div class="text-[11px] font-bold text-emerald-700">३. प्रत्यक्ष वैज्ञानिक सम्बन्ध</div>
+            <div id="c9u10-res-relation" class="text-xs font-bold text-emerald-950">आवृत्ति बढाउँदा तरङ्ग लम्बाइ घट्छ (\( \lambda \propto \frac{1}{f} \))</div>
+            <div class="text-[10px] text-emerald-600">तरङ्ग गति स्थिर रहँदा आवृत्ति र लम्बाइ व्युत्क्रमानुपातिक हुन्छन्।</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODE 2: ECHO & SONAR LAB -->
+    <div id="c9u10-lab-mode-echo" class="hidden space-y-6">
+      <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/80 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <h3 class="text-lg md:text-xl font-black text-slate-800 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-emerald-600"></span>
+              प्रतिध्वनि र सोनार गहिराइ प्रयोगशाला (Echo & SONAR Distance Lab)
+            </h3>
+            <p class="text-xs md:text-sm text-slate-500 mt-1">
+              ध्वनिको परावर्तन, न्यूनतम दुरी \( (d \ge 16.6\text{ m}) \) र समुद्रको गहिराइ मापन \( (2d = v \times t) \) को प्रत्यक्ष सिमुलेटर।
+            </p>
+          </div>
+          <!-- Transmit Pulse Button -->
+          <button onclick="pingSoundPulseC9U10()" class="px-5 py-2.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs md:text-sm shadow-md transition flex items-center gap-2 cursor-pointer min-h-[44px]">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+            <span>ध्वनि पल्स पठाउनुहोस् (Ping Pulse!)</span>
+          </button>
+        </div>
+
+        <!-- Medium Selection Tabs -->
+        <div class="flex items-center gap-2 p-1.5 bg-slate-100 rounded-2xl">
+          <button onclick="setEchoMediumC9U10('air')" id="c9u10-btn-med-air" class="flex-1 py-2 px-3 rounded-xl bg-white text-indigo-900 font-bold text-xs shadow-xs cursor-pointer min-h-[38px]">
+            हावा (Air, 332 m/s)
+          </button>
+          <button onclick="setEchoMediumC9U10('water')" id="c9u10-btn-med-water" class="flex-1 py-2 px-3 rounded-xl text-slate-600 hover:text-indigo-900 font-bold text-xs cursor-pointer min-h-[38px]">
+            पानी/समुद्र (SONAR, 1500 m/s)
+          </button>
+          <button onclick="setEchoMediumC9U10('steel')" id="c9u10-btn-med-steel" class="flex-1 py-2 px-3 rounded-xl text-slate-600 hover:text-indigo-900 font-bold text-xs cursor-pointer min-h-[38px]">
+            इस्पात/ठोस (Steel, 5000 m/s)
+          </button>
+        </div>
+
+        <!-- Echo Simulation Visualizer (SVG) -->
+        <div class="bg-slate-950 rounded-2xl p-4 md:p-6 text-white space-y-4">
+          <div class="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800 pb-2">
+            <span class="font-bold text-slate-300">परावर्तन तथा प्रतिध्वनि एनिमेसन</span>
+            <span id="c9u10-echo-status-badge" class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30 text-[11px]">प्रतिध्वनि सुनिन्छ (Echo Heard!)</span>
+          </div>
+
+          <div class="w-full overflow-hidden flex items-center justify-center py-2">
+            <svg id="c9u10-svg-echo" viewBox="0 0 600 200" class="w-full max-w-2xl h-auto select-none">
+              <rect x="0" y="0" width="600" height="200" fill="#0f172a" rx="12" />
+              <!-- Ground / Water base -->
+              <line x1="40" y1="160" x2="560" y2="160" stroke="#334155" stroke-width="2" />
+
+              <!-- Source (Left side: Person / Ship) -->
+              <g transform="translate(70, 120)">
+                <circle cx="0" cy="0" r="16" fill="#0284c7" stroke="#38bdf8" stroke-width="2" />
+                <path d="M -8 16 L 8 16 L 4 38 L -4 38 Z" fill="#0369a1" />
+                <text x="0" y="4" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">स्रोत</text>
+                <text x="0" y="50" text-anchor="middle" fill="#94a3b8" font-size="9" font-bold>ध्वनि स्रोत</text>
+              </g>
+
+              <!-- Dynamic Reflector Wall (Right side) -->
+              <g id="c9u10-svg-wall-group" transform="translate(480, 50)">
+                <rect x="0" y="0" width="24" height="110" fill="#475569" stroke="#64748b" stroke-width="2" rx="4" />
+                <!-- Hatch pattern -->
+                <line x1="6" y1="15" x2="18" y2="25" stroke="#94a3b8" stroke-width="2" />
+                <line x1="6" y1="45" x2="18" y2="55" stroke="#94a3b8" stroke-width="2" />
+                <line x1="6" y1="75" x2="18" y2="85" stroke="#94a3b8" stroke-width="2" />
+                <text x="12" y="125" text-anchor="middle" fill="#cbd5e1" font-size="9" font-weight="bold">परावर्तक भित्ता</text>
+              </g>
+
+              <!-- Outgoing Sound Waves (Arcs moving right) -->
+              <g id="c9u10-svg-out-waves">
+                <path id="c9u10-svg-pulse-out" d="M 120 90 A 40 40 0 0 1 120 150" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" opacity="0" />
+              </g>
+
+              <!-- Returning Echo Waves (Arcs moving left) -->
+              <g id="c9u10-svg-return-waves">
+                <path id="c9u10-svg-pulse-return" d="M 440 90 A 40 40 0 0 0 440 150" fill="none" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0" />
+              </g>
+
+              <!-- Distance dimension line -->
+              <line id="c9u10-svg-dist-line" x1="86" y1="40" x2="480" y2="40" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 2" />
+              <circle id="c9u10-svg-dist-dot1" cx="86" cy="40" r="3" fill="#f59e0b" />
+              <circle id="c9u10-svg-dist-dot2" cx="480" cy="40" r="3" fill="#f59e0b" />
+              <text id="c9u10-svg-dist-text" x="283" y="32" text-anchor="middle" fill="#fbbf24" font-size="11" font-mono font-bold>दूरी (d) = 34 m</text>
+            </svg>
+          </div>
+
+          <!-- Bottom Readouts -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs font-mono pt-3 border-t border-slate-800">
+            <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800">
+              <div class="text-slate-400 text-[10px]">एकतर्फी दूरी (d)</div>
+              <div id="c9u10-echo-out-d" class="font-bold text-white text-sm">34.0 m</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800">
+              <div class="text-slate-400 text-[10px]">ध्वनिको गति (v)</div>
+              <div id="c9u10-echo-out-v" class="font-bold text-cyan-300 text-sm">332 m/s</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800">
+              <div class="text-emerald-400 text-[10px]">फर्किन लाग्ने समय (t = 2d/v)</div>
+              <div id="c9u10-echo-out-t" class="font-bold text-emerald-300 text-sm">0.205 s</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800">
+              <div class="text-amber-400 text-[10px]">प्रतिध्वनि अवस्था</div>
+              <div id="c9u10-echo-out-status" class="font-bold text-amber-300 text-sm">सुनिन्छ (t ≥ 0.1s)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Distance Slider Control -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+          <div class="flex items-center justify-between">
+            <label class="text-xs font-bold text-slate-700">स्रोत र भित्ताबीचको दुरी (Distance, d)</label>
+            <span id="c9u10-val-echo-d" class="text-xs font-mono font-black text-emerald-600 px-2.5 py-0.5 rounded-md bg-emerald-100">34 m</span>
+          </div>
+          <input type="range" id="c9u10-slider-echo-d" min="5" max="100" step="1" value="34" oninput="updateEchoSimC9U10()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-600">
+          <div class="flex justify-between text-[11px] text-slate-500 font-bold px-1">
+            <span>५ मिटर (धेरै नजिक - गूंज मात्र)</span>
+            <span class="text-indigo-600">१६.६ मिटर (न्यूनतम सीमा)</span>
+            <span>१०० मिटर (स्पष्ट प्रतिध्वनि)</span>
+          </div>
+        </div>
+
+        <!-- Persistence of Hearing Concept Card -->
+        <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-100 text-xs md:text-sm text-emerald-950 space-y-2">
+          <div class="font-bold text-emerald-900 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+            ध्वनिको दृढता र १६.६ मिटरको वैज्ञानिक नियम:
+          </div>
+          <p class="leading-relaxed">
+            मानिसको कानमा कुनै ध्वनिको प्रभाव <strong>०.१ सेकेन्ड (१/१० सेकेन्ड)</strong> सम्म रहन्छ (Persistence of Hearing)। तसर्थ परावर्तित ध्वनि छुट्टै प्रतिध्वनिको रूपमा सुन्नका लागि कम्तीमा ०.१ सेकेन्डको समय अन्तर चाहिन्छ। सामान्य तापक्रममा हावामा ध्वनिको गति \( 332\text{ m/s} \) हुँदा न्यूनतम दुरी \( d = \frac{v \times t}{2} = \frac{332 \times 0.1}{2} = 16.6\text{ m} \) (वा \( 340\text{ m/s} \) मा १७ मिटर) हुनुपर्छ।
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODE 3: AUDIO & FREQUENCY SPECTRUM LAB -->
+    <div id="c9u10-lab-mode-audio" class="hidden space-y-6">
+      <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/80 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <h3 class="text-lg md:text-xl font-black text-slate-800 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-purple-600"></span>
+              ध्वनि फ्रिक्वेन्सी स्पेक्ट्रम र श्रव्यता प्रयोगशाला (Frequency Spectrum & Audio Lab)
+            </h3>
+            <p class="text-xs md:text-sm text-slate-500 mt-1">
+              इन्फ्रासोनिक, श्रव्य ध्वनि र अल्ट्रासोनिक तरङ्गहरूको तुलना र प्रत्यक्ष श्रवण अनुभव।
+            </p>
+          </div>
+          <!-- Audio Tone Play / Stop Button -->
+          <button onclick="toggleAudioToneC9U10()" id="c9u10-btn-tone-play" class="px-4 py-2.5 rounded-2xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs md:text-sm shadow-md transition flex items-center gap-2 cursor-pointer min-h-[44px]">
+            <svg id="c9u10-tone-icon" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+            <span id="c9u10-tone-btn-text">टोन बजाउनुहोस् (Play Safe Tone)</span>
+          </button>
+        </div>
+
+        <!-- Interactive Spectrum Bar -->
+        <div class="p-5 rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white space-y-4">
+          <div class="flex items-center justify-between text-xs">
+            <span class="font-bold text-slate-300">आवृत्ति वर्गीकरण दायरा (Audibility Range)</span>
+            <span id="c9u10-spectrum-category-badge" class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30">श्रव्य ध्वनि (Audible Sound)</span>
+          </div>
+
+          <!-- 3-Band Color Spectrum Bar -->
+          <div class="space-y-1.5">
+            <div class="w-full h-8 rounded-xl overflow-hidden flex text-[11px] font-bold text-center leading-8">
+              <div class="bg-blue-600 w-1/4 cursor-pointer hover:opacity-90" onclick="setFreqPresetC9U10(15)">
+                इन्फ्रासोनिक (&lt; 20 Hz)
+              </div>
+              <div class="bg-emerald-600 w-1/2 cursor-pointer hover:opacity-90" onclick="setFreqPresetC9U10(1000)">
+                श्रव्य ध्वनि (20 Hz - 20 kHz)
+              </div>
+              <div class="bg-purple-600 w-1/4 cursor-pointer hover:opacity-90" onclick="setFreqPresetC9U10(25000)">
+                अल्ट्रासोनिक (&gt; 20 kHz)
+              </div>
+            </div>
+            <div class="flex justify-between text-[10px] text-slate-400 font-mono">
+              <span>0 Hz</span>
+              <span>20 Hz</span>
+              <span>20,000 Hz (20 kHz)</span>
+              <span>40 kHz+</span>
+            </div>
+          </div>
+
+          <!-- Current Frequency Display & Animal Icons -->
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+            <div>
+              <div class="text-xs text-slate-400">हाल छानिएको आवृत्ति:</div>
+              <div id="c9u10-freq-display" class="text-3xl font-black text-amber-300 font-mono">440 Hz</div>
+              <div id="c9u10-freq-note-text" class="text-xs text-slate-300">मानक कन्सर्ट सुर (Concert Pitch A4)</div>
+            </div>
+            <div id="c9u10-audible-status-box" class="p-3 rounded-xl bg-emerald-500/20 border border-emerald-500/30 text-emerald-200 text-xs font-bold flex items-center gap-2">
+              <span class="text-lg">👂</span>
+              <span>मानिसको कानले प्रष्ट सुन्न सक्छ।</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frequency Slider & Preset Buttons -->
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <label class="text-xs font-bold text-slate-700">फ्रिक्वेन्सी परिवर्तन (Frequency Slider in Hz):</label>
+            <span id="c9u10-slider-val-freq" class="text-xs font-mono font-black text-purple-600 px-2.5 py-0.5 rounded-md bg-purple-100">440 Hz</span>
+          </div>
+          <input type="range" id="c9u10-slider-freq" min="10" max="25000" step="10" value="440" oninput="updateAudioLabFreqC9U10(this.value)" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-purple-600">
+
+          <!-- Preset Buttons -->
+          <div class="flex flex-wrap gap-2 pt-1">
+            <button onclick="setFreqPresetC9U10(15)" class="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold cursor-pointer">
+              🐘 १५ Hz (हात्ती / इन्फ्रासाउन्ड)
+            </button>
+            <button onclick="setFreqPresetC9U10(256)" class="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold cursor-pointer">
+              🎵 २५६ Hz (मिडिल C टोन)
+            </button>
+            <button onclick="setFreqPresetC9U10(440)" class="px-3 py-1.5 rounded-xl bg-indigo-100 hover:bg-indigo-200 text-indigo-900 text-xs font-bold cursor-pointer">
+              🎼 ४४० Hz (मानक सुर)
+            </button>
+            <button onclick="setFreqPresetC9U10(1000)" class="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold cursor-pointer">
+              ⚡ १००० Hz (१ kHz परीक्षण बीप)
+            </button>
+            <button onclick="setFreqPresetC9U10(25000)" class="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold cursor-pointer">
+              🦇 २५,००० Hz (चमेरो / अल्ट्रासाउन्ड)
+            </button>
+          </div>
+        </div>
+
+        <!-- Animal Hearing Table -->
+        <div class="overflow-x-auto pt-2">
+          <table class="w-full text-xs border-collapse">
+            <thead>
+              <tr class="bg-purple-100/70 text-purple-950 font-bold border-b border-purple-200">
+                <th class="p-2.5 rounded-tl-xl text-left">प्राणी / जीव</th>
+                <th class="p-2.5 text-left">श्रव्यता दायरा (Hearing Range)</th>
+                <th class="p-2.5 rounded-tr-xl text-left">विशेषता तथा प्रयोग</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-purple-100 text-slate-700 font-medium">
+              <tr>
+                <td class="p-2.5 font-bold text-slate-900">👨‍🦱 मानिस (Human)</td>
+                <td class="p-2.5 font-mono font-bold text-indigo-700">20 Hz - 20,000 Hz</td>
+                <td class="p-2.5">दैनिक कुराकानी, सङ्गीत र आवाज सुन्ने सामान्य दायरा।</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-bold text-slate-900">🐘 हात्ती (Elephant)</td>
+                <td class="p-2.5 font-mono font-bold text-blue-700">16 Hz - 12,000 Hz</td>
+                <td class="p-2.5">इन्फ्रासोनिक ध्वनिले धेरै किलोमिटर टाढासम्म संवाद गर्न सक्ने।</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-bold text-slate-900">🐕 कुकुर (Dog)</td>
+                <td class="p-2.5 font-mono font-bold text-amber-700">67 Hz - 45,000 Hz</td>
+                <td class="p-2.5">गाल्टनको सिठी (Galton Whistle) को उच्च आवृत्ति सुन्न सक्ने।</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-bold text-slate-900">🦇 चमेरो (Bat)</td>
+                <td class="p-2.5 font-mono font-bold text-purple-700">1,000 Hz - 120,000 Hz</td>
+                <td class="p-2.5">इकोलोकेसन (Echolocation) द्वारा अँध्यारोमा किरा समात्ने र उड्ने।</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-bold text-slate-900">🐬 डल्फिन (Dolphin)</td>
+                <td class="p-2.5 font-mono font-bold text-cyan-700">75 Hz - 150,000 Hz</td>
+                <td class="p-2.5">पानीमुनि अल्ट्रासोनिक क्लिक ध्वनिको परावर्तनबाट दिशा पत्ता लगाउने।</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 2: COMPLETE CDC TEXTBOOK SOLUTIONS -->
+  <div id="c9u10-view-exercises" class="hidden space-y-6">
+    <!-- Exercise Sub-section Navigation Bar -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none border-b border-slate-200">
+      <button onclick="setExerciseSecC9U10('sec-mcqs')" id="c9u10-exsec-btn-sec-mcqs" class="px-3.5 py-1.5 rounded-xl bg-indigo-600 text-white font-bold text-xs whitespace-nowrap shadow-xs cursor-pointer min-h-[38px]">
+        १. बहुवैकल्पिक प्रश्न (१० MCQs)
+      </button>
+      <button onclick="setExerciseSecC9U10('sec-fill')" id="c9u10-exsec-btn-sec-fill" class="px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs whitespace-nowrap cursor-pointer min-h-[38px]">
+        २. खाली ठाउँ र जोडा (Fill & Match)
+      </button>
+      <button onclick="setExerciseSecC9U10('sec-diff')" id="c9u10-exsec-btn-sec-diff" class="px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs whitespace-nowrap cursor-pointer min-h-[38px]">
+        ३. फरक लेख्नुहोस् (५ Differences)
+      </button>
+      <button onclick="setExerciseSecC9U10('sec-reasons')" id="c9u10-exsec-btn-sec-reasons" class="px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs whitespace-nowrap cursor-pointer min-h-[38px]">
+        ४. वैज्ञानिक कारण (६ Reasons)
+      </button>
+      <button onclick="setExerciseSecC9U10('sec-qa')" id="c9u10-exsec-btn-sec-qa" class="px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs whitespace-nowrap cursor-pointer min-h-[38px]">
+        ५. प्रश्नोत्तर (६ Q&As)
+      </button>
+      <button onclick="setExerciseSecC9U10('sec-numericals')" id="c9u10-exsec-btn-sec-numericals" class="px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs whitespace-nowrap cursor-pointer min-h-[38px]">
+        ६. गणितीय समस्याहरू (५ Numericals)
+      </button>
+    </div>
+
+    <!-- Section 1: MCQs -->
+    <div id="c9u10-sec-mcqs" class="space-y-4">
+      <div class="bg-indigo-50/70 border border-indigo-100 rounded-2xl p-4 text-xs md:text-sm text-indigo-950 font-bold flex items-center justify-between">
+        <span>अभ्यास खण्ड १: पाठ्यपुस्तकका १० बहुवैकल्पिक प्रश्नहरू र सही विकल्पको वैज्ञानिक कारण</span>
+        <span class="px-2.5 py-0.5 rounded-full bg-indigo-600 text-white text-[11px]">१० प्रश्नहरू</span>
+      </div>
+      <div id="c9u10-mcqs-container" class="space-y-3">
+        <!-- Injected dynamically by renderC9U10MCQs() -->
+      </div>
+    </div>
+
+    <!-- Section 2: Fill in Blanks & Match -->
+    <div id="c9u10-sec-fill" class="hidden space-y-6">
+      <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm space-y-4">
+        <h4 class="text-base font-black text-slate-800 flex items-center gap-2 border-b border-slate-100 pb-3">
+          <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+          (क) खाली ठाउँमा उपयुक्त शब्द भर्नुहोस्:
+        </h4>
+        <div id="c9u10-fill-container" class="space-y-3">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm space-y-4">
+        <h4 class="text-base font-black text-slate-800 flex items-center gap-2 border-b border-slate-100 pb-3">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+          (ख) समूह 'क' र समूह 'ख' बीच जोडा मिलाउनुहोस्:
+        </h4>
+        <div id="c9u10-match-container">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Differences -->
+    <div id="c9u10-sec-diff" class="hidden space-y-4">
+      <div class="bg-indigo-50/70 border border-indigo-100 rounded-2xl p-4 text-xs md:text-sm text-indigo-950 font-bold">
+        अभ्यास खण्ड ३: पाठ्यपुस्तकका ५ वटा मुख्य भिन्नताहरू (Differences Table)
+      </div>
+      <div id="c9u10-diff-container" class="space-y-4">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+
+    <!-- Section 4: Scientific Reasons -->
+    <div id="c9u10-sec-reasons" class="hidden space-y-4">
+      <div class="bg-indigo-50/70 border border-indigo-100 rounded-2xl p-4 text-xs md:text-sm text-indigo-950 font-bold">
+        अभ्यास खण्ड ४: वैज्ञानिक कारण दिनुहोस् (६ प्रश्नहरू)
+      </div>
+      <div id="c9u10-reasons-container" class="space-y-4">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+
+    <!-- Section 5: Conceptual Q&As -->
+    <div id="c9u10-sec-qa" class="hidden space-y-4">
+      <div class="bg-indigo-50/70 border border-indigo-100 rounded-2xl p-4 text-xs md:text-sm text-indigo-950 font-bold">
+        अभ्यास खण्ड ५: विस्तृत प्रश्नोत्तर तथा वैज्ञानिक निगमनहरू (६ Q&As)
+      </div>
+      <div id="c9u10-qa-container" class="space-y-4">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+
+    <!-- Section 6: Numericals in 5-Box Format -->
+    <div id="c9u10-sec-numericals" class="hidden space-y-6">
+      <div class="bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl p-5 text-white shadow-md flex items-center justify-between">
+        <div>
+          <h4 class="text-base font-black">अभ्यास खण्ड ६: पाठ्यपुस्तकका ५ वटा प्रामाणिक गणितीय समस्याहरू</h4>
+          <p class="text-xs text-blue-200 mt-1">
+            १. दिइएको मानहरू • २. पत्ता लगाउनुपर्ने • ३. प्रयोग हुने सूत्र • ४. चरणबद्ध हिसाब • ५. अन्तिम निष्कर्ष (५-बक्स ढाँचा)
+          </p>
+        </div>
+        <span class="px-3 py-1 rounded-full bg-white/20 text-xs font-bold shrink-0">५ समस्याहरू</span>
+      </div>
+      <div id="c9u10-numericals-container" class="space-y-6">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 3: 16 MULTI-TIER EXAM MODEL Q&As -->
+  <div id="c9u10-view-tiers" class="hidden space-y-6">
+    <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none border-b border-slate-200">
+      <button onclick="setTierFilterC9U10('all')" id="c9u10-tier-btn-all" class="px-4 py-2 rounded-xl bg-indigo-600 text-white font-bold text-xs shadow-xs cursor-pointer min-h-[38px]">
+        सबै १६ प्रश्नहरू (All)
+      </button>
+      <button onclick="setTierFilterC9U10('t1')" id="c9u10-tier-btn-t1" class="px-4 py-2 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs cursor-pointer min-h-[38px]">
+        तह १: ज्ञान र स्मरण (६ प्रश्न)
+      </button>
+      <button onclick="setTierFilterC9U10('t2')" id="c9u10-tier-btn-t2" class="px-4 py-2 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs cursor-pointer min-h-[38px]">
+        तह २: बोध र समझ (५ प्रश्न)
+      </button>
+      <button onclick="setTierFilterC9U10('t3')" id="c9u10-tier-btn-t3" class="px-4 py-2 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs cursor-pointer min-h-[38px]">
+        तह ३: प्रयोग र उच्च क्षमता (५ प्रश्न)
+      </button>
+    </div>
+
+    <div id="c9u10-tiers-container" class="space-y-4">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+
+  <!-- TAB 4: SELF-ASSESSMENT QUIZ -->
+  <div id="c9u10-view-quiz" class="hidden space-y-6">
+    <div class="bg-gradient-to-r from-indigo-900 via-purple-900 to-slate-900 rounded-3xl p-6 text-white shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+          परीक्षा तयारी • आत्म-मूल्याङ्कन
+        </span>
+        <h3 class="text-xl md:text-2xl font-black mt-2">एकाइ १०: तरङ्ग अनलाइन वस्तुगत परीक्षा (Quiz)</h3>
+        <p class="text-xs md:text-sm text-slate-300 mt-1">
+          १० वटा महत्त्वपूर्ण वस्तुगत तथा गणितीय प्रश्नहरूको सही उत्तर छान्नुहोस् र आफ्नो ज्ञान परीक्षण गर्नुहोस्।
+        </p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 text-center shrink-0 min-w-[160px]">
+        <div class="text-xs font-bold text-slate-300">तपाईंको प्राप्ताङ्क</div>
+        <div class="text-3xl font-black text-amber-300 font-mono my-1" id="c9u10-quiz-score">0 / 10</div>
+        <div class="text-[11px] font-bold text-slate-300" id="c9u10-quiz-feedback">प्रश्नहरूको उत्तर दिनुहोस्</div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-between gap-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+      <div class="text-xs text-slate-600 font-bold flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+        <span>प्रत्येक प्रश्नको १ अङ्क (पूर्णाङ्क: १०)</span>
+      </div>
+      <button onclick="resetQuizC9U10()" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition cursor-pointer flex items-center gap-1.5 min-h-[44px]">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+        <span>पुनः सुरु (Reset Quiz)</span>
+      </button>
+    </div>
+
+    <div id="c9u10-quiz-container" class="space-y-4">
+      <!-- Injected by renderC9U10Quiz() -->
+    </div>
+  </div>
+</div>
+
+
+      <!-- Placeholder View for Units 11 to 19 -->
       <div id="c9-placeholder-view" class="hidden flex-1 min-w-0 flex flex-col items-center justify-center p-8 bg-slate-50 border border-slate-200 rounded-3xl text-center space-y-4 my-auto">
         <div class="w-16 h-16 rounded-3xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-3xl font-bold">
           🔬
         </div>
         <div>
           <h3 id="c9-placeholder-title" class="text-xl font-black text-slate-800">एकाइ ३: सूक्ष्मजीव</h3>
-          <p id="c9-placeholder-desc" class="text-xs md:text-sm text-slate-500 mt-1 max-w-md">यस एकाइको अध्ययन सामग्री तथा अभ्यास समाधान तयारीमा छ। हाल एकाइ १ देखि एकाइ ९ सम्म पूर्ण रूपमा उपलब्ध छन्।</p>
+          <p id="c9-placeholder-desc" class="text-xs md:text-sm text-slate-500 mt-1 max-w-md">यस एकाइको अध्ययन सामग्री तथा अभ्यास समाधान तयारीमा छ। हाल एकाइ १ देखि एकाइ १० सम्म पूर्ण रूपमा उपलब्ध छन्।</p>
         </div>
         <div class="flex gap-2">
           <button onclick="switchGrade9Unit(1)" class="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-xs rounded-xl shadow-md transition cursor-pointer">
@@ -30866,6 +31536,19 @@ eq 6$</div>
            .replace(/\\circ/g, "°")
            .replace(/\\%/g, "%")
            .replace(/\\mu/g, "µ")
+           .replace(/\\lambda/g, "λ")
+           .replace(/\\theta/g, "θ")
+           .replace(/\\eta/g, "η")
+           .replace(/\\pi/g, "π")
+           .replace(/\\alpha/g, "α")
+           .replace(/\\beta/g, "β")
+           .replace(/\\gamma/g, "γ")
+           .replace(/\\omega/g, "ω")
+           .replace(/\\rho/g, "ρ")
+           .replace(/\\sigma/g, "σ")
+           .replace(/\\nu/g, "ν")
+           .replace(/\\ge\b/g, " ≥ ")
+           .replace(/\\le\b/g, " ≤ ")
            .replace(/\\mathbf\{([^{}]+)\}/g, '<strong>$1</strong>')
            .replace(/\\boldsymbol\{([^{}]+)\}/g, '<strong>$1</strong>')
            .replace(/\\because/g, " ∵ ")
@@ -37900,6 +38583,7 @@ function switchGrade9Unit(unitNum) {
   const v7 = document.getElementById('c9-view-7');
   const v8 = document.getElementById('c9-view-8');
   const v9 = document.getElementById('c9-view-9');
+  const v10 = document.getElementById('c9-view-10');
   const vPlaceholder = document.getElementById('c9-placeholder-view');
 
   if (v1) v1.classList.add('hidden');
@@ -37911,6 +38595,7 @@ function switchGrade9Unit(unitNum) {
   if (v7) v7.classList.add('hidden');
   if (v8) v8.classList.add('hidden');
   if (v9) v9.classList.add('hidden');
+  if (v10) v10.classList.add('hidden');
   if (vPlaceholder) vPlaceholder.classList.add('hidden');
 
   if (unitNum === 1) {
@@ -37959,6 +38644,11 @@ function switchGrade9Unit(unitNum) {
     setTabC9U9('concepts');
     setLabModeC9U9('peke');
     if (typeof initC9U9 === 'function') initC9U9();
+  } else if (unitNum === 10) {
+    if (v10) v10.classList.remove('hidden');
+    setTabC9U10('concepts');
+    setLabModeC9U10('wave');
+    if (typeof initC9U10 === 'function') initC9U10();
   } else {
     if (vPlaceholder) {
       vPlaceholder.classList.remove('hidden');
@@ -50063,6 +50753,1582 @@ function initC9U9() {
 }
 
 
+// =========================================================================
+// CLASS 9 SCIENCE: UNIT 10 - WAVE (तरङ्ग) JAVASCRIPT
+// =========================================================================
+
+let activeC9U10Tab = 'concepts';
+let activeC9U10LabMode = 'wave';
+let activeC9U10WaveType = 'transverse';
+let isC9U10WavePlaying = true;
+let c9u10WaveAnimId = null;
+let c9u10WavePhase = 0;
+
+let activeC9U10EchoMedium = 'air';
+let isC9U10Pinging = false;
+
+let c9u10AudioToneOsc = null;
+let c9u10AudioCtx = null;
+let isC9U10TonePlaying = false;
+let currentC9U10Freq = 440;
+
+let activeC9U10ExerciseSec = 'sec-mcqs';
+let activeC9U10TierFilter = 'all';
+let c9u10QuizAnswers = {};
+
+// -------------------------------------------------------------------------
+// Web Audio API Synthesizer
+// -------------------------------------------------------------------------
+function playAudioC9U10(type) {
+  try {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContext) return;
+    const ctx = new AudioContext();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    const now = ctx.currentTime;
+
+    if (type === 'click') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(600, now);
+      gain.gain.setValueAtTime(0.08, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.08);
+      osc.start(now);
+      osc.stop(now + 0.08);
+    } else if (type === 'ping') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(1200, now);
+      osc.frequency.exponentialRampToValueAtTime(800, now + 0.2);
+      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.2);
+      osc.start(now);
+      osc.stop(now + 0.2);
+    } else if (type === 'echo') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(1000, now);
+      osc.frequency.exponentialRampToValueAtTime(600, now + 0.25);
+      gain.gain.setValueAtTime(0.12, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+      osc.start(now);
+      osc.stop(now + 0.25);
+    } else if (type === 'correct') {
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(523.25, now);
+      osc.frequency.setValueAtTime(659.25, now + 0.1);
+      osc.frequency.setValueAtTime(783.99, now + 0.2);
+      gain.gain.setValueAtTime(0.12, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+      osc.start(now);
+      osc.stop(now + 0.35);
+    } else if (type === 'wrong') {
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(240, now);
+      osc.frequency.exponentialRampToValueAtTime(130, now + 0.2);
+      gain.gain.setValueAtTime(0.12, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.2);
+      osc.start(now);
+      osc.stop(now + 0.2);
+    }
+  } catch(e) {}
+}
+
+// -------------------------------------------------------------------------
+// Tab Switcher (concepts, exercises, tiers, quiz)
+// -------------------------------------------------------------------------
+function setTabC9U10(tab) {
+  activeC9U10Tab = tab;
+  playAudioC9U10('click');
+  const tabs = ['concepts', 'exercises', 'tiers', 'quiz'];
+  tabs.forEach(t => {
+    const view = document.getElementById(`c9u10-view-${t}`);
+    const btn = document.getElementById(`c9u10-tab-${t}`);
+    if (view) {
+      if (t === tab) view.classList.remove('hidden');
+      else view.classList.add('hidden');
+    }
+    if (btn) {
+      if (t === tab) {
+        btn.className = "px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl bg-indigo-600 text-white shadow-md font-bold transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer ring-2 ring-indigo-400/30 min-h-[44px]";
+      } else {
+        btn.className = "px-4 md:px-5 py-2.5 rounded-xl md:rounded-2xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50/70 transition-all duration-200 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[44px]";
+      }
+    }
+  });
+
+  if (tab === 'concepts') {
+    renderCurrentC9U10Lab();
+  } else if (tab === 'exercises') {
+    renderC9U10Exercises();
+  } else if (tab === 'tiers') {
+    renderC9U10Tiers();
+  } else if (tab === 'quiz') {
+    renderC9U10Quiz();
+  }
+
+  const activeViewEl = document.getElementById(`c9u10-view-${tab}`);
+  if (activeViewEl && typeof typesetElement === 'function') {
+    typesetElement(activeViewEl);
+  }
+}
+
+// -------------------------------------------------------------------------
+// Lab Modes Switcher (wave, echo, audio)
+// -------------------------------------------------------------------------
+function setLabModeC9U10(mode) {
+  activeC9U10LabMode = mode;
+  playAudioC9U10('click');
+  const modes = ['wave', 'echo', 'audio'];
+  modes.forEach(m => {
+    const panel = document.getElementById(`c9u10-lab-mode-${m}`);
+    const btn = document.getElementById(`c9u10-btn-mode-${m}`);
+    if (panel) {
+      if (m === mode) panel.classList.remove('hidden');
+      else panel.classList.add('hidden');
+    }
+    if (btn) {
+      if (m === mode) {
+        btn.className = "flex-1 py-3 px-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-black text-xs md:text-sm shadow-md transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2 ring-2 ring-indigo-400/30";
+      } else {
+        btn.className = "flex-1 py-3 px-4 rounded-2xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700/80 font-bold text-xs md:text-sm transition-all duration-200 cursor-pointer min-h-[44px] flex items-center justify-center gap-2";
+      }
+    }
+  });
+
+  renderCurrentC9U10Lab();
+}
+
+function renderCurrentC9U10Lab() {
+  if (activeC9U10LabMode === 'wave') {
+    updateWaveSimC9U10();
+  } else if (activeC9U10LabMode === 'echo') {
+    updateEchoSimC9U10();
+  } else if (activeC9U10LabMode === 'audio') {
+    updateAudioLabFreqC9U10(currentC9U10Freq);
+  }
+}
+
+// -------------------------------------------------------------------------
+// MODE 1: WAVE MOTION SIMULATOR (Transverse & Longitudinal)
+// -------------------------------------------------------------------------
+function setWaveTypeC9U10(type) {
+  activeC9U10WaveType = type;
+  playAudioC9U10('click');
+
+  const btnTrans = document.getElementById('c9u10-btn-wavetype-transverse');
+  const btnLong = document.getElementById('c9u10-btn-wavetype-longitudinal');
+  const badge = document.getElementById('c9u10-wavetype-badge');
+  const title = document.getElementById('c9u10-wavetype-title');
+  const desc = document.getElementById('c9u10-wavetype-desc');
+  const sinePath = document.getElementById('c9u10-svg-sine-path');
+  const longGroup = document.getElementById('c9u10-svg-long-group');
+  const crestLbl = document.getElementById('c9u10-svg-crest-label');
+  const troughLbl = document.getElementById('c9u10-svg-trough-label');
+  const ampMarker = document.getElementById('c9u10-svg-amp-marker');
+
+  if (type === 'transverse') {
+    if (btnTrans) btnTrans.className = "px-3.5 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-xs cursor-pointer min-h-[38px]";
+    if (btnLong) btnLong.className = "px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-indigo-900 cursor-pointer min-h-[38px]";
+    if (badge) badge.textContent = "अनुप्रस्थ तरङ्ग";
+    if (title) title.textContent = "माध्यमका कणहरू तरङ्ग प्रसारणको दिशासँग लम्ब (Perpendicular, 90°) भएर कम्पन गर्छन्।";
+    if (desc) desc.innerHTML = "यसमा उच्च बिन्दुलाई <strong>शृङ्ग (Crest)</strong> र न्यून बिन्दुलाई <strong>गर्त (Trough)</strong> भनिन्छ। जस्तै: पानीको छाल, प्रकाश तरङ्ग।";
+
+    if (sinePath) sinePath.classList.remove('hidden');
+    if (longGroup) longGroup.classList.add('hidden');
+    if (crestLbl) crestLbl.textContent = "शृङ्ग (Crest)";
+    if (troughLbl) troughLbl.textContent = "गर्त (Trough)";
+    if (ampMarker) ampMarker.classList.remove('hidden');
+  } else {
+    if (btnLong) btnLong.className = "px-3.5 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-xs cursor-pointer min-h-[38px]";
+    if (btnTrans) btnTrans.className = "px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-indigo-900 cursor-pointer min-h-[38px]";
+    if (badge) badge.textContent = "अनुदैर्ध्य तरङ्ग";
+    if (title) title.textContent = "माध्यमका कणहरू तरङ्ग प्रसारणकै दिशामा अघि-पछि (Parallel, back & forth) कम्पन गर्छन्।";
+    if (desc) desc.innerHTML = "यसमा चाप बढी भएको क्षेत्रलाई <strong>सङ्कुचन (Compression)</strong> र चाप कम भएको क्षेत्रलाई <strong>विरलन (Rarefaction)</strong> भनिन्छ। जस्तै: ध्वनि तरङ्ग, स्लिङ्की स्प्रिङ।";
+
+    if (sinePath) sinePath.classList.add('hidden');
+    if (longGroup) longGroup.classList.remove('hidden');
+    if (crestLbl) crestLbl.textContent = "सङ्कुचन (Compression)";
+    if (troughLbl) troughLbl.textContent = "विरलन (Rarefaction)";
+    if (ampMarker) ampMarker.classList.add('hidden');
+  }
+
+  updateWaveSimC9U10();
+}
+
+function toggleWaveAnimC9U10() {
+  isC9U10WavePlaying = !isC9U10WavePlaying;
+  playAudioC9U10('click');
+  const btn = document.getElementById('c9u10-wave-play-text');
+  if (btn) {
+    btn.textContent = isC9U10WavePlaying ? "रोक्नुहोस् (Pause)" : "सुरु गर्नुहोस् (Play)";
+  }
+  if (isC9U10WavePlaying && !c9u10WaveAnimId) {
+    runWaveAnimationLoopC9U10();
+  }
+}
+
+function updateWaveSimC9U10() {
+  const f = parseFloat(document.getElementById('c9u10-slider-f')?.value || 2);
+  const a = parseFloat(document.getElementById('c9u10-slider-amp')?.value || 3);
+  const v = parseFloat(document.getElementById('c9u10-slider-v')?.value || 40);
+
+  const lambda = v / f; // meters
+  const timePeriod = 1 / f; // seconds
+
+  // Update slider text values
+  const vF = document.getElementById('c9u10-val-f');
+  const vAmp = document.getElementById('c9u10-val-amp');
+  const vV = document.getElementById('c9u10-val-v');
+  if (vF) vF.textContent = `${f.toFixed(1)} Hz`;
+  if (vAmp) vAmp.textContent = `${a.toFixed(1)} cm`;
+  if (vV) vV.textContent = `${v} m/s`;
+
+  // Update readouts
+  const rV = document.getElementById('c9u10-readout-v');
+  const rF = document.getElementById('c9u10-readout-f');
+  const rLambda = document.getElementById('c9u10-readout-lambda');
+  const rTP = document.getElementById('c9u10-readout-timeperiod');
+  const cLambda = document.getElementById('c9u10-canvas-lambda-readout');
+
+  if (rV) rV.textContent = `${v} m/s`;
+  if (rF) rF.textContent = `${f.toFixed(1)} Hz`;
+  if (rLambda) rLambda.textContent = `${lambda.toFixed(1)} m`;
+  if (rTP) rTP.textContent = `${timePeriod.toFixed(2)} s`;
+  if (cLambda) cLambda.textContent = `λ = ${lambda.toFixed(1)} m`;
+
+  // Update calculation cards
+  const cWave = document.getElementById('c9u10-calc-wave-formula');
+  const cTP = document.getElementById('c9u10-calc-tp-formula');
+  const cRel = document.getElementById('c9u10-res-relation');
+
+  if (cWave) cWave.innerHTML = `\\( v = f \\lambda \\implies \\lambda = \\frac{v}{f} = \\frac{${v}}{${f}} = ${lambda.toFixed(1)}\\text{ m} \\)`;
+  if (cTP) cTP.innerHTML = `\\( T = \\frac{1}{f} = \\frac{1}{${f}} = ${timePeriod.toFixed(2)}\\text{ s} \\)`;
+  if (cRel) cRel.innerHTML = `गति ${v} m/s मा आवृत्ति ${f} Hz हुँदा तरङ्ग लम्बाइ ${lambda.toFixed(1)} मिटर हुन्छ।`;
+
+  // Typeset math if function available
+  if (cWave && typeof typesetElement === 'function') typesetElement(cWave);
+  if (cTP && typeof typesetElement === 'function') typesetElement(cTP);
+
+  if (!c9u10WaveAnimId && isC9U10WavePlaying) {
+    runWaveAnimationLoopC9U10();
+  } else {
+    drawWaveFrameC9U10();
+  }
+}
+
+function runWaveAnimationLoopC9U10() {
+  if (!isC9U10WavePlaying) {
+    c9u10WaveAnimId = null;
+    return;
+  }
+  const f = parseFloat(document.getElementById('c9u10-slider-f')?.value || 2);
+  c9u10WavePhase += 0.04 * f; // advance phase with frequency
+  drawWaveFrameC9U10();
+  c9u10WaveAnimId = requestAnimationFrame(runWaveAnimationLoopC9U10);
+}
+
+function drawWaveFrameC9U10() {
+  const f = parseFloat(document.getElementById('c9u10-slider-f')?.value || 2);
+  const a = parseFloat(document.getElementById('c9u10-slider-amp')?.value || 3);
+  const v = parseFloat(document.getElementById('c9u10-slider-v')?.value || 40);
+
+  const lambda = v / f;
+  // Map wavelength to SVG width (520px canvas span)
+  // Let lambda range 4m - 100m map to pixels:
+  const pxPerMeter = Math.max(2.5, Math.min(25, 200 / lambda));
+  const lambdaPx = Math.max(60, Math.min(300, lambda * pxPerMeter));
+  const ampPx = Math.min(50, a * 12);
+
+  const pathEl = document.getElementById('c9u10-svg-sine-path');
+  const ampLine = document.getElementById('c9u10-svg-amp-line');
+  const ampText = document.getElementById('c9u10-svg-amp-text');
+  const lambdaLine = document.getElementById('c9u10-svg-lambda-line');
+  const lambdaDot1 = document.getElementById('c9u10-svg-lambda-dot1');
+  const lambdaDot2 = document.getElementById('c9u10-svg-lambda-dot2');
+  const lambdaText = document.getElementById('c9u10-svg-lambda-text');
+  const crestLbl = document.getElementById('c9u10-svg-crest-label');
+  const troughLbl = document.getElementById('c9u10-svg-trough-label');
+  const longGroup = document.getElementById('c9u10-svg-long-group');
+
+  if (activeC9U10WaveType === 'transverse') {
+    // Generate sine path
+    let d = `M 40 ${110 - ampPx * Math.sin(-c9u10WavePhase)}`;
+    for (let x = 40; x <= 560; x += 3) {
+      const angle = (2 * Math.PI * (x - 40) / lambdaPx) - c9u10WavePhase;
+      const y = 110 - ampPx * Math.sin(angle);
+      d += ` L ${x} ${y.toFixed(1)}`;
+    }
+    if (pathEl) pathEl.setAttribute('d', d);
+
+    // Dynamic crest marker
+    const firstPeakX = 40 + ((lambdaPx * 0.25 + (c9u10WavePhase * lambdaPx / (2 * Math.PI))) % lambdaPx);
+    if (crestLbl) {
+      crestLbl.setAttribute('x', firstPeakX);
+      crestLbl.setAttribute('y', 110 - ampPx - 10);
+    }
+    if (troughLbl) {
+      troughLbl.setAttribute('x', firstPeakX + lambdaPx * 0.5);
+      troughLbl.setAttribute('y', 110 + ampPx + 20);
+    }
+
+    // Wavelength indicator line
+    if (lambdaLine) {
+      lambdaLine.setAttribute('x1', firstPeakX);
+      lambdaLine.setAttribute('x2', firstPeakX + lambdaPx);
+    }
+    if (lambdaDot1) lambdaDot1.setAttribute('cx', firstPeakX);
+    if (lambdaDot2) lambdaDot2.setAttribute('cx', firstPeakX + lambdaPx);
+    if (lambdaText) {
+      lambdaText.setAttribute('x', firstPeakX + lambdaPx / 2);
+      lambdaText.textContent = `λ = ${lambda.toFixed(1)} m`;
+    }
+
+    // Amplitude indicator
+    if (ampLine) {
+      ampLine.setAttribute('x1', firstPeakX);
+      ampLine.setAttribute('x2', firstPeakX);
+      ampLine.setAttribute('y1', 110);
+      ampLine.setAttribute('y2', 110 - ampPx);
+    }
+    if (ampText) {
+      ampText.setAttribute('x', firstPeakX + 8);
+      ampText.setAttribute('y', 110 - ampPx / 2);
+      ampText.textContent = `A = ${a} cm`;
+    }
+  } else {
+    // Longitudinal wave representation: vertical particle lines with compression & rarefaction
+    if (longGroup) {
+      let longHtml = '';
+      const numLines = 45;
+      for (let i = 0; i < numLines; i++) {
+        const baseX = 50 + (i / (numLines - 1)) * 500;
+        const disp = ampPx * 0.6 * Math.sin((2 * Math.PI * (baseX - 50) / lambdaPx) - c9u10WavePhase);
+        const x = baseX + disp;
+        // Density indicator color
+        const compFactor = Math.cos((2 * Math.PI * (baseX - 50) / lambdaPx) - c9u10WavePhase);
+        const col = compFactor > 0.3 ? '#38bdf8' : compFactor < -0.3 ? '#818cf8' : '#64748b';
+        const w = compFactor > 0.3 ? 3 : 1.5;
+        longHtml += `<line x1="${x.toFixed(1)}" y1="70" x2="${x.toFixed(1)}" y2="150" stroke="${col}" stroke-width="${w}" rx="1" />`;
+      }
+      longGroup.innerHTML = longHtml;
+    }
+  }
+}
+
+// -------------------------------------------------------------------------
+// MODE 2: ECHO & SONAR LAB
+// -------------------------------------------------------------------------
+function setEchoMediumC9U10(med) {
+  activeC9U10EchoMedium = med;
+  playAudioC9U10('click');
+
+  const btnAir = document.getElementById('c9u10-btn-med-air');
+  const btnWater = document.getElementById('c9u10-btn-med-water');
+  const btnSteel = document.getElementById('c9u10-btn-med-steel');
+
+  [btnAir, btnWater, btnSteel].forEach(b => {
+    if (b) b.className = "flex-1 py-2 px-3 rounded-xl text-slate-600 hover:text-indigo-900 font-bold text-xs cursor-pointer min-h-[38px]";
+  });
+
+  if (med === 'air' && btnAir) btnAir.className = "flex-1 py-2 px-3 rounded-xl bg-white text-indigo-900 font-bold text-xs shadow-xs cursor-pointer min-h-[38px]";
+  if (med === 'water' && btnWater) btnWater.className = "flex-1 py-2 px-3 rounded-xl bg-white text-indigo-900 font-bold text-xs shadow-xs cursor-pointer min-h-[38px]";
+  if (med === 'steel' && btnSteel) btnSteel.className = "flex-1 py-2 px-3 rounded-xl bg-white text-indigo-900 font-bold text-xs shadow-xs cursor-pointer min-h-[38px]";
+
+  updateEchoSimC9U10();
+}
+
+function updateEchoSimC9U10() {
+  const d = parseFloat(document.getElementById('c9u10-slider-echo-d')?.value || 34);
+  let v = 332; // m/s in air
+  if (activeC9U10EchoMedium === 'water') v = 1500;
+  else if (activeC9U10EchoMedium === 'steel') v = 5000;
+
+  const totalDist = 2 * d; // 2d in meters
+  const time = totalDist / v; // seconds
+
+  const valD = document.getElementById('c9u10-val-echo-d');
+  if (valD) valD.textContent = `${d} m`;
+
+  const outD = document.getElementById('c9u10-echo-out-d');
+  const outV = document.getElementById('c9u10-echo-out-v');
+  const outT = document.getElementById('c9u10-echo-out-t');
+  const outStatus = document.getElementById('c9u10-echo-out-status');
+  const badge = document.getElementById('c9u10-echo-status-badge');
+
+  if (outD) outD.textContent = `${d.toFixed(1)} m (2d = ${totalDist.toFixed(1)} m)`;
+  if (outV) outV.textContent = `${v} m/s`;
+  if (outT) outT.textContent = `${time.toFixed(3)} s`;
+
+  const canHearEcho = time >= 0.1;
+  if (outStatus) {
+    outStatus.textContent = canHearEcho ? `सुनिन्छ (t = ${time.toFixed(3)}s ≥ 0.1s)` : `गूंज मात्र (t = ${time.toFixed(3)}s < 0.1s)`;
+  }
+  if (badge) {
+    if (canHearEcho) {
+      badge.className = "px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30 text-[11px]";
+      badge.textContent = `स्पष्ट प्रतिध्वनि (Clear Echo! t = ${time.toFixed(3)}s)`;
+    } else {
+      badge.className = "px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-bold border border-amber-500/30 text-[11px]";
+      badge.textContent = `प्रतिध्वनि सुनिँदैन (गूंज मात्र: t < ०.१ सेकेन्ड)`;
+    }
+  }
+
+  // Update SVG Wall position: map distance 5m - 100m to x = 200 to 520
+  const wallX = 200 + ((d - 5) / 95) * 320;
+  const wallGroup = document.getElementById('c9u10-svg-wall-group');
+  const distLine = document.getElementById('c9u10-svg-dist-line');
+  const distDot2 = document.getElementById('c9u10-svg-dist-dot2');
+  const distText = document.getElementById('c9u10-svg-dist-text');
+
+  if (wallGroup) wallGroup.setAttribute('transform', `translate(${wallX}, 50)`);
+  if (distLine) distLine.setAttribute('x2', wallX);
+  if (distDot2) distDot2.setAttribute('cx', wallX);
+  if (distText) {
+    distText.setAttribute('x', 86 + (wallX - 86) / 2);
+    distText.textContent = `d = ${d} m (2d = ${totalDist} m)`;
+  }
+}
+
+function pingSoundPulseC9U10() {
+  if (isC9U10Pinging) return;
+  isC9U10Pinging = true;
+  playAudioC9U10('ping');
+
+  const pOut = document.getElementById('c9u10-svg-pulse-out');
+  const pReturn = document.getElementById('c9u10-svg-pulse-return');
+  const d = parseFloat(document.getElementById('c9u10-slider-echo-d')?.value || 34);
+  const wallX = 200 + ((d - 5) / 95) * 320;
+
+  if (pOut) {
+    pOut.setAttribute('opacity', '1');
+    pOut.setAttribute('d', `M 110 90 A 40 40 0 0 1 110 150`);
+  }
+
+  // Animate pulse traveling to wall
+  const startTime = performance.now();
+  const travelDuration = 700; // ms visual representation
+
+  function animatePing(now) {
+    const elapsed = now - startTime;
+    const progress = Math.min(1, elapsed / travelDuration);
+    const currX = 110 + progress * (wallX - 110);
+
+    if (pOut) {
+      pOut.setAttribute('d', `M ${currX} ${120 - 30 * (1 - progress * 0.3)} A 40 40 0 0 1 ${currX} ${120 + 30 * (1 - progress * 0.3)}`);
+    }
+
+    if (progress < 1) {
+      requestAnimationFrame(animatePing);
+    } else {
+      // Hit wall! Start returning pulse
+      if (pOut) pOut.setAttribute('opacity', '0');
+      if (pReturn) pReturn.setAttribute('opacity', '1');
+      playAudioC9U10('click');
+
+      const returnStartTime = performance.now();
+      function animateReturn(rNow) {
+        const rElapsed = rNow - returnStartTime;
+        const rProgress = Math.min(1, rElapsed / travelDuration);
+        const rCurrX = wallX - rProgress * (wallX - 110);
+
+        if (pReturn) {
+          pReturn.setAttribute('d', `M ${rCurrX} ${120 - 30 * (1 - rProgress * 0.3)} A 40 40 0 0 0 ${rCurrX} ${120 + 30 * (1 - rProgress * 0.3)}`);
+        }
+
+        if (rProgress < 1) {
+          requestAnimationFrame(animateReturn);
+        } else {
+          if (pReturn) pReturn.setAttribute('opacity', '0');
+          playAudioC9U10('echo');
+          isC9U10Pinging = false;
+        }
+      }
+      requestAnimationFrame(animateReturn);
+    }
+  }
+
+  requestAnimationFrame(animatePing);
+}
+
+// -------------------------------------------------------------------------
+// MODE 3: AUDIO & FREQUENCY LAB
+// -------------------------------------------------------------------------
+function updateAudioLabFreqC9U10(freqVal) {
+  const f = parseInt(freqVal, 10);
+  currentC9U10Freq = f;
+
+  const slider = document.getElementById('c9u10-slider-freq');
+  const valText = document.getElementById('c9u10-slider-val-freq');
+  const dispText = document.getElementById('c9u10-freq-display');
+  const noteText = document.getElementById('c9u10-freq-note-text');
+  const badge = document.getElementById('c9u10-spectrum-category-badge');
+  const statusBox = document.getElementById('c9u10-audible-status-box');
+
+  if (slider) slider.value = f;
+  if (valText) valText.textContent = `${f} Hz`;
+  if (dispText) dispText.textContent = `${f.toLocaleString()} Hz`;
+
+  if (f < 20) {
+    if (badge) {
+      badge.className = "px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 font-bold border border-blue-500/30";
+      badge.textContent = "इन्फ्रासोनिक ध्वनि (Infrasonic Sound: < 20 Hz)";
+    }
+    if (noteText) noteText.textContent = "हात्ती, ह्वेल र गैँडाले कुराकानी गर्न प्रयोग गर्छन्।";
+    if (statusBox) {
+      statusBox.className = "p-3 rounded-xl bg-blue-500/20 border border-blue-500/30 text-blue-200 text-xs font-bold flex items-center gap-2";
+      statusBox.innerHTML = '<span class="text-lg">🔇</span><span>मानिसको कानले सुन्न सक्दैन (अति न्यून आवृत्ति)।</span>';
+    }
+  } else if (f <= 20000) {
+    if (badge) {
+      badge.className = "px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30";
+      badge.textContent = "श्रव्य ध्वनि (Audible Sound: 20 Hz - 20 kHz)";
+    }
+    if (noteText) {
+      if (f === 256) noteText.textContent = "सङ्गीतको मिडिल C (Middle C Note)";
+      else if (f === 440) noteText.textContent = "मानक कन्सर्ट सुर (Concert Pitch A4)";
+      else if (f === 1000) noteText.textContent = "मानक १ kHz अडियो क्यालिब्रेसन टोन";
+      else noteText.textContent = "सामान्य मानवीय श्रव्यता दायराभित्र पर्दछ।";
+    }
+    if (statusBox) {
+      statusBox.className = "p-3 rounded-xl bg-emerald-500/20 border border-emerald-500/30 text-emerald-200 text-xs font-bold flex items-center gap-2";
+      statusBox.innerHTML = '<span class="text-lg">👂</span><span>मानिसको कानले प्रष्ट सुन्न सक्छ।</span>';
+    }
+  } else {
+    if (badge) {
+      badge.className = "px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 font-bold border border-purple-500/30";
+      badge.textContent = "अल्ट्रासोनिक ध्वनि (Ultrasound: > 20 kHz)";
+    }
+    if (noteText) noteText.textContent = "चमेरो, डल्फिन, सोनार र भिडियो एक्सरे (USG) मा प्रयोग हुन्छ।";
+    if (statusBox) {
+      statusBox.className = "p-3 rounded-xl bg-purple-500/20 border border-purple-500/30 text-purple-200 text-xs font-bold flex items-center gap-2";
+      statusBox.innerHTML = '<span class="text-lg">🦇</span><span>मानिसको कानले सुन्न सक्दैन (अति उच्च आवृत्ति)।</span>';
+    }
+  }
+
+  // Update tone frequency if playing
+  if (isC9U10TonePlaying && c9u10AudioToneOsc && c9u10AudioCtx) {
+    try {
+      c9u10AudioToneOsc.frequency.setValueAtTime(Math.min(18000, Math.max(30, f)), c9u10AudioCtx.currentTime);
+    } catch(e) {}
+  }
+}
+
+function setFreqPresetC9U10(freqVal) {
+  playAudioC9U10('click');
+  updateAudioLabFreqC9U10(freqVal);
+}
+
+function toggleAudioToneC9U10() {
+  const btn = document.getElementById('c9u10-tone-btn-text');
+  const icon = document.getElementById('c9u10-tone-icon');
+  const btnEl = document.getElementById('c9u10-btn-tone-play');
+
+  if (isC9U10TonePlaying) {
+    stopAudioToneC9U10();
+    if (btn) btn.textContent = "टोन बजाउनुहोस् (Play Safe Tone)";
+    if (btnEl) btnEl.className = "px-4 py-2.5 rounded-2xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs md:text-sm shadow-md transition flex items-center gap-2 cursor-pointer min-h-[44px]";
+    isC9U10TonePlaying = false;
+  } else {
+    startAudioToneC9U10();
+    if (btn) btn.textContent = "टोन बन्द गर्नुहोस् (Stop Tone)";
+    if (btnEl) btnEl.className = "px-4 py-2.5 rounded-2xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-xs md:text-sm shadow-md transition flex items-center gap-2 cursor-pointer min-h-[44px]";
+    isC9U10TonePlaying = true;
+  }
+}
+
+function startAudioToneC9U10() {
+  try {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContext) return;
+    c9u10AudioCtx = new AudioContext();
+    c9u10AudioToneOsc = c9u10AudioCtx.createOscillator();
+    const gain = c9u10AudioCtx.createGain();
+    c9u10AudioToneOsc.type = 'sine';
+    // Clamp to comfortable audible range (40Hz to 16000Hz)
+    const safeFreq = Math.min(16000, Math.max(40, currentC9U10Freq));
+    c9u10AudioToneOsc.frequency.setValueAtTime(safeFreq, c9u10AudioCtx.currentTime);
+    gain.gain.setValueAtTime(0.04, c9u10AudioCtx.currentTime); // gentle volume
+    c9u10AudioToneOsc.connect(gain);
+    gain.connect(c9u10AudioCtx.destination);
+    c9u10AudioToneOsc.start();
+  } catch(e) {}
+}
+
+function stopAudioToneC9U10() {
+  try {
+    if (c9u10AudioToneOsc) {
+      c9u10AudioToneOsc.stop();
+      c9u10AudioToneOsc.disconnect();
+      c9u10AudioToneOsc = null;
+    }
+    if (c9u10AudioCtx) {
+      c9u10AudioCtx.close();
+      c9u10AudioCtx = null;
+    }
+  } catch(e) {}
+}
+
+// -------------------------------------------------------------------------
+// EXERCISES SUB-SECTION SWITCHER & RENDERERS
+// -------------------------------------------------------------------------
+function setExerciseSecC9U10(secId) {
+  activeC9U10ExerciseSec = secId;
+  playAudioC9U10('click');
+  const sections = ['sec-mcqs', 'sec-fill', 'sec-diff', 'sec-reasons', 'sec-qa', 'sec-numericals'];
+  sections.forEach(s => {
+    const el = document.getElementById(`c9u10-${s}`);
+    const btn = document.getElementById(`c9u10-exsec-btn-${s}`);
+    if (el) {
+      if (s === secId) el.classList.remove('hidden');
+      else el.classList.add('hidden');
+    }
+    if (btn) {
+      if (s === secId) {
+        btn.className = "px-3.5 py-1.5 rounded-xl bg-indigo-600 text-white font-bold text-xs whitespace-nowrap shadow-xs cursor-pointer min-h-[38px]";
+      } else {
+        btn.className = "px-3.5 py-1.5 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs whitespace-nowrap cursor-pointer min-h-[38px]";
+      }
+    }
+  });
+
+  const activeSecEl = document.getElementById(`c9u10-${secId}`);
+  if (activeSecEl && typeof typesetElement === 'function') {
+    typesetElement(activeSecEl);
+  }
+}
+
+function renderC9U10Exercises() {
+  renderC9U10MCQs();
+  renderC9U10FillAndMatch();
+  renderC9U10Differences();
+  renderC9U10Reasons();
+  renderC9U10QAs();
+  renderC9U10Numericals();
+}
+
+// 1. MCQs Data
+const c9u10MCQData = [
+  {
+    q: "तरङ्ग प्रसारण हुँदा माध्यमका कणहरू तरङ्ग प्रसारणको दिशासँग लम्ब भएर कम्पन गर्छन् भने त्यस्तो तरङ्गलाई के भनिन्छ?",
+    opts: ["अनुदैर्ध्य तरङ्ग", "अनुप्रस्थ तरङ्ग", "स्थिर तरङ्ग", "विद्युत-चुम्बकीय तरङ्ग"],
+    ans: 1,
+    reason: "माध्यमका कणहरू तरङ्ग प्रसारणको दिशासँग ९० डिग्री (लम्ब) को कोणमा कम्पन गर्दा शृङ्ग र गर्त बन्दछन्, जसलाई अनुप्रस्थ तरङ्ग (Transverse wave) भनिन्छ।"
+  },
+  {
+    q: "तरङ्गको गति (v), आवृत्ति (f) र तरङ्ग लम्बाइ (λ) बीचको सही सम्बन्ध कुन हो?",
+    opts: ["v = f / λ", "v = f λ", "f = v λ", "λ = v f"],
+    ans: 1,
+    reason: "तरङ्ग समीकरण अनुसार गति बराबर आवृत्ति र तरङ्ग लम्बाइको गुणनफल हुन्छ (\\( v = f \\lambda \\))।"
+  },
+  {
+    q: "सामान्य तापक्रमको हावामा स्पष्ट प्रतिध्वनि (Echo) सुन्न परावर्तक सतह कम्तीमा कति दुरीमा हुनुपर्छ?",
+    opts: ["१० मिटर", "१२.५ मिटर", "१६.६ मिटर", "३३.२ मिटर"],
+    ans: 2,
+    reason: "मानिसको कानमा ध्वनिको प्रभाव ०.१ सेकेन्डसम्म रहने हुनाले \\( d = \\frac{v \\times t}{2} = \\frac{332 \\times 0.1}{2} = 16.6\\text{ m} \\) दुरी आवश्यक पर्दछ।"
+  },
+  {
+    q: "समुद्रको गहिराइ नाप्न कुन यन्त्र प्रयोग गरिन्छ?",
+    opts: ["राडार (RADAR)", "सोनार (SONAR)", "थर्मोमिटर", "ब्यारोमिटर"],
+    ans: 1,
+    reason: "सोनार (Sound Navigation and Ranging) ले अल्ट्रासोनिक ध्वनि पठाएर समुद्रको गहिराइ र पानीमुनिका वस्तु पत्ता लगाउँछ।"
+  },
+  {
+    q: "मानिसको कानले सुन्न सक्ने ध्वनिको आवृत्ति दायरा कति हो?",
+    opts: ["0 Hz - 20 Hz", "20 Hz - 20,000 Hz", "20,000 Hz भन्दा माथि", "50 Hz - 5,000 Hz"],
+    ans: 1,
+    reason: "मानव कानको श्रव्यता दायरा २० हर्जदेखि २०,००० हर्ज (20 Hz - 20 kHz) सम्म हुन्छ।"
+  },
+  {
+    q: "२० हर्जभन्दा कम आवृत्तिको ध्वनिलाई के भनिन्छ?",
+    opts: ["अल्ट्रासोनिक ध्वनि", "इन्फ्रासोनिक ध्वनि", "श्रव्य ध्वनि", "सुमधुर ध्वनि"],
+    ans: 1,
+    reason: "२० हर्जभन्दा न्यून आवृत्तिका तरङ्गलाई इन्फ्रासोनिक (Infrasound) भनिन्छ, जुन हात्ती र ह्वेलले सुन्न सक्छन्।"
+  },
+  {
+    q: "तलका मध्ये कुन माध्यममा ध्वनिको गति सबैभन्दा बढी हुन्छ?",
+    opts: ["हावा", "पानी", "फलाम (इस्पात)", "शून्य (Vacuum)"],
+    ans: 2,
+    reason: "ध्वनि ठोसमा सबैभन्दा छिटो प्रसारण हुन्छ। इस्पातमा ध्वनिको गति करिब ५००० मिटर/सेकेन्ड हुन्छ।"
+  },
+  {
+    q: "ध्वनि तरङ्ग शून्य (Vacuum) मा किन प्रसारण हुन सक्दैन?",
+    opts: ["तापक्रम नपुगेर", "प्रकाश नभएर", "भौतिक माध्यम (कणहरू) नभएर", "चाप धेरै भएर"],
+    ans: 2,
+    reason: "ध्वनि एक यान्त्रिक तरङ्ग (Mechanical wave) हो, जसलाई प्रसारण हुन माध्यमका कणहरूको कम्पन अनिवार्य चाहिन्छ।"
+  },
+  {
+    q: "आवृत्ति (Frequency) को अन्तर्राष्ट्रिय (SI) एकाइ कुन हो?",
+    opts: ["सेकेन्ड", "मिटर", "हर्ज (Hertz)", "वाट"],
+    ans: 2,
+    reason: "प्रति सेकेन्ड उत्पन्न हुने पूर्ण तरङ्ग वा कम्पन संख्यालाई आवृत्ति भनिन्छ र यसको SI एकाइ हर्ज (Hz) हो।"
+  },
+  {
+    q: "चमेरोले अँध्यारोमा कुनै अवरोध नठोक्किई उड्न कुन तरङ्ग प्रयोग गर्दछ?",
+    opts: ["इन्फ्रासोनिक तरङ्ग", "रेडियो तरङ्ग", "अल्ट्रासोनिक तरङ्ग", "एक्स-रे"],
+    ans: 2,
+    reason: "चमेरोले अल्ट्रासोनिक तरङ्ग मुखबाट निकाली त्यसको प्रतिध्वनि (Echolocation) सुन्दै अवरोध पत्ता लगाउँछ।"
+  }
+];
+
+function renderC9U10MCQs() {
+  const container = document.getElementById('c9u10-mcqs-container');
+  if (!container) return;
+  const letters = ['(क)', '(ख)', '(ग)', '(घ)'];
+  container.innerHTML = c9u10MCQData.map((item, idx) => `
+    <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs space-y-3">
+      <div class="flex items-start gap-3">
+        <span class="w-7 h-7 rounded-xl bg-indigo-50 text-indigo-700 font-bold text-xs flex items-center justify-center shrink-0 border border-indigo-200">
+          ${idx + 1}
+        </span>
+        <div class="flex-1 text-sm font-bold text-slate-800 leading-snug">
+          ${item.q}
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pl-10">
+        ${item.opts.map((opt, oIdx) => `
+          <div class="px-3.5 py-2 rounded-xl text-xs flex items-center gap-2 ${oIdx === item.ans ? 'bg-emerald-50 text-emerald-950 font-bold border border-emerald-200' : 'bg-slate-50 text-slate-700 border border-slate-100'}">
+            <span class="${oIdx === item.ans ? 'text-emerald-700 font-black' : 'text-slate-400 font-bold'}">${letters[oIdx]}</span>
+            <span>${opt}</span>
+            ${oIdx === item.ans ? '<span class="ml-auto text-emerald-600 text-xs">✓ सही उत्तर</span>' : ''}
+          </div>
+        `).join('')}
+      </div>
+      <div class="ml-10 p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs text-slate-600 leading-relaxed">
+        <strong class="text-slate-800">वैज्ञानिक कारण:</strong> ${item.reason}
+      </div>
+    </div>
+  `).join('');
+}
+
+// 2. Fill & Match Renderer
+function renderC9U10FillAndMatch() {
+  const fillContainer = document.getElementById('c9u10-fill-container');
+  if (fillContainer) {
+    const fills = [
+      { q: "१. माध्यममा कम्पनबाट ऊर्जा स्थानान्तरण हुने प्रक्रियालाई ................ भनिन्छ।", a: "तरङ्ग (Wave)" },
+      { q: "२. प्रति सेकेन्ड उत्पन्न हुने पूर्ण तरङ्ग संख्यालाई ................ भनिन्छ।", a: "आवृत्ति (Frequency, f)" },
+      { q: "३. दुई लगातार शृङ्ग वा गर्त बीचको दुरीलाई ................ भनिन्छ।", a: "तरङ्ग लम्बाइ (Wavelength, λ)" },
+      { q: "४. अनुदैर्ध्य तरङ्गमा चाप बढी हुने क्षेत्रलाई ................ भनिन्छ।", a: "सङ्कुचन (Compression)" },
+      { q: "५. २०,००० हर्जभन्दा माथिको आवृत्तिको ध्वनिलाई ................ भनिन्छ।", a: "अल्ट्रासोनिक ध्वनि (Ultrasound)" }
+    ];
+    fillContainer.innerHTML = fills.map(f => `
+      <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs md:text-sm">
+        <span class="font-medium text-slate-800">${f.q}</span>
+        <span class="px-3 py-1 rounded-xl bg-indigo-100 text-indigo-900 font-black shrink-0 border border-indigo-200 self-start sm:self-auto">${f.a}</span>
+      </div>
+    `).join('');
+  }
+
+  const matchContainer = document.getElementById('c9u10-match-container');
+  if (matchContainer) {
+    const matches = [
+      { a: "१. तरङ्ग समीकरण (Wave Equation)", b: "\\( v = f \\lambda \\)" },
+      { a: "२. प्रतिध्वनिको दुरी (Echo Distance)", b: "\\( d = \\frac{v \\times t}{2} \\)" },
+      { a: "३. प्रकाशको गति (Speed of Light, c)", b: "\\( 3 \\times 10^8\\text{ m/s} \\)" },
+      { a: "४. आवधिक समय र आवृत्ति सम्बन्ध", b: "\\( T = \\frac{1}{f} \\)" },
+      { a: "५. सोनार (SONAR)", b: "अल्ट्रासोनिक ध्वनि र गहिराइ मापन" }
+    ];
+    matchContainer.innerHTML = `
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs md:text-sm border-collapse">
+          <thead>
+            <tr class="bg-emerald-50 text-emerald-950 font-bold border-b border-emerald-200">
+              <th class="p-3 rounded-tl-xl text-left">समूह 'क'</th>
+              <th class="p-3 rounded-tr-xl text-left">समूह 'ख' (सही जोडा)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700">
+            ${matches.map(m => `
+              <tr>
+                <td class="p-3 font-bold text-slate-900">${m.a}</td>
+                <td class="p-3 font-mono font-bold text-emerald-800 bg-emerald-50/30">${m.b}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
+}
+
+// 3. Differences Renderer (5 Tables)
+function renderC9U10Differences() {
+  const container = document.getElementById('c9u10-diff-container');
+  if (!container) return;
+  const diffs = [
+    {
+      title: "१. अनुप्रस्थ तरङ्ग (Transverse) र अनुदैर्ध्य तरङ्ग (Longitudinal) बीचको भिन्नता",
+      col1: "अनुप्रस्थ तरङ्ग (Transverse Wave)",
+      col2: "अनुदैर्ध्य तरङ्ग (Longitudinal Wave)",
+      points: [
+        ["माध्यमका कणहरू तरङ्ग प्रसारणको दिशासँग लम्ब (९०°) भएर कम्पन गर्छन्।", "माध्यमका कणहरू तरङ्ग प्रसारणकै दिशामा अघि-पछि (समानान्तर) कम्पन गर्छन्।"],
+        ["यसमा शृङ्ग (Crest) र गर्त (Trough) बन्दछन्।", "यसमा सङ्कुचन (Compression) र विरलन (Rarefaction) बन्दछन्।"],
+        ["यो ठोस र तरलको सतहमा मात्र बन्न सक्छ (ग्यासभित्र बन्दैन)।", "यो ठोस, तरल र ग्यास तीनवटै माध्यमभित्र बन्न सक्छ।"],
+        ["उदाहरण: प्रकाश तरङ्ग, पानीको छाल, डोरीको तरङ्ग।", "उदाहरण: ध्वनि तरङ्ग, स्प्रिङ (Slinky) मा उत्पन्न तरङ्ग।"]
+      ]
+    },
+    {
+      title: "२. यान्त्रिक तरङ्ग (Mechanical) र विद्युत-चुम्बकीय तरङ्ग (Electromagnetic)",
+      col1: "यान्त्रिक तरङ्ग (Mechanical Wave)",
+      col2: "विद्युत-चुम्बकीय तरङ्ग (Electromagnetic Wave)",
+      points: [
+        ["प्रसारण हुन भौतिक माध्यम (ठोस, तरल वा ग्यास) अनिवार्य चाहिन्छ।", "प्रसारण हुन कुनै भौतिक माध्यम चाहिँदैन, शून्य (Vacuum) मा पनि चल्न सक्छ।"],
+        ["माध्यमका कणहरूको भौतिक कम्पनबाट उत्पन्न हुन्छ।", "विद्युतीय र चुम्बकीय क्षेत्रको परस्पर लम्ब कम्पनबाट बन्दछ।"],
+        ["यसको गति तुलनात्मक रूपमा धेरै सुस्त हुन्छ (हावामा ध्वनि ~३३२ m/s)।", "यसको गति अत्यधिक तीव्र हुन्छ (शून्यमा प्रकाशको गति ३ लाख किमी/सेकेन्ड)।"],
+        ["उदाहरण: ध्वनि तरङ्ग, पानीको छाल, भूकम्पीय तरङ्ग।", "उदाहरण: दृश्य प्रकाश, रेडियो तरङ्ग, एक्स-रे, माइक्रोवेभ।"]
+      ]
+    },
+    {
+      title: "३. शृङ्ग (Crest) र गर्त (Trough)",
+      col1: "शृङ्ग (Crest)",
+      col2: "गर्त (Trough)",
+      points: [
+        ["अनुप्रस्थ तरङ्गमा सन्तुलन रेखाभन्दा माथिल्लो अधिकतम विस्थापनको बिन्दु हो।", "अनुप्रस्थ तरङ्गमा सन्तुलन रेखाभन्दा तल्लो अधिकतम विस्थापनको बिन्दु हो।"],
+        ["यसले तरङ्गको चुचुरो वा धनात्मक शिखरलाई जनाउँछ।", "यसले तरङ्गको खाल्डो वा ऋणात्मक शिखरलाई जनाउँछ।"],
+        ["दुई लगातार शृङ्ग बीचको दुरी तरङ्ग लम्बाइ (λ) हुन्छ।", "दुई लगातार गर्त बीचको दुरी पनि तरङ्ग लम्बाइ (λ) हुन्छ।"]
+      ]
+    },
+    {
+      title: "४. इन्फ्रासोनिक ध्वनि र अल्ट्रासोनिक ध्वनि",
+      col1: "इन्फ्रासोनिक ध्वनि (Infrasound)",
+      col2: "अल्ट्रासोनिक ध्वनि (Ultrasound)",
+      points: [
+        ["यसको आवृत्ति २० हर्जभन्दा कम (< 20 Hz) हुन्छ।", "यसको आवृत्ति २०,००० हर्जभन्दा बढी (> 20 kHz) हुन्छ।"],
+        ["यसको तरङ्ग लम्बाइ धेरै लामो हुन्छ।", "यसको तरङ्ग लम्बाइ अति छोटो हुन्छ।"],
+        ["हात्ती, ह्वेल र भूकम्पको कम्पनबाट उत्पन्न हुन्छ।", "चमेरो, डल्फिन र क्वार्ट्ज क्रिस्टल कम्पनबाट उत्पन्न हुन्छ।"],
+        ["प्रयोग: प्राकृतिक विपत्ति पूर्वानुमान।", "प्रयोग: सोनोग्राफी (USG), सोनार (SONAR), धातुको परीक्षण।"]
+      ]
+    },
+    {
+      title: "५. प्रतिध्वनि (Echo) र प्रतिध्वनन/गूंज (Reverberation)",
+      col1: "प्रतिध्वनि (Echo)",
+      col2: "प्रतिध्वनन / गूंज (Reverberation)",
+      points: [
+        ["कुनै टाढाको अवरोधकबाट परावर्तन भई मूल ध्वनिभन्दा छुट्टै स्पष्ट सुनिने ध्वनि हो।", "नजिकका धेरै सतहहरूबाट बारम्बार परावर्तन भई ध्वनि लामो समयसम्म गुञ्जिरहने अवस्था हो।"],
+        ["यसका लागि स्रोत र परावर्तक बीच कम्तीमा १६.६ मिटर दुरी चाहिन्छ।", "यो १६.६ मिटरभन्दा नजिकका बन्द कोठा वा हलहरूमा हुन्छ।"],
+        ["यसले आवाजलाई स्पष्ट रूपमा दोहोर्याउँछ।", "यसले गर्दा आवाज अस्पष्ट र धोद्रो सुनिन्छ।"],
+        ["समय अन्तर कम्तीमा ०.१ सेकेन्ड (≥ 0.1s) हुन्छ।", "समय अन्तर ०.१ सेकेन्डभन्दा कम (< 0.1s) हुन्छ।"]
+      ]
+    }
+  ];
+
+  container.innerHTML = diffs.map(d => `
+    <div class="bg-white rounded-3xl p-5 md:p-6 border border-slate-200/80 shadow-xs space-y-3">
+      <h4 class="text-sm md:text-base font-black text-slate-800 flex items-center gap-2 border-b border-slate-100 pb-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+        ${d.title}
+      </h4>
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs md:text-sm border-collapse">
+          <thead>
+            <tr class="bg-slate-100 text-slate-800 font-bold border-b border-slate-200">
+              <th class="p-2.5 text-left w-1/2">${d.col1}</th>
+              <th class="p-2.5 text-left w-1/2 bg-indigo-50/50 text-indigo-950">${d.col2}</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700">
+            ${d.points.map(p => `
+              <tr>
+                <td class="p-2.5 align-top leading-relaxed">• ${p[0]}</td>
+                <td class="p-2.5 align-top leading-relaxed bg-indigo-50/20 font-medium text-slate-800">• ${p[1]}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  `).join('');
+}
+
+// 4. Scientific Reasons Renderer (6 Reasons)
+function renderC9U10Reasons() {
+  const container = document.getElementById('c9u10-reasons-container');
+  if (!container) return;
+  const reasons = [
+    {
+      q: "१. चन्द्रमामा दुई अन्तरिक्ष यात्रीहरूले एकअर्कासँग सिधै बोल्दा आवाज सुन्न सक्दैनन्, किन?",
+      ans: "ध्वनि एक यान्त्रिक तरङ्ग (Mechanical wave) हो, जसलाई एक ठाउँबाट अर्को ठाउँमा प्रसारण हुन कुनै भौतिक माध्यम (वायुमण्डल वा कणहरू) अनिवार्य चाहिन्छ। चन्द्रमामा कुनै वायुमण्डल नभई पूर्ण शून्य (Vacuum) अवस्था रहेको हुनाले ध्वनिका तरङ्गहरू प्रसारण हुन सक्दैनन्। तसर्थ अन्तरिक्ष यात्रीहरूले रेडियो तरङ्ग (विद्युत-चुम्बकीय तरङ्ग) युक्त उपकरणको सहायताले संवाद गर्नुपर्छ।"
+    },
+    {
+      q: "२. वर्षातको समयमा चट्याङ पर्दा बिजुलीको चमक पहिले देखिन्छ र मेघगर्जन केही सेकेन्ड पछि मात्र सुनिन्छ, किन?",
+      ans: "हावामा प्रकाशको गति करिब ३,००,००० किमी/सेकेन्ड (\\( 3 \\times 10^8\\text{ m/s} \\)) हुन्छ भने ध्वनिको गति जम्मा ३३२ मिटर/सेकेन्ड (\\( 332\\text{ m/s} \\)) मात्र हुन्छ। प्रकाशको गति ध्वनिको भन्दा करिब १० लाख गुणा बढी तीव्र हुने भएकाले बिजुली चम्किएको प्रकाश तुरुन्तै हाम्रो आँखामा आइपुग्छ, तर मेघगर्जनको ध्वनि जमिनसम्म आइपुग्न केही सेकेन्ड समय लाग्दछ।"
+    },
+    {
+      q: "३. खाली ठूलो कोठामा बोल्दा आवाज गुञ्जिन्छ तर सामानले भरिएको कोठामा गुञ्जिँदैन, किन?",
+      ans: "खाली कोठाका नाङ्गा र चिल्ला भित्ता, भुइँ र छतबाट ध्वनिको बारम्बार परावर्तन (Multiple reflection) भई प्रतिध्वनन (Reverberation) उत्पन्न हुन्छ। तर सामानले भरिएको कोठामा रहेका सोफा, खाट, पर्दा र पुस्तक जस्ता वस्तुहरूले ध्वनि तरङ्गलाई धेरै मात्रामा सोस्ने (Absorb) गर्दछन्, जसले गर्दा ध्वनिको बारम्बार परावर्तन हुन नपाई आवाज गुञ्जिँदैन।"
+    },
+    {
+      q: "४. चमेराले पूर्ण अन्धकारमा पनि कुनै अवरोधसँग नठोक्किई सजिलै उड्न र सिकार गर्न सक्छ, किन?",
+      ans: "चमेरोले उड्ने क्रममा आफ्नो मुखबाट उच्च आवृत्तिको अल्ट्रासोनिक ध्वनि (Ultrasound) निरन्तर निकाल्छ। त्यो ध्वनि अगाडिको कुनै रुख, भित्ता वा किरामा ठोक्किएर प्रतिध्वनिका रूपमा चमेरोको संवेदनशील कानमा फर्किन्छ। यस प्रक्रियालाई 'इकोलोकेसन (Echolocation)' भनिन्छ। प्रतिध्वनि फर्किन लागेको समय र दिशाबाट चमेरोले अवरोधको दुरी र आकार ठ्याक्कै थाहा पाउने हुँदा अन्धकारमा पनि नठोक्किई उड्न सक्छ।"
+    },
+    {
+      q: "५. सिनेमा हल वा ठूला अडिटोरियमको भित्तामा ध्वनिशोषक फोम वा बाक्लो पर्दा लगाइन्छ, किन?",
+      ans: "सिनेमा हलका चिल्ला भित्ताहरूबाट ध्वनि परावर्तन हुँदा गूंज वा प्रतिध्वनन (Reverberation) उत्पन्न भई संवादहरू अस्पष्ट र धोद्रो सुनिन्छन्। ध्वनिशोषक फोम (Acoustic Foam), फाइबर बोर्ड र बाक्ला पर्दाहरूले अनावश्यक परावर्तनलाई रोकी ध्वनिलाई सोस्दछन्, जसले गर्दा दर्शकले संवाद र सङ्गीत प्रष्ट एवं कर्णप्रिय रूपमा सुन्न पाउँछन्।"
+    },
+    {
+      q: "६. समुद्रको गहिराइ नाप्न सामान्य ध्वनिको सट्टा अल्ट्रासोनिक ध्वनि प्रयोग गरिन्छ, किन?",
+      ans: "अल्ट्रासोनिक ध्वनिको आवृत्ति २०,००० हर्जभन्दा माथि हुने भएकाले यसमा अत्यधिक ऊर्जा हुन्छ र यसको तरङ्ग लम्बाइ निकै छोटो हुन्छ। छोटो तरङ्ग लम्बाइ र उच्च ऊर्जाका कारण यो ध्वनि पानीमुनि नफैलिईकन सिधा किरणको रूपमा धेरै किलोमिटर गहिराइसम्म पुग्न सक्छ र पिँधबाट ठोक्किएर प्रष्ट रूपमा फर्किन्छ। सामान्य श्रव्य ध्वनि भने छिट्टै फैलिएर पानीमै क्षय हुन्छ।"
+    }
+  ];
+
+  container.innerHTML = reasons.map(r => `
+    <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs space-y-2.5">
+      <div class="font-bold text-slate-900 text-xs md:text-sm flex items-start gap-2.5">
+        <span class="w-6 h-6 rounded-lg bg-indigo-600 text-white text-xs flex items-center justify-center shrink-0 mt-0.5 font-mono">Q</span>
+        <span>${r.q}</span>
+      </div>
+      <div class="ml-8 p-3.5 rounded-xl bg-slate-50 border border-slate-100 text-xs md:text-sm text-slate-700 leading-relaxed">
+        <strong class="text-indigo-900">वैज्ञानिक कारण:</strong> ${r.ans}
+      </div>
+    </div>
+  `).join('');
+}
+
+// 5. Conceptual Q&As Renderer (6 Detailed Q&As)
+function renderC9U10QAs() {
+  const container = document.getElementById('c9u10-qa-container');
+  if (!container) return;
+  const qas = [
+    {
+      q: "१. तरङ्ग समीकरण \\( v = f \\lambda \\) को वैज्ञानिक निगमन (Derivation) गर्नुहोस्।",
+      ans: `
+        <div class="space-y-3 leading-relaxed">
+          <p>मानौँ, कुनै तरङ्गको गति \\( v \\), आवृत्ति \\( f \\), आवधिक समय \\( T \\) र तरङ्ग लम्बाइ \\( \\lambda \\) छन्।</p>
+          <p>परिभाषा अनुसार, एउटा पूर्ण कम्पन पुरा हुन लाग्ने समयलाई आवधिक समय (\\( T \\)) भनिन्छ र उक्त \\( T \\) समयमा तरङ्गले पार गरेको सिधा दुरीलाई तरङ्ग लम्बाइ (\\( \\lambda \\)) भनिन्छ।</p>
+          <div class="p-2.5 rounded-xl bg-slate-100 font-mono text-xs md:text-sm">
+            \\( \\text{गति } (v) = \\frac{\\text{पार गरेको दुरी}}{\\text{लागेको समय}} \\)
+          </div>
+          <p>दुरीको ठाउँमा \\( \\lambda \\) र समयको ठाउँमा \\( T \\) राख्दा:</p>
+          <div class="p-2.5 rounded-xl bg-slate-100 font-mono text-xs md:text-sm">
+            \\( v = \\frac{\\lambda}{T} = \\lambda \\times \\left( \\frac{1}{T} \\right) \\quad \\text{--- (समीकरण १)} \\)
+          </div>
+          <p>हामीलाई थाहा छ, प्रति सेकेन्ड हुने कम्पन संख्या अर्थात् आवृत्ति \\( f = \\frac{1}{T} \\) हुन्छ।</p>
+          <p>यस मानलाई समीकरण १ मा प्रतिस्थापन गर्दा:</p>
+          <div class="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-950 font-mono font-black text-sm">
+            \\( v = f \\times \\lambda \\quad \\text{वा} \\quad v = f \\lambda \\) (प्रमाणित भयो)
+          </div>
+        </div>
+      `
+    },
+    {
+      q: "२. सामान्य तापक्रमको हावामा स्पष्ट प्रतिध्वनि सुन्न परावर्तक सतह कम्तीमा १६.६ मिटर (वा १७ मिटर) टाढा हुनुपर्छ, किन? गणितीय हिसाबसहित स्पष्ट पार्नुहोस्।",
+      ans: `
+        <div class="space-y-3 leading-relaxed">
+          <p><strong>ध्वनिको दृढता (Persistence of Hearing):</strong> मानिसको कानमा कुनै ध्वनिको प्रभाव \\( \\frac{1}{10} \\) सेकेन्ड अर्थात् <strong>०.१ सेकेन्ड</strong> सम्म रहन्छ।</p>
+          <p>तसर्थ कुनै सतहबाट ठोक्किएर आएको परावर्तित ध्वनिलाई मूल ध्वनिभन्दा छुट्टै सुन्नका लागि ध्वनि स्रोतबाट निस्केर भित्तामा ठोक्किई फेरि कानसम्म आइपुग्न लाग्ने कुल समय कम्तीमा ०.१ सेकेन्ड हुनुपर्छ।</p>
+          <div class="p-3 rounded-xl bg-indigo-50 border border-indigo-200 text-indigo-950 space-y-1">
+            <strong>गणितीय गणना:</strong><br>
+            हावामा ध्वनिको गति (\\( v \\)) = \\( 332\\text{ m/s} \\)<br>
+            न्यूनतम समय (\\( t \\)) = \\( 0.1\\text{ s} \\)<br>
+            स्रोत र भित्ताबीचको दुरी = \\( d \\)<br>
+            ध्वनिले पार गर्ने दुईतर्फी दुरी = \\( 2d \\)<br><br>
+            सूत्र: \\( 2d = v \\times t \\)<br>
+            \\( d = \\frac{v \\times t}{2} = \\frac{332 \\times 0.1}{2} = \\frac{33.2}{2} = 16.6\\text{ मिटर} \\)
+          </div>
+          <p>यदि कोठाको तापक्रम (२०°C) मा ध्वनिको गति \\( 340\\text{ m/s} \\) लिइयो भने: \\( d = \\frac{340 \\times 0.1}{2} = 17\\text{ मिटर} \\) हुन्छ।</p>
+          <p class="font-bold text-slate-800">अतः १६.६ मिटरभन्दा कम दुरी भएमा ध्वनि ०.१ सेकेन्ड अगावै फर्किने हुनाले स्पष्ट प्रतिध्वनि नसुनी केवल गूंज (Reverberation) मात्र हुन्छ।</p>
+        </div>
+      `
+    },
+    {
+      q: "३. सोनार (SONAR) को पूरा रूप के हो? यसको कार्यप्रणाली र मुख्य उपयोगिताहरू उल्लेख गर्नुहोस्।",
+      ans: `
+        <div class="space-y-3 leading-relaxed">
+          <p><strong>पूरा रूप:</strong> SONAR को पूरा रूप <strong>Sound Navigation and Ranging</strong> हो।</p>
+          <p><strong>कार्यप्रणाली:</strong> पानीजहाजको पिँधमा ट्रान्समिटर (Transmitter) र रिसिभर (Receiver) जडान गरिएको हुन्छ। ट्रान्समिटरले समुद्रको पिँधतर्फ उच्च आवृत्तिको अल्ट्रासोनिक ध्वनि तरङ्ग पठाउँछ। उक्त तरङ्ग समुद्रको पिँध वा पानीमुनिको वस्तुमा ठोक्किएर फर्किन्छ र रिसिभरले त्यसलाई ग्रहण गर्छ। तरङ्ग पठाएको र फर्केर आएको बीचको समय (\\( t \\)) नापेर सूत्र \\( d = \\frac{v \\times t}{2} \\) प्रयोग गरी गहिराइ हिसाब गरिन्छ।</p>
+          <p><strong>मुख्य उपयोगिताहरू:</strong></p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>समुद्रको वास्तविक गहिराइ मापन गर्न।</li>
+            <li>पानीमुनि रहेका पनडुब्बी (Submarine), हिमशिला (Iceberg) र डुबेका जहाज पत्ता लगाउन।</li>
+            <li>माछाका ठूला बगालहरूको अवस्थिति पत्ता लगाउन।</li>
+          </ul>
+        </div>
+      `
+    },
+    {
+      q: "४. अल्ट्रासोनिक ध्वनि (Ultrasound) का कुनै चारवटा चिकित्सा तथा औद्योगिक उपयोगहरू व्याख्या गर्नुहोस्।",
+      ans: `
+        <div class="space-y-2 leading-relaxed">
+          <p><strong>१. सोनोग्राफी / भिडियो एक्सरे (USG):</strong> गर्भवती महिलाको गर्भमा रहेको भ्रूणको विकास जाँच्न र कलेजो, मिर्गौला, पित्तथैली जस्ता भित्री अङ्गहरूको ट्युमर वा पत्थरी पत्ता लगाउन अल्ट्रासाउन्ड प्रयोग गरिन्छ। यो एक्स-रेजस्तो हानिकारक हुँदैन।</p>
+          <p><strong>२. मिर्गौलाको पत्थरी फुटाउन (Lithotripsy):</strong> शल्यक्रिया नगरीकनै शरीरबाहिरबाट उच्च तीव्रताको अल्ट्रासाउन्ड तरङ्ग पठाएर मिर्गौलाको पत्थरीलाई धुलो बनाई पिसाबबाट बाहिर निकालिन्छ।</p>
+          <p><strong>३. धातुका संरचनामा चिरा पत्ता लगाउन (Flaw Detection):</strong> हवाईजहाजका पखेटा, पुल र ठूला मेसिनका भित्री भागमा नाङ्गो आँखाले नदेखिने सुक्ष्म चिरा (cracks) पत्ता लगाउन अल्ट्रासाउन्ड तरङ्ग पठाइन्छ।</p>
+          <p><strong>४. अल्ट्रासोनिक क्लिनिङ:</strong> घडीका सुक्ष्म पुर्जा, गहना र सर्जिकल औजारहरूलाई सफा गर्न अल्ट्रासोनिक कम्पनयुक्त घोलमा राखिन्छ, जसले कुनाकाप्चाको फोहोर तत्काल हटाउँछ।</p>
+        </div>
+      `
+    },
+    {
+      q: "५. आवधिक समय (Time Period) र आवृत्ति (Frequency) को परिभाषा लेखी यिनीहरू बीचको सम्बन्ध स्पष्ट पार्नुहोस्।",
+      ans: `
+        <div class="space-y-3 leading-relaxed">
+          <p><strong>आवधिक समय (Time Period, T):</strong> कुनै कम्पनशील वस्तुलाई एउटा पूर्ण कम्पन पुरा गर्न लाग्ने समयलाई आवधिक समय भनिन्छ। यसको SI एकाइ सेकेन्ड (s) हो।</p>
+          <p><strong>आवृत्ति (Frequency, f):</strong> कम्पनशील वस्तुले प्रति सेकेन्ड पुरा गर्ने पूर्ण कम्पन वा तरङ्ग संख्यालाई आवृत्ति भनिन्छ। यसको SI एकाइ हर्ज (Hz) हो।</p>
+          <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <strong>सम्बन्ध:</strong><br>
+            यदि \\( T \\) सेकेन्डमा सम्पन्न हुने कम्पन संख्या = १<br>
+            १ सेकेन्डमा सम्पन्न हुने कम्पन संख्या = \\( \\frac{1}{T} \\)<br>
+            तर प्रति सेकेन्डको कम्पन संख्या नै आवृत्ति (\\( f \\)) हो। अतः<br>
+            <div class="font-mono font-bold text-indigo-900 pt-1">\\( f = \\frac{1}{T} \\quad \\text{वा} \\quad T = \\frac{1}{f} \\quad \\text{वा} \\quad f \\times T = 1 \\)</div>
+          </div>
+        </div>
+      `
+    },
+    {
+      q: "६. विद्युत-चुम्बकीय तरङ्ग (Electromagnetic Waves) भनेको के हो? यसका कुनै चारवटा मुख्य विशेषताहरू लेख्नुहोस्।",
+      ans: `
+        <div class="space-y-3 leading-relaxed">
+          <p><strong>विद्युत-चुम्बकीय तरङ्ग:</strong> परस्पर लम्ब रूपमा कम्पन गरिरहेका विद्युतीय क्षेत्र (Electric field) र चुम्बकीय क्षेत्र (Magnetic field) को परिवर्तनबाट उत्पन्न हुने र प्रसारण हुन भौतिक माध्यम नचाहिने तरङ्गलाई विद्युत-चुम्बकीय तरङ्ग भनिन्छ।</p>
+          <p><strong>चारवटा मुख्य विशेषताहरू:</strong></p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>यी तरङ्गहरू शून्य (Vacuum) मा पनि प्रकाशको गतिमा (\\( c = 3 \\times 10^8\\text{ m/s} \\)) प्रसारण हुन्छन्।</li>
+            <li>यी सबै अनुप्रस्थ तरङ्ग (Transverse waves) हुन्।</li>
+            <li>यिनीहरूमा परावर्तन (Reflection), अपवर्तन (Refraction) र विवर्तन जस्ता गुणहरू हुन्छन्।</li>
+            <li>यिनीहरू विद्युतीय वा चुम्बकीय क्षेत्रबाट विचलित (deflect) हुँदैनन् किनकि यिनीहरू चार्जविहीन हुन्छन्।</li>
+          </ul>
+        </div>
+      `
+    }
+  ];
+
+  container.innerHTML = qas.map(qa => `
+    <div class="bg-white rounded-3xl p-5 md:p-6 border border-slate-200/80 shadow-xs space-y-3">
+      <h4 class="text-sm md:text-base font-black text-slate-800 flex items-start gap-2.5">
+        <span class="w-6 h-6 rounded-lg bg-indigo-600 text-white text-xs flex items-center justify-center shrink-0 mt-0.5 font-bold">प्र</span>
+        <span>${qa.q}</span>
+      </h4>
+      <div class="p-4 rounded-2xl bg-slate-50/80 border border-slate-100 text-xs md:text-sm text-slate-700">
+        ${qa.ans}
+      </div>
+    </div>
+  `).join('');
+}
+
+// 6. Numericals Renderer (5 Problems in 5-Box Format)
+function renderC9U10Numericals() {
+  const container = document.getElementById('c9u10-numericals-container');
+  if (!container) return;
+  const numericals = [
+    {
+      title: "समस्या १: आवृत्ति र तरङ्ग लम्बाइबाट ध्वनिको गति गणना",
+      q: "एउटा ध्वनि तरङ्गको आवृत्ति २५० हर्ज (\\( f = 250\\text{ Hz} \\)) र तरङ्ग लम्बाइ १.३६ मिटर (\\( \\lambda = 1.36\\text{ m} \\)) छ भने उक्त ध्वनिको गति कति हुन्छ?",
+      box1: [
+        "ध्वनि तरङ्गको आवृत्ति (\\( f \\)) = \\( 250\\text{ Hz} \\)",
+        "तरङ्ग लम्बाइ (\\( \\lambda \\)) = \\( 1.36\\text{ m} \\)"
+      ],
+      box2: "ध्वनिको गति (\\( v \\)) = ?",
+      box3: "\\( v = f \\times \\lambda \\)",
+      box4: [
+        "हामीलाई थाहा छ,",
+        "\\( v = f \\lambda \\)",
+        "\\( v = 250 \\times 1.36 \\)",
+        "\\( v = 340\\text{ m/s} \\)"
+      ],
+      box5: "अतः उक्त ध्वनि तरङ्गको गति ३४० मिटर/सेकेन्ड (340 m/s) हुन्छ।"
+    },
+    {
+      title: "समस्या २: ठाडो भित्ताबाट प्रतिध्वनि सुन्न लाग्ने समय",
+      q: "कुनै व्यक्तिले ठाडो अग्लो भित्ताभन्दा ५१० मिटर टाढा उभिएर बन्दुक पड्काउँदा कति समयपछि उसले प्रतिध्वनि सुन्ला? (हावामा ध्वनिको गति \\( v = 340\\text{ m/s} \\) मान्नुहोस्)",
+      box1: [
+        "मानिस र भित्ताबीचको दुरी (\\( d \\)) = \\( 510\\text{ m} \\)",
+        "हावामा ध्वनिको गति (\\( v \\)) = \\( 340\\text{ m/s} \\)"
+      ],
+      box2: "प्रतिध्वनि सुन्न लाग्ने समय (\\( t \\)) = ?",
+      box3: "\\( 2d = v \\times t \\implies t = \\frac{2d}{v} \\)",
+      box4: [
+        "ध्वनि भित्तामा पुगेर फेरि मानिससम्म फर्किन पार गर्नुपर्ने कुल दुरी:",
+        "\\( \\text{कुल दुरी} = 2 \\times d = 2 \\times 510 = 1020\\text{ m} \\)",
+        "सूत्र अनुसार लाग्ने समय:",
+        "\\( t = \\frac{2d}{v} = \\frac{1020}{340} = 3\\text{ s} \\)"
+      ],
+      box5: "अतः उक्त व्यक्तिले बन्दुक पड्काएको ३ सेकेन्डपछि प्रतिध्वनि सुन्नेछ।"
+    },
+    {
+      title: "समस्या ३: सोनार (SONAR) द्वारा समुद्रको गहिराइ मापन",
+      q: "एउटा पानीजहाजमा जडान गरिएको सोनार (SONAR) ले पठाएको अल्ट्रासोनिक ध्वनि समुद्रको पिँधबाट परावर्तन भई २.४ सेकेन्डपछि फर्किन्छ। यदि समुद्री पानीमा ध्वनिको गति १५०० मिटर/सेकेन्ड भए, समुद्रको गहिराइ कति होला?",
+      box1: [
+        "ध्वनि गएर फर्किन लागेको समय (\\( t \\)) = \\( 2.4\\text{ s} \\)",
+        "समुद्री पानीमा ध्वनिको गति (\\( v \\)) = \\( 1500\\text{ m/s} \\)"
+      ],
+      box2: "समुद्रको गहिराइ (\\( d \\)) = ?",
+      box3: "\\( 2d = v \\times t \\implies d = \\frac{v \\times t}{2} \\)",
+      box4: [
+        "सोनारको सूत्र अनुसार,",
+        "\\( d = \\frac{v \\times t}{2} \\)",
+        "\\( d = \\frac{1500 \\times 2.4}{2} \\)",
+        "\\( d = 1500 \\times 1.2 = 1800\\text{ m} = 1.8\\text{ km} \\)"
+      ],
+      box5: "अतः उक्त स्थानमा समुद्रको गहिराइ १८०० मिटर (वा १.८ किलोमिटर) हुन्छ।"
+    },
+    {
+      title: "समस्या ४: चट्याङ पर्दा बिजुली चम्किएको स्थानको दुरी",
+      q: "आकाशमा बिजुली चम्किएको ४ सेकेन्डपछि मेघगर्जनको आवाज जमिनमा सुनिन्छ। यदि हावामा ध्वनिको गति ३३२ मिटर/सेकेन्ड भए, जमिनभन्दा कति उचाइ वा दुरीमा बिजुली चम्केको रहेछ?",
+      box1: [
+        "आवाज आइपुग्न लागेको समय (\\( t \\)) = \\( 4\\text{ s} \\)",
+        "हावामा ध्वनिको गति (\\( v \\)) = \\( 332\\text{ m/s} \\)"
+      ],
+      box2: "बिजुली चम्केको स्थानको दुरी (\\( s \\)) = ?",
+      box3: "\\( s = v \\times t \\) (नोट: प्रकाश तुरुन्तै आइपुग्ने र ध्वनि एकतर्फी मात्र आउने हुनाले \\( s = vt \\) हुन्छ)",
+      box4: [
+        "दूरीको सामान्य सूत्र अनुसार,",
+        "\\( s = v \\times t \\)",
+        "\\( s = 332 \\times 4 \\)",
+        "\\( s = 1328\\text{ m} = 1.328\\text{ km} \\)"
+      ],
+      box5: "अतः जमिनभन्दा १३२८ मिटर (करिब १.३३ किलोमिटर) को दुरीमा बिजुली चम्केको रहेछ।"
+    },
+    {
+      title: "समस्या ५: रेडियो तरङ्गको तरङ्ग लम्बाइ गणना",
+      q: "रेडियो नेपालको एफएम १०० मेगाहर्ज (\\( 100\\text{ MHz} \\)) मा प्रसारण हुन्छ। यदि विद्युत-चुम्बकीय तरङ्गको गति \\( 3 \\times 10^8\\text{ m/s} \\) भए, उक्त रेडियो तरङ्गको तरङ्ग लम्बाइ कति हुन्छ?",
+      box1: [
+        "प्रसारण आवृत्ति (\\( f \\)) = \\( 100\\text{ MHz} = 100 \\times 10^6\\text{ Hz} = 10^8\\text{ Hz} \\)",
+        "तरङ्गको गति (\\( c \\)) = \\( 3 \\times 10^8\\text{ m/s} \\)"
+      ],
+      box2: "रेडियो तरङ्गको तरङ्ग लम्बाइ (\\( \\lambda \\)) = ?",
+      box3: "\\( c = f \\lambda \\implies \\lambda = \\frac{c}{f} \\)",
+      box4: [
+        "तरङ्ग समीकरणबाट,",
+        "\\( \\lambda = \\frac{c}{f} \\)",
+        "\\( \\lambda = \\frac{3 \\times 10^8}{10^8} \\)",
+        "\\( \\lambda = 3\\text{ m} \\)"
+      ],
+      box5: "अतः उक्त १०० मेगाहर्ज रेडियो तरङ्गको तरङ्ग लम्बाइ ३ मिटर हुन्छ।"
+    }
+  ];
+
+  container.innerHTML = numericals.map(num => `
+    <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/80 shadow-sm space-y-4">
+      <div class="border-b border-slate-100 pb-3">
+        <h4 class="text-base md:text-lg font-black text-indigo-950">${num.title}</h4>
+        <p class="text-xs md:text-sm font-bold text-slate-700 mt-1 leading-relaxed bg-slate-50 p-3 rounded-xl border border-slate-100">
+          <strong>प्रश्न:</strong> ${num.q}
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <div class="p-3.5 rounded-2xl bg-blue-50/70 border border-blue-100 text-xs md:text-sm">
+          <div class="font-bold text-blue-900 mb-1 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            १. दिइएका मानहरू (Given Values):
+          </div>
+          <div class="pl-4 space-y-0.5 text-blue-950 font-medium">
+            ${num.box1.map(b => `<div>• ${b}</div>`).join('')}
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-100 text-xs md:text-sm">
+          <div class="font-bold text-amber-900 mb-1 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+            २. पत्ता लगाउनुपर्ने मान (To Find):
+          </div>
+          <div class="pl-4 font-bold text-amber-950">${num.box2}</div>
+        </div>
+
+        <div class="p-3.5 rounded-2xl bg-purple-50/70 border border-purple-100 text-xs md:text-sm">
+          <div class="font-bold text-purple-900 mb-1 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-purple-600"></span>
+            ३. प्रयोग हुने सूत्रहरू (Formulas to Use):
+          </div>
+          <div class="pl-4 font-mono font-bold text-purple-950">${num.box3}</div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs md:text-sm">
+          <div class="font-bold text-slate-800 mb-2 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+            ४. चरणबद्ध हिसाब (Step-by-step Calculation):
+          </div>
+          <div class="pl-4 space-y-1 font-mono text-slate-800">
+            ${num.box4.map(step => `<div class="leading-relaxed">${step}</div>`).join('')}
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs md:text-sm font-bold text-emerald-950 flex items-center gap-2">
+          <span class="text-base text-emerald-600">✓</span>
+          <div><strong>५. अन्तिम निष्कर्ष (Final Answer):</strong> ${num.box5}</div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// -------------------------------------------------------------------------
+// TAB 3: 16 MULTI-TIER EXAM MODEL QUESTIONS
+// -------------------------------------------------------------------------
+const c9u10TiersData = [
+  // TIER 1: KNOWLEDGE & RECALL (6 Questions)
+  {
+    tier: 't1',
+    tierName: 'तह १: ज्ञान र स्मरण (Knowledge & Recall)',
+    marks: '१ अङ्क',
+    q: "१. तरङ्ग (Wave) भनेको के हो? यसका मुख्य दुई प्रकार लेख्नुहोस्।",
+    ans: "माध्यमका कणहरूको कम्पनबाट पदार्थ नओसारीकन शक्ति वा ऊर्जा एक ठाउँबाट अर्को ठाउँमा प्रसारण हुने प्रक्रियालाई तरङ्ग भनिन्छ। माध्यमको आवश्यकता अनुसार यसका दुई प्रकार: यान्त्रिक तरङ्ग र विद्युत-चुम्बकीय तरङ्ग हुन्।"
+  },
+  {
+    tier: 't1',
+    tierName: 'तह १: ज्ञान र स्मरण (Knowledge & Recall)',
+    marks: '१ अङ्क',
+    q: "२. आवृत्ति (Frequency) र तरङ्ग लम्बाइ (Wavelength) को परिभाषा लेख्नुहोस्।",
+    ans: "<strong>आवृत्ति:</strong> प्रति सेकेन्ड उत्पन्न हुने पूर्ण तरङ्ग वा कम्पन संख्यालाई आवृत्ति भनिन्छ (SI एकाइ: Hz)।<br><strong>तरङ्ग लम्बाइ:</strong> दुई लगातार शृङ्ग वा दुई लगातार गर्तबीचको सिधा दुरीलाई तरङ्ग लम्बाइ भनिन्छ (SI एकाइ: m)।"
+  },
+  {
+    tier: 't1',
+    tierName: 'तह १: ज्ञान र स्मरण (Knowledge & Recall)',
+    marks: '२ अङ्क',
+    q: "३. शृङ्ग (Crest) र गर्त (Trough) भन्नाले के बुझिन्छ?",
+    ans: "अनुप्रस्थ तरङ्गमा सन्तुलन रेखाभन्दा माथितिरको अधिकतम विस्थापन भएको उच्चतम बिन्दुलाई <strong>शृङ्ग (Crest)</strong> र सन्तुलन रेखाभन्दा तलतिरको अधिकतम विस्थापन भएको न्यूनतम बिन्दुलाई <strong>गर्त (Trough)</strong> भनिन्छ।"
+  },
+  {
+    tier: 't1',
+    tierName: 'तह १: ज्ञान र स्मरण (Knowledge & Recall)',
+    marks: '१ अङ्क',
+    q: "४. प्रतिध्वनि (Echo) भनेको के हो?",
+    ans: "कुनै टाढाको ठूलो अवरोधक सतहमा ठोक्किएर मूल ध्वनिभन्दा छुट्टै सुनिने गरी फर्केर आउने परावर्तित ध्वनिलाई प्रतिध्वनि भनिन्छ।"
+  },
+  {
+    tier: 't1',
+    tierName: 'तह १: ज्ञान र स्मरण (Knowledge & Recall)',
+    marks: '२ अङ्क',
+    q: "५. इन्फ्रासोनिक र अल्ट्रासोनिक ध्वनिको आवृत्ति सीमा कति-कति हुन्छ?",
+    ans: "<strong>इन्फ्रासोनिक ध्वनि:</strong> २० हर्जभन्दा कम (< 20 Hz)।<br><strong>अल्ट्रासोनिक ध्वनि:</strong> २०,००० हर्जभन्दा बढी (> 20 kHz)।"
+  },
+  {
+    tier: 't1',
+    tierName: 'तह १: ज्ञान र स्मरण (Knowledge & Recall)',
+    marks: '१ अङ्क',
+    q: "६. सोनार (SONAR) को पूरा रूप के हो?",
+    ans: "सोनारको पूरा रूप <strong>Sound Navigation and Ranging</strong> हो।"
+  },
+
+  // TIER 2: UNDERSTANDING & CONCEPTUAL (5 Questions)
+  {
+    tier: 't2',
+    tierName: 'तह २: बोध र समझ (Understanding & Conceptual)',
+    marks: '२ अङ्क',
+    q: "७. अनुदैर्ध्य तरङ्गमा सङ्कुचन (Compression) र विरलन (Rarefaction) कसरी बन्दछन्?",
+    ans: "जब कम्पनशील वस्तु अगाडि सर्छ, त्यसले अगाडिका हावाका कणहरूलाई थिचेर उच्च चाप र उच्च घनत्वको क्षेत्र बनाउँछ जसलाई <strong>सङ्कुचन</strong> भनिन्छ। जब वस्तु पछाडि सर्छ, चाप र घनत्व कम भएको क्षेत्र बन्छ जसलाई <strong>विरलन</strong> भनिन्छ। यस्ता सङ्कुचन र विरलन पालैपालो अगाडि बढ्दै तरङ्ग प्रसारण हुन्छ।"
+  },
+  {
+    tier: 't2',
+    tierName: 'तह २: बोध र समझ (Understanding & Conceptual)',
+    marks: '२ अङ्क',
+    q: "८. हावा, पानी र फलाममा ध्वनिको गति फरक-फरक हुनुको कारण के हो?",
+    ans: "ध्वनिको गति माध्यमको घनत्व र प्रत्यास्थता (Elasticity) मा निर्भर गर्दछ। फलाम (ठोस) का अणुहरू अति नजिक र बलियो अन्तरआणविक बलले बाँधिएका हुनाले कम्पन तुरुन्तै प्रसारण हुन्छ। पानीमा कणहरू अलि खुकुला र हावामा धेरै टाढा हुने भएकाले ध्वनिको गति ठोसमा सबैभन्दा बढी (~५००० m/s), तरलमा मध्यम (~१५०० m/s) र ग्यासमा सबैभन्दा कम (~३३२ m/s) हुन्छ।"
+  },
+  {
+    tier: 't2',
+    tierName: 'तह २: बोध र समझ (Understanding & Conceptual)',
+    marks: '३ अङ्क',
+    q: "९. प्रतिध्वनि र प्रतिध्वनन (Reverberation) बीचको भिन्नता उदाहरणसहित स्पष्ट पार्नुहोस्।",
+    ans: "प्रतिध्वनिमा परावर्तक सतह कम्तीमा १६.६ मिटर टाढा हुने भएकाले मूल ध्वनि सकिएपछि स्पष्ट छुट्टै आवाज दोहोरिन्छ (जस्तै: अग्लो भिर वा पहाडको अगाडि कराउँदा)। तर प्रतिध्वननमा परावर्तक सतह १६.६ मिटरभन्दा नजिक हुने भएकाले ०.१ सेकेन्डभन्दा अगावै बारम्बार परावर्तन भई आवाज गुञ्जिएर अस्पष्ट बन्दछ (जस्तै: खाली कोठामा बोल्दा)।"
+  },
+  {
+    tier: 't2',
+    tierName: 'तह २: बोध र समझ (Understanding & Conceptual)',
+    marks: '२ अङ्क',
+    q: "१०. चमेरोले उड्दा र सिकार गर्दा इकोलोकेसन (Echolocation) कसरी प्रयोग गर्छ?",
+    ans: "चमेरोले उड्ने क्रममा आफ्नो मुखबाट उच्च आवृत्तिको अल्ट्रासाउन्ड निकाल्छ। अगाडि रहेको सिकार वा रुखबाट परावर्तन भई आएको प्रतिध्वनिलाई कानले टिपेर समय अन्तरका आधारमा सिकार कति दुरीमा र कुन दिशामा छ भनी ठ्याक्कै पहिचान गर्छ।"
+  },
+  {
+    tier: 't2',
+    tierName: 'तह २: बोध र समझ (Understanding & Conceptual)',
+    marks: '३ अङ्क',
+    q: "११. चिकित्सा क्षेत्रमा अल्ट्रासोनोग्राफी (USG) लाई एक्स-रे (X-ray) भन्दा सुरक्षित किन मानिन्छ?",
+    ans: "एक्स-रे उच्च ऊर्जा भएको आयनीकारक विकिरण (Ionizing Radiation) हो, जसले कोष तथा तन्तुलाई हानी पुर्याउन र बारम्बार प्रयोग गर्दा क्यान्सर निम्त्याउन सक्छ। तर अल्ट्रासोनोग्राफीमा कुनै हानिकारक विकिरण नभई केवल उच्च आवृत्तिको यान्त्रिक ध्वनि तरङ्ग मात्र प्रयोग हुने भएकाले यो आमा र गर्भको शिशु दुवैका लागि पूर्ण रूपमा सुरक्षित मानिन्छ।"
+  },
+
+  // TIER 3: APPLICATION & HIGHER ABILITY (5 Questions)
+  {
+    tier: 't3',
+    tierName: 'तह ३: प्रयोग, विश्लेषण र उच्च क्षमता (Application & Higher Ability)',
+    marks: '४ अङ्क',
+    q: "१२. तरङ्ग समीकरण \\( v = f \\lambda \\) निगमन गर्नुहोस्। यदि गति स्थिर रहँदा आवृत्ति दोब्बर गरियो भने तरङ्ग लम्बाइमा कस्तो असर पर्ला? गणितीय पुष्टि गर्नुहोस्।",
+    ans: `
+      \\( v = \\frac{\\lambda}{T} = \\lambda \\times \\left(\\frac{1}{T}\\right) = f \\lambda \\) (प्रमाणित भयो)।<br>
+      <strong>गणितीय पुष्टि:</strong><br>
+      समीकरण अनुसार, \\( \\lambda = \\frac{v}{f} \\)।<br>
+      यदि गति \\( v \\) स्थिर छ र नयाँ आवृत्ति \\( f' = 2f \\) बनाइयो भने:<br>
+      \\( \\lambda' = \\frac{v}{f'} = \\frac{v}{2f} = \\frac{1}{2} \\left( \\frac{v}{f} \\right) = \\frac{\\lambda}{2} \\)।<br>
+      अतः गति स्थिर रहँदा आवृत्ति दोब्बर बनाउँदा तरङ्ग लम्बाइ <strong>ठिक आधा (५०%)</strong> हुन्छ।
+    `
+  },
+  {
+    tier: 't3',
+    tierName: 'तह ३: प्रयोग, विश्लेषण र उच्च क्षमता (Application & Higher Ability)',
+    marks: '४ अङ्क',
+    q: "१३. एउटा पानीजहाजले समुद्रको पिँधतर्फ पठाएको अल्ट्रासोनिक तरङ्ग ३ सेकेन्डपछि फर्किन्छ। यदि समुद्री पानीमा ध्वनिको गति १५३० मिटर/सेकेन्ड भए समुद्रको गहिराइ कति होला? यदि जहाज त्यहीँबाट १० सेकेन्डमा ३०० मिटर अगाडि बढ्छ भने जहाजको गति कति हुन्छ?",
+    ans: `
+      <strong>१. समुद्रको गहिराइ:</strong><br>
+      \\( d = \\frac{v \\times t}{2} = \\frac{1530 \\times 3}{2} = \\frac{4590}{2} = 2295\\text{ मिटर} \\)<br>
+      <strong>२. जहाजको गति:</strong><br>
+      \\( v_{ship} = \\frac{\\text{दुरी}}{\\text{समय}} = \\frac{300\\text{ m}}{10\\text{ s}} = 30\\text{ m/s} \\)
+    `
+  },
+  {
+    tier: 't3',
+    tierName: 'तह ३: प्रयोग, विश्लेषण र उच्च क्षमता (Application & Higher Ability)',
+    marks: '३ अङ्क',
+    q: "१४. मानिसको कानमा कुनै ध्वनिको प्रभाव ०.१ सेकेन्ड रहन्छ। यदि कोठाको तापक्रम ३५°C हुँदा हावामा ध्वनिको गति ३५२ मिटर/सेकेन्ड छ भने, त्यस समयमा प्रतिध्वनि सुन्न आवश्यक न्यूनतम दुरी कति हुनुपर्छ?",
+    ans: `
+      दिइएको: \\( v = 352\\text{ m/s} \\), \\( t = 0.1\\text{ s} \\)<br>
+      सूत्र: \\( d = \\frac{v \\times t}{2} \\)<br>
+      \\( d = \\frac{352 \\times 0.1}{2} = \\frac{35.2}{2} = 17.6\\text{ मिटर} \\)<br>
+      अतः ३५°C को तातो हावामा प्रतिध्वनि सुन्न परावर्तक सतह कम्तीमा <strong>१७.६ मिटर</strong> टाढा हुनुपर्छ।
+    `
+  },
+  {
+    tier: 't3',
+    tierName: 'तह ३: प्रयोग, विश्लेषण र उच्च क्षमता (Application & Higher Ability)',
+    marks: '४ अङ्क',
+    q: "१५. ठूला सभाहल वा सिनेमा हलहरूमा प्रतिध्वनन (Reverberation) नियन्त्रण गर्न इन्जिनियरहरूले अपनाउने कुनै चारवटा ध्वनिशास्त्रीय (Acoustic) उपायहरू व्याख्या गर्नुहोस्।",
+    ans: "१. <strong>ध्वनिशोषक भित्ता:</strong> भित्ताहरूमा फोम, कर्क वा फाइबरग्लास जस्ता छिद्रयुक्त ध्वनिशोषक सामग्री लगाउने।<br>२. <strong>बाक्ला पर्दा:</strong> झ्याल र ढोकामा बाक्ला कपडाका पर्दाहरू प्रयोग गर्ने।<br>३. <strong>कार्पेट बिछ्याउने:</strong> भुइँमा बाक्लो कार्पेट बिछ्याएर भुइँबाट हुने परावर्तन न्यूनीकरण गर्ने।<br>४. <strong>घुमाउरो छत र झुकेका सतहहरू:</strong> छतलाई घुमाउरो (Curved Ceiling) बनाएर परावर्तित ध्वनिलाई हलभरि समान रूपमा फैलाउने।"
+  },
+  {
+    tier: 't3',
+    tierName: 'तह ३: प्रयोग, विश्लेषण र उच्च क्षमता (Application & Higher Ability)',
+    marks: '४ अङ्क',
+    q: "१६. रेडियो नेपालले १०० मेगाहर्ज (100 MHz) र नेपाल टेलिभिजनले २०० मेगाहर्ज (200 MHz) मा प्रसारण गर्दा दुवै विद्युत-चुम्बकीय तरङ्गको गति समान हुन्छ कि फरक? यिनीहरूको तरङ्ग लम्बाइको अनुपात कति हुन्छ, गणितीय हिसाब गर्नुहोस्।",
+    ans: `
+      <strong>१. गतिको तुलना:</strong> दुवै विद्युत-चुम्बकीय तरङ्ग भएकाले हावा वा शून्यमा दुवैको गति समान (\\( c = 3 \\times 10^8\\text{ m/s} \\)) हुन्छ।<br>
+      <strong>२. तरङ्ग लम्बाइको अनुपात:</strong><br>
+      रेडियो नेपाल: \\( \\lambda_1 = \\frac{c}{f_1} = \\frac{3 \\times 10^8}{100 \\times 10^6} = 3\\text{ m} \\)<br>
+      नेपाल टेलिभिजन: \\( \\lambda_2 = \\frac{c}{f_2} = \\frac{3 \\times 10^8}{200 \\times 10^6} = 1.5\\text{ m} \\)<br>
+      अनुपात: \\( \\frac{\\lambda_1}{\\lambda_2} = \\frac{3}{1.5} = \\frac{2}{1} = 2:1 \\)<br>
+      अतः आवृत्ति दोब्बर भएको टिभी तरङ्गको लम्बाइ रेडियो तरङ्गको भन्दा आधा हुन्छ।
+    `
+  }
+];
+
+function setTierFilterC9U10(filter) {
+  activeC9U10TierFilter = filter;
+  playAudioC9U10('click');
+  const filters = ['all', 't1', 't2', 't3'];
+  filters.forEach(f => {
+    const btn = document.getElementById(`c9u10-tier-btn-${f}`);
+    if (btn) {
+      if (f === filter) {
+        btn.className = "px-4 py-2 rounded-xl bg-indigo-600 text-white font-bold text-xs shadow-xs cursor-pointer min-h-[38px]";
+      } else {
+        btn.className = "px-4 py-2 rounded-xl text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 font-bold text-xs cursor-pointer min-h-[38px]";
+      }
+    }
+  });
+
+  renderC9U10Tiers();
+}
+
+function renderC9U10Tiers() {
+  const container = document.getElementById('c9u10-tiers-container');
+  if (!container) return;
+  const filtered = activeC9U10TierFilter === 'all'
+    ? c9u10TiersData
+    : c9u10TiersData.filter(d => d.tier === activeC9U10TierFilter);
+
+  container.innerHTML = filtered.map(t => `
+    <div class="bg-white rounded-3xl p-5 md:p-6 border border-slate-200/80 shadow-xs space-y-3">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold ${t.tier === 't1' ? 'bg-blue-100 text-blue-900' : t.tier === 't2' ? 'bg-emerald-100 text-emerald-900' : 'bg-purple-100 text-purple-900'}">
+          ${t.tierName}
+        </span>
+        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 font-mono text-xs font-bold">${t.marks}</span>
+      </div>
+      <h4 class="text-sm md:text-base font-black text-slate-900 leading-snug">
+        ${t.q}
+      </h4>
+      <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 text-xs md:text-sm text-slate-700 leading-relaxed">
+        <strong class="text-indigo-950">नमुना उत्तर:</strong> ${t.ans}
+      </div>
+    </div>
+  `).join('');
+
+  if (typeof typesetElement === 'function') {
+    typesetElement(container);
+  }
+}
+
+// -------------------------------------------------------------------------
+// TAB 4: SELF-ASSESSMENT QUIZ ENGINE (10 Questions)
+// -------------------------------------------------------------------------
+const c9u10QuizQuestions = [
+  {
+    q: "१. माध्यमका कणहरू तरङ्ग प्रसारणको दिशासँग लम्ब भएर कम्पन गर्ने तरङ्ग कुन हो?",
+    opts: ["अनुप्रस्थ तरङ्ग", "अनुदैर्ध्य तरङ्ग", "स्थिर तरङ्ग", "ध्वनि तरङ्ग"],
+    ans: 0,
+    exp: "लम्ब (९०°) कम्पन हुँदा अनुप्रस्थ तरङ्ग बन्दछ। यसमा शृङ्ग र गर्त हुन्छन्।"
+  },
+  {
+    q: "२. तरङ्गको गति (v) निकाल्ने सही सूत्र कुन हो?",
+    opts: ["v = f / λ", "v = f λ", "v = λ / f", "v = f² λ"],
+    ans: 1,
+    exp: "तरङ्ग समीकरण अनुसार \\( v = f \\lambda \\) हुन्छ।"
+  },
+  {
+    q: "३. हावामा ध्वनिको गति ३४० m/s हुँदा स्पष्ट प्रतिध्वनि सुन्न परावर्तक सतह कम्तीमा कति टाढा हुनुपर्छ?",
+    opts: ["१० मिटर", "१७ मिटर", "३४ मिटर", "६८ मिटर"],
+    ans: 1,
+    exp: "\\( d = \\frac{v \\times t}{2} = \\frac{340 \\times 0.1}{2} = 17\\text{ m} \\)।"
+  },
+  {
+    q: "४. २० हर्जभन्दा कम आवृत्तिको ध्वनिलाई के भनिन्छ?",
+    opts: ["श्रव्य ध्वनि", "अल्ट्रासोनिक ध्वनि", "इन्फ्रासोनिक ध्वनि", "सुमधुर ध्वनि"],
+    ans: 2,
+    exp: "२० हर्जभन्दा कम आवृत्तिको ध्वनिलाई इन्फ्रासोनिक ध्वनि भनिन्छ।"
+  },
+  {
+    q: "५. प्रति सेकेन्ड उत्पन्न हुने कम्पन संख्यालाई के भनिन्छ?",
+    opts: ["आवृत्ति (Frequency)", "आवधिक समय (Time Period)", "आयाम (Amplitude)", "तरङ्ग लम्बाइ"],
+    ans: 0,
+    exp: "प्रति सेकेन्ड हुने पूर्ण कम्पन संख्यालाई आवृत्ति भनिन्छ र यसको एकाइ हर्ज (Hz) हो।"
+  },
+  {
+    q: "६. समुद्रको गहिराइ नाप्न कुन यन्त्र प्रयोग गरिन्छ?",
+    opts: ["राडार (RADAR)", "सोनार (SONAR)", "अल्टिमिटर", "ग्याल्भानोमिटर"],
+    ans: 1,
+    exp: "सोनार (SONAR) ले अल्ट्रासाउन्डको सहायताले समुद्रको गहिराइ नाप्दछ।"
+  },
+  {
+    q: "७. चमेरोले उड्दा अवरोध पत्ता लगाउन कुन तरङ्ग प्रयोग गर्छ?",
+    opts: ["अल्ट्रासोनिक तरङ्ग", "इन्फ्रासोनिक तरङ्ग", "रेडियो तरङ्ग", "माइक्रोवेभ"],
+    ans: 0,
+    exp: "चमेरोले २० kHz भन्दा बढी आवृत्तिको अल्ट्रासाउन्ड निकाली इकोलोकेसन गर्दछ।"
+  },
+  {
+    q: "८. यदि कुनै तरङ्गको आवृत्ति ५० हर्ज भए त्यसको आवधिक समय (T) कति हुन्छ?",
+    opts: ["०.०२ सेकेन्ड", "०.२ सेकेन्ड", "२ सेकेन्ड", "५० सेकेन्ड"],
+    ans: 0,
+    exp: "\\( T = \\frac{1}{f} = \\frac{1}{50} = 0.02\\text{ s} \\)।"
+  },
+  {
+    q: "९. तलका मध्ये कुन माध्यममा ध्वनि प्रसारण हुन सक्दैन?",
+    opts: ["पानी", "फलाम", "हावा", "शून्य (Vacuum)"],
+    ans: 3,
+    exp: "ध्वनिलाई प्रसारण हुन भौतिक कणहरू चाहिन्छ, शून्य (Vacuum) मा कण नहुने हुँदा ध्वनि प्रसारण हुन सक्दैन।"
+  },
+  {
+    q: "१०. शून्यमा प्रकाशको गति कति हुन्छ?",
+    opts: ["332 m/s", "1500 m/s", "3 × 10⁸ m/s", "3 × 10⁵ m/s"],
+    ans: 2,
+    exp: "विद्युत-चुम्बकीय तरङ्ग र प्रकाशको गति शून्यमा \\( c = 3 \\times 10^8\\text{ m/s} \\) (३ लाख किमी/सेकेन्ड) हुन्छ।"
+  }
+];
+
+function renderC9U10Quiz() {
+  const container = document.getElementById('c9u10-quiz-container');
+  if (!container) return;
+
+  const total = c9u10QuizQuestions.length;
+  let correctCount = 0;
+  let answeredCount = 0;
+
+  const html = c9u10QuizQuestions.map((qItem, qIdx) => {
+    const userSelected = c9u10QuizAnswers[qIdx];
+    const isAnswered = typeof userSelected !== 'undefined';
+    if (isAnswered) {
+      answeredCount++;
+      if (userSelected === qItem.ans) correctCount++;
+    }
+
+    return `
+      <div class="bg-white rounded-3xl p-5 md:p-6 border border-slate-200/80 shadow-xs space-y-3">
+        <div class="flex items-start gap-3">
+          <span class="w-7 h-7 rounded-xl bg-indigo-50 text-indigo-700 font-bold text-xs flex items-center justify-center shrink-0 border border-indigo-200">
+            ${qIdx + 1}
+          </span>
+          <div class="text-sm font-bold text-slate-800 leading-snug">
+            ${qItem.q}
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pl-10">
+          ${qItem.opts.map((opt, oIdx) => {
+            let optClass = "px-3.5 py-2.5 rounded-xl text-xs flex items-center gap-2 cursor-pointer transition border ";
+            if (!isAnswered) {
+              optClass += "bg-slate-50 text-slate-700 border-slate-200/80 hover:bg-indigo-50/60 hover:text-indigo-900";
+            } else if (oIdx === qItem.ans) {
+              optClass += "bg-emerald-50 text-emerald-950 border-emerald-300 font-bold ring-2 ring-emerald-400/30";
+            } else if (userSelected === oIdx) {
+              optClass += "bg-rose-50 text-rose-950 border-rose-300 font-bold";
+            } else {
+              optClass += "bg-slate-50 text-slate-400 border-slate-100 opacity-60";
+            }
+
+            return `
+              <div onclick="selectQuizC9U10Option(${qIdx}, ${oIdx})" class="${optClass} min-h-[44px]">
+                <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${isAnswered && oIdx === qItem.ans ? 'bg-emerald-600 text-white' : isAnswered && userSelected === oIdx ? 'bg-rose-600 text-white' : 'bg-slate-200 text-slate-700'}">
+                  ${String.fromCharCode(65 + oIdx)}
+                </span>
+                <span>${opt}</span>
+                ${isAnswered && oIdx === qItem.ans ? '<span class="ml-auto text-emerald-600 font-bold">✓</span>' : ''}
+                ${isAnswered && userSelected === oIdx && oIdx !== qItem.ans ? '<span class="ml-auto text-rose-600 font-bold">✗</span>' : ''}
+              </div>
+            `;
+          }).join('')}
+        </div>
+
+        ${isAnswered ? `
+          <div class="ml-10 p-3 rounded-xl ${userSelected === qItem.ans ? 'bg-emerald-50/60 border border-emerald-100 text-emerald-950' : 'bg-rose-50/60 border border-rose-100 text-rose-950'} text-xs leading-relaxed">
+            <strong class="font-bold">${userSelected === qItem.ans ? '✓ स्याबास! सही उत्तर।' : '✗ गलत उत्तर!'}</strong>
+            <span class="text-slate-600 ml-1">${qItem.exp}</span>
+          </div>
+        ` : ''}
+      </div>
+    `;
+  }).join('');
+
+  container.innerHTML = html;
+
+  // Update Score & Feedback
+  const scoreEl = document.getElementById('c9u10-quiz-score');
+  const feedEl = document.getElementById('c9u10-quiz-feedback');
+  if (scoreEl) scoreEl.textContent = `${correctCount} / ${total}`;
+  if (feedEl) {
+    if (answeredCount === 0) feedEl.textContent = "प्रश्नहरूको उत्तर दिनुहोस्";
+    else if (answeredCount < total) feedEl.textContent = `${answeredCount} वटा हल गरियो (${correctCount} सही)`;
+    else {
+      const pct = (correctCount / total) * 100;
+      if (pct >= 80) feedEl.textContent = `उत्कृष्ट नतिजा! (${pct}%) 🎉`;
+      else if (pct >= 50) feedEl.textContent = `धेरै राम्रो! (${pct}%) 👍`;
+      else feedEl.textContent = `अझै मिहिनेत गर्नुहोस् (${pct}%) 📖`;
+    }
+  }
+
+  if (typeof typesetElement === 'function') {
+    typesetElement(container);
+  }
+}
+
+function selectQuizC9U10Option(qIdx, optIdx) {
+  if (typeof c9u10QuizAnswers[qIdx] !== 'undefined') return;
+  c9u10QuizAnswers[qIdx] = optIdx;
+  const isCorrect = optIdx === c9u10QuizQuestions[qIdx].ans;
+  if (isCorrect) playAudioC9U10('correct');
+  else playAudioC9U10('wrong');
+  renderC9U10Quiz();
+}
+
+function resetQuizC9U10() {
+  playAudioC9U10('click');
+  c9u10QuizAnswers = {};
+  renderC9U10Quiz();
+}
+
+// -------------------------------------------------------------------------
+// UNIT 10 INITIALIZATION
+// -------------------------------------------------------------------------
+function initC9U10() {
+  updateWaveSimC9U10();
+  updateEchoSimC9U10();
+  updateAudioLabFreqC9U10(currentC9U10Freq);
+  renderC9U10Exercises();
+  renderC9U10Tiers();
+  renderC9U10Quiz();
+
+  const c9v10 = document.getElementById('c9-view-10');
+  if (c9v10 && typeof typesetElement === 'function') {
+    typesetElement(c9v10);
+  }
+}
+
+
+
 
 // Ensure startup trigger if active
 if (document.readyState === 'loading') {
@@ -50073,6 +52339,8 @@ if (document.readyState === 'loading') {
       initC9U8();
     } else if (typeof currentGrade !== 'undefined' && currentGrade === 9 && typeof activeUnit9 !== 'undefined' && activeUnit9 === 9 && typeof initC9U9 === 'function') {
       initC9U9();
+    } else if (typeof currentGrade !== 'undefined' && currentGrade === 9 && typeof activeUnit9 !== 'undefined' && activeUnit9 === 10 && typeof initC9U10 === 'function') {
+      initC9U10();
     }
   });
 }
