@@ -1352,43 +1352,43 @@ const C9U7_EXERCISES_DATA = [
     id: 'struct-1',
     q: '४ (क). औसत गति र प्रवेगको परिभाषा लेख्नुहोस् ।',
     htmlContent: `
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-4 rounded-2xl bg-blue-50/70 border border-blue-200 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-blue-600 text-white">१. औसत गति (Average Velocity)</span>
-            <span class="text-xs font-mono text-blue-700 font-bold">SI: m/s</span>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+        <!-- Card 1: Average Velocity -->
+        <div class="p-5 rounded-2xl bg-white border-2 border-blue-100 shadow-sm space-y-3">
+          <div class="flex items-center justify-between border-b border-blue-100 pb-2">
+            <span class="text-xs font-bold px-3 py-1 rounded-full bg-blue-600 text-white">१. औसत गति (Average Velocity)</span>
+            <span class="text-xs font-mono font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">SI: m/s</span>
           </div>
-          <p class="text-xs md:text-sm text-slate-700">
+          <p class="text-xs md:text-sm text-slate-700 leading-relaxed">
             कुनै चालमा रहेको वस्तुले पार गरेको जम्मा स्थानान्तरणलाई उक्त स्थानान्तरण पार गर्न लागेको जम्मा समयले भाग गर्दा आउने मानलाई <strong>औसत गति</strong> भनिन्छ।
           </p>
-          <div class="p-3 rounded-xl bg-white border border-blue-100 space-y-2">
-            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">पाठ्यपुस्तक सूत्र (Textbook Formula):</div>
-            <div class="offline-math text-center py-1.5 text-sm md:text-base font-bold text-blue-950 block">
-              औसत गति (v<sub>av</sub>) = <span class="offline-frac"><span class="top">जम्मा स्थानान्तरण (s)</span><span class="bot">जम्मा समय (t)</span></span> = <span class="offline-frac"><span class="top">s</span><span class="bot">t</span></span>
+          <div class="p-3.5 rounded-xl bg-blue-50/70 border border-blue-200 text-center space-y-2">
+            <span class="text-xs font-bold text-blue-900 block">पाठ्यपुस्तक सूत्र (TEXTBOOK FORMULA):</span>
+            <div class="text-sm md:text-base font-serif text-blue-950">
+              $$\\text{औसत गति } (v_{av}) = \\frac{\\text{जम्मा स्थानान्तरण } (s)}{\\text{जम्मा समय } (t)} = \\frac{s}{t}$$
             </div>
-            <div class="text-xs text-slate-600 pt-1.5 border-t border-slate-100 flex items-center justify-between">
-              <span>समान प्रवेगको अवस्थामा:</span>
-              <span class="offline-math font-bold text-slate-900">v<sub>av</sub> = <span class="offline-frac"><span class="top">u + v</span><span class="bot">2</span></span></span>
+            <div class="pt-2 text-xs text-slate-600 border-t border-blue-200/60">
+              समान प्रवेगको अवस्थामा: $$v_{av} = \\frac{u + v}{2}$$
             </div>
           </div>
         </div>
 
-        <div class="p-4 rounded-2xl bg-indigo-50/70 border border-indigo-200 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-indigo-600 text-white">२. प्रवेग (Acceleration)</span>
-            <span class="text-xs font-mono text-indigo-700 font-bold">SI: m/s²</span>
+        <!-- Card 2: Acceleration -->
+        <div class="p-5 rounded-2xl bg-white border-2 border-indigo-100 shadow-sm space-y-3">
+          <div class="flex items-center justify-between border-b border-indigo-100 pb-2">
+            <span class="text-xs font-bold px-3 py-1 rounded-full bg-indigo-600 text-white">२. प्रवेग (Acceleration)</span>
+            <span class="text-xs font-mono font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">SI: m/s²</span>
           </div>
-          <p class="text-xs md:text-sm text-slate-700">
+          <p class="text-xs md:text-sm text-slate-700 leading-relaxed">
             समयको अन्तरालसँगै वस्तुको वेग वा गतिमा आउने परिवर्तनको दरलाई <strong>प्रवेग</strong> भनिन्छ। (समयसँगै गति घट्ने दरलाई मन्दता वा ऋणात्मक प्रवेग भनिन्छ)।
           </p>
-          <div class="p-3 rounded-xl bg-white border border-indigo-100 space-y-2">
-            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">पाठ्यपुस्तक सूत्र (Textbook Formula):</div>
-            <div class="offline-math text-center py-1.5 text-sm md:text-base font-bold text-indigo-950 block">
-              प्रवेग (a) = <span class="offline-frac"><span class="top">अन्तिम गति (v) – सुरुको गति (u)</span><span class="bot">लागेको समय (t)</span></span> = <span class="offline-frac"><span class="top">v - u</span><span class="bot">t</span></span>
+          <div class="p-3.5 rounded-xl bg-indigo-50/70 border border-indigo-200 text-center space-y-2">
+            <span class="text-xs font-bold text-indigo-900 block">पाठ्यपुस्तक सूत्र (TEXTBOOK FORMULA):</span>
+            <div class="text-sm md:text-base font-serif text-indigo-950">
+              $$\\text{प्रवेग } (a) = \\frac{\\text{अन्तिम गति } (v) - \\text{ सुरुको गति } (u)}{\\text{लागेको समय } (t)} = \\frac{v - u}{t}$$
             </div>
-            <div class="text-xs text-slate-600 pt-1.5 border-t border-slate-100 flex items-center justify-between">
-              <span>मन्दता (Retardation):</span>
-              <span class="offline-math font-bold text-slate-900">a = ऋणात्मक (-a)</span>
+            <div class="pt-2 text-xs text-slate-600 border-t border-indigo-200/60">
+              मन्दता (Retardation): $$a = -\\text{ऋणात्मक मान}$$
             </div>
           </div>
         </div>
@@ -1400,129 +1400,135 @@ const C9U7_EXERCISES_DATA = [
     id: 'struct-2',
     q: '४ (ख). सिधा रेखीय चालका ३ समीकरणहरूको निगमन गर्नुहोस् ।',
     htmlContent: `
-      <div class="space-y-4">
+      <div class="space-y-5 max-w-3xl mx-auto">
         <!-- Assumptions Header Box -->
-        <div class="p-3.5 rounded-2xl bg-amber-50 border border-amber-200 text-xs md:text-sm text-amber-950 space-y-1">
+        <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 text-xs md:text-sm text-amber-950 space-y-1">
           <div class="font-bold flex items-center gap-1.5 text-amber-900">
             <span>📌</span><span>पाठ्यपुस्तक प्रारम्भिक मान्यताहरू (Initial Assumptions & Symbols):</span>
           </div>
-          <p class="text-slate-700 leading-relaxed">
-            मानौँ, कुनै वस्तु सुरुको गति <span class="offline-math font-bold">u</span> ले सिधा रेखामा गुडिरहेको छ। समान प्रवेग <span class="offline-math font-bold">a</span> का कारण <span class="offline-math font-bold">t</span> समयपछि उक्त वस्तुले <span class="offline-math font-bold">s</span> स्थानान्तरण पार गरी अन्तिम गति <span class="offline-math font-bold">v</span> प्राप्त गर्दछ।
+          <p class="leading-relaxed">
+            मानौँ, कुनै वस्तु सुरुको गति $u$ ले सिधा रेखामा गुडिरहेको छ। समान प्रवेग $a$ का कारण $t$ समयपछि उक्त वस्तुले $s$ स्थानान्तरण पार गरी अन्तिम गति $v$ प्राप्त गर्दछ।
           </p>
         </div>
 
         <!-- Derivation 1: v = u + at -->
-        <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-3 shadow-xs">
-          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+        <div class="p-5 md:p-6 rounded-2xl bg-white border border-slate-200 space-y-3 shadow-xs">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
             <h5 class="font-bold text-sm md:text-base text-blue-900 flex items-center gap-2">
-              <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs">१</span>
-              पहिलो समीकरण: v = u + at को निगमन (गति, प्रवेग र समय सम्बन्धी)
+              <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">१</span>
+              पहिलो समीकरण: $v = u + at$ को निगमन (गति, प्रवेग र समय सम्बन्धी)
             </h5>
-            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800">समीकरण (i)</span>
+            <span class="text-xs font-bold px-3 py-1 rounded-full bg-blue-100 text-blue-800">समीकरण (i)</span>
           </div>
-          <div class="space-y-2 text-xs md:text-sm">
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">प्रवेगको परिभाषा अनुसार:</span>
-              <span class="offline-math font-bold text-slate-900">प्रवेग (a) = <span class="offline-frac"><span class="top">अन्तिम गति – सुरुको गति</span><span class="bot">समय</span></span></span>
+          <div class="space-y-2 text-xs md:text-sm text-slate-800">
+            <p class="font-semibold text-slate-700">प्रवेगको परिभाषा अनुसार:</p>
+            <div class="py-1 px-3 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$\\text{प्रवेग } (a) = \\frac{\\text{अन्तिम गति } (v) - \\text{ सुरुको गति } (u)}{\\text{समय } (t)}$$
             </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">सङ्केतमा मान राख्दा:</span>
-              <span class="offline-math font-bold text-blue-900">a = <span class="offline-frac"><span class="top">v - u</span><span class="bot">t</span></span></span>
+            <p class="font-semibold text-slate-700 pt-1">सङ्केतमा मान राख्दा:</p>
+            <div class="py-1 px-3 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$a = \\frac{v - u}{t}$$
             </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">क्रस-गुणन (Cross-multiplication) गर्दा:</span>
-              <span class="offline-math font-bold text-slate-900">at = v - u</span>
+            <p class="font-semibold text-slate-700 pt-1">क्रस-गुणन (Cross-multiplication) गर्दा:</p>
+            <div class="py-1 px-3 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$at = v - u$$
             </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">स्थान परिवर्तन गरी मिलाउँदा:</span>
-              <span class="offline-math font-bold text-emerald-800">v = u + at</span>
+            <p class="font-semibold text-slate-700 pt-1">स्थान परिवर्तन गरी मिलाउँदा:</p>
+            <div class="p-3.5 my-2 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-500 flex items-center justify-between shadow-xs">
+              <div>
+                <span class="text-xs font-bold text-blue-700 uppercase tracking-wider block">प्रमाणित पहिलो समीकरण:</span>
+                <span class="text-xs md:text-sm font-semibold text-slate-700">गति, प्रवेग र समय सम्बन्ध</span>
+              </div>
+              <div class="text-base md:text-xl font-bold text-blue-950 font-serif">
+                $$v = u + at \\quad \\text{--- (i)}$$
+              </div>
             </div>
-          </div>
-          <div class="p-2.5 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-between text-xs md:text-sm shadow-sm">
-            <span>💡 प्रमाणित समीकरण १:</span>
-            <span class="offline-math text-base text-yellow-300 font-bold tracking-wider">v = u + at &nbsp; — (i)</span>
           </div>
         </div>
 
         <!-- Derivation 2: v² = u² + 2as -->
-        <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-3 shadow-xs">
-          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+        <div class="p-5 md:p-6 rounded-2xl bg-white border border-slate-200 space-y-3 shadow-xs">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
             <h5 class="font-bold text-sm md:text-base text-indigo-900 flex items-center gap-2">
-              <span class="w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center text-xs">२</span>
-              दोस्रो समीकरण: v² = u² + 2as को निगमन (गति, प्रवेग र स्थानान्तरण सम्बन्धी)
+              <span class="w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center text-xs font-bold">२</span>
+              दोस्रो समीकरण: $v^2 = u^2 + 2as$ को निगमन (गति, प्रवेग र स्थानान्तरण सम्बन्धी)
             </h5>
-            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-indigo-100 text-indigo-800">समीकरण (ii)</span>
+            <span class="text-xs font-bold px-3 py-1 rounded-full bg-indigo-100 text-indigo-800">समीकरण (ii)</span>
           </div>
-          <div class="space-y-2 text-xs md:text-sm">
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">समान प्रवेगमा गुडिरहेको वस्तुको औसत गति:</span>
-              <span class="offline-math font-bold text-slate-900">औसत गति (v<sub>av</sub>) = <span class="offline-frac"><span class="top">u + v</span><span class="bot">2</span></span></span>
+          <div class="space-y-2 text-xs md:text-sm text-slate-800">
+            <p class="font-semibold text-slate-700">समान प्रवेगमा गुडिरहेको वस्तुको औसत गति:</p>
+            <div class="py-1 px-3 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$\\text{औसत गति } (v_{av}) = \\frac{u + v}{2}$$
             </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">स्थानान्तरण = औसत गति × समय:</span>
-              <span class="offline-math font-bold text-slate-900">s = <span class="offline-frac"><span class="top">u + v</span><span class="bot">2</span></span> × t &nbsp; — (क)</span>
+            <p class="font-semibold text-slate-700 pt-1">हामीलाई थाहा छ, स्थानान्तरण = औसत गति × समय:</p>
+            <div class="py-1 px-3 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$s = \\left(\\frac{u + v}{2}\\right) \\times t \\quad \\text{--- (क)}$$
             </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">पहिलो समीकरण v = u + at बाट समय t को मान निकाल्दा:</span>
-              <span class="offline-math font-bold text-indigo-900">v - u = at &nbsp; ⟹ &nbsp; t = <span class="offline-frac"><span class="top">v - u</span><span class="bot">a</span></span> &nbsp; — (ख)</span>
+            <p class="font-semibold text-slate-700 pt-1">पहिलो समीकरण $v = u + at$ बाट समय $t$ को मान निकाल्दा:</p>
+            <div class="py-1 px-3 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$v - u = at \\implies t = \\frac{v - u}{a} \\quad \\text{--- (ख)}$$
             </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">समीकरण (ख) बाट t को मान समीकरण (क) मा प्रतिस्थापन गर्दा:</span>
-              <span class="offline-math font-bold text-slate-900">s = <span class="offline-frac"><span class="top">v + u</span><span class="bot">2</span></span> × <span class="offline-frac"><span class="top">v - u</span><span class="bot">a</span></span></span>
+            <p class="font-semibold text-slate-700 pt-1">समीकरण (ख) बाट $t$ को मान समीकरण (क) मा प्रतिस्थापन गर्दा:</p>
+            <div class="py-1 px-3 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$s = \\left(\\frac{v + u}{2}\\right) \\times \\left(\\frac{v - u}{a}\\right)$$
             </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">अंशहरू गुणन गर्दा (सूत्र: (a+b)(a-b) = a² - b²):</span>
-              <span class="offline-math font-bold text-slate-900">s = <span class="offline-frac"><span class="top">v² - u²</span><span class="bot">2a</span></span></span>
+            <p class="font-semibold text-slate-700 pt-1">अंशहरू गुणन गर्दा $\\left[\\text{सूत्र: } (a+b)(a-b) = a^2 - b^2\\right]$:</p>
+            <div class="py-1 px-3 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$s = \\frac{v^2 - u^2}{2a}$$
             </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">क्रस-गुणन गर्दा:</span>
-              <span class="offline-math font-bold text-slate-900">2as = v² - u²</span>
+            <p class="font-semibold text-slate-700 pt-1">क्रस-गुणन (Cross-multiplication) गर्दा:</p>
+            <div class="py-1 px-3 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$2as = v^2 - u^2$$
             </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">स्थान परिवर्तन गरी मिलाउँदा:</span>
-              <span class="offline-math font-bold text-emerald-800">v² = u² + 2as</span>
+            <p class="font-semibold text-slate-700 pt-1">स्थान परिवर्तन गरी मिलाउँदा:</p>
+            <div class="p-3.5 my-2 rounded-xl bg-gradient-to-r from-indigo-50 to-blue-50 border-2 border-indigo-500 flex items-center justify-between shadow-xs">
+              <div>
+                <span class="text-xs font-bold text-indigo-700 uppercase tracking-wider block">प्रमाणित दोस्रो समीकरण:</span>
+                <span class="text-xs md:text-sm font-semibold text-slate-700">गति, प्रवेग र स्थानान्तरण सम्बन्ध</span>
+              </div>
+              <div class="text-base md:text-xl font-bold text-indigo-950 font-serif">
+                $$v^2 = u^2 + 2as \\quad \\text{--- (ii)}$$
+              </div>
             </div>
-          </div>
-          <div class="p-2.5 rounded-xl bg-indigo-600 text-white font-bold flex items-center justify-between text-xs md:text-sm shadow-sm">
-            <span>💡 प्रमाणित समीकरण २:</span>
-            <span class="offline-math text-base text-yellow-300 font-bold tracking-wider">v² = u² + 2as &nbsp; — (ii)</span>
           </div>
         </div>
 
         <!-- Derivation 3: s = ut + 1/2at^2 -->
-        <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-3 shadow-xs">
-          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+        <div class="p-5 md:p-6 rounded-2xl bg-white border border-slate-200 space-y-3 shadow-xs">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
             <h5 class="font-bold text-sm md:text-base text-purple-900 flex items-center gap-2">
-              <span class="w-6 h-6 rounded-full bg-purple-600 text-white flex items-center justify-center text-xs">३</span>
-              तेस्रो समीकरण: s = ut + ½at² को निगमन (समय, प्रवेग र स्थानान्तरण सम्बन्धी)
+              <span class="w-6 h-6 rounded-full bg-purple-600 text-white flex items-center justify-center text-xs font-bold">३</span>
+              तेस्रो समीकरण: $s = ut + \\frac{1}{2}at^2$ को निगमन (समय, प्रवेग र स्थानान्तरण सम्बन्धी)
             </h5>
-            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-800">समीकरण (iii)</span>
+            <span class="text-xs font-bold px-3 py-1 rounded-full bg-purple-100 text-purple-800">समीकरण (iii)</span>
           </div>
-          <div class="space-y-2 text-xs md:text-sm">
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">समान प्रवेगमा स्थानान्तरण = औसत गति × समय:</span>
-              <span class="offline-math font-bold text-slate-900">s = <span class="offline-frac"><span class="top">u + v</span><span class="bot">2</span></span> × t &nbsp; — (क)</span>
+          <div class="space-y-2 text-xs md:text-sm text-slate-800">
+            <p class="font-semibold text-slate-700">समान प्रवेगमा स्थानान्तरण = औसत गति × समय:</p>
+            <div class="py-1 px-3 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$s = \\left(\\frac{u + v}{2}\\right) \\times t \\quad \\text{--- (क)}$$
             </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">पहिलो समीकरण v = u + at बाट v को मान समीकरण (क) मा राख्दा:</span>
-              <span class="offline-math font-bold text-purple-900">s = <span class="offline-frac"><span class="top">u + (u + at)</span><span class="bot">2</span></span> × t</span>
+            <p class="font-semibold text-slate-700 pt-1">पहिलो समीकरण $v = u + at$ बाट $v$ को मान समीकरण (क) मा राख्दा:</p>
+            <div class="py-1 px-3 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$s = \\left(\\frac{u + (u + at)}{2}\\right) \\times t$$
             </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">अंशहरू जोड्दा:</span>
-              <span class="offline-math font-bold text-slate-900">s = <span class="offline-frac"><span class="top">2u + at</span><span class="bot">2</span></span> × t</span>
+            <p class="font-semibold text-slate-700 pt-1">अंशहरू जोड्दा:</p>
+            <div class="py-1 px-3 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$s = \\left(\\frac{2u + at}{2}\\right) \\times t$$
             </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">भिन्नलाई छुट्याउँदा:</span>
-              <span class="offline-math font-bold text-slate-900">s = (<span class="offline-frac"><span class="top">2u</span><span class="bot">2</span></span> + <span class="offline-frac"><span class="top">at</span><span class="bot">2</span></span>) × t = (u + <span class="offline-frac"><span class="top">1</span><span class="bot">2</span></span>at) × t</span>
+            <p class="font-semibold text-slate-700 pt-1">भिन्नलाई छुट्याउँदा:</p>
+            <div class="py-1 px-3 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$s = \\left(\\frac{2u}{2} + \\frac{at}{2}\\right) \\times t = \\left(u + \\frac{1}{2}at\\right) \\times t$$
             </div>
-            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-              <span class="text-slate-600">कोष्ठक खोली t ले गुणन गर्दा:</span>
-              <span class="offline-math font-bold text-emerald-800">s = ut + <span class="offline-frac"><span class="top">1</span><span class="bot">2</span></span>at²</span>
+            <p class="font-semibold text-slate-700 pt-1">कोष्ठक खोली $t$ ले गुणन गर्दा:</p>
+            <div class="p-3.5 my-2 rounded-xl bg-gradient-to-r from-purple-50 to-pink-50 border-2 border-purple-500 flex items-center justify-between shadow-xs">
+              <div>
+                <span class="text-xs font-bold text-purple-700 uppercase tracking-wider block">प्रमाणित तेस्रो समीकरण:</span>
+                <span class="text-xs md:text-sm font-semibold text-slate-700">समय, प्रवेग र स्थानान्तरण सम्बन्ध</span>
+              </div>
+              <div class="text-base md:text-xl font-bold text-purple-950 font-serif">
+                $$s = ut + \\frac{1}{2}at^2 \\quad \\text{--- (iii)}$$
+              </div>
             </div>
-          </div>
-          <div class="p-2.5 rounded-xl bg-purple-600 text-white font-bold flex items-center justify-between text-xs md:text-sm shadow-sm">
-            <span>💡 प्रमाणित समीकरण ३:</span>
-            <span class="offline-math text-base text-yellow-300 font-bold tracking-wider">s = ut + ½at² &nbsp; — (iii)</span>
           </div>
         </div>
       </div>
@@ -1583,11 +1589,11 @@ const C9U7_EXERCISES_DATA = [
     id: 'struct-4',
     q: '४ (घ). दिइएको तथ्याङ्कका आधारमा स्थानान्तरण समय ग्राफको झुकावबाट पहिलो ४ सेकेन्डको औसत गति हिसाब गर्नुहोस् ।',
     htmlContent: `
-      <div class="space-y-3 text-xs md:text-sm">
+      <div class="space-y-4 text-xs md:text-sm max-w-3xl mx-auto">
         <div class="overflow-x-auto">
           <table class="w-full border-collapse border border-slate-200 text-center font-mono">
             <tr class="bg-slate-100 font-bold text-slate-800">
-              <td class="border border-slate-200 p-2">समय t (s)</td>
+              <td class="border border-slate-200 p-2.5 font-bold">समय (t) [s]</td>
               <td class="border border-slate-200 p-2">०</td>
               <td class="border border-slate-200 p-2">२</td>
               <td class="border border-slate-200 p-2">४</td>
@@ -1597,29 +1603,29 @@ const C9U7_EXERCISES_DATA = [
               <td class="border border-slate-200 p-2">१२</td>
               <td class="border border-slate-200 p-2">१४</td>
             </tr>
-            <tr class="text-blue-900">
-              <td class="border border-slate-200 p-2 font-bold text-slate-700">दूरी s (m)</td>
+            <tr class="text-slate-700">
+              <td class="border border-slate-200 p-2.5 font-bold">दूरी (s) [m]</td>
               <td class="border border-slate-200 p-2">०</td>
               <td class="border border-slate-200 p-2">४</td>
-              <td class="border border-slate-200 p-2">८</td>
               <td class="border border-slate-200 p-2">८</td>
               <td class="border border-slate-200 p-2">१२</td>
-              <td class="border border-slate-200 p-2">८</td>
-              <td class="border border-slate-200 p-2">४</td>
-              <td class="border border-slate-200 p-2">०</td>
+              <td class="border border-slate-200 p-2">१६</td>
+              <td class="border border-slate-200 p-2">२०</td>
+              <td class="border border-slate-200 p-2">२४</td>
+              <td class="border border-slate-200 p-2">२८</td>
             </tr>
           </table>
         </div>
-        <div class="p-3.5 rounded-xl bg-blue-50/60 border border-blue-200 space-y-2">
-          <strong>पहिलो ४ सेकेन्ड (० देखि ४ s) को औसत गति हिसाब:</strong>
-          <div class="space-y-1 font-mono text-slate-800">
-            <div>सुरुको बिन्दु: t₁ = 0 s, s₁ = 0 m</div>
-            <div>अन्तिम बिन्दु: t₂ = 4 s, s₂ = 8 m</div>
-            <div class="offline-math text-base font-bold text-blue-900 py-1">
-              औसत गति (v) = झुकाव (Slope) = <span class="offline-frac"><span class="top">s₂ - s₁</span><span class="bot">t₂ - t₁</span></span> = <span class="offline-frac"><span class="top">8 m - 0 m</span><span class="bot">4 s - 0 s</span></span> = <span class="offline-frac"><span class="top">8</span><span class="bot">4</span></span> = 2 m/s
-            </div>
+        <div class="p-4 rounded-2xl bg-blue-50/70 border border-blue-200 space-y-3">
+          <strong class="text-blue-900 block text-sm">पहिलो ४ सेकेन्ड (० देखि ४ s) को औसत गति हिसाब:</strong>
+          <div class="space-y-1 text-slate-700">
+            <div>सुरुको बिन्दु: $t_1 = 0\\text{ s}, s_1 = 0\\text{ m}$</div>
+            <div>अन्तिम बिन्दु: $t_2 = 4\\text{ s}, s_2 = 8\\text{ m}$</div>
           </div>
-          <div class="p-2 rounded-lg bg-emerald-100 text-emerald-950 font-bold">
+          <div class="py-2 px-3 rounded-xl bg-white border border-blue-200 text-center md:text-left text-sm md:text-base font-serif text-blue-950">
+            $$\\text{औसत गति } (v) = \\text{झुकाव (Slope)} = \\frac{s_2 - s_1}{t_2 - t_1} = \\frac{8\\text{ m} - 0\\text{ m}}{4\\text{ s} - 0\\text{ s}} = \\frac{8}{4} = 2\\text{ m/s}$$
+          </div>
+          <div class="p-2.5 rounded-xl bg-emerald-100 text-emerald-950 font-bold text-xs md:text-sm">
             ✓ उत्तर: पहिलो ४ सेकेन्डमा वस्तुको औसत गति २ m/s (समान गति) रहेको छ।
           </div>
         </div>
@@ -1665,48 +1671,57 @@ const C9U7_EXERCISES_DATA = [
   {
     type: 'structured',
     id: 'struct-11',
-    q: '४ (ट). चालसम्बन्धी न्युटनको दोस्रो नियम लेखी F = ma प्रमाणित गर्नुहोस् ।',
+    q: '४ (ट). न्युटनको दोस्रो नियमबाट F = ma प्रमाणित गर्नुहोस् ।',
     htmlContent: `
-      <div class="space-y-3 text-xs md:text-sm">
-        <div class="p-3.5 rounded-2xl bg-blue-50 border border-blue-200 text-blue-950 font-medium">
-          <strong>📌 न्युटनको चालसम्बन्धी दोस्रो नियम (Newton's Second Law):</strong>
-          <p class="mt-1 italic">
-            "कुनै वस्तुमा उत्पन्न हुने प्रवेग उक्त वस्तुमा लगाइएको परिणामात्मक बलसँग समानुपातिक हुन्छ र वस्तुको पिण्डसँग व्युत्क्रमानुपातिक हुन्छ, तथा प्रवेगको दिशा बलकै दिशामा हुन्छ।"
-          </p>
+      <div class="bg-white border-2 border-emerald-100 rounded-2xl p-5 md:p-6 shadow-sm space-y-4 max-w-3xl mx-auto">
+        <div class="text-xs md:text-sm text-slate-700 leading-relaxed border-b border-emerald-100 pb-3">
+          <strong>मानौँ:</strong> $m$ पिण्ड भएको वस्तुमा $F$ परिमाणको बाहिरी असन्तुलित बल लगाउँदा $a$ प्रवेग उत्पन्न हुन्छ।
         </div>
-        <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-2 shadow-xs">
-          <div class="text-slate-700">
-            मानौँ, <span class="offline-math font-bold">m</span> पिण्ड भएको वस्तुमा <span class="offline-math font-bold">F</span> परिमाणको बल लगाउँदा <span class="offline-math font-bold">a</span> प्रवेग उत्पन्न हुन्छ।
+
+        <div class="space-y-3 text-xs md:text-sm text-slate-800">
+          <div>
+            <p class="font-semibold text-slate-700">१. नियमको पहिलो खण्ड अनुसार (प्रवेग बलसँग समानुपातिक):</p>
+            <div class="py-1.5 px-3 my-1 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$a \\propto F \\quad \\text{--- (१) (पिण्ड } m \\text{ स्थिर हुँदा)}$$
+            </div>
           </div>
-          <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-            <span class="text-slate-600">१. नियमको पहिलो खण्ड अनुसार (प्रवेग बलसँग समानुपातिक):</span>
-            <span class="offline-math font-bold text-blue-900">a ∝ F &nbsp; — (१)</span>
+
+          <div>
+            <p class="font-semibold text-slate-700">२. नियमको दोस्रो खण्ड अनुसार (प्रवेग पिण्डसँग व्युत्क्रमानुपातिक):</p>
+            <div class="py-1.5 px-3 my-1 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$a \\propto \\frac{1}{m} \\quad \\text{--- (२) (बल } F \\text{ स्थिर हुँदा)}$$
+            </div>
           </div>
-          <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-            <span class="text-slate-600">२. नियमको दोस्रो खण्ड अनुसार (प्रवेग पिण्डसँग व्युत्क्रमानुपातिक):</span>
-            <span class="offline-math font-bold text-blue-900">a ∝ <span class="offline-frac"><span class="top">1</span><span class="bot">m</span></span> &nbsp; — (२)</span>
+
+          <div>
+            <p class="font-semibold text-slate-700">३. सम्बन्ध (१) र (२) लाई संयुक्त रूपमा मिलाउँदा:</p>
+            <div class="py-1.5 px-3 my-1 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$a \\propto \\frac{F}{m} \\implies F \\propto ma$$
+            </div>
           </div>
-          <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-            <span class="text-slate-600">३. समीकरण (१) र (२) लाई संयुक्त रूपमा मिलाउँदा:</span>
-            <span class="offline-math font-bold text-slate-900">a ∝ <span class="offline-frac"><span class="top">F</span><span class="bot">m</span></span> &nbsp; ⟹ &nbsp; F ∝ ma</span>
+
+          <div>
+            <p class="font-semibold text-slate-700">४. समानुपातिक चिन्ह हटाई समानुपातिक स्थिराङ्क $k$ राख्दा:</p>
+            <div class="py-1.5 px-3 my-1 rounded-xl bg-slate-50 border border-slate-100 text-center md:text-left md:pl-6 text-sm md:text-base font-serif">
+              $$F = k \\cdot ma \\quad \\text{--- (३)}$$
+            </div>
           </div>
-          <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-            <span class="text-slate-600">४. समानुपातिक चिन्ह हटाई स्थिराङ्क k राख्दा:</span>
-            <span class="offline-math font-bold text-slate-900">F = k · ma &nbsp; — (३)</span>
+
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs md:text-sm text-slate-700 space-y-1">
+            <strong class="text-slate-900">५. १ न्युटन ($1\\text{ N}$) बलको परिभाषा अनुसार:</strong>
+            <p>$1\\text{ kg}$ पिण्ड भएको वस्तुमा $1\\text{ m/s}^2$ प्रवेग उत्पन्न गराउने बललाई $1\\text{ N}$ भनिन्छ।<br>
+            अर्थात् $m = 1\\text{ kg}, a = 1\\text{ m/s}^2$ हुँदा $F = 1\\text{ N}$ हुन्छ।<br>
+            यो मान समीकरण (३) मा राख्दा: $1 = k \\times 1 \\times 1 \\implies \\mathbf{k = 1}$ हुन्छ।</p>
           </div>
-          <div class="p-3 rounded-xl bg-slate-100 text-slate-700 space-y-1">
-            <strong>५. १ न्युटन (1 N) बलको परिभाषा अनुसार:</strong>
-            <p>1 kg पिण्ड भएको वस्तुमा 1 m/s² प्रवेग उत्पन्न गराउने बललाई 1 N भनिन्छ।<br>
-            अर्थात् m = 1 kg, a = 1 m/s² हुँदा F = 1 N हुन्छ।<br>
-            मान समीकरण (३) मा राख्दा: 1 = k × 1 × 1 &nbsp; ⟹ &nbsp; <strong>k = 1</strong>।</p>
-          </div>
-          <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-            <span class="text-slate-600">६. k = 1 समीकरण (३) मा प्रतिस्थापन गर्दा:</span>
-            <span class="offline-math font-bold text-emerald-800">F = 1 · ma = ma</span>
-          </div>
-          <div class="p-2.5 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-between text-xs md:text-sm">
-            <span>💡 प्रमाणित सूत्र (Newton's 2nd Law Formula):</span>
-            <span class="offline-math text-base text-yellow-300 font-bold tracking-wider">F = ma &nbsp; (प्रमाणित भयो)</span>
+
+          <div class="mt-4 p-4 rounded-xl bg-gradient-to-r from-emerald-50 to-teal-50 border-2 border-emerald-500 flex items-center justify-between shadow-xs">
+            <div>
+              <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider block">$k = 1$ को मान समीकरण (३) मा राख्दा:</span>
+              <span class="text-sm md:text-base font-bold text-slate-800">💡 न्युटनको चाल सम्बन्धी दोस्रो नियम</span>
+            </div>
+            <div class="text-lg md:text-xl font-bold text-emerald-950 font-serif">
+              $$\\mathbf{F = ma} \\quad \\text{--- (प्रमाणित)}$$
+            </div>
           </div>
         </div>
       </div>
