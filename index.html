@@ -10416,7 +10416,7 @@ ightarrow$ in</button>
         <div id="ch12-view-exercises" class="hidden space-y-6">
 
           <!-- Exercise Pills Switcher -->
-          <div class="flex border-b border-slate-200 gap-2 overflow-x-auto pb-2 text-xs md:text-sm font-bold">
+          <div class="sticky top-16 z-20 bg-slate-50/95 backdrop-blur-md py-2 border-b border-slate-200 flex gap-2 overflow-x-auto text-xs md:text-sm font-bold">
             <button id="ch12-pill-ex12_1" onclick="setExerciseCh12('ex12_1')" class="px-4 py-2 rounded-xl bg-teal-600 text-white shadow-xs whitespace-nowrap cursor-pointer">
               अभ्यास १२.१ (जोड, घटाउ र रेखाखण्ड)
             </button>
@@ -10541,62 +10541,192 @@ ightarrow$ in</button>
               </div>
             </div>
 
-            <!-- Q4: Addition -->
-            <div class="p-4 bg-white rounded-2xl border border-slate-200 space-y-3">
-              <h4 class="font-bold text-slate-800 text-sm">प्रश्न ४: योगफल निकाल्नुहोस्:</h4>
-              <div class="grid grid-cols-2 md:grid-cols-3 gap-2 text-xs md:text-sm">
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(क)</strong> $3s + 7s = \mathbf{10s}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(ख)</strong> $2m + 6m = \mathbf{8m}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(ग)</strong> $2xy + 5xy = \mathbf{7xy}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(घ)</strong> $6a^2 + 8a^2 = \mathbf{14a^2}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(ङ)</strong> $5x^2y + 3x^2y = \mathbf{8x^2y}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(च)</strong> $a + 2a + 3a = \mathbf{6a}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(छ)</strong> $2x^2 + 5x^2 + 7x^2 = \mathbf{14x^2}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(ज)</strong> $\mathbf{7x^2y + 5xy^2}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(झ)</strong> $\mathbf{m^2n + 8mn^2}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(ञ)</strong> $\mathbf{10a^3b + 9ab^3}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(ट)</strong> $(2a+3)+(3a+5) = \mathbf{5a + 8}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(ठ)</strong> $\mathbf{8x^2 + 10x + 12}$</div>
+            <!-- Q4: Addition (Step-by-Step) -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 space-y-4 shadow-xs">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+                <h4 class="font-bold text-slate-800 text-sm md:text-base flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center text-xs font-bold">४</span>
+                  प्रश्न ४: योगफल निकाल्नुहोस् (सजातीय पद जोड्ने चरणसहित):
+                </h4>
+                <span class="text-xs text-slate-400 font-medium">१२ वटा प्रश्नहरू</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 text-xs md:text-sm">
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(क) $3s + 7s$</div>
+                  <div class="text-slate-600 text-xs">$= (3 + 7)s = \mathbf{10s}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ख) $2m + 6m$</div>
+                  <div class="text-slate-600 text-xs">$= (2 + 6)m = \mathbf{8m}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ग) $2xy + 5xy$</div>
+                  <div class="text-slate-600 text-xs">$= (2 + 5)xy = \mathbf{7xy}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(घ) $6a^2 + 8a^2$</div>
+                  <div class="text-slate-600 text-xs">$= (6 + 8)a^2 = \mathbf{14a^2}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ङ) $5x^2y + 3x^2y$</div>
+                  <div class="text-slate-600 text-xs">$= (5 + 3)x^2y = \mathbf{8x^2y}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(च) $a + 2a + 3a$</div>
+                  <div class="text-slate-600 text-xs">$= (1 + 2 + 3)a = \mathbf{6a}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(छ) $2x^2 + 5x^2 + 7x^2$</div>
+                  <div class="text-slate-600 text-xs">$= (2 + 5 + 7)x^2 = \mathbf{14x^2}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ज) $3x^2y + 4x^2y + 5xy^2$</div>
+                  <div class="text-slate-600 text-xs">$= (3+4)x^2y + 5xy^2 = \mathbf{7x^2y + 5xy^2}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(झ) $m^2n + 2mn^2 + 6mn^2$</div>
+                  <div class="text-slate-600 text-xs">$= m^2n + (2+6)mn^2 = \mathbf{m^2n + 8mn^2}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ञ) $4a^3b + 6a^3b + 9ab^3$</div>
+                  <div class="text-slate-600 text-xs">$= (4+6)a^3b + 9ab^3 = \mathbf{10a^3b + 9ab^3}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ट) $(2a + 3) + (3a + 5)$</div>
+                  <div class="text-slate-600 text-xs">$= (2a + 3a) + (3 + 5) = \mathbf{5a + 8}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ठ) $(3x^2 + 4x + 5) + (5x^2 + 6x + 7)$</div>
+                  <div class="text-slate-600 text-xs">$= (3+5)x^2 + (4+6)x + (5+7) = \mathbf{8x^2 + 10x + 12}$</div>
+                </div>
               </div>
             </div>
 
-            <!-- Q5: Subtraction -->
-            <div class="p-4 bg-white rounded-2xl border border-slate-200 space-y-3">
-              <h4 class="font-bold text-slate-800 text-sm">प्रश्न ५: फरक निकाल्नुहोस् (घटाउनुहोस्):</h4>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs md:text-sm">
-                <div class="p-2.5 bg-slate-50 rounded-xl"><strong>(क)</strong> $(3x+4y) - (2x+2y) = \mathbf{x + 2y}$</div>
-                <div class="p-2.5 bg-slate-50 rounded-xl"><strong>(ख)</strong> $(6a+4b) - (a+b) = \mathbf{5a + 3b}$</div>
-                <div class="p-2.5 bg-slate-50 rounded-xl"><strong>(ग)</strong> $(6x+7y+8z) - (2x+3y+4z) = \mathbf{4x + 4y + 4z}$</div>
-                <div class="p-2.5 bg-slate-50 rounded-xl"><strong>(घ)</strong> $(4a-3b+5c) - (2a+b-3c) = \mathbf{2a - 4b + 8c}$</div>
-                <div class="p-2.5 bg-slate-50 rounded-xl"><strong>(ङ)</strong> $(7a-5b-7c) - (a-2b-3c) = \mathbf{6a - 3b - 4c}$</div>
-                <div class="p-2.5 bg-slate-50 rounded-xl"><strong>(च)</strong> $(2x^2-xy+y^2) - (x^2-xy+2y^2) = \mathbf{x^2 - y^2}$</div>
-                <div class="p-2.5 bg-slate-50 rounded-xl md:col-span-2"><strong>(छ)</strong> $(6x^3+5x^2y+y^3) - (2x^3+3x^2y+4y^3) = \mathbf{4x^3 + 2x^2y - 3y^3}$</div>
+            <!-- Q5: Subtraction (Step-by-Step) -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 space-y-4 shadow-xs">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+                <h4 class="font-bold text-slate-800 text-sm md:text-base flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center text-xs font-bold">५</span>
+                  प्रश्न ५: फरक निकाल्नुहोस् (घटाउने चरणसहित):
+                </h4>
+                <span class="text-xs text-slate-400 font-medium">७ वटा प्रश्नहरू</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(क) $(3x + 4y) - (2x + 2y)$</div>
+                  <div class="text-slate-600 text-xs">$= 3x + 4y - 2x - 2y = (3x - 2x) + (4y - 2y) = \mathbf{x + 2y}$</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ख) $(6a + 4b) - (a + b)$</div>
+                  <div class="text-slate-600 text-xs">$= 6a + 4b - a - b = (6a - a) + (4b - b) = \mathbf{5a + 3b}$</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ग) $(6x + 7y + 8z) - (2x + 3y + 4z)$</div>
+                  <div class="text-slate-600 text-xs">$= (6x - 2x) + (7y - 3y) + (8z - 4z) = \mathbf{4x + 4y + 4z}$</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(घ) $(4a - 3b + 5c) - (2a + b - 3c)$</div>
+                  <div class="text-slate-600 text-xs">$= 4a - 3b + 5c - 2a - b + 3c = (4a-2a) + (-3b-b) + (5c+3c) = \mathbf{2a - 4b + 8c}$</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ङ) $(7a - 5b - 7c) - (a - 2b - 3c)$</div>
+                  <div class="text-slate-600 text-xs">$= 7a - 5b - 7c - a + 2b + 3c = (7a-a) + (-5b+2b) + (-7c+3c) = \mathbf{6a - 3b - 4c}$</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(च) $(2x^2 - xy + y^2) - (x^2 - xy + 2y^2)$</div>
+                  <div class="text-slate-600 text-xs">$= 2x^2 - xy + y^2 - x^2 + xy - 2y^2 = (2x^2 - x^2) + (y^2 - 2y^2) = \mathbf{x^2 - y^2}$</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1 md:col-span-2">
+                  <div class="font-bold text-slate-800">(छ) $(6x^3 + 5x^2y + y^3) - (2x^3 + 3x^2y + 4y^3)$</div>
+                  <div class="text-slate-600 text-xs">$= 6x^3 + 5x^2y + y^3 - 2x^3 - 3x^2y - 4y^3 = (6-2)x^3 + (5-3)x^2y + (1-4)y^3 = \mathbf{4x^3 + 2x^2y - 3y^3}$</div>
+                </div>
               </div>
             </div>
 
-            <!-- Q6: Simplify -->
-            <div class="p-4 bg-white rounded-2xl border border-slate-200 space-y-3">
-              <h4 class="font-bold text-slate-800 text-sm">प्रश्न ६: सरल गर्नुहोस्:</h4>
-              <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs md:text-sm">
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(क)</strong> $4a+6a-9a = \mathbf{a}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(ख)</strong> $5x-6x+3x = \mathbf{2x}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(ग)</strong> $6m^2+3m^2-9m^2 = \mathbf{0}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(घ)</strong> $\mathbf{2xy}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(ङ)</strong> $\mathbf{8x^2 + 3xy + 5y^2}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(च)</strong> $\mathbf{-6b}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(छ)</strong> $\mathbf{-2a - 2b - 2c}$</div>
-                <div class="p-2 bg-slate-50 rounded-lg"><strong>(ज)</strong> $\mathbf{10x^3 - x^2y + 2y^3}$</div>
+            <!-- Q6: Simplify (Step-by-Step) -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 space-y-4 shadow-xs">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+                <h4 class="font-bold text-slate-800 text-sm md:text-base flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center text-xs font-bold">६</span>
+                  प्रश्न ६: सरल गर्नुहोस्:
+                </h4>
+                <span class="text-xs text-slate-400 font-medium">८ वटा प्रश्नहरू</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5 text-xs md:text-sm">
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(क) $4a + 6a - 9a$</div>
+                  <div class="text-slate-600 text-xs">$= (4 + 6 - 9)a = (10 - 9)a = \mathbf{a}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ख) $5x - 6x + 3x$</div>
+                  <div class="text-slate-600 text-xs">$= (5x + 3x) - 6x = 8x - 6x = \mathbf{2x}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ग) $6m^2 + 3m^2 - 9m^2$</div>
+                  <div class="text-slate-600 text-xs">$= 9m^2 - 9m^2 = \mathbf{0}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(घ) $(x^2 + xy + y^2) - (x^2 - xy + y^2)$</div>
+                  <div class="text-slate-600 text-xs">$= x^2 + xy + y^2 - x^2 + xy - y^2 = \mathbf{2xy}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ङ) $(5x^2 + xy + y^2) + (3x^2 + 2xy + 4y^2)$</div>
+                  <div class="text-slate-600 text-xs">$= (5+3)x^2 + (1+2)xy + (1+4)y^2 = \mathbf{8x^2 + 3xy + 5y^2}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(च) $(2a - 3b + 7c) - (2a + 3b + 7c)$</div>
+                  <div class="text-slate-600 text-xs">$= 2a - 3b + 7c - 2a - 3b - 7c = -6b = \mathbf{-6b}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(छ) $(a + 2b + 3c) - (3a + 4b + 5c)$</div>
+                  <div class="text-slate-600 text-xs">$= a + 2b + 3c - 3a - 4b - 5c = (1-3)a + (2-4)b + (3-5)c = \mathbf{-2a - 2b - 2c}$</div>
+                </div>
+                <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ज) $(6x^3 - 2x^2y - y^3) + (4x^3 + x^2y + 3y^3)$</div>
+                  <div class="text-slate-600 text-xs">$= (6+4)x^3 + (-2+1)x^2y + (-1+3)y^3 = \mathbf{10x^3 - x^2y + 2y^3}$</div>
+                </div>
               </div>
             </div>
 
-            <!-- Q7: Line Segments -->
-            <div class="p-4 bg-white rounded-2xl border border-slate-200 space-y-3">
-              <h4 class="font-bold text-slate-800 text-sm">प्रश्न ७: प्रत्येक रेखाखण्डको जम्मा लम्बाइ:</h4>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs md:text-sm">
-                <div class="p-2.5 bg-slate-50 rounded-xl"><strong>(क)</strong> $AC = x + 2x = \mathbf{3x\text{ cm}}$</div>
-                <div class="p-2.5 bg-slate-50 rounded-xl"><strong>(ख)</strong> $AC = x + (x + 5) = \mathbf{(2x + 5)\text{ cm}}$</div>
-                <div class="p-2.5 bg-slate-50 rounded-xl"><strong>(ग)</strong> $AD = x + 2x + 3x = \mathbf{6x\text{ cm}}$</div>
-                <div class="p-2.5 bg-slate-50 rounded-xl"><strong>(घ)</strong> $AD = x + 2x + (x + 6) = \mathbf{(4x + 6)\text{ cm}}$</div>
+            <!-- Q7: Line Segments (Step-by-Step) -->
+            <div class="p-5 bg-white rounded-2xl border border-slate-200 space-y-4 shadow-xs">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+                <h4 class="font-bold text-slate-800 text-sm md:text-base flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center text-xs font-bold">७</span>
+                  प्रश्न ७: प्रत्येक रेखाखण्डको जम्मा लम्बाइ पत्ता लगाउनुहोस्:
+                </h4>
+                <span class="text-xs text-slate-400 font-medium">४ वटा प्रश्नहरू</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm">
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(क) रेखाखण्ड $AC$ जहाँ $AB = x\text{ cm}, BC = 2x\text{ cm}$</div>
+                  <div class="text-slate-600 text-xs">$\text{जम्मा लम्बाइ } AC = AB + BC = x + 2x = \mathbf{3x\text{ cm}}$</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ख) रेखाखण्ड $AC$ जहाँ $AB = x\text{ cm}, BC = (x + 5)\text{ cm}$</div>
+                  <div class="text-slate-600 text-xs">$\text{जम्मा लम्बाइ } AC = x + (x + 5) = (x + x) + 5 = \mathbf{(2x + 5)\text{ cm}}$</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(ग) रेखाखण्ड $AD$ जहाँ $AB = x\text{ cm}, BC = 2x\text{ cm}, CD = 3x\text{ cm}$</div>
+                  <div class="text-slate-600 text-xs">$\text{जम्मा लम्बाइ } AD = x + 2x + 3x = (1 + 2 + 3)x = \mathbf{6x\text{ cm}}$</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
+                  <div class="font-bold text-slate-800">(घ) रेखाखण्ड $AD$ जहाँ $AB = x\text{ cm}, BC = 2x\text{ cm}, CD = (x + 6)\text{ cm}$</div>
+                  <div class="text-slate-600 text-xs">$\text{जम्मा लम्बाइ } AD = x + 2x + (x + 6) = (x + 2x + x) + 6 = \mathbf{(4x + 6)\text{ cm}}$</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Navigation for EX 12.1 -->
+            <div class="p-4 bg-teal-50 border border-teal-200 rounded-2xl flex flex-wrap items-center justify-between gap-3">
+              <span class="text-xs md:text-sm text-teal-800 font-semibold">अभ्यास १२.१ सम्पन्न भयो! अर्को अभ्यास हेर्नुहोस्:</span>
+              <div class="flex flex-wrap gap-2">
+                <button onclick="setExerciseCh12('ex12_2'); window.scrollTo({top: 0, behavior: 'smooth'});" class="px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-xl text-xs font-bold cursor-pointer transition">
+                  अभ्यास १२.२ ➔
+                </button>
+                <button onclick="setExerciseCh12('ex12_3'); window.scrollTo({top: 0, behavior: 'smooth'});" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold cursor-pointer transition">
+                  अभ्यास १२.३ (बीजीय भाग) ➔
+                </button>
               </div>
             </div>
           </div>
@@ -10722,7 +10852,17 @@ ightarrow$ in</button>
                 <div class="p-2 bg-slate-50 rounded-lg"><strong>(ज)</strong> $b^2+2bc-ac^2 = \mathbf{65}$</div>
               </div>
             </div>
-          </div>
+          
+            <!-- Bottom Navigation for EX 12.2 -->
+            <div class="p-4 bg-teal-50 border border-teal-200 rounded-2xl flex flex-wrap items-center justify-between gap-3">
+              <button onclick="setExerciseCh12('ex12_1'); window.scrollTo({top: 0, behavior: 'smooth'});" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl text-xs font-bold cursor-pointer transition">
+                ⬅ अघिल्लो: अभ्यास १२.१
+              </button>
+              <button onclick="setExerciseCh12('ex12_3'); window.scrollTo({top: 0, behavior: 'smooth'});" class="px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-xl text-xs font-bold cursor-pointer transition">
+                अर्को: अभ्यास १२.३ (बीजीय भाग तथा ज्यामितीय अनुप्रयोग) ➔
+              </button>
+            </div>
+</div>
 
           <!-- EXERCISE 12.3 SECTION -->
           <div id="ch12-sec-ex12_3" class="hidden space-y-4">
@@ -10810,7 +10950,17 @@ ightarrow$ in</button>
                 </div>
               </div>
             </div>
-          </div>
+          
+            <!-- Bottom Navigation for EX 12.3 -->
+            <div class="p-4 bg-teal-50 border border-teal-200 rounded-2xl flex flex-wrap items-center justify-between gap-3">
+              <button onclick="setExerciseCh12('ex12_2'); window.scrollTo({top: 0, behavior: 'smooth'});" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl text-xs font-bold cursor-pointer transition">
+                ⬅ अघिल्लो: अभ्यास १२.२
+              </button>
+              <button onclick="setExerciseCh12('project'); window.scrollTo({top: 0, behavior: 'smooth'});" class="px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-xl text-xs font-bold cursor-pointer transition">
+                परियोजना कार्य प्रतिवेदन ➔
+              </button>
+            </div>
+</div>
 
           <!-- PROJECT WORK SECTION -->
           <div id="ch12-sec-project" class="hidden space-y-4">

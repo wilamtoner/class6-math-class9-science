@@ -182,48 +182,91 @@
 
 ---
 
-## ४. अभ्यास १२.३ का सम्पूर्ण समाधानहरू (Exercise 12.3 Solutions)
+## ४. अभ्यास १२.३ का सम्पूर्ण विस्तृत समाधानहरू (Exercise 12.3 Detailed Step-by-Step Solutions)
 
-### प्रश्न १: एकपदीयलाई एकपदीयले भाग:
-- **(क)** $ab \div a = \mathbf{b}$
-- **(ख)** $3x^2y \div y = \mathbf{3x^2}$
-- **(ग)** $20x^3y^2 \div 4x^2y = \mathbf{5xy}$
-- **(घ)** $12x^3y^3z^2 \div 3x^3y^2z = \mathbf{4yz}$
-- **(ङ)** $36l^7m^3n^2 \div 4l^6m^2n = \mathbf{9lmn}$
-- **(च)** $100p^4q^7r^6 \div 25p^3q^4r^5 = \mathbf{4pq^3r}$
+### प्रश्न १: भाग गर्नुहोस् (एकपदीयलाई एकपदीयले भाग):
+- **(क) $ab \div a$:**
+  - भिन्न रूप: $\frac{ab}{a} = \frac{a \times b}{a}$
+  - घाताङ्क नियम अनुसार: $a^{1-1} \times b = a^0 \times b = 1 \times b = \mathbf{b}$
+- **(ख) $3x^2y \div y$:**
+  - भिन्न रूप: $\frac{3x^2y}{y} = \frac{3 \times x^2 \times y}{y}$
+  - समान चर भाग: $3x^2 \times y^{1-1} = 3x^2 \times 1 = \mathbf{3x^2}$
+- **(ग) $20x^3y^2 \div 4x^2y$:**
+  - भिन्न रूप: $\frac{20x^3y^2}{4x^2y} = \left(\frac{20}{4}\right) \times \left(\frac{x^3}{x^2}\right) \times \left(\frac{y^2}{y}\right)$
+  - घाताङ्क नियम $\frac{x^m}{x^n} = x^{m-n}$: $5 \times x^{3-2} \times y^{2-1} = \mathbf{5xy}$
+- **(घ) $12x^3y^3z^2 \div 3x^3y^2z$:**
+  - भिन्न रूप: $\frac{12x^3y^3z^2}{3x^3y^2z} = \left(\frac{12}{3}\right) \times \left(\frac{x^3}{x^3}\right) \times \left(\frac{y^3}{y^2}\right) \times \left(\frac{z^2}{z}\right)$
+  - गणना: $4 \times x^0 \times y^{3-2} \times z^{2-1} = 4 \times 1 \times y \times z = \mathbf{4yz}$
+- **(ङ) $36l^7m^3n^2 \div 4l^6m^2n$:**
+  - भिन्न रूप: $\frac{36l^7m^3n^2}{4l^6m^2n} = \left(\frac{36}{4}\right) \times \left(\frac{l^7}{l^6}\right) \times \left(\frac{m^3}{m^2}\right) \times \left(\frac{n^2}{n}\right)$
+  - गणना: $9 \times l^{7-6} \times m^{3-2} \times n^{2-1} = \mathbf{9lmn}$
+- **(च) $100p^4q^7r^6 \div 25p^3q^4r^5$:**
+  - भिन्न रूप: $\frac{100p^4q^7r^6}{25p^3q^4r^5} = \left(\frac{100}{25}\right) \times \left(\frac{p^4}{p^3}\right) \times \left(\frac{q^7}{q^4}\right) \times \left(\frac{r^6}{r^5}\right)$
+  - गणना: $4 \times p^{4-3} \times q^{7-4} \times r^{6-5} = \mathbf{4pq^3r}$
 
 ---
 
-### प्रश्न २: द्विपदीयलाई एकपदीयले भाग:
-- **(क)** $(xy + xz) \div x = \frac{xy}{x} + \frac{xz}{x} = \mathbf{y + z}$
-- **(ख)** $(x^2 - 2xy) \div x = \frac{x^2}{x} - \frac{2xy}{x} = \mathbf{x - 2y}$
-- **(ग)** $(a^2bc + abc^2) \div abc = \frac{a^2bc}{abc} + \frac{abc^2}{abc} = \mathbf{a + c}$
-- **(घ)** $(5l^2m - 15lm^2) \div 5lm = \frac{5l^2m}{5lm} - \frac{15lm^2}{5lm} = \mathbf{l - 3m}$
-- **(ङ)** $(14p^3q^2 + 49p^2q^3) \div 7p^2q^2 = \mathbf{2p + 7q}$
-- **(च)** $(36ax^3y^3 - 18bx^2y^2) \div 9x^2y^2 = \mathbf{4axy - 2b}$
-- **(छ)** $(40u^3v^2 - 24u^2v^3) \div 8u^2v^2 = \mathbf{5u - 3v}$
+### प्रश्न २: भाग गर्नुहोस् (द्विपदीयलाई एकपदीयले भाग):
+- **(क) $(xy + xz) \div x$:**
+  - नियम $\frac{A + B}{C} = \frac{A}{C} + \frac{B}{C}$: $\frac{xy}{x} + \frac{xz}{x} = \mathbf{y + z}$
+- **(ख) $(x^2 - 2xy) \div x$:**
+  - पद छुट्ट्याउँदा: $\frac{x^2}{x} - \frac{2xy}{x} = x^{2-1} - 2y = \mathbf{x - 2y}$
+- **(ग) $(a^2bc + abc^2) \div abc$:**
+  - पद छुट्ट्याउँदा: $\frac{a^2bc}{abc} + \frac{abc^2}{abc} = a^{2-1} + c^{2-1} = \mathbf{a + c}$
+- **(घ) $(5l^2m - 15lm^2) \div 5lm$:**
+  - पद छुट्ट्याउँदा: $\frac{5l^2m}{5lm} - \frac{15lm^2}{5lm} = l - 3m = \mathbf{l - 3m}$
+- **(ङ) $(14p^3q^2 + 49p^2q^3) \div 7p^2q^2$:**
+  - पद छुट्ट्याउँदा: $\frac{14p^3q^2}{7p^2q^2} + \frac{49p^2q^3}{7p^2q^2} = 2p^{3-2} + 7q^{3-2} = \mathbf{2p + 7q}$
+- **(च) $(36ax^3y^3 - 18bx^2y^2) \div 9x^2y^2$:**
+  - पद छुट्ट्याउँदा: $\frac{36ax^3y^3}{9x^2y^2} - \frac{18bx^2y^2}{9x^2y^2} = 4axy - 2b = \mathbf{4axy - 2b}$
+- **(छ) $(40u^3v^2 - 24u^2v^3) \div 8u^2v^2$:**
+  - पद छुट्ट्याउँदा: $\frac{40u^3v^2}{8u^2v^2} - \frac{24u^2v^3}{8u^2v^2} = 5u - 3v = \mathbf{5u - 3v}$
 
 ---
 
-### प्रश्न ३: सम्भावित लम्बाइ र चौडाइ:
+### प्रश्न ३: क्षेत्रफलबाट लम्बाइ र चौडाइका सम्भावित मानहरू निकाल्ने:
 - **(क) आयताकार जग्गाको क्षेत्रफल $9x^2y^3\text{ m}^2$:**
-  - लम्बाइ $= \mathbf{3xy^2\text{ m}}$, चौडाइ $= \mathbf{3xy\text{ m}}$ (वा लम्बाइ $= 9xy^2\text{ m}$, चौडाइ $= xy\text{ m}$)
+  - सूत्र: क्षेत्रफल $= l \times b = 9x^2y^3$
+  - गुणनखण्ड विश्लेषण:
+    - **सम्भावना १ (मानक):** लम्बाइ $(l) = \mathbf{3xy^2\text{ m}}$ र चौडाइ $(b) = \mathbf{3xy\text{ m}}$ (जाँच: $3xy^2 \times 3xy = 9x^2y^3$)
+    - **सम्भावना २:** लम्बाइ $(l) = \mathbf{9xy^2\text{ m}}$ र चौडाइ $(b) = \mathbf{xy\text{ m}}$
+    - **सम्भावना ३:** लम्बाइ $(l) = \mathbf{9x^2y^2\text{ m}}$ र चौडाइ $(b) = \mathbf{y\text{ m}}$
 - **(ख) आयताकार बगैँचाको क्षेत्रफल $32a^2b^2\text{ m}^2$:**
-  - लम्बाइ $= \mathbf{8ab\text{ m}}$, चौडाइ $= \mathbf{4ab\text{ m}}$ (वा लम्बाइ $= 16ab\text{ m}$, चौडाइ $= 2ab\text{ m}$)
+  - सूत्र: क्षेत्रफल $= l \times b = 32a^2b^2$
+  - गुणनखण्ड विश्लेषण:
+    - **सम्भावना १ (मानक):** लम्बाइ $(l) = \mathbf{8ab\text{ m}}$ र चौडाइ $(b) = \mathbf{4ab\text{ m}}$ (जाँच: $8ab \times 4ab = 32a^2b^2$)
+    - **सम्भावना २:** लम्बाइ $(l) = \mathbf{16ab\text{ m}}$ र चौडाइ $(b) = \mathbf{2ab\text{ m}}$
+    - **सम्भावना ३:** लम्बाइ $(l) = \mathbf{32a^2b\text{ m}}$ र चौडाइ $(b) = \mathbf{b\text{ m}}$
 
 ---
 
-### प्रश्न ४: आयतको बाँकी भुजा ($\text{बाँकी भुजा} = \frac{\text{क्षेत्रफल}}{\text{दिइएको भुजा}}$):
-- **(क)** $l = \frac{9x^2y}{3xy} = \mathbf{3x\text{ cm}}$
-- **(ख)** $b = \frac{25a^2b^2c}{5abc} = \mathbf{5ab\text{ cm}}$
-- **(ग)** $l = \frac{24p^4q^3r^2}{8p^3q^2r} = \mathbf{3pqr\text{ cm}}$
-- **(घ)** $l = \frac{4u^2v - 6uv^2}{2uv} = \mathbf{(2u - 3v)\text{ cm}}$
+### प्रश्न ४: आयतको बाँकी भुजाको लम्बाइ पत्ता लगाउनुहोस्:
+सूत्र: $\text{क्षेत्रफल } (A) = l \times b \implies \text{बाँकी भुजा} = \frac{\text{क्षेत्रफल}}{\text{दिइएको भुजा}}$
+- **(क) क्षेत्रफल $A = 9x^2y\text{ cm}^2$, चौडाइ $b = 3xy\text{ cm}$:**
+  $$l = \frac{A}{b} = \frac{9x^2y}{3xy} = \left(\frac{9}{3}\right) \left(\frac{x^2}{x}\right) \left(\frac{y}{y}\right) = 3 \times x^{2-1} \times 1 = \mathbf{3x\text{ cm}}$$
+- **(ख) क्षेत्रफल $A = 25a^2b^2c\text{ cm}^2$, लम्बाइ $l = 5abc\text{ cm}$:**
+  $$b = \frac{A}{l} = \frac{25a^2b^2c}{5abc} = \left(\frac{25}{5}\right) \left(\frac{a^2}{a}\right) \left(\frac{b^2}{b}\right) \left(\frac{c}{c}\right) = 5 \times a^{2-1} \times b^{2-1} \times 1 = \mathbf{5ab\text{ cm}}$$
+- **(ग) क्षेत्रफल $A = 24p^4q^3r^2\text{ cm}^2$, चौडाइ $b = 8p^3q^2r\text{ cm}$:**
+  $$l = \frac{A}{b} = \frac{24p^4q^3r^2}{8p^3q^2r} = 3 \times p^{4-3} \times q^{3-2} \times r^{2-1} = \mathbf{3pqr\text{ cm}}$$
+- **(घ) क्षेत्रफल $A = (4u^2v - 6uv^2)\text{ cm}^2$, चौडाइ $b = 2uv\text{ cm}$:**
+  $$l = \frac{A}{b} = \frac{4u^2v - 6uv^2}{2uv} = \frac{4u^2v}{2uv} - \frac{6uv^2}{2uv} = 2u - 3v = \mathbf{(2u - 3v)\text{ cm}}$$
 
 ---
 
-### प्रश्न ५: आयत $ABCD$ ($l = 2x + y, b = 2x$):
-- **(क) परिमिति:** $P = 2[(2x + y) + 2x] = 2(4x + y) = \mathbf{8x + 2y}$
-- **(ख) क्षेत्रफल:** $A = 2x(2x + y) = \mathbf{4x^2 + 2xy}$
-- **(ग) $\Delta ABD$ को क्षेत्रफल:** $\frac{1}{2} A = \mathbf{2x^2 + xy}$
-- **(घ) लम्बाइमा घटाउनुपर्ने परिमाण:** चौडाइ $2x$ सँग बराबर बनाउन **$\mathbf{y}$ घटाउनुपर्छ**।
-- **(ङ) बनेको वर्गको क्षेत्रफल:** भुजा $2x$ भएको वर्गको क्षेत्रफल $= (2x)^2 = \mathbf{4x^2}$
+### प्रश्न ५: आयत $ABCD$ का ज्यामितीय अनुप्रयोगहरू ($l = 2x + y, b = 2x$):
+- **(क) आयतको परिमिति:**
+  $$P = 2(l + b) = 2[(2x + y) + 2x] = 2(4x + y) = \mathbf{8x + 2y}$$
+- **(ख) आयतको क्षेत्रफल:**
+  $$A = l \times b = (2x + y) \times 2x = 2x(2x + y) = (2x \times 2x) + (2x \times y) = \mathbf{4x^2 + 2xy}$$
+- **(ग) $\Delta ABD$ को क्षेत्रफल:**
+  आयताकार विकर्ण $DB$ ले आयतलाई बराबर २ भागमा विभाजन गरेको हुँदा:
+  $$\text{क्षेत्रफल } (\Delta ABD) = \frac{1}{2} \times \text{आयतको क्षेत्रफल} = \frac{4x^2 + 2xy}{2} = \frac{4x^2}{2} + \frac{2xy}{2} = \mathbf{2x^2 + xy}$$
+- **(घ) लम्बाइमा कति घटाउँदा आयत वर्ग हुन्छ होला?**
+  वर्ग हुनका लागि लम्बाइ र चौडाइ समान हुनुपर्छ ($l = b$)।
+  यहाँ चौडाइ $= 2x$ छ र लम्बाइ $= 2x + y$ छ।
+  लम्बाइ र चौडाइको फरक $= (2x + y) - 2x = y$।
+  त्यसैले लम्बाइबाट $y$ घटाएमा लम्बाइ $= (2x + y) - y = 2x$ भई चौडाइसँग बराबर हुन्छ।
+  अतः लम्बाइमा **$\mathbf{y}$ घटाउँदा** आयत वर्ग हुन्छ।
+- **(ङ) उक्त वर्गको क्षेत्रफल कति होला?**
+  वर्गको प्रत्येक भुजाको लम्बाइ $= 2x$।
+  $$\text{वर्गको क्षेत्रफल } (A_{\text{वर्ग}}) = (\text{भुजा})^2 = (2x)^2 = 2^2 \times x^2 = \mathbf{4x^2}$$
